@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(180deg, #f7fbf8 0%, #f1f7f4 100%);
+  color: #0f172a;
+}
+
+/* Custom scrollbar */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 8px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #bbf7d2;
+  border-radius: 8px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: #86efae;
+}
+
+/* Subtle fade for sticky table header shadow */
+.table-sticky-shadow {
+  box-shadow: 0 1px 0 0 rgba(15, 23, 42, 0.06);
+}
+
+/* Gradient chip */
+.grad-chip {
+  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+}
+
+.grad-header {
+  background:
+    radial-gradient(1200px 200px at 10% -20%, rgba(16,185,129,0.12), transparent 60%),
+    radial-gradient(900px 200px at 90% -10%, rgba(13,148,136,0.10), transparent 60%),
+    linear-gradient(180deg, #ffffff 0%, #f7fbf8 100%);
+}
