@@ -1,0 +1,235 @@
+import React, { useMemo, useState } from 'react';
+import { ArrowUpDown, ArrowUp, ArrowDown, Search, Table as TableIcon, Download } from 'lucide-react';
+import { COLUMN_KEYS, COLUMN_ORDER } from '../data/mockData';
+import { fmtINRPlain, fmtPct, fmtDate } from '../utils/format';
+
+const LAUNCH_TYPE_STYLES = {
+  Acquired: 'bg-emerald-50 text-emerald-700 border-emerald-200',
+  'In-licensed': 'bg-teal-50 text-teal-700 border-teal-200',
+  'Own Launched': 'bg-lime-50 text-lime-700 border-lime-200',
+};
+
+const CHRONIC_STYLES = {
+  Chronic: 'bg-pharma-50 text-pharma-700 border-pharma-200',
+  Acute: 'bg-amber-50 text-amber-700 border-amber-200',
+};
+
+const NUMERIC_COLS = new Set([
+  COLUMN_KEYS.MARKET_SIZE,
+  COLUMN_KEYS.CAGR,
+  COLUMN_KEYS.EST_SALES,
+]);
+
+const WIDTH_HINT = {
+  [COLUMN_KEYS.BRAND]: 'min-w-[160px]',
+  [COLUMN_KEYS.LAUNCH_TYPE]: 'min-w-[160px]',
+  [COLUMN_KEYS.DATE]: 'min-w-[120px]',
+  [COLUMN_KEYS.SELLER]: 'min-w-[170px]',
+  [COLUMN_KEYS.BUYER]: 'min-w-[160px]',
+  [COLUMN_KEYS.DEAL_TYPE]: 'min-w-[170px]',
+  [COLUMN_KEYS.MOLECULE]: 'min-w-[220px]',
+  [COLUMN_KEYS.THERAPY]: 'min-w-[160px]',
+  [COLUMN_KEYS.INDICATION]: 'min-w-[200px]',
+  [COLUMN_KEYS.MARKET_SIZE]: 'min-w-[160px] text-right',
+  [COLUMN_KEYS.CAGR]: 'min-w-[120px] text-right',
+  [COLUMN_KEYS.EXISTING_BRAND]: 'min-w-[170px]',
+  [COLUMN_KEYS.EST_SALES]: 'min-w-[160px] text-right',
+  [COLUMN_KEYS.CHRONIC_ACUTE]: 'min-w-[120px]',
+};
+
+export default function MainTable({ rows }) {
+  const [tableQuery, setTableQuery] = useState('');
+  const [sortKey, setSortKey] = useState(COLUMN_KEYS.DATE);
+  const [sortDir, setSortDir] = useState('desc');
+
+  const onSort = (k) => {
+    if (sortKey === k) setSortDir((d) => (d === 'asc' ? 'desc' : 'asc'));
+    else {
+      setSortKey(k);
+      setSortDir(NUMERIC_COLS.has(k) || k === COLUMN_KEYS.DATE ? 'desc' : 'asc');
+    }
+  };
+
+  const visibleRows = useMemo(() => {
+    let r = rows;
+    const q = tableQuery.trim().toLowerCase();
+    if (q) {
+      r = r.filter((row) =>
+        COLUMN_ORDER.some((k) => String(row[k] ?? '').toLowerCase().includes(q))
+      );
+    }
+    const dir = sortDir === 'asc' ? 1 : -1;
+    const sorted = [...r].sort((a, b) => {
+      const av = a[sortKey];
+      const bv = b[sortKey];
+      if (sortKey === COLUMN_KEYS.DATE) {
+        return (new Date(av).getTime() - new Date(bv).getTime()) * dir;
+      }
+      if (NUMERIC_COLS.has(sortKey)) return ((Number(av) || 0) - (Number(bv) || 0)) * dir;
+      return String(av ?? '').localeCompare(String(bv ?? '')) * dir;
+    });
+    return sorted;
+  }, [rows, tableQuery, sortKey, sortDir]);
+
+  const renderCell = (row, col) => {
+    const v = row[col];
+    if (col === COLUMN_KEYS.LAUNCH_TYPE) {
+      return (
+        <span
+          className={`inline-flex items-center gap-1 px-2 py-0.5 text-[11px] font-semibold rounded-full border ${
+            LAUNCH_TYPE_STYLES[v] || 'bg-ink-100 text-ink-700 border-ink-100'
+          }`}
+        >
+          {v}
+        </span>
+      );
+    }
+    if (col === COLUMN_KEYS.CHRONIC_ACUTE) {
+      return (
+        <span
+          className={`inline-flex items-center gap-1 px-2 py-0.5 text-[11px] font-semibold rounded-full border ${
+            CHRONIC_STYLES[v] || 'bg-ink-100 text-ink-700 border-ink-100'
+          }`}
+        >
+          {v}
+        </span>
+      );
+    }
+    if (col === COLUMN_KEYS.MARKET_SIZE || col === COLUMN_KEYS.EST_SALES) {
+      return <span className="tabular-nums font-medium text-ink-900">{fmtINRPlain(v)}</span>;
+    }
+    if (col === COLUMN_KEYS.CAGR) {
+      const n = Number(v);
+      const cls = isNaN(n)
+        ? 'text-ink-500'
+        : n >= 15
+          ? 'text-pharma-700'
+          : n >= 8
+            ? 'text-teal-accent'
+            : n >= 0
+              ? 'text-ink-700'
+              : 'text-amber-600';
+      return <span className={`tabular-nums font-semibold ${cls}`}>{fmtPct(v)}</span>;
+    }
+    if (col === COLUMN_KEYS.DATE) {
+      return <span className="tabular-nums text-ink-700">{fmtDate(v)}</span>;
+    }
+    if (col === COLUMN_KEYS.BRAND) {
+      return <span className="font-semibold text-ink-900">{v}</span>;
+    }
+    if (v === null || v === undefined || v === '') return <span className="text-ink-300">—</span>;
+    return <span className="text-ink-700">{v}</span>;
+  };
+
+  const exportCsv = () => {
+    const header = COLUMN_ORDER.join(',');
+    const escape = (val) => {
+      const s = String(val ?? '');
+      return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
+    };
+    const body = visibleRows.map((r) => COLUMN_ORDER.map((k) => escape(r[k])).join(',')).join('\n');
+    const blob = new Blob([header + '\n' + body], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'drug_launch_tracker.csv';
+    a.click();
+    URL.revokeObjectURL(url);
+  };
+
+  return (
+    <div className="bg-white rounded-2xl border border-ink-100 shadow-card overflow-hidden">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 px-5 py-4 border-b border-ink-100">
+        <div className="flex items-center gap-2">
+          <div className="w-7 h-7 rounded-lg bg-pharma-50 flex items-center justify-center">
+            <TableIcon className="w-4 h-4 text-pharma-600" />
+          </div>
+          <div>
+            <h3 className="text-sm font-semibold text-ink-900">Drug Launch Tracker — Core Table</h3>
+            <p className="text-[11px] text-ink-500">
+              Single source of truth · {visibleRows.length} row{visibleRows.length === 1 ? '' : 's'}
+            </p>
+          </div>
+        </div>
+        <div className="flex items-center gap-2">
+          <div className="relative">
+            <Search className="w-4 h-4 text-ink-500 absolute left-2.5 top-1/2 -translate-y-1/2" />
+            <input
+              value={tableQuery}
+              onChange={(e) => setTableQuery(e.target.value)}
+              placeholder="Search within table…"
+              className="pl-8 pr-3 py-2 text-sm bg-white border border-ink-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-pharma-300 focus:border-pharma-400 w-64"
+            />
+          </div>
+          <button
+            onClick={exportCsv}
+            className="inline-flex items-center gap-1.5 text-xs font-medium text-pharma-700 bg-pharma-50 hover:bg-pharma-100 border border-pharma-200 px-3 py-2 rounded-lg transition"
+          >
+            <Download className="w-3.5 h-3.5" />
+            Export CSV
+          </button>
+        </div>
+      </div>
+
+      <div className="max-h-[640px] overflow-auto scrollbar-thin">
+        <table className="min-w-full text-sm border-separate border-spacing-0">
+          <thead className="sticky top-0 z-10 bg-gradient-to-b from-pharma-50 to-white table-sticky-shadow">
+            <tr>
+              {COLUMN_ORDER.map((col) => {
+                const isSorted = sortKey === col;
+                const Icon = isSorted ? (sortDir === 'asc' ? ArrowUp : ArrowDown) : ArrowUpDown;
+                return (
+                  <th
+                    key={col}
+                    className={`text-left text-[11px] font-semibold uppercase tracking-wider text-ink-700 px-4 py-3 border-b border-pharma-100 ${
+                      WIDTH_HINT[col] || ''
+                    }`}
+                  >
+                    <button
+                      onClick={() => onSort(col)}
+                      className={`inline-flex items-center gap-1 hover:text-pharma-700 transition ${
+                        NUMERIC_COLS.has(col) ? 'justify-end w-full' : ''
+                      }`}
+                    >
+                      <span>{col}</span>
+                      <Icon className={`w-3 h-3 ${isSorted ? 'text-pharma-600' : 'text-ink-300'}`} />
+                    </button>
+                  </th>
+                );
+              })}
+            </tr>
+          </thead>
+          <tbody>
+            {visibleRows.map((r, i) => (
+              <tr
+                key={`${r[COLUMN_KEYS.BRAND]}-${i}`}
+                className="group hover:bg-pharma-50/40 transition-colors"
+              >
+                {COLUMN_ORDER.map((col) => (
+                  <td
+                    key={col}
+                    className={`px-4 py-3 align-middle border-b border-ink-100/70 ${
+                      WIDTH_HINT[col] || ''
+                    }`}
+                  >
+                    {renderCell(r, col)}
+                  </td>
+                ))}
+              </tr>
+            ))}
+            {visibleRows.length === 0 && (
+              <tr>
+                <td
+                  colSpan={COLUMN_ORDER.length}
+                  className="text-center text-sm text-ink-500 py-12"
+                >
+                  No launches match the current filters.
+                </td>
+              </tr>
+            )}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
