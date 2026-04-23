@@ -66,23 +66,27 @@ function LeaderList({ items, right }) {
 }
 
 export default function InsightWidgets({ rows }) {
-  const byMarket = [...rows]
+  const hasNum = (v) => v !== null && v !== undefined && !isNaN(Number(v));
+
+  const byMarket = rows
+    .filter((r) => hasNum(r[COLUMN_KEYS.MARKET_SIZE]))
     .sort(
-      (a, b) =>
-        (Number(b[COLUMN_KEYS.MARKET_SIZE]) || 0) - (Number(a[COLUMN_KEYS.MARKET_SIZE]) || 0)
+      (a, b) => Number(b[COLUMN_KEYS.MARKET_SIZE]) - Number(a[COLUMN_KEYS.MARKET_SIZE])
     )
     .slice(0, 5)
-    .map((r) => ({ name: r[COLUMN_KEYS.BRAND], value: Number(r[COLUMN_KEYS.MARKET_SIZE]) || 0 }));
+    .map((r) => ({ name: r[COLUMN_KEYS.BRAND], value: Number(r[COLUMN_KEYS.MARKET_SIZE]) }));
 
-  const byCagr = [...rows]
-    .sort((a, b) => (Number(b[COLUMN_KEYS.CAGR]) || 0) - (Number(a[COLUMN_KEYS.CAGR]) || 0))
+  const byCagr = rows
+    .filter((r) => hasNum(r[COLUMN_KEYS.CAGR]))
+    .sort((a, b) => Number(b[COLUMN_KEYS.CAGR]) - Number(a[COLUMN_KEYS.CAGR]))
     .slice(0, 5)
-    .map((r) => ({ name: r[COLUMN_KEYS.BRAND], value: Number(r[COLUMN_KEYS.CAGR]) || 0 }));
+    .map((r) => ({ name: r[COLUMN_KEYS.BRAND], value: Number(r[COLUMN_KEYS.CAGR]) }));
 
-  const bySales = [...rows]
-    .sort((a, b) => (Number(b[COLUMN_KEYS.EST_SALES]) || 0) - (Number(a[COLUMN_KEYS.EST_SALES]) || 0))
+  const bySales = rows
+    .filter((r) => hasNum(r[COLUMN_KEYS.EST_SALES]))
+    .sort((a, b) => Number(b[COLUMN_KEYS.EST_SALES]) - Number(a[COLUMN_KEYS.EST_SALES]))
     .slice(0, 5)
-    .map((r) => ({ name: r[COLUMN_KEYS.BRAND], value: Number(r[COLUMN_KEYS.EST_SALES]) || 0 }));
+    .map((r) => ({ name: r[COLUMN_KEYS.BRAND], value: Number(r[COLUMN_KEYS.EST_SALES]) }));
 
   const buyers = countBy(rows, COLUMN_KEYS.BUYER).sort((a, b) => b.value - a.value);
   const topBuyer = buyers[0];

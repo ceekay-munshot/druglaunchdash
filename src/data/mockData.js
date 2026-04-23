@@ -105,12 +105,25 @@ export const LAUNCH_TRACKER_ROWS = [
   row(['Ryaltris', 'Own Launched', '2021-04-09', '—', 'Glenmark', 'NCE Launch', 'Olopatadine + Mometasone', 'Respiratory', 'Allergic Rhinitis', 510, 13.2, 'Nasonex', 36, 'Chronic']),
   row(['Ichnos Sciences JV', 'In-licensed', '2023-01-18', 'Ichnos Sciences', 'Glenmark', 'In-license (India)', 'ISB 830', 'Immunology', 'Atopic Dermatitis', 160, 21.0, '—', 4, 'Chronic']),
 
-  // Mankind Pharma
-  row(['Bharat Serums Brands', 'Acquired', '2024-07-25', 'Bharat Serums & Vaccines', 'Mankind Pharma', 'Company Acquisition', 'Various', "Women's Health / Critical Care", 'Multi-indication', 2200, 14.8, 'Various', 210, 'Chronic']),
-  row(['Unwanted Kit', 'Own Launched', '2010-03-12', '—', 'Mankind Pharma', 'NCE Launch', 'Mifepristone + Misoprostol', "Women's Health", 'Medical Termination of Pregnancy', 240, 5.0, '—', 52, 'Acute']),
-  row(['Manforce Staylong', 'Own Launched', '2015-09-21', '—', 'Mankind Pharma', 'Line Extension', 'Lidocaine', 'Consumer Health', "Men's Wellness", 380, 9.5, 'Manforce', 48, 'Acute']),
-  row(['Nurokind Gold', 'Own Launched', '2018-06-14', '—', 'Mankind Pharma', 'Line Extension', 'Methylcobalamin + ALA + Folic Acid', 'Neurology / CNS', 'Neuropathic Pain', 620, 11.0, 'Nurokind', 72, 'Chronic']),
-  row(['Panderm Plus', 'Own Launched', '2016-02-02', '—', 'Mankind Pharma', 'Line Extension', 'Clobetasol + Ofloxacin + Miconazole', 'Dermatology', 'Dermatophytosis', 540, 8.2, 'Panderm', 58, 'Acute']),
+  // Mankind Pharma — LIVE DATA (web-sourced from press releases / company filings)
+  // Financial columns (Market Size ₹Cr, CAGR %, Est. Annual Sales ₹Cr) are paywalled
+  // (IQVIA / PharmaTrac / AIOCD AWACS) and are intentionally left null. Table will
+  // show "—" for these fields; KPIs auto-skip nulls in their aggregations.
+  // Sources cited inline above each row.
+  // mankindpharma.com press release "Mankind Pharma Completes Landmark Acquisition of BSV"
+  row(['Bharat Serums & Vaccines', 'Acquired', '2024-10-23', 'Advent International', 'Mankind Pharma', 'Company Acquisition', 'Various Biologics / Recombinants', "Women's Health / Critical Care", 'Fertility, Critical Care, Immunoglobulins', null, null, 'Various', null, 'Chronic']),
+  // mankindpharma.com / Business Standard "Mankind Pharma inks pact with Innovent for immunotherapy drug" (26-Dec-2024)
+  row(['Sintilimab', 'In-licensed', '2024-12-26', 'Innovent Biologics', 'Mankind Pharma', 'In-license (India)', 'Sintilimab', 'Oncology', 'Solid Tumours (PD-1 immunotherapy)', null, null, '—', null, 'Chronic']),
+  // Business Standard "Mankind Pharma signs non-exclusive patent license agreement with Takeda" (16-Jul-2024)
+  row(['Vonoprazan (Takeda licence)', 'In-licensed', '2024-07-16', 'Takeda', 'Mankind Pharma', 'In-license (India)', 'Vonoprazan', 'Gastroenterology', 'GERD / Erosive Esophagitis', null, null, '—', null, 'Chronic']),
+  // astrazeneca.in press release / Business Standard (11-Mar-2024) — 5-yr exclusive distribution
+  row(['Symbicort (India distribution)', 'In-licensed', '2024-03-11', 'AstraZeneca', 'Mankind Pharma', 'Co-marketing', 'Budesonide + Formoterol', 'Respiratory', 'Asthma / COPD', null, null, 'Foracort', null, 'Chronic']),
+  // GlobeNewswire / Business Standard "Mankind Pharma inks licencing pact with Actimed for cachexia" (21-Nov-2025)
+  row(['ACM-001.1 (S-pindolol)', 'In-licensed', '2025-11-21', 'Actimed Therapeutics', 'Mankind Pharma', 'In-license (India)', 'S-pindolol benzoate', 'Oncology Support', 'Cancer Cachexia', null, null, '—', null, 'Chronic']),
+  // Business Standard "Mankind Pharma shares gain 3% on acquiring Rivotril brand rights from Roche" (18-Mar-2026)
+  row(['Rivotril', 'Acquired', '2026-03-18', 'Roche', 'Mankind Pharma', 'Brand Acquisition', 'Clonazepam', 'Neurology / CNS', 'Epilepsy / Panic Disorder', null, null, '—', null, 'Chronic']),
+  // Business Today / Panacea Biotec disclosure — definitive agreement Feb 2022; closing Mar-2022
+  row(['Panacea Biotec Domestic Brands', 'Acquired', '2022-03-01', 'Panacea Biotec', 'Mankind Pharma', 'Brand Portfolio Acquisition', 'Various (Lifestyle / Oncology / Transplant)', 'Multi-therapy', 'Multi-indication', null, null, 'Various', null, 'Chronic']),
 
   // Alkem
   row(['Enzar', 'Own Launched', '2022-04-19', '—', 'Alkem', 'NCE Launch', 'Bempedoic Acid', 'Cardiology', 'Dyslipidemia', 210, 19.0, '—', 9, 'Chronic']),

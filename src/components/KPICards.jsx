@@ -47,10 +47,14 @@ export default function KPICards({ rows }) {
   const ownLaunched = rows.filter((r) => r[COLUMN_KEYS.LAUNCH_TYPE] === 'Own Launched').length;
   const inLicensed = rows.filter((r) => r[COLUMN_KEYS.LAUNCH_TYPE] === 'In-licensed').length;
 
-  const totalMarket = sum(rows.map((r) => r[COLUMN_KEYS.MARKET_SIZE]));
-  const totalSales = sum(rows.map((r) => r[COLUMN_KEYS.EST_SALES]));
-  const avgCAGR = avg(rows.map((r) => r[COLUMN_KEYS.CAGR]));
-  const medCAGR = median(rows.map((r) => r[COLUMN_KEYS.CAGR]));
+  const isNum = (v) => v !== null && v !== undefined && !isNaN(Number(v));
+  const marketVals = rows.map((r) => r[COLUMN_KEYS.MARKET_SIZE]).filter(isNum).map(Number);
+  const salesVals = rows.map((r) => r[COLUMN_KEYS.EST_SALES]).filter(isNum).map(Number);
+  const cagrVals = rows.map((r) => r[COLUMN_KEYS.CAGR]).filter(isNum).map(Number);
+  const totalMarket = marketVals.length ? sum(marketVals) : null;
+  const totalSales = salesVals.length ? sum(salesVals) : null;
+  const avgCAGR = cagrVals.length ? avg(cagrVals) : null;
+  const medCAGR = cagrVals.length ? median(cagrVals) : null;
 
   const chronic = rows.filter((r) => r[COLUMN_KEYS.CHRONIC_ACUTE] === 'Chronic').length;
   const acute = rows.filter((r) => r[COLUMN_KEYS.CHRONIC_ACUTE] === 'Acute').length;
@@ -93,14 +97,24 @@ export default function KPICards({ rows }) {
         icon={IndianRupee}
         label="Total India Market"
         value={fmtINR(totalMarket)}
-        sub="Addressable across brands"
+        sub={
+          marketVals.length
+            ? `${marketVals.length} of ${total} brands · public data`
+            : 'Not in public sources'
+        }
         accent="green"
       />
       <KpiCard
         icon={TrendingUp}
         label="Avg / Median CAGR"
-        value={`${fmtPct(avgCAGR)} · ${fmtPct(medCAGR)}`}
-        sub="Market CAGR across rows"
+        value={
+          cagrVals.length ? `${fmtPct(avgCAGR)} · ${fmtPct(medCAGR)}` : '—'
+        }
+        sub={
+          cagrVals.length
+            ? `${cagrVals.length} of ${total} brands · public data`
+            : 'Not in public sources'
+        }
         accent="teal"
         tint="bg-teal-50"
       />
@@ -108,7 +122,11 @@ export default function KPICards({ rows }) {
         icon={Coins}
         label="Est. Annual Sales"
         value={fmtINR(totalSales)}
-        sub="Summed across selected rows"
+        sub={
+          salesVals.length
+            ? `${salesVals.length} of ${total} brands · public data`
+            : 'IQVIA-class data needed'
+        }
         accent="amber"
         tint="bg-amber-50"
       />
