@@ -16,13 +16,41 @@ const INITIAL_FILTERS = {
   dealType: '__ALL__',
 };
 
+// Returns the earliest date (start of quarter) that should be included for a
+// preset of "N calendar quarters inclusive of the current quarter". 3Q is the
+// default: ~Q(curr) + 2 prior quarters.
+function cutoffForQuarters(n) {
+  if (n === null || n === undefined) return null;
+  const now = new Date();
+  const qStartMonth = Math.floor(now.getMonth() / 3) * 3;
+  return new Date(now.getFullYear(), qStartMonth - 3 * (n - 1), 1);
+}
+
+const TIMELINE_PRESETS = {
+  '3Q': { label: 'Last 3Q', quarters: 3 },
+  '6Q': { label: 'Last 6Q', quarters: 6 },
+  '2Y': { label: 'Last 2Y', quarters: 8 },
+  '5Y': { label: 'Last 5Y', quarters: 20 },
+  ALL: { label: 'All time', quarters: null },
+};
+
 export default function App() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCompany, setSelectedCompany] = useState('__ALL__');
   const [filters, setFilters] = useState(INITIAL_FILTERS);
+  const [timeline, setTimeline] = useState('3Q');
+
+  const timelineCutoff = useMemo(
+    () => cutoffForQuarters(TIMELINE_PRESETS[timeline]?.quarters),
+    [timeline]
+  );
 
   const filteredRows = useMemo(() => {
     return LAUNCH_TRACKER_ROWS.filter((r) => {
+      if (timelineCutoff) {
+        const d = new Date(r[COLUMN_KEYS.DATE]);
+        if (isNaN(d.getTime()) || d < timelineCutoff) return false;
+      }
       if (selectedCompany !== '__ALL__' && r[COLUMN_KEYS.BUYER] !== selectedCompany) return false;
       if (filters.therapy !== '__ALL__' && r[COLUMN_KEYS.THERAPY] !== filters.therapy) return false;
       if (filters.launchType !== '__ALL__' && r[COLUMN_KEYS.LAUNCH_TYPE] !== filters.launchType) return false;
@@ -49,9 +77,12 @@ export default function App() {
       }
       return true;
     });
-  }, [searchQuery, selectedCompany, filters]);
+  }, [searchQuery, selectedCompany, filters, timelineCutoff]);
 
-  const resetFilters = () => setFilters(INITIAL_FILTERS);
+  const resetFilters = () => {
+    setFilters(INITIAL_FILTERS);
+    setTimeline('3Q');
+  };
 
   const lastUpdated = new Date().toLocaleDateString('en-IN', {
     year: 'numeric',
@@ -78,6 +109,10 @@ export default function App() {
           filters={filters}
           setFilters={setFilters}
           onReset={resetFilters}
+          timeline={timeline}
+          setTimeline={setTimeline}
+          timelinePresets={TIMELINE_PRESETS}
+          timelineCutoff={timelineCutoff}
         />
 
         <section aria-label="KPI summary">

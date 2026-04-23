@@ -1,7 +1,15 @@
 import React from 'react';
-import { Filter, FlaskConical, Activity, TrendingUp, Briefcase, RotateCcw } from 'lucide-react';
+import {
+  Filter,
+  FlaskConical,
+  Activity,
+  TrendingUp,
+  Briefcase,
+  RotateCcw,
+  CalendarRange,
+} from 'lucide-react';
 import { COLUMN_KEYS } from '../data/mockData';
-import { uniqueValues } from '../utils/format';
+import { uniqueValues, fmtDate } from '../utils/format';
 
 const SelectChip = ({ icon: Icon, label, value, onChange, options }) => (
   <div className="relative">
@@ -32,7 +40,16 @@ const SelectChip = ({ icon: Icon, label, value, onChange, options }) => (
   </div>
 );
 
-export default function FilterBar({ rows, filters, setFilters, onReset }) {
+export default function FilterBar({
+  rows,
+  filters,
+  setFilters,
+  onReset,
+  timeline,
+  setTimeline,
+  timelinePresets,
+  timelineCutoff,
+}) {
   const therapies = uniqueValues(rows, COLUMN_KEYS.THERAPY);
   const launchTypes = uniqueValues(rows, COLUMN_KEYS.LAUNCH_TYPE);
   const buyers = uniqueValues(rows, COLUMN_KEYS.BUYER);
@@ -41,10 +58,44 @@ export default function FilterBar({ rows, filters, setFilters, onReset }) {
   const dealTypes = uniqueValues(rows, COLUMN_KEYS.DEAL_TYPE);
 
   const set = (k) => (v) => setFilters((prev) => ({ ...prev, [k]: v }));
-  const anyActive = Object.values(filters).some((v) => v && v !== '__ALL__');
+  const anyActive =
+    Object.values(filters).some((v) => v && v !== '__ALL__') || timeline !== '3Q';
 
   return (
     <div className="bg-white border border-ink-100 rounded-2xl shadow-card px-5 py-4">
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 pb-3 border-b border-ink-100 mb-3">
+        <div className="flex items-center gap-2">
+          <div className="w-7 h-7 rounded-lg bg-pharma-50 flex items-center justify-center">
+            <CalendarRange className="w-4 h-4 text-pharma-600" />
+          </div>
+          <h3 className="text-sm font-semibold text-ink-900">Timeline</h3>
+          <span className="text-xs text-ink-500">
+            {timelineCutoff
+              ? `Showing launches from ${fmtDate(timelineCutoff)} onwards`
+              : 'Showing all launches (no date filter)'}
+          </span>
+        </div>
+        <div className="flex flex-wrap items-center gap-1.5">
+          {timelinePresets &&
+            Object.entries(timelinePresets).map(([key, cfg]) => {
+              const active = timeline === key;
+              return (
+                <button
+                  key={key}
+                  onClick={() => setTimeline(key)}
+                  className={`text-xs font-semibold px-2.5 py-1.5 rounded-md border transition ${
+                    active
+                      ? 'bg-pharma-600 text-white border-pharma-600 shadow-sm'
+                      : 'bg-white text-ink-700 border-ink-100 hover:border-pharma-300 hover:text-pharma-700'
+                  }`}
+                >
+                  {cfg.label}
+                </button>
+              );
+            })}
+        </div>
+      </div>
+
       <div className="flex items-center justify-between mb-3">
         <div className="flex items-center gap-2">
           <div className="w-7 h-7 rounded-lg bg-pharma-50 flex items-center justify-center">
