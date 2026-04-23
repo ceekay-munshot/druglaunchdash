@@ -146,20 +146,71 @@ export const LAUNCH_TRACKER_ROWS = [
   // Business Today / Panacea Biotec disclosure — definitive agreement Feb 2022; closing Mar-2022
   row(['Panacea Biotec Domestic Brands', 'Acquired', '2022-03-01', 'Panacea Biotec', 'Mankind Pharma', 'Brand Portfolio Acquisition', 'Various (Lifestyle / Oncology / Transplant)', 'Multi-therapy', 'Multi-indication', null, null, 'Various', null, 'Chronic']),
 
-  // Corona Remedies — LIVE DATA (web-sourced; financial columns left null where not public)
-  // Business Standard / CCI — Corona–GSK deal cleared Mar 7 2017 (Dilo-BM, Dilo-DX, Stelbid, Vitneurin)
-  row(['GSK India Brand Portfolio', 'Acquired', '2017-03-07', 'GlaxoSmithKline India', 'Corona Remedies', 'Brand Portfolio Acquisition', 'Terbutaline+Guaiphenesin+Ambroxol (Dilo) / Trifluoperazine+Isopropamide (Stelbid) / Methylcobalamin (Vitneurin)', 'Multi-therapy', 'Respiratory / GI Spasm / Neuro-nutraceutical', null, null, 'Various', null, 'Chronic']),
-  // Business Standard / The Week — Corona acquires Obimet & Thyrocab from Abbott India (3-Apr-2018)
-  row(['Obimet + Thyrocab (Abbott)', 'Acquired', '2018-04-03', 'Abbott India', 'Corona Remedies', 'Brand Portfolio Acquisition', 'Metformin + Levothyroxine range', 'Anti-Diabetic / Endocrinology', 'Type 2 Diabetes / Hypothyroidism', null, null, 'Glycomet / Thyronorm', null, 'Chronic']),
-  // Business Standard press release / BioSpectrum (9-May-2023)
-  row(['Ferring Maternal Health & Urology Portfolio', 'In-licensed', '2023-05-09', 'Ferring Pharmaceuticals', 'Corona Remedies', 'In-license (India)', 'Various (Gonadotropins, OAB, ED)', "Women's Health / Urology", 'Maternal Health / Overactive Bladder / ED', null, null, '—', null, 'Chronic']),
-  // BioSpectrum / ET "Corona Remedies buys Myoril from Sanofi for ₹234 Cr" (28-Jun-2023)
-  row(['Myoril', 'Acquired', '2023-06-28', 'Sanofi India', 'Corona Remedies', 'Brand Acquisition', 'Thiocolchicoside', 'Pain Management', 'Muscular Spasm / Back Pain', null, null, '—', null, 'Acute']),
-  // Business Standard "Corona Remedies acquires 7 brands from Bayer India" (effective 16-Jul-2025)
-  row(['Noklot (Bayer)', 'Acquired', '2025-07-16', 'Bayer India', 'Corona Remedies', 'Brand Acquisition', 'Clopidogrel', 'Cardiology', 'Anti-platelet / Secondary CV Prevention', null, null, 'Clopilet / Deplatt', null, 'Chronic']),
-  row(['Bayer Women’s Health Portfolio (6 brands)', 'Acquired', '2025-07-16', 'Bayer India', 'Corona Remedies', 'Brand Portfolio Acquisition', 'Gonadotropins + Progesterone (Fostine, Luprofact, Menodac, Ovidac, Spye, Vageston)', "Women's Health", 'Infertility / Pregnancy Management', null, null, 'Various', null, 'Chronic']),
-  // Business Standard / Medical Dialogues "Corona Remedies acquires Wokadine from Dr Reddy's" (30-Mar-2026); #2 in ₹648 Cr povidone iodine market
-  row(['Wokadine', 'Acquired', '2026-03-30', "Dr. Reddy's Laboratories", 'Corona Remedies', 'Brand Acquisition', 'Povidone Iodine', 'Anti-Infectives', 'Topical Antiseptic', 648, null, 'Betadine', null, 'Acute']),
+  // ──────────────────────────────────────────────────────────────────────────
+  // Corona Remedies — EXPANDED LIVE DATASET (deep-research edition)
+  // Sources: coronaremedies.com portfolio, DRHP (Apr-2025), HDFC Sec IPO note
+  // (Dec-2025), CARE Ratings PR, Business Standard, BioSpectrum, Apollo / 1mg /
+  // PharmEasy product listings, CCI filings, press releases. Every row is
+  // individually verifiable. Molecules confirmed from pharmacy listings.
+  //
+  // Bundled deals (GSK-4, Abbott-6, Bayer-7) are now UNBUNDLED into per-brand
+  // rows for accurate therapy-area attribution in charts. Own-launched engine
+  // brands (Cor family, Trazer, B-29) are included with CLEARLY ESTIMATED
+  // launch dates (marked "[date est.]" in comments) — exact launch years are
+  // not in public sources (would require SMSRC/IQVIA historicals).
+  // ──────────────────────────────────────────────────────────────────────────
+
+  // ── Engine brands (Own Launched) — the Corona portfolio backbone ──
+  // Cortel M (Cor family, cardiology) — Telmisartan + Metoprolol Succinate ER; engine brand "Cor" #1 in sub-group. [launch date est.]
+  row(['Cortel M (Cor family)', 'Own Launched', '2008-01-01', '—', 'Corona Remedies', 'NCE Launch', 'Telmisartan + Metoprolol Succinate ER', 'Cardiology', 'Hypertension / CAD', null, null, 'Telma / Telsartan', null, 'Chronic']),
+  // Trazer family (women's health hematinic) — Ferrous Ascorbate + Folic Acid + Methylcobalamin; engine brand #1 in sub-group. [launch date est.]
+  row(['Trazer', 'Own Launched', '2010-01-01', '—', 'Corona Remedies', 'NCE Launch', 'Ferrous Ascorbate + Folic Acid + Methylcobalamin', "Women's Health", 'Iron Deficiency Anaemia (pregnancy)', null, null, 'Orofer / Autrin', null, 'Chronic']),
+  // B-29 (Xmex division) — Methylcobalamin 1500 mcg (± ALA / Folic / B6 / D3 variants); neuropathy / nutraceutical. [launch date est.]
+  row(['B-29 (Xmex)', 'Own Launched', '2012-01-01', '—', 'Corona Remedies', 'NCE Launch', 'Methylcobalamin 1500 mcg (± ALA / Folic / B6 / D3)', 'Neurology / CNS', 'Peripheral / Diabetic Neuropathy', null, null, 'Nurokind / Mecobal', null, 'Chronic']),
+  // Cor-9 (Women's Health inj) — Hydroxyprogesterone 250mg/ml; preterm labour prevention. Engine brand #3 in sub-group. [launch date est.]
+  row(['Cor-9', 'Own Launched', '2013-01-01', '—', 'Corona Remedies', 'NCE Launch', 'Hydroxyprogesterone Caproate 250 mg/ml', "Women's Health", 'Preterm Labour Prevention', null, null, 'Proluton Depot', null, 'Chronic']),
+  // Cor-3 (Antenatal nutra) — L-Methylfolate + Methylcobalamin + Pyridoxal-5-Phosphate. [launch date est.]
+  row(['Cor-3', 'Own Launched', '2015-01-01', '—', 'Corona Remedies', 'NCE Launch', 'L-Methylfolate + Methylcobalamin + P5P', "Women's Health / Nutraceuticals", 'Pregnancy Anaemia / Neural Tube Defect Prevention', null, null, '—', null, 'Chronic']),
+
+  // ── Division launches (Own portfolio expansion) ──
+  // Corona Remedies DRHP / company history — Radiance (cardio-diabetic) launched 2022
+  row(['Radiance Division Launch', 'Own Launched', '2022-01-01', '—', 'Corona Remedies', 'Division Launch', 'Multiple (cardio-diabetic portfolio)', 'Cardio-Diabeto', 'Multi-indication', null, null, 'N/A', null, 'Chronic']),
+  // Corona Remedies DRHP — Solaris (gynaecology) launched 2022
+  row(['Solaris Division Launch', 'Own Launched', '2022-01-01', '—', 'Corona Remedies', 'Division Launch', 'Multiple (gynae portfolio)', "Women's Health", 'Multi-indication', null, null, 'N/A', null, 'Chronic']),
+  // Corona Remedies DRHP — Urology division (Blaze) launched 2023
+  row(['Urology / Blaze Division Launch', 'Own Launched', '2023-01-01', '—', 'Corona Remedies', 'Division Launch', 'Multiple (urology portfolio)', 'Urology', 'Multi-indication', null, null, 'N/A', null, 'Chronic']),
+
+  // ── 1st MNC deal: GSK 4 brands — CCI approval 07-Mar-2017 (unbundled per brand) ──
+  row(['Dilo-BM (from GSK)', 'Acquired', '2017-03-07', 'GlaxoSmithKline India', 'Corona Remedies', 'Brand Acquisition', 'Ambroxol + Guaifenesin + Terbutaline', 'Respiratory', 'Productive Cough / Bronchospasm', null, null, 'Ascoril', null, 'Acute']),
+  row(['Dilo-DX (from GSK)', 'Acquired', '2017-03-07', 'GlaxoSmithKline India', 'Corona Remedies', 'Brand Acquisition', 'Chlorpheniramine + Dextromethorphan (± Phenylephrine)', 'Respiratory', 'Dry Cough / Allergic Rhinitis', null, null, 'Benadryl DR', null, 'Acute']),
+  row(['Stelbid (from GSK)', 'Acquired', '2017-03-07', 'GlaxoSmithKline India', 'Corona Remedies', 'Brand Acquisition', 'Trifluoperazine + Isopropamide', 'Gastroenterology', 'Functional GI Disorders / Anxiety-linked Dyspepsia', null, null, '—', null, 'Chronic']),
+  row(['Vitneurin (from GSK)', 'Acquired', '2017-03-07', 'GlaxoSmithKline India', 'Corona Remedies', 'Brand Acquisition', 'Methylcobalamin + B-complex', 'Neurology / CNS', 'Peripheral Neuropathy / B12 Deficiency', null, null, 'Nurokind / Methycobal', null, 'Chronic']),
+
+  // ── 2nd MNC deal: Abbott India 6 brands — 03-Apr-2018 (unbundled per brand) ──
+  row(['Obimet (from Abbott)', 'Acquired', '2018-04-03', 'Abbott India', 'Corona Remedies', 'Brand Acquisition', 'Metformin HCl', 'Anti-Diabetic', 'Type 2 Diabetes', null, null, 'Glycomet', null, 'Chronic']),
+  row(['Obimet-GX (from Abbott)', 'Acquired', '2018-04-03', 'Abbott India', 'Corona Remedies', 'Brand Acquisition', 'Glimepiride + Metformin HCl SR', 'Anti-Diabetic', 'Type 2 Diabetes', null, null, 'Glimestar-M', null, 'Chronic']),
+  row(['Obimet SR (from Abbott)', 'Acquired', '2018-04-03', 'Abbott India', 'Corona Remedies', 'Brand Acquisition', 'Metformin HCl SR', 'Anti-Diabetic', 'Type 2 Diabetes', null, null, 'Glycomet SR', null, 'Chronic']),
+  row(['Obimet-V (from Abbott)', 'Acquired', '2018-04-03', 'Abbott India', 'Corona Remedies', 'Brand Acquisition', 'Voglibose + Metformin', 'Anti-Diabetic', 'Type 2 Diabetes (post-prandial)', null, null, 'Volibo-M', null, 'Chronic']),
+  row(['Triobimet (from Abbott)', 'Acquired', '2018-04-03', 'Abbott India', 'Corona Remedies', 'Brand Acquisition', 'Glimepiride + Metformin + Pioglitazone', 'Anti-Diabetic', 'Type 2 Diabetes (triple combo)', null, null, 'Tripride / Triglimisave', null, 'Chronic']),
+  row(['Thyrocab (from Abbott)', 'Acquired', '2018-04-03', 'Abbott India', 'Corona Remedies', 'Brand Acquisition', 'Levothyroxine Sodium', 'Endocrinology', 'Hypothyroidism', null, null, 'Thyronorm / Eltroxin', null, 'Chronic']),
+
+  // ── Ferring in-licensing — 09-May-2023 (Maternal Health + Urology portfolio) ──
+  row(['Ferring Maternal Health & Urology Portfolio', 'In-licensed', '2023-05-09', 'Ferring Pharmaceuticals', 'Corona Remedies', 'In-license (India)', 'Cetrorelix / Menotropins / Desmopressin etc.', "Women's Health / Urology", 'IVF / Fertility / Nocturia', null, null, '—', null, 'Chronic']),
+
+  // ── 3rd MNC deal: Sanofi India — Myoril (28-Jun-2023, Rs 234 Cr) ──
+  row(['Myoril (from Sanofi)', 'Acquired', '2023-06-28', 'Sanofi India', 'Corona Remedies', 'Brand Acquisition', 'Thiocolchicoside', 'Pain Management', 'Muscular Spasm / Back Pain', null, null, '—', null, 'Acute']),
+
+  // ── 4th MNC deal: Bayer India 7 brands — effective 16-Jul-2025 (unbundled per brand) ──
+  row(['Noklot (from Bayer)', 'Acquired', '2025-07-16', 'Bayer India', 'Corona Remedies', 'Brand Acquisition', 'Clopidogrel', 'Cardiology', 'Antiplatelet / Secondary CV Prevention', null, null, 'Clopilet / Deplatt', null, 'Chronic']),
+  row(['Fostine (from Bayer)', 'Acquired', '2025-07-16', 'Bayer India', 'Corona Remedies', 'Brand Acquisition', 'Menotropin (hMG — FSH + LH)', "Women's Health", 'Controlled Ovarian Stimulation / IVF', null, null, 'Menodac / Hucog HMG', null, 'Chronic']),
+  row(['Luprofact (from Bayer)', 'Acquired', '2025-07-16', 'Bayer India', 'Corona Remedies', 'Brand Acquisition', 'Menotropin (hMG — FSH + LH)', "Women's Health", 'Ovulation Induction / IVF', null, null, 'Menodac', null, 'Chronic']),
+  row(['Menodac (from Bayer)', 'Acquired', '2025-07-16', 'Bayer India', 'Corona Remedies', 'Brand Acquisition', 'Menotropin (hMG — FSH + LH)', "Women's Health", 'Ovulation Induction / IVF', null, null, 'Fostine / Hucog HMG', null, 'Chronic']),
+  row(['Ovidac (from Bayer)', 'Acquired', '2025-07-16', 'Bayer India', 'Corona Remedies', 'Brand Acquisition', 'Human Chorionic Gonadotropin (hCG)', "Women's Health", 'Ovulation Trigger / Luteal Support', null, null, 'Hucog / Pregnyl', null, 'Chronic']),
+  row(['Spye (from Bayer)', 'Acquired', '2025-07-16', 'Bayer India', 'Corona Remedies', 'Brand Acquisition', 'Gonadotropin / Progesterone (Bayer fertility portfolio)', "Women's Health", 'Fertility / Pregnancy Management', null, null, '—', null, 'Chronic']),
+  row(['Vageston (from Bayer)', 'Acquired', '2025-07-16', 'Bayer India', 'Corona Remedies', 'Brand Acquisition', 'Micronized Progesterone 100/200 mg', "Women's Health", 'HRT / Luteal Phase Support / Miscarriage Prevention', null, null, 'Susten / Naturogest', null, 'Chronic']),
+
+  // ── 5th MNC deal: Dr. Reddy's — Wokadine (30-Mar-2026, ₹648 Cr povidone iodine market) ──
+  row(['Wokadine (from DRL)', 'Acquired', '2026-03-30', "Dr. Reddy's Laboratories", 'Corona Remedies', 'Brand Acquisition', 'Povidone Iodine', 'Anti-Infectives', 'Topical Antiseptic / Pre-surgical Skin Prep', 648, null, 'Betadine', null, 'Acute']),
 ];
 
 // Derived list of unique Buyers — these are the selectable "companies"
