@@ -16,7 +16,7 @@ export default function Header({
       <div className="max-w-[1600px] mx-auto px-6 py-5">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
           <div className="flex items-center gap-3">
-            <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-pharma-500 to-teal-accent flex items-center justify-center shadow-card">
+            <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-card">
               <Pill className="w-6 h-6 text-white" />
             </div>
             <div>
