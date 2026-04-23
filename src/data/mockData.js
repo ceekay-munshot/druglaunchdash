@@ -1,4 +1,14 @@
-// Mock dataset for Drug Launch Tracker – India Pharma
+// Drug Launch Tracker – India Pharma — LIVE CURATED DATASET
+// All rows below are web-sourced from company press releases, BSE/NSE
+// filings, and news coverage (Business Standard, BioSpectrum, Medical
+// Dialogues, etc.). Source URL/headline cited inline above each row.
+// Focus: recent (2025-2026) India drug launches, acquisitions, and
+// in-licensing deals. Older rows retained only where independently verified.
+//
+// Financial columns (Market Size ₹Cr, Market CAGR %, Est. Annual Sales ₹Cr)
+// are paywalled (IQVIA SMSRC / PharmaTrac / AIOCD AWACS) and intentionally
+// left null. Table shows "—"; KPIs auto-skip nulls in their aggregations.
+//
 // IMPORTANT: Column keys here MUST remain the EXACT Excel column labels.
 // All KPI cards, charts, and insights derive from this single source of truth.
 
@@ -55,57 +65,66 @@ const row = (vals) => ({
 });
 
 export const LAUNCH_TRACKER_ROWS = [
-  // Sun Pharma
-  row(['Istamet XCite', 'Own Launched', '2024-02-12', '—', 'Sun Pharma', 'NCE Launch', 'Sitagliptin + Metformin + Dapagliflozin', 'Anti-Diabetic', 'Type 2 Diabetes', 1820, 11.5, 'Istamet', 58, 'Chronic']),
-  row(['Volini Maxx', 'Own Launched', '2023-08-04', '—', 'Sun Pharma', 'Line Extension', 'Diclofenac + Linseed Oil', 'Pain Management', 'Musculoskeletal Pain', 960, 9.0, 'Volini', 42, 'Acute']),
-  row(['Revelol AM', 'Own Launched', '2023-04-22', '—', 'Sun Pharma', 'Line Extension', 'Metoprolol + Amlodipine', 'Cardiology', 'Hypertension', 1540, 8.2, 'Revelol', 34, 'Chronic']),
-  row(['Concizumab', 'In-licensed', '2024-06-18', 'Novo Nordisk', 'Sun Pharma', 'In-license (India)', 'Concizumab', 'Haematology', 'Haemophilia A/B', 420, 18.0, '—', 24, 'Chronic']),
-  row(['Absorica LD', 'Acquired', '2022-11-10', 'Cipher Pharma', 'Sun Pharma', 'Asset Acquisition', 'Isotretinoin', 'Dermatology', 'Severe Acne', 280, 7.4, 'Isotroin', 18, 'Chronic']),
-  row(['Winlevi', 'In-licensed', '2023-09-20', 'Cassiopea', 'Sun Pharma', 'In-license (India)', 'Clascoterone', 'Dermatology', 'Acne Vulgaris', 310, 14.5, '—', 22, 'Chronic']),
+  // ─── Sun Pharma — LIVE (press releases / sunpharma.com) ───
+  // sunpharma.com "Sun Pharma introduces Fexuclue (Fexuprazan) in India" (07-Apr-2025)
+  row(['Fexuclue', 'In-licensed', '2025-04-07', 'Daewoong Pharmaceutical', 'Sun Pharma', 'In-license (India)', 'Fexuprazan', 'Gastroenterology', 'Erosive Esophagitis / GERD', null, null, '—', null, 'Chronic']),
+  // sunpharma.com "Sun Pharma introduces its global innovative drug Ilumya in India" (01-Dec-2025)
+  row(['Ilumya', 'Own Launched', '2025-12-01', '—', 'Sun Pharma', 'NCE Launch', 'Tildrakizumab', 'Dermatology', 'Moderate-Severe Plaque Psoriasis', null, null, '—', null, 'Chronic']),
+  // BusinessToday (19-Mar-2026) — Sun Pharma launches generic semaglutide in India on patent-expiry Day 1
+  row(['Noveltreat / Sematrinity', 'Own Launched', '2026-03-20', '—', 'Sun Pharma', 'Generic Launch', 'Semaglutide', 'Anti-Diabetic', 'Type 2 Diabetes / Obesity', null, null, 'Rybelsus / Wegovy', null, 'Chronic']),
 
-  // Dr. Reddy's
-  row(["Sputnik V", 'In-licensed', '2021-05-14', 'RDIF (Gamaleya)', "Dr. Reddy's", 'In-license (India)', 'Gam-COVID-Vac', 'Vaccines', 'COVID-19', 1200, -5.0, '—', 8, 'Acute']),
-  row(['Senshio', 'In-licensed', '2024-01-30', 'Shionogi', "Dr. Reddy's", 'In-license (India)', 'Ospemifene', "Women's Health", 'Dyspareunia (PMP)', 210, 16.0, '—', 9, 'Chronic']),
-  row(['Toripalimab', 'In-licensed', '2023-10-05', 'Junshi Biosciences', "Dr. Reddy's", 'In-license (India)', 'Toripalimab', 'Oncology', 'NSCLC / Nasopharyngeal Ca', 620, 22.0, '—', 28, 'Chronic']),
-  row(['Wockhardt Brands', 'Acquired', '2020-06-25', 'Wockhardt', "Dr. Reddy's", 'Brand Portfolio Acquisition', 'Various', 'Multi-therapy', 'Multi-indication', 1800, 6.5, 'Various', 140, 'Chronic']),
-  row(['Rozucor Trio', 'Own Launched', '2023-12-14', '—', "Dr. Reddy's", 'Line Extension', 'Rosuvastatin + Aspirin + Clopidogrel', 'Cardiology', 'Secondary CV Prevention', 980, 10.5, 'Rozucor', 36, 'Chronic']),
-  row(['Remdac', 'Own Launched', '2021-08-11', '—', "Dr. Reddy's", 'NCE Launch', 'Remdesivir', 'Anti-Infectives', 'COVID-19', 540, -3.0, 'Cipremi', 15, 'Acute']),
+  // ─── Dr. Reddy's — LIVE (press releases / drreddys.com) ───
+  // Business Standard "Dr Reddy's launches Tegoprazan in India for acid peptic diseases" (16-Sep-2025)
+  row(['Tegoprazan', 'In-licensed', '2025-09-16', 'HK inno.N (Korea)', "Dr. Reddy's", 'In-license (India)', 'Tegoprazan', 'Gastroenterology', 'GERD / Erosive Esophagitis / Gastric Ulcers', null, null, '—', null, 'Chronic']),
+  // drreddys.com / Stock Titan (Mar 2026) — India launch post Delhi HC nod; export since late 2025
+  row(['Obeda', 'Own Launched', '2026-03-20', '—', "Dr. Reddy's", 'Generic Launch', 'Semaglutide', 'Anti-Diabetic', 'Type 2 Diabetes / Weight Management', null, null, 'Rybelsus / Ozempic', null, 'Chronic']),
 
-  // Cipla
-  row(['Cipremi', 'Own Launched', '2020-07-20', '—', 'Cipla', 'NCE Launch', 'Remdesivir', 'Anti-Infectives', 'COVID-19', 540, -3.0, 'Remdac', 21, 'Acute']),
-  row(['Ciplox Eye', 'Own Launched', '2022-03-04', '—', 'Cipla', 'Line Extension', 'Ciprofloxacin', 'Ophthalmology', 'Bacterial Conjunctivitis', 230, 7.8, 'Ciplox', 11, 'Acute']),
-  row(['Foracort NEXThaler', 'Own Launched', '2023-05-16', '—', 'Cipla', 'Device Launch', 'Formoterol + Budesonide', 'Respiratory', 'Asthma / COPD', 1650, 11.2, 'Foracort', 72, 'Chronic']),
-  row(['Actor Pharma Brands', 'Acquired', '2022-09-01', 'Actor Pharma', 'Cipla', 'Company Acquisition', 'Various OTC', 'Consumer Health', 'Multi-indication', 420, 13.0, 'Various', 38, 'Acute']),
-  row(['Nocdurna', 'In-licensed', '2024-03-22', 'Ferring', 'Cipla', 'In-license (India)', 'Desmopressin', 'Urology', 'Nocturia', 160, 17.5, '—', 7, 'Chronic']),
-  row(['Ivabrad', 'In-licensed', '2021-12-02', 'Servier', 'Cipla', 'In-license (India)', 'Ivabradine', 'Cardiology', 'Chronic Heart Failure', 380, 12.4, 'Ivabid', 19, 'Chronic']),
+  // ─── Cipla — LIVE (cipla.com press releases) ───
+  // cipla.com "Cipla Launches India's Only Inhaled Insulin, Afrezza" (22-Dec-2025)
+  row(['Afrezza', 'In-licensed', '2025-12-22', 'MannKind Corporation', 'Cipla', 'In-license (India)', 'Insulin Human (inhaled)', 'Anti-Diabetic', 'Type 1 / Type 2 Diabetes', null, null, 'Huminsulin', null, 'Chronic']),
 
-  // Lupin
-  row(['Ondero', 'In-licensed', '2022-07-18', 'Boehringer Ingelheim', 'Lupin', 'Co-marketing', 'Linagliptin', 'Anti-Diabetic', 'Type 2 Diabetes', 1480, 10.8, 'Trajenta', 44, 'Chronic']),
-  row(['Ajaduo', 'In-licensed', '2023-02-09', 'Boehringer Ingelheim', 'Lupin', 'Co-marketing', 'Empagliflozin + Linagliptin', 'Anti-Diabetic', 'Type 2 Diabetes', 720, 19.5, '—', 32, 'Chronic']),
-  row(['Gavis Brands', 'Acquired', '2015-07-23', 'Gavis Pharma', 'Lupin', 'Company Acquisition', 'Various Generics', 'Multi-therapy', 'Multi-indication', 1100, 5.5, 'Various', 95, 'Chronic']),
-  row(['Namzaric', 'In-licensed', '2024-04-11', 'Allergan', 'Lupin', 'In-license (India)', 'Memantine + Donepezil', 'Neurology / CNS', "Alzheimer's Disease", 290, 15.0, 'Admenta', 12, 'Chronic']),
-  row(['Huminsulin R', 'Own Launched', '2022-10-05', '—', 'Lupin', 'NCE Launch', 'Human Insulin', 'Anti-Diabetic', 'Type 1 / Type 2 Diabetes', 860, 8.4, 'Huminsulin', 41, 'Chronic']),
+  // ─── Lupin — LIVE (lupin.com press releases) ───
+  // lupin.com "Lupin and Zydus Sign Licensing Agreement for Co-marketing Innovative Semaglutide Injection in India" (17-Mar-2026)
+  row(['Semanext / Livarise', 'In-licensed', '2026-03-17', 'Zydus Lifesciences', 'Lupin', 'Co-marketing', 'Semaglutide (innovative pen)', 'Anti-Diabetic', 'Type 2 Diabetes / Obesity', null, null, 'Semaglyn', null, 'Chronic']),
 
-  // Zydus Lifesciences
-  row(['Lipaglyn', 'Own Launched', '2013-09-05', '—', 'Zydus Lifesciences', 'NCE Launch', 'Saroglitazar', 'Anti-Diabetic', 'Diabetic Dyslipidemia / NASH', 510, 14.2, '—', 66, 'Chronic']),
-  row(['Ujvira', 'Own Launched', '2021-11-12', '—', 'Zydus Lifesciences', 'Biosimilar Launch', 'Trastuzumab Emtansine', 'Oncology', 'HER2+ Breast Cancer', 420, 20.0, 'Kadcyla', 29, 'Chronic']),
-  row(['Sentynl Brands', 'Acquired', '2017-01-17', 'Sentynl Therapeutics', 'Zydus Lifesciences', 'Company Acquisition', 'Various Pain', 'Pain Management', 'Multi-indication', 540, 6.2, 'Various', 38, 'Acute']),
-  row(['Vynfinity', 'In-licensed', '2023-07-14', 'Agenus', 'Zydus Lifesciences', 'In-license (India)', 'Balstilimab', 'Oncology', 'Cervical Cancer', 180, 23.5, '—', 6, 'Chronic']),
-  row(['Exemptia', 'Own Launched', '2014-12-10', '—', 'Zydus Lifesciences', 'Biosimilar Launch', 'Adalimumab', 'Immunology', 'Rheumatoid Arthritis / Psoriasis', 620, 13.5, 'Humira', 54, 'Chronic']),
+  // ─── Zydus Lifesciences — LIVE (zyduslife.com press releases) ───
+  // zyduslife.com "Zydus launches world's first biosimilar of Nivolumab Tishtha in India" (22-Jan-2026)
+  row(['Tishtha', 'Own Launched', '2026-01-22', '—', 'Zydus Lifesciences', 'Biosimilar Launch', 'Nivolumab', 'Oncology', 'NSCLC / Melanoma / RCC (PD-1)', null, null, 'Opdyta / Nivolutab', null, 'Chronic']),
+  // scanx.trade "Zydus launches India's first indigenous Aflibercept biosimilar ANYRA" (19-Feb-2026)
+  row(['ANYRA', 'Own Launched', '2026-02-19', '—', 'Zydus Lifesciences', 'Biosimilar Launch', 'Aflibercept', 'Ophthalmology', 'Wet AMD / Diabetic Macular Edema', null, null, 'Eylea', null, 'Chronic']),
+  // Zydus Lifesciences press release — Semaglutide launch on patent-expiry Day 1 (25-Feb-2026)
+  row(['Semaglyn / Mashema / Alterme', 'Own Launched', '2026-02-25', '—', 'Zydus Lifesciences', 'Generic Launch', 'Semaglutide (reusable pen)', 'Anti-Diabetic', 'Type 2 Diabetes / Obesity', null, null, 'Rybelsus / Ozempic', null, 'Chronic']),
 
-  // Torrent Pharma
-  row(['Curatio Brands', 'Acquired', '2022-11-08', 'Curatio Healthcare', 'Torrent Pharma', 'Company Acquisition', 'Various Derma', 'Dermatology', 'Multi-indication', 520, 12.4, 'Various', 58, 'Chronic']),
-  row(['Dahlia', 'Acquired', '2021-06-30', 'Elder Pharma', 'Torrent Pharma', 'Brand Acquisition', 'Drospirenone + Ethinyl Estradiol', "Women's Health", 'Contraception', 180, 8.8, '—', 14, 'Chronic']),
-  row(['Shelcal XT Forte', 'Own Launched', '2023-03-15', '—', 'Torrent Pharma', 'Line Extension', 'Calcium + Vit D3 + K2-7', 'Nutraceuticals', 'Osteoporosis / Bone Health', 980, 10.0, 'Shelcal', 62, 'Chronic']),
-  row(['Unichem Brands (India)', 'Acquired', '2017-11-29', 'Unichem Laboratories', 'Torrent Pharma', 'Brand Portfolio Acquisition', 'Various', 'Multi-therapy', 'Multi-indication', 1260, 7.2, 'Various', 120, 'Chronic']),
+  // ─── Torrent Pharma — LIVE (scanx.trade / Medical Dialogues) ───
+  // Torrent is first Indian company to launch ORAL semaglutide post-patent-expiry (Mar-2026)
+  row(['Sembolic', 'Own Launched', '2026-03-20', '—', 'Torrent Pharma', 'Generic Launch', 'Semaglutide (oral)', 'Anti-Diabetic', 'Type 2 Diabetes', null, null, 'Rybelsus', null, 'Chronic']),
+  row(['Semalix', 'Own Launched', '2026-03-20', '—', 'Torrent Pharma', 'Generic Launch', 'Semaglutide (injectable)', 'Anti-Diabetic', 'Type 2 Diabetes / Obesity', null, null, 'Ozempic', null, 'Chronic']),
 
-  // Glenmark
-  row(['Remogliflozin', 'Own Launched', '2019-05-28', '—', 'Glenmark', 'NCE Launch', 'Remogliflozin', 'Anti-Diabetic', 'Type 2 Diabetes', 740, 17.0, '—', 48, 'Chronic']),
-  row(['Akynzeo', 'In-licensed', '2022-08-22', 'Helsinn', 'Glenmark', 'In-license (India)', 'Netupitant + Palonosetron', 'Oncology Support', 'CINV', 220, 14.0, '—', 11, 'Acute']),
-  row(['Ryaltris', 'Own Launched', '2021-04-09', '—', 'Glenmark', 'NCE Launch', 'Olopatadine + Mometasone', 'Respiratory', 'Allergic Rhinitis', 510, 13.2, 'Nasonex', 36, 'Chronic']),
-  row(['Ichnos Sciences JV', 'In-licensed', '2023-01-18', 'Ichnos Sciences', 'Glenmark', 'In-license (India)', 'ISB 830', 'Immunology', 'Atopic Dermatitis', 160, 21.0, '—', 4, 'Chronic']),
+  // ─── Glenmark — LIVE (glenmarkpharma.com press releases) ───
+  // Business Standard "Glenmark launches Empagliflozin for diabetes in India under Glempa brand" (12-Mar-2025)
+  row(['Glempa + Glempa-L + Glempa-M', 'Own Launched', '2025-03-12', '—', 'Glenmark', 'Generic Launch', 'Empagliflozin (± Linagliptin / Metformin)', 'Anti-Diabetic', 'Type 2 Diabetes', null, null, 'Jardiance', null, 'Chronic']),
+  // Business Standard "Glenmark Pharma launches GLIPIQ (semaglutide) in India" (21-Mar-2026)
+  row(['GLIPIQ', 'Own Launched', '2026-03-21', '—', 'Glenmark', 'Generic Launch', 'Semaglutide', 'Anti-Diabetic', 'Type 2 Diabetes / Obesity', null, null, 'Rybelsus / Ozempic', null, 'Chronic']),
 
-  // Mankind Pharma — LIVE DATA (web-sourced from press releases / company filings)
+  // ─── Alkem Laboratories — LIVE (BSE filings / bseindia.com) ───
+  // Business Standard "Alkem launches pertuzumab biosimilar for breast cancer in India" (22-Sep-2025)
+  row(['Pertuza', 'Own Launched', '2025-09-22', '—', 'Alkem', 'Biosimilar Launch', 'Pertuzumab', 'Oncology', 'HER2+ Breast Cancer', null, null, 'Perjeta', null, 'Chronic']),
+  // BSE filing / scanx "Alkem Laboratories Launches Semaglutide Injection" (21-Mar-2026) — brands Semasize / Obesema / Hepaglide
+  row(['Semasize / Obesema / Hepaglide', 'Own Launched', '2026-03-21', '—', 'Alkem', 'Generic Launch', 'Semaglutide', 'Anti-Diabetic', 'Type 2 Diabetes / Obesity', null, null, 'Rybelsus / Ozempic', null, 'Chronic']),
+
+  // ─── Intas Pharmaceuticals — LIVE (Bio-Thera / press releases) ───
+  // PRNewswire / BioSpace "Bio-Thera expands partnership with Intas for BAT2506 Golimumab biosimilar in India" (23-Mar-2026)
+  row(['BAT2506 (Golimumab biosimilar)', 'In-licensed', '2026-03-23', 'Bio-Thera Solutions', 'Intas', 'In-license (India)', 'Golimumab', 'Immunology', 'Psoriatic Arthritis / Ankylosing Spondylitis / UC', null, null, 'Simponi', null, 'Chronic']),
+
+  // ─── Aurobindo Pharma — LIVE (BSE filings) ───
+  // Business Standard / Pharmatutor "Aurobindo Pharma arm acquires Khandelwal Labs non-oncology business for Rs 325 Cr" (effective 01-Jan-2026)
+  row(['Khandelwal Non-Oncology Brands', 'Acquired', '2026-01-01', 'Khandelwal Laboratories', 'Aurobindo', 'Brand Portfolio Acquisition', 'Various (23 brands / 67 SKUs)', 'Multi-therapy', 'Multi-indication (non-oncology)', null, null, 'Various', null, 'Chronic']),
+
+  // ─── Abbott India — LIVE (abbott.in press releases) ───
+  // abbott.in "Abbott and MSD Announce Strategic Partnership to Distribute Sitagliptin in India" (18-Jun-2025)
+  row(['Januvia / Janumet / Janumet XR (MSD distribution)', 'In-licensed', '2025-06-18', 'MSD Pharmaceuticals', 'Abbott India', 'Co-marketing', 'Sitagliptin (± Metformin)', 'Anti-Diabetic', 'Type 2 Diabetes', null, null, 'Istavel / Istamet', null, 'Chronic']),
+
+  // ─── Mankind Pharma — LIVE DATA (web-sourced from press releases / company filings) ───
   // Financial columns (Market Size ₹Cr, CAGR %, Est. Annual Sales ₹Cr) are paywalled
   // (IQVIA / PharmaTrac / AIOCD AWACS) and are intentionally left null. Table will
   // show "—" for these fields; KPIs auto-skip nulls in their aggregations.
@@ -126,28 +145,6 @@ export const LAUNCH_TRACKER_ROWS = [
   row(['Samakind', 'Own Launched', '2026-03-20', '—', 'Mankind Pharma', 'Generic Launch', 'Semaglutide', 'Anti-Diabetic', 'Type 2 Diabetes / Obesity', null, null, 'Rybelsus / Wegovy', null, 'Chronic']),
   // Business Today / Panacea Biotec disclosure — definitive agreement Feb 2022; closing Mar-2022
   row(['Panacea Biotec Domestic Brands', 'Acquired', '2022-03-01', 'Panacea Biotec', 'Mankind Pharma', 'Brand Portfolio Acquisition', 'Various (Lifestyle / Oncology / Transplant)', 'Multi-therapy', 'Multi-indication', null, null, 'Various', null, 'Chronic']),
-
-  // Alkem
-  row(['Enzar', 'Own Launched', '2022-04-19', '—', 'Alkem', 'NCE Launch', 'Bempedoic Acid', 'Cardiology', 'Dyslipidemia', 210, 19.0, '—', 9, 'Chronic']),
-  row(['Pan 40', 'Own Launched', '2005-05-10', '—', 'Alkem', 'NCE Launch', 'Pantoprazole', 'Gastroenterology', 'GERD / Peptic Ulcer', 1640, 7.5, '—', 260, 'Chronic']),
-  row(['Indchemie Brands', 'Acquired', '2021-12-22', 'Indchemie', 'Alkem', 'Brand Portfolio Acquisition', 'Various', 'Multi-therapy', 'Multi-indication', 540, 6.8, 'Various', 62, 'Chronic']),
-  row(['Taxim-O Forte', 'Own Launched', '2017-10-02', '—', 'Alkem', 'Line Extension', 'Cefixime', 'Anti-Infectives', 'Respiratory / UTI Infections', 880, 9.8, 'Taxim-O', 102, 'Acute']),
-
-  // Intas
-  row(['Udibat', 'Own Launched', '2022-11-20', '—', 'Intas', 'Biosimilar Launch', 'Daratumumab', 'Oncology', 'Multiple Myeloma', 320, 22.0, 'Darzalex', 18, 'Chronic']),
-  row(['Enbrel India', 'In-licensed', '2020-03-18', 'Pfizer', 'Intas', 'In-license (India)', 'Etanercept', 'Immunology', 'Rheumatoid Arthritis', 260, 11.0, 'Intacept', 12, 'Chronic']),
-  row(['Celltrion Brands', 'Acquired', '2023-05-30', 'Celltrion Healthcare (India assets)', 'Intas', 'Brand Acquisition', 'Infliximab + Rituximab biosimilars', 'Immunology / Oncology', 'Multi-indication', 380, 15.5, 'Various', 22, 'Chronic']),
-
-  // Aurobindo / Eugia
-  row(['Cresemba', 'In-licensed', '2023-08-11', 'Pfizer', 'Aurobindo', 'In-license (India)', 'Isavuconazonium', 'Anti-Infectives', 'Invasive Aspergillosis', 130, 18.5, '—', 5, 'Acute']),
-  row(['Sandoz Oral Solids (India share)', 'Acquired', '2018-09-06', 'Novartis (Sandoz)', 'Aurobindo', 'Asset Acquisition', 'Various Generics', 'Multi-therapy', 'Multi-indication', 1420, 5.2, 'Various', 110, 'Chronic']),
-  row(['Eugia Steriles', 'Own Launched', '2022-06-15', '—', 'Aurobindo', 'NCE Launch', 'Various Injectables', 'Critical Care', 'Hospital Use', 620, 12.0, '—', 38, 'Acute']),
-
-  // Abbott India
-  row(['Mounjaro', 'In-licensed', '2024-10-02', 'Eli Lilly', 'Abbott India', 'In-license (India)', 'Tirzepatide', 'Anti-Diabetic', 'Type 2 Diabetes / Obesity', 1100, 28.0, 'Rybelsus', 46, 'Chronic']),
-  row(['Udiliv', 'Own Launched', '2002-04-10', '—', 'Abbott India', 'NCE Launch', 'Ursodeoxycholic Acid', 'Gastroenterology', 'Cholestatic Liver Disease', 620, 10.5, '—', 165, 'Chronic']),
-  row(['Thyronorm', 'Own Launched', '2005-06-21', '—', 'Abbott India', 'NCE Launch', 'Levothyroxine', 'Endocrinology', 'Hypothyroidism', 1480, 9.8, 'Eltroxin', 520, 'Chronic']),
-  row(['Piramal OTC', 'Acquired', '2020-12-07', 'Piramal Healthcare', 'Abbott India', 'Brand Portfolio Acquisition', 'Various OTC', 'Consumer Health', 'Multi-indication', 740, 11.5, 'Various', 64, 'Acute']),
 
   // Corona Remedies — LIVE DATA (web-sourced; financial columns left null where not public)
   // Business Standard / CCI — Corona–GSK deal cleared Mar 7 2017 (Dilo-BM, Dilo-DX, Stelbid, Vitneurin)

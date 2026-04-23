@@ -84,11 +84,16 @@ export default function App() {
     setTimeline('3Q');
   };
 
-  const lastUpdated = new Date().toLocaleDateString('en-IN', {
+  const [lastRefreshAt, setLastRefreshAt] = useState(() => new Date());
+  const lastUpdated = lastRefreshAt.toLocaleString('en-IN', {
     year: 'numeric',
     month: 'short',
     day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
   });
+
+  const handleRefresh = () => setLastRefreshAt(new Date());
 
   return (
     <div className="min-h-screen">
@@ -101,6 +106,7 @@ export default function App() {
         totalRows={LAUNCH_TRACKER_ROWS.length}
         filteredRows={filteredRows.length}
         lastUpdated={lastUpdated}
+        onRefresh={handleRefresh}
       />
 
       <main className="max-w-[1600px] mx-auto px-6 py-6 space-y-6">

@@ -1,5 +1,5 @@
-import React from 'react';
-import { Pill, Search, Building2, Sparkles } from 'lucide-react';
+import React, { useState } from 'react';
+import { Pill, Search, Building2, Sparkles, RefreshCw } from 'lucide-react';
 
 export default function Header({
   searchQuery,
@@ -10,7 +10,17 @@ export default function Header({
   totalRows,
   filteredRows,
   lastUpdated,
+  onRefresh,
 }) {
+  const [spinning, setSpinning] = useState(false);
+
+  const handleRefresh = () => {
+    if (spinning) return;
+    setSpinning(true);
+    if (onRefresh) onRefresh();
+    setTimeout(() => setSpinning(false), 800);
+  };
+
   return (
     <header className="grad-header border-b border-pharma-100">
       <div className="max-w-[1600px] mx-auto px-6 py-5">
@@ -66,6 +76,16 @@ export default function Header({
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
             </div>
+
+            <button
+              onClick={handleRefresh}
+              disabled={spinning}
+              title="Reloads the view. Data is curated from press releases / BSE filings. Auto-refresh requires API integration (Firecrawl / scheduled job)."
+              className="inline-flex items-center justify-center gap-2 px-3.5 py-2.5 text-sm font-semibold rounded-lg bg-gradient-to-br from-pharma-600 to-teal-accent text-white shadow-card hover:shadow-cardHover transition disabled:opacity-70"
+            >
+              <RefreshCw className={`w-4 h-4 ${spinning ? 'animate-spin' : ''}`} />
+              <span className="hidden sm:inline">Refresh</span>
+            </button>
           </div>
         </div>
 
@@ -82,7 +102,7 @@ export default function Header({
             Last refresh • {lastUpdated}
           </span>
           <span className="ml-auto text-ink-500 hidden md:inline">
-            Source: internal deal tracker • Mock dataset
+            Source: press releases / BSE filings · Curated · Last refresh stamps the view
           </span>
         </div>
       </div>
