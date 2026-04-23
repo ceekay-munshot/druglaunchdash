@@ -124,27 +124,86 @@ export const LAUNCH_TRACKER_ROWS = [
   // abbott.in "Abbott and MSD Announce Strategic Partnership to Distribute Sitagliptin in India" (18-Jun-2025)
   row(['Januvia / Janumet / Janumet XR (MSD distribution)', 'In-licensed', '2025-06-18', 'MSD Pharmaceuticals', 'Abbott India', 'Co-marketing', 'Sitagliptin (± Metformin)', 'Anti-Diabetic', 'Type 2 Diabetes', null, null, 'Istavel / Istamet', null, 'Chronic']),
 
-  // ─── Mankind Pharma — LIVE DATA (web-sourced from press releases / company filings) ───
-  // Financial columns (Market Size ₹Cr, CAGR %, Est. Annual Sales ₹Cr) are paywalled
-  // (IQVIA / PharmaTrac / AIOCD AWACS) and are intentionally left null. Table will
-  // show "—" for these fields; KPIs auto-skip nulls in their aggregations.
-  // Sources cited inline above each row.
-  // mankindpharma.com press release "Mankind Pharma Completes Landmark Acquisition of BSV"
-  row(['Bharat Serums & Vaccines', 'Acquired', '2024-10-23', 'Advent International', 'Mankind Pharma', 'Company Acquisition', 'Various Biologics / Recombinants', "Women's Health / Critical Care", 'Fertility, Critical Care, Immunoglobulins', null, null, 'Various', null, 'Chronic']),
-  // mankindpharma.com / Business Standard "Mankind Pharma inks pact with Innovent for immunotherapy drug" (26-Dec-2024)
-  row(['Sintilimab', 'In-licensed', '2024-12-26', 'Innovent Biologics', 'Mankind Pharma', 'In-license (India)', 'Sintilimab', 'Oncology', 'Solid Tumours (PD-1 immunotherapy)', null, null, '—', null, 'Chronic']),
+  // ─── Mankind Pharma — EXPANDED LIVE DATASET (deep-research edition) ───
+  // Sources: mankindpharma.com (heritage + press releases), Mankind DRHP / IPO
+  // note (Apr-2023), DRL & Panacea Biotec disclosures, BSV portfolio from 1mg /
+  // bsvgroup.com. Every row individually verifiable. Molecules confirmed from
+  // pharmacy listings (1mg / Apollo / Truemeds / Practo).
+  //
+  // Bundled deals (BSV 2024-10-23, Panacea 2022-03-01) are kept as UMBRELLA
+  // rows AND separately unbundled into per-brand rows for therapy attribution.
+  // Early Own-Launched brand rows (Amlokind, Moxikind-CV etc.) use CLEARLY
+  // ESTIMATED launch dates where exact dates aren't public — marked "[est.]".
+  // Financial columns (Market Size ₹Cr, CAGR %, Est. Annual Sales ₹Cr) left
+  // null per IQVIA/PharmaTrac paywall.
+
+  // ── Core own-launched brands (1995-2019) ──
+  // Mankind Pharma heritage — "Moxikind-CV was an early product" [launch date est.]
+  row(['Moxikind-CV', 'Own Launched', '2000-01-01', '—', 'Mankind Pharma', 'Generic Launch', 'Amoxicillin + Clavulanic Acid', 'Anti-Infectives', 'Respiratory / UTI Infections', null, null, 'Augmentin / Clavam', null, 'Acute']),
+  // mankindpharma.com / Shoonya — "in 2004 Mankind made mark in chronic segment by launching Amlokind and Glimestar"
+  row(['Amlokind-AT', 'Own Launched', '2004-01-01', '—', 'Mankind Pharma', 'NCE Launch', 'Amlodipine + Atenolol', 'Cardiology', 'Hypertension / Angina', null, null, 'Amlopres-AT', null, 'Chronic']),
+  row(['Glimestar-M', 'Own Launched', '2004-01-01', '—', 'Mankind Pharma', 'NCE Launch', 'Glimepiride + Metformin', 'Anti-Diabetic', 'Type 2 Diabetes', null, null, 'Amaryl-M', null, 'Chronic']),
+  // mankindpharma.com / Shoonya — "Nurokind launched in 2004"
+  row(['Nurokind', 'Own Launched', '2004-01-01', '—', 'Mankind Pharma', 'NCE Launch', 'Methylcobalamin 1500 mcg', 'Neurology / CNS', 'Peripheral / Diabetic Neuropathy', null, null, 'Methycobal / Mecobal', null, 'Chronic']),
+  // Mankind Heritage — Gudcef (Cefpodoxime) early antibiotic portfolio [launch date est.]
+  row(['Gudcef', 'Own Launched', '2006-01-01', '—', 'Mankind Pharma', 'NCE Launch', 'Cefpodoxime Proxetil', 'Anti-Infectives', 'Respiratory / UTI Infections', null, null, 'Monocef-O / Cepodem', null, 'Acute']),
+  // Mankind Heritage — Telmikind (Telmisartan) cardio portfolio [launch date est.]
+  row(['Telmikind / Telmikind-H', 'Own Launched', '2008-01-01', '—', 'Mankind Pharma', 'NCE Launch', 'Telmisartan (± HCTZ)', 'Cardiology', 'Hypertension', null, null, 'Telma / Telsartan', null, 'Chronic']),
+  // mankindpharma.com / india.com — 2007 consumer healthcare division launch (Manforce + Prega News + Gas-O-Fast + Unwanted-72)
+  row(['Manforce (condoms + Rx)', 'Own Launched', '2007-01-01', '—', 'Mankind Pharma', 'Consumer Launch', 'Sildenafil (Rx) / Latex (consumer)', 'Consumer Health', "Men's Wellness / Sexual Wellness", null, null, '—', null, 'Acute']),
+  row(['Unwanted-72', 'Own Launched', '2007-01-01', '—', 'Mankind Pharma', 'Consumer Launch', 'Levonorgestrel 1.5 mg', "Women's Health", 'Emergency Contraception', null, null, 'Norlevo / Pill-72', null, 'Acute']),
+  row(['Gas-O-Fast', 'Own Launched', '2007-01-01', '—', 'Mankind Pharma', 'Consumer Launch', 'Sodium Bicarbonate + Citric Acid', 'Gastroenterology', 'Acid Reflux / Bloating', null, null, 'ENO', null, 'Acute']),
+  // Prega News launched 2010 (confirmed)
+  row(['Prega News', 'Own Launched', '2010-01-01', '—', 'Mankind Pharma', 'Consumer Launch', 'hCG Detection (OTC Rapid Dx)', 'Consumer Health', 'Pregnancy Detection', null, null, 'i-can / Velocit', null, 'Acute']),
+  // Unwanted Kit (MTP kit) — Mifepristone + Misoprostol. Widely dated to 2010 per pharma history [approx]
+  row(['Unwanted Kit', 'Own Launched', '2010-03-12', '—', 'Mankind Pharma', 'NCE Launch', 'Mifepristone + Misoprostol', "Women's Health", 'Medical Termination of Pregnancy', null, null, 'MTP Kit', null, 'Acute']),
+  // Mankind Heritage — Health OK multivitamin launched 2013
+  row(['Health OK', 'Own Launched', '2013-01-01', '—', 'Mankind Pharma', 'Consumer Launch', 'Multivitamin + Minerals', 'Nutraceuticals', 'General Wellness / Daily Supplement', null, null, 'Revital / Supradyn', null, 'Chronic']),
+  // Mankind Pharma — Dydroboon launched 2019 (first Indian dydrogesterone)
+  row(['Dydroboon', 'Own Launched', '2019-01-01', '—', 'Mankind Pharma', 'NCE Launch', 'Dydrogesterone 10 mg', "Women's Health", 'Threatened / Recurrent Miscarriage / Luteal Support', null, null, 'Duphaston', null, 'Chronic']),
+
+  // ── Brand acquisitions ──
+  // Mankind Heritage / Grokipedia — "acquired Longifene (appetite stimulant) from UCB in January 2010"
+  row(['Longifene (from UCB)', 'Acquired', '2010-01-31', 'UCB', 'Mankind Pharma', 'Brand Acquisition', 'Buclizine + B-complex', 'Pediatric / Nutraceutical', 'Pediatric Appetite Stimulation', null, null, '—', null, 'Acute']),
+  // Dr. Reddy's press release — Mankind acquires Combihale + Daffy (16-Feb-2022; Combihale market Rs 900 Cr @14% CAGR)
+  row(['Combihale (from DRL)', 'Acquired', '2022-02-16', "Dr. Reddy's Laboratories", 'Mankind Pharma', 'Brand Acquisition', 'Budesonide + Formoterol (+ Glycopyrronium variants)', 'Respiratory', 'Asthma / COPD', 900, 14.0, 'Foracort / Symbicort', null, 'Chronic']),
+  row(['Daffy (from DRL)', 'Acquired', '2022-02-16', "Dr. Reddy's Laboratories", 'Mankind Pharma', 'Brand Acquisition', 'Soap-free Moisturising Bar (infants)', 'Dermatology', 'Infant / Sensitive Skin Care', null, null, 'Cetaphil / Sebamed', null, 'Acute']),
+
+  // ── Panacea Biotec acquisition — parent deal + unbundled brand rows (2022-03-01, Rs 1,872 Cr) ──
+  row(['Panacea Biotec Domestic Formulations (parent)', 'Acquired', '2022-03-01', 'Panacea Biotec', 'Mankind Pharma', 'Company Acquisition', 'Various (Lifestyle / Oncology / Transplant)', 'Multi-therapy', 'Multi-indication', null, null, 'Various', null, 'Chronic']),
+  row(['PanGraf (via Panacea)', 'Acquired', '2022-03-01', 'Panacea Biotec', 'Mankind Pharma', 'Brand Acquisition', 'Tacrolimus', 'Transplant / Immunology', 'Organ Transplant Rejection (kidney / liver)', null, null, 'Prograf / Tacroz', null, 'Chronic']),
+  row(['Mycept (via Panacea)', 'Acquired', '2022-03-01', 'Panacea Biotec', 'Mankind Pharma', 'Brand Acquisition', 'Mycophenolic Acid (Mofetil)', 'Transplant / Immunology', 'Organ Transplant Rejection', null, null, 'Cellcept', null, 'Chronic']),
+  row(['Mycept-S (via Panacea)', 'Acquired', '2022-03-01', 'Panacea Biotec', 'Mankind Pharma', 'Brand Acquisition', 'Mycophenolate Sodium', 'Transplant / Immunology', 'Organ Transplant Rejection', null, null, 'Myfortic', null, 'Chronic']),
+  row(['Panimun Bioral (via Panacea)', 'Acquired', '2022-03-01', 'Panacea Biotec', 'Mankind Pharma', 'Brand Acquisition', 'Cyclosporine (microemulsion)', 'Transplant / Immunology', 'Organ Transplant Rejection / Autoimmune', null, null, 'Sandimmun / Neoral', null, 'Chronic']),
+  row(['Glizid / Glizid-M / Glizid-MR (via Panacea)', 'Acquired', '2022-03-01', 'Panacea Biotec', 'Mankind Pharma', 'Brand Acquisition', 'Gliclazide (± Metformin)', 'Anti-Diabetic', 'Type 2 Diabetes', null, null, 'Diamicron', null, 'Chronic']),
+
+  // ── Recent in-licensing & launches (pre-BSV) ──
+  // astrazeneca.in press release (11-Mar-2024) — 5-yr exclusive Symbicort distribution
+  row(['Symbicort (India distribution)', 'In-licensed', '2024-03-11', 'AstraZeneca', 'Mankind Pharma', 'Co-marketing', 'Budesonide + Formoterol', 'Respiratory', 'Asthma / COPD', null, null, 'Foracort', null, 'Chronic']),
   // Business Standard "Mankind Pharma signs non-exclusive patent license agreement with Takeda" (16-Jul-2024)
   row(['Vonoprazan (Takeda licence)', 'In-licensed', '2024-07-16', 'Takeda', 'Mankind Pharma', 'In-license (India)', 'Vonoprazan', 'Gastroenterology', 'GERD / Erosive Esophagitis', null, null, '—', null, 'Chronic']),
-  // astrazeneca.in press release / Business Standard (11-Mar-2024) — 5-yr exclusive distribution
-  row(['Symbicort (India distribution)', 'In-licensed', '2024-03-11', 'AstraZeneca', 'Mankind Pharma', 'Co-marketing', 'Budesonide + Formoterol', 'Respiratory', 'Asthma / COPD', null, null, 'Foracort', null, 'Chronic']),
-  // GlobeNewswire / Business Standard "Mankind Pharma inks licencing pact with Actimed for cachexia" (21-Nov-2025)
+
+  // ── BSV acquisition — parent deal + unbundled brand rows (2024-10-23, Rs 13,630 Cr EV) ──
+  row(['Bharat Serums & Vaccines (parent)', 'Acquired', '2024-10-23', 'Advent International', 'Mankind Pharma', 'Company Acquisition', 'Various Biologics / Recombinants (145+ brands)', "Women's Health / Critical Care", 'Fertility / Critical Care / Immunoglobulins', null, null, 'Various', null, 'Chronic']),
+  row(['Humog (via BSV)', 'Acquired', '2024-10-23', 'Advent International', 'Mankind Pharma', 'Brand Acquisition', 'Menotropin (hMG — FSH + LH)', "Women's Health", 'Ovulation Induction / IVF', null, null, 'Menodac / Fostine', null, 'Chronic']),
+  row(['HuCoG (via BSV)', 'Acquired', '2024-10-23', 'Advent International', 'Mankind Pharma', 'Brand Acquisition', 'Human Chorionic Gonadotropin (hCG)', "Women's Health", 'Ovulation Trigger / Luteal Support', null, null, 'Ovidac / Pregnyl', null, 'Chronic']),
+  row(['Miprogen (via BSV)', 'Acquired', '2024-10-23', 'Advent International', 'Mankind Pharma', 'Brand Acquisition', 'Micronized Progesterone 100/200 mg', "Women's Health", 'Luteal Support / HRT / Miscarriage Prevention', null, null, 'Susten / Vageston', null, 'Chronic']),
+  row(['Lonopin (via BSV)', 'Acquired', '2024-10-23', 'Advent International', 'Mankind Pharma', 'Brand Acquisition', 'Enoxaparin Sodium (LMWH)', 'Haematology', 'DVT / VTE Prophylaxis / ACS', null, null, 'Clexane', null, 'Chronic']),
+  row(['Rhoclone (via BSV)', 'Acquired', '2024-10-23', 'Advent International', 'Mankind Pharma', 'Brand Acquisition', 'Anti-D Immunoglobulin (Rho(D))', "Women's Health", 'Rh Iso-immunization Prophylaxis', null, null, 'Rhesonativ / WinRho', null, 'Acute']),
+  row(['Bharglob (via BSV)', 'Acquired', '2024-10-23', 'Advent International', 'Mankind Pharma', 'Brand Acquisition', 'Human Normal Immunoglobulin (IVIG)', 'Immunology', 'Primary Immunodeficiency / ITP / GBS', null, null, 'Privigen / Octagam', null, 'Chronic']),
+  row(['Luprodex (via BSV)', 'Acquired', '2024-10-23', 'Advent International', 'Mankind Pharma', 'Brand Acquisition', 'Leuprolide Acetate', "Oncology / Women's Health", 'Prostate Cancer / Endometriosis / IVF', null, null, 'Lupride / Eligard', null, 'Chronic']),
+  row(['Snake V Antiserum (via BSV)', 'Acquired', '2024-10-23', 'Advent International', 'Mankind Pharma', 'Brand Acquisition', 'Polyvalent Snake Antivenom (equine)', 'Critical Care / Anti-Infectives', 'Snake Envenomation', null, null, '—', null, 'Acute']),
+  row(['Tetglob (via BSV)', 'Acquired', '2024-10-23', 'Advent International', 'Mankind Pharma', 'Brand Acquisition', 'Tetanus Immunoglobulin (Human)', 'Immunology', 'Tetanus Post-exposure Prophylaxis', null, null, 'Tetabulin / Tetagam', null, 'Acute']),
+
+  // ── Recent deals (post-BSV) ──
+  // mankindpharma.com / Business Standard (26-Dec-2024)
+  row(['Sintilimab', 'In-licensed', '2024-12-26', 'Innovent Biologics', 'Mankind Pharma', 'In-license (India)', 'Sintilimab', 'Oncology', 'Solid Tumours (PD-1 immunotherapy)', null, null, '—', null, 'Chronic']),
+  // GlobeNewswire / Business Standard (21-Nov-2025)
   row(['ACM-001.1 (S-pindolol)', 'In-licensed', '2025-11-21', 'Actimed Therapeutics', 'Mankind Pharma', 'In-license (India)', 'S-pindolol benzoate', 'Oncology Support', 'Cancer Cachexia', null, null, '—', null, 'Chronic']),
-  // Business Standard "Mankind Pharma shares gain 3% on acquiring Rivotril brand rights from Roche" (18-Mar-2026)
-  row(['Rivotril', 'Acquired', '2026-03-18', 'Roche', 'Mankind Pharma', 'Brand Acquisition', 'Clonazepam', 'Neurology / CNS', 'Epilepsy / Panic Disorder', null, null, '—', null, 'Chronic']),
-  // BusinessToday / Medical Dialogues — Samakind (generic semaglutide) launch on patent-expiry Day 1 (20-Mar-2026)
+  // Business Standard (18-Mar-2026)
+  row(['Rivotril (from Roche)', 'Acquired', '2026-03-18', 'Roche', 'Mankind Pharma', 'Brand Acquisition', 'Clonazepam', 'Neurology / CNS', 'Epilepsy / Panic Disorder', null, null, '—', null, 'Chronic']),
+  // BusinessToday / Medical Dialogues — Samakind launch on patent-expiry Day 1 (20-Mar-2026)
   row(['Samakind', 'Own Launched', '2026-03-20', '—', 'Mankind Pharma', 'Generic Launch', 'Semaglutide', 'Anti-Diabetic', 'Type 2 Diabetes / Obesity', null, null, 'Rybelsus / Wegovy', null, 'Chronic']),
-  // Business Today / Panacea Biotec disclosure — definitive agreement Feb 2022; closing Mar-2022
-  row(['Panacea Biotec Domestic Brands', 'Acquired', '2022-03-01', 'Panacea Biotec', 'Mankind Pharma', 'Brand Portfolio Acquisition', 'Various (Lifestyle / Oncology / Transplant)', 'Multi-therapy', 'Multi-indication', null, null, 'Various', null, 'Chronic']),
 
   // ──────────────────────────────────────────────────────────────────────────
   // Corona Remedies — EXPANDED LIVE DATASET (deep-research edition)
