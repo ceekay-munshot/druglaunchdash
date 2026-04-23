@@ -146,6 +146,19 @@ export const LAUNCH_TRACKER_ROWS = [
   row(['Udiliv', 'Own Launched', '2002-04-10', '—', 'Abbott India', 'NCE Launch', 'Ursodeoxycholic Acid', 'Gastroenterology', 'Cholestatic Liver Disease', 620, 10.5, '—', 165, 'Chronic']),
   row(['Thyronorm', 'Own Launched', '2005-06-21', '—', 'Abbott India', 'NCE Launch', 'Levothyroxine', 'Endocrinology', 'Hypothyroidism', 1480, 9.8, 'Eltroxin', 520, 'Chronic']),
   row(['Piramal OTC', 'Acquired', '2020-12-07', 'Piramal Healthcare', 'Abbott India', 'Brand Portfolio Acquisition', 'Various OTC', 'Consumer Health', 'Multi-indication', 740, 11.5, 'Various', 64, 'Acute']),
+
+  // Corona Remedies — LIVE DATA (web-sourced; financial columns left null where not public)
+  // Business Standard / CCI — Corona–GSK deal cleared Mar 7 2017 (Dilo-BM, Dilo-DX, Stelbid, Vitneurin)
+  row(['GSK India Brand Portfolio', 'Acquired', '2017-03-07', 'GlaxoSmithKline India', 'Corona Remedies', 'Brand Portfolio Acquisition', 'Dextromethorphan / Dicyclomine / B-complex', 'Multi-therapy', 'Respiratory / GI / Nutraceuticals', null, null, 'Various', null, 'Chronic']),
+  // Business Standard / The Week — Corona acquires Obimet & Thyrocab from Abbott India (3-Apr-2018)
+  row(['Obimet + Thyrocab (Abbott)', 'Acquired', '2018-04-03', 'Abbott India', 'Corona Remedies', 'Brand Portfolio Acquisition', 'Metformin + Levothyroxine range', 'Anti-Diabetic / Endocrinology', 'Type 2 Diabetes / Hypothyroidism', null, null, 'Glycomet / Thyronorm', null, 'Chronic']),
+  // Business Standard press release / BioSpectrum (9-May-2023)
+  row(['Ferring Maternal Health & Urology Portfolio', 'In-licensed', '2023-05-09', 'Ferring Pharmaceuticals', 'Corona Remedies', 'In-license (India)', 'Various (Gonadotropins, OAB, ED)', "Women's Health / Urology", 'Maternal Health / Overactive Bladder / ED', null, null, '—', null, 'Chronic']),
+  // BioSpectrum / ET "Corona Remedies buys Myoril from Sanofi for ₹234 Cr" (28-Jun-2023)
+  row(['Myoril', 'Acquired', '2023-06-28', 'Sanofi India', 'Corona Remedies', 'Brand Acquisition', 'Thiocolchicoside', 'Pain Management', 'Muscular Spasm / Back Pain', null, null, '—', null, 'Acute']),
+  // Business Standard "Corona Remedies acquires 7 brands from Bayer India" (effective 16-Jul-2025)
+  row(['Noklot (Bayer)', 'Acquired', '2025-07-16', 'Bayer India', 'Corona Remedies', 'Brand Acquisition', 'Clopidogrel', 'Cardiology', 'Anti-platelet / Secondary CV Prevention', null, null, 'Clopilet / Deplatt', null, 'Chronic']),
+  row(['Bayer Women’s Health Portfolio (6 brands)', 'Acquired', '2025-07-16', 'Bayer India', 'Corona Remedies', 'Brand Portfolio Acquisition', 'Gonadotropins + Progesterone (Fostine, Luprofact, Menodac, Ovidac, Spye, Vageston)', "Women's Health", 'Infertility / Pregnancy Management', null, null, 'Various', null, 'Chronic']),
 ];
 
 // Derived list of unique Buyers — these are the selectable "companies"
