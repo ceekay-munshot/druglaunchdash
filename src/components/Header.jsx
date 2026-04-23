@@ -22,7 +22,7 @@ export default function Header({
             <div>
               <h1 className="text-xl md:text-2xl font-bold text-ink-900 tracking-tight">
                 Drug Launch Tracker
-                <span className="text-pharma-600"> – India Pharma</span>
+                <span className="text-blue-600"> – India Pharma</span>
               </h1>
               <p className="text-xs md:text-sm text-ink-500 flex items-center gap-1.5 mt-0.5">
                 <Sparkles className="w-3.5 h-3.5 text-pharma-500" />
