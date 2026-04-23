@@ -151,7 +151,7 @@ export const LAUNCH_TRACKER_ROWS = [
 
   // Corona Remedies — LIVE DATA (web-sourced; financial columns left null where not public)
   // Business Standard / CCI — Corona–GSK deal cleared Mar 7 2017 (Dilo-BM, Dilo-DX, Stelbid, Vitneurin)
-  row(['GSK India Brand Portfolio', 'Acquired', '2017-03-07', 'GlaxoSmithKline India', 'Corona Remedies', 'Brand Portfolio Acquisition', 'Dextromethorphan / Dicyclomine / B-complex', 'Multi-therapy', 'Respiratory / GI / Nutraceuticals', null, null, 'Various', null, 'Chronic']),
+  row(['GSK India Brand Portfolio', 'Acquired', '2017-03-07', 'GlaxoSmithKline India', 'Corona Remedies', 'Brand Portfolio Acquisition', 'Terbutaline+Guaiphenesin+Ambroxol (Dilo) / Trifluoperazine+Isopropamide (Stelbid) / Methylcobalamin (Vitneurin)', 'Multi-therapy', 'Respiratory / GI Spasm / Neuro-nutraceutical', null, null, 'Various', null, 'Chronic']),
   // Business Standard / The Week — Corona acquires Obimet & Thyrocab from Abbott India (3-Apr-2018)
   row(['Obimet + Thyrocab (Abbott)', 'Acquired', '2018-04-03', 'Abbott India', 'Corona Remedies', 'Brand Portfolio Acquisition', 'Metformin + Levothyroxine range', 'Anti-Diabetic / Endocrinology', 'Type 2 Diabetes / Hypothyroidism', null, null, 'Glycomet / Thyronorm', null, 'Chronic']),
   // Business Standard press release / BioSpectrum (9-May-2023)
@@ -161,6 +161,8 @@ export const LAUNCH_TRACKER_ROWS = [
   // Business Standard "Corona Remedies acquires 7 brands from Bayer India" (effective 16-Jul-2025)
   row(['Noklot (Bayer)', 'Acquired', '2025-07-16', 'Bayer India', 'Corona Remedies', 'Brand Acquisition', 'Clopidogrel', 'Cardiology', 'Anti-platelet / Secondary CV Prevention', null, null, 'Clopilet / Deplatt', null, 'Chronic']),
   row(['Bayer Women’s Health Portfolio (6 brands)', 'Acquired', '2025-07-16', 'Bayer India', 'Corona Remedies', 'Brand Portfolio Acquisition', 'Gonadotropins + Progesterone (Fostine, Luprofact, Menodac, Ovidac, Spye, Vageston)', "Women's Health", 'Infertility / Pregnancy Management', null, null, 'Various', null, 'Chronic']),
+  // Business Standard / Medical Dialogues "Corona Remedies acquires Wokadine from Dr Reddy's" (30-Mar-2026); #2 in ₹648 Cr povidone iodine market
+  row(['Wokadine', 'Acquired', '2026-03-30', "Dr. Reddy's Laboratories", 'Corona Remedies', 'Brand Acquisition', 'Povidone Iodine', 'Anti-Infectives', 'Topical Antiseptic', 648, null, 'Betadine', null, 'Acute']),
 ];
 
 // Derived list of unique Buyers — these are the selectable "companies"
