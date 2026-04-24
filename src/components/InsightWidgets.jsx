@@ -1,9 +1,7 @@
 import React from 'react';
 import {
-  Trophy,
   Users,
   FlaskConical,
-  HeartPulse,
   CalendarClock,
   Sparkles,
 } from 'lucide-react';
@@ -92,10 +90,6 @@ export default function InsightWidgets({ rows }) {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
-      <Widget icon={Trophy} title="Largest Market Brands" subtitle="Top ₹Cr India market size">
-        <LeaderList items={byMarket} right={(it) => fmtINRPlain(it.value)} />
-      </Widget>
-
       <Widget icon={Users} title="Most Active Buyer" subtitle="Launch / acquisition volume">
         {topBuyer ? (
           <div className="space-y-3">
@@ -131,24 +125,6 @@ export default function InsightWidgets({ rows }) {
         ) : (
           <p className="text-xs text-ink-500">No therapy data.</p>
         )}
-      </Widget>
-
-      <Widget icon={HeartPulse} title="Chronic Portfolio Mix" subtitle="Chronic skew of selection">
-        <div className="flex flex-col justify-center h-full">
-          <div className="flex items-end gap-2">
-            <span className="text-4xl font-bold text-pharma-700">{chronicPct}%</span>
-            <span className="text-xs text-ink-500 mb-1">Chronic share</span>
-          </div>
-          <div className="mt-3 h-2.5 bg-ink-100 rounded-full overflow-hidden">
-            <div
-              className="h-full bg-gradient-to-r from-pharma-500 to-teal-accent rounded-full"
-              style={{ width: `${chronicPct}%` }}
-            />
-          </div>
-          <p className="text-[11px] text-ink-500 mt-2">
-            {chronic} chronic · {total - chronic} acute launches in view
-          </p>
-        </div>
       </Widget>
 
       <Widget
