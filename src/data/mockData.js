@@ -61,13 +61,96 @@ const row = (vals) => ({
 });
 
 export const LAUNCH_TRACKER_ROWS = [
-  // ─── Sun Pharma — LIVE (press releases / sunpharma.com) ───
-  // sunpharma.com "Sun Pharma introduces Fexuclue (Fexuprazan) in India" (07-Apr-2025)
-  row(['Fexuclue', 'In-licensed', '2025-04-07', 'Daewoong Pharmaceutical', 'Sun Pharma', 'In-license (India)', 'Fexuprazan', 'Gastroenterology', 'Erosive Esophagitis / GERD', null, null, '—', null, 'Chronic']),
-  // sunpharma.com "Sun Pharma introduces its global innovative drug Ilumya in India" (01-Dec-2025)
-  row(['Ilumya', 'Own Launched', '2025-12-01', '—', 'Sun Pharma', 'NCE Launch', 'Tildrakizumab', 'Dermatology', 'Moderate-Severe Plaque Psoriasis', null, null, '—', null, 'Chronic']),
-  // BusinessToday (19-Mar-2026) — Sun Pharma launches generic semaglutide in India on patent-expiry Day 1
-  row(['Noveltreat / Sematrinity', 'Own Launched', '2026-03-20', '—', 'Sun Pharma', 'Generic Launch', 'Semaglutide', 'Anti-Diabetic', 'Type 2 Diabetes / Obesity', null, null, 'Rybelsus / Wegovy', null, 'Chronic']),
+  // ──────────────────────────────────────────────────────────────────────────
+  // Sun Pharma — EXPANDED LIVE DATASET (deep-research edition)
+  // Sources: sunpharma.com press releases + annual report FY25, Business
+  // Standard / BusinessToday / BioSpectrum / PharmaTutor / FiercePharma
+  // coverage, BSE filings, PRNewswire for US specialty deals, 1mg / Apollo /
+  // Practo / Truemeds for molecule verification. Sun Pharma is India's
+  // largest pharma company and #1 by domestic sales, world's 4th-5th largest
+  // specialty generics. Strong India chronic portfolio (cardio + CNS + GI
+  // + derma) + growing global specialty (Ilumya, Cequa, Leqselvi, UNLOXCYT,
+  // Odomzo, Winlevi, Levulan, Absorica). Engine-brand launch dates [est.]
+  // where not publicly disclosed.
+
+  // ── Engine brands (Own Launched) — India chronic portfolio ──
+  // Rosuvas (Rosuvastatin) — Sun's #1 India brand by revenue, Rs 380+ Cr/yr [launch date est.]
+  row(['Rosuvas', 'Own Launched', '2005-01-01', '—', 'Sun Pharma', 'NCE Launch', 'Rosuvastatin (± Aspirin / Clopidogrel / Fenofibrate / Ezetimibe)', 'Cardiology', 'Dyslipidemia / Secondary CV Prevention', null, null, 'Crestor / Novastat', null, 'Chronic']),
+  // Aztor (Atorvastatin) — cardio statin [launch date est.]
+  row(['Aztor', 'Own Launched', '2002-01-01', '—', 'Sun Pharma', 'NCE Launch', 'Atorvastatin (± Fenofibrate / Ezetimibe / Aspirin)', 'Cardiology', 'Dyslipidemia', null, null, 'Atorlip / Lipicure', null, 'Chronic']),
+  // Cardivas (Carvedilol) — CHF/hypertension [launch date est.]
+  row(['Cardivas', 'Own Launched', '2005-01-01', '—', 'Sun Pharma', 'NCE Launch', 'Carvedilol', 'Cardiology', 'Hypertension / Chronic Heart Failure', null, null, 'Carca / Coreg', null, 'Chronic']),
+  // Revelol AM (Metoprolol + Amlodipine) — cardio combo (from earlier dataset)
+  row(['Revelol AM', 'Own Launched', '2023-04-22', '—', 'Sun Pharma', 'Line Extension', 'Metoprolol + Amlodipine', 'Cardiology', 'Hypertension / Angina', null, null, 'Nebicard-AM', null, 'Chronic']),
+  // Pantocid (Pantoprazole) — India's flagship PPI brand [launch date est.]
+  row(['Pantocid / Pantocid-DSR', 'Own Launched', '2000-01-01', '—', 'Sun Pharma', 'NCE Launch', 'Pantoprazole (± Domperidone SR / Levosulpiride)', 'Gastroenterology', 'GERD / Peptic Ulcer / Dyspepsia', null, null, 'Pan / Pantium', null, 'Chronic']),
+  // Sompraz (Esomeprazole) [launch date est.]
+  row(['Sompraz', 'Own Launched', '2004-01-01', '—', 'Sun Pharma', 'NCE Launch', 'Esomeprazole (± Domperidone)', 'Gastroenterology', 'GERD / Erosive Esophagitis', null, null, 'Nexium / Esoz', null, 'Chronic']),
+  // Levipil (Levetiracetam) — CNS anti-epileptic [launch date est.]
+  row(['Levipil', 'Own Launched', '2003-01-01', '—', 'Sun Pharma', 'NCE Launch', 'Levetiracetam', 'Neurology / CNS', 'Epilepsy / Seizure Disorders', null, null, 'Keppra / Torleva', null, 'Chronic']),
+  // Nexito (Escitalopram) — SSRI [launch date est.]
+  row(['Nexito', 'Own Launched', '2005-01-01', '—', 'Sun Pharma', 'NCE Launch', 'Escitalopram (± Clonazepam)', 'Neurology / CNS', 'Depression / Anxiety / OCD', null, null, 'Lexapro / Cipralex', null, 'Chronic']),
+  // Istamet (Sitagliptin + Metformin) — Anti-Diabetic DPP-4 + biguanide
+  row(['Istamet', 'Own Launched', '2013-01-01', '—', 'Sun Pharma', 'NCE Launch', 'Sitagliptin + Metformin', 'Anti-Diabetic', 'Type 2 Diabetes', null, null, 'Janumet / Ziten-M', null, 'Chronic']),
+  // Istamet XCite (triple combo) — line extension 12-Feb-2024
+  row(['Istamet XCite', 'Own Launched', '2024-02-12', '—', 'Sun Pharma', 'Line Extension', 'Sitagliptin + Metformin + Dapagliflozin', 'Anti-Diabetic', 'Type 2 Diabetes (triple combo)', null, null, 'Oxra-M-Sita / Zomelis Met', null, 'Chronic']),
+  // Oxra (Dapagliflozin) — Anti-Diabetic SGLT2i [launch date est.]
+  row(['Oxra / Oxra-M', 'Own Launched', '2018-01-01', '—', 'Sun Pharma', 'NCE Launch', 'Dapagliflozin (± Metformin / Sitagliptin)', 'Anti-Diabetic', 'Type 2 Diabetes / HF / CKD', null, null, 'Forxiga / Gluxit', null, 'Chronic']),
+  // Gemer (Glimepiride + Metformin) — Anti-Diabetic combo [launch date est.]
+  row(['Gemer', 'Own Launched', '2004-01-01', '—', 'Sun Pharma', 'NCE Launch', 'Glimepiride + Metformin (± Voglibose / Pioglitazone)', 'Anti-Diabetic', 'Type 2 Diabetes', null, null, 'Amaryl-M / Glimestar-M', null, 'Chronic']),
+  // Silodal (Silodosin) — BPH [launch date est.]
+  row(['Silodal', 'Own Launched', '2010-01-01', '—', 'Sun Pharma', 'NCE Launch', 'Silodosin', 'Urology', 'Benign Prostatic Hyperplasia (BPH)', null, null, 'Urorec / Rapaflo', null, 'Chronic']),
+  // Febuget (Febuxostat) — Rheumatology/Gout [launch date est.]
+  row(['Febuget', 'Own Launched', '2012-01-01', '—', 'Sun Pharma', 'NCE Launch', 'Febuxostat', 'Rheumatology', 'Gout / Hyperuricemia', null, null, 'Uloric / Zurig', null, 'Chronic']),
+  // Naxdom (Naproxen + Domperidone) — Pain/Migraine [launch date est.]
+  row(['Naxdom', 'Own Launched', '2010-01-01', '—', 'Sun Pharma', 'NCE Launch', 'Naproxen + Domperidone', 'Pain Management', 'Migraine / Menstrual Pain', null, null, 'Domstal-NS', null, 'Acute']),
+
+  // ── Ranbaxy Acquisition (parent) — 25-Mar-2015, $4B; brought 629 ANDAs + India blockbusters ──
+  // sunpharma.com / Daiichi Sankyo press release — merger of Ranbaxy into Sun (completion 25-Mar-2015)
+  row(['Ranbaxy Laboratories (parent)', 'Acquired', '2015-03-25', 'Daiichi Sankyo', 'Sun Pharma', 'Company Acquisition', 'Various (629 ANDAs + India brands)', 'Multi-therapy', 'Multi-indication (India + Global)', 32000, null, 'Various', null, 'Chronic']),
+  // Volini (Diclofenac+Menthol+Linseed Oil topical analgesic) — Ranbaxy's OTC flagship, acquired via Ranbaxy deal
+  row(['Volini / Volini Maxx', 'Acquired', '2015-03-25', 'Daiichi Sankyo (via Ranbaxy)', 'Sun Pharma', 'Brand Acquisition', 'Diclofenac + Menthol + Methyl Salicylate + Linseed Oil (± Virgin Linseed)', 'Pain Management / Consumer Health', 'Musculoskeletal Pain / Sprains / Sport Injuries', null, null, 'Moov / Iodex', null, 'Acute']),
+  // Revital (Ginseng + Vitamins + Minerals) — Ranbaxy's OTC multi-vit, via Ranbaxy deal
+  row(['Revital H', 'Acquired', '2015-03-25', 'Daiichi Sankyo (via Ranbaxy)', 'Sun Pharma', 'Brand Acquisition', 'Ginseng + Multivitamin + Multimineral', 'Nutraceuticals / Consumer Health', 'Daily Wellness / Fatigue / Immunity', null, null, 'Supradyn / Zincovit', null, 'Chronic']),
+  // Sotret (Isotretinoin) — Ranbaxy derm brand
+  row(['Sotret', 'Acquired', '2015-03-25', 'Daiichi Sankyo (via Ranbaxy)', 'Sun Pharma', 'Brand Acquisition', 'Isotretinoin', 'Dermatology', 'Severe Nodulocystic Acne', null, null, 'Isotroin / Absorica', null, 'Chronic']),
+  // Cifran (Ciprofloxacin) — Ranbaxy anti-infective
+  row(['Cifran', 'Acquired', '2015-03-25', 'Daiichi Sankyo (via Ranbaxy)', 'Sun Pharma', 'Brand Acquisition', 'Ciprofloxacin (± Tinidazole / Ornidazole)', 'Anti-Infectives', 'Respiratory / UTI / GI Infections', null, null, 'Ciplox / Zoxan', null, 'Acute']),
+
+  // ── Absorica LD — acquired from Cipher Pharmaceuticals (US) — 10-Nov-2022 ──
+  row(['Absorica LD', 'Acquired', '2022-11-10', 'Cipher Pharmaceuticals', 'Sun Pharma', 'Asset Acquisition', 'Isotretinoin (Lidose)', 'Dermatology', 'Severe Nodular Acne', null, null, 'Sotret / Isotroin', null, 'Chronic']),
+
+  // ── Concert Pharmaceuticals acquisition — 06-Mar-2023, $576M upfront + CVR ──
+  // Sun Pharma completes acquisition of Concert Pharmaceuticals (brings deuruxolitinib/Leqselvi)
+  row(['Concert Pharmaceuticals (parent)', 'Acquired', '2023-03-06', 'Concert Pharmaceuticals shareholders', 'Sun Pharma', 'Company Acquisition', 'Deuruxolitinib (deuterated JAK1/2 inhibitor)', 'Dermatology / Immunology', 'Severe Alopecia Areata', 4800, null, 'N/A (novel JAK inh)', null, 'Chronic']),
+
+  // ── Cequa (Cyclosporine 0.09% nanomicellar) — India launch April 2023 ──
+  // sunpharma.com / PharmaTutor — Sun launches Cequa in India for Dry Eye Disease (Apr-2023)
+  row(['Cequa', 'Own Launched', '2023-04-01', '—', 'Sun Pharma', 'NCE Launch', 'Cyclosporine 0.09% (nanomicellar)', 'Ophthalmology', 'Chronic Dry Eye Disease', null, null, 'Restasis / Ikervis', null, 'Chronic']),
+
+  // ── Winlevi (Clascoterone) — US/Canada co-marketing with Cassiopea (Jul-2021); India launch via Sun earlier dataset (20-Sep-2023) ──
+  row(['Winlevi', 'In-licensed', '2023-09-20', 'Cassiopea SpA (Cosmo Pharma)', 'Sun Pharma', 'In-license (US + Canada + expansion)', 'Clascoterone 1% (topical androgen receptor inhibitor)', 'Dermatology', 'Acne Vulgaris (age >=12)', null, null, '—', null, 'Chronic']),
+
+  // ── Taro Pharmaceuticals — remaining 21.5% buyout, completed 24-Jun-2024 ──
+  row(['Taro Pharmaceuticals (remaining 21.5% buyout)', 'Acquired', '2024-06-24', 'Taro minority shareholders', 'Sun Pharma', 'Stake Increase (100% wholly-owned)', 'Topical generics + dermatology portfolio', 'Dermatology / Multi-therapy', 'Multi-indication (US-focused derma)', 2900, null, 'Various', null, 'Chronic']),
+
+  // ── Leqselvi (Deuruxolitinib) US FDA approval — 25-Jul-2024; commercial launch Jul-2025 ──
+  row(['Leqselvi', 'Own Launched', '2024-07-25', '—', 'Sun Pharma', 'NCE Approval (US)', 'Deuruxolitinib 8 mg (JAK1/2 inhibitor)', 'Dermatology / Immunology', 'Severe Alopecia Areata (adults)', null, null, 'Olumiant / Litfulo', null, 'Chronic']),
+
+  // ── Checkpoint Therapeutics — acquired 30-May-2025 for $355M upfront + CVR ──
+  row(['Checkpoint Therapeutics (parent)', 'Acquired', '2025-05-30', 'Checkpoint Therapeutics shareholders', 'Sun Pharma', 'Company Acquisition', 'Cosibelimab (anti-PD-L1 IgG1) + oncology pipeline', 'Oncology / Immuno-oncology', 'Advanced Cutaneous SCC', 3000, null, 'N/A (first anti-PD-L1 in cSCC)', null, 'Chronic']),
+
+  // ── UNLOXCYT (Cosibelimab-ipdl) — FDA-approved anti-PD-L1 for aCSCC; launch via Checkpoint acquisition ──
+  row(['UNLOXCYT', 'Own Launched', '2025-01-31', '—', 'Sun Pharma', 'NCE Launch (US)', 'Cosibelimab-ipdl (anti-PD-L1 IgG1)', 'Oncology / Immuno-oncology', 'Advanced Cutaneous Squamous Cell Carcinoma (aCSCC)', null, null, 'N/A (first-in-class)', null, 'Chronic']),
+
+  // ── Fexuclue (Fexuprazan) — In-licensed from Daewoong Pharmaceutical (07-Apr-2025) ──
+  row(['Fexuclue', 'In-licensed', '2025-04-07', 'Daewoong Pharmaceutical', 'Sun Pharma', 'In-license (India)', 'Fexuprazan 40 mg (P-CAB)', 'Gastroenterology', 'Erosive Esophagitis / GERD', null, null, 'Vonzai / Kabvie / Voquezna', null, 'Chronic']),
+
+  // ── Ilumya (Tildrakizumab) — India launch 01-Dec-2025 ──
+  row(['Ilumya', 'Own Launched', '2025-12-01', '—', 'Sun Pharma', 'NCE Launch (India)', 'Tildrakizumab-asmn (IL-23 p19 mAb)', 'Dermatology / Immunology', 'Moderate-Severe Plaque Psoriasis', null, null, 'Skyrizi / Stelara', null, 'Chronic']),
+
+  // ── Noveltreat / Sematrinity — Semaglutide Day-1 launch (20-Mar-2026) ──
+  row(['Noveltreat / Sematrinity', 'Own Launched', '2026-03-20', '—', 'Sun Pharma', 'Generic Launch', 'Semaglutide (injection)', 'Anti-Diabetic', 'Type 2 Diabetes / Chronic Weight Management', null, null, 'Rybelsus / Wegovy / Samakind', null, 'Chronic']),
 
   // ─── Dr. Reddy's — LIVE (press releases / drreddys.com) ───
   // Business Standard "Dr Reddy's launches Tegoprazan in India for acid peptic diseases" (16-Sep-2025)
