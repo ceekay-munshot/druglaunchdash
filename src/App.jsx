@@ -130,7 +130,7 @@ export default function App() {
         </section>
 
         <section aria-label="Core table">
-          <MainTable rows={filteredRows} />
+          <MainTable rows={filteredRows} selectedCompany={selectedCompany} />
         </section>
 
         <section aria-label="Investor insights">

@@ -31,10 +31,17 @@ const WIDTH_HINT = {
   [COLUMN_KEYS.CHRONIC_ACUTE]: 'min-w-[120px]',
 };
 
-export default function MainTable({ rows }) {
+export default function MainTable({ rows, selectedCompany }) {
   const [tableQuery, setTableQuery] = useState('');
   const [sortKey, setSortKey] = useState(COLUMN_KEYS.DATE);
   const [sortDir, setSortDir] = useState('desc');
+
+  // When a specific company is selected from the Header dropdown, the Buyer
+  // column is redundant (every row has the same Buyer = selected company), so
+  // we hide it. When "All Companies" is selected, we show it.
+  const visibleColumns = selectedCompany && selectedCompany !== '__ALL__'
+    ? COLUMN_ORDER.filter((c) => c !== COLUMN_KEYS.BUYER)
+    : COLUMN_ORDER;
 
   const onSort = (k) => {
     if (sortKey === k) setSortDir((d) => (d === 'asc' ? 'desc' : 'asc'));
@@ -156,7 +163,7 @@ export default function MainTable({ rows }) {
         <table className="min-w-full text-sm border-separate border-spacing-0">
           <thead className="sticky top-0 z-10 bg-gradient-to-b from-pharma-50 to-white table-sticky-shadow">
             <tr>
-              {COLUMN_ORDER.map((col) => {
+              {visibleColumns.map((col) => {
                 const isSorted = sortKey === col;
                 const Icon = isSorted ? (sortDir === 'asc' ? ArrowUp : ArrowDown) : ArrowUpDown;
                 return (
@@ -186,7 +193,7 @@ export default function MainTable({ rows }) {
                 key={`${r[COLUMN_KEYS.BRAND]}-${i}`}
                 className="group hover:bg-pharma-50/40 transition-colors"
               >
-                {COLUMN_ORDER.map((col) => (
+                {visibleColumns.map((col) => (
                   <td
                     key={col}
                     className={`px-4 py-3 align-middle border-b border-ink-100/70 ${
@@ -201,7 +208,7 @@ export default function MainTable({ rows }) {
             {visibleRows.length === 0 && (
               <tr>
                 <td
-                  colSpan={COLUMN_ORDER.length}
+                  colSpan={visibleColumns.length}
                   className="text-center text-sm text-ink-500 py-12"
                 >
                   No launches match the current filters.
