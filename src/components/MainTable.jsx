@@ -161,7 +161,7 @@ export default function MainTable({ rows, selectedCompany }) {
 
       <div className="max-h-[640px] overflow-auto scrollbar-thin">
         <table className="min-w-full text-sm border-separate border-spacing-0">
-          <thead className="sticky top-0 z-10 bg-gradient-to-b from-pharma-50 to-white table-sticky-shadow">
+          <thead className="sticky top-0 z-10 bg-white table-sticky-shadow">
             <tr>
               {visibleColumns.map((col) => {
                 const isSorted = sortKey === col;
@@ -169,7 +169,7 @@ export default function MainTable({ rows, selectedCompany }) {
                 return (
                   <th
                     key={col}
-                    className={`text-left text-[11px] font-semibold uppercase tracking-wider text-ink-700 px-4 py-3 border-b border-pharma-100 ${
+                    className={`text-left text-[11px] font-semibold uppercase tracking-wider text-ink-700 px-4 py-3 bg-gradient-to-b from-pharma-50/80 to-white border-b border-pharma-100 ${
                       WIDTH_HINT[col] || ''
                     }`}
                   >
@@ -179,8 +179,8 @@ export default function MainTable({ rows, selectedCompany }) {
                         NUMERIC_COLS.has(col) ? 'justify-end w-full' : ''
                       }`}
                     >
-                      <span>{col}</span>
-                      <Icon className={`w-3 h-3 ${isSorted ? 'text-pharma-600' : 'text-ink-300'}`} />
+                      <span className="whitespace-nowrap">{col}</span>
+                      <Icon className={`w-3 h-3 shrink-0 ${isSorted ? 'text-pharma-600' : 'text-ink-300'}`} />
                     </button>
                   </th>
                 );
@@ -191,12 +191,14 @@ export default function MainTable({ rows, selectedCompany }) {
             {visibleRows.map((r, i) => (
               <tr
                 key={`${r[COLUMN_KEYS.BRAND]}-${i}`}
-                className="group hover:bg-pharma-50/40 transition-colors"
+                className={`group transition-colors hover:bg-pharma-50/60 ${
+                  i % 2 === 1 ? 'bg-ink-100/20' : 'bg-white'
+                }`}
               >
                 {visibleColumns.map((col) => (
                   <td
                     key={col}
-                    className={`px-4 py-3 align-middle border-b border-ink-100/70 ${
+                    className={`px-4 py-3.5 align-middle leading-snug border-b border-ink-100/60 ${
                       WIDTH_HINT[col] || ''
                     }`}
                   >
