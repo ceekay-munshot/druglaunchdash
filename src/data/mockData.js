@@ -111,7 +111,222 @@ export function mergeLaunchRows(baseline, scrapedRaw) {
   return [...baseline, ...unique];
 }
 
-export const LAUNCH_TRACKER_ROWS = [
+// ──────────────────────────────────────────────────────────────────────────
+// BRAND_PRICES — retail MRP (INR) for the smallest typical pack, sourced
+// from 1mg / Netmeds / PharmEasy / Apollo Pharmacy / MedPlusMart / Medindia
+// drug-price index (in that priority order of cross-check). Numeric = ₹
+// value; string = non-unit pricing (e.g. "₹84,375 / injection").
+//
+// Declared BEFORE the rows array so `enrichWithPrice` can be invoked at
+// module-evaluation time when building the exported `LAUNCH_TRACKER_ROWS`
+// without relying on post-load mutation (which caused TDZ errors in the
+// minified production bundle).
+// ──────────────────────────────────────────────────────────────────────────
+const BRAND_PRICES = {
+  // ─ Mankind Pharma ─
+  'moxikind-cv': 190,
+  nurokind: 170,
+  gudcef: 180,
+  cefakind: 255,
+  candiforce: 260,
+  'asthakind-dx': 100,
+  'codistar-dx': 95,
+  dolokind: 55,
+  monticope: 210,
+  'caldikind plus': 220,
+  'telmikind / telmikind-h': 110,
+  'amlokind-at': 75,
+  'glimestar-m': 105,
+  'manforce (condoms + rx)': 50,
+  'unwanted-72': 75,
+  'unwanted kit': 445,
+  'gas-o-fast': 25,
+  'prega news': 60,
+  'health ok': 230,
+  dydroboon: 540,
+  longifene: 110,
+  combihale: 430,
+  daffy: 180,
+  samakind: '₹450 / weekly dose (launch price, PharmEasy)',
+  rivotril: 30,
+  'symbicort (india distribution)': 1100,
+  'vonoprazan (takeda licence)': 340,
+
+  // ─ Eris Lifesciences ─
+  'glimisave / glimisave-m / glimisave max': 95,
+  eritel: 90,
+  'eritel ln / ln-bloc': 160,
+  olmin: 125,
+  crevast: 135,
+  atorsave: 130,
+  renerve: 170,
+  tayo: 70,
+  raricap: 160,
+  rabonik: 135,
+  serlift: 105,
+  gluxit: 255,
+  'xsulin / xglar': 800,
+  tendia: 180,
+  cyblex: 145,
+  zomelis: 170,
+  cosvate: 155,
+  cosmelite: 310,
+  onabet: 170,
+  flucos: 130,
+  psorid: 420,
+  basalog: 860,
+  insugen: 190,
+  sundae: '₹450 / weekly dose (launch price, press release)',
+
+  // ─ Sun Pharma ─
+  rosuvas: 150,
+  aztor: 145,
+  cardivas: 90,
+  'revelol am': 130,
+  'pantocid / pantocid-dsr': 115,
+  sompraz: 135,
+  levipil: 250,
+  nexito: 140,
+  istamet: 185,
+  'istamet xcite': 315,
+  'oxra / oxra-m': 260,
+  gemer: 125,
+  silodal: 310,
+  febuget: 100,
+  naxdom: 125,
+  'volini / volini maxx': 85,
+  'revital h': 410,
+  sotret: 255,
+  cifran: 55,
+  cequa: 2200,
+  fexuclue: 380,
+  ilumya: '₹84,375 / injection (sunpharma.com launch MRP)',
+  'noveltreat / sematrinity': '₹450 / weekly dose (launch MRP, sunpharma.com)',
+
+  // ─ Cipla ─
+  asthalin: 145,
+  ciplox: 45,
+  'ciplox eye': 20,
+  novamox: 50,
+  'foracort (inhaler / respules / rotacaps)': 615,
+  'foracort nexthaler': 690,
+  seroflo: 735,
+  budecort: 340,
+  duolin: 400,
+  ivabrad: 180,
+  'humalog + trulicity (eli lilly rights)': 870,
+  'cabotegravir la (via mpp / viiv)': null,
+  nocdurna: 460,
+  'cipenmet / esblocip': '₹3,500 / vial (launch price, press release)',
+  'yurpeak (tirzepatide)':
+    '₹3,500 (2.5 mg) / ₹4,375 (5 mg) per pen (lilly.com launch MRP)',
+  afrezza: '₹7,200 / inhaler cartridge pack (cipla.com launch MRP)',
+  ciplostem: '₹1,50,000+ / dose (first-in-class stem-cell therapy)',
+  'galvus / galvus met (perpetual licence)': 460,
+
+  // ─ Alkem Laboratories ─
+  'taxim-o / taxim-o forte': 110,
+  clavam: 205,
+  xone: 70,
+  pipzo: 260,
+  'pan (pantoprazole)': 115,
+  'pan-d': 190,
+  ondem: 55,
+  'gemcal / gemcal-ds': 200,
+  'a to z ns': 120,
+  sumo: 65,
+  enzar: 310,
+  'vonzai (vonoprazan)': 395,
+  'empanorm / empanorm-l / empanorm-m / empanorm duo': 225,
+  pertuza: '₹78,300 / 420 mg vial (biosimilar launch MRP)',
+  'semasize / obesema / hepaglide':
+    '₹450 / weekly dose (launch MRP, BSE filing)',
+
+  // ─ Corona Remedies ─
+  'cortel m (cor family)': 135,
+  trazer: 180,
+  'b-29 (xmex)': 145,
+  'cor-9': 1150,
+  'cor-3': 195,
+  'dilo-bm': 98,
+  'dilo-dx': 105,
+  stelbid: 85,
+  vitneurin: 120,
+  obimet: 40,
+  'obimet-gx': 95,
+  'obimet sr': 60,
+  'obimet-v': 120,
+  triobimet: 115,
+  thyrocab: 125,
+  myoril: 180,
+  noklot: 100,
+  fostine: 1900,
+  luprofact: 1100,
+  menodac: 1100,
+  ovidac: 400,
+  vageston: 235,
+  wokadine: 85,
+
+  // ─ Torrent Pharma ─
+  'losar / losar-h': 100,
+  'dilzem sr': 155,
+  nikoran: 75,
+  nebicard: 75,
+  nexpro: 135,
+  shelcal: 175,
+  'chymoral forte / chymoral-br': 210,
+  carnisure: 210,
+  deviry: 95,
+  unienzyme: 45,
+  ampoxin: 45,
+  'telsar / losar (unichem)': 80,
+  tedibar: 180,
+  atogla: 340,
+  spoo: 195,
+  'b4 nappi': 190,
+  permite: 175,
+  'vorxar (saroglitazar)': 365,
+  'kabvie (vonoprazan)': 395,
+  'shelcal total': 685,
+  cilacar: 215,
+  nicardia: 95,
+  rantac: 35,
+  metrogyl: 45,
+  semalix: '₹450 / weekly dose (launch MRP, torrentpharma.com)',
+  sembolic: '₹3,999 / month (launch MRP, torrentpharma.com × Zydus)',
+};
+
+// Pre-normalise the lookup so we match on lowercased full brand and on the
+// first-token (prefix before '/' or '(') as a fallback.
+const _PRICE_INDEX = (() => {
+  const idx = {};
+  for (const [k, v] of Object.entries(BRAND_PRICES)) {
+    idx[k.toLowerCase().trim()] = v;
+  }
+  return idx;
+})();
+
+// Applies BRAND_PRICES to a raw row list. Rows that already have a numeric
+// PRICE pass through untouched; others get the looked-up price or stay null.
+function enrichWithPrice(rows) {
+  return rows.map((r) => {
+    if (r[COLUMN_KEYS.PRICE] != null) return r;
+    const brand = String(r[COLUMN_KEYS.BRAND] ?? '').toLowerCase().trim();
+    if (_PRICE_INDEX[brand] !== undefined) {
+      return { ...r, [COLUMN_KEYS.PRICE]: _PRICE_INDEX[brand] };
+    }
+    const firstToken = brand.split(/[/(]/)[0].trim();
+    if (_PRICE_INDEX[firstToken] !== undefined) {
+      return { ...r, [COLUMN_KEYS.PRICE]: _PRICE_INDEX[firstToken] };
+    }
+    return r;
+  });
+}
+
+// Private raw-row list — built once via the row() helper. We never export
+// this directly; the exported LAUNCH_TRACKER_ROWS below is the enriched
+// (price-added) version.
+const _RAW_LAUNCH_TRACKER_ROWS = [
   // ──────────────────────────────────────────────────────────────────────────
   // Sun Pharma — EXPANDED LIVE DATASET (deep-research edition)
   // Sources: sunpharma.com press releases + annual report FY25, Business
@@ -712,222 +927,9 @@ export const LAUNCH_TRACKER_ROWS = [
   row(['Wokadine', 'Acquired', '2026-03-30', "Dr. Reddy's Laboratories", 'Corona Remedies', 'Brand Acquisition', 'Povidone Iodine', 'Anti-Infectives', 'Topical Antiseptic / Pre-surgical Skin Prep', 648, null, 'Betadine', null, 'Acute']),
 ];
 
-// ──────────────────────────────────────────────────────────────────────────
-// BRAND_PRICES — retail MRP (INR) for the smallest typical pack, sourced
-// from 1mg / Netmeds / PharmEasy / Apollo Pharmacy / MedPlusMart / Medindia
-// drug-price index (in that priority order of cross-check). Numeric = ₹
-// value; string = non-unit pricing (e.g. "₹84,375 / injection").
-//
-// Only populated where verifiable from the above sources. Many specialty
-// brands and recent global launches (UNLOXCYT, Leqselvi, Absorica LD) are
-// US-market and don't have Indian MRPs — left undefined (shown as "—").
-// Keys are matched case-insensitively against the Brand column, first
-// token (so 'Nurokind' matches 'Nurokind' exactly; 'Glimisave family'
-// rows match on 'glimisave'). Update whenever a new launch gets listed.
-// ──────────────────────────────────────────────────────────────────────────
-const BRAND_PRICES = {
-  // ─ Mankind Pharma ─
-  'moxikind-cv': 190,              // 625 mg strip of 10 — 1mg / Apollo
-  'nurokind': 170,                 // OD 1500 mcg strip of 10 — 1mg
-  'gudcef': 180,                   // 200 strip of 10 — 1mg
-  'cefakind': 255,                 // 500 strip of 10 — 1mg / Apollo
-  'candiforce': 260,               // 100 capsule strip of 4 — 1mg
-  'asthakind-dx': 100,             // 100 mL syrup — medplusmart
-  'codistar-dx': 95,               // 100 mL syrup — 1mg
-  'dolokind': 55,                  // Aceclofenac + Paracetamol strip of 10 — 1mg
-  'monticope': 210,                // LC strip of 10 — 1mg
-  'caldikind plus': 220,           // strip of 15 — Apollo
-  'telmikind / telmikind-h': 110,  // H 40/12.5 strip of 15 — 1mg
-  'amlokind-at': 75,               // strip of 15 — 1mg
-  'glimestar-m': 105,              // 2 mg strip of 15 — 1mg
-  'manforce (condoms + rx)': 50,   // condom pack of 10 — Apollo (consumer)
-  'unwanted-72': 75,               // single pill — Apollo
-  'unwanted kit': 445,             // single kit — 1mg
-  'gas-o-fast': 25,                // sachet — Apollo (consumer)
-  'prega news': 60,                // single-use kit — 1mg (consumer)
-  'health ok': 230,                // strip of 15 — 1mg (consumer)
-  'dydroboon': 540,                // 10 mg strip of 10 — 1mg
-  'longifene': 110,                // 25 mg strip of 10 — 1mg
-  'combihale': 430,                // FF 200 inhaler — 1mg
-  'daffy': 180,                    // moisturising bar — Apollo
-  'samakind': '₹450 / weekly dose (launch price, PharmEasy)',
-  'rivotril': 30,                  // 0.5 mg strip of 10 — 1mg
-  'symbicort (india distribution)': 1100,  // Turbuhaler — 1mg
-  'vonoprazan (takeda licence)': 340,       // 20 mg strip of 10 Mankind's — 1mg
-
-  // ─ Eris Lifesciences ─
-  'glimisave / glimisave-m / glimisave max': 95,   // M2 strip of 15 — 1mg
-  'eritel': 90,                    // 40 strip of 15 — 1mg
-  'eritel ln / ln-bloc': 160,      // 40 strip of 10 — 1mg
-  'olmin': 125,                    // 20 strip of 15 — 1mg
-  'crevast': 135,                  // 10 strip of 10 — 1mg
-  'atorsave': 130,                 // 10 strip of 10 — 1mg
-  'renerve': 170,                  // Plus strip of 10 — 1mg
-  'tayo': 70,                      // 60K sachet — 1mg
-  'raricap': 160,                  // XT strip of 15 — Apollo
-  'rabonik': 135,                  // DSR strip of 10 — 1mg
-  'serlift': 105,                  // 50 strip of 10 — 1mg
-  'gluxit': 255,                   // 10 strip of 14 — 1mg
-  'xsulin / xglar': 800,           // Xglar 100 IU cartridge — 1mg
-  'tendia': 180,                   // T strip of 10 — 1mg
-  'cyblex': 145,                   // 20 mg strip of 10 — 1mg
-  'zomelis': 170,                  // 50 mg strip of 10 — 1mg
-  'cosvate': 155,                  // GM tube 20g — 1mg
-  'cosmelite': 310,                // cream 20g — Apollo
-  'onabet': 170,                   // cream 2% 30g — 1mg
-  'flucos': 130,                   // 150 strip of 1 — Apollo
-  'psorid': 420,                   // 50 mg strip of 10 — 1mg
-  'basalog': 860,                  // One 3 mL cartridge — 1mg
-  'insugen': 190,                  // 30/70 vial — 1mg
-  'sundae': '₹450 / weekly dose (launch price, press release)',
-
-  // ─ Sun Pharma ─
-  'rosuvas': 150,                  // 10 strip of 15 — 1mg / Apollo
-  'aztor': 145,                    // 10 strip of 15 — 1mg
-  'cardivas': 90,                  // 6.25 strip of 10 — 1mg
-  'revelol am': 130,               // AM 50 strip of 10 — 1mg
-  'pantocid / pantocid-dsr': 115,  // 40 strip of 15 — 1mg
-  'sompraz': 135,                  // 40 strip of 10 — 1mg
-  'levipil': 250,                  // 500 strip of 10 — 1mg
-  'nexito': 140,                   // 10 strip of 10 — 1mg
-  'istamet': 185,                  // 50/500 strip of 10 — 1mg
-  'istamet xcite': 315,            // 100/500/10 strip of 10 — 1mg
-  'oxra / oxra-m': 260,            // Oxra 10 strip of 14 — 1mg
-  'gemer': 125,                    // 1 strip of 15 — 1mg
-  'silodal': 310,                  // 8 strip of 10 — 1mg
-  'febuget': 100,                  // 40 strip of 10 — 1mg
-  'naxdom': 125,                   // 250 strip of 10 — 1mg
-  'volini / volini maxx': 85,      // gel 50 g — Apollo (consumer)
-  'revital h': 410,                // strip of 30 — Apollo (consumer)
-  'sotret': 255,                   // 20 strip of 10 — 1mg
-  'cifran': 55,                    // 500 strip of 10 — 1mg
-  'cequa': 2200,                   // 0.09% 3 mL — Apollo
-  'fexuclue': 380,                 // 40 strip of 10 — PharmEasy
-  'ilumya': '₹84,375 / injection (sunpharma.com launch MRP)',
-  'noveltreat / sematrinity': '₹450 / weekly dose (launch MRP, sunpharma.com)',
-
-  // ─ Cipla ─
-  'asthalin': 145,                 // Inhaler 100 mcg — 1mg
-  'ciplox': 45,                    // TZ strip of 10 — 1mg
-  'ciplox eye': 20,                // 0.3% 5 mL drops — 1mg
-  'novamox': 50,                   // 500 strip of 10 — Apollo
-  'foracort (inhaler / respules / rotacaps)': 615,  // 200 inhaler — 1mg
-  'foracort nexthaler': 690,       // 200 DPI — 1mg
-  'seroflo': 735,                  // 250 inhaler — 1mg
-  'budecort': 340,                 // 200 inhaler — 1mg
-  'duolin': 400,                   // Respules pack 5 — 1mg
-  'ivabrad': 180,                  // 5 strip of 10 — 1mg
-  'humalog + trulicity (eli lilly rights)': 870,   // Humalog 3 mL cart — Apollo
-  'cabotegravir la (via mpp / viiv)': null,        // Not yet consumer-listed in India
-  'nocdurna': 460,                 // 25 mcg strip of 10 — 1mg
-  'cipenmet / esblocip': '₹3,500 / vial (launch price, press release)',
-  'yurpeak (tirzepatide)': '₹3,500 (2.5 mg) / ₹4,375 (5 mg) per pen (lilly.com launch MRP)',
-  'afrezza': '₹7,200 / inhaler cartridge pack (cipla.com launch MRP)',
-  'ciplostem': '₹1,50,000+ / dose (first-in-class stem-cell therapy)',
-  'galvus / galvus met (perpetual licence)': 460,  // Galvus 50 strip of 7 — 1mg
-
-  // ─ Alkem Laboratories ─
-  'taxim-o / taxim-o forte': 110,   // 200 strip of 10 — 1mg
-  'clavam': 205,                    // 625 strip of 6 — 1mg
-  'xone': 70,                       // Inj 1 g single vial — Apollo
-  'pipzo': 260,                     // 4.5 g vial — Apollo
-  'pan (pantoprazole)': 115,        // 40 strip of 15 — 1mg
-  'pan-d': 190,                     // strip of 10 — 1mg
-  'ondem': 55,                      // 4 strip of 10 — 1mg
-  'gemcal / gemcal-ds': 200,        // DS strip of 10 — 1mg
-  'a to z ns': 120,                 // strip of 15 — 1mg
-  'sumo': 65,                       // strip of 10 — 1mg
-  'enzar': 310,                     // 180 strip of 10 — 1mg
-  'vonzai (vonoprazan)': 395,       // 20 strip of 10 — 1mg
-  'empanorm / empanorm-l / empanorm-m / empanorm duo': 225,  // Empanorm 10 strip of 10 — 1mg
-  'pertuza': '₹78,300 / 420 mg vial (biosimilar launch MRP)',
-  'semasize / obesema / hepaglide': '₹450 / weekly dose (launch MRP, BSE filing)',
-
-  // ─ Corona Remedies ─
-  'cortel m (cor family)': 135,    // 25/25 strip of 10 — 1mg
-  'trazer': 180,                   // Forte strip of 10 — 1mg
-  'b-29 (xmex)': 145,              // strip of 10 — 1mg
-  'cor-9': 1150,                   // 500 mg/2 mL inj — 1mg
-  'cor-3': 195,                    // strip of 10 — Apollo
-  'dilo-bm': 98,                   // expectorant 100 mL — 1mg
-  'dilo-dx': 105,                  // syrup 100 mL — 1mg
-  'stelbid': 85,                   // strip of 10 — Apollo
-  'vitneurin': 120,                // strip of 10 — 1mg
-  'obimet': 40,                    // 500 strip of 10 — 1mg
-  'obimet-gx': 95,                 // 1/500 strip of 15 — 1mg
-  'obimet sr': 60,                 // 500 SR strip of 10 — 1mg
-  'obimet-v': 120,                 // 0.3 strip of 10 — 1mg
-  'triobimet': 115,                // 2 mg ER strip of 10 — 1mg
-  'thyrocab': 125,                 // 100 strip of 100 — 1mg
-  'myoril': 180,                   // 8 mg strip of 10 — 1mg
-  'noklot': 100,                   // 75 strip of 10 — Apollo
-  'fostine': 1900,                 // 150 IU inj — 1mg
-  'luprofact': 1100,               // 75 IU inj — 1mg
-  'menodac': 1100,                 // 75 IU inj — 1mg
-  'ovidac': 400,                   // 5000 IU inj — 1mg
-  'vageston': 235,                 // 200 mg strip of 10 — 1mg
-  'wokadine': 85,                  // 5% solution 100 mL — 1mg
-
-  // ─ Torrent Pharma ─
-  'losar / losar-h': 100,          // H strip of 10 — 1mg
-  'dilzem sr': 155,                // 90 strip of 10 — 1mg
-  'nikoran': 75,                   // 5 strip of 10 — 1mg
-  'nebicard': 75,                  // 5 strip of 10 — 1mg
-  'nexpro': 135,                   // 40 strip of 10 — 1mg
-  'shelcal': 175,                  // 500 strip of 15 — 1mg
-  'chymoral forte / chymoral-br': 210,  // Forte strip of 10 — 1mg
-  'carnisure': 210,                // 500 strip of 10 — 1mg
-  'deviry': 95,                    // 10 strip of 10 — 1mg
-  'unienzyme': 45,                 // strip of 10 — 1mg
-  'ampoxin': 45,                   // 500 strip of 15 — 1mg
-  'telsar / losar (unichem)': 80,  // Telsar 40 strip of 15 — 1mg
-  'tedibar': 180,                  // 75 g bar — 1mg (consumer)
-  'atogla': 340,                   // lotion 200 mL — 1mg
-  'spoo': 195,                     // 120 mL — Apollo
-  'b4 nappi': 190,                 // 75 g — 1mg
-  'permite': 175,                  // 5% cream 30 g — 1mg
-  'vorxar (saroglitazar)': 365,    // 4 mg strip of 10 — 1mg
-  'kabvie (vonoprazan)': 395,      // 20 strip of 10 — 1mg
-  'shelcal total': 685,            // 400 g powder — 1mg
-  'cilacar': 215,                  // 10 strip of 15 — 1mg
-  'nicardia': 95,                  // Retard 10 strip of 15 — 1mg
-  'rantac': 35,                    // 150 strip of 10 — 1mg
-  'metrogyl': 45,                  // 400 strip of 10 — 1mg
-  'semalix': '₹450 / weekly dose (launch MRP, torrentpharma.com)',
-  'sembolic': '₹3,999 / month (launch MRP, torrentpharma.com × Zydus)',
-};
-
-// Enrich rows with price from the lookup table above. Matches the first token
-// of the Brand (lowercased) so 'Glimisave / Glimisave-M / Glimisave Max' maps
-// via the 'glimisave' key as well as the full label.
-function enrichWithPrice(rows) {
-  const normalized = {};
-  for (const [k, v] of Object.entries(BRAND_PRICES)) {
-    normalized[k.toLowerCase().trim()] = v;
-  }
-  return rows.map((r) => {
-    if (r[COLUMN_KEYS.PRICE] != null) return r;
-    const brand = String(r[COLUMN_KEYS.BRAND] ?? '').toLowerCase().trim();
-    if (normalized[brand] !== undefined) {
-      return { ...r, [COLUMN_KEYS.PRICE]: normalized[brand] };
-    }
-    // Fuzzy: first 'word' before a slash or parenthesis
-    const firstToken = brand.split(/[/(]/)[0].trim();
-    if (normalized[firstToken] !== undefined) {
-      return { ...r, [COLUMN_KEYS.PRICE]: normalized[firstToken] };
-    }
-    return r;
-  });
-}
-
-// Apply enrichment so consumers of LAUNCH_TRACKER_ROWS see the price column
-// populated without us having to rewrite every row() definition.
-// eslint-disable-next-line no-global-assign
-LAUNCH_TRACKER_ROWS.splice(
-  0,
-  LAUNCH_TRACKER_ROWS.length,
-  ...enrichWithPrice([...LAUNCH_TRACKER_ROWS])
-);
+// Export the price-enriched rows directly — avoids any post-load mutation
+// on an exported const (which caused a TDZ error in the minified bundle).
+export const LAUNCH_TRACKER_ROWS = enrichWithPrice(_RAW_LAUNCH_TRACKER_ROWS);
 
 // Derived list of unique Buyers — these are the selectable "companies"
 export const UNIQUE_BUYERS = Array.from(
