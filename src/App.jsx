@@ -5,7 +5,13 @@ import KPICards from './components/KPICards';
 import Charts from './components/Charts';
 import MainTable from './components/MainTable';
 import InsightWidgets from './components/InsightWidgets';
-import { LAUNCH_TRACKER_ROWS, UNIQUE_BUYERS, COLUMN_KEYS, mergeLaunchRows } from './data/mockData';
+import {
+  LAUNCH_TRACKER_ROWS,
+  UNIQUE_BUYERS,
+  COLUMN_KEYS,
+  mergeLaunchRows,
+  enrichRowsWithPrices,
+} from './data/mockData';
 
 const LAUNCHES_ENDPOINT = '/launches.json';
 
@@ -167,7 +173,7 @@ export default function App() {
   }, []);
 
   const allRows = useMemo(
-    () => mergeLaunchRows(LAUNCH_TRACKER_ROWS, scrapedRows),
+    () => enrichRowsWithPrices(mergeLaunchRows(LAUNCH_TRACKER_ROWS, scrapedRows)),
     [scrapedRows]
   );
 

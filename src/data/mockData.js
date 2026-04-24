@@ -114,15 +114,16 @@ export function mergeLaunchRows(baseline, scrapedRaw) {
 // ──────────────────────────────────────────────────────────────────────────
 // BRAND_PRICES — retail MRP (INR) for the smallest typical pack, sourced
 // from 1mg / Netmeds / PharmEasy / Apollo Pharmacy / MedPlusMart / Medindia
-// drug-price index (in that priority order of cross-check). Numeric = ₹
-// value; string = non-unit pricing (e.g. "₹84,375 / injection").
+// drug-price index. Numeric = ₹ value; string = non-unit pricing (e.g.
+// "₹84,375 / injection").
 //
-// Declared BEFORE the rows array so `enrichWithPrice` can be invoked at
-// module-evaluation time when building the exported `LAUNCH_TRACKER_ROWS`
-// without relying on post-load mutation (which caused TDZ errors in the
-// minified production bundle).
+// Exported so App.jsx can enrich rows via useMemo — NO module-level
+// computation in this file. Previous attempts to compute
+// `LAUNCH_TRACKER_ROWS = enrichWithPrice(...)` at module load caused a
+// TDZ error in the minified production bundle. This split ensures
+// mockData.js only declares plain data + pure functions.
 // ──────────────────────────────────────────────────────────────────────────
-const BRAND_PRICES = {
+export const BRAND_PRICES = {
   // ─ Mankind Pharma ─
   'moxikind-cv': 190,
   nurokind: 170,
@@ -296,37 +297,28 @@ const BRAND_PRICES = {
   sembolic: '₹3,999 / month (launch MRP, torrentpharma.com × Zydus)',
 };
 
-// Pre-normalise the lookup so we match on lowercased full brand and on the
-// first-token (prefix before '/' or '(') as a fallback.
-const _PRICE_INDEX = (() => {
+// Pure function — apply BRAND_PRICES to a row list. Called by App.jsx inside
+// a useMemo so all work happens after module init (no TDZ risk).
+export function enrichRowsWithPrices(rows, prices = BRAND_PRICES) {
   const idx = {};
-  for (const [k, v] of Object.entries(BRAND_PRICES)) {
-    idx[k.toLowerCase().trim()] = v;
+  for (const k of Object.keys(prices)) {
+    idx[k.toLowerCase().trim()] = prices[k];
   }
-  return idx;
-})();
-
-// Applies BRAND_PRICES to a raw row list. Rows that already have a numeric
-// PRICE pass through untouched; others get the looked-up price or stay null.
-function enrichWithPrice(rows) {
   return rows.map((r) => {
     if (r[COLUMN_KEYS.PRICE] != null) return r;
     const brand = String(r[COLUMN_KEYS.BRAND] ?? '').toLowerCase().trim();
-    if (_PRICE_INDEX[brand] !== undefined) {
-      return { ...r, [COLUMN_KEYS.PRICE]: _PRICE_INDEX[brand] };
+    if (idx[brand] !== undefined) {
+      return { ...r, [COLUMN_KEYS.PRICE]: idx[brand] };
     }
     const firstToken = brand.split(/[/(]/)[0].trim();
-    if (_PRICE_INDEX[firstToken] !== undefined) {
-      return { ...r, [COLUMN_KEYS.PRICE]: _PRICE_INDEX[firstToken] };
+    if (idx[firstToken] !== undefined) {
+      return { ...r, [COLUMN_KEYS.PRICE]: idx[firstToken] };
     }
     return r;
   });
 }
 
-// Private raw-row list — built once via the row() helper. We never export
-// this directly; the exported LAUNCH_TRACKER_ROWS below is the enriched
-// (price-added) version.
-const _RAW_LAUNCH_TRACKER_ROWS = [
+export const LAUNCH_TRACKER_ROWS = [
   // ──────────────────────────────────────────────────────────────────────────
   // Sun Pharma — EXPANDED LIVE DATASET (deep-research edition)
   // Sources: sunpharma.com press releases + annual report FY25, Business
@@ -926,10 +918,6 @@ const _RAW_LAUNCH_TRACKER_ROWS = [
   // ── 5th MNC deal: Dr. Reddy's — Wokadine (30-Mar-2026, ₹648 Cr povidone iodine market) ──
   row(['Wokadine', 'Acquired', '2026-03-30', "Dr. Reddy's Laboratories", 'Corona Remedies', 'Brand Acquisition', 'Povidone Iodine', 'Anti-Infectives', 'Topical Antiseptic / Pre-surgical Skin Prep', 648, null, 'Betadine', null, 'Acute']),
 ];
-
-// Export the price-enriched rows directly — avoids any post-load mutation
-// on an exported const (which caused a TDZ error in the minified bundle).
-export const LAUNCH_TRACKER_ROWS = enrichWithPrice(_RAW_LAUNCH_TRACKER_ROWS);
 
 // Derived list of unique Buyers — these are the selectable "companies"
 export const UNIQUE_BUYERS = Array.from(
