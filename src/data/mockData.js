@@ -224,11 +224,77 @@ export const LAUNCH_TRACKER_ROWS = [
   // Business Standard "Glenmark Pharma launches GLIPIQ (semaglutide) in India" (21-Mar-2026)
   row(['GLIPIQ', 'Own Launched', '2026-03-21', '—', 'Glenmark', 'Generic Launch', 'Semaglutide', 'Anti-Diabetic', 'Type 2 Diabetes / Obesity', null, null, 'Rybelsus / Ozempic', null, 'Chronic']),
 
-  // ─── Alkem Laboratories — LIVE (BSE filings / bseindia.com) ───
-  // Business Standard "Alkem launches pertuzumab biosimilar for breast cancer in India" (22-Sep-2025)
-  row(['Pertuza', 'Own Launched', '2025-09-22', '—', 'Alkem', 'Biosimilar Launch', 'Pertuzumab', 'Oncology', 'HER2+ Breast Cancer', null, null, 'Perjeta', null, 'Chronic']),
-  // BSE filing / scanx "Alkem Laboratories Launches Semaglutide Injection" (21-Mar-2026) — brands Semasize / Obesema / Hepaglide
-  row(['Semasize / Obesema / Hepaglide', 'Own Launched', '2026-03-21', '—', 'Alkem', 'Generic Launch', 'Semaglutide', 'Anti-Diabetic', 'Type 2 Diabetes / Obesity', null, null, 'Rybelsus / Ozempic', null, 'Chronic']),
+  // ──────────────────────────────────────────────────────────────────────────
+  // Alkem Laboratories — EXPANDED LIVE DATASET (deep-research edition)
+  // Sources: alkemlabs.com press releases + annual report, Business Standard /
+  // BusinessToday / BioSpectrum / PharmaBiz / Medical Dialogues coverage, BSE
+  // filings, 1mg / Apollo / medplusmart product listings, Sonnet BioThera +
+  // Harvard OTD press releases. Alkem FY25 revenue Top-5 IPM, dominant in
+  // acute therapies (anti-infectives + gastro); expanding into chronic
+  // (diabetes + onco biosimilars) through organic + licensing plays.
+  // Subsidiaries: Cachet Pharmaceuticals + Indchemie Health Specialities +
+  // Alkem Wellness (trade generics, spun off 01-Oct-2025) + Enzene Biosciences
+  // (biotech arm). Launch dates for legacy engine brands are [est.].
+
+  // ── Engine brands (Own Launched) ──
+  // Taxim (Cefotaxime injection) — legacy anti-infective, injection [launch date est.]
+  row(['Taxim', 'Own Launched', '1995-01-01', '—', 'Alkem', 'NCE Launch', 'Cefotaxime Sodium', 'Anti-Infectives', 'Gram-negative / Meningitis / Severe Infections', null, null, 'Claforan / Omnatax', null, 'Acute']),
+  // Taxim-O (Cefixime) — first anti-infective in India to cross Rs 100 Cr (2006) [launch date est.]
+  row(['Taxim-O / Taxim-O Forte', 'Own Launched', '2000-01-01', '—', 'Alkem', 'NCE Launch', 'Cefixime (± Linezolid / Ofloxacin)', 'Anti-Infectives', 'Respiratory / UTI / Enteric Fever', null, null, 'Zifi / Mahacef', null, 'Acute']),
+  // Clavam (Amoxicillin + Clavulanic Acid) — crossed Rs 200 Cr in 2014 [launch date est.]
+  row(['Clavam', 'Own Launched', '2000-01-01', '—', 'Alkem', 'NCE Launch', 'Amoxicillin + Clavulanic Acid', 'Anti-Infectives', 'Respiratory / Skin / Dental Infections', null, null, 'Augmentin / Moxikind-CV', null, 'Acute']),
+  // Xone (Ceftriaxone injection) — hospital antibiotic [launch date est.]
+  row(['Xone', 'Own Launched', '2003-01-01', '—', 'Alkem', 'NCE Launch', 'Ceftriaxone (± Sulbactam / Tazobactam)', 'Anti-Infectives', 'Hospital-acquired Infections / Meningitis', null, null, 'Monocef / Cefaxone', null, 'Acute']),
+  // Pipzo (Piperacillin + Tazobactam) — hospital-grade anti-infective [launch date est.]
+  row(['Pipzo', 'Own Launched', '2010-01-01', '—', 'Alkem', 'NCE Launch', 'Piperacillin + Tazobactam', 'Anti-Infectives', 'Hospital-acquired / Intra-abdominal Infections', null, null, 'Tazact / Zosyn', null, 'Acute']),
+  // Pan (Pantoprazole) — Alkem's flagship PPI [launch date est.]
+  row(['Pan (Pantoprazole)', 'Own Launched', '2005-05-10', '—', 'Alkem', 'NCE Launch', 'Pantoprazole 20 / 40 mg', 'Gastroenterology', 'GERD / Peptic Ulcer', null, null, 'Pantocid / Pantium', null, 'Chronic']),
+  // Pan-D (Pantoprazole + Domperidone) — combo [launch date est.]
+  row(['Pan-D', 'Own Launched', '2008-01-01', '—', 'Alkem', 'NCE Launch', 'Pantoprazole 40 mg + Domperidone 30 mg SR', 'Gastroenterology', 'GERD with Dyspepsia / Reflux Esophagitis', null, null, 'Pantocid-D', null, 'Chronic']),
+  // Ondem (Ondansetron) — antiemetic [launch date est.]
+  row(['Ondem', 'Own Launched', '2005-01-01', '—', 'Alkem', 'NCE Launch', 'Ondansetron (± Paracetamol)', 'Oncology Support / Gastroenterology', 'CINV / Post-op Vomiting / Gastroenteritis', null, null, 'Emeset / Vomikind', null, 'Acute']),
+  // Gemcal-DS (Calcitriol + Ca + K2-7 + Zn + Mg + Methylcobalamin) [launch date est.]
+  row(['Gemcal / Gemcal-DS', 'Own Launched', '2010-01-01', '—', 'Alkem', 'NCE Launch', 'Calcitriol + Calcium Carbonate + K2-7 + Zinc + Mg + Methylcobalamin', 'Nutraceuticals', 'Osteoporosis / Bone-Joint Health', null, null, 'Shelcal / Calcimax', null, 'Chronic']),
+  // A To Z NS (multivitamin) [launch date est.]
+  row(['A To Z NS', 'Own Launched', '2010-01-01', '—', 'Alkem', 'NCE Launch', 'Multivitamin + Minerals + Antioxidants', 'Nutraceuticals', 'General Supplementation / Convalescence', null, null, 'Revital / Supradyn', null, 'Chronic']),
+  // Sumo (Nimesulide + Paracetamol) [launch date est.]
+  row(['Sumo', 'Own Launched', '2005-01-01', '—', 'Alkem', 'NCE Launch', 'Nimesulide + Paracetamol', 'Pain Management', 'Fever / Inflammation / Musculoskeletal Pain', null, null, 'Nise / Nimulid', null, 'Acute']),
+
+  // ── Cachet Pharmaceuticals undertaking acquisition — liquid-manufacturing business (2020) ──
+  // Legally India / DSIJ — Alkem acquires liquid-products undertaking from subsidiary Cachet Pharmaceuticals (FY20)
+  row(['Cachet Liquid Manufacturing Undertaking', 'Acquired', '2020-04-01', 'Cachet Pharmaceuticals (subsidiary)', 'Alkem', 'Asset Acquisition', 'N/A (manufacturing transfer, not a brand)', 'Multi-therapy', 'Backward integration — liquid dosage forms', null, null, 'N/A', null, 'Chronic']),
+
+  // ── Enzar (Bempedoic Acid) — early NCE launch in India ──
+  row(['Enzar', 'Own Launched', '2022-04-19', '—', 'Alkem', 'NCE Launch', 'Bempedoic Acid (± Ezetimibe)', 'Cardiology', 'Statin-intolerant Hypercholesterolaemia / Secondary CV Prevention', null, null, 'Nexletol / Bemdac', null, 'Chronic']),
+
+  // ── Harvard University licence (2024) — vascular / diabetic neuropathy technology ──
+  // Wyss Institute / MarketScreener — Alkem licences novel technology from Harvard OTD for DFU + DPN + PAD (2024)
+  row(['Harvard OTD Vascular-Disease Platform', 'In-licensed', '2024-06-01', 'Harvard University (OTD)', 'Alkem', 'Technology Licence', 'Novel device / formulation technology (vascular)', 'Cardiology / Neurology / Critical Care', 'Ischemic Injury / DFU / PAD / Diabetic Peripheral Neuropathy', null, null, 'N/A (platform tech)', null, 'Chronic']),
+
+  // ── Vonzai (Vonoprazan) — Takeda patent licence (Sep-2024) ──
+  // Medical Dialogues / eHealth / Pharmabiz — Alkem signs non-exclusive patent licence with Takeda to commercialise Vonoprazan as Vonzai in India (Sep-2024)
+  row(['Vonzai (Vonoprazan)', 'In-licensed', '2024-09-16', 'Takeda Pharmaceuticals', 'Alkem', 'In-license (India)', 'Vonoprazan (P-CAB) 10 / 20 mg', 'Gastroenterology', 'GERD / PUD / H. pylori eradication', null, null, 'Vohozin / Kabvie', null, 'Chronic']),
+
+  // ── Sonnet BioTherapeutics licence — SON-080 (IL-6 fusion protein) for diabetic peripheral neuropathy (08-Oct-2024) ──
+  // Business Standard / Indian Pharma Post / Sonnet SEC 10-1 filing — Alkem gets exclusive India rights to develop/commercialise SON-080
+  row(['SON-080 (IL-6 fusion protein)', 'In-licensed', '2024-10-08', 'Sonnet BioTherapeutics', 'Alkem', 'In-license (India)', 'Low-dose recombinant human IL-6 (Fc-fusion)', 'Neurology / CNS', 'Diabetic Peripheral Neuropathy / CIPN', null, null, 'N/A (pipeline)', null, 'Chronic']),
+
+  // ── Adroit Biomed acquisition — Rs 140 Cr (completed 23-Apr-2025) ──
+  // BusinessUpturn / Medical Dialogues — 100% acquisition for dermatology / cosmetology / nutraceuticals expansion
+  row(['Adroit Biomed (parent)', 'Acquired', '2025-04-23', 'Adroit Biomed promoters', 'Alkem', 'Company Acquisition', 'Various (Derma / Cosmetology / Nutraceuticals portfolio)', 'Dermatology / Nutraceuticals', 'Skincare / Cosmoceutical / Nutrition', 140, null, 'Various', null, 'Chronic']),
+
+  // ── Empanorm family — generic Empagliflozin launch (12-Mar-2025) ──
+  // BSE filing / Business Standard / BioSpectrum — Alkem launches generic Empagliflozin + FDCs under Empanorm / Empanorm-L / Empanorm-M / Empanorm Duo / Alsita E (12-Mar-2025)
+  row(['Empanorm / Empanorm-L / Empanorm-M / Empanorm Duo', 'Own Launched', '2025-03-12', '—', 'Alkem', 'Generic Launch', 'Empagliflozin (± Linagliptin / Sitagliptin / Metformin)', 'Anti-Diabetic', 'Type 2 Diabetes / CKD / Heart Failure', null, null, 'Jardiance / Glempa', null, 'Chronic']),
+
+  // ── Pertuza pertuzumab biosimilar launch (22-Sep-2025) via Enzene Biosciences (Alkem's biotech subsidiary) ──
+  row(['Pertuza', 'Own Launched', '2025-09-22', '—', 'Alkem', 'Biosimilar Launch', 'Pertuzumab (420mg / 14mL)', 'Oncology', 'HER2+ Metastatic / Early Breast Cancer', null, null, 'Perjeta', null, 'Chronic']),
+
+  // ── Alkem Wellness — trade generics internal transfer (01-Oct-2025, Rs 532.5 Cr) ──
+  row(['Alkem Wellness (Trade Generics slump sale)', 'Acquired', '2025-10-01', 'Alkem Laboratories (parent)', 'Alkem', 'Internal Business Transfer', 'Trade generics portfolio (Rs 532.5 Cr slump sale to subsidiary)', 'Multi-therapy', 'Multi-indication (trade generics)', 533, null, 'N/A', null, 'Chronic']),
+
+  // ── Semasize / Obesema / Hepaglide — Semaglutide Day-1 launch (21-Mar-2026) ──
+  row(['Semasize / Obesema / Hepaglide', 'Own Launched', '2026-03-21', '—', 'Alkem', 'Generic Launch', 'Semaglutide (1 mg disposable + reusable pen)', 'Anti-Diabetic', 'Type 2 Diabetes / Chronic Weight Management', null, null, 'Rybelsus / Ozempic', null, 'Chronic']),
 
   // ─── Intas Pharmaceuticals — LIVE (Bio-Thera / press releases) ───
   // PRNewswire / BioSpace "Bio-Thera expands partnership with Intas for BAT2506 Golimumab biosimilar in India" (23-Mar-2026)
