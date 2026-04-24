@@ -1,8 +1,6 @@
 import React from 'react';
 import {
   Trophy,
-  TrendingUp,
-  Coins,
   Users,
   FlaskConical,
   HeartPulse,
@@ -10,7 +8,7 @@ import {
   Sparkles,
 } from 'lucide-react';
 import { COLUMN_KEYS } from '../data/mockData';
-import { countBy, fmtINRPlain, fmtPct, fmtDate } from '../utils/format';
+import { countBy, fmtINRPlain, fmtDate } from '../utils/format';
 
 function Widget({ icon: Icon, title, subtitle, children, accent = 'green' }) {
   return (
@@ -76,18 +74,6 @@ export default function InsightWidgets({ rows }) {
     .slice(0, 5)
     .map((r) => ({ name: r[COLUMN_KEYS.BRAND], value: Number(r[COLUMN_KEYS.MARKET_SIZE]) }));
 
-  const byCagr = rows
-    .filter((r) => hasNum(r[COLUMN_KEYS.CAGR]))
-    .sort((a, b) => Number(b[COLUMN_KEYS.CAGR]) - Number(a[COLUMN_KEYS.CAGR]))
-    .slice(0, 5)
-    .map((r) => ({ name: r[COLUMN_KEYS.BRAND], value: Number(r[COLUMN_KEYS.CAGR]) }));
-
-  const bySales = rows
-    .filter((r) => hasNum(r[COLUMN_KEYS.EST_SALES]))
-    .sort((a, b) => Number(b[COLUMN_KEYS.EST_SALES]) - Number(a[COLUMN_KEYS.EST_SALES]))
-    .slice(0, 5)
-    .map((r) => ({ name: r[COLUMN_KEYS.BRAND], value: Number(r[COLUMN_KEYS.EST_SALES]) }));
-
   const buyers = countBy(rows, COLUMN_KEYS.BUYER).sort((a, b) => b.value - a.value);
   const topBuyer = buyers[0];
   const therapies = countBy(rows, COLUMN_KEYS.THERAPY).sort((a, b) => b.value - a.value);
@@ -105,27 +91,9 @@ export default function InsightWidgets({ rows }) {
     .slice(0, 5);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
       <Widget icon={Trophy} title="Largest Market Brands" subtitle="Top ₹Cr India market size">
         <LeaderList items={byMarket} right={(it) => fmtINRPlain(it.value)} />
-      </Widget>
-
-      <Widget
-        icon={TrendingUp}
-        title="Highest CAGR Opportunities"
-        subtitle="Market growth leaders"
-        accent="teal"
-      >
-        <LeaderList items={byCagr} right={(it) => fmtPct(it.value)} />
-      </Widget>
-
-      <Widget
-        icon={Coins}
-        title="Top Estimated Sales"
-        subtitle="Top brands by est. annual sales"
-        accent="amber"
-      >
-        <LeaderList items={bySales} right={(it) => fmtINRPlain(it.value)} />
       </Widget>
 
       <Widget icon={Users} title="Most Active Buyer" subtitle="Launch / acquisition volume">
@@ -229,14 +197,15 @@ export default function InsightWidgets({ rows }) {
             annuity-style revenue.
           </li>
           <li>
-            Highest growth asset:{' '}
-            <span className="font-semibold text-ink-900">{byCagr[0]?.name || '—'}</span> @{' '}
-            <span className="font-semibold text-pharma-700">{fmtPct(byCagr[0]?.value)}</span>.
-          </li>
-          <li>
             Largest market opportunity:{' '}
             <span className="font-semibold text-ink-900">{byMarket[0]?.name || '—'}</span> —{' '}
             {fmtINRPlain(byMarket[0]?.value)}.
+          </li>
+          <li>
+            Most active acquirer:{' '}
+            <span className="font-semibold text-ink-900">{topBuyer?.name || '—'}</span>{' '}
+            with <span className="font-semibold text-pharma-700">{topBuyer?.value || 0}</span>{' '}
+            launches in view.
           </li>
         </ul>
       </Widget>

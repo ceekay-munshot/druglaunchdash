@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import { ArrowUpDown, ArrowUp, ArrowDown, Search, Table as TableIcon, Download } from 'lucide-react';
 import { COLUMN_KEYS, COLUMN_ORDER } from '../data/mockData';
-import { fmtINRPlain, fmtPct, fmtDate } from '../utils/format';
+import { fmtINRPlain, fmtDate } from '../utils/format';
 
 const LAUNCH_TYPE_STYLES = {
   Acquired: 'bg-emerald-50 text-emerald-700 border-emerald-200',
@@ -14,11 +14,7 @@ const CHRONIC_STYLES = {
   Acute: 'bg-amber-50 text-amber-700 border-amber-200',
 };
 
-const NUMERIC_COLS = new Set([
-  COLUMN_KEYS.MARKET_SIZE,
-  COLUMN_KEYS.CAGR,
-  COLUMN_KEYS.EST_SALES,
-]);
+const NUMERIC_COLS = new Set([COLUMN_KEYS.MARKET_SIZE]);
 
 const WIDTH_HINT = {
   [COLUMN_KEYS.BRAND]: 'min-w-[160px]',
@@ -31,9 +27,7 @@ const WIDTH_HINT = {
   [COLUMN_KEYS.THERAPY]: 'min-w-[160px]',
   [COLUMN_KEYS.INDICATION]: 'min-w-[200px]',
   [COLUMN_KEYS.MARKET_SIZE]: 'min-w-[160px] text-right',
-  [COLUMN_KEYS.CAGR]: 'min-w-[120px] text-right',
   [COLUMN_KEYS.EXISTING_BRAND]: 'min-w-[170px]',
-  [COLUMN_KEYS.EST_SALES]: 'min-w-[160px] text-right',
   [COLUMN_KEYS.CHRONIC_ACUTE]: 'min-w-[120px]',
 };
 
@@ -95,21 +89,8 @@ export default function MainTable({ rows }) {
         </span>
       );
     }
-    if (col === COLUMN_KEYS.MARKET_SIZE || col === COLUMN_KEYS.EST_SALES) {
+    if (col === COLUMN_KEYS.MARKET_SIZE) {
       return <span className="tabular-nums font-medium text-ink-900">{fmtINRPlain(v)}</span>;
-    }
-    if (col === COLUMN_KEYS.CAGR) {
-      const n = Number(v);
-      const cls = isNaN(n)
-        ? 'text-ink-500'
-        : n >= 15
-          ? 'text-pharma-700'
-          : n >= 8
-            ? 'text-teal-accent'
-            : n >= 0
-              ? 'text-ink-700'
-              : 'text-amber-600';
-      return <span className={`tabular-nums font-semibold ${cls}`}>{fmtPct(v)}</span>;
     }
     if (col === COLUMN_KEYS.DATE) {
       return <span className="tabular-nums text-ink-700">{fmtDate(v)}</span>;

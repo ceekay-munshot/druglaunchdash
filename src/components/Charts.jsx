@@ -60,14 +60,6 @@ export default function Charts({ rows }) {
   const marketByTherapy = sumBy(rows, COLUMN_KEYS.THERAPY, COLUMN_KEYS.MARKET_SIZE)
     .filter((d) => d.value > 0)
     .sort((a, b) => b.value - a.value);
-  const salesByBrand = rows
-    .filter((r) => {
-      const v = r[COLUMN_KEYS.EST_SALES];
-      return v !== null && v !== undefined && !isNaN(Number(v)) && Number(v) > 0;
-    })
-    .map((r) => ({ name: r[COLUMN_KEYS.BRAND], value: Number(r[COLUMN_KEYS.EST_SALES]) }))
-    .sort((a, b) => b.value - a.value)
-    .slice(0, 10);
   const chronicAcute = countBy(rows, COLUMN_KEYS.CHRONIC_ACUTE);
   const dealType = countBy(rows, COLUMN_KEYS.DEAL_TYPE).sort((a, b) => b.value - a.value);
 
@@ -198,37 +190,6 @@ export default function Charts({ rows }) {
           <div className="h-[260px] flex items-center justify-center text-xs text-ink-500 text-center px-4">
             Market-size data not in public sources for this selection — requires
             IQVIA / PharmaTrac / AIOCD AWACS subscription.
-          </div>
-        )}
-      </ChartCard>
-
-      <ChartCard
-        icon={BarChart3}
-        title="Estimated Annual Sales (Top Brands)"
-        subtitle="Top 10 by ₹Cr sales"
-        accent="teal"
-      >
-        {salesByBrand.length ? (
-          <ResponsiveContainer width="100%" height={260}>
-            <BarChart data={salesByBrand} layout="vertical" margin={{ left: 12, right: 12 }}>
-              <CartesianGrid strokeDasharray="3 3" stroke="#eef2f7" horizontal={false} />
-              <XAxis
-                type="number"
-                tick={{ fontSize: 11, fill: '#64748b' }}
-                tickFormatter={(v) => `₹${v}`}
-              />
-              <YAxis type="category" dataKey="name" width={130} tick={{ fontSize: 11, fill: '#334155' }} />
-              <Tooltip
-                contentStyle={cardTooltipStyle}
-                formatter={(v) => [fmtINRPlain(v), 'Est. Annual Sales']}
-              />
-              <Bar dataKey="value" fill="#0d9488" radius={[0, 6, 6, 0]} />
-            </BarChart>
-          </ResponsiveContainer>
-        ) : (
-          <div className="h-[260px] flex items-center justify-center text-xs text-ink-500 text-center px-4">
-            Brand-level annual sales not in public sources for this selection —
-            requires IQVIA SMSRC / PharmaTrac panel data.
           </div>
         )}
       </ChartCard>

@@ -4,14 +4,12 @@ import {
   ShoppingBag,
   Rocket,
   IndianRupee,
-  TrendingUp,
-  Coins,
   HeartPulse,
   FlaskConical,
   Users,
 } from 'lucide-react';
 import { COLUMN_KEYS } from '../data/mockData';
-import { sum, avg, median, countBy, fmtINR, fmtPct } from '../utils/format';
+import { sum, countBy, fmtINR } from '../utils/format';
 
 function KpiCard({ icon: Icon, label, value, sub, accent = 'green', tint }) {
   const accents = {
@@ -49,12 +47,7 @@ export default function KPICards({ rows }) {
 
   const isNum = (v) => v !== null && v !== undefined && !isNaN(Number(v));
   const marketVals = rows.map((r) => r[COLUMN_KEYS.MARKET_SIZE]).filter(isNum).map(Number);
-  const salesVals = rows.map((r) => r[COLUMN_KEYS.EST_SALES]).filter(isNum).map(Number);
-  const cagrVals = rows.map((r) => r[COLUMN_KEYS.CAGR]).filter(isNum).map(Number);
   const totalMarket = marketVals.length ? sum(marketVals) : null;
-  const totalSales = salesVals.length ? sum(salesVals) : null;
-  const avgCAGR = cagrVals.length ? avg(cagrVals) : null;
-  const medCAGR = cagrVals.length ? median(cagrVals) : null;
 
   const chronic = rows.filter((r) => r[COLUMN_KEYS.CHRONIC_ACUTE] === 'Chronic').length;
   const acute = rows.filter((r) => r[COLUMN_KEYS.CHRONIC_ACUTE] === 'Acute').length;
@@ -70,7 +63,7 @@ export default function KPICards({ rows }) {
   ).size;
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-3">
+    <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3">
       <KpiCard
         icon={Package}
         label="Total Brands"
@@ -103,32 +96,6 @@ export default function KPICards({ rows }) {
             : 'Not in public sources'
         }
         accent="green"
-      />
-      <KpiCard
-        icon={TrendingUp}
-        label="Avg / Median CAGR"
-        value={
-          cagrVals.length ? `${fmtPct(avgCAGR)} · ${fmtPct(medCAGR)}` : '—'
-        }
-        sub={
-          cagrVals.length
-            ? `${cagrVals.length} of ${total} brands · public data`
-            : 'Not in public sources'
-        }
-        accent="teal"
-        tint="bg-teal-50"
-      />
-      <KpiCard
-        icon={Coins}
-        label="Est. Annual Sales"
-        value={fmtINR(totalSales)}
-        sub={
-          salesVals.length
-            ? `${salesVals.length} of ${total} brands · public data`
-            : 'IQVIA-class data needed'
-        }
-        accent="amber"
-        tint="bg-amber-50"
       />
       <KpiCard
         icon={HeartPulse}

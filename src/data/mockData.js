@@ -5,9 +5,8 @@
 // Focus: recent (2025-2026) India drug launches, acquisitions, and
 // in-licensing deals. Older rows retained only where independently verified.
 //
-// Financial columns (Market Size ₹Cr, Market CAGR %, Est. Annual Sales ₹Cr)
-// are paywalled (IQVIA SMSRC / PharmaTrac / AIOCD AWACS) and intentionally
-// left null. Table shows "—"; KPIs auto-skip nulls in their aggregations.
+// Market Size ₹Cr is populated only where publicly disclosed (e.g. Combihale
+// ₹900 Cr, Wokadine ₹648 Cr); otherwise left null and shown as "—".
 //
 // IMPORTANT: Column keys here MUST remain the EXACT Excel column labels.
 // All KPI cards, charts, and insights derive from this single source of truth.
@@ -23,9 +22,7 @@ export const COLUMN_KEYS = {
   THERAPY: 'Therapy',
   INDICATION: 'Disease / Indication',
   MARKET_SIZE: 'India Market Size (₹Cr)',
-  CAGR: 'Market CAGR %',
   EXISTING_BRAND: 'Existing Brand (Same Molecule)',
-  EST_SALES: 'Est. Annual Sales (₹Cr)',
   CHRONIC_ACUTE: 'Chronic / Acute',
 };
 
@@ -40,13 +37,14 @@ export const COLUMN_ORDER = [
   COLUMN_KEYS.THERAPY,
   COLUMN_KEYS.INDICATION,
   COLUMN_KEYS.MARKET_SIZE,
-  COLUMN_KEYS.CAGR,
   COLUMN_KEYS.EXISTING_BRAND,
-  COLUMN_KEYS.EST_SALES,
   COLUMN_KEYS.CHRONIC_ACUTE,
 ];
 
-// Helper to keep the data rows compact but strictly schema-faithful
+// Helper to keep the data rows compact. vals[10] (CAGR) and vals[12] (EST_SALES)
+// are intentionally ignored — those columns were removed from the schema, but
+// the 14-value row() signature is preserved so existing row(...) calls don't
+// need to be rewritten.
 const row = (vals) => ({
   [COLUMN_KEYS.BRAND]: vals[0],
   [COLUMN_KEYS.LAUNCH_TYPE]: vals[1],
@@ -58,9 +56,7 @@ const row = (vals) => ({
   [COLUMN_KEYS.THERAPY]: vals[7],
   [COLUMN_KEYS.INDICATION]: vals[8],
   [COLUMN_KEYS.MARKET_SIZE]: vals[9],
-  [COLUMN_KEYS.CAGR]: vals[10],
   [COLUMN_KEYS.EXISTING_BRAND]: vals[11],
-  [COLUMN_KEYS.EST_SALES]: vals[12],
   [COLUMN_KEYS.CHRONIC_ACUTE]: vals[13],
 });
 
