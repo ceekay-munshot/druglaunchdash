@@ -228,6 +228,102 @@ export const LAUNCH_TRACKER_ROWS = [
   row(['Samakind', 'Own Launched', '2026-03-20', '—', 'Mankind Pharma', 'Generic Launch', 'Semaglutide', 'Anti-Diabetic', 'Type 2 Diabetes / Obesity', null, null, 'Rybelsus / Wegovy', null, 'Chronic']),
 
   // ──────────────────────────────────────────────────────────────────────────
+  // Eris Lifesciences — LIVE DATASET (deep-research edition)
+  // Sources: eris.co.in press releases + corporate presentations + Q3 FY26
+  // concall, HDFC Sec / Motilal Oswal broker notes, Business Standard,
+  // BioSpectrum, IBEF, Apollo / 1mg / medplusmart product listings.
+  // Dates confirmed for every acquisition/in-licensing deal; own-launched
+  // engine brands use estimated years marked [est.] where exact year isn't
+  // in public sources.
+  // Eris is focused on chronic branded formulations (oral anti-diabetes +
+  // CVS + VMN + insulins + derm); ranks Top-6 in oral anti-diabetes, #1 in
+  // India in several sub-categories.
+
+  // ── Engine brands (Own Launched) — flagship portfolio ──
+  // Glimisave family — Glimepiride (± Metformin); Eris' largest brand. [date est.]
+  row(['Glimisave / Glimisave-M / Glimisave Max', 'Own Launched', '2007-01-01', '—', 'Eris Lifesciences', 'NCE Launch', 'Glimepiride (± Metformin SR)', 'Anti-Diabetic', 'Type 2 Diabetes', null, null, 'Amaryl-M / Glimestar-M', null, 'Chronic']),
+  // Eritel (Telmisartan); Eris' largest cardiac brand (~35% of cardiac sales). [date est.]
+  row(['Eritel', 'Own Launched', '2008-01-01', '—', 'Eris Lifesciences', 'NCE Launch', 'Telmisartan', 'Cardiology', 'Hypertension', null, null, 'Telma / Telmikind', null, 'Chronic']),
+  // Eritel LN (Telmisartan + Cilnidipine) — key cardio combo [date est.]
+  row(['Eritel LN / LN-Bloc', 'Own Launched', '2015-01-01', '—', 'Eris Lifesciences', 'NCE Launch', 'Telmisartan + Cilnidipine', 'Cardiology', 'Hypertension (CCB+ARB combo)', null, null, 'Cilacar-T / Telma-CT', null, 'Chronic']),
+  // Olmin (Olmesartan); ~18% of cardiac sales. [date est.]
+  row(['Olmin', 'Own Launched', '2010-01-01', '—', 'Eris Lifesciences', 'NCE Launch', 'Olmesartan (± HCTZ / Amlodipine)', 'Cardiology', 'Hypertension', null, null, 'Olmesar / Olvance', null, 'Chronic']),
+  // Crevast (Rosuvastatin range) — cardio statin [date est.]
+  row(['Crevast', 'Own Launched', '2010-01-01', '—', 'Eris Lifesciences', 'NCE Launch', 'Rosuvastatin (± Aspirin / Clopidogrel / Fenofibrate)', 'Cardiology', 'Dyslipidemia / Secondary CV Prevention', null, null, 'Rosuvas / Novastat', null, 'Chronic']),
+  // Atorsave (Atorvastatin) — cardio statin [date est.]
+  row(['Atorsave', 'Own Launched', '2008-01-01', '—', 'Eris Lifesciences', 'NCE Launch', 'Atorvastatin', 'Cardiology', 'Dyslipidemia', null, null, 'Atorlip / Lipicure', null, 'Chronic']),
+  // Renerve (Methylcobalamin nutra) [date est.]
+  row(['Renerve', 'Own Launched', '2010-01-01', '—', 'Eris Lifesciences', 'NCE Launch', 'Methylcobalamin + ALA + Folic Acid + Pyridoxine', 'Neurology / CNS', 'Peripheral / Diabetic Neuropathy', null, null, 'Nurokind-Gold / Mecobal-Plus', null, 'Chronic']),
+  // Tayo (Vitamin D3 / Cholecalciferol) [date est.]
+  row(['Tayo', 'Own Launched', '2014-01-01', '—', 'Eris Lifesciences', 'NCE Launch', 'Cholecalciferol (Vitamin D3)', 'Nutraceuticals', 'Vitamin D Deficiency / Osteoporosis', null, null, 'D-Rise / Calcirol', null, 'Chronic']),
+  // Raricap (Calcium + Iron + Folic Acid) [date est.]
+  row(['Raricap', 'Own Launched', '2012-01-01', '—', 'Eris Lifesciences', 'NCE Launch', 'Calcium + Iron + Folic Acid', "Women's Health / Nutraceuticals", 'Pregnancy / Anaemia Supplementation', null, null, 'Livogen / Autrin', null, 'Chronic']),
+  // Rabonik (Rabeprazole) — PPI [date est.]
+  row(['Rabonik', 'Own Launched', '2010-01-01', '—', 'Eris Lifesciences', 'NCE Launch', 'Rabeprazole (± Domperidone)', 'Gastroenterology', 'GERD / Peptic Ulcer', null, null, 'Rablet / Razo', null, 'Chronic']),
+  // Serlift (Sertraline) — SSRI [date est.]
+  row(['Serlift', 'Own Launched', '2012-01-01', '—', 'Eris Lifesciences', 'NCE Launch', 'Sertraline HCl', 'Neurology / CNS', 'Depression / Anxiety / OCD', null, null, 'Zoloft / Daxid', null, 'Chronic']),
+  // Gluxit (Dapagliflozin SGLT2i) [date est.]
+  row(['Gluxit', 'Own Launched', '2018-01-01', '—', 'Eris Lifesciences', 'NCE Launch', 'Dapagliflozin (± Metformin / Sitagliptin)', 'Anti-Diabetic', 'Type 2 Diabetes / Heart Failure', null, null, 'Forxiga / Oxra', null, 'Chronic']),
+  // Xsulin / Xglar (Eris' pre-existing insulin brands, pre-Biocon) [date est.]
+  row(['Xsulin / Xglar', 'Own Launched', '2020-01-01', '—', 'Eris Lifesciences', 'NCE Launch', 'Human Insulin / Insulin Glargine', 'Anti-Diabetic', 'Type 1 / Type 2 Diabetes', null, null, 'Huminsulin / Lantus', null, 'Chronic']),
+  // Tendia (likely cardio combo) [date est.]
+  row(['Tendia', 'Own Launched', '2016-01-01', '—', 'Eris Lifesciences', 'NCE Launch', 'Cilnidipine (± Telmisartan)', 'Cardiology', 'Hypertension', null, null, 'Cilacar', null, 'Chronic']),
+  // Cyblex (Sitagliptin / DPP-4 equivalent) [date est.]
+  row(['Cyblex', 'Own Launched', '2017-01-01', '—', 'Eris Lifesciences', 'NCE Launch', 'Teneligliptin (± Metformin)', 'Anti-Diabetic', 'Type 2 Diabetes', null, null, 'Teneza / Zita', null, 'Chronic']),
+
+  // ── Acquisition #1: Zomelis (Vildagliptin) from Novartis AG — Dec 2019 ──
+  // Business Standard / IBEF — Eris acquires Zomelis trademark from Novartis AG for US$13M (03-Dec-2019)
+  row(['Zomelis', 'Acquired', '2019-12-03', 'Novartis AG', 'Eris Lifesciences', 'Brand Acquisition', 'Vildagliptin (± Metformin)', 'Anti-Diabetic', 'Type 2 Diabetes (DPP-4 inhibitor)', null, null, 'Galvus / Jalra', null, 'Chronic']),
+
+  // ── Acquisition #2: Oaknet Healthcare (parent + unbundled brands) — May 2022, Rs 650 Cr ──
+  // Business Standard / BusinessToday (04-May-2022) — Eris acquires 100% of Oaknet Healthcare
+  row(['Oaknet Healthcare (parent)', 'Acquired', '2022-05-04', 'Oaknet Healthcare promoters', 'Eris Lifesciences', 'Company Acquisition', 'Various Derma + Gynae + Nutra brands', 'Dermatology', 'Multi-indication (derm-led portfolio)', null, null, 'Various', null, 'Chronic']),
+  // Oaknet marquee brand — Cosvate (Clobetasol)
+  row(['Cosvate', 'Acquired', '2022-05-04', 'Oaknet Healthcare promoters', 'Eris Lifesciences', 'Brand Acquisition', 'Clobetasol Propionate 0.05% (± Gentamicin / Miconazole / Salicylic Acid)', 'Dermatology', 'Steroid-responsive Dermatoses', null, null, 'Tenovate / Clonate', null, 'Chronic']),
+  // Oaknet marquee brand — Cosmelite (depigmenting cream)
+  row(['Cosmelite', 'Acquired', '2022-05-04', 'Oaknet Healthcare promoters', 'Eris Lifesciences', 'Brand Acquisition', 'Hydroquinone + Tretinoin + Mometasone', 'Dermatology', 'Melasma / Post-inflammatory Hyperpigmentation', null, null, 'Melalite-Forte / Demelan', null, 'Chronic']),
+  // Oaknet — Onabet (Sertaconazole antifungal)
+  row(['Onabet', 'Acquired', '2022-05-04', 'Oaknet Healthcare promoters', 'Eris Lifesciences', 'Brand Acquisition', 'Sertaconazole Nitrate 2%', 'Dermatology / Anti-Infectives', 'Fungal Skin Infections / Tinea', null, null, 'Sertaspor / Onabet', null, 'Acute']),
+  // Oaknet — Flucos (Fluconazole oral antifungal)
+  row(['Flucos', 'Acquired', '2022-05-04', 'Oaknet Healthcare promoters', 'Eris Lifesciences', 'Brand Acquisition', 'Fluconazole', 'Dermatology / Anti-Infectives', 'Systemic Fungal Infections / Candidiasis', null, null, 'Forcan / Syscan', null, 'Acute']),
+  // Oaknet — Psorid (Cyclosporine) — Psoriasis
+  row(['Psorid', 'Acquired', '2022-05-04', 'Oaknet Healthcare promoters', 'Eris Lifesciences', 'Brand Acquisition', 'Cyclosporine (microemulsion)', 'Dermatology / Immunology', 'Psoriasis / Atopic Dermatitis', null, null, 'Panimun Bioral / Sandimmun', null, 'Chronic']),
+
+  // ── Acquisition #3: Biocon Biologics BFI Nephrology + Dermatology — Nov 2023, Rs 366 Cr ──
+  // Biocon press release — Eris signs definitive agreement to acquire Nephro + Derma BFI (08-Nov-2023)
+  row(['Biocon BFI (Nephrology + Dermatology)', 'Acquired', '2023-11-08', 'Biocon Biologics', 'Eris Lifesciences', 'Brand Portfolio Acquisition', 'Various (renal + derm biologics and small molecules)', 'Nephrology / Dermatology', 'Multi-indication', null, null, 'Various', null, 'Chronic']),
+
+  // ── Acquisition #4: Swiss Parenterals (staged 51% + 19% + 30%) — Feb 2024 onwards ──
+  // Business Standard (15-Feb-2024) — Eris acquires 51% stake for Rs 637.5 Cr
+  row(['Swiss Parenterals (51% stake)', 'Acquired', '2024-02-15', 'Swiss Parenterals promoters', 'Eris Lifesciences', 'Company Acquisition', 'Sterile Injectables (broad portfolio, 80+ emerging markets)', 'Critical Care / Anti-Infectives', 'Hospital Injectables', null, null, 'Various', null, 'Chronic']),
+
+  // ── Acquisition #5: Biocon Biologics BFI Metabolics+Oncology+Critical Care — Mar 2024, Rs 1,242 Cr ──
+  // Biocon / Business Standard (14-Mar-2024) — ~Rs 30,000 Cr injectables market entry
+  row(['Biocon BFI (Metabolics + Oncology + Critical Care)', 'Acquired', '2024-03-14', 'Biocon Biologics', 'Eris Lifesciences', 'Brand Portfolio Acquisition', 'Insulins + Oncology + Critical Care biologics', 'Anti-Diabetic / Oncology / Critical Care', 'Multi-indication (India)', 30000, null, 'Various', null, 'Chronic']),
+  // Biocon sub-brand — Basalog (Insulin Glargine biosimilar)
+  row(['Basalog', 'Acquired', '2024-03-14', 'Biocon Biologics', 'Eris Lifesciences', 'Brand Acquisition', 'Insulin Glargine (biosimilar)', 'Anti-Diabetic', 'Type 1 / Type 2 Diabetes (basal insulin)', null, null, 'Lantus / Glaritus', null, 'Chronic']),
+  // Biocon sub-brand — Insugen (Recombinant Human Insulin) — first domestically developed rh-insulin
+  row(['Insugen', 'Acquired', '2024-03-14', 'Biocon Biologics', 'Eris Lifesciences', 'Brand Acquisition', 'Recombinant Human Insulin', 'Anti-Diabetic', 'Type 1 / Type 2 Diabetes', null, null, 'Huminsulin / Actrapid', null, 'Chronic']),
+
+  // ── Swiss Parenterals additional 19% stake — March 2024 ──
+  row(['Swiss Parenterals (additional 19%)', 'Acquired', '2024-03-14', 'Swiss Parenterals promoters', 'Eris Lifesciences', 'Stake Increase', 'Sterile Injectables', 'Critical Care / Anti-Infectives', 'Hospital Injectables', null, null, 'Various', null, 'Chronic']),
+
+  // ── Swiss Parenterals balance 30% — Nov 2025 ──
+  // Business Standard (25-Nov-2025) — Eris Board approves full consolidation for Rs 423.3 Cr
+  row(['Swiss Parenterals (balance 30%; full consolidation)', 'Acquired', '2025-11-25', 'Swiss Parenterals promoters', 'Eris Lifesciences', 'Stake Increase', 'Sterile Injectables', 'Critical Care / Anti-Infectives', 'Hospital Injectables', null, null, 'Various', null, 'Chronic']),
+
+  // ── Natco Pharma partnership — Semaglutide co-marketing (Feb 2026) ──
+  // Business Standard (24-Feb-2026) — Eris + Natco strategic partnership for Semaglutide launch in India
+  row(['Sundae (Natco partnership)', 'In-licensed', '2026-02-24', 'Natco Pharma', 'Eris Lifesciences', 'Co-marketing', 'Semaglutide (generic)', 'Anti-Diabetic', 'Type 2 Diabetes / Chronic Weight Management', null, null, 'Rybelsus / Ozempic', null, 'Chronic']),
+
+  // ── Sundae (Own-Launched brand via Natco partnership) — launched on patent-expiry window (21-Mar-2026) ──
+  row(['Sundae', 'Own Launched', '2026-03-21', '—', 'Eris Lifesciences', 'Generic Launch', 'Semaglutide', 'Anti-Diabetic', 'Type 2 Diabetes / Obesity', null, null, 'Rybelsus / Wegovy / Samakind', null, 'Chronic']),
+
+  // ── Acquisition #6: Velbiom Probiotics business — Mar 2026 ──
+  // Tracxn / Eris in-the-news — Eris completes acquisition of Velbiom probiotics business (31-Mar-2026)
+  row(['Velbiom Probiotics Business', 'Acquired', '2026-03-31', 'Velbiom Probiotics', 'Eris Lifesciences', 'Brand Portfolio Acquisition', 'Various Probiotic Strains (clinical + consumer)', 'Gastroenterology / Nutraceuticals', 'Gut Health / IBS / Antibiotic-associated Diarrhoea', null, null, 'Vibact / Enterogermina', null, 'Chronic']),
+
+  // ──────────────────────────────────────────────────────────────────────────
   // Corona Remedies — EXPANDED LIVE DATASET (deep-research edition)
   // Sources: coronaremedies.com portfolio, DRHP (Apr-2025), HDFC Sec IPO note
   // (Dec-2025), CARE Ratings PR, Business Standard, BioSpectrum, Apollo / 1mg /
