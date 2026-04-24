@@ -147,7 +147,21 @@ export const LAUNCH_TRACKER_ROWS = [
   row(['Nurokind', 'Own Launched', '2004-01-01', '—', 'Mankind Pharma', 'NCE Launch', 'Methylcobalamin 1500 mcg', 'Neurology / CNS', 'Peripheral / Diabetic Neuropathy', null, null, 'Methycobal / Mecobal', null, 'Chronic']),
   // Mankind Heritage — Gudcef (Cefpodoxime) early antibiotic portfolio [launch date est.]
   row(['Gudcef', 'Own Launched', '2006-01-01', '—', 'Mankind Pharma', 'NCE Launch', 'Cefpodoxime Proxetil', 'Anti-Infectives', 'Respiratory / UTI Infections', null, null, 'Monocef-O / Cepodem', null, 'Acute']),
-  // Mankind Heritage — Telmikind (Telmisartan) cardio portfolio [launch date est.]
+  // Cefakind (Cefuroxime Axetil 500 mg / 125 mg syrup) — long-running Mankind anti-infective [launch date est.]
+  row(['Cefakind', 'Own Launched', '2004-01-01', '—', 'Mankind Pharma', 'NCE Launch', 'Cefuroxime Axetil', 'Anti-Infectives', 'Respiratory / Skin / UTI Infections', null, null, 'Ceftum / Zinacef', null, 'Acute']),
+  // Candiforce (Itraconazole 100 mg) — Mankind anti-fungal [launch date est.]
+  row(['Candiforce', 'Own Launched', '2008-01-01', '—', 'Mankind Pharma', 'NCE Launch', 'Itraconazole', 'Dermatology / Anti-Infectives', 'Systemic Fungal Infections / Onychomycosis', null, null, 'Sporanox / Canditral', null, 'Chronic']),
+  // Asthakind-DX cough syrup — Mankind Rx respiratory [launch date est.]
+  row(['Asthakind-DX', 'Own Launched', '2007-01-01', '—', 'Mankind Pharma', 'NCE Launch', 'Phenylephrine + Chlorpheniramine + Dextromethorphan', 'Respiratory', 'Cough / Common Cold', null, null, 'Benadryl / Corex DX', null, 'Acute']),
+  // Codistar-DX cough syrup — Mankind Rx respiratory [launch date est.]
+  row(['Codistar-DX', 'Own Launched', '2005-01-01', '—', 'Mankind Pharma', 'NCE Launch', 'Dextromethorphan + Chlorpheniramine Maleate', 'Respiratory', 'Dry Cough / Allergic Rhinitis', null, null, 'Dilo-DX / Tussinex', null, 'Acute']),
+  // Dolokind (Aceclofenac) — Mankind pain management [launch date est.]
+  row(['Dolokind', 'Own Launched', '2005-01-01', '—', 'Mankind Pharma', 'NCE Launch', 'Aceclofenac (± Paracetamol)', 'Pain Management', 'Osteoarthritis / RA / Ankylosing Spondylitis', null, null, 'Zerodol / Hifenac', null, 'Acute']),
+  // Monticope (Montelukast + Levocetirizine) — Mankind allergy / asthma [launch date est.]
+  row(['Monticope', 'Own Launched', '2008-01-01', '—', 'Mankind Pharma', 'NCE Launch', 'Montelukast + Levocetirizine', 'Respiratory / Immunology', 'Allergic Rhinitis / Chronic Urticaria / Asthma', null, null, 'Montair-LC / Levair', null, 'Chronic']),
+  // Caldikind Plus (Ca + D3 + DHA/EPA + Folate + Methylcobalamin) — Mankind nutra bone/joint [launch date est.]
+  row(['Caldikind Plus', 'Own Launched', '2010-01-01', '—', 'Mankind Pharma', 'NCE Launch', 'Calcium + Vit D3 + DHA/EPA + Folic Acid + Methylcobalamin', 'Nutraceuticals', 'Osteoporosis / Bone-Joint Health', null, null, 'Shelcal-HD / Calcimax', null, 'Chronic']),
+  // Telmikind (Telmisartan) cardio portfolio [launch date est.]
   row(['Telmikind / Telmikind-H', 'Own Launched', '2008-01-01', '—', 'Mankind Pharma', 'NCE Launch', 'Telmisartan (± HCTZ)', 'Cardiology', 'Hypertension', null, null, 'Telma / Telsartan', null, 'Chronic']),
   // mankindpharma.com / india.com — 2007 consumer healthcare division launch (Manforce + Prega News + Gas-O-Fast + Unwanted-72)
   row(['Manforce (condoms + Rx)', 'Own Launched', '2007-01-01', '—', 'Mankind Pharma', 'Consumer Launch', 'Sildenafil (Rx) / Latex (consumer)', 'Consumer Health', "Men's Wellness / Sexual Wellness", null, null, '—', null, 'Acute']),
@@ -176,6 +190,10 @@ export const LAUNCH_TRACKER_ROWS = [
   row(['Mycept-S (via Panacea)', 'Acquired', '2022-03-01', 'Panacea Biotec', 'Mankind Pharma', 'Brand Acquisition', 'Mycophenolate Sodium', 'Transplant / Immunology', 'Organ Transplant Rejection', null, null, 'Myfortic', null, 'Chronic']),
   row(['Panimun Bioral (via Panacea)', 'Acquired', '2022-03-01', 'Panacea Biotec', 'Mankind Pharma', 'Brand Acquisition', 'Cyclosporine (microemulsion)', 'Transplant / Immunology', 'Organ Transplant Rejection / Autoimmune', null, null, 'Sandimmun / Neoral', null, 'Chronic']),
   row(['Glizid / Glizid-M / Glizid-MR (via Panacea)', 'Acquired', '2022-03-01', 'Panacea Biotec', 'Mankind Pharma', 'Brand Acquisition', 'Gliclazide (± Metformin)', 'Anti-Diabetic', 'Type 2 Diabetes', null, null, 'Diamicron', null, 'Chronic']),
+  // Betaglim (Glimepiride 1mg / 2mg) — medplusmart + Panacea diabetic portfolio (distinct from Glizid/Metformin)
+  row(['Betaglim (via Panacea)', 'Acquired', '2022-03-01', 'Panacea Biotec', 'Mankind Pharma', 'Brand Acquisition', 'Glimepiride (1 mg / 2 mg)', 'Anti-Diabetic', 'Type 2 Diabetes', null, null, 'Amaryl', null, 'Chronic']),
+  // Metlong (Metformin SR) — Panacea diabetic portfolio
+  row(['Metlong (via Panacea)', 'Acquired', '2022-03-01', 'Panacea Biotec', 'Mankind Pharma', 'Brand Acquisition', 'Metformin HCl (SR / ER)', 'Anti-Diabetic', 'Type 2 Diabetes', null, null, 'Glycomet SR', null, 'Chronic']),
 
   // ── Recent in-licensing & launches (pre-BSV) ──
   // astrazeneca.in press release (11-Mar-2024) — 5-yr exclusive Symbicort distribution
@@ -194,6 +212,14 @@ export const LAUNCH_TRACKER_ROWS = [
   row(['Luprodex (via BSV)', 'Acquired', '2024-10-23', 'Advent International', 'Mankind Pharma', 'Brand Acquisition', 'Leuprolide Acetate', "Oncology / Women's Health", 'Prostate Cancer / Endometriosis / IVF', null, null, 'Lupride / Eligard', null, 'Chronic']),
   row(['Snake V Antiserum (via BSV)', 'Acquired', '2024-10-23', 'Advent International', 'Mankind Pharma', 'Brand Acquisition', 'Polyvalent Snake Antivenom (equine)', 'Critical Care / Anti-Infectives', 'Snake Envenomation', null, null, '—', null, 'Acute']),
   row(['Tetglob (via BSV)', 'Acquired', '2024-10-23', 'Advent International', 'Mankind Pharma', 'Brand Acquisition', 'Tetanus Immunoglobulin (Human)', 'Immunology', 'Tetanus Post-exposure Prophylaxis', null, null, 'Tetabulin / Tetagam', null, 'Acute']),
+  // Foligraf (Recombinant FSH 75 IU) — verified Bharat Serums brand (bsvgroup / medplusmart listings)
+  row(['Foligraf (via BSV)', 'Acquired', '2024-10-23', 'Advent International', 'Mankind Pharma', 'Brand Acquisition', 'Follicle Stimulating Hormone (FSH) 75 IU', "Women's Health", 'Ovarian Stimulation (IVF / IUI)', null, null, 'Gonal-F / Puregon', null, 'Chronic']),
+  // Hucog-HP (highly purified hCG) — separate SKU from HuCoG, bsvgroup.com product PDF
+  row(['Hucog-HP (via BSV)', 'Acquired', '2024-10-23', 'Advent International', 'Mankind Pharma', 'Brand Acquisition', 'hCG Highly Purified (2000 / 5000 / 10000 IU)', "Women's Health", 'Ovulation Trigger / Luteal Support (premium IVF SKU)', null, null, 'Ovidac / Pregnyl', null, 'Chronic']),
+  // Endoprost (Carboprost Tromethamine 250 mcg) — verified Bharat Serums PPH drug, bsvgroup.com product PDF
+  row(['Endoprost (via BSV)', 'Acquired', '2024-10-23', 'Advent International', 'Mankind Pharma', 'Brand Acquisition', 'Carboprost Tromethamine (PGF2α)', "Women's Health / Critical Care", 'Postpartum Haemorrhage / Medical Abortion', null, null, 'Hemabate', null, 'Acute']),
+  // Primigyn (Dinoprostone cervical gel) — verified Bharat Serums obstetric brand
+  row(['Primigyn (via BSV)', 'Acquired', '2024-10-23', 'Advent International', 'Mankind Pharma', 'Brand Acquisition', 'Dinoprostone 0.5 mg/3 g gel (PGE2)', "Women's Health", 'Cervical Ripening / Labour Induction', null, null, 'Cerviprime / Prepidil', null, 'Acute']),
 
   // ── Recent deals (post-BSV) ──
   // mankindpharma.com / Business Standard (26-Dec-2024)
