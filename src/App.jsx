@@ -95,6 +95,47 @@ export default function App() {
     [timeline]
   );
 
+  // ── Live data: bundled baseline + fetched scrape, merged ────────────────
+  // Baseline = LAUNCH_TRACKER_ROWS (curated, hand-verified). Fetched rows
+  // come from /launches.json which the daily GitHub Actions workflow writes.
+  // Merge policy: baseline wins on key collision; fetched rows are appended.
+  //
+  // IMPORTANT: this block MUST come before `filteredRows` — the filter
+  // useMemo depends on `allRows`, and declaring `allRows` below
+  // `filteredRows` causes a TDZ (ReferenceError) in the minified production
+  // bundle because React evaluates the deps array at render time but the
+  // const binding hasn't been initialised yet in the function-body scope.
+  const [scrapedRows, setScrapedRows] = useState([]);
+  const [scrapeGeneratedAt, setScrapeGeneratedAt] = useState(null);
+  const [isRefreshing, setIsRefreshing] = useState(false);
+  const [lastRefreshAt, setLastRefreshAt] = useState(() => new Date());
+
+  const fetchScraped = async () => {
+    setIsRefreshing(true);
+    try {
+      const res = await fetch(`${LAUNCHES_ENDPOINT}?t=${Date.now()}`, { cache: 'no-store' });
+      if (res.ok) {
+        const data = await res.json();
+        setScrapedRows(Array.isArray(data.rows) ? data.rows : []);
+        setScrapeGeneratedAt(data.generatedAt || null);
+      }
+    } catch {
+      /* swallow; we fall back to bundled baseline silently */
+    } finally {
+      setLastRefreshAt(new Date());
+      setIsRefreshing(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchScraped();
+  }, []);
+
+  const allRows = useMemo(
+    () => mergeLaunchRows(LAUNCH_TRACKER_ROWS, scrapedRows),
+    [scrapedRows]
+  );
+
   const filteredRows = useMemo(() => {
     return allRows.filter((r) => {
       if (timelineCutoff) {
@@ -135,41 +176,6 @@ export default function App() {
     setFilters(INITIAL_FILTERS);
     setTimeline('3Q');
   };
-
-  // ── Live data: bundled baseline + fetched scrape, merged ────────────────
-  // Baseline = LAUNCH_TRACKER_ROWS (curated, hand-verified). Fetched rows
-  // come from /launches.json which the daily GitHub Actions workflow writes.
-  // Merge policy: baseline wins on key collision; fetched rows are appended.
-  const [scrapedRows, setScrapedRows] = useState([]);
-  const [scrapeGeneratedAt, setScrapeGeneratedAt] = useState(null);
-  const [isRefreshing, setIsRefreshing] = useState(false);
-  const [lastRefreshAt, setLastRefreshAt] = useState(() => new Date());
-
-  const fetchScraped = async () => {
-    setIsRefreshing(true);
-    try {
-      const res = await fetch(`${LAUNCHES_ENDPOINT}?t=${Date.now()}`, { cache: 'no-store' });
-      if (res.ok) {
-        const data = await res.json();
-        setScrapedRows(Array.isArray(data.rows) ? data.rows : []);
-        setScrapeGeneratedAt(data.generatedAt || null);
-      }
-    } catch {
-      /* swallow; we fall back to bundled baseline silently */
-    } finally {
-      setLastRefreshAt(new Date());
-      setIsRefreshing(false);
-    }
-  };
-
-  useEffect(() => {
-    fetchScraped();
-  }, []);
-
-  const allRows = useMemo(
-    () => mergeLaunchRows(LAUNCH_TRACKER_ROWS, scrapedRows),
-    [scrapedRows]
-  );
 
   // "Last refresh" shows the scrape timestamp when we have one, otherwise the
   // last time the button was pressed / page loaded.
