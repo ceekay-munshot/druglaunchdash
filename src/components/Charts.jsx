@@ -10,49 +10,143 @@ import {
   Pie,
   Cell,
   CartesianGrid,
+  LabelList,
+  AreaChart,
+  Area,
   Legend,
-  LineChart,
-  Line,
 } from 'recharts';
-import { PieChart as PieIcon, BarChart3, Activity, Layers } from 'lucide-react';
+import {
+  PieChart as PieIcon,
+  BarChart3,
+  Activity,
+  Layers,
+  Heart,
+  Building2,
+  Handshake,
+  IndianRupee,
+} from 'lucide-react';
 import { COLUMN_KEYS } from '../data/mockData';
 import { countBy, sumBy, fmtINRPlain } from '../utils/format';
 
-const PALETTE = ['#16a34a', '#0d9488', '#22c55e', '#0ea5e9', '#a3e635', '#14b8a6', '#84cc16', '#10b981', '#4ade80', '#2dd4bf'];
+// Unified green → teal brand palette, ordered from strongest to lightest. Used
+// for ranked data (therapies, buyers, sellers). Bars with more items simply
+// wrap the palette.
+const PALETTE = [
+  '#16a34a',
+  '#0d9488',
+  '#22c55e',
+  '#14b8a6',
+  '#4ade80',
+  '#2dd4bf',
+  '#10b981',
+  '#84cc16',
+  '#5eead4',
+  '#a3e635',
+  '#34d399',
+  '#6ee7b7',
+];
+
+// Separate palette for binary categories so Chronic vs Acute reads clearly
+const CHRONIC_ACUTE_COLORS = { Chronic: '#16a34a', Acute: '#f59e0b' };
+
+// Tricolour palette for Launch Type donut (Acquired / In-licensed / Own Launched)
+const LAUNCH_TYPE_COLORS = {
+  Acquired: '#0d9488',
+  'In-licensed': '#22c55e',
+  'Own Launched': '#16a34a',
+};
 
 function ChartCard({ icon: Icon, title, subtitle, children, accent = 'green' }) {
   return (
-    <div className="bg-white rounded-2xl border border-ink-100 shadow-card p-4 flex flex-col">
-      <div className="flex items-center gap-2 mb-2">
+    <div className="bg-white rounded-2xl border border-ink-100 shadow-card hover:shadow-cardHover transition-shadow p-5 flex flex-col">
+      <div className="flex items-center gap-2.5 mb-3">
         <div
-          className={`w-7 h-7 rounded-lg flex items-center justify-center ${
-            accent === 'teal' ? 'bg-teal-50' : 'bg-pharma-50'
+          className={`w-8 h-8 rounded-lg flex items-center justify-center ${
+            accent === 'teal' ? 'bg-teal-50' : accent === 'amber' ? 'bg-amber-50' : 'bg-pharma-50'
           }`}
         >
-          <Icon className={`w-4 h-4 ${accent === 'teal' ? 'text-teal-accent' : 'text-pharma-600'}`} />
+          <Icon
+            className={`w-4 h-4 ${
+              accent === 'teal'
+                ? 'text-teal-accent'
+                : accent === 'amber'
+                  ? 'text-amber-600'
+                  : 'text-pharma-600'
+            }`}
+          />
         </div>
         <div className="min-w-0">
           <h3 className="text-sm font-semibold text-ink-900">{title}</h3>
           {subtitle && <p className="text-[11px] text-ink-500">{subtitle}</p>}
         </div>
       </div>
-      <div className="flex-1 min-h-[220px]">{children}</div>
+      <div className="flex-1 min-h-[240px]">{children}</div>
     </div>
   );
 }
 
-const cardTooltipStyle = {
-  background: 'white',
-  border: '1px solid #e2e8f0',
-  borderRadius: 10,
-  boxShadow: '0 4px 16px rgba(15,23,42,0.08)',
-  fontSize: 12,
-};
+// Clean custom tooltip with consistent styling and optional value formatter
+function CustomTooltip({ active, payload, label, formatter, labelPrefix }) {
+  if (!active || !payload?.length) return null;
+  const item = payload[0];
+  const raw = item.value;
+  const formatted = formatter ? formatter(raw) : raw;
+  return (
+    <div className="bg-white border border-ink-100 rounded-lg shadow-cardHover px-3 py-2 text-xs">
+      <p className="font-semibold text-ink-900 leading-tight">{label ?? item.name}</p>
+      <p className="text-ink-500 mt-0.5">
+        {labelPrefix ? `${labelPrefix}: ` : ''}
+        <span className="font-semibold text-pharma-700 tabular-nums">{formatted}</span>
+      </p>
+    </div>
+  );
+}
+
+const gridStyle = { stroke: '#eef2f7' };
+const axisTick = { fontSize: 11, fill: '#64748b' };
+const catTick = { fontSize: 11, fill: '#334155' };
+
+// Compact horizontal bar chart — used for Therapy, Buyer, Seller, Deal-Type,
+// and Market-Size-by-Therapy (all of which have long category labels)
+function HBar({ data, valueFormatter, tooltipLabel, height = 280, categoryWidth = 140, labelFormatter }) {
+  return (
+    <ResponsiveContainer width="100%" height={height}>
+      <BarChart data={data} layout="vertical" margin={{ left: 4, right: 48, top: 4, bottom: 4 }}>
+        <CartesianGrid horizontal={false} strokeDasharray="3 3" stroke={gridStyle.stroke} />
+        <XAxis type="number" tick={axisTick} allowDecimals={false} tickFormatter={labelFormatter} />
+        <YAxis
+          type="category"
+          dataKey="name"
+          width={categoryWidth}
+          tick={catTick}
+          interval={0}
+        />
+        <Tooltip
+          cursor={{ fill: '#f1f5f9' }}
+          content={<CustomTooltip formatter={valueFormatter} labelPrefix={tooltipLabel} />}
+        />
+        <Bar dataKey="value" radius={[0, 8, 8, 0]} barSize={18}>
+          {data.map((_, i) => (
+            <Cell key={i} fill={PALETTE[i % PALETTE.length]} />
+          ))}
+          <LabelList
+            dataKey="value"
+            position="right"
+            formatter={labelFormatter || ((v) => v)}
+            style={{ fontSize: 11, fill: '#334155', fontWeight: 600 }}
+          />
+        </Bar>
+      </BarChart>
+    </ResponsiveContainer>
+  );
+}
 
 export default function Charts({ rows, selectedCompany }) {
   const singleCompanyView = selectedCompany && selectedCompany !== '__ALL__';
-  const therapy = countBy(rows, COLUMN_KEYS.THERAPY).sort((a, b) => b.value - a.value);
-  const launchType = countBy(rows, COLUMN_KEYS.LAUNCH_TYPE);
+  const total = rows.length;
+
+  const therapy = countBy(rows, COLUMN_KEYS.THERAPY).sort((a, b) => b.value - a.value).slice(0, 10);
+  const launchType = countBy(rows, COLUMN_KEYS.LAUNCH_TYPE).sort((a, b) => b.value - a.value);
   const buyerCount = countBy(rows, COLUMN_KEYS.BUYER).sort((a, b) => b.value - a.value).slice(0, 8);
   const sellerCount = countBy(rows, COLUMN_KEYS.SELLER)
     .filter((d) => d.name && d.name !== '—')
@@ -62,9 +156,12 @@ export default function Charts({ rows, selectedCompany }) {
     .filter((d) => d.value > 0)
     .sort((a, b) => b.value - a.value);
   const chronicAcute = countBy(rows, COLUMN_KEYS.CHRONIC_ACUTE);
+  const chronicCount = chronicAcute.find((d) => d.name === 'Chronic')?.value ?? 0;
+  const acuteCount = chronicAcute.find((d) => d.name === 'Acute')?.value ?? 0;
+  const chronicPct = total ? Math.round((chronicCount / total) * 100) : 0;
+  const acutePct = total ? 100 - chronicPct : 0;
   const dealType = countBy(rows, COLUMN_KEYS.DEAL_TYPE).sort((a, b) => b.value - a.value);
 
-  // Activity by year derived from Date column
   const yearMap = new Map();
   rows.forEach((r) => {
     const d = new Date(r[COLUMN_KEYS.DATE]);
@@ -77,158 +174,217 @@ export default function Charts({ rows, selectedCompany }) {
     .map(([name, value]) => ({ name: String(name), value }))
     .sort((a, b) => Number(a.name) - Number(b.name));
 
+  // Centered total label for Launch-Type donut
+  const launchTypeTotal = launchType.reduce((s, d) => s + d.value, 0);
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
-      <ChartCard icon={PieIcon} title="Therapy Split" subtitle="Share of brands by therapy">
-        <ResponsiveContainer width="100%" height={240}>
-          <PieChart>
-            <Pie
-              data={therapy}
-              dataKey="value"
-              nameKey="name"
-              innerRadius={45}
-              outerRadius={80}
-              paddingAngle={2}
-            >
-              {therapy.map((_, i) => (
-                <Cell key={i} fill={PALETTE[i % PALETTE.length]} />
-              ))}
-            </Pie>
-            <Tooltip contentStyle={cardTooltipStyle} />
-            <Legend wrapperStyle={{ fontSize: 11 }} iconSize={8} />
-          </PieChart>
-        </ResponsiveContainer>
+      {/* Therapy Split — horizontal bar ranked (long labels render cleanly) */}
+      <ChartCard icon={PieIcon} title="Therapy Split" subtitle="Top 10 therapies by brand count">
+        {therapy.length ? (
+          <HBar data={therapy} tooltipLabel="Brands" categoryWidth={150} />
+        ) : (
+          <EmptyChart msg="No therapy data." />
+        )}
       </ChartCard>
 
-      <ChartCard icon={Layers} title="Launch Type Mix" subtitle="Acquired / In-licensed / Own Launched" accent="teal">
-        <ResponsiveContainer width="100%" height={240}>
+      {/* Launch Type Mix — donut with centre total */}
+      <ChartCard
+        icon={Layers}
+        title="Launch Type Mix"
+        subtitle="Acquired · In-licensed · Own Launched"
+        accent="teal"
+      >
+        <ResponsiveContainer width="100%" height={260}>
           <PieChart>
             <Pie
               data={launchType}
               dataKey="value"
               nameKey="name"
-              innerRadius={45}
-              outerRadius={80}
-              paddingAngle={2}
+              innerRadius={58}
+              outerRadius={90}
+              paddingAngle={3}
+              stroke="#fff"
+              strokeWidth={2}
             >
-              {launchType.map((_, i) => (
-                <Cell key={i} fill={PALETTE[(i + 2) % PALETTE.length]} />
+              {launchType.map((d, i) => (
+                <Cell key={i} fill={LAUNCH_TYPE_COLORS[d.name] || PALETTE[i % PALETTE.length]} />
               ))}
             </Pie>
-            <Tooltip contentStyle={cardTooltipStyle} />
-            <Legend wrapperStyle={{ fontSize: 11 }} iconSize={8} />
+            <Tooltip
+              content={
+                <CustomTooltip
+                  labelPrefix="Brands"
+                  formatter={(v) =>
+                    `${v} (${launchTypeTotal ? Math.round((v / launchTypeTotal) * 100) : 0}%)`
+                  }
+                />
+              }
+            />
+            <Legend
+              verticalAlign="bottom"
+              wrapperStyle={{ fontSize: 11, paddingTop: 6 }}
+              iconType="circle"
+              iconSize={8}
+            />
+            {/* Centre total label */}
+            <text
+              x="50%"
+              y="46%"
+              textAnchor="middle"
+              dominantBaseline="middle"
+              style={{ fontSize: 22, fontWeight: 700, fill: '#0f172a' }}
+            >
+              {launchTypeTotal}
+            </text>
+            <text
+              x="50%"
+              y="58%"
+              textAnchor="middle"
+              dominantBaseline="middle"
+              style={{ fontSize: 10, fill: '#64748b', letterSpacing: 0.5 }}
+            >
+              TOTAL
+            </text>
           </PieChart>
         </ResponsiveContainer>
       </ChartCard>
 
-      <ChartCard icon={Activity} title="Chronic vs Acute" subtitle="Distribution across filtered rows">
-        <ResponsiveContainer width="100%" height={240}>
-          <PieChart>
-            <Pie
-              data={chronicAcute}
-              dataKey="value"
-              nameKey="name"
-              innerRadius={45}
-              outerRadius={80}
-              paddingAngle={2}
-            >
-              {chronicAcute.map((d, i) => (
-                <Cell key={i} fill={d.name === 'Chronic' ? '#16a34a' : '#f59e0b'} />
-              ))}
-            </Pie>
-            <Tooltip contentStyle={cardTooltipStyle} />
-            <Legend wrapperStyle={{ fontSize: 11 }} iconSize={8} />
-          </PieChart>
-        </ResponsiveContainer>
-      </ChartCard>
-
-      {!singleCompanyView && (
-        <ChartCard icon={BarChart3} title="Buyer-wise Brand Count" subtitle="Top acquiring/launching companies">
-          <ResponsiveContainer width="100%" height={260}>
-            <BarChart data={buyerCount} layout="vertical" margin={{ left: 12, right: 12 }}>
-              <CartesianGrid strokeDasharray="3 3" stroke="#eef2f7" horizontal={false} />
-              <XAxis type="number" tick={{ fontSize: 11, fill: '#64748b' }} allowDecimals={false} />
-              <YAxis type="category" dataKey="name" width={120} tick={{ fontSize: 11, fill: '#334155' }} />
-              <Tooltip contentStyle={cardTooltipStyle} />
-              <Bar dataKey="value" fill="#16a34a" radius={[0, 6, 6, 0]} />
-            </BarChart>
-          </ResponsiveContainer>
-        </ChartCard>
-      )}
-
-      <ChartCard icon={BarChart3} title="Seller-wise Transactions" subtitle="Top originators / licensors" accent="teal">
-        <ResponsiveContainer width="100%" height={260}>
-          <BarChart data={sellerCount} layout="vertical" margin={{ left: 12, right: 12 }}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#eef2f7" horizontal={false} />
-            <XAxis type="number" tick={{ fontSize: 11, fill: '#64748b' }} allowDecimals={false} />
-            <YAxis type="category" dataKey="name" width={140} tick={{ fontSize: 11, fill: '#334155' }} />
-            <Tooltip contentStyle={cardTooltipStyle} />
-            <Bar dataKey="value" fill="#0d9488" radius={[0, 6, 6, 0]} />
-          </BarChart>
-        </ResponsiveContainer>
-      </ChartCard>
-
-      <ChartCard icon={BarChart3} title="India Market Size by Therapy" subtitle="Sum of ₹Cr per therapy area">
-        {marketByTherapy.length ? (
-          <ResponsiveContainer width="100%" height={260}>
-            <BarChart data={marketByTherapy} margin={{ left: 0, right: 12 }}>
-              <CartesianGrid strokeDasharray="3 3" stroke="#eef2f7" />
-              <XAxis
-                dataKey="name"
-                interval={0}
-                tick={{ fontSize: 10, fill: '#334155' }}
-                angle={-20}
-                textAnchor="end"
-                height={70}
+      {/* Chronic vs Acute — progress-bar style with big % + count row */}
+      <ChartCard icon={Heart} title="Chronic vs Acute" subtitle="Therapy profile of portfolio" accent="amber">
+        {total ? (
+          <div className="flex flex-col justify-center h-full px-1 py-2 space-y-5">
+            <div className="flex items-end gap-3">
+              <span className="text-5xl font-bold text-pharma-700 tabular-nums">{chronicPct}%</span>
+              <div className="flex flex-col pb-1">
+                <span className="text-xs font-semibold text-ink-700">Chronic share</span>
+                <span className="text-[11px] text-ink-500">{chronicCount} of {total} launches</span>
+              </div>
+            </div>
+            <div className="h-4 w-full bg-amber-50 rounded-full overflow-hidden flex border border-ink-100">
+              <div
+                className="h-full bg-gradient-to-r from-pharma-500 to-teal-accent"
+                style={{ width: `${chronicPct}%` }}
               />
-              <YAxis tick={{ fontSize: 11, fill: '#64748b' }} />
-              <Tooltip
-                contentStyle={cardTooltipStyle}
-                formatter={(v) => [fmtINRPlain(v), 'Market Size']}
-              />
-              <Bar dataKey="value" fill="#22c55e" radius={[6, 6, 0, 0]} />
-            </BarChart>
-          </ResponsiveContainer>
-        ) : (
-          <div className="h-[260px] flex items-center justify-center text-xs text-ink-500 text-center px-4">
-            Market-size data not in public sources for this selection — requires
-            IQVIA / PharmaTrac / AIOCD AWACS subscription.
+            </div>
+            <div className="grid grid-cols-2 gap-3 text-xs">
+              <div className="px-3 py-2 rounded-lg bg-pharma-50 border border-pharma-100">
+                <p className="text-[10px] font-semibold uppercase tracking-wider text-pharma-700">Chronic</p>
+                <p className="mt-0.5 font-bold text-ink-900 tabular-nums">{chronicCount} <span className="text-ink-500 font-medium">· {chronicPct}%</span></p>
+              </div>
+              <div className="px-3 py-2 rounded-lg bg-amber-50 border border-amber-100">
+                <p className="text-[10px] font-semibold uppercase tracking-wider text-amber-700">Acute</p>
+                <p className="mt-0.5 font-bold text-ink-900 tabular-nums">{acuteCount} <span className="text-ink-500 font-medium">· {acutePct}%</span></p>
+              </div>
+            </div>
           </div>
+        ) : (
+          <EmptyChart msg="No data in view." />
         )}
       </ChartCard>
 
-      <ChartCard icon={BarChart3} title="Deal Type Breakdown" subtitle="Distribution of transaction structures">
-        <ResponsiveContainer width="100%" height={260}>
-          <BarChart data={dealType} layout="vertical" margin={{ left: 12, right: 12 }}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#eef2f7" horizontal={false} />
-            <XAxis type="number" tick={{ fontSize: 11, fill: '#64748b' }} allowDecimals={false} />
-            <YAxis type="category" dataKey="name" width={170} tick={{ fontSize: 11, fill: '#334155' }} />
-            <Tooltip contentStyle={cardTooltipStyle} />
-            <Bar dataKey="value" fill="#16a34a" radius={[0, 6, 6, 0]} />
-          </BarChart>
-        </ResponsiveContainer>
-      </ChartCard>
-
+      {/* Buyer-wise Brand Count — horizontal bar */}
       {!singleCompanyView && (
-        <ChartCard icon={Activity} title="Launch Activity Over Time" subtitle="Brand launches by year" accent="teal">
-          <ResponsiveContainer width="100%" height={260}>
-            <LineChart data={activityByYear} margin={{ left: 0, right: 12 }}>
-              <CartesianGrid strokeDasharray="3 3" stroke="#eef2f7" />
-              <XAxis dataKey="name" tick={{ fontSize: 11, fill: '#64748b' }} />
-              <YAxis tick={{ fontSize: 11, fill: '#64748b' }} allowDecimals={false} />
-              <Tooltip contentStyle={cardTooltipStyle} />
-              <Line
-                type="monotone"
-                dataKey="value"
-                stroke="#16a34a"
-                strokeWidth={2.5}
-                dot={{ r: 4, fill: '#16a34a', strokeWidth: 2, stroke: '#fff' }}
-                activeDot={{ r: 6 }}
-              />
-            </LineChart>
-          </ResponsiveContainer>
+        <ChartCard
+          icon={Building2}
+          title="Buyer-wise Brand Count"
+          subtitle="Top acquiring / launching companies"
+        >
+          {buyerCount.length ? (
+            <HBar data={buyerCount} tooltipLabel="Brands" categoryWidth={140} />
+          ) : (
+            <EmptyChart msg="No buyer data." />
+          )}
         </ChartCard>
       )}
+
+      {/* Seller-wise Transactions — horizontal bar */}
+      <ChartCard
+        icon={Handshake}
+        title="Seller-wise Transactions"
+        subtitle="Top originators / licensors"
+        accent="teal"
+      >
+        {sellerCount.length ? (
+          <HBar data={sellerCount} tooltipLabel="Deals" categoryWidth={160} />
+        ) : (
+          <EmptyChart msg="No seller-side counterparties in view." />
+        )}
+      </ChartCard>
+
+      {/* India Market Size by Therapy — horizontal bar (cleaner than angled x-axis) */}
+      <ChartCard
+        icon={IndianRupee}
+        title="India Market Size by Therapy"
+        subtitle="Sum of disclosed ₹Cr per therapy"
+      >
+        {marketByTherapy.length ? (
+          <HBar
+            data={marketByTherapy}
+            tooltipLabel="Market size"
+            valueFormatter={fmtINRPlain}
+            labelFormatter={(v) => (v >= 1000 ? `₹${(v / 1000).toFixed(1)}K` : `₹${v}`)}
+            categoryWidth={160}
+          />
+        ) : (
+          <EmptyChart msg="Market-size data not in public sources for this selection — requires IQVIA / PharmaTrac." />
+        )}
+      </ChartCard>
+
+      {/* Deal Type Breakdown — horizontal bar */}
+      <ChartCard icon={BarChart3} title="Deal Type Breakdown" subtitle="Distribution of transaction structures">
+        {dealType.length ? (
+          <HBar data={dealType} tooltipLabel="Deals" categoryWidth={180} />
+        ) : (
+          <EmptyChart msg="No deal-type data." />
+        )}
+      </ChartCard>
+
+      {/* Launch Activity Over Time — area chart with gradient fill */}
+      {!singleCompanyView && (
+        <ChartCard
+          icon={Activity}
+          title="Launch Activity Over Time"
+          subtitle="Brand launches by year"
+          accent="teal"
+        >
+          {activityByYear.length ? (
+            <ResponsiveContainer width="100%" height={280}>
+              <AreaChart data={activityByYear} margin={{ left: 0, right: 12, top: 10, bottom: 4 }}>
+                <defs>
+                  <linearGradient id="activityFill" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="5%" stopColor="#16a34a" stopOpacity={0.4} />
+                    <stop offset="95%" stopColor="#16a34a" stopOpacity={0} />
+                  </linearGradient>
+                </defs>
+                <CartesianGrid strokeDasharray="3 3" stroke={gridStyle.stroke} />
+                <XAxis dataKey="name" tick={axisTick} axisLine={{ stroke: '#e2e8f0' }} />
+                <YAxis tick={axisTick} axisLine={false} tickLine={false} allowDecimals={false} />
+                <Tooltip content={<CustomTooltip labelPrefix="Launches" />} />
+                <Area
+                  type="monotone"
+                  dataKey="value"
+                  stroke="#16a34a"
+                  strokeWidth={2.5}
+                  fill="url(#activityFill)"
+                  dot={{ r: 4, fill: '#16a34a', strokeWidth: 2, stroke: '#fff' }}
+                  activeDot={{ r: 6 }}
+                />
+              </AreaChart>
+            </ResponsiveContainer>
+          ) : (
+            <EmptyChart msg="No dated launches in view." />
+          )}
+        </ChartCard>
+      )}
+    </div>
+  );
+}
+
+function EmptyChart({ msg }) {
+  return (
+    <div className="h-[240px] flex items-center justify-center text-xs text-ink-500 text-center px-4">
+      {msg}
     </div>
   );
 }
