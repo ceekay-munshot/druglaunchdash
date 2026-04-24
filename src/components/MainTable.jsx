@@ -15,7 +15,7 @@ const CHRONIC_STYLES = {
   Acute: 'bg-amber-50 text-amber-700 border-amber-200',
 };
 
-const NUMERIC_COLS = new Set([COLUMN_KEYS.MARKET_SIZE, COLUMN_KEYS.PRICE]);
+const NUMERIC_COLS = new Set([COLUMN_KEYS.MARKET_SIZE]);
 
 const WIDTH_HINT = {
   [COLUMN_KEYS.BRAND]: 'min-w-[160px]',
@@ -30,7 +30,6 @@ const WIDTH_HINT = {
   [COLUMN_KEYS.MARKET_SIZE]: 'min-w-[160px] text-right',
   [COLUMN_KEYS.EXISTING_BRAND]: 'min-w-[170px]',
   [COLUMN_KEYS.CHRONIC_ACUTE]: 'min-w-[120px]',
-  [COLUMN_KEYS.PRICE]: 'min-w-[180px] text-right',
 };
 
 export default function MainTable({ rows, selectedCompany }) {
@@ -101,18 +100,6 @@ export default function MainTable({ rows, selectedCompany }) {
     }
     if (col === COLUMN_KEYS.MARKET_SIZE) {
       return <span className="tabular-nums font-medium text-ink-900">{fmtINRPlain(v)}</span>;
-    }
-    if (col === COLUMN_KEYS.PRICE) {
-      if (v === null || v === undefined) return <span className="text-ink-300">—</span>;
-      // Price may be a number (MRP in ₹) or a string (e.g., "₹84,375 / injection")
-      if (typeof v === 'number') {
-        return (
-          <span className="tabular-nums font-medium text-ink-900">
-            ₹{v.toLocaleString('en-IN')}
-          </span>
-        );
-      }
-      return <span className="tabular-nums font-medium text-ink-900">{v}</span>;
     }
     if (col === COLUMN_KEYS.DATE) {
       return <span className="tabular-nums text-ink-700">{fmtDate(v)}</span>;

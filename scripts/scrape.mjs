@@ -58,10 +58,6 @@ const rowItemSchema = {
     indication: { type: 'string', description: 'Disease / clinical indication.' },
     existingBrand: { type: 'string', description: 'Name of an existing market-leading brand for the same molecule, if known. Dash (—) if none.' },
     chronicAcute: { type: 'string', enum: ['Chronic', 'Acute'], description: 'Chronic if long-term therapy, Acute otherwise.' },
-    price: {
-      type: ['string', 'number', 'null'],
-      description: 'Retail MRP in INR for the smallest typical pack (e.g., 10 tablets / 1 vial / 1 injection). Numeric preferred. If only available as a string like "Rs 84,375 / injection", pass the string. Null if unknown.',
-    },
     sourceUrl: { type: 'string', description: 'Direct URL of the press release / news item.' },
   },
   required: ['brand', 'launchType', 'date', 'dealType', 'molecule', 'therapy', 'chronicAcute'],
@@ -86,21 +82,6 @@ partnerships that are NOT product-related, general strategic commentary).
 For India focus: prefer India-market events. Include global events only if they
 are likely to reach India (e.g., US FDA approval of a drug the Indian company
 owns globally).
-
-PRICE SOURCING RULES for the \`price\` field:
-  • Populate \`price\` with the retail MRP in INR for the smallest typical
-    pack (e.g., strip of 10 tablets / 1 vial / 1 injection) ONLY from these
-    Indian pharmacy sources (cross-check at least one where feasible):
-      - https://www.1mg.com/
-      - https://www.netmeds.com/
-      - https://pharmeasy.in/
-      - https://www.apollopharmacy.in/
-      - https://www.medplusmart.com/
-      - https://www.medindia.net/drug-price/brand/index.htm
-  • If the press release quotes a launch MRP directly (e.g., "priced at Rs
-    84,375 per injection"), you may use that figure and pass the full string.
-  • If no verifiable MRP can be found across the 6 sources, leave \`price\`
-    as null. Do NOT estimate or guess.
 
 Use \`sourceUrl\` to link back to the specific press-release page for each
 event (not the index page). Dates must be ISO YYYY-MM-DD.`;
