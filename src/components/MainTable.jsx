@@ -2,6 +2,7 @@ import React, { useMemo, useState } from 'react';
 import { ArrowUpDown, ArrowUp, ArrowDown, Search, Table as TableIcon, Download } from 'lucide-react';
 import { COLUMN_KEYS, COLUMN_ORDER } from '../data/mockData';
 import { fmtINRPlain, fmtDate } from '../utils/format';
+import RowDetailDrawer from './RowDetailDrawer';
 
 const LAUNCH_TYPE_STYLES = {
   Acquired: 'bg-emerald-50 text-emerald-700 border-emerald-200',
@@ -35,6 +36,7 @@ export default function MainTable({ rows, selectedCompany }) {
   const [tableQuery, setTableQuery] = useState('');
   const [sortKey, setSortKey] = useState(COLUMN_KEYS.DATE);
   const [sortDir, setSortDir] = useState('desc');
+  const [activeRow, setActiveRow] = useState(null);
 
   // When a specific company is selected from the Header dropdown, the Buyer
   // column is redundant (every row has the same Buyer = selected company), so
@@ -191,7 +193,8 @@ export default function MainTable({ rows, selectedCompany }) {
             {visibleRows.map((r, i) => (
               <tr
                 key={`${r[COLUMN_KEYS.BRAND]}-${i}`}
-                className={`group transition-colors hover:bg-pharma-50/60 ${
+                onClick={() => setActiveRow(r)}
+                className={`group cursor-pointer transition-colors hover:bg-pharma-50/60 ${
                   i % 2 === 1 ? 'bg-ink-100/20' : 'bg-white'
                 }`}
               >
@@ -220,6 +223,7 @@ export default function MainTable({ rows, selectedCompany }) {
           </tbody>
         </table>
       </div>
+      <RowDetailDrawer row={activeRow} onClose={() => setActiveRow(null)} />
     </div>
   );
 }
