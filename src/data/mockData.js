@@ -91,10 +91,75 @@ export const LAUNCH_TRACKER_ROWS = [
   // Zydus Lifesciences press release — Semaglutide launch on patent-expiry Day 1 (25-Feb-2026)
   row(['Semaglyn / Mashema / Alterme', 'Own Launched', '2026-02-25', '—', 'Zydus Lifesciences', 'Generic Launch', 'Semaglutide (reusable pen)', 'Anti-Diabetic', 'Type 2 Diabetes / Obesity', null, null, 'Rybelsus / Ozempic', null, 'Chronic']),
 
-  // ─── Torrent Pharma — LIVE (scanx.trade / Medical Dialogues) ───
-  // Torrent is first Indian company to launch ORAL semaglutide post-patent-expiry (Mar-2026)
-  row(['Sembolic', 'Own Launched', '2026-03-20', '—', 'Torrent Pharma', 'Generic Launch', 'Semaglutide (oral)', 'Anti-Diabetic', 'Type 2 Diabetes', null, null, 'Rybelsus', null, 'Chronic']),
-  row(['Semalix', 'Own Launched', '2026-03-20', '—', 'Torrent Pharma', 'Generic Launch', 'Semaglutide (injectable)', 'Anti-Diabetic', 'Type 2 Diabetes / Obesity', null, null, 'Ozempic', null, 'Chronic']),
+  // ──────────────────────────────────────────────────────────────────────────
+  // Torrent Pharma — EXPANDED LIVE DATASET (deep-research edition)
+  // Sources: torrentpharma.com press releases + PDFs, Business Standard,
+  // HDFC Sec / M&A Critique deal reports, BusinessToday, Apollo / 1mg /
+  // medplusmart product listings, BSE filings. Torrent FY25 revenue ~Rs
+  // 11,500 Cr, Top-7 IPM rank. Focus: CVS + CNS + GI + WHC + VMN + derm.
+  // Dates confirmed for every deal; engine-brand launch years are [est.]
+  // where company history doesn't disclose exact year.
+
+  // ── Own-launched engine brands (pre-acquisition portfolio) ──
+  // Losar (Losartan) — Torrent's flagship ARB [launch date est.]
+  row(['Losar / Losar-H', 'Own Launched', '2000-01-01', '—', 'Torrent Pharma', 'NCE Launch', 'Losartan (± Hydrochlorothiazide)', 'Cardiology', 'Hypertension', null, null, 'Lowrac / Repace', null, 'Chronic']),
+  // Dilzem SR (Diltiazem Sustained Release) — Torrent cardio [launch date est.]
+  row(['Dilzem SR', 'Own Launched', '2002-01-01', '—', 'Torrent Pharma', 'NCE Launch', 'Diltiazem HCl SR', 'Cardiology', 'Hypertension / Angina', null, null, 'Angizem', null, 'Chronic']),
+  // Nikoran (Nicorandil 5/10 mg) — anti-anginal [launch date est.]
+  row(['Nikoran', 'Own Launched', '2005-01-01', '—', 'Torrent Pharma', 'NCE Launch', 'Nicorandil 5 / 10 mg', 'Cardiology', 'Stable / Chronic Angina', null, null, 'Nicorangin / Korandil', null, 'Chronic']),
+  // Nebicard (Nebivolol) — cardio-selective beta-blocker [launch date est.]
+  row(['Nebicard', 'Own Launched', '2008-01-01', '—', 'Torrent Pharma', 'NCE Launch', 'Nebivolol HCl 2.5 / 5 / 10 mg', 'Cardiology', 'Hypertension / Chronic Heart Failure', null, null, 'Nebilong / Nodon', null, 'Chronic']),
+  // Nexpro (Esomeprazole) — PPI [launch date est.]
+  row(['Nexpro', 'Own Launched', '2005-01-01', '—', 'Torrent Pharma', 'NCE Launch', 'Esomeprazole (± Domperidone)', 'Gastroenterology', 'GERD / Peptic Ulcer', null, null, 'Nexium / Esofag', null, 'Chronic']),
+
+  // ── Acquisition #1: Elder Pharma India Business — Dec 2013, Rs 2,004 Cr ──
+  // Business Standard (13-Dec-2013) — ~30 brands acquired with Shelcal / Chymoral / Carnisure / Deviry as leaders
+  row(['Elder Pharma India Business (parent)', 'Acquired', '2013-12-13', 'Elder Pharmaceuticals', 'Torrent Pharma', 'Brand Portfolio Acquisition', 'Various (Calcium / NSAID-Enzyme / Carnitine / MPA)', 'Multi-therapy', 'Multi-indication', 2004, null, 'Various', null, 'Chronic']),
+  row(['Shelcal', 'Acquired', '2013-12-13', 'Elder Pharmaceuticals', 'Torrent Pharma', 'Brand Acquisition', 'Calcium Carbonate + Vitamin D3 (± Magnesium / Zinc)', 'Nutraceuticals', 'Osteoporosis / Calcium Deficiency', null, null, 'Calcimax / Calcirol', null, 'Chronic']),
+  row(['Chymoral Forte / Chymoral-BR', 'Acquired', '2013-12-13', 'Elder Pharmaceuticals', 'Torrent Pharma', 'Brand Acquisition', 'Trypsin + Chymotrypsin (± Bromelain + Rutoside)', 'Pain Management', 'Inflammation / Soft-tissue Injury / Post-op Oedema', null, null, '—', null, 'Acute']),
+  row(['Carnisure', 'Acquired', '2013-12-13', 'Elder Pharmaceuticals', 'Torrent Pharma', 'Brand Acquisition', 'Levocarnitine', "Women's Health / Nutraceuticals", 'Carnitine Deficiency / Male Infertility', null, null, 'Carnitor / L-Carnipure', null, 'Chronic']),
+  row(['Deviry', 'Acquired', '2013-12-13', 'Elder Pharmaceuticals', 'Torrent Pharma', 'Brand Acquisition', 'Medroxyprogesterone Acetate', "Women's Health", 'Menstrual Disorders / Endometriosis', null, null, 'Meprate / Modus', null, 'Chronic']),
+
+  // ── Acquisition #2: Unichem Laboratories India + Nepal Business — Nov 2017, Rs 3,600 Cr ──
+  // Business Standard (03-Nov-2017); 120+ brands and the Sikkim facility; 3,000+ employees transferred
+  row(['Unichem Labs India Business (parent)', 'Acquired', '2017-11-03', 'Unichem Laboratories', 'Torrent Pharma', 'Brand Portfolio Acquisition', 'Various (120+ brands across cardio / diabetes / GI / CNS)', 'Multi-therapy', 'Multi-indication (India + Nepal)', 3600, null, 'Various', null, 'Chronic']),
+  row(['Unienzyme', 'Acquired', '2017-11-03', 'Unichem Laboratories', 'Torrent Pharma', 'Brand Acquisition', 'Fungal Diastase + Papain + Activated Charcoal (+ Simethicone)', 'Gastroenterology', 'Indigestion / Flatulence', null, null, 'Aristozyme / Enzar', null, 'Acute']),
+  row(['Ampoxin', 'Acquired', '2017-11-03', 'Unichem Laboratories', 'Torrent Pharma', 'Brand Acquisition', 'Ampicillin + Cloxacillin', 'Anti-Infectives', 'Skin / Soft Tissue / Respiratory Infections', null, null, 'Megapen / Roscillin', null, 'Acute']),
+  row(['Telsar / Losar (Unichem)', 'Acquired', '2017-11-03', 'Unichem Laboratories', 'Torrent Pharma', 'Brand Acquisition', 'Telmisartan / Losartan', 'Cardiology', 'Hypertension', null, null, 'Telma / Repace', null, 'Chronic']),
+
+  // ── Acquisition #3: Curatio Healthcare — Sep 2022, Rs 2,000 Cr ──
+  // Business Standard (27-Sep-2022) — cosmo-derma + pediatric care portfolio; top 10 brands = 75% of sales
+  row(['Curatio Healthcare (parent)', 'Acquired', '2022-09-27', 'Curatio Healthcare', 'Torrent Pharma', 'Company Acquisition', 'Various (Cosmo-Derma + Pediatric Care)', 'Dermatology', 'Multi-indication (derm-led)', 2000, null, 'Various', null, 'Chronic']),
+  row(['Tedibar', 'Acquired', '2022-09-27', 'Curatio Healthcare', 'Torrent Pharma', 'Brand Acquisition', 'Soap-free pH 5.5 Cleansing Bar (syndet)', 'Dermatology / Pediatric', 'Sensitive / Baby Skin Cleansing', null, null, 'Cetaphil / Sebamed', null, 'Acute']),
+  row(['Atogla', 'Acquired', '2022-09-27', 'Curatio Healthcare', 'Torrent Pharma', 'Brand Acquisition', 'Ceramide III + Gamma Linoleic Acid + Oat Lipids', 'Dermatology', 'Atopic Dermatitis / Dry Skin / Barrier Repair', null, null, 'Atopiclair / Cetaphil RestoraDerm', null, 'Chronic']),
+  row(['Spoo', 'Acquired', '2022-09-27', 'Curatio Healthcare', 'Torrent Pharma', 'Brand Acquisition', 'Tear-free Baby Shampoo (mild surfactant)', 'Dermatology / Pediatric', 'Pediatric Hair & Scalp Care', null, null, 'Johnson Baby / Himalaya Baby', null, 'Acute']),
+  row(['B4 Nappi', 'Acquired', '2022-09-27', 'Curatio Healthcare', 'Torrent Pharma', 'Brand Acquisition', 'Zinc Oxide 15% + Calendula Oil + Allantoin', 'Dermatology / Pediatric', 'Nappy / Diaper Rash Prevention', null, null, 'Desitin / Himalaya Diaper Rash', null, 'Acute']),
+  row(['Permite', 'Acquired', '2022-09-27', 'Curatio Healthcare', 'Torrent Pharma', 'Brand Acquisition', 'Permethrin 5% cream', 'Dermatology / Anti-Infectives', 'Scabies / Pediculosis', null, null, 'Scabper / Acticin', null, 'Acute']),
+
+  // ── In-licensing #1: Zydus Saroglitazar co-marketing (Vorxar) — 10-Nov-2023 ──
+  // Business Standard — Torrent inks licensing pact with Zydus for liver disease drug (10-Nov-2023)
+  row(['Vorxar (Saroglitazar)', 'In-licensed', '2023-11-10', 'Zydus Lifesciences', 'Torrent Pharma', 'Co-marketing', 'Saroglitazar Magnesium', 'Gastroenterology / Hepatology', 'NASH / NAFLD / Diabetic Dyslipidemia', null, null, 'Lipaglyn / Bilypsa', null, 'Chronic']),
+
+  // ── In-licensing #2: Takeda Vonoprazan patent licence (Kabvie) — 05-Jun-2024 ──
+  // Business Standard / BioSpectrum — Torrent + Takeda non-exclusive patent licence (05-Jun-2024)
+  row(['Kabvie (Vonoprazan)', 'In-licensed', '2024-06-05', 'Takeda Pharmaceuticals', 'Torrent Pharma', 'In-license (India)', 'Vonoprazan (P-CAB)', 'Gastroenterology', 'GERD / Erosive Esophagitis', null, null, 'Voquezna / Vohozin', null, 'Chronic']),
+
+  // ── Own-launched (recent) ──
+  // Shelcal Total — adult nutrition powder launch (23-Jul-2025)
+  row(['Shelcal Total', 'Own Launched', '2025-07-23', '—', 'Torrent Pharma', 'Line Extension', 'Protein + Ca + Mg + D3 + K2 + Glucosamine + Bamboo extract', 'Nutraceuticals', 'Adult Bone-Joint + Daily Wellness', null, null, 'Ensure / Protinex', null, 'Chronic']),
+
+  // ── Acquisition #4: JB Chemicals & Pharmaceuticals (46.39% controlling stake from KKR) ──
+  // Announced 29-Jun-2025; completed 21-Jan-2026; NCLT first-motion order 23-Mar-2026; total deal Rs 25,689 Cr
+  row(['JB Chemicals & Pharmaceuticals (parent)', 'Acquired', '2026-01-21', 'Tau Investment Holdings (KKR)', 'Torrent Pharma', 'Company Acquisition', 'Various (50+ brands across cardio / GI / derm / nephro / respiratory)', 'Multi-therapy', 'Multi-indication', 25689, null, 'Various', null, 'Chronic']),
+  row(['Cilacar', 'Acquired', '2026-01-21', 'Tau Investment Holdings (KKR)', 'Torrent Pharma', 'Brand Acquisition', 'Cilnidipine (± Telmisartan / Chlorthalidone / Metoprolol)', 'Cardiology', 'Hypertension (#1 CCB in India)', null, null, 'Cilacar', null, 'Chronic']),
+  row(['Nicardia', 'Acquired', '2026-01-21', 'Tau Investment Holdings (KKR)', 'Torrent Pharma', 'Brand Acquisition', 'Nifedipine (Retard / XL)', 'Cardiology', 'Resistant Hypertension', null, null, 'Adalat / Nifedical', null, 'Chronic']),
+  row(['Rantac', 'Acquired', '2026-01-21', 'Tau Investment Holdings (KKR)', 'Torrent Pharma', 'Brand Acquisition', 'Ranitidine', 'Gastroenterology', 'Peptic Ulcer / GERD (legacy H2-blocker)', null, null, 'Zinetac / Aciloc', null, 'Acute']),
+  row(['Metrogyl', 'Acquired', '2026-01-21', 'Tau Investment Holdings (KKR)', 'Torrent Pharma', 'Brand Acquisition', 'Metronidazole', 'Anti-Infectives', 'Amoebiasis / Anaerobic Infections', null, null, 'Flagyl', null, 'Acute']),
+
+  // ── Semaglutide Day-1 launches (21-Mar-2026) ──
+  // torrentpharma.com press release + BSE filing — Semalix (India's first generic oral semaglutide) + Sembolic (injectable, co-marketed with Zydus starting Rs 3,999/month)
+  row(['Semalix', 'Own Launched', '2026-03-21', '—', 'Torrent Pharma', 'Generic Launch', 'Semaglutide (oral — India-first generic)', 'Anti-Diabetic', 'Type 2 Diabetes', null, null, 'Rybelsus', null, 'Chronic']),
+  row(['Sembolic', 'In-licensed', '2026-03-21', 'Zydus Lifesciences', 'Torrent Pharma', 'Co-marketing', 'Semaglutide (injectable pen)', 'Anti-Diabetic', 'Type 2 Diabetes / Obesity', null, null, 'Ozempic / Semaglyn', null, 'Chronic']),
 
   // ─── Glenmark — LIVE (glenmarkpharma.com press releases) ───
   // Business Standard "Glenmark launches Empagliflozin for diabetes in India under Glempa brand" (12-Mar-2025)
