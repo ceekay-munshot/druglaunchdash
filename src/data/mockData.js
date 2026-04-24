@@ -60,6 +60,52 @@ const row = (vals) => ({
   [COLUMN_KEYS.CHRONIC_ACUTE]: vals[13],
 });
 
+// Maps a scraped row (camelCase keys, see scripts/scrape.mjs schema) into the
+// internal column-label shape used by the whole dashboard.
+export function fromScrapedRow(r) {
+  return {
+    [COLUMN_KEYS.BRAND]: r.brand ?? '',
+    [COLUMN_KEYS.LAUNCH_TYPE]: r.launchType ?? '',
+    [COLUMN_KEYS.DATE]: r.date ?? '',
+    [COLUMN_KEYS.SELLER]: r.seller || '—',
+    [COLUMN_KEYS.BUYER]: r.buyer ?? '',
+    [COLUMN_KEYS.DEAL_TYPE]: r.dealType ?? '',
+    [COLUMN_KEYS.MOLECULE]: r.molecule ?? '',
+    [COLUMN_KEYS.THERAPY]: r.therapy ?? '',
+    [COLUMN_KEYS.INDICATION]: r.indication ?? '',
+    [COLUMN_KEYS.MARKET_SIZE]: r.marketSize ?? null,
+    [COLUMN_KEYS.EXISTING_BRAND]: r.existingBrand || '—',
+    [COLUMN_KEYS.CHRONIC_ACUTE]: r.chronicAcute ?? '',
+  };
+}
+
+// Dedup key used for both baseline vs. scraped merging and for the scraper's
+// own dedup. Keep this stable across both sides.
+function rowKey(r) {
+  return [
+    String(r[COLUMN_KEYS.BRAND] ?? '').trim().toLowerCase(),
+    String(r[COLUMN_KEYS.DATE] ?? '').trim(),
+    String(r[COLUMN_KEYS.SELLER] ?? '').trim().toLowerCase(),
+    String(r[COLUMN_KEYS.BUYER] ?? '').trim().toLowerCase(),
+  ].join('|');
+}
+
+// Merge bundled curated rows with rows fetched from public/launches.json.
+// Curated (baseline) rows are source-of-truth and always win on key collision;
+// scraped rows are only appended when they introduce a new (brand+date+seller+buyer).
+export function mergeLaunchRows(baseline, scrapedRaw) {
+  if (!Array.isArray(scrapedRaw) || scrapedRaw.length === 0) return baseline;
+  const baselineKeys = new Set(baseline.map(rowKey));
+  const scraped = scrapedRaw.map(fromScrapedRow);
+  const unique = scraped.filter((r) => {
+    const k = rowKey(r);
+    if (baselineKeys.has(k)) return false;
+    baselineKeys.add(k);
+    return true;
+  });
+  return [...baseline, ...unique];
+}
+
 export const LAUNCH_TRACKER_ROWS = [
   // ──────────────────────────────────────────────────────────────────────────
   // Sun Pharma — EXPANDED LIVE DATASET (deep-research edition)

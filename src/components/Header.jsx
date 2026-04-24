@@ -14,16 +14,20 @@ export default function Header({
   filteredRows,
   lastUpdated,
   onRefresh,
+  refreshing = false,
 }) {
-  const [spinning, setSpinning] = useState(false);
   const [archiveOpen, setArchiveOpen] = useState(false);
   const archiveRef = useRef(null);
 
+  // Refresh button spins while the parent's fetch is in-flight; guarantees a
+  // minimum 400ms animation so quick cache-hits still give visual feedback.
+  const [minSpin, setMinSpin] = useState(false);
+  const spinning = refreshing || minSpin;
   const handleRefresh = () => {
     if (spinning) return;
-    setSpinning(true);
+    setMinSpin(true);
     if (onRefresh) onRefresh();
-    setTimeout(() => setSpinning(false), 800);
+    setTimeout(() => setMinSpin(false), 400);
   };
 
   // Close the archive popover on outside click / Escape.
@@ -211,7 +215,7 @@ export default function Header({
             Last refresh • {lastUpdated}
           </span>
           <span className="ml-auto text-ink-500 hidden md:inline">
-            Source: press releases / BSE filings · Curated · Last refresh stamps the view
+            Source: curated baseline + daily Firecrawl scrape · Refresh pulls latest launches.json
           </span>
         </div>
       </div>

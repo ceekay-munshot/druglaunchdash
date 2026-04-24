@@ -5,7 +5,9 @@ import KPICards from './components/KPICards';
 import Charts from './components/Charts';
 import MainTable from './components/MainTable';
 import InsightWidgets from './components/InsightWidgets';
-import { LAUNCH_TRACKER_ROWS, UNIQUE_BUYERS, COLUMN_KEYS } from './data/mockData';
+import { LAUNCH_TRACKER_ROWS, UNIQUE_BUYERS, COLUMN_KEYS, mergeLaunchRows } from './data/mockData';
+
+const LAUNCHES_ENDPOINT = '/launches.json';
 
 const INITIAL_FILTERS = {
   therapy: '__ALL__',
@@ -94,7 +96,7 @@ export default function App() {
   );
 
   const filteredRows = useMemo(() => {
-    return LAUNCH_TRACKER_ROWS.filter((r) => {
+    return allRows.filter((r) => {
       if (timelineCutoff) {
         const d = new Date(r[COLUMN_KEYS.DATE]);
         if (isNaN(d.getTime()) || d < timelineCutoff) return false;
@@ -127,15 +129,54 @@ export default function App() {
       }
       return true;
     });
-  }, [searchQuery, selectedCompany, filters, timelineCutoff, archivedCompanies]);
+  }, [searchQuery, selectedCompany, filters, timelineCutoff, archivedCompanies, allRows]);
 
   const resetFilters = () => {
     setFilters(INITIAL_FILTERS);
     setTimeline('3Q');
   };
 
+  // ── Live data: bundled baseline + fetched scrape, merged ────────────────
+  // Baseline = LAUNCH_TRACKER_ROWS (curated, hand-verified). Fetched rows
+  // come from /launches.json which the daily GitHub Actions workflow writes.
+  // Merge policy: baseline wins on key collision; fetched rows are appended.
+  const [scrapedRows, setScrapedRows] = useState([]);
+  const [scrapeGeneratedAt, setScrapeGeneratedAt] = useState(null);
+  const [isRefreshing, setIsRefreshing] = useState(false);
   const [lastRefreshAt, setLastRefreshAt] = useState(() => new Date());
-  const lastUpdated = lastRefreshAt.toLocaleString('en-IN', {
+
+  const fetchScraped = async () => {
+    setIsRefreshing(true);
+    try {
+      const res = await fetch(`${LAUNCHES_ENDPOINT}?t=${Date.now()}`, { cache: 'no-store' });
+      if (res.ok) {
+        const data = await res.json();
+        setScrapedRows(Array.isArray(data.rows) ? data.rows : []);
+        setScrapeGeneratedAt(data.generatedAt || null);
+      }
+    } catch {
+      /* swallow; we fall back to bundled baseline silently */
+    } finally {
+      setLastRefreshAt(new Date());
+      setIsRefreshing(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchScraped();
+  }, []);
+
+  const allRows = useMemo(
+    () => mergeLaunchRows(LAUNCH_TRACKER_ROWS, scrapedRows),
+    [scrapedRows]
+  );
+
+  // "Last refresh" shows the scrape timestamp when we have one, otherwise the
+  // last time the button was pressed / page loaded.
+  const lastUpdatedDate = scrapeGeneratedAt && new Date(scrapeGeneratedAt).getTime() > 0
+    ? new Date(scrapeGeneratedAt)
+    : lastRefreshAt;
+  const lastUpdated = lastUpdatedDate.toLocaleString('en-IN', {
     year: 'numeric',
     month: 'short',
     day: '2-digit',
@@ -143,7 +184,9 @@ export default function App() {
     minute: '2-digit',
   });
 
-  const handleRefresh = () => setLastRefreshAt(new Date());
+  const handleRefresh = () => {
+    fetchScraped();
+  };
 
   return (
     <div className="min-h-screen">
@@ -156,15 +199,16 @@ export default function App() {
         archivedCompanies={archivedCompanies}
         onUnarchive={unarchiveCompany}
         onArchive={archiveCompany}
-        totalRows={LAUNCH_TRACKER_ROWS.length}
+        totalRows={allRows.length}
         filteredRows={filteredRows.length}
         lastUpdated={lastUpdated}
         onRefresh={handleRefresh}
+        refreshing={isRefreshing}
       />
 
       <main className="max-w-[1600px] mx-auto px-6 py-6 space-y-6">
         <FilterBar
-          rows={LAUNCH_TRACKER_ROWS}
+          rows={allRows}
           filters={filters}
           setFilters={setFilters}
           onReset={resetFilters}
@@ -191,8 +235,9 @@ export default function App() {
         </section>
 
         <footer className="pt-4 pb-8 text-center text-[11px] text-ink-500">
-          Frontend-only demo · All KPIs, charts, and insights are derived from the same filtered
-          core table. Mock data for illustration.
+          Curated baseline in <code className="text-ink-700">src/data/mockData.js</code> merged
+          with daily scrape in <code className="text-ink-700">public/launches.json</code>.
+          All KPIs, charts, and insights derive from the same filtered core table.
         </footer>
       </main>
     </div>

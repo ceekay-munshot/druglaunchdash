@@ -1,0 +1,6 @@
+{
+  "generatedAt": "1970-01-01T00:00:00.000Z",
+  "rowCount": 0,
+  "rows": [],
+  "_note": "Seed file. Real data will be written here by .github/workflows/scrape-launches.yml. The frontend merges rows here over the curated baseline in src/data/mockData.js (curated rows always win)."
+}
