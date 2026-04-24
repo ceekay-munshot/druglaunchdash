@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useState, useEffect } from 'react';
 import Header from './components/Header';
 import FilterBar from './components/FilterBar';
 import KPICards from './components/KPICards';
@@ -34,11 +34,59 @@ const TIMELINE_PRESETS = {
   ALL: { label: 'All time', quarters: null },
 };
 
+// Companies the client actively tracks — everything in UNIQUE_BUYERS NOT in
+// this set starts as archived. Users can unarchive via the "Archive" popover
+// in the Header (which moves a company back to the active list).
+const DEFAULT_ACTIVE_COMPANIES = [
+  'Mankind Pharma',
+  'Eris Lifesciences',
+  'Sun Pharma',
+  'Cipla',
+  'Alkem',
+  'Corona Remedies',
+  'Torrent Pharma',
+];
+
+const ARCHIVE_STORAGE_KEY = 'dlt.archivedCompanies.v1';
+
+function loadInitialArchived() {
+  try {
+    const raw = typeof window !== 'undefined' && window.localStorage.getItem(ARCHIVE_STORAGE_KEY);
+    if (raw) return JSON.parse(raw);
+  } catch {
+    /* ignore storage errors, fall through */
+  }
+  return UNIQUE_BUYERS.filter((c) => !DEFAULT_ACTIVE_COMPANIES.includes(c));
+}
+
 export default function App() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCompany, setSelectedCompany] = useState('__ALL__');
   const [filters, setFilters] = useState(INITIAL_FILTERS);
   const [timeline, setTimeline] = useState('3Q');
+  const [archivedCompanies, setArchivedCompanies] = useState(loadInitialArchived);
+
+  const activeCompanies = useMemo(
+    () => UNIQUE_BUYERS.filter((c) => !archivedCompanies.includes(c)),
+    [archivedCompanies]
+  );
+
+  // Persist archive list so it survives refresh.
+  useEffect(() => {
+    try {
+      window.localStorage.setItem(ARCHIVE_STORAGE_KEY, JSON.stringify(archivedCompanies));
+    } catch {
+      /* ignore */
+    }
+  }, [archivedCompanies]);
+
+  const unarchiveCompany = (name) =>
+    setArchivedCompanies((prev) => prev.filter((c) => c !== name));
+  const archiveCompany = (name) => {
+    setArchivedCompanies((prev) => (prev.includes(name) ? prev : [...prev, name]));
+    // If user archives the currently-selected company, reset the dropdown.
+    setSelectedCompany((prev) => (prev === name ? '__ALL__' : prev));
+  };
 
   const timelineCutoff = useMemo(
     () => cutoffForQuarters(TIMELINE_PRESETS[timeline]?.quarters),
@@ -51,6 +99,8 @@ export default function App() {
         const d = new Date(r[COLUMN_KEYS.DATE]);
         if (isNaN(d.getTime()) || d < timelineCutoff) return false;
       }
+      // Hide rows for archived companies when viewing "All Companies".
+      if (selectedCompany === '__ALL__' && archivedCompanies.includes(r[COLUMN_KEYS.BUYER])) return false;
       if (selectedCompany !== '__ALL__' && r[COLUMN_KEYS.BUYER] !== selectedCompany) return false;
       if (filters.therapy !== '__ALL__' && r[COLUMN_KEYS.THERAPY] !== filters.therapy) return false;
       if (filters.launchType !== '__ALL__' && r[COLUMN_KEYS.LAUNCH_TYPE] !== filters.launchType) return false;
@@ -77,7 +127,7 @@ export default function App() {
       }
       return true;
     });
-  }, [searchQuery, selectedCompany, filters, timelineCutoff]);
+  }, [searchQuery, selectedCompany, filters, timelineCutoff, archivedCompanies]);
 
   const resetFilters = () => {
     setFilters(INITIAL_FILTERS);
@@ -102,7 +152,10 @@ export default function App() {
         onSearchChange={setSearchQuery}
         selectedCompany={selectedCompany}
         onCompanyChange={setSelectedCompany}
-        companies={UNIQUE_BUYERS}
+        companies={activeCompanies}
+        archivedCompanies={archivedCompanies}
+        onUnarchive={unarchiveCompany}
+        onArchive={archiveCompany}
         totalRows={LAUNCH_TRACKER_ROWS.length}
         filteredRows={filteredRows.length}
         lastUpdated={lastUpdated}
