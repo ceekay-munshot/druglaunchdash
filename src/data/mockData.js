@@ -75,9 +75,66 @@ export const LAUNCH_TRACKER_ROWS = [
   // drreddys.com / Stock Titan (Mar 2026) — India launch post Delhi HC nod; export since late 2025
   row(['Obeda', 'Own Launched', '2026-03-20', '—', "Dr. Reddy's", 'Generic Launch', 'Semaglutide', 'Anti-Diabetic', 'Type 2 Diabetes / Weight Management', null, null, 'Rybelsus / Ozempic', null, 'Chronic']),
 
-  // ─── Cipla — LIVE (cipla.com press releases) ───
-  // cipla.com "Cipla Launches India's Only Inhaled Insulin, Afrezza" (22-Dec-2025)
-  row(['Afrezza', 'In-licensed', '2025-12-22', 'MannKind Corporation', 'Cipla', 'In-license (India)', 'Insulin Human (inhaled)', 'Anti-Diabetic', 'Type 1 / Type 2 Diabetes', null, null, 'Huminsulin', null, 'Chronic']),
+  // ──────────────────────────────────────────────────────────────────────────
+  // Cipla — EXPANDED LIVE DATASET (deep-research edition)
+  // Sources: cipla.com press releases + annual report FY25, ciplamed.com
+  // product-index, Business Standard / BusinessToday / BioSpectrum /
+  // PharmaTutor coverage, 1mg / Apollo / medplusmart product listings, WHO
+  // MPP sub-license announcements. Cipla is India-Top-3 branded by domestic
+  // sales, dominant in respiratory (#1 India inhaler market leader) with
+  // strong chronic + oncology + HIV + OTC layers. India-specific M&A has
+  // been limited (most M&A is US / South Africa); India growth has been
+  // driven by own launches + in-licensing partnerships.
+  // Dates confirmed for every deal; engine-brand launch years [est.].
+
+  // ── Engine brands (Own Launched) ──
+  // Asthalin (Salbutamol) — Cipla's legacy inhaled bronchodilator [launch date est.]
+  row(['Asthalin', 'Own Launched', '1990-01-01', '—', 'Cipla', 'NCE Launch', 'Salbutamol (Albuterol)', 'Respiratory', 'Asthma / COPD (reliever)', null, null, 'Ventorlin / Levolin', null, 'Chronic']),
+  // Ciplox (Ciprofloxacin) — flagship fluoroquinolone [launch date est.]
+  row(['Ciplox', 'Own Launched', '1993-01-01', '—', 'Cipla', 'NCE Launch', 'Ciprofloxacin HCl', 'Anti-Infectives', 'Respiratory / UTI / GI Infections', null, null, 'Cifran / Zoxan', null, 'Acute']),
+  // Ciplox Eye — eye-drop line extension (added 2022-03-04 in earlier data)
+  row(['Ciplox Eye', 'Own Launched', '2022-03-04', '—', 'Cipla', 'Line Extension', 'Ciprofloxacin 0.3% (ophthalmic)', 'Ophthalmology', 'Bacterial Conjunctivitis', null, null, 'Ciplox', null, 'Acute']),
+  // Novamox (Amoxicillin) — legacy paediatric / adult antibiotic [launch date est.]
+  row(['Novamox', 'Own Launched', '1995-01-01', '—', 'Cipla', 'NCE Launch', 'Amoxicillin (100 mg/mL drops, 125/250/500 mg caps)', 'Anti-Infectives', 'Respiratory / ENT / Skin Infections', null, null, 'Mox / Amoxil', null, 'Acute']),
+  // Foracort (Budesonide + Formoterol) — combination ICS-LABA inhaler; Cipla's blockbuster [launch date est.]
+  row(['Foracort (Inhaler / Respules / Rotacaps)', 'Own Launched', '2005-01-01', '—', 'Cipla', 'NCE Launch', 'Budesonide + Formoterol Fumarate', 'Respiratory', 'Asthma / COPD Maintenance', null, null, 'Symbicort / Seroflo', null, 'Chronic']),
+  // Foracort NEXThaler — DPI device launch
+  row(['Foracort NEXThaler', 'Own Launched', '2023-05-16', '—', 'Cipla', 'Device Launch', 'Budesonide + Formoterol Fumarate (DPI)', 'Respiratory', 'Asthma / COPD (low-resistance DPI)', null, null, 'Foracort MDI', null, 'Chronic']),
+  // Seroflo (Salmeterol + Fluticasone) — ICS-LABA [launch date est.]
+  row(['Seroflo', 'Own Launched', '2005-01-01', '—', 'Cipla', 'NCE Launch', 'Salmeterol + Fluticasone Propionate', 'Respiratory', 'Asthma / COPD Maintenance', null, null, 'Advair / Seretide', null, 'Chronic']),
+  // Budecort (Budesonide respules / inhaler) [launch date est.]
+  row(['Budecort', 'Own Launched', '2002-01-01', '—', 'Cipla', 'NCE Launch', 'Budesonide (Nebulizer / Inhaler)', 'Respiratory', 'Asthma / Croup / Bronchitis', null, null, 'Pulmicort', null, 'Chronic']),
+  // Duolin (Levosalbutamol + Ipratropium) [launch date est.]
+  row(['Duolin', 'Own Launched', '2005-01-01', '—', 'Cipla', 'NCE Launch', 'Levosalbutamol + Ipratropium Bromide', 'Respiratory', 'Asthma / COPD (SABA+SAMA)', null, null, 'Combivent / Asthakind', null, 'Chronic']),
+  // CipAir — AI-powered asthma screening app (digital health initiative), announced FY25
+  row(['CipAir (AI Asthma Screening)', 'Own Launched', '2024-10-01', '—', 'Cipla', 'Digital Health Launch', 'Breathing-signature ML model (mobile app)', 'Respiratory', 'Asthma Screening / Awareness', null, null, 'N/A', null, 'Chronic']),
+
+  // ── Historical in-licensing (existing in earlier data, kept) ──
+  // Cipla + Servier — Ivabrad (Ivabradine)
+  row(['Ivabrad', 'In-licensed', '2021-12-02', 'Servier', 'Cipla', 'In-license (India)', 'Ivabradine', 'Cardiology', 'Chronic Heart Failure / Stable Angina', null, null, 'Ivabid / Corlanor', null, 'Chronic']),
+  // Cipla + Eli Lilly — Humalog + Trulicity distribution (04-Oct-2021)
+  row(['Humalog + Trulicity (Eli Lilly rights)', 'In-licensed', '2021-10-04', 'Eli Lilly', 'Cipla', 'Co-marketing', 'Insulin Lispro / Dulaglutide', 'Anti-Diabetic', 'Type 1 / Type 2 Diabetes', null, null, 'Huminsulin / Victoza', null, 'Chronic']),
+  // Cipla + Ferring — Nocdurna (Desmopressin 27.7 mcg ODT) for nocturia
+  row(['Nocdurna', 'In-licensed', '2024-03-22', 'Ferring Pharmaceuticals', 'Cipla', 'In-license (India)', 'Desmopressin Acetate (27.7 mcg ODT)', 'Urology', 'Nocturia (Nocturnal Polyuria)', null, null, '—', null, 'Chronic']),
+
+  // ── Orchid Pharma partnership — Cefepime-Enmetazobactam (28-Jun-2024) ──
+  // Business Standard / cipla.com — Orchid Pharma + Cipla marketing licence; Cipla sells as Cipenmet + Esblocip
+  row(['Cipenmet / Esblocip', 'In-licensed', '2024-06-28', 'Orchid Pharma', 'Cipla', 'Co-marketing', 'Cefepime + Enmetazobactam', 'Anti-Infectives', 'Complicated UTI / HAP / VAP', null, null, 'Orblicef', null, 'Acute']),
+
+  // ── ViiV Healthcare / Medicines Patent Pool — Long-Acting Cabotegravir sublicence (Mar-2023) ──
+  row(['Cabotegravir LA (via MPP / ViiV)', 'In-licensed', '2023-03-09', 'Medicines Patent Pool (ViiV)', 'Cipla', 'Voluntary Licence', 'Cabotegravir + Rilpivirine (long-acting injectable)', 'Anti-Infectives / HIV', 'HIV-1 Treatment & Prevention', null, null, 'Vocabria / Cabenuva', null, 'Chronic']),
+
+  // ── MannKind Afrezza (launch 22-Dec-2025; agreement originally signed May 2018) ──
+  row(['Afrezza', 'In-licensed', '2025-12-22', 'MannKind Corporation', 'Cipla', 'In-license (India)', 'Insulin Human (inhaled)', 'Anti-Diabetic', 'Type 1 / Type 2 Diabetes (prandial inhaled)', null, null, 'Huminsulin / Actrapid', null, 'Chronic']),
+
+  // ── Eli Lilly × Cipla — Tirzepatide (Yurpeak) distribution (23-Oct-2025) ──
+  row(['Yurpeak (Tirzepatide)', 'In-licensed', '2025-10-23', 'Eli Lilly', 'Cipla', 'Co-marketing', 'Tirzepatide (GIP + GLP-1 RA)', 'Anti-Diabetic', 'Type 2 Diabetes / Chronic Weight Management', null, null, 'Mounjaro / Zepbound', null, 'Chronic']),
+
+  // ── Stempeutics Ciplostem (stem cell therapy for Knee OA, 03-Dec-2025) ──
+  row(['Ciplostem', 'In-licensed', '2025-12-03', 'Stempeutics Research', 'Cipla', 'Co-marketing', 'Allogeneic Mesenchymal Stromal Cells (MSC, intra-articular)', 'Orthobiologic / Regenerative Medicine', 'Knee Osteoarthritis (Grade II-III)', null, null, 'N/A (first-in-class)', null, 'Chronic']),
+
+  // ── Novartis Galvus perpetual licence (effective 01-Jan-2026, Rs 1,107 Cr) ──
+  row(['Galvus / Galvus Met (perpetual licence)', 'In-licensed', '2026-01-01', 'Novartis Pharma AG', 'Cipla', 'Perpetual Trademark Licence', 'Vildagliptin (± Metformin)', 'Anti-Diabetic', 'Type 2 Diabetes (DPP-4 inhibitor)', null, null, 'Zomelis / Jalra', null, 'Chronic']),
 
   // ─── Lupin — LIVE (lupin.com press releases) ───
   // lupin.com "Lupin and Zydus Sign Licensing Agreement for Co-marketing Innovative Semaglutide Injection in India" (17-Mar-2026)
