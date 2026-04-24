@@ -179,7 +179,7 @@ export default function App() {
         </section>
 
         <section aria-label="Summary charts">
-          <Charts rows={filteredRows} />
+          <Charts rows={filteredRows} selectedCompany={selectedCompany} />
         </section>
 
         <section aria-label="Core table">
@@ -187,7 +187,7 @@ export default function App() {
         </section>
 
         <section aria-label="Investor insights">
-          <InsightWidgets rows={filteredRows} />
+          <InsightWidgets rows={filteredRows} selectedCompany={selectedCompany} />
         </section>
 
         <footer className="pt-4 pb-8 text-center text-[11px] text-ink-500">

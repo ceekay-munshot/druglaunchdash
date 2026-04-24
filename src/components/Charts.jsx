@@ -49,7 +49,8 @@ const cardTooltipStyle = {
   fontSize: 12,
 };
 
-export default function Charts({ rows }) {
+export default function Charts({ rows, selectedCompany }) {
+  const singleCompanyView = selectedCompany && selectedCompany !== '__ALL__';
   const therapy = countBy(rows, COLUMN_KEYS.THERAPY).sort((a, b) => b.value - a.value);
   const launchType = countBy(rows, COLUMN_KEYS.LAUNCH_TYPE);
   const buyerCount = countBy(rows, COLUMN_KEYS.BUYER).sort((a, b) => b.value - a.value).slice(0, 8);
@@ -141,17 +142,19 @@ export default function Charts({ rows }) {
         </ResponsiveContainer>
       </ChartCard>
 
-      <ChartCard icon={BarChart3} title="Buyer-wise Brand Count" subtitle="Top acquiring/launching companies">
-        <ResponsiveContainer width="100%" height={260}>
-          <BarChart data={buyerCount} layout="vertical" margin={{ left: 12, right: 12 }}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#eef2f7" horizontal={false} />
-            <XAxis type="number" tick={{ fontSize: 11, fill: '#64748b' }} allowDecimals={false} />
-            <YAxis type="category" dataKey="name" width={120} tick={{ fontSize: 11, fill: '#334155' }} />
-            <Tooltip contentStyle={cardTooltipStyle} />
-            <Bar dataKey="value" fill="#16a34a" radius={[0, 6, 6, 0]} />
-          </BarChart>
-        </ResponsiveContainer>
-      </ChartCard>
+      {!singleCompanyView && (
+        <ChartCard icon={BarChart3} title="Buyer-wise Brand Count" subtitle="Top acquiring/launching companies">
+          <ResponsiveContainer width="100%" height={260}>
+            <BarChart data={buyerCount} layout="vertical" margin={{ left: 12, right: 12 }}>
+              <CartesianGrid strokeDasharray="3 3" stroke="#eef2f7" horizontal={false} />
+              <XAxis type="number" tick={{ fontSize: 11, fill: '#64748b' }} allowDecimals={false} />
+              <YAxis type="category" dataKey="name" width={120} tick={{ fontSize: 11, fill: '#334155' }} />
+              <Tooltip contentStyle={cardTooltipStyle} />
+              <Bar dataKey="value" fill="#16a34a" radius={[0, 6, 6, 0]} />
+            </BarChart>
+          </ResponsiveContainer>
+        </ChartCard>
+      )}
 
       <ChartCard icon={BarChart3} title="Seller-wise Transactions" subtitle="Top originators / licensors" accent="teal">
         <ResponsiveContainer width="100%" height={260}>
@@ -206,24 +209,26 @@ export default function Charts({ rows }) {
         </ResponsiveContainer>
       </ChartCard>
 
-      <ChartCard icon={Activity} title="Launch Activity Over Time" subtitle="Brand launches by year" accent="teal">
-        <ResponsiveContainer width="100%" height={260}>
-          <LineChart data={activityByYear} margin={{ left: 0, right: 12 }}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#eef2f7" />
-            <XAxis dataKey="name" tick={{ fontSize: 11, fill: '#64748b' }} />
-            <YAxis tick={{ fontSize: 11, fill: '#64748b' }} allowDecimals={false} />
-            <Tooltip contentStyle={cardTooltipStyle} />
-            <Line
-              type="monotone"
-              dataKey="value"
-              stroke="#16a34a"
-              strokeWidth={2.5}
-              dot={{ r: 4, fill: '#16a34a', strokeWidth: 2, stroke: '#fff' }}
-              activeDot={{ r: 6 }}
-            />
-          </LineChart>
-        </ResponsiveContainer>
-      </ChartCard>
+      {!singleCompanyView && (
+        <ChartCard icon={Activity} title="Launch Activity Over Time" subtitle="Brand launches by year" accent="teal">
+          <ResponsiveContainer width="100%" height={260}>
+            <LineChart data={activityByYear} margin={{ left: 0, right: 12 }}>
+              <CartesianGrid strokeDasharray="3 3" stroke="#eef2f7" />
+              <XAxis dataKey="name" tick={{ fontSize: 11, fill: '#64748b' }} />
+              <YAxis tick={{ fontSize: 11, fill: '#64748b' }} allowDecimals={false} />
+              <Tooltip contentStyle={cardTooltipStyle} />
+              <Line
+                type="monotone"
+                dataKey="value"
+                stroke="#16a34a"
+                strokeWidth={2.5}
+                dot={{ r: 4, fill: '#16a34a', strokeWidth: 2, stroke: '#fff' }}
+                activeDot={{ r: 6 }}
+              />
+            </LineChart>
+          </ResponsiveContainer>
+        </ChartCard>
+      )}
     </div>
   );
 }

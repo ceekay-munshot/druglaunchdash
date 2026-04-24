@@ -61,7 +61,8 @@ function LeaderList({ items, right }) {
   );
 }
 
-export default function InsightWidgets({ rows }) {
+export default function InsightWidgets({ rows, selectedCompany }) {
+  const singleCompanyView = selectedCompany && selectedCompany !== '__ALL__';
   const hasNum = (v) => v !== null && v !== undefined && !isNaN(Number(v));
 
   const byMarket = rows
@@ -90,21 +91,23 @@ export default function InsightWidgets({ rows }) {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
-      <Widget icon={Users} title="Most Active Buyer" subtitle="Launch / acquisition volume">
-        {topBuyer ? (
-          <div className="space-y-3">
-            <div className="flex items-baseline gap-2">
-              <p className="text-xl font-bold text-ink-900 truncate">{topBuyer.name}</p>
-              <span className="text-xs text-pharma-700 font-semibold bg-pharma-50 px-2 py-0.5 rounded-full border border-pharma-100">
-                {topBuyer.value} launches
-              </span>
+      {!singleCompanyView && (
+        <Widget icon={Users} title="Most Active Buyer" subtitle="Launch / acquisition volume">
+          {topBuyer ? (
+            <div className="space-y-3">
+              <div className="flex items-baseline gap-2">
+                <p className="text-xl font-bold text-ink-900 truncate">{topBuyer.name}</p>
+                <span className="text-xs text-pharma-700 font-semibold bg-pharma-50 px-2 py-0.5 rounded-full border border-pharma-100">
+                  {topBuyer.value} launches
+                </span>
+              </div>
+              <LeaderList items={buyers.slice(0, 5)} right={(it) => `${it.value}`} />
             </div>
-            <LeaderList items={buyers.slice(0, 5)} right={(it) => `${it.value}`} />
-          </div>
-        ) : (
-          <p className="text-xs text-ink-500">No buyer data.</p>
-        )}
-      </Widget>
+          ) : (
+            <p className="text-xs text-ink-500">No buyer data.</p>
+          )}
+        </Widget>
+      )}
 
       <Widget
         icon={FlaskConical}
