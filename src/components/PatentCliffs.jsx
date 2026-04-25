@@ -78,10 +78,17 @@ function PositioningPill({ launched, total }) {
   );
 }
 
+// Default to the largest-TAM therapy bucket (Anti-Diabetic ≈ ₹7.5K Cr) so the
+// first thing the client sees is the most consequential opportunity set, not
+// the full 35-row firehose.
+const DEFAULT_THERAPY = 'Anti-Diabetic';
+const DEFAULT_LIMIT = 5;
+
 export default function PatentCliffs({ allRows = [], companies = [] }) {
-  const [therapy, setTherapy] = useState('__ALL__');
+  const [therapy, setTherapy] = useState(DEFAULT_THERAPY);
   const [sortKey, setSortKey] = useState('expiry');
   const [openCliff, setOpenCliff] = useState(null);
+  const [showAll, setShowAll] = useState(false);
 
   // For each cliff molecule, count launched companies (cross-reference with
   // launch tracker). Drives the positioning pill in the main row; the drawer
@@ -107,10 +114,18 @@ export default function PatentCliffs({ allRows = [], companies = [] }) {
     return [...base].sort(SORT_OPTIONS[sortKey].cmp);
   }, [therapy, sortKey]);
 
+  const visible = showAll ? filtered : filtered.slice(0, DEFAULT_LIMIT);
+  const hiddenCount = filtered.length - visible.length;
+
   const totalTAM = useMemo(
     () => filtered.reduce((s, p) => s + (p.indiaTAM_Cr || 0), 0),
     [filtered]
   );
+
+  // When the user changes filters/sort, reset to the collapsed view so they
+  // re-enter the section through the same "5 + more" lens.
+  const setTherapyAndReset = (t) => { setTherapy(t); setShowAll(false); };
+  const setSortAndReset = (s) => { setSortKey(s); setShowAll(false); };
 
   return (
     <div className="bg-white rounded-2xl border border-ink-100 shadow-card p-5">
@@ -135,7 +150,7 @@ export default function PatentCliffs({ allRows = [], companies = [] }) {
           <div className="relative">
             <select
               value={therapy}
-              onChange={(e) => setTherapy(e.target.value)}
+              onChange={(e) => setTherapyAndReset(e.target.value)}
               className="appearance-none text-xs bg-white border border-ink-200 rounded-lg pl-3 pr-7 py-1.5 text-ink-700 font-medium focus:outline-none focus:ring-2 focus:ring-pharma-200"
             >
               <option value="__ALL__">All therapies</option>
@@ -148,7 +163,7 @@ export default function PatentCliffs({ allRows = [], companies = [] }) {
           <div className="relative">
             <select
               value={sortKey}
-              onChange={(e) => setSortKey(e.target.value)}
+              onChange={(e) => setSortAndReset(e.target.value)}
               className="appearance-none text-xs bg-white border border-ink-200 rounded-lg pl-3 pr-7 py-1.5 text-ink-700 font-medium focus:outline-none focus:ring-2 focus:ring-pharma-200"
             >
               {Object.entries(SORT_OPTIONS).map(([k, v]) => (
@@ -161,19 +176,27 @@ export default function PatentCliffs({ allRows = [], companies = [] }) {
       </div>
 
       <div className="overflow-x-auto -mx-5">
-        <table className="w-full text-sm border-separate border-spacing-0">
+        <table className="w-full text-sm border-separate border-spacing-0 table-fixed">
+          <colgroup>
+            <col style={{ width: '26%' }} />
+            <col style={{ width: '20%' }} />
+            <col style={{ width: '14%' }} />
+            <col style={{ width: '12%' }} />
+            <col style={{ width: '24%' }} />
+            <col style={{ width: '4%' }} />
+          </colgroup>
           <thead>
             <tr className="text-[10px] uppercase tracking-wider text-ink-500 font-semibold">
               <th className="text-left py-2 pl-5 pr-3 border-b border-ink-100">Molecule</th>
               <th className="text-left py-2 px-3 border-b border-ink-100">Therapy</th>
-              <th className="text-center py-2 px-3 border-b border-ink-100 w-[140px]">India expiry</th>
-              <th className="text-right py-2 px-3 border-b border-ink-100 w-[120px]">India TAM</th>
-              <th className="text-left py-2 px-3 pr-5 border-b border-ink-100 w-[220px]">Your 7 positioning</th>
-              <th className="py-2 pr-5 border-b border-ink-100 w-[20px]"></th>
+              <th className="text-center py-2 px-3 border-b border-ink-100">India expiry</th>
+              <th className="text-right py-2 px-3 border-b border-ink-100">India TAM</th>
+              <th className="text-left py-2 px-3 border-b border-ink-100">Your 7 positioning</th>
+              <th className="py-2 pr-5 border-b border-ink-100"></th>
             </tr>
           </thead>
           <tbody>
-            {filtered.map((p, idx) => {
+            {visible.map((p, idx) => {
               const id = `${p.molecule}-${idx}`;
               const tint = YEAR_TINT[p.expiryYear] || '';
               const conf = CONFIDENCE_STYLES[p.confidence] || CONFIDENCE_STYLES.medium;
@@ -184,36 +207,36 @@ export default function PatentCliffs({ allRows = [], companies = [] }) {
                   className={`group cursor-pointer hover:bg-ink-50/80 transition-colors ${tint}`}
                   onClick={() => setOpenCliff(p)}
                 >
-                  <td className="py-2.5 pl-5 pr-3 border-b border-ink-100/70">
-                    <div className="text-xs font-semibold text-ink-900">{p.molecule}</div>
+                  <td className="py-3 pl-5 pr-3 border-b border-ink-100/70 align-middle">
+                    <div className="text-xs font-semibold text-ink-900 truncate">{p.molecule}</div>
                     {p.brand && (
-                      <div className="text-[10px] text-ink-500 mt-0.5">{p.brand}</div>
+                      <div className="text-[10px] text-ink-500 mt-0.5 truncate">{p.brand}</div>
                     )}
                   </td>
-                  <td className="py-2.5 px-3 border-b border-ink-100/70 text-xs text-ink-700">
+                  <td className="py-3 px-3 border-b border-ink-100/70 text-xs text-ink-700 align-middle truncate">
                     {p.therapy}
                   </td>
-                  <td className="py-2.5 px-3 border-b border-ink-100/70 text-center">
-                    <div className="inline-flex items-center gap-1.5">
+                  <td className="py-3 px-3 border-b border-ink-100/70 align-middle">
+                    <div className="flex items-center justify-center gap-1.5">
                       <span
-                        className={`w-1.5 h-1.5 rounded-full ${conf.dot}`}
+                        className={`w-1.5 h-1.5 rounded-full shrink-0 ${conf.dot}`}
                         title={conf.label}
                       />
-                      <span className="text-xs font-semibold text-ink-900 tabular-nums">
+                      <span className="text-xs font-semibold text-ink-900 tabular-nums whitespace-nowrap">
                         {fmtExpiry(p)}
                       </span>
                     </div>
                   </td>
-                  <td className="py-2.5 px-3 border-b border-ink-100/70 text-right">
-                    <span className="text-xs font-semibold text-ink-900 tabular-nums">
+                  <td className="py-3 px-3 border-b border-ink-100/70 text-right align-middle">
+                    <span className="text-xs font-semibold text-ink-900 tabular-nums whitespace-nowrap">
                       {fmtINR(p.indiaTAM_Cr)}
                     </span>
                   </td>
-                  <td className="py-2.5 px-3 border-b border-ink-100/70">
+                  <td className="py-3 px-3 border-b border-ink-100/70 align-middle">
                     <PositioningPill launched={launchedCount} total={companies.length} />
                   </td>
-                  <td className="py-2.5 pr-5 border-b border-ink-100/70 text-right">
-                    <ChevronRight className="w-4 h-4 text-ink-300 group-hover:text-ink-500 transition" />
+                  <td className="py-3 pr-5 border-b border-ink-100/70 text-right align-middle">
+                    <ChevronRight className="w-4 h-4 text-ink-300 group-hover:text-ink-500 transition inline-block" />
                   </td>
                 </tr>
               );
@@ -228,6 +251,27 @@ export default function PatentCliffs({ allRows = [], companies = [] }) {
           </tbody>
         </table>
       </div>
+
+      {hiddenCount > 0 && (
+        <div className="mt-3 flex justify-center">
+          <button
+            onClick={() => setShowAll(true)}
+            className="inline-flex items-center gap-1.5 text-xs font-semibold text-pharma-700 bg-pharma-50 hover:bg-pharma-100 border border-pharma-200 rounded-full px-3 py-1.5 transition"
+          >
+            + Show {hiddenCount} more {hiddenCount === 1 ? 'molecule' : 'molecules'}
+          </button>
+        </div>
+      )}
+      {showAll && filtered.length > DEFAULT_LIMIT && (
+        <div className="mt-3 flex justify-center">
+          <button
+            onClick={() => setShowAll(false)}
+            className="inline-flex items-center gap-1.5 text-xs font-medium text-ink-600 hover:text-ink-900 transition"
+          >
+            Collapse to top {DEFAULT_LIMIT}
+          </button>
+        </div>
+      )}
 
       <div className="mt-3 flex items-center gap-4 text-[10px] text-ink-500 px-1 flex-wrap">
         <span className="flex items-center gap-1.5">
