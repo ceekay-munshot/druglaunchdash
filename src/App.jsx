@@ -261,7 +261,7 @@ export default function App() {
         )}
 
         <section aria-label="Patent cliff calendar">
-          <PatentCliffs />
+          <PatentCliffs allRows={allRows} companies={activeCompanies} />
         </section>
 
         <section aria-label="Core table">

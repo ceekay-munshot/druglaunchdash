@@ -1,7 +1,38 @@
 import React, { useMemo, useState } from 'react';
 import { CalendarClock, ChevronDown, Info } from 'lucide-react';
 import { PATENT_CLIFFS, PATENT_CLIFF_THERAPIES } from '../data/patentCliffs';
+import { COLUMN_KEYS } from '../data/mockData';
 import { fmtINR } from '../utils/format';
+
+// Strip dosage / parens / combo separators so we can fuzzy-match a launch-row
+// molecule against a cliff molecule. Combo cliffs like "Vilanterol/Fluticasone"
+// require ALL components to be present in the row's molecule string.
+function normalizeMolecule(s) {
+  return String(s || '')
+    .toLowerCase()
+    .replace(/\s*\([^)]*\)/g, '')
+    .replace(/\s+\d[\d./\s\w%-]*$/, '')
+    .replace(/[/+]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function moleculeMatchesCliff(rowMol, cliffMol) {
+  const r = normalizeMolecule(rowMol);
+  const parts = normalizeMolecule(cliffMol)
+    .split(/\s+/)
+    .filter((p) => p.length > 3);
+  if (!r || !parts.length) return false;
+  return parts.every((p) => r.includes(p));
+}
+
+// Strip suffix words ("Pharma", "Lifesciences", etc.) so chip labels stay
+// compact across 7 columns of pills.
+function shortName(name) {
+  return name
+    .replace(/\s+(Pharma|Lifesciences|Pharmaceuticals|Remedies)\s*$/i, '')
+    .trim();
+}
 
 const SORT_OPTIONS = {
   expiry: { label: 'Expiry date', cmp: (a, b) => a.expiryYear - b.expiryYear },
@@ -25,10 +56,29 @@ function fmtExpiry(p) {
   return p.expiryMonth ? `${p.expiryMonth} ${p.expiryYear}` : String(p.expiryYear);
 }
 
-export default function PatentCliffs() {
+export default function PatentCliffs({ allRows = [], companies = [] }) {
   const [therapy, setTherapy] = useState('__ALL__');
   const [sortKey, setSortKey] = useState('expiry');
   const [expandedId, setExpandedId] = useState(null);
+
+  // For each cliff molecule, derive which tracked companies have already
+  // launched a matching brand (cross-reference with allRows). Companies not in
+  // the launched set are flagged as competitive whitespace.
+  const filersByMolecule = useMemo(() => {
+    const map = new Map();
+    PATENT_CLIFFS.forEach((p) => {
+      const launched = new Set();
+      allRows.forEach((r) => {
+        if (!moleculeMatchesCliff(r[COLUMN_KEYS.MOLECULE], p.molecule)) return;
+        const buyer = r[COLUMN_KEYS.BUYER];
+        if (companies.includes(buyer)) launched.add(buyer);
+      });
+      const launchedList = companies.filter((c) => launched.has(c));
+      const absentList = companies.filter((c) => !launched.has(c));
+      map.set(p.molecule, { launched: launchedList, absent: absentList });
+    });
+    return map;
+  }, [allRows, companies]);
 
   const filtered = useMemo(() => {
     const base = therapy === '__ALL__'
@@ -95,9 +145,9 @@ export default function PatentCliffs() {
           <thead>
             <tr className="text-[10px] uppercase tracking-wider text-ink-500 font-semibold">
               <th className="text-left py-2 pl-5 pr-3 border-b border-ink-100 w-[200px]">Molecule</th>
-              <th className="text-left py-2 px-3 border-b border-ink-100">Innovator</th>
               <th className="text-left py-2 px-3 border-b border-ink-100">Therapy</th>
               <th className="text-left py-2 px-3 border-b border-ink-100">Indication</th>
+              <th className="text-left py-2 px-3 border-b border-ink-100">Tracked positioning</th>
               <th className="text-center py-2 px-3 border-b border-ink-100 w-[120px]">India expiry</th>
               <th className="text-right py-2 px-3 pr-5 border-b border-ink-100 w-[120px]">India TAM</th>
             </tr>
@@ -108,6 +158,7 @@ export default function PatentCliffs() {
               const isExpanded = expandedId === id;
               const tint = YEAR_TINT[p.expiryYear] || '';
               const conf = CONFIDENCE_STYLES[p.confidence] || CONFIDENCE_STYLES.medium;
+              const filers = filersByMolecule.get(p.molecule) || { launched: [], absent: [] };
               return (
                 <React.Fragment key={id}>
                   <tr
@@ -121,13 +172,43 @@ export default function PatentCliffs() {
                       )}
                     </td>
                     <td className="py-2.5 px-3 border-b border-ink-100/70 text-xs text-ink-700">
-                      {p.innovator}
-                    </td>
-                    <td className="py-2.5 px-3 border-b border-ink-100/70 text-xs text-ink-700">
                       {p.therapy}
                     </td>
                     <td className="py-2.5 px-3 border-b border-ink-100/70 text-xs text-ink-600">
                       {p.indication}
+                    </td>
+                    <td className="py-2.5 px-3 border-b border-ink-100/70">
+                      {filers.launched.length === 0 ? (
+                        <span className="inline-flex items-center gap-1 text-[10px] font-semibold text-pharma-700 bg-pharma-50 border border-pharma-200 rounded-full px-2 py-0.5">
+                          Whitespace · 0 of {companies.length} launched
+                        </span>
+                      ) : filers.absent.length === 0 ? (
+                        <span className="inline-flex items-center gap-1 text-[10px] font-semibold text-ink-500 bg-ink-50 border border-ink-200 rounded-full px-2 py-0.5">
+                          Saturated · all {companies.length} launched
+                        </span>
+                      ) : (
+                        <div className="flex flex-wrap items-center gap-1">
+                          {filers.launched.map((c) => (
+                            <span
+                              key={c}
+                              className="inline-flex items-center text-[10px] font-semibold text-pharma-800 bg-pharma-100 border border-pharma-200 rounded px-1.5 py-0.5"
+                              title={`${c} has launched a matching brand`}
+                            >
+                              {shortName(c)}
+                            </span>
+                          ))}
+                          <span className="text-[10px] text-ink-300 px-0.5">|</span>
+                          {filers.absent.map((c) => (
+                            <span
+                              key={c}
+                              className="inline-flex items-center text-[10px] font-medium text-ink-400 bg-ink-50 border border-ink-100 rounded px-1.5 py-0.5"
+                              title={`${c} has not launched — competitive whitespace`}
+                            >
+                              {shortName(c)}
+                            </span>
+                          ))}
+                        </div>
+                      )}
                     </td>
                     <td className="py-2.5 px-3 border-b border-ink-100/70 text-center">
                       <div className="inline-flex items-center gap-1.5">
@@ -146,12 +227,21 @@ export default function PatentCliffs() {
                       </span>
                     </td>
                   </tr>
-                  {isExpanded && p.notes && (
+                  {isExpanded && (
                     <tr className={tint}>
                       <td colSpan={6} className="px-5 py-2.5 border-b border-ink-100/70">
                         <div className="flex items-start gap-2 text-[11px] text-ink-600 bg-white/60 rounded-md px-3 py-2 border border-ink-100">
                           <Info className="w-3.5 h-3.5 text-ink-400 mt-0.5 shrink-0" />
-                          <span>{p.notes}</span>
+                          <span>
+                            <span className="font-semibold text-ink-700">Innovator:</span>{' '}
+                            {p.innovator}
+                            {p.notes && (
+                              <>
+                                <span className="text-ink-300"> · </span>
+                                {p.notes}
+                              </>
+                            )}
+                          </span>
                         </div>
                       </td>
                     </tr>
