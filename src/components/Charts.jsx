@@ -21,7 +21,6 @@ import {
   Activity,
   Layers,
   Heart,
-  Building2,
   Handshake,
   IndianRupee,
 } from 'lucide-react';
@@ -153,7 +152,6 @@ export default function Charts({ rows, selectedCompany, timeline }) {
 
   const therapy = countBy(rows, COLUMN_KEYS.THERAPY).sort((a, b) => b.value - a.value).slice(0, 10);
   const launchType = countBy(rows, COLUMN_KEYS.LAUNCH_TYPE).sort((a, b) => b.value - a.value);
-  const buyerCount = countBy(rows, COLUMN_KEYS.BUYER).sort((a, b) => b.value - a.value).slice(0, 8);
   const sellerCount = countBy(rows, COLUMN_KEYS.SELLER)
     .filter((d) => d.name && d.name !== '—')
     .sort((a, b) => b.value - a.value)
@@ -201,12 +199,13 @@ export default function Charts({ rows, selectedCompany, timeline }) {
   // Centered total label for Launch-Type donut
   const launchTypeTotal = launchType.reduce((s, d) => s + d.value, 0);
 
-  // Single-company view hides 2 charts (Buyer-wise + Activity-over-time), so
-  // we drop to 3 columns at 2xl to keep both rows fully populated. With all
-  // 8 charts visible, 4 columns gives a tidy 2×4 grid.
-  const gridCols = singleCompanyView
-    ? 'grid-cols-1 md:grid-cols-2 xl:grid-cols-3'
-    : 'grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4';
+  // Activity-over-time is the only conditional chart now (Buyer-wise was
+  // promoted into PeerBenchmark). Without Activity, 6 charts → 3 cols for
+  // even rows; with Activity, 7 charts → 4 cols (last row has one empty
+  // slot, but still cleaner than 3-col with an orphan).
+  const gridCols = showActivityChart
+    ? 'grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4'
+    : 'grid-cols-1 md:grid-cols-2 xl:grid-cols-3';
 
   return (
     <div className={`grid ${gridCols} gap-4`}>
@@ -313,21 +312,6 @@ export default function Charts({ rows, selectedCompany, timeline }) {
           <EmptyChart msg="No data in view." />
         )}
       </ChartCard>
-
-      {/* Buyer-wise Brand Count — horizontal bar */}
-      {!singleCompanyView && (
-        <ChartCard
-          icon={Building2}
-          title="Buyer-wise Brand Count"
-          subtitle="Top acquiring / launching companies"
-        >
-          {buyerCount.length ? (
-            <HBar data={buyerCount} tooltipLabel="Brands" categoryWidth={140} />
-          ) : (
-            <EmptyChart msg="No buyer data." />
-          )}
-        </ChartCard>
-      )}
 
       {/* Seller-wise Transactions — horizontal bar */}
       <ChartCard

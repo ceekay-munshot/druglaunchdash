@@ -5,6 +5,7 @@ import KPICards from './components/KPICards';
 import Charts from './components/Charts';
 import MainTable from './components/MainTable';
 import InsightWidgets from './components/InsightWidgets';
+import PeerBenchmark from './components/PeerBenchmark';
 import {
   LAUNCH_TRACKER_ROWS,
   UNIQUE_BUYERS,
@@ -181,6 +182,25 @@ export default function App() {
     });
   }, [searchQuery, selectedCompany, filters, timelineCutoff, archivedCompanies, allRows]);
 
+  // Same filter chain as `filteredRows` but ignores the company dropdown — the
+  // peer-benchmark section's whole purpose is cross-company comparison, so a
+  // single-company selection would collapse it to one column.
+  const peerRows = useMemo(() => {
+    return allRows.filter((r) => {
+      if (timelineCutoff) {
+        const d = new Date(r[COLUMN_KEYS.DATE]);
+        if (isNaN(d.getTime()) || d < timelineCutoff) return false;
+      }
+      if (archivedCompanies.includes(r[COLUMN_KEYS.BUYER])) return false;
+      if (filters.therapy !== '__ALL__' && r[COLUMN_KEYS.THERAPY] !== filters.therapy) return false;
+      if (filters.launchType !== '__ALL__' && r[COLUMN_KEYS.LAUNCH_TYPE] !== filters.launchType) return false;
+      if (filters.seller !== '__ALL__' && r[COLUMN_KEYS.SELLER] !== filters.seller) return false;
+      if (filters.chronicAcute !== '__ALL__' && r[COLUMN_KEYS.CHRONIC_ACUTE] !== filters.chronicAcute) return false;
+      if (filters.dealType !== '__ALL__' && r[COLUMN_KEYS.DEAL_TYPE] !== filters.dealType) return false;
+      return true;
+    });
+  }, [allRows, timelineCutoff, archivedCompanies, filters]);
+
   const resetFilters = () => {
     setFilters(INITIAL_FILTERS);
     setTimeline('2Q');
@@ -235,6 +255,10 @@ export default function App() {
 
         <section aria-label="KPI summary">
           <KPICards rows={filteredRows} />
+        </section>
+
+        <section aria-label="Peer benchmark">
+          <PeerBenchmark rows={peerRows} companies={activeCompanies} />
         </section>
 
         {/* Charts section is hidden when the user filters narrowly to a
