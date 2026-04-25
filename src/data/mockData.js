@@ -147,7 +147,7 @@ export const BRAND_PRICES = {
   longifene: 110,
   combihale: 430,
   daffy: 180,
-  samakind: '₹450 / weekly dose (PharmEasy launch MRP)',
+  samakind: '₹450 / weekly dose',
   rivotril: 30,
   'symbicort (india distribution)': 1100,
   'vonoprazan (takeda licence)': 340,
@@ -176,7 +176,7 @@ export const BRAND_PRICES = {
   psorid: 420,
   basalog: 860,
   insugen: 190,
-  sundae: '₹450 / weekly dose (eris.co.in launch price)',
+  sundae: '₹450 / weekly dose',
 
   // ─ Sun Pharma ─
   rosuvas: 150,
@@ -200,9 +200,8 @@ export const BRAND_PRICES = {
   cifran: 55,
   cequa: 2200,
   fexuclue: 380,
-  ilumya: '₹84,375 / injection (sunpharma.com launch MRP)',
-  'noveltreat / sematrinity':
-    '₹450 / weekly dose (sunpharma.com launch MRP)',
+  ilumya: '₹84,375 / injection',
+  'noveltreat / sematrinity': '₹450 / weekly dose',
 
   // ─ Cipla ─
   asthalin: 145,
@@ -218,11 +217,10 @@ export const BRAND_PRICES = {
   'humalog + trulicity (eli lilly rights)': 870,
   'cabotegravir la (via mpp / viiv)': null,
   nocdurna: 460,
-  'cipenmet / esblocip': '₹3,500 / vial (launch MRP, press release)',
-  'yurpeak (tirzepatide)':
-    '₹3,500 (2.5 mg) / ₹4,375 (5 mg) per pen (lilly.com launch MRP)',
-  afrezza: '₹7,200 / inhaler cartridge pack (cipla.com launch MRP)',
-  ciplostem: '₹1,50,000+ / dose (first-in-class stem-cell therapy)',
+  'cipenmet / esblocip': '₹3,500 / vial',
+  'yurpeak (tirzepatide)': '₹3,500 (2.5 mg) / ₹4,375 (5 mg) per pen',
+  afrezza: '₹7,200 / inhaler cartridge pack',
+  ciplostem: '₹1,50,000+ / dose',
   'galvus / galvus met (perpetual licence)': 460,
 
   // ─ Alkem Laboratories ─
@@ -239,9 +237,8 @@ export const BRAND_PRICES = {
   enzar: 310,
   'vonzai (vonoprazan)': 395,
   'empanorm / empanorm-l / empanorm-m / empanorm duo': 225,
-  pertuza: '₹78,300 / 420 mg vial (biosimilar launch MRP)',
-  'semasize / obesema / hepaglide':
-    '₹450 / weekly dose (BSE filing launch MRP)',
+  pertuza: '₹78,300 / 420 mg vial',
+  'semasize / obesema / hepaglide': '₹450 / weekly dose',
 
   // ─ Corona Remedies ─
   'cortel m (cor family)': 135,
@@ -293,8 +290,8 @@ export const BRAND_PRICES = {
   nicardia: 95,
   rantac: 35,
   metrogyl: 45,
-  semalix: '₹450 / weekly dose (torrentpharma.com launch MRP)',
-  sembolic: '₹3,999 / month (torrentpharma.com × Zydus launch)',
+  semalix: '₹450 / weekly dose',
+  sembolic: '₹3,999 / month',
 };
 
 // Pure function. Maps each row's brand (case-insensitive) → BRAND_PRICES
