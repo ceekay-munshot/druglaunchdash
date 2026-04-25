@@ -59,7 +59,7 @@ export default function FilterBar({
 
   const set = (k) => (v) => setFilters((prev) => ({ ...prev, [k]: v }));
   const anyActive =
-    Object.values(filters).some((v) => v && v !== '__ALL__') || timeline !== '3Q';
+    Object.values(filters).some((v) => v && v !== '__ALL__') || timeline !== '2Q';
 
   return (
     <div className="bg-white border border-ink-100 rounded-2xl shadow-card px-5 py-4">

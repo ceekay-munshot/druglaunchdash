@@ -35,10 +35,7 @@ function cutoffForQuarters(n) {
 }
 
 const TIMELINE_PRESETS = {
-  '3Q': { label: 'Last 3Q', quarters: 3 },
-  '6Q': { label: 'Last 6Q', quarters: 6 },
-  '2Y': { label: 'Last 2Y', quarters: 8 },
-  '5Y': { label: 'Last 5Y', quarters: 20 },
+  '2Q': { label: 'Last 2 Quarters', quarters: 2 },
   ALL: { label: 'All time', quarters: null },
 };
 
@@ -71,7 +68,7 @@ export default function App() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCompany, setSelectedCompany] = useState('__ALL__');
   const [filters, setFilters] = useState(INITIAL_FILTERS);
-  const [timeline, setTimeline] = useState('3Q');
+  const [timeline, setTimeline] = useState('2Q');
   const [archivedCompanies, setArchivedCompanies] = useState(loadInitialArchived);
 
   const activeCompanies = useMemo(
@@ -180,7 +177,7 @@ export default function App() {
 
   const resetFilters = () => {
     setFilters(INITIAL_FILTERS);
-    setTimeline('3Q');
+    setTimeline('2Q');
   };
 
   // "Last refresh" shows the scrape timestamp when we have one, otherwise the
