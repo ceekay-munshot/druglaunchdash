@@ -18,15 +18,6 @@ import {
 
 const LAUNCHES_ENDPOINT = '/launches.json';
 
-const INITIAL_FILTERS = {
-  therapy: '__ALL__',
-  launchType: '__ALL__',
-  buyer: '__ALL__',
-  seller: '__ALL__',
-  chronicAcute: '__ALL__',
-  dealType: '__ALL__',
-};
-
 // Returns the earliest date (start of quarter) that should be included for a
 // preset of "N calendar quarters inclusive of the current quarter". 3Q is the
 // default: ~Q(curr) + 2 prior quarters.
@@ -70,7 +61,6 @@ function loadInitialArchived() {
 export default function App() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCompany, setSelectedCompany] = useState('__ALL__');
-  const [filters, setFilters] = useState(INITIAL_FILTERS);
   const [timeline, setTimeline] = useState('2Q');
   const [archivedCompanies, setArchivedCompanies] = useState(loadInitialArchived);
 
@@ -156,12 +146,6 @@ export default function App() {
       // Hide rows for archived companies when viewing "All Companies".
       if (selectedCompany === '__ALL__' && archivedCompanies.includes(r[COLUMN_KEYS.BUYER])) return false;
       if (selectedCompany !== '__ALL__' && r[COLUMN_KEYS.BUYER] !== selectedCompany) return false;
-      if (filters.therapy !== '__ALL__' && r[COLUMN_KEYS.THERAPY] !== filters.therapy) return false;
-      if (filters.launchType !== '__ALL__' && r[COLUMN_KEYS.LAUNCH_TYPE] !== filters.launchType) return false;
-      if (filters.buyer !== '__ALL__' && r[COLUMN_KEYS.BUYER] !== filters.buyer) return false;
-      if (filters.seller !== '__ALL__' && r[COLUMN_KEYS.SELLER] !== filters.seller) return false;
-      if (filters.chronicAcute !== '__ALL__' && r[COLUMN_KEYS.CHRONIC_ACUTE] !== filters.chronicAcute) return false;
-      if (filters.dealType !== '__ALL__' && r[COLUMN_KEYS.DEAL_TYPE] !== filters.dealType) return false;
 
       if (searchQuery.trim()) {
         const q = searchQuery.trim().toLowerCase();
@@ -181,12 +165,7 @@ export default function App() {
       }
       return true;
     });
-  }, [searchQuery, selectedCompany, filters, timelineCutoff, archivedCompanies, allRows]);
-
-  const resetFilters = () => {
-    setFilters(INITIAL_FILTERS);
-    setTimeline('2Q');
-  };
+  }, [searchQuery, selectedCompany, timelineCutoff, archivedCompanies, allRows]);
 
   // "Last refresh" shows the scrape timestamp when we have one, otherwise the
   // last time the button was pressed / page loaded.
@@ -225,10 +204,6 @@ export default function App() {
 
       <main className="max-w-[1840px] mx-auto px-4 py-4 space-y-4">
         <FilterBar
-          rows={allRows}
-          filters={filters}
-          setFilters={setFilters}
-          onReset={resetFilters}
           timeline={timeline}
           setTimeline={setTimeline}
           timelinePresets={TIMELINE_PRESETS}
