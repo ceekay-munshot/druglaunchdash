@@ -43,6 +43,8 @@ const WIDTH_HINT = {
 const ALIGN = {
   [COLUMN_KEYS.LAUNCH_TYPE]: 'center',
   [COLUMN_KEYS.DATE]: 'center',
+  [COLUMN_KEYS.DEAL_TYPE]: 'center',
+  [COLUMN_KEYS.THERAPY]: 'center',
   [COLUMN_KEYS.PRICING]: 'right',
   [COLUMN_KEYS.MARKET_SIZE]: 'right',
   [COLUMN_KEYS.CHRONIC_ACUTE]: 'center',
