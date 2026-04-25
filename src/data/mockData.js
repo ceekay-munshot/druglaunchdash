@@ -364,6 +364,45 @@ export function priceNumeric(v) {
   return Number.isFinite(n) ? n : null;
 }
 
+// Classify a Pricing label into a dosage-form bucket so we don't compare
+// chloramphenicol eye drops against chloramphenicol tablets — same molecule,
+// totally different therapeutic context. Returns null if the form can't be
+// detected (caller should treat null as non-comparable).
+//   '₹190 / strip of 10'              → 'oral-solid'
+//   '₹20 / 5 mL eye drops'            → 'ophthalmic'
+//   '₹150 / vial' / '₹3,500 / pen'    → 'injectable'
+//   '₹125 / 100 mL syrup'             → 'oral-liquid'
+//   '₹560 / inhaler' / '... rotacaps' → 'inhaled'
+//   '₹95 / tube of 10g cream'         → 'topical'
+export function dosageForm(priceLabel) {
+  if (typeof priceLabel !== 'string') return null;
+  const s = priceLabel.toLowerCase();
+  if (/\beye\s*drops?\b|\bophthalmic\b/.test(s)) return 'ophthalmic';
+  if (/\bear\s*drops?\b|\botic\b/.test(s)) return 'otic';
+  if (/\bnasal\s*spray\b/.test(s)) return 'nasal';
+  if (/\binhaler\b|\brotacaps?\b|\brespules?\b|\bmdi\b|\bdpi\b/.test(s)) return 'inhaled';
+  if (/\bvial\b|\bampoule\b|\binjection\b|\bsyringe\b|\bpen\b|\bcartridge\b|\binfusion\b/.test(s)) return 'injectable';
+  if (/\bcream\b|\bointment\b|\bgel\b|\blotion\b|\btube\b|\bpatch\b/.test(s)) return 'topical';
+  if (/\bsyrup\b|\bsuspension\b|\boral\s+solution\b|\boral\s+drops\b|\bsachet\b/.test(s)) return 'oral-liquid';
+  if (/\bstrip\b|\btablet\b|\bcapsule\b|\bcaplet\b|\bsublingual\b|\bsl\b/.test(s)) return 'oral-solid';
+  return null;
+}
+
+// Human-readable label for a dosage-form bucket — used in headers like
+// "chloramphenicol · eye drops" so the comparison scope is explicit.
+export function dosageFormLabel(form) {
+  return {
+    'oral-solid': 'oral',
+    'oral-liquid': 'oral liquid',
+    'ophthalmic': 'eye drops',
+    'otic': 'ear drops',
+    'nasal': 'nasal spray',
+    'inhaled': 'inhaled',
+    'injectable': 'injectable',
+    'topical': 'topical',
+  }[form] || form;
+}
+
 // ──────────────────────────────────────────────────────────────────────────
 // TAM_BY_MOLECULE — addressable Indian Pharmaceutical Market (IPM) size
 // in INR Cr for the molecule. Estimates compiled from broker research

@@ -17,6 +17,8 @@ import {
   COLUMN_KEYS,
   comparisonMolecule,
   priceNumeric,
+  dosageForm,
+  dosageFormLabel,
 } from '../data/mockData';
 import { fmtDate, fmtINRPlain } from '../utils/format';
 
@@ -95,19 +97,22 @@ export default function RowDetailDrawer({ row, allRows = [], onClose }) {
   }, [row, allRows]);
 
   // Same-molecule comparison: rows in the dataset with the same primary
-  // molecule (different brand / different buyer). Sorted ascending by
-  // priceNumeric so the cheapest is on top. Used to surface "Mankind sells
-  // X for Rs Y, Corona sells the same molecule for Rs Z" insights.
+  // molecule AND the same dosage form (oral vs eye-drop vs injectable, etc.)
+  // — comparing tablets to eye drops would be nonsense even when the
+  // molecule matches. Rows where the current row's dosage form can't be
+  // detected fall back to molecule-only matching (best-effort).
   const sameMoleculeRows = useMemo(() => {
     if (!row) return [];
     const myMol = comparisonMolecule(row[COLUMN_KEYS.MOLECULE]);
     if (!myMol) return [];
+    const myForm = dosageForm(row[COLUMN_KEYS.PRICING]);
     return allRows
       .filter(
         (r) =>
           r !== row &&
           comparisonMolecule(r[COLUMN_KEYS.MOLECULE]) === myMol &&
-          r[COLUMN_KEYS.BRAND] !== row[COLUMN_KEYS.BRAND]
+          r[COLUMN_KEYS.BRAND] !== row[COLUMN_KEYS.BRAND] &&
+          (!myForm || dosageForm(r[COLUMN_KEYS.PRICING]) === myForm)
       )
       .sort((a, b) => {
         const ap = priceNumeric(a[COLUMN_KEYS.PRICING]);
@@ -249,7 +254,11 @@ export default function RowDetailDrawer({ row, allRows = [], onClose }) {
                   Same molecule — competitive pricing
                 </h4>
                 <span className="text-[10px] text-ink-500">
-                  {comparisonMolecule(row[COLUMN_KEYS.MOLECULE])} · {sameMoleculeRows.length + 1}{' '}
+                  {comparisonMolecule(row[COLUMN_KEYS.MOLECULE])}
+                  {dosageForm(row[COLUMN_KEYS.PRICING]) && (
+                    <> · {dosageFormLabel(dosageForm(row[COLUMN_KEYS.PRICING]))}</>
+                  )}{' '}
+                  · {sameMoleculeRows.length + 1}{' '}
                   brand{sameMoleculeRows.length + 1 === 1 ? '' : 's'}
                 </span>
               </div>
