@@ -134,8 +134,10 @@ export default function InsightWidgets({ rows, selectedCompany }) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
       {/* Cross-company price comparison — molecules with 2+ priced brands
-          across 2+ buyers, ranked by widest price spread. Always visible:
-          even on single-company view it shows "your brand vs competitors". */}
+          across 2+ buyers, ranked by widest price spread. Hidden on
+          single-company view because by definition the data only has
+          one company in scope, so cross-company spreads can't be computed. */}
+      {!singleCompanyView && (
       <Widget
         icon={Scale}
         title="Same molecule — biggest price spreads"
@@ -193,6 +195,7 @@ export default function InsightWidgets({ rows, selectedCompany }) {
           </p>
         )}
       </Widget>
+      )}
 
       {!singleCompanyView && (
         <Widget icon={Users} title="Most Active Buyer" subtitle="Launch / acquisition volume">
