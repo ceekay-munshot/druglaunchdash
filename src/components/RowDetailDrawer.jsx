@@ -11,8 +11,13 @@ import {
   IndianRupee,
   Layers,
   ArrowRight,
+  Scale,
 } from 'lucide-react';
-import { COLUMN_KEYS, LAUNCH_TRACKER_ROWS } from '../data/mockData';
+import {
+  COLUMN_KEYS,
+  primaryMolecule,
+  priceNumeric,
+} from '../data/mockData';
 import { fmtDate, fmtINRPlain } from '../utils/format';
 
 const LAUNCH_TYPE_STYLES = {
@@ -56,7 +61,7 @@ function Section({ title, children }) {
   );
 }
 
-export default function RowDetailDrawer({ row, onClose }) {
+export default function RowDetailDrawer({ row, allRows = [], onClose }) {
   const open = Boolean(row);
   const closeRef = useRef(null);
 
@@ -80,15 +85,52 @@ export default function RowDetailDrawer({ row, onClose }) {
   const relatedByBuyer = useMemo(() => {
     if (!row) return [];
     const buyer = row[COLUMN_KEYS.BUYER];
-    return LAUNCH_TRACKER_ROWS.filter(
-      (r) => r[COLUMN_KEYS.BUYER] === buyer && r !== row
-    )
+    return allRows
+      .filter((r) => r[COLUMN_KEYS.BUYER] === buyer && r !== row)
       .sort(
         (a, b) =>
           new Date(b[COLUMN_KEYS.DATE]).getTime() - new Date(a[COLUMN_KEYS.DATE]).getTime()
       )
       .slice(0, 5);
-  }, [row]);
+  }, [row, allRows]);
+
+  // Same-molecule comparison: rows in the dataset with the same primary
+  // molecule (different brand / different buyer). Sorted ascending by
+  // priceNumeric so the cheapest is on top. Used to surface "Mankind sells
+  // X for Rs Y, Corona sells the same molecule for Rs Z" insights.
+  const sameMoleculeRows = useMemo(() => {
+    if (!row) return [];
+    const myMol = primaryMolecule(row[COLUMN_KEYS.MOLECULE]);
+    if (!myMol) return [];
+    return allRows
+      .filter(
+        (r) =>
+          r !== row &&
+          primaryMolecule(r[COLUMN_KEYS.MOLECULE]) === myMol &&
+          r[COLUMN_KEYS.BRAND] !== row[COLUMN_KEYS.BRAND]
+      )
+      .sort((a, b) => {
+        const ap = priceNumeric(a[COLUMN_KEYS.PRICING]);
+        const bp = priceNumeric(b[COLUMN_KEYS.PRICING]);
+        // Rows with prices come first, sorted ascending; null prices go last.
+        if (ap === null && bp === null) return 0;
+        if (ap === null) return 1;
+        if (bp === null) return -1;
+        return ap - bp;
+      });
+  }, [row, allRows]);
+
+  // Min / max numeric prices across the comparison set (including current
+  // row) — used to flag the cheapest and to compute deltas.
+  const priceStats = useMemo(() => {
+    if (!row) return null;
+    const set = [row, ...sameMoleculeRows];
+    const nums = set
+      .map((r) => priceNumeric(r[COLUMN_KEYS.PRICING]))
+      .filter((n) => n != null);
+    if (nums.length < 2) return null;
+    return { min: Math.min(...nums), max: Math.max(...nums) };
+  }, [row, sameMoleculeRows]);
 
   if (!open) return null;
 
@@ -195,6 +237,110 @@ export default function RowDetailDrawer({ row, onClose }) {
               value={row[COLUMN_KEYS.EXISTING_BRAND]}
             />
           </Section>
+
+          {/* Same-molecule price comparison — surfaces "this molecule, other
+              brands" so the user can see if their company is over- or under-
+              priced relative to peers. */}
+          {sameMoleculeRows.length > 0 && (
+            <div>
+              <div className="flex items-center gap-2 mb-3">
+                <Scale className="w-4 h-4 text-pharma-600" />
+                <h4 className="text-[10px] uppercase tracking-wider font-bold text-ink-700">
+                  Same molecule — competitive pricing
+                </h4>
+                <span className="text-[10px] text-ink-500">
+                  {primaryMolecule(row[COLUMN_KEYS.MOLECULE])} · {sameMoleculeRows.length + 1}{' '}
+                  brand{sameMoleculeRows.length + 1 === 1 ? '' : 's'}
+                </span>
+              </div>
+              <ul className="space-y-1.5">
+                {/* Render the current row first so the user sees their
+                    starting point with a tag, then comparators below. */}
+                {[row, ...sameMoleculeRows].map((r, i) => {
+                  const isCurrent = r === row;
+                  const myPrice = priceNumeric(r[COLUMN_KEYS.PRICING]);
+                  const currentPrice = priceNumeric(row[COLUMN_KEYS.PRICING]);
+                  const isCheapest =
+                    priceStats && myPrice != null && myPrice === priceStats.min;
+                  const isMostExpensive =
+                    priceStats && myPrice != null && myPrice === priceStats.max && priceStats.min !== priceStats.max;
+                  let delta = null;
+                  if (
+                    !isCurrent &&
+                    myPrice != null &&
+                    currentPrice != null &&
+                    myPrice !== currentPrice
+                  ) {
+                    delta = myPrice - currentPrice;
+                  }
+                  return (
+                    <li
+                      key={`cmp-${r[COLUMN_KEYS.BRAND]}-${i}`}
+                      className={`flex items-start justify-between gap-3 py-2 px-3 rounded-lg border transition ${
+                        isCurrent
+                          ? 'border-pharma-300 bg-pharma-50/60'
+                          : 'border-ink-100/70 bg-white hover:bg-ink-100/30'
+                      }`}
+                    >
+                      <div className="min-w-0">
+                        <div className="flex items-center gap-1.5">
+                          <p className="text-sm font-semibold text-ink-900 truncate">
+                            {r[COLUMN_KEYS.BRAND]}
+                          </p>
+                          {isCurrent && (
+                            <span className="text-[9px] uppercase tracking-wider font-bold text-pharma-700 bg-white border border-pharma-200 rounded-full px-1.5 py-px">
+                              You
+                            </span>
+                          )}
+                          {isCheapest && (
+                            <span className="text-[9px] uppercase tracking-wider font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 rounded-full px-1.5 py-px">
+                              Cheapest
+                            </span>
+                          )}
+                          {isMostExpensive && (
+                            <span className="text-[9px] uppercase tracking-wider font-bold text-amber-700 bg-amber-50 border border-amber-200 rounded-full px-1.5 py-px">
+                              Most expensive
+                            </span>
+                          )}
+                        </div>
+                        <p className="text-[11px] text-ink-500 truncate">
+                          {r[COLUMN_KEYS.BUYER] || '—'}
+                          {r[COLUMN_KEYS.MOLECULE] ? ` · ${r[COLUMN_KEYS.MOLECULE]}` : ''}
+                        </p>
+                      </div>
+                      <div className="flex flex-col items-end shrink-0">
+                        <span className="text-[12px] font-semibold tabular-nums text-ink-900 whitespace-nowrap">
+                          {r[COLUMN_KEYS.PRICING] || '—'}
+                        </span>
+                        {delta != null && (
+                          <span
+                            className={`mt-0.5 text-[10px] tabular-nums font-semibold ${
+                              delta < 0 ? 'text-emerald-700' : 'text-amber-700'
+                            }`}
+                          >
+                            {delta < 0 ? '−' : '+'}₹
+                            {Math.abs(delta).toLocaleString('en-IN')}
+                            {' vs '}
+                            {row[COLUMN_KEYS.BRAND]}
+                          </span>
+                        )}
+                      </div>
+                    </li>
+                  );
+                })}
+              </ul>
+              {priceStats && (
+                <p className="mt-2 text-[11px] text-ink-500">
+                  Spread across this molecule: ₹
+                  {priceStats.min.toLocaleString('en-IN')} – ₹
+                  {priceStats.max.toLocaleString('en-IN')}{' '}
+                  <span className="text-ink-400">
+                    ({Math.round(((priceStats.max - priceStats.min) / priceStats.min) * 100)}% range)
+                  </span>
+                </p>
+              )}
+            </div>
+          )}
 
           {relatedByBuyer.length > 0 && (
             <div>

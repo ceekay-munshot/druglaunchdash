@@ -236,7 +236,11 @@ export default function App() {
         </section>
 
         <section aria-label="Core table">
-          <MainTable rows={filteredRows} selectedCompany={selectedCompany} />
+          <MainTable
+            rows={filteredRows}
+            allRows={allRows}
+            selectedCompany={selectedCompany}
+          />
         </section>
 
         <section aria-label="Investor insights">

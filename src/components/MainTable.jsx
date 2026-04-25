@@ -33,7 +33,7 @@ const WIDTH_HINT = {
   [COLUMN_KEYS.CHRONIC_ACUTE]: 'min-w-[120px]',
 };
 
-export default function MainTable({ rows, selectedCompany }) {
+export default function MainTable({ rows, allRows, selectedCompany }) {
   const [tableQuery, setTableQuery] = useState('');
   const [sortKey, setSortKey] = useState(COLUMN_KEYS.DATE);
   const [sortDir, setSortDir] = useState('desc');
@@ -255,7 +255,11 @@ export default function MainTable({ rows, selectedCompany }) {
           </tbody>
         </table>
       </div>
-      <RowDetailDrawer row={activeRow} onClose={() => setActiveRow(null)} />
+      <RowDetailDrawer
+        row={activeRow}
+        allRows={allRows ?? rows}
+        onClose={() => setActiveRow(null)}
+      />
     </div>
   );
 }

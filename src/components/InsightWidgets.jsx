@@ -4,8 +4,13 @@ import {
   FlaskConical,
   CalendarClock,
   Sparkles,
+  Scale,
 } from 'lucide-react';
-import { COLUMN_KEYS } from '../data/mockData';
+import {
+  COLUMN_KEYS,
+  primaryMolecule,
+  priceNumeric,
+} from '../data/mockData';
 import { countBy, fmtINRPlain, fmtDate } from '../utils/format';
 
 function Widget({ icon: Icon, title, subtitle, children, accent = 'green' }) {
@@ -89,8 +94,106 @@ export default function InsightWidgets({ rows, selectedCompany }) {
     )
     .slice(0, 5);
 
+  // ── Cross-company molecule pricing ────────────────────────────────────
+  // Group rows by primary molecule. For each molecule with 2+ priced
+  // brands across 2+ buyers, compute min/max/spread% so the user can
+  // see "Mankind Rs X vs Corona Rs Y for the same molecule" at a glance.
+  const moleculeBuckets = (() => {
+    const map = new Map();
+    rows.forEach((r) => {
+      const mol = primaryMolecule(r[COLUMN_KEYS.MOLECULE]);
+      const price = priceNumeric(r[COLUMN_KEYS.PRICING]);
+      if (!mol || price == null) return;
+      if (!map.has(mol)) map.set(mol, []);
+      map.get(mol).push({
+        brand: r[COLUMN_KEYS.BRAND],
+        buyer: r[COLUMN_KEYS.BUYER],
+        price,
+        priceLabel: r[COLUMN_KEYS.PRICING],
+      });
+    });
+    return Array.from(map.entries())
+      .map(([mol, list]) => {
+        const buyers = new Set(list.map((x) => x.buyer));
+        const min = Math.min(...list.map((x) => x.price));
+        const max = Math.max(...list.map((x) => x.price));
+        return {
+          mol,
+          list: [...list].sort((a, b) => a.price - b.price),
+          buyersCount: buyers.size,
+          min,
+          max,
+          spreadPct: min ? Math.round(((max - min) / min) * 100) : 0,
+        };
+      })
+      .filter((b) => b.buyersCount >= 2 && b.max > b.min)
+      .sort((a, b) => b.spreadPct - a.spreadPct)
+      .slice(0, 5);
+  })();
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+      {/* Cross-company price comparison — molecules with 2+ priced brands
+          across 2+ buyers, ranked by widest price spread. Always visible:
+          even on single-company view it shows "your brand vs competitors". */}
+      <Widget
+        icon={Scale}
+        title="Same molecule — biggest price spreads"
+        subtitle="Cheapest vs most expensive brand per molecule"
+        accent="amber"
+      >
+        {moleculeBuckets.length ? (
+          <ul className="space-y-3">
+            {moleculeBuckets.map((b) => {
+              const cheapest = b.list[0];
+              const dearest = b.list[b.list.length - 1];
+              return (
+                <li
+                  key={b.mol}
+                  className="border border-ink-100/70 rounded-lg p-2.5 bg-white"
+                >
+                  <div className="flex items-center justify-between gap-2 mb-1.5">
+                    <p className="text-xs font-semibold text-ink-900 capitalize truncate">
+                      {b.mol}
+                    </p>
+                    <span className="text-[10px] font-semibold tabular-nums text-amber-700 bg-amber-50 border border-amber-200 rounded-full px-1.5 py-px">
+                      +{b.spreadPct}%
+                    </span>
+                  </div>
+                  <div className="text-[11px] text-ink-700 space-y-0.5">
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="truncate">
+                        <span className="text-emerald-700 font-semibold">↓</span>{' '}
+                        <span className="font-medium">{cheapest.brand}</span>
+                        <span className="text-ink-500"> · {cheapest.buyer}</span>
+                      </span>
+                      <span className="font-semibold tabular-nums text-emerald-700 whitespace-nowrap">
+                        ₹{cheapest.price.toLocaleString('en-IN')}
+                      </span>
+                    </div>
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="truncate">
+                        <span className="text-amber-700 font-semibold">↑</span>{' '}
+                        <span className="font-medium">{dearest.brand}</span>
+                        <span className="text-ink-500"> · {dearest.buyer}</span>
+                      </span>
+                      <span className="font-semibold tabular-nums text-amber-700 whitespace-nowrap">
+                        ₹{dearest.price.toLocaleString('en-IN')}
+                      </span>
+                    </div>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
+        ) : (
+          <p className="text-xs text-ink-500">
+            No molecule has 2+ priced brands across 2+ companies in the current view. Try
+            broadening the timeline or company filter.
+          </p>
+        )}
+      </Widget>
+
       {!singleCompanyView && (
         <Widget icon={Users} title="Most Active Buyer" subtitle="Launch / acquisition volume">
           {topBuyer ? (

@@ -317,6 +317,29 @@ export function enrichRowsWithPrices(rows, prices = BRAND_PRICES) {
   });
 }
 
+// ── Cross-brand price-comparison helpers ──────────────────────────────────
+// Extract primary molecule for "same molecule, different brand" matching.
+// 'Semaglutide (oral)' / 'Semaglutide (injection)' / 'Semaglutide + ...'
+// all collapse to 'semaglutide'. Returns '' for empty / '—'.
+export function primaryMolecule(s) {
+  if (!s || s === '—') return '';
+  return String(s).toLowerCase().split(/[/+(]/)[0].trim();
+}
+
+// Extract a numeric value from any Pricing field (numeric or string with
+// units). Returns null for unparseable / empty. e.g.
+//   '₹190 / strip of 10 (625 mg)' → 190
+//   '₹3,500 (2.5 mg) / ₹4,375 (5 mg) per pen' → 3500 (first numeric)
+//   '₹1,50,000+ / dose' → 150000
+export function priceNumeric(v) {
+  if (typeof v === 'number') return v;
+  if (!v) return null;
+  const m = String(v).match(/[\d,]+(?:\.\d+)?/);
+  if (!m) return null;
+  const n = Number(m[0].replace(/,/g, ''));
+  return Number.isFinite(n) ? n : null;
+}
+
 export const LAUNCH_TRACKER_ROWS = [
   // ──────────────────────────────────────────────────────────────────────────
   // Sun Pharma — EXPANDED LIVE DATASET (deep-research edition)
