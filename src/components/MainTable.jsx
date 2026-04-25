@@ -17,20 +17,49 @@ const CHRONIC_STYLES = {
 
 const NUMERIC_COLS = new Set([COLUMN_KEYS.MARKET_SIZE, COLUMN_KEYS.PRICING]);
 
+// Per-column min-width — keeps long-text columns from collapsing while
+// short columns (Date, Chronic/Acute) stay tight.
 const WIDTH_HINT = {
-  [COLUMN_KEYS.BRAND]: 'min-w-[160px]',
-  [COLUMN_KEYS.LAUNCH_TYPE]: 'min-w-[160px]',
+  [COLUMN_KEYS.BRAND]: 'min-w-[170px]',
+  [COLUMN_KEYS.LAUNCH_TYPE]: 'min-w-[140px]',
   [COLUMN_KEYS.DATE]: 'min-w-[120px]',
-  [COLUMN_KEYS.SELLER]: 'min-w-[170px]',
+  [COLUMN_KEYS.SELLER]: 'min-w-[180px]',
   [COLUMN_KEYS.BUYER]: 'min-w-[160px]',
-  [COLUMN_KEYS.DEAL_TYPE]: 'min-w-[170px]',
-  [COLUMN_KEYS.MOLECULE]: 'min-w-[220px]',
-  [COLUMN_KEYS.PRICING]: 'min-w-[260px] text-right',
-  [COLUMN_KEYS.THERAPY]: 'min-w-[160px]',
-  [COLUMN_KEYS.INDICATION]: 'min-w-[200px]',
-  [COLUMN_KEYS.MARKET_SIZE]: 'min-w-[160px] text-right',
-  [COLUMN_KEYS.EXISTING_BRAND]: 'min-w-[170px]',
+  [COLUMN_KEYS.DEAL_TYPE]: 'min-w-[180px]',
+  [COLUMN_KEYS.MOLECULE]: 'min-w-[230px]',
+  [COLUMN_KEYS.PRICING]: 'min-w-[260px]',
+  [COLUMN_KEYS.THERAPY]: 'min-w-[170px]',
+  [COLUMN_KEYS.INDICATION]: 'min-w-[210px]',
+  [COLUMN_KEYS.MARKET_SIZE]: 'min-w-[140px]',
+  [COLUMN_KEYS.EXISTING_BRAND]: 'min-w-[180px]',
   [COLUMN_KEYS.CHRONIC_ACUTE]: 'min-w-[120px]',
+};
+
+// Per-column alignment. Discrete-value columns (Date, Launch Type,
+// Chronic/Acute) are centered for a clean grid; numeric columns are
+// right-aligned for tabular comparison; text columns stay left-aligned.
+// Headers and cells share the same alignment so the table reads as a
+// crisp aligned grid.
+const ALIGN = {
+  [COLUMN_KEYS.LAUNCH_TYPE]: 'center',
+  [COLUMN_KEYS.DATE]: 'center',
+  [COLUMN_KEYS.PRICING]: 'right',
+  [COLUMN_KEYS.MARKET_SIZE]: 'right',
+  [COLUMN_KEYS.CHRONIC_ACUTE]: 'center',
+};
+
+const alignClass = (col) => {
+  const a = ALIGN[col];
+  if (a === 'right') return 'text-right';
+  if (a === 'center') return 'text-center';
+  return 'text-left';
+};
+
+const headerJustify = (col) => {
+  const a = ALIGN[col];
+  if (a === 'right') return 'justify-end';
+  if (a === 'center') return 'justify-center';
+  return 'justify-start';
 };
 
 export default function MainTable({ rows, allRows, selectedCompany }) {
@@ -203,15 +232,13 @@ export default function MainTable({ rows, allRows, selectedCompany }) {
                 return (
                   <th
                     key={col}
-                    className={`text-left text-[11px] font-semibold uppercase tracking-wider text-ink-700 px-4 py-3 bg-gradient-to-b from-pharma-50/80 to-white border-b border-pharma-100 ${
+                    className={`text-[11px] font-semibold uppercase tracking-wider text-ink-700 px-4 py-3 bg-gradient-to-b from-pharma-50/80 to-white border-b border-pharma-100 ${alignClass(col)} ${
                       WIDTH_HINT[col] || ''
                     }`}
                   >
                     <button
                       onClick={() => onSort(col)}
-                      className={`inline-flex items-center gap-1 hover:text-pharma-700 transition ${
-                        NUMERIC_COLS.has(col) ? 'justify-end w-full' : ''
-                      }`}
+                      className={`inline-flex items-center gap-1 w-full hover:text-pharma-700 transition ${headerJustify(col)}`}
                     >
                       <span className="whitespace-nowrap">{col}</span>
                       <Icon className={`w-3 h-3 shrink-0 ${isSorted ? 'text-pharma-600' : 'text-ink-300'}`} />
@@ -233,7 +260,7 @@ export default function MainTable({ rows, allRows, selectedCompany }) {
                 {visibleColumns.map((col) => (
                   <td
                     key={col}
-                    className={`px-4 py-3.5 align-middle leading-snug border-b border-ink-100/60 ${
+                    className={`px-4 py-3.5 align-middle leading-snug border-b border-ink-100/60 ${alignClass(col)} ${
                       WIDTH_HINT[col] || ''
                     }`}
                   >
