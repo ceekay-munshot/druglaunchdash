@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import { CalendarClock, ChevronDown, ChevronRight } from 'lucide-react';
+import { CalendarClock, ChevronDown, ChevronRight, Download } from 'lucide-react';
 import { PATENT_CLIFFS, PATENT_CLIFF_THERAPIES } from '../data/patentCliffs';
 import { COLUMN_KEYS } from '../data/mockData';
 import { fmtINR } from '../utils/format';
@@ -90,10 +90,10 @@ export default function PatentCliffs({ allRows = [], companies = [] }) {
   const [openCliff, setOpenCliff] = useState(null);
   const [showAll, setShowAll] = useState(false);
 
-  // For each cliff molecule, count launched companies (cross-reference with
-  // launch tracker). Drives the positioning pill in the main row; the drawer
-  // re-derives full per-company detail on demand.
-  const launchedCountByMolecule = useMemo(() => {
+  // For each cliff molecule, derive which tracked companies have launched a
+  // matching brand. Drives the positioning pill in the main row AND populates
+  // the CSV export's Launched / Whitespace columns.
+  const filersByMolecule = useMemo(() => {
     const map = new Map();
     PATENT_CLIFFS.forEach((p) => {
       const launched = new Set();
@@ -102,7 +102,10 @@ export default function PatentCliffs({ allRows = [], companies = [] }) {
         const buyer = r[COLUMN_KEYS.BUYER];
         if (companies.includes(buyer)) launched.add(buyer);
       });
-      map.set(p.molecule, launched.size);
+      map.set(p.molecule, {
+        launched: companies.filter((c) => launched.has(c)),
+        absent: companies.filter((c) => !launched.has(c)),
+      });
     });
     return map;
   }, [allRows, companies]);
@@ -126,6 +129,63 @@ export default function PatentCliffs({ allRows = [], companies = [] }) {
   // re-enter the section through the same "5 + more" lens.
   const setTherapyAndReset = (t) => { setTherapy(t); setShowAll(false); };
   const setSortAndReset = (s) => { setSortKey(s); setShowAll(false); };
+
+  const exportCsv = () => {
+    const headers = [
+      'Molecule',
+      'Originator Brand',
+      'Innovator',
+      'Therapy',
+      'Indication',
+      'India Patent Expiry',
+      'Date Confidence',
+      'India TAM (Cr)',
+      'Tracked Status',
+      'Launched',
+      'Whitespace',
+      'Notes',
+    ];
+    const escape = (val) => {
+      const s = String(val ?? '');
+      return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
+    };
+    const statusFor = (filers) => {
+      if (filers.launched.length === 0) return `Whitespace · 0 of ${companies.length}`;
+      if (filers.absent.length === 0) return `Saturated · all ${companies.length}`;
+      return `${filers.launched.length} of ${companies.length} launched · ${filers.absent.length} whitespace`;
+    };
+    const rows = filtered.map((p) => {
+      const filers = filersByMolecule.get(p.molecule) || { launched: [], absent: [] };
+      return [
+        p.molecule,
+        p.brand || '',
+        p.innovator,
+        p.therapy,
+        p.indication,
+        fmtExpiry(p),
+        p.confidence,
+        p.indiaTAM_Cr ?? '',
+        statusFor(filers),
+        filers.launched.join('; '),
+        filers.absent.join('; '),
+        p.notes || '',
+      ].map(escape).join(',');
+    });
+    // ﻿ BOM so Excel renders ₹ and other UTF-8 chars correctly without
+    // requiring the user to manually pick an encoding on import.
+    const csv = '﻿' + [headers.join(','), ...rows].join('\n');
+    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    const dateStamp = new Date().toISOString().slice(0, 10);
+    const therapySlug = therapy === '__ALL__'
+      ? 'all-therapies'
+      : therapy.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+    a.href = url;
+    a.download = `patent_cliffs_${therapySlug}_${dateStamp}.csv`;
+    a.click();
+    URL.revokeObjectURL(url);
+  };
 
   return (
     <div className="bg-white rounded-2xl border border-ink-100 shadow-card p-4">
@@ -172,6 +232,14 @@ export default function PatentCliffs({ allRows = [], companies = [] }) {
             </select>
             <ChevronDown className="w-3.5 h-3.5 text-ink-400 absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none" />
           </div>
+          <button
+            onClick={exportCsv}
+            className="inline-flex items-center gap-1.5 text-xs font-semibold text-pharma-700 bg-pharma-50 hover:bg-pharma-100 border border-pharma-200 rounded-lg px-3 py-1.5 transition"
+            title={`Download ${filtered.length} cliffs as CSV (current filter)`}
+          >
+            <Download className="w-3.5 h-3.5" />
+            Export CSV
+          </button>
         </div>
       </div>
 
@@ -200,7 +268,8 @@ export default function PatentCliffs({ allRows = [], companies = [] }) {
               const id = `${p.molecule}-${idx}`;
               const tint = YEAR_TINT[p.expiryYear] || '';
               const conf = CONFIDENCE_STYLES[p.confidence] || CONFIDENCE_STYLES.medium;
-              const launchedCount = launchedCountByMolecule.get(p.molecule) || 0;
+              const filers = filersByMolecule.get(p.molecule) || { launched: [], absent: [] };
+              const launchedCount = filers.launched.length;
               return (
                 <tr
                   key={id}
