@@ -167,14 +167,9 @@ export default function InsightWidgets({ rows, selectedCompany }) {
                   key={b.mol}
                   className="border border-ink-100/70 rounded-lg p-2.5 bg-white"
                 >
-                  <div className="flex items-center justify-between gap-2 mb-1.5">
-                    <p className="text-xs font-semibold text-ink-900 capitalize truncate">
-                      {b.mol}
-                    </p>
-                    <span className="text-[10px] font-semibold tabular-nums text-amber-700 bg-amber-50 border border-amber-200 rounded-full px-1.5 py-px">
-                      +{b.spreadPct}%
-                    </span>
-                  </div>
+                  <p className="text-xs font-semibold text-ink-900 capitalize truncate mb-1.5">
+                    {b.mol}
+                  </p>
                   <div className="text-[11px] text-ink-700 space-y-1">
                     <div className="flex items-start justify-between gap-2">
                       <span className="truncate">
