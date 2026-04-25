@@ -15,7 +15,7 @@ import {
 } from 'lucide-react';
 import {
   COLUMN_KEYS,
-  primaryMolecule,
+  comparisonMolecule,
   priceNumeric,
 } from '../data/mockData';
 import { fmtDate, fmtINRPlain } from '../utils/format';
@@ -100,13 +100,13 @@ export default function RowDetailDrawer({ row, allRows = [], onClose }) {
   // X for Rs Y, Corona sells the same molecule for Rs Z" insights.
   const sameMoleculeRows = useMemo(() => {
     if (!row) return [];
-    const myMol = primaryMolecule(row[COLUMN_KEYS.MOLECULE]);
+    const myMol = comparisonMolecule(row[COLUMN_KEYS.MOLECULE]);
     if (!myMol) return [];
     return allRows
       .filter(
         (r) =>
           r !== row &&
-          primaryMolecule(r[COLUMN_KEYS.MOLECULE]) === myMol &&
+          comparisonMolecule(r[COLUMN_KEYS.MOLECULE]) === myMol &&
           r[COLUMN_KEYS.BRAND] !== row[COLUMN_KEYS.BRAND]
       )
       .sort((a, b) => {
@@ -249,7 +249,7 @@ export default function RowDetailDrawer({ row, allRows = [], onClose }) {
                   Same molecule — competitive pricing
                 </h4>
                 <span className="text-[10px] text-ink-500">
-                  {primaryMolecule(row[COLUMN_KEYS.MOLECULE])} · {sameMoleculeRows.length + 1}{' '}
+                  {comparisonMolecule(row[COLUMN_KEYS.MOLECULE])} · {sameMoleculeRows.length + 1}{' '}
                   brand{sameMoleculeRows.length + 1 === 1 ? '' : 's'}
                 </span>
               </div>

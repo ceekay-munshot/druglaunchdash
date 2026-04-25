@@ -318,12 +318,36 @@ export function enrichRowsWithPrices(rows, prices = BRAND_PRICES) {
 }
 
 // ── Cross-brand price-comparison helpers ──────────────────────────────────
-// Extract primary molecule for "same molecule, different brand" matching.
-// 'Semaglutide (oral)' / 'Semaglutide (injection)' / 'Semaglutide + ...'
-// all collapse to 'semaglutide'. Returns '' for empty / '—'.
+// LOOSE matcher — used by TAM enrichment. Collapses formulations AND
+// combinations to the lead active ingredient so 'Telmisartan +
+// Cilnidipine' inherits the 'telmisartan' TAM. Good for market-size
+// estimates.
 export function primaryMolecule(s) {
   if (!s || s === '—') return '';
   return String(s).toLowerCase().split(/[/+(]/)[0].trim();
+}
+
+// STRICT matcher — used by cross-brand price comparison.
+// Keeps combinations DISTINCT from monotherapy (they're different SKUs
+// at different price points and shouldn't be price-compared head-to-head).
+// Strips parenthetical formulation descriptors like '(oral)',
+// '(injectable pen)', '(20 mg)' so 'Semaglutide (oral)' and
+// 'Semaglutide (injection)' still bucket together — the user can see
+// the formulation in the displayed full-molecule string.
+//   'Semaglutide'                    → 'semaglutide'
+//   'Semaglutide (oral)'              → 'semaglutide'
+//   'Telmisartan'                    → 'telmisartan'
+//   'Telmisartan + Cilnidipine'      → 'telmisartan + cilnidipine'  (kept distinct)
+//   'Pantoprazole + Domperidone'     → 'pantoprazole + domperidone' (kept distinct)
+//   'Pantoprazole (± Dom SR / ...)'  → 'pantoprazole'
+//   'Methylcobalamin 1500 mcg'       → 'methylcobalamin'
+export function comparisonMolecule(s) {
+  if (!s || s === '—') return '';
+  return String(s)
+    .toLowerCase()
+    .replace(/\s*\([^)]*\)/g, '')          // strip parenthetical descriptors
+    .replace(/\s+\d.*$/, '')                // strip trailing dosage starting with a digit (e.g. '500 mg', '1500 mcg', '20/40 mg')
+    .trim();
 }
 
 // Extract a numeric value from any Pricing field (numeric or string with

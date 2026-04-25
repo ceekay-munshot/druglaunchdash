@@ -8,7 +8,7 @@ import {
 } from 'lucide-react';
 import {
   COLUMN_KEYS,
-  primaryMolecule,
+  comparisonMolecule,
   priceNumeric,
 } from '../data/mockData';
 import { countBy, fmtINRPlain, fmtDate } from '../utils/format';
@@ -101,7 +101,7 @@ export default function InsightWidgets({ rows, selectedCompany }) {
   const moleculeBuckets = (() => {
     const map = new Map();
     rows.forEach((r) => {
-      const mol = primaryMolecule(r[COLUMN_KEYS.MOLECULE]);
+      const mol = comparisonMolecule(r[COLUMN_KEYS.MOLECULE]);
       const price = priceNumeric(r[COLUMN_KEYS.PRICING]);
       if (!mol || price == null) return;
       if (!map.has(mol)) map.set(mol, []);
