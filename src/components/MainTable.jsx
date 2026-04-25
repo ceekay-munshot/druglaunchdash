@@ -28,7 +28,7 @@ const WIDTH_HINT = {
   [COLUMN_KEYS.DEAL_TYPE]: 'min-w-[180px]',
   [COLUMN_KEYS.MOLECULE]: 'min-w-[230px]',
   [COLUMN_KEYS.PRICING]: 'min-w-[260px]',
-  [COLUMN_KEYS.THERAPY]: 'min-w-[170px]',
+  [COLUMN_KEYS.THERAPY]: 'min-w-[240px]',
   [COLUMN_KEYS.INDICATION]: 'min-w-[210px]',
   [COLUMN_KEYS.MARKET_SIZE]: 'min-w-[140px]',
   [COLUMN_KEYS.EXISTING_BRAND]: 'min-w-[180px]',
@@ -224,7 +224,10 @@ export default function MainTable({ rows, allRows, selectedCompany }) {
         </div>
       </div>
 
-      <div className="max-h-[640px] overflow-auto scrollbar-thin">
+      <div
+        className="max-h-[640px] overflow-auto scrollbar-thin"
+        style={{ scrollbarGutter: 'stable' }}
+      >
         <table className="min-w-full text-sm border-separate border-spacing-0">
           <thead className="sticky top-0 z-10 bg-white table-sticky-shadow">
             <tr>
