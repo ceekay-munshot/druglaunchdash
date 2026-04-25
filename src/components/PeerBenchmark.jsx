@@ -1,7 +1,6 @@
 import React, { useMemo } from 'react';
 import { Users } from 'lucide-react';
 import { COLUMN_KEYS } from '../data/mockData';
-import { fmtINR } from '../utils/format';
 
 // Strip noise suffixes so 7 columns fit comfortably on widescreen.
 function shortName(name) {
@@ -47,12 +46,6 @@ function computeCompanyMetrics(rows) {
     ? { name: sellerEntries[0][0], count: sellerEntries[0][1] }
     : null;
 
-  const tamVals = rows
-    .map((r) => r[COLUMN_KEYS.MARKET_SIZE])
-    .filter((v) => v !== null && v !== undefined && !isNaN(Number(v)))
-    .map(Number);
-  const tamExposure = tamVals.length ? tamVals.reduce((s, v) => s + v, 0) : null;
-
   return {
     launchCount,
     acquired,
@@ -61,7 +54,6 @@ function computeCompanyMetrics(rows) {
     chronicPct,
     topTherapy,
     topCounterparty,
-    tamExposure,
   };
 }
 
@@ -70,16 +62,20 @@ function StackedMix({ acquired, own, inLic, total }) {
   const pa = (acquired / total) * 100;
   const po = (own / total) * 100;
   const pi = (inLic / total) * 100;
+  // Build a plain-English summary, dropping zero-count buckets so the line
+  // doesn't get padded with "0 own · 0 in-licensed" noise.
+  const parts = [];
+  if (acquired) parts.push(`${acquired} acquired`);
+  if (own) parts.push(`${own} own`);
+  if (inLic) parts.push(`${inLic} in-licensed`);
   return (
     <div>
       <div className="flex h-2 rounded-full overflow-hidden bg-ink-100">
-        <div style={{ width: `${pa}%` }} className="bg-teal-500" title={`Acquired ${acquired}`} />
-        <div style={{ width: `${po}%` }} className="bg-pharma-500" title={`Own Launched ${own}`} />
-        <div style={{ width: `${pi}%` }} className="bg-pharma-300" title={`In-licensed ${inLic}`} />
+        <div style={{ width: `${pa}%` }} className="bg-teal-500" title={`${acquired} acquired`} />
+        <div style={{ width: `${po}%` }} className="bg-pharma-500" title={`${own} own launched`} />
+        <div style={{ width: `${pi}%` }} className="bg-pharma-300" title={`${inLic} in-licensed`} />
       </div>
-      <div className="text-[10px] text-ink-500 mt-1 tabular-nums">
-        {acquired}/{own}/{inLic}
-      </div>
+      <div className="text-[10px] text-ink-500 mt-1.5 leading-snug">{parts.join(' · ')}</div>
     </div>
   );
 }
@@ -131,7 +127,6 @@ export default function PeerBenchmark({ rows, companies }) {
 
   const bestLaunches = bestBy((m) => m.launchCount);
   const bestChronic = bestBy((m) => m.chronicPct);
-  const bestTAM = bestBy((m) => m.tamExposure);
 
   return (
     <div className="bg-white rounded-2xl border border-ink-100 shadow-card p-5">
@@ -226,7 +221,7 @@ export default function PeerBenchmark({ rows, companies }) {
                         {c.metrics.topTherapy.name}
                       </div>
                       <div className="text-[10px] text-ink-500 mt-0.5 tabular-nums">
-                        {c.metrics.topTherapy.pct}% of book
+                        {c.metrics.topTherapy.pct}% of launches
                       </div>
                     </div>
                   ) : (
@@ -259,25 +254,6 @@ export default function PeerBenchmark({ rows, companies }) {
               ))}
             </tr>
 
-            <tr>
-              <td className="py-3 pr-4 text-[11px] uppercase tracking-wider text-ink-500 font-semibold">
-                TAM exposure
-                <div className="text-[10px] normal-case tracking-normal text-ink-400 font-normal mt-0.5">
-                  Sum of India TAM
-                </div>
-              </td>
-              {perCompany.map((c) => (
-                <HighlightCell key={c.name} isBest={c.name === bestTAM && c.metrics.tamExposure != null}>
-                  {c.metrics.tamExposure == null ? (
-                    <span className="text-[11px] text-ink-400">—</span>
-                  ) : (
-                    <span className="text-sm font-semibold text-ink-900 tabular-nums">
-                      {fmtINR(c.metrics.tamExposure)}
-                    </span>
-                  )}
-                </HighlightCell>
-              ))}
-            </tr>
           </tbody>
         </table>
       </div>

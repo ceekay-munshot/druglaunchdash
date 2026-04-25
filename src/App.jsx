@@ -182,25 +182,6 @@ export default function App() {
     });
   }, [searchQuery, selectedCompany, filters, timelineCutoff, archivedCompanies, allRows]);
 
-  // Same filter chain as `filteredRows` but ignores the company dropdown — the
-  // peer-benchmark section's whole purpose is cross-company comparison, so a
-  // single-company selection would collapse it to one column.
-  const peerRows = useMemo(() => {
-    return allRows.filter((r) => {
-      if (timelineCutoff) {
-        const d = new Date(r[COLUMN_KEYS.DATE]);
-        if (isNaN(d.getTime()) || d < timelineCutoff) return false;
-      }
-      if (archivedCompanies.includes(r[COLUMN_KEYS.BUYER])) return false;
-      if (filters.therapy !== '__ALL__' && r[COLUMN_KEYS.THERAPY] !== filters.therapy) return false;
-      if (filters.launchType !== '__ALL__' && r[COLUMN_KEYS.LAUNCH_TYPE] !== filters.launchType) return false;
-      if (filters.seller !== '__ALL__' && r[COLUMN_KEYS.SELLER] !== filters.seller) return false;
-      if (filters.chronicAcute !== '__ALL__' && r[COLUMN_KEYS.CHRONIC_ACUTE] !== filters.chronicAcute) return false;
-      if (filters.dealType !== '__ALL__' && r[COLUMN_KEYS.DEAL_TYPE] !== filters.dealType) return false;
-      return true;
-    });
-  }, [allRows, timelineCutoff, archivedCompanies, filters]);
-
   const resetFilters = () => {
     setFilters(INITIAL_FILTERS);
     setTimeline('2Q');
@@ -257,9 +238,14 @@ export default function App() {
           <KPICards rows={filteredRows} />
         </section>
 
-        <section aria-label="Peer benchmark">
-          <PeerBenchmark rows={peerRows} companies={activeCompanies} />
-        </section>
+        {/* Peer Benchmark only renders on the All-Companies + All-time view.
+            Any narrower selection produces tiny per-company samples that
+            make percentages misleading (e.g. "100% chronic" on N=1). */}
+        {selectedCompany === '__ALL__' && timeline === 'ALL' && (
+          <section aria-label="Peer benchmark">
+            <PeerBenchmark rows={filteredRows} companies={activeCompanies} />
+          </section>
+        )}
 
         {/* Charts section is hidden when the user filters narrowly to a
             single company AND the default Last-2-Quarters timeline — at
