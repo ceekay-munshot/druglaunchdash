@@ -57,7 +57,11 @@ const rowItemSchema = {
     therapy: { type: 'string', description: 'Therapy area: Cardiology / Anti-Diabetic / Anti-Infectives / Gastroenterology / Dermatology / Oncology / Respiratory / Neurology / CNS / Women\'s Health / Urology / Nephrology / Immunology / Nutraceuticals / Pain Management / Consumer Health etc.' },
     indication: { type: 'string', description: 'Disease / clinical indication.' },
     existingBrand: { type: 'string', description: 'Name of an existing market-leading brand for the same molecule, if known. Dash (—) if none.' },
-    chronicAcute: { type: 'string', enum: ['Chronic', 'Acute'], description: 'Chronic if long-term therapy, Acute otherwise.' },
+    chronicAcute: {
+      type: ['string', 'null'],
+      enum: ['Chronic', 'Acute', '—', null],
+      description: 'Chronic / Acute. Only fill if the release explicitly indicates the duration of therapy. If unstated, return null or "—" — do NOT guess.',
+    },
     price: {
       type: ['string', 'number', 'null'],
       description: 'Retail MRP in INR for the smallest typical pack. Numeric preferred. If only available as a non-unit launch price like "Rs 84,375 / injection", pass the full string. Null if no verifiable MRP from the 6 listed Indian pharmacy sources.',
@@ -86,6 +90,46 @@ partnerships that are NOT product-related, general strategic commentary).
 For India focus: prefer India-market events. Include global events only if they
 are likely to reach India (e.g., US FDA approval of a drug the Indian company
 owns globally).
+
+═══════════════════════════════════════════════════════════════════════════
+STRICT NO-GUESS MODE — APPLIES TO EVERY FIELD
+═══════════════════════════════════════════════════════════════════════════
+For every field below, populate it ONLY if the press release / linked PDF
+states the value EXPLICITLY (verbatim or near-verbatim). If the press
+release does not say it, set the field to "—" (em-dash) for strings or
+null for numbers. NEVER infer, guess, fabricate, or fill from background
+knowledge.
+
+Specific guardrails:
+  • indication: only fill if the disease / condition is named in the
+    release. Do NOT infer indication from the molecule name. Example:
+    "semaglutide" alone is NOT enough to write "Type 2 Diabetes" — the
+    release must say so. If unstated, use "—".
+  • therapy: only fill if the release uses a clear therapy-area phrase
+    (e.g., "anti-diabetic", "oncology", "respiratory"). Do NOT infer
+    from the brand name pattern. If unstated, use "—".
+  • molecule: only fill if explicitly named (active ingredient, INN, or
+    generic name). Do NOT guess from brand. If unstated, use "—".
+  • dealType: pick the closest match from the canonical list (NCE Launch,
+    Generic Launch, Biosimilar Launch, Line Extension, Device Launch,
+    Brand Acquisition, Brand Portfolio Acquisition, Company Acquisition,
+    In-license (India), Co-marketing, Consumer Launch). If the release
+    is ambiguous, use "—".
+  • chronicAcute: only fill if the release explicitly indicates duration
+    (e.g., "chronic disease", "long-term therapy", "acute infection").
+    If unstated, use "—" (the schema enum allows this — return null).
+  • date: must come from the release date or an explicit launch date in
+    the body. If the release has no date, SKIP the row entirely.
+  • existingBrand: only fill if the release names a competitor / leading
+    brand for the same molecule. Otherwise "—".
+  • sourceUrl: MUST be the exact URL of the specific press release
+    announcing THIS brand. Do NOT reuse a sourceUrl across multiple rows.
+    If you can't find a unique press-release URL for the brand, drop the
+    row.
+
+Quality bar: a partially-filled row with honest "—"s is far better than
+a confidently-wrong fabricated row. The dashboard treats "—" as "data
+not available" and renders it gracefully.
 
 PRICE SOURCING RULES for the \`price\` field:
   • Populate \`price\` with retail MRP in INR for the smallest typical pack
