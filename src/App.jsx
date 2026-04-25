@@ -237,9 +237,17 @@ export default function App() {
           <KPICards rows={filteredRows} />
         </section>
 
-        <section aria-label="Summary charts">
-          <Charts rows={filteredRows} selectedCompany={selectedCompany} />
-        </section>
+        {/* Charts section is hidden when the user filters narrowly to a
+            single company AND the default Last-2-Quarters timeline — at
+            that scope the dataset is usually too thin (often 1–2 rows) for
+            charts to be informative. The KPIs, table, and insight widgets
+            still render. Switching to "All time" or "All Companies"
+            restores the charts. */}
+        {!(selectedCompany !== '__ALL__' && timeline === '2Q') && (
+          <section aria-label="Summary charts">
+            <Charts rows={filteredRows} selectedCompany={selectedCompany} />
+          </section>
+        )}
 
         <section aria-label="Core table">
           <MainTable
