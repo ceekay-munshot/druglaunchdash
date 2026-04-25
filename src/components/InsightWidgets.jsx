@@ -128,8 +128,21 @@ export default function InsightWidgets({ rows, selectedCompany }) {
       })
       .filter((b) => b.buyersCount >= 2 && b.max > b.min)
       .sort((a, b) => b.spreadPct - a.spreadPct)
-      .slice(0, 5);
+      .slice(0, 10);
   })();
+
+  // Extract just the unit suffix from a Pricing label so we can render it
+  // smaller / muted next to the rupee value:
+  //   "₹190 / strip of 10 (625 mg)"   → "/ strip of 10"
+  //   "₹84,375 / single injection"    → "/ single injection"
+  //   "₹450 / weekly dose"             → "/ weekly dose"
+  //   "₹3,500 (2.5 mg) / ₹4,375 ..."  → "/ pen"  (best-effort)
+  // Returns '' if the label is just a number with no unit context.
+  const extractPriceUnit = (label) => {
+    if (typeof label !== 'string') return '';
+    const m = label.match(/\/\s*([^(]+?)(?:\s*\(|$)/);
+    return m ? `/ ${m[1].trim()}` : '';
+  };
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
@@ -145,7 +158,7 @@ export default function InsightWidgets({ rows, selectedCompany }) {
         accent="amber"
       >
         {moleculeBuckets.length ? (
-          <ul className="space-y-3">
+          <ul className="space-y-2 max-h-[420px] overflow-y-auto scrollbar-thin pr-1">
             {moleculeBuckets.map((b) => {
               const cheapest = b.list[0];
               const dearest = b.list[b.list.length - 1];
@@ -162,25 +175,39 @@ export default function InsightWidgets({ rows, selectedCompany }) {
                       +{b.spreadPct}%
                     </span>
                   </div>
-                  <div className="text-[11px] text-ink-700 space-y-0.5">
-                    <div className="flex items-center justify-between gap-2">
+                  <div className="text-[11px] text-ink-700 space-y-1">
+                    <div className="flex items-start justify-between gap-2">
                       <span className="truncate">
                         <span className="text-emerald-700 font-semibold">↓</span>{' '}
                         <span className="font-medium">{cheapest.brand}</span>
                         <span className="text-ink-500"> · {cheapest.buyer}</span>
                       </span>
-                      <span className="font-semibold tabular-nums text-emerald-700 whitespace-nowrap">
-                        ₹{cheapest.price.toLocaleString('en-IN')}
+                      <span className="flex flex-col items-end shrink-0 leading-tight">
+                        <span className="font-semibold tabular-nums text-emerald-700 whitespace-nowrap">
+                          ₹{cheapest.price.toLocaleString('en-IN')}
+                        </span>
+                        {extractPriceUnit(cheapest.priceLabel) && (
+                          <span className="text-[10px] text-ink-500 whitespace-nowrap">
+                            {extractPriceUnit(cheapest.priceLabel)}
+                          </span>
+                        )}
                       </span>
                     </div>
-                    <div className="flex items-center justify-between gap-2">
+                    <div className="flex items-start justify-between gap-2">
                       <span className="truncate">
                         <span className="text-amber-700 font-semibold">↑</span>{' '}
                         <span className="font-medium">{dearest.brand}</span>
                         <span className="text-ink-500"> · {dearest.buyer}</span>
                       </span>
-                      <span className="font-semibold tabular-nums text-amber-700 whitespace-nowrap">
-                        ₹{dearest.price.toLocaleString('en-IN')}
+                      <span className="flex flex-col items-end shrink-0 leading-tight">
+                        <span className="font-semibold tabular-nums text-amber-700 whitespace-nowrap">
+                          ₹{dearest.price.toLocaleString('en-IN')}
+                        </span>
+                        {extractPriceUnit(dearest.priceLabel) && (
+                          <span className="text-[10px] text-ink-500 whitespace-nowrap">
+                            {extractPriceUnit(dearest.priceLabel)}
+                          </span>
+                        )}
                       </span>
                     </div>
                   </div>
