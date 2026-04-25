@@ -245,7 +245,7 @@ export default function App() {
             restores the charts. */}
         {!(selectedCompany !== '__ALL__' && timeline === '2Q') && (
           <section aria-label="Summary charts">
-            <Charts rows={filteredRows} selectedCompany={selectedCompany} />
+            <Charts rows={filteredRows} selectedCompany={selectedCompany} timeline={timeline} />
           </section>
         )}
 

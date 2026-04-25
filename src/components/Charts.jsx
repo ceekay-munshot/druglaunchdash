@@ -144,8 +144,11 @@ function HBar({ data, valueFormatter, tooltipLabel, height, categoryWidth = 140,
   );
 }
 
-export default function Charts({ rows, selectedCompany }) {
+export default function Charts({ rows, selectedCompany, timeline }) {
   const singleCompanyView = selectedCompany && selectedCompany !== '__ALL__';
+  // Activity-over-time only makes sense across a long horizon; hide it on the
+  // default Last-2-Quarters window since the line collapses to 1–2 points.
+  const showActivityChart = !singleCompanyView && timeline !== '2Q';
   const total = rows.length;
 
   const therapy = countBy(rows, COLUMN_KEYS.THERAPY).sort((a, b) => b.value - a.value).slice(0, 10);
@@ -374,7 +377,7 @@ export default function Charts({ rows, selectedCompany }) {
       </ChartCard>
 
       {/* Launch Activity Over Time — area chart with gradient fill */}
-      {!singleCompanyView && (
+      {showActivityChart && (
         <ChartCard
           icon={Activity}
           title="Launch Activity Over Time"
