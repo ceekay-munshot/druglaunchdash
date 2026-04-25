@@ -198,8 +198,15 @@ export default function Charts({ rows, selectedCompany }) {
   // Centered total label for Launch-Type donut
   const launchTypeTotal = launchType.reduce((s, d) => s + d.value, 0);
 
+  // Single-company view hides 2 charts (Buyer-wise + Activity-over-time), so
+  // we drop to 3 columns at 2xl to keep both rows fully populated. With all
+  // 8 charts visible, 4 columns gives a tidy 2×4 grid.
+  const gridCols = singleCompanyView
+    ? 'grid-cols-1 md:grid-cols-2 xl:grid-cols-3'
+    : 'grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4';
+
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4">
+    <div className={`grid ${gridCols} gap-4`}>
       {/* Therapy Split — horizontal bar ranked (long labels render cleanly) */}
       <ChartCard icon={PieIcon} title="Therapy Split" subtitle="Top 10 therapies by brand count">
         {therapy.length ? (
