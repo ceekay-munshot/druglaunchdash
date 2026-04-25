@@ -6,6 +6,7 @@ import Charts from './components/Charts';
 import MainTable from './components/MainTable';
 import InsightWidgets from './components/InsightWidgets';
 import PeerBenchmark from './components/PeerBenchmark';
+import PatentCliffs from './components/PatentCliffs';
 import {
   LAUNCH_TRACKER_ROWS,
   UNIQUE_BUYERS,
@@ -258,6 +259,10 @@ export default function App() {
             <Charts rows={filteredRows} selectedCompany={selectedCompany} timeline={timeline} />
           </section>
         )}
+
+        <section aria-label="Patent cliff calendar">
+          <PatentCliffs />
+        </section>
 
         <section aria-label="Core table">
           <MainTable
