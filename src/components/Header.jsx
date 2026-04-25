@@ -49,7 +49,7 @@ export default function Header({
 
   return (
     <header className="grad-header border-b border-pharma-100">
-      <div className="max-w-[1600px] mx-auto px-6 py-5">
+      <div className="max-w-[1840px] mx-auto px-5 py-4">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
           <div className="flex items-center gap-3">
             <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-card">

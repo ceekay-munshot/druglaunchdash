@@ -221,7 +221,7 @@ export default function App() {
         refreshing={isRefreshing}
       />
 
-      <main className="max-w-[1600px] mx-auto px-6 py-6 space-y-6">
+      <main className="max-w-[1840px] mx-auto px-5 py-5 space-y-5">
         <FilterBar
           rows={allRows}
           filters={filters}

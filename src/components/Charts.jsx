@@ -199,7 +199,7 @@ export default function Charts({ rows, selectedCompany }) {
   const launchTypeTotal = launchType.reduce((s, d) => s + d.value, 0);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4">
       {/* Therapy Split — horizontal bar ranked (long labels render cleanly) */}
       <ChartCard icon={PieIcon} title="Therapy Split" subtitle="Top 10 therapies by brand count">
         {therapy.length ? (

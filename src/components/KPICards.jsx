@@ -63,7 +63,7 @@ export default function KPICards({ rows }) {
   ).size;
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3">
+    <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-7 gap-3">
       <KpiCard
         icon={Package}
         label="Total Brands"
