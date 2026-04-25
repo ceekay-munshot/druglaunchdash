@@ -107,11 +107,14 @@ const axisTick = { fontSize: 11, fill: '#64748b' };
 const catTick = { fontSize: 11, fill: '#334155' };
 
 // Compact horizontal bar chart — used for Therapy, Buyer, Seller, Deal-Type,
-// and Market-Size-by-Therapy (all of which have long category labels)
-function HBar({ data, valueFormatter, tooltipLabel, height = 280, categoryWidth = 140, labelFormatter }) {
+// and Market-Size-by-Therapy (all of which have long category labels). Height
+// is dynamically sized to the number of bars so they always have breathing
+// room (no overlapping labels even with 8-12 bars).
+function HBar({ data, valueFormatter, tooltipLabel, height, categoryWidth = 140, labelFormatter }) {
+  const computed = height ?? Math.max(240, data.length * 36 + 40);
   return (
-    <ResponsiveContainer width="100%" height={height}>
-      <BarChart data={data} layout="vertical" margin={{ left: 4, right: 48, top: 4, bottom: 4 }}>
+    <ResponsiveContainer width="100%" height={computed}>
+      <BarChart data={data} layout="vertical" margin={{ left: 4, right: 56, top: 4, bottom: 4 }}>
         <CartesianGrid horizontal={false} strokeDasharray="3 3" stroke={gridStyle.stroke} />
         <XAxis type="number" tick={axisTick} allowDecimals={false} tickFormatter={labelFormatter} />
         <YAxis
@@ -152,15 +155,33 @@ export default function Charts({ rows, selectedCompany }) {
     .filter((d) => d.name && d.name !== '—')
     .sort((a, b) => b.value - a.value)
     .slice(0, 8);
-  const marketByTherapy = sumBy(rows, COLUMN_KEYS.THERAPY, COLUMN_KEYS.MARKET_SIZE)
-    .filter((d) => d.value > 0)
-    .sort((a, b) => b.value - a.value);
+
+  // Compact a sorted descending list to top-N + an "Other (k)" bucket so
+  // long-tail categories don't clog the chart.
+  const compactTopN = (arr, n) => {
+    if (arr.length <= n) return arr;
+    const top = arr.slice(0, n);
+    const rest = arr.slice(n);
+    const otherSum = rest.reduce((s, d) => s + (Number(d.value) || 0), 0);
+    if (otherSum > 0) top.push({ name: `Other (${rest.length})`, value: otherSum });
+    return top;
+  };
+
+  const marketByTherapy = compactTopN(
+    sumBy(rows, COLUMN_KEYS.THERAPY, COLUMN_KEYS.MARKET_SIZE)
+      .filter((d) => d.value > 0)
+      .sort((a, b) => b.value - a.value),
+    8
+  );
   const chronicAcute = countBy(rows, COLUMN_KEYS.CHRONIC_ACUTE);
   const chronicCount = chronicAcute.find((d) => d.name === 'Chronic')?.value ?? 0;
   const acuteCount = chronicAcute.find((d) => d.name === 'Acute')?.value ?? 0;
   const chronicPct = total ? Math.round((chronicCount / total) * 100) : 0;
   const acutePct = total ? 100 - chronicPct : 0;
-  const dealType = countBy(rows, COLUMN_KEYS.DEAL_TYPE).sort((a, b) => b.value - a.value);
+  const dealType = compactTopN(
+    countBy(rows, COLUMN_KEYS.DEAL_TYPE).sort((a, b) => b.value - a.value),
+    8
+  );
 
   const yearMap = new Map();
   rows.forEach((r) => {
@@ -312,29 +333,34 @@ export default function Charts({ rows, selectedCompany }) {
         )}
       </ChartCard>
 
-      {/* India Market Size by Therapy — horizontal bar (cleaner than angled x-axis) */}
+      {/* India TAM by Therapy — top 8 + 'Other' bucket so long-tail
+          categories don't crowd the chart */}
       <ChartCard
         icon={IndianRupee}
-        title="India Market Size by Therapy"
-        subtitle="Sum of disclosed ₹Cr per therapy"
+        title="India TAM by Therapy"
+        subtitle="Top 8 therapies by addressable market (₹Cr)"
       >
         {marketByTherapy.length ? (
           <HBar
             data={marketByTherapy}
-            tooltipLabel="Market size"
+            tooltipLabel="TAM"
             valueFormatter={fmtINRPlain}
             labelFormatter={(v) => (v >= 1000 ? `₹${(v / 1000).toFixed(1)}K` : `₹${v}`)}
-            categoryWidth={160}
+            categoryWidth={170}
           />
         ) : (
-          <EmptyChart msg="Market-size data not in public sources for this selection — requires IQVIA / PharmaTrac." />
+          <EmptyChart msg="TAM data not available for this selection — requires public estimates from broker / industry coverage." />
         )}
       </ChartCard>
 
-      {/* Deal Type Breakdown — horizontal bar */}
-      <ChartCard icon={BarChart3} title="Deal Type Breakdown" subtitle="Distribution of transaction structures">
+      {/* Deal Type Breakdown — top 8 + 'Other' bucket */}
+      <ChartCard
+        icon={BarChart3}
+        title="Deal Type Breakdown"
+        subtitle="Top 8 transaction structures"
+      >
         {dealType.length ? (
-          <HBar data={dealType} tooltipLabel="Deals" categoryWidth={180} />
+          <HBar data={dealType} tooltipLabel="Deals" categoryWidth={190} />
         ) : (
           <EmptyChart msg="No deal-type data." />
         )}
