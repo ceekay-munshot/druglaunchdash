@@ -128,8 +128,8 @@ export default function PatentCliffs({ allRows = [], companies = [] }) {
   const setSortAndReset = (s) => { setSortKey(s); setShowAll(false); };
 
   return (
-    <div className="bg-white rounded-2xl border border-ink-100 shadow-card p-5">
-      <div className="flex items-start justify-between gap-4 mb-4 flex-wrap">
+    <div className="bg-white rounded-2xl border border-ink-100 shadow-card p-4">
+      <div className="flex items-start justify-between gap-3 mb-3 flex-wrap">
         <div className="flex items-center gap-2.5">
           <div className="w-8 h-8 rounded-lg flex items-center justify-center bg-pharma-50">
             <CalendarClock className="w-4 h-4 text-pharma-600" />
@@ -175,7 +175,7 @@ export default function PatentCliffs({ allRows = [], companies = [] }) {
         </div>
       </div>
 
-      <div className="overflow-x-auto -mx-5">
+      <div className="overflow-x-auto -mx-4">
         <table className="w-full text-sm border-separate border-spacing-0 table-fixed">
           <colgroup>
             <col style={{ width: '26%' }} />
@@ -187,12 +187,12 @@ export default function PatentCliffs({ allRows = [], companies = [] }) {
           </colgroup>
           <thead>
             <tr className="text-[10px] uppercase tracking-wider text-ink-500 font-semibold">
-              <th className="text-left py-2 pl-5 pr-3 border-b border-ink-100">Molecule</th>
+              <th className="text-left py-2 pl-4 pr-3 border-b border-ink-100">Molecule</th>
               <th className="text-left py-2 px-3 border-b border-ink-100">Therapy</th>
               <th className="text-center py-2 px-3 border-b border-ink-100">India expiry</th>
               <th className="text-right py-2 px-3 border-b border-ink-100">India TAM</th>
               <th className="text-left py-2 px-3 border-b border-ink-100">Your 7 positioning</th>
-              <th className="py-2 pr-5 border-b border-ink-100"></th>
+              <th className="py-2 pr-4 border-b border-ink-100"></th>
             </tr>
           </thead>
           <tbody>
@@ -207,16 +207,16 @@ export default function PatentCliffs({ allRows = [], companies = [] }) {
                   className={`group cursor-pointer hover:bg-ink-50/80 transition-colors ${tint}`}
                   onClick={() => setOpenCliff(p)}
                 >
-                  <td className="py-3 pl-5 pr-3 border-b border-ink-100/70 align-middle">
+                  <td className="py-2.5 pl-4 pr-3 border-b border-ink-100/70 align-middle">
                     <div className="text-xs font-semibold text-ink-900 truncate">{p.molecule}</div>
                     {p.brand && (
                       <div className="text-[10px] text-ink-500 mt-0.5 truncate">{p.brand}</div>
                     )}
                   </td>
-                  <td className="py-3 px-3 border-b border-ink-100/70 text-xs text-ink-700 align-middle truncate">
+                  <td className="py-2.5 px-3 border-b border-ink-100/70 text-xs text-ink-700 align-middle truncate">
                     {p.therapy}
                   </td>
-                  <td className="py-3 px-3 border-b border-ink-100/70 align-middle">
+                  <td className="py-2.5 px-3 border-b border-ink-100/70 align-middle">
                     <div className="flex items-center justify-center gap-1.5">
                       <span
                         className={`w-1.5 h-1.5 rounded-full shrink-0 ${conf.dot}`}
@@ -227,15 +227,15 @@ export default function PatentCliffs({ allRows = [], companies = [] }) {
                       </span>
                     </div>
                   </td>
-                  <td className="py-3 px-3 border-b border-ink-100/70 text-right align-middle">
+                  <td className="py-2.5 px-3 border-b border-ink-100/70 text-right align-middle">
                     <span className="text-xs font-semibold text-ink-900 tabular-nums whitespace-nowrap">
                       {fmtINR(p.indiaTAM_Cr)}
                     </span>
                   </td>
-                  <td className="py-3 px-3 border-b border-ink-100/70 align-middle">
+                  <td className="py-2.5 px-3 border-b border-ink-100/70 align-middle">
                     <PositioningPill launched={launchedCount} total={companies.length} />
                   </td>
-                  <td className="py-3 pr-5 border-b border-ink-100/70 text-right align-middle">
+                  <td className="py-2.5 pr-4 border-b border-ink-100/70 text-right align-middle">
                     <ChevronRight className="w-4 h-4 text-ink-300 group-hover:text-ink-500 transition inline-block" />
                   </td>
                 </tr>

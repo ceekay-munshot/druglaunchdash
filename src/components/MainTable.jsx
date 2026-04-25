@@ -190,7 +190,7 @@ export default function MainTable({ rows, allRows, selectedCompany }) {
 
   return (
     <div className="bg-white rounded-2xl border border-ink-100 shadow-card overflow-hidden">
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 px-5 py-4 border-b border-ink-100">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 px-4 py-3 border-b border-ink-100">
         <div className="flex items-center gap-2">
           <div className="w-7 h-7 rounded-lg bg-pharma-50 flex items-center justify-center">
             <TableIcon className="w-4 h-4 text-pharma-600" />
@@ -232,7 +232,7 @@ export default function MainTable({ rows, allRows, selectedCompany }) {
                 return (
                   <th
                     key={col}
-                    className={`text-[11px] font-semibold uppercase tracking-wider text-ink-700 px-4 py-3 bg-gradient-to-b from-pharma-50/80 to-white border-b border-pharma-100 ${alignClass(col)} ${
+                    className={`text-[11px] font-semibold uppercase tracking-wider text-ink-700 px-4 py-2 bg-gradient-to-b from-pharma-50/80 to-white border-b border-pharma-100 ${alignClass(col)} ${
                       WIDTH_HINT[col] || ''
                     }`}
                   >
@@ -260,7 +260,7 @@ export default function MainTable({ rows, allRows, selectedCompany }) {
                 {visibleColumns.map((col) => (
                   <td
                     key={col}
-                    className={`px-4 py-3.5 align-middle leading-snug border-b border-ink-100/60 ${alignClass(col)} ${
+                    className={`px-4 py-2.5 align-middle leading-snug border-b border-ink-100/60 ${alignClass(col)} ${
                       WIDTH_HINT[col] || ''
                     }`}
                   >

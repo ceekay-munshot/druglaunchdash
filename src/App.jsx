@@ -223,7 +223,7 @@ export default function App() {
         refreshing={isRefreshing}
       />
 
-      <main className="max-w-[1840px] mx-auto px-5 py-5 space-y-5">
+      <main className="max-w-[1840px] mx-auto px-4 py-4 space-y-4">
         <FilterBar
           rows={allRows}
           filters={filters}
@@ -276,7 +276,7 @@ export default function App() {
           <InsightWidgets rows={filteredRows} selectedCompany={selectedCompany} />
         </section>
 
-        <footer className="pt-4 pb-8 text-center text-[11px] text-ink-500">
+        <footer className="pt-2 pb-6 text-center text-[11px] text-ink-500">
           Curated baseline in <code className="text-ink-700">src/data/mockData.js</code> merged
           with daily scrape in <code className="text-ink-700">public/launches.json</code>.
           All KPIs, charts, and insights derive from the same filtered core table.

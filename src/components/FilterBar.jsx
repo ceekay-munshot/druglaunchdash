@@ -62,7 +62,7 @@ export default function FilterBar({
     Object.values(filters).some((v) => v && v !== '__ALL__') || timeline !== '2Q';
 
   return (
-    <div className="bg-white border border-ink-100 rounded-2xl shadow-card px-5 py-4">
+    <div className="bg-white border border-ink-100 rounded-2xl shadow-card px-4 py-3">
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 pb-3 border-b border-ink-100 mb-3">
         <div className="flex items-center gap-2">
           <div className="w-7 h-7 rounded-lg bg-pharma-50 flex items-center justify-center">

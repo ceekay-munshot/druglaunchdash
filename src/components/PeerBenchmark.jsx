@@ -129,8 +129,8 @@ export default function PeerBenchmark({ rows, companies }) {
   const bestChronic = bestBy((m) => m.chronicPct);
 
   return (
-    <div className="bg-white rounded-2xl border border-ink-100 shadow-card p-5">
-      <div className="flex items-center gap-2.5 mb-4">
+    <div className="bg-white rounded-2xl border border-ink-100 shadow-card p-4">
+      <div className="flex items-center gap-2.5 mb-3">
         <div className="w-8 h-8 rounded-lg flex items-center justify-center bg-pharma-50">
           <Users className="w-4 h-4 text-pharma-600" />
         </div>
@@ -166,14 +166,14 @@ export default function PeerBenchmark({ rows, companies }) {
           </thead>
           <tbody>
             <tr>
-              <td className="py-3 pr-4 text-[11px] uppercase tracking-wider text-ink-500 font-semibold border-b border-ink-100/60">
+              <td className="py-2.5 pr-4 text-[11px] uppercase tracking-wider text-ink-500 font-semibold border-b border-ink-100/60">
                 Strategy mix
                 <div className="text-[10px] normal-case tracking-normal text-ink-400 font-normal mt-0.5">
                   Acq / Own / In-lic
                 </div>
               </td>
               {perCompany.map((c) => (
-                <td key={c.name} className="px-3 py-3 text-center align-middle border-b border-ink-100/60">
+                <td key={c.name} className="px-3 py-2.5 text-center align-middle border-b border-ink-100/60">
                   <StackedMix
                     acquired={c.metrics.acquired}
                     own={c.metrics.ownLaunched}
@@ -185,7 +185,7 @@ export default function PeerBenchmark({ rows, companies }) {
             </tr>
 
             <tr>
-              <td className="py-3 pr-4 text-[11px] uppercase tracking-wider text-ink-500 font-semibold border-b border-ink-100/60">
+              <td className="py-2.5 pr-4 text-[11px] uppercase tracking-wider text-ink-500 font-semibold border-b border-ink-100/60">
                 Chronic share
               </td>
               {perCompany.map((c) => (
@@ -210,11 +210,11 @@ export default function PeerBenchmark({ rows, companies }) {
             </tr>
 
             <tr>
-              <td className="py-3 pr-4 text-[11px] uppercase tracking-wider text-ink-500 font-semibold border-b border-ink-100/60">
+              <td className="py-2.5 pr-4 text-[11px] uppercase tracking-wider text-ink-500 font-semibold border-b border-ink-100/60">
                 Top therapy
               </td>
               {perCompany.map((c) => (
-                <td key={c.name} className="px-3 py-3 text-center align-middle border-b border-ink-100/60">
+                <td key={c.name} className="px-3 py-2.5 text-center align-middle border-b border-ink-100/60">
                   {c.metrics.topTherapy ? (
                     <div>
                       <div className="text-xs font-semibold text-ink-900 truncate">
@@ -232,11 +232,11 @@ export default function PeerBenchmark({ rows, companies }) {
             </tr>
 
             <tr>
-              <td className="py-3 pr-4 text-[11px] uppercase tracking-wider text-ink-500 font-semibold border-b border-ink-100/60">
+              <td className="py-2.5 pr-4 text-[11px] uppercase tracking-wider text-ink-500 font-semibold border-b border-ink-100/60">
                 Top counterparty
               </td>
               {perCompany.map((c) => (
-                <td key={c.name} className="px-3 py-3 text-center align-middle border-b border-ink-100/60">
+                <td key={c.name} className="px-3 py-2.5 text-center align-middle border-b border-ink-100/60">
                   {c.metrics.topCounterparty ? (
                     <div>
                       <div className="text-xs font-semibold text-ink-900 truncate">

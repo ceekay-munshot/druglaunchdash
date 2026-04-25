@@ -57,8 +57,8 @@ const LAUNCH_TYPE_COLORS = {
 
 function ChartCard({ icon: Icon, title, subtitle, children, accent = 'green' }) {
   return (
-    <div className="bg-white rounded-2xl border border-ink-100 shadow-card hover:shadow-cardHover transition-shadow p-5 flex flex-col">
-      <div className="flex items-center gap-2.5 mb-3">
+    <div className="bg-white rounded-2xl border border-ink-100 shadow-card hover:shadow-cardHover transition-shadow p-4 flex flex-col">
+      <div className="flex items-center gap-2.5 mb-2.5">
         <div
           className={`w-8 h-8 rounded-lg flex items-center justify-center ${
             accent === 'teal' ? 'bg-teal-50' : accent === 'amber' ? 'bg-amber-50' : 'bg-pharma-50'
@@ -208,7 +208,7 @@ export default function Charts({ rows, selectedCompany, timeline }) {
     : 'grid-cols-1 md:grid-cols-2 xl:grid-cols-3';
 
   return (
-    <div className={`grid ${gridCols} gap-4`}>
+    <div className={`grid ${gridCols} gap-3`}>
       {/* Therapy Split — horizontal bar ranked (long labels render cleanly) */}
       <ChartCard icon={PieIcon} title="Therapy Split" subtitle="Top 10 therapies by brand count">
         {therapy.length ? (
