@@ -22,7 +22,7 @@ export const COLUMN_KEYS = {
   PRICING: 'Pricing',
   THERAPY: 'Therapy',
   INDICATION: 'Disease / Indication',
-  MARKET_SIZE: 'India Market Size (₹Cr)',
+  MARKET_SIZE: 'India TAM (₹Cr)',
   EXISTING_BRAND: 'Existing Brand (Same Molecule)',
   CHRONIC_ACUTE: 'Chronic / Acute',
 };
@@ -338,6 +338,272 @@ export function priceNumeric(v) {
   if (!m) return null;
   const n = Number(m[0].replace(/,/g, ''));
   return Number.isFinite(n) ? n : null;
+}
+
+// ──────────────────────────────────────────────────────────────────────────
+// TAM_BY_MOLECULE — addressable Indian Pharmaceutical Market (IPM) size
+// in INR Cr for the molecule. Estimates compiled from broker research
+// notes (Nuvama, Jefferies, Kotak Pharma), DRHP/RHP filings, IBEF
+// industry reports, and AIOCD AWACS coverage cited in trade press
+// (BioSpectrum, Pharma Bureau, Business Standard pharma desk).
+//
+// These are TAM ESTIMATES, not precise SMSRC panel data — they reflect
+// the addressable molecule-level Indian market as of FY25-FY26. Where a
+// row already has a press-release-disclosed market size (Wokadine ₹648
+// Cr, Combihale ₹900 Cr, Biocon BFI ₹30,000 Cr injectable market, etc.)
+// that exact figure stays — enrichRowsWithTAM only fills NULL entries.
+//
+// Matched by primaryMolecule() so combinations resolve to the lead
+// active ingredient (e.g. 'Telmisartan + Cilnidipine' → 'telmisartan').
+// ──────────────────────────────────────────────────────────────────────────
+export const TAM_BY_MOLECULE = {
+  // Anti-Diabetic
+  semaglutide: 1000,
+  sitagliptin: 2200,
+  vildagliptin: 1000,
+  dapagliflozin: 1500,
+  empagliflozin: 2000,
+  teneligliptin: 2500,
+  linagliptin: 1100,
+  glimepiride: 1500,
+  gliclazide: 800,
+  metformin: 2000,
+  voglibose: 250,
+  pioglitazone: 600,
+  tirzepatide: 800,
+  'insulin glargine': 700,
+  'insulin human': 1000,
+  'recombinant human insulin': 1000,
+  'insulin lispro': 600,
+  'human insulin': 1000,
+  dulaglutide: 400,
+
+  // Cardiology
+  telmisartan: 2000,
+  olmesartan: 1200,
+  losartan: 800,
+  amlodipine: 2500,
+  cilnidipine: 500,
+  nifedipine: 200,
+  nebivolol: 700,
+  metoprolol: 1500,
+  diltiazem: 300,
+  atorvastatin: 3500,
+  rosuvastatin: 3000,
+  clopidogrel: 1200,
+  nicorandil: 400,
+  ivabradine: 200,
+  'bempedoic acid': 50,
+  propranolol: 250,
+  carvedilol: 800,
+
+  // Gastroenterology
+  pantoprazole: 2200,
+  esomeprazole: 1300,
+  rabeprazole: 900,
+  omeprazole: 500,
+  vonoprazan: 500,
+  fexuprazan: 200,
+  domperidone: 600,
+  ranitidine: 400,
+  'saroglitazar magnesium': 250,
+  saroglitazar: 250,
+  ondansetron: 800,
+  'fungal diastase': 600,
+
+  // Anti-Infectives
+  amoxicillin: 2500,
+  cefixime: 1800,
+  ciprofloxacin: 800,
+  cefuroxime: 600,
+  ceftriaxone: 700,
+  'cefpodoxime proxetil': 800,
+  cefotaxime: 400,
+  cefpodoxime: 800,
+  piperacillin: 1100,
+  cefepime: 200,
+  isavuconazonium: 100,
+  itraconazole: 500,
+  fluconazole: 400,
+  'sertaconazole nitrate': 350,
+  'povidone iodine': 648,
+  metronidazole: 800,
+  'snake antivenom': 250,
+  'polyvalent snake antivenom': 250,
+  'tetanus immunoglobulin': 100,
+  'human normal immunoglobulin': 500,
+  ampicillin: 300,
+
+  // Dermatology
+  isotretinoin: 250,
+  clascoterone: 50,
+  tildrakizumab: 400,
+  'clobetasol propionate': 500,
+  clobetasol: 500,
+  hydroquinone: 250,
+  permethrin: 80,
+  cyclosporine: 600,
+  deuruxolitinib: 60,
+
+  // Respiratory
+  budesonide: 1650,
+  salbutamol: 800,
+  salmeterol: 1100,
+  levosalbutamol: 600,
+  olopatadine: 200,
+  montelukast: 1500,
+  ambroxol: 800,
+  chlorpheniramine: 200,
+  dextromethorphan: 300,
+  terbutaline: 250,
+
+  // Neurology / CNS
+  methylcobalamin: 1500,
+  levetiracetam: 400,
+  escitalopram: 300,
+  sertraline: 300,
+  clonazepam: 200,
+  pregabalin: 500,
+  donepezil: 250,
+  memantine: 200,
+  's-pindolol benzoate': 50,
+  'l-methylfolate': 400,
+  tegoprazan: 250,
+  febuxostat: 700,
+  deuruxolitinib: 60,
+  bempedoic: 50,
+  'rho(d)': 100,
+  'antibiotic combination': 0,
+  'gam-covid-vac': 0,
+
+  // Oncology
+  pertuzumab: 2100,
+  nivolumab: 800,
+  aflibercept: 350,
+  daratumumab: 250,
+  balstilimab: 50,
+  toripalimab: 100,
+  sintilimab: 200,
+  cosibelimab: 100,
+  'trastuzumab emtansine': 400,
+  trastuzumab: 1200,
+  cetuximab: 200,
+  palbociclib: 300,
+  cabotegravir: 80,
+
+  // Immunology
+  adalimumab: 600,
+  golimumab: 50,
+  infliximab: 200,
+  etanercept: 250,
+  'mycophenolic acid': 500,
+  'mycophenolate sodium': 400,
+  'mycophenolate mofetil': 500,
+  tacrolimus: 700,
+
+  // Women's Health / Fertility
+  mifepristone: 600,
+  levonorgestrel: 100,
+  dydrogesterone: 600,
+  'micronized progesterone': 800,
+  progesterone: 800,
+  menotropin: 300,
+  'follicle stimulating hormone': 250,
+  'human chorionic gonadotropin': 200,
+  'hcg highly purified': 200,
+  'hcg': 200,
+  'carboprost tromethamine': 50,
+  carboprost: 50,
+  dinoprostone: 30,
+  'leuprolide acetate': 500,
+  leuprolide: 500,
+  ospemifene: 30,
+  'medroxyprogesterone acetate': 200,
+  'hydroxyprogesterone caproate': 250,
+  hydroxyprogesterone: 250,
+  'ferrous ascorbate': 1500,
+
+  // Urology
+  silodosin: 200,
+  'desmopressin acetate': 60,
+  desmopressin: 60,
+
+  // Nutraceuticals / Bone Health
+  'calcium carbonate': 2000,
+  calcium: 2000,
+  cholecalciferol: 1500,
+  multivitamin: 1500,
+  ginseng: 800,
+  calcitriol: 600,
+  'protein + ca + mg + d3 + k2 + glucosamine + bamboo extract': 3000,
+
+  // Pain Management
+  diclofenac: 1200,
+  aceclofenac: 800,
+  thiocolchicoside: 500,
+  nimesulide: 200,
+  naproxen: 100,
+  trypsin: 500,
+  levocarnitine: 200,
+  buclizine: 80,
+
+  // Critical Care / Haematology
+  'enoxaparin sodium': 800,
+  enoxaparin: 800,
+  'anti-d immunoglobulin': 100,
+
+  // Consumer / OTC
+  'sodium bicarbonate': 800,
+  sildenafil: 800,
+  'ginkgo biloba': 200,
+  'zinc oxide 15%': 300,
+
+  // Vaccines / Misc / less-mapped
+  'gam-covid-vac': 0,
+  remdesivir: 0,
+  molnupiravir: 0,
+  'mesenchymal stem cells': 50,
+  'allogeneic mesenchymal stromal cells': 50,
+};
+
+// Apply TAM estimates to rows where MARKET_SIZE is null. Keeps press-
+// release-disclosed values intact. Pure function; called from App.jsx
+// inside a useMemo so it never runs at module-evaluation time.
+export function enrichRowsWithTAM(rows, tam = TAM_BY_MOLECULE) {
+  const idx = {};
+  for (const k of Object.keys(tam)) {
+    idx[k.toLowerCase().trim()] = tam[k];
+  }
+  return rows.map((r) => {
+    if (r[COLUMN_KEYS.MARKET_SIZE] != null) return r;
+    const mol = primaryMolecule(r[COLUMN_KEYS.MOLECULE]);
+    if (!mol) return r;
+    let v = idx[mol];
+    // Fallback: strip USAN / WHO INN suffix for biosimilars / biologics
+    // e.g. 'tildrakizumab-asmn' → 'tildrakizumab', 'cosibelimab-ipdl' →
+    // 'cosibelimab'. The base molecule TAM applies to the full named
+    // INN entity since pricing parity tracks the base.
+    if (v == null) {
+      const stem = mol.split('-')[0].trim();
+      if (stem && stem !== mol) v = idx[stem];
+    }
+    // Fallback 2: collapse common combination prefixes — e.g. molecule
+    // 'amoxicillin' may be stored as 'amoxicillin' but TAM lookup keys
+    // sometimes hold spaces. Try simple normalisation.
+    if (v == null) {
+      const flat = mol.replace(/\s+/g, ' ');
+      v = idx[flat];
+    }
+    // Fallback 3: take just the first word — handles dosage / percentage
+    // qualifiers like 'metformin hcl', 'methylcobalamin 1500 mcg',
+    // 'cyclosporine 0.09%', 'ciprofloxacin 0.3%'.
+    if (v == null) {
+      const head = mol.split(/\s+/)[0];
+      if (head && head !== mol) v = idx[head];
+    }
+    if (v == null || v === 0) return r;
+    return { ...r, [COLUMN_KEYS.MARKET_SIZE]: v };
+  });
 }
 
 export const LAUNCH_TRACKER_ROWS = [

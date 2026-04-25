@@ -11,6 +11,7 @@ import {
   COLUMN_KEYS,
   mergeLaunchRows,
   enrichRowsWithPrices,
+  enrichRowsWithTAM,
 } from './data/mockData';
 
 const LAUNCHES_ENDPOINT = '/launches.json';
@@ -135,7 +136,12 @@ export default function App() {
   }, []);
 
   const allRows = useMemo(
-    () => enrichRowsWithPrices(mergeLaunchRows(LAUNCH_TRACKER_ROWS, scrapedRows)),
+    () =>
+      enrichRowsWithTAM(
+        enrichRowsWithPrices(
+          mergeLaunchRows(LAUNCH_TRACKER_ROWS, scrapedRows)
+        )
+      ),
     [scrapedRows]
   );
 
