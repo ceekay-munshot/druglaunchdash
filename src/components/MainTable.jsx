@@ -25,7 +25,7 @@ const WIDTH_HINT = {
   [COLUMN_KEYS.BUYER]: 'min-w-[160px]',
   [COLUMN_KEYS.DEAL_TYPE]: 'min-w-[170px]',
   [COLUMN_KEYS.MOLECULE]: 'min-w-[220px]',
-  [COLUMN_KEYS.PRICING]: 'min-w-[180px] text-right',
+  [COLUMN_KEYS.PRICING]: 'min-w-[260px] text-right',
   [COLUMN_KEYS.THERAPY]: 'min-w-[160px]',
   [COLUMN_KEYS.INDICATION]: 'min-w-[200px]',
   [COLUMN_KEYS.MARKET_SIZE]: 'min-w-[160px] text-right',
@@ -54,6 +54,17 @@ export default function MainTable({ rows, selectedCompany }) {
     }
   };
 
+  // Extract a numeric value from a price field. Prices are strings like
+  // "₹190 / strip of 10" or numbers like 190 — pull the first numeric run
+  // (with thousand-separator handling) so the Pricing column still sorts
+  // ascending/descending in a sensible order.
+  const priceNumeric = (v) => {
+    if (typeof v === 'number') return v;
+    if (!v) return 0;
+    const m = String(v).match(/[\d,]+(?:\.\d+)?/);
+    return m ? Number(m[0].replace(/,/g, '')) : 0;
+  };
+
   const visibleRows = useMemo(() => {
     let r = rows;
     const q = tableQuery.trim().toLowerCase();
@@ -68,6 +79,9 @@ export default function MainTable({ rows, selectedCompany }) {
       const bv = b[sortKey];
       if (sortKey === COLUMN_KEYS.DATE) {
         return (new Date(av).getTime() - new Date(bv).getTime()) * dir;
+      }
+      if (sortKey === COLUMN_KEYS.PRICING) {
+        return (priceNumeric(av) - priceNumeric(bv)) * dir;
       }
       if (NUMERIC_COLS.has(sortKey)) return ((Number(av) || 0) - (Number(bv) || 0)) * dir;
       return String(av ?? '').localeCompare(String(bv ?? '')) * dir;
