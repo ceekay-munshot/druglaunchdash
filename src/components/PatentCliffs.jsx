@@ -187,7 +187,7 @@ export default function PatentCliffs({ allRows = [], companies = [] }) {
           </colgroup>
           <thead>
             <tr className="text-[10px] uppercase tracking-wider text-ink-500 font-semibold">
-              <th className="text-left py-2 pl-4 pr-3 border-b border-ink-100">Molecule</th>
+              <th className="text-center py-2 pl-4 pr-3 border-b border-ink-100">Molecule</th>
               <th className="text-center py-2 px-3 border-b border-ink-100">Therapy</th>
               <th className="text-center py-2 px-3 border-b border-ink-100">India expiry</th>
               <th className="text-center py-2 px-3 border-b border-ink-100">India TAM</th>
@@ -207,7 +207,7 @@ export default function PatentCliffs({ allRows = [], companies = [] }) {
                   className={`group cursor-pointer hover:bg-ink-50/80 transition-colors ${tint}`}
                   onClick={() => setOpenCliff(p)}
                 >
-                  <td className="py-2.5 pl-4 pr-3 border-b border-ink-100/70 align-middle">
+                  <td className="py-2.5 pl-4 pr-3 border-b border-ink-100/70 align-middle text-center">
                     <div className="text-xs font-semibold text-ink-900 truncate">{p.molecule}</div>
                     {p.brand && (
                       <div className="text-[10px] text-ink-500 mt-0.5 truncate">{p.brand}</div>
