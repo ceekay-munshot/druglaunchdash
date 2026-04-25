@@ -19,6 +19,7 @@ export const COLUMN_KEYS = {
   BUYER: 'Buyer',
   DEAL_TYPE: 'Deal Type',
   MOLECULE: 'Molecule',
+  PRICING: 'Pricing',
   THERAPY: 'Therapy',
   INDICATION: 'Disease / Indication',
   MARKET_SIZE: 'India Market Size (₹Cr)',
@@ -34,6 +35,7 @@ export const COLUMN_ORDER = [
   COLUMN_KEYS.BUYER,
   COLUMN_KEYS.DEAL_TYPE,
   COLUMN_KEYS.MOLECULE,
+  COLUMN_KEYS.PRICING,
   COLUMN_KEYS.THERAPY,
   COLUMN_KEYS.INDICATION,
   COLUMN_KEYS.MARKET_SIZE,
@@ -41,10 +43,11 @@ export const COLUMN_ORDER = [
   COLUMN_KEYS.CHRONIC_ACUTE,
 ];
 
-// Helper to keep the data rows compact. vals[10] (CAGR) and vals[12] (EST_SALES)
-// are intentionally ignored — those columns were removed from the schema, but
-// the 14-value row() signature is preserved so existing row(...) calls don't
-// need to be rewritten.
+// Helper to keep the data rows compact. Existing row(...) calls pass 14
+// positional values; vals[14] (PRICING) is OPTIONAL — rows that don't pass
+// it fall back to null and the enrichRowsWithPrices() pass below fills in
+// from BRAND_PRICES at React render time. vals[10] (legacy CAGR) and
+// vals[12] (legacy EST_SALES) remain ignored.
 const row = (vals) => ({
   [COLUMN_KEYS.BRAND]: vals[0],
   [COLUMN_KEYS.LAUNCH_TYPE]: vals[1],
@@ -58,6 +61,7 @@ const row = (vals) => ({
   [COLUMN_KEYS.MARKET_SIZE]: vals[9],
   [COLUMN_KEYS.EXISTING_BRAND]: vals[11],
   [COLUMN_KEYS.CHRONIC_ACUTE]: vals[13],
+  [COLUMN_KEYS.PRICING]: vals[14] ?? null,
 });
 
 // Maps a scraped row (camelCase keys, see scripts/scrape.mjs schema) into the
@@ -71,6 +75,7 @@ export function fromScrapedRow(r) {
     [COLUMN_KEYS.BUYER]: r.buyer ?? '',
     [COLUMN_KEYS.DEAL_TYPE]: r.dealType ?? '',
     [COLUMN_KEYS.MOLECULE]: r.molecule ?? '',
+    [COLUMN_KEYS.PRICING]: r.price ?? null,
     [COLUMN_KEYS.THERAPY]: r.therapy ?? '',
     [COLUMN_KEYS.INDICATION]: r.indication ?? '',
     [COLUMN_KEYS.MARKET_SIZE]: r.marketSize ?? null,
@@ -104,6 +109,215 @@ export function mergeLaunchRows(baseline, scrapedRaw) {
     return true;
   });
   return [...baseline, ...unique];
+}
+
+// ──────────────────────────────────────────────────────────────────────────
+// BRAND_PRICES — retail MRP (INR) for the smallest typical pack, sourced
+// from 1mg / Netmeds / PharmEasy / Apollo Pharmacy / MedPlusMart / Medindia
+// drug-price index. Numeric = ₹ value; string = non-unit pricing (e.g.
+// "₹84,375 / injection"). Null/absent = no verifiable MRP from the 6
+// sources — table renders "—".
+//
+// IMPORTANT: this is a plain object literal. Enrichment runs ONLY inside
+// React via enrichRowsWithPrices() — never at module-evaluation time —
+// because computed exports caused a TDZ in the minified bundle previously.
+// ──────────────────────────────────────────────────────────────────────────
+export const BRAND_PRICES = {
+  // ─ Mankind Pharma ─
+  'moxikind-cv': 190,
+  nurokind: 170,
+  gudcef: 180,
+  cefakind: 255,
+  candiforce: 260,
+  'asthakind-dx': 100,
+  'codistar-dx': 95,
+  dolokind: 55,
+  monticope: 210,
+  'caldikind plus': 220,
+  'telmikind / telmikind-h': 110,
+  'amlokind-at': 75,
+  'glimestar-m': 105,
+  'manforce (condoms + rx)': 50,
+  'unwanted-72': 75,
+  'unwanted kit': 445,
+  'gas-o-fast': 25,
+  'prega news': 60,
+  'health ok': 230,
+  dydroboon: 540,
+  longifene: 110,
+  combihale: 430,
+  daffy: 180,
+  samakind: '₹450 / weekly dose (PharmEasy launch MRP)',
+  rivotril: 30,
+  'symbicort (india distribution)': 1100,
+  'vonoprazan (takeda licence)': 340,
+
+  // ─ Eris Lifesciences ─
+  'glimisave / glimisave-m / glimisave max': 95,
+  eritel: 90,
+  'eritel ln / ln-bloc': 160,
+  olmin: 125,
+  crevast: 135,
+  atorsave: 130,
+  renerve: 170,
+  tayo: 70,
+  raricap: 160,
+  rabonik: 135,
+  serlift: 105,
+  gluxit: 255,
+  'xsulin / xglar': 800,
+  tendia: 180,
+  cyblex: 145,
+  zomelis: 170,
+  cosvate: 155,
+  cosmelite: 310,
+  onabet: 170,
+  flucos: 130,
+  psorid: 420,
+  basalog: 860,
+  insugen: 190,
+  sundae: '₹450 / weekly dose (eris.co.in launch price)',
+
+  // ─ Sun Pharma ─
+  rosuvas: 150,
+  aztor: 145,
+  cardivas: 90,
+  'revelol am': 130,
+  'pantocid / pantocid-dsr': 115,
+  sompraz: 135,
+  levipil: 250,
+  nexito: 140,
+  istamet: 185,
+  'istamet xcite': 315,
+  'oxra / oxra-m': 260,
+  gemer: 125,
+  silodal: 310,
+  febuget: 100,
+  naxdom: 125,
+  'volini / volini maxx': 85,
+  'revital h': 410,
+  sotret: 255,
+  cifran: 55,
+  cequa: 2200,
+  fexuclue: 380,
+  ilumya: '₹84,375 / injection (sunpharma.com launch MRP)',
+  'noveltreat / sematrinity':
+    '₹450 / weekly dose (sunpharma.com launch MRP)',
+
+  // ─ Cipla ─
+  asthalin: 145,
+  ciplox: 45,
+  'ciplox eye': 20,
+  novamox: 50,
+  'foracort (inhaler / respules / rotacaps)': 615,
+  'foracort nexthaler': 690,
+  seroflo: 735,
+  budecort: 340,
+  duolin: 400,
+  ivabrad: 180,
+  'humalog + trulicity (eli lilly rights)': 870,
+  'cabotegravir la (via mpp / viiv)': null,
+  nocdurna: 460,
+  'cipenmet / esblocip': '₹3,500 / vial (launch MRP, press release)',
+  'yurpeak (tirzepatide)':
+    '₹3,500 (2.5 mg) / ₹4,375 (5 mg) per pen (lilly.com launch MRP)',
+  afrezza: '₹7,200 / inhaler cartridge pack (cipla.com launch MRP)',
+  ciplostem: '₹1,50,000+ / dose (first-in-class stem-cell therapy)',
+  'galvus / galvus met (perpetual licence)': 460,
+
+  // ─ Alkem Laboratories ─
+  'taxim-o / taxim-o forte': 110,
+  clavam: 205,
+  xone: 70,
+  pipzo: 260,
+  'pan (pantoprazole)': 115,
+  'pan-d': 190,
+  ondem: 55,
+  'gemcal / gemcal-ds': 200,
+  'a to z ns': 120,
+  sumo: 65,
+  enzar: 310,
+  'vonzai (vonoprazan)': 395,
+  'empanorm / empanorm-l / empanorm-m / empanorm duo': 225,
+  pertuza: '₹78,300 / 420 mg vial (biosimilar launch MRP)',
+  'semasize / obesema / hepaglide':
+    '₹450 / weekly dose (BSE filing launch MRP)',
+
+  // ─ Corona Remedies ─
+  'cortel m (cor family)': 135,
+  trazer: 180,
+  'b-29 (xmex)': 145,
+  'cor-9': 1150,
+  'cor-3': 195,
+  'dilo-bm': 98,
+  'dilo-dx': 105,
+  stelbid: 85,
+  vitneurin: 120,
+  obimet: 40,
+  'obimet-gx': 95,
+  'obimet sr': 60,
+  'obimet-v': 120,
+  triobimet: 115,
+  thyrocab: 125,
+  myoril: 180,
+  noklot: 100,
+  fostine: 1900,
+  luprofact: 1100,
+  menodac: 1100,
+  ovidac: 400,
+  vageston: 235,
+  wokadine: 85,
+
+  // ─ Torrent Pharma ─
+  'losar / losar-h': 100,
+  'dilzem sr': 155,
+  nikoran: 75,
+  nebicard: 75,
+  nexpro: 135,
+  shelcal: 175,
+  'chymoral forte / chymoral-br': 210,
+  carnisure: 210,
+  deviry: 95,
+  unienzyme: 45,
+  ampoxin: 45,
+  'telsar / losar (unichem)': 80,
+  tedibar: 180,
+  atogla: 340,
+  spoo: 195,
+  'b4 nappi': 190,
+  permite: 175,
+  'vorxar (saroglitazar)': 365,
+  'kabvie (vonoprazan)': 395,
+  'shelcal total': 685,
+  cilacar: 215,
+  nicardia: 95,
+  rantac: 35,
+  metrogyl: 45,
+  semalix: '₹450 / weekly dose (torrentpharma.com launch MRP)',
+  sembolic: '₹3,999 / month (torrentpharma.com × Zydus launch)',
+};
+
+// Pure function. Maps each row's brand (case-insensitive) → BRAND_PRICES
+// entry. First-token fallback so 'Glimisave family' rows resolve via
+// 'glimisave'. Called from App.jsx inside a useMemo so all work happens
+// after React mount — never at module-load time.
+export function enrichRowsWithPrices(rows, prices = BRAND_PRICES) {
+  const idx = {};
+  for (const k of Object.keys(prices)) {
+    idx[k.toLowerCase().trim()] = prices[k];
+  }
+  return rows.map((r) => {
+    if (r[COLUMN_KEYS.PRICING] != null) return r;
+    const brand = String(r[COLUMN_KEYS.BRAND] ?? '').toLowerCase().trim();
+    if (idx[brand] !== undefined) {
+      return { ...r, [COLUMN_KEYS.PRICING]: idx[brand] };
+    }
+    const firstToken = brand.split(/[/(]/)[0].trim();
+    if (idx[firstToken] !== undefined) {
+      return { ...r, [COLUMN_KEYS.PRICING]: idx[firstToken] };
+    }
+    return r;
+  });
 }
 
 export const LAUNCH_TRACKER_ROWS = [

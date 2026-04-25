@@ -15,7 +15,7 @@ const CHRONIC_STYLES = {
   Acute: 'bg-amber-50 text-amber-700 border-amber-200',
 };
 
-const NUMERIC_COLS = new Set([COLUMN_KEYS.MARKET_SIZE]);
+const NUMERIC_COLS = new Set([COLUMN_KEYS.MARKET_SIZE, COLUMN_KEYS.PRICING]);
 
 const WIDTH_HINT = {
   [COLUMN_KEYS.BRAND]: 'min-w-[160px]',
@@ -25,6 +25,7 @@ const WIDTH_HINT = {
   [COLUMN_KEYS.BUYER]: 'min-w-[160px]',
   [COLUMN_KEYS.DEAL_TYPE]: 'min-w-[170px]',
   [COLUMN_KEYS.MOLECULE]: 'min-w-[220px]',
+  [COLUMN_KEYS.PRICING]: 'min-w-[180px] text-right',
   [COLUMN_KEYS.THERAPY]: 'min-w-[160px]',
   [COLUMN_KEYS.INDICATION]: 'min-w-[200px]',
   [COLUMN_KEYS.MARKET_SIZE]: 'min-w-[160px] text-right',
@@ -100,6 +101,23 @@ export default function MainTable({ rows, selectedCompany }) {
     }
     if (col === COLUMN_KEYS.MARKET_SIZE) {
       return <span className="tabular-nums font-medium text-ink-900">{fmtINRPlain(v)}</span>;
+    }
+    if (col === COLUMN_KEYS.PRICING) {
+      if (v === null || v === undefined || v === '') {
+        return <span className="text-ink-300">—</span>;
+      }
+      // Numeric → ₹ formatted with Indian grouping; string → render as-is
+      // (used for non-unit pricing like "₹84,375 / injection").
+      if (typeof v === 'number') {
+        return (
+          <span className="tabular-nums font-medium text-ink-900">
+            ₹{v.toLocaleString('en-IN')}
+          </span>
+        );
+      }
+      return (
+        <span className="tabular-nums font-medium text-ink-900 whitespace-nowrap">{v}</span>
+      );
     }
     if (col === COLUMN_KEYS.DATE) {
       return <span className="tabular-nums text-ink-700">{fmtDate(v)}</span>;
