@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-25T09:48:12.186Z",
-  "rowCount": 22,
+  "generatedAt": "2026-04-26T04:05:41.909Z",
+  "rowCount": 26,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -316,6 +316,66 @@
       "existingBrand": "—",
       "chronicAcute": "—",
       "price": "—",
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
+      "buyer": "Corona Remedies"
+    },
+    {
+      "brand": "Semaglutide",
+      "launchType": "Own Launched",
+      "date": "2026-01-23",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "semaglutide",
+      "therapy": "Anti-Diabetic",
+      "indication": "chronic weight management",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/01/PR-SEMAGLUTIDE-DCGI-APPROVAL.pdf",
+      "buyer": "Sun Pharma"
+    },
+    {
+      "brand": "Obimet",
+      "launchType": "Acquired",
+      "date": "2022-06-23",
+      "seller": "Abbott India",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
+      "buyer": "Corona Remedies"
+    },
+    {
+      "brand": "Thyrocab",
+      "launchType": "Acquired",
+      "date": "2022-06-23",
+      "seller": "Abbott India",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
+      "buyer": "Corona Remedies"
+    },
+    {
+      "brand": "GSK's Brands",
+      "launchType": "Acquired",
+      "date": "—",
+      "seller": "GSK",
+      "dealType": "Brand Portfolio Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies"
     }
