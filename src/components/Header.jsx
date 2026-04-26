@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Pill, Search, Building2, Sparkles, RefreshCw, Archive, Plus, X } from 'lucide-react';
+import { Pill, Search, Building2, Sparkles, RefreshCw, Archive, Plus, X, Clock, CheckCircle2 } from 'lucide-react';
 
 export default function Header({
   searchQuery,
@@ -22,13 +22,24 @@ export default function Header({
   // Refresh button spins while the parent's fetch is in-flight; guarantees a
   // minimum 400ms animation so quick cache-hits still give visual feedback.
   const [minSpin, setMinSpin] = useState(false);
+  const [toastVisible, setToastVisible] = useState(false);
+  const toastTimerRef = useRef(null);
   const spinning = refreshing || minSpin;
   const handleRefresh = () => {
     if (spinning) return;
     setMinSpin(true);
     if (onRefresh) onRefresh();
     setTimeout(() => setMinSpin(false), 400);
+    // Surface a toast explaining the refresh cadence + last-refresh time so
+    // the client doesn't expect a live re-scrape on every click.
+    setToastVisible(true);
+    if (toastTimerRef.current) clearTimeout(toastTimerRef.current);
+    toastTimerRef.current = setTimeout(() => setToastVisible(false), 5000);
   };
+
+  useEffect(() => () => {
+    if (toastTimerRef.current) clearTimeout(toastTimerRef.current);
+  }, []);
 
   // Close the archive popover on outside click / Escape.
   useEffect(() => {
@@ -219,6 +230,41 @@ export default function Header({
           </span>
         </div>
       </div>
+
+      {/* Refresh toast — clarifies that Refresh pulls the latest cached
+          scrape, and the underlying scrape itself runs daily at 06:00 IST.
+          Auto-dismisses after 5s; clicking the X closes it manually. */}
+      {toastVisible && (
+        <div
+          className="fixed top-4 right-4 z-50 w-80 max-w-[calc(100vw-2rem)] bg-white border border-ink-100 rounded-xl shadow-2xl p-3.5 animate-slide-in-right"
+          role="status"
+          aria-live="polite"
+        >
+          <div className="flex items-start gap-3">
+            <div className="w-8 h-8 rounded-lg bg-pharma-50 flex items-center justify-center shrink-0">
+              <CheckCircle2 className="w-4 h-4 text-pharma-600" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <p className="text-sm font-semibold text-ink-900">Latest data loaded</p>
+              <p className="text-[11px] text-ink-600 mt-1 leading-snug">
+                Auto-scrape runs daily at <span className="font-semibold text-ink-800">6:00 AM IST</span> —
+                Refresh pulls the most recent scrape from cache.
+              </p>
+              <div className="flex items-center gap-1.5 mt-2 text-[11px] text-ink-500">
+                <Clock className="w-3 h-3" />
+                <span>Last refresh: <span className="font-semibold text-ink-700">{lastUpdated}</span></span>
+              </div>
+            </div>
+            <button
+              onClick={() => setToastVisible(false)}
+              aria-label="Dismiss notification"
+              className="w-6 h-6 rounded-md hover:bg-ink-100/60 flex items-center justify-center text-ink-500 shrink-0 transition"
+            >
+              <X className="w-3.5 h-3.5" />
+            </button>
+          </div>
+        </div>
+      )}
     </header>
   );
 }
