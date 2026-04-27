@@ -1,0 +1,6 @@
+# Daily-scraped data file — must always reflect the latest commit.
+# Cloudflare's edge cache otherwise ignores the ?t=... query string the
+# frontend appends and serves yesterday's JSON, making "Last refresh" lag
+# the actual scrape by up to a day.
+/launches.json
+  Cache-Control: no-store
