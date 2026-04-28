@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-27T04:10:56.908Z",
-  "rowCount": 36,
+  "generatedAt": "2026-04-28T04:24:58.433Z",
+  "rowCount": 41,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -528,6 +528,81 @@
       "price": "Rs 850 / pack",
       "sourceUrl": "https://www.pharmaceuticalcompany.com/press-release/healthplus",
       "buyer": "Torrent Pharma"
+    },
+    {
+      "brand": "[Brand Name]",
+      "launchType": "Own Launched",
+      "date": "2023-09-22",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "[Molecule Name]",
+      "therapy": "[Therapy Area]",
+      "indication": "[Indication]",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.mankindpharma.com/products/new-gst-prices/",
+      "buyer": "Mankind Pharma"
+    },
+    {
+      "brand": "Noveltreat",
+      "launchType": "Own Launched",
+      "date": "2026-03-21",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "semaglutide",
+      "therapy": "—",
+      "indication": "Psoriatic Arthritis",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/PR-for-Semaglutide.pdf",
+      "buyer": "Sun Pharma"
+    },
+    {
+      "brand": "Sematrinity",
+      "launchType": "Own Launched",
+      "date": "2026-03-21",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "semaglutide",
+      "therapy": "—",
+      "indication": "Psoriatic Arthritis",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/PR-for-Semaglutide.pdf",
+      "buyer": "Sun Pharma"
+    },
+    {
+      "brand": "Molxvir",
+      "launchType": "Own Launched",
+      "date": "2021-12-28",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Molnupiravir",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/12/Press-Release-Sun-Pharma-receives-DCGI-approval-for-Molxvir-Molnupiravir-in-India.pdf",
+      "buyer": "Sun Pharma"
+    },
+    {
+      "brand": "Chericof® 12",
+      "launchType": "Own Launched",
+      "date": "2021-09-28",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/09/Press-Release-Sun-Pharma-launches-Chericof-12.pdf",
+      "buyer": "Sun Pharma"
     }
   ]
 }
