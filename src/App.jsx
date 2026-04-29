@@ -15,6 +15,7 @@ import {
   enrichRowsWithPrices,
   enrichRowsWithTAM,
   enrichRowsWithPreExistingBrand,
+  isAcquisitionParent,
 } from './data/mockData';
 
 const LAUNCHES_ENDPOINT = '/launches.json';
@@ -199,8 +200,8 @@ export default function App() {
         archivedCompanies={archivedCompanies}
         onUnarchive={unarchiveCompany}
         onArchive={archiveCompany}
-        totalRows={allRows.length}
-        filteredRows={filteredRows.length}
+        totalRows={allRows.filter((r) => !isAcquisitionParent(r)).length}
+        filteredRows={filteredRows.filter((r) => !isAcquisitionParent(r)).length}
         lastUpdated={lastUpdated}
         onRefresh={handleRefresh}
         refreshing={isRefreshing}
