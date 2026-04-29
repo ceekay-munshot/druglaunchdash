@@ -12,6 +12,8 @@ import {
   Layers,
   ArrowRight,
   Scale,
+  Globe2,
+  ShieldCheck,
 } from 'lucide-react';
 import {
   COLUMN_KEYS,
@@ -19,6 +21,8 @@ import {
   priceNumeric,
   dosageForm,
   dosageFormLabel,
+  acquisitionDealKey,
+  isAcquisitionParent,
 } from '../data/mockData';
 import { fmtDate, fmtINRPlain } from '../utils/format';
 
@@ -142,6 +146,21 @@ export default function RowDetailDrawer({ row, allRows = [], onClose }) {
   const launchType = row[COLUMN_KEYS.LAUNCH_TYPE];
   const chronic = row[COLUMN_KEYS.CHRONIC_ACUTE];
 
+  // For child brands inside a multi-brand deal we only put DEAL_VALUE on the
+  // parent row to keep the table tidy. The drawer should still show the
+  // deal-level consideration for context — look up the parent of this deal
+  // and inherit its value when the row itself has none.
+  let dealValue = row[COLUMN_KEYS.DEAL_VALUE];
+  if (dealValue == null && launchType === 'Acquired' && !isAcquisitionParent(row)) {
+    const k = acquisitionDealKey(row);
+    const parent = allRows.find(
+      (r) => isAcquisitionParent(r) && acquisitionDealKey(r) === k
+    );
+    if (parent && parent[COLUMN_KEYS.DEAL_VALUE] != null) {
+      dealValue = parent[COLUMN_KEYS.DEAL_VALUE];
+    }
+  }
+
   return (
     <div
       className="fixed inset-0 z-40"
@@ -215,6 +234,18 @@ export default function RowDetailDrawer({ row, allRows = [], onClose }) {
           <Section title="Deal">
             <Field icon={Tag} label="Deal Type" value={row[COLUMN_KEYS.DEAL_TYPE]} />
             <Field
+              icon={Globe2}
+              label="Geographic Rights"
+              value={row[COLUMN_KEYS.GEO_RIGHTS]}
+              dim={!row[COLUMN_KEYS.GEO_RIGHTS]}
+            />
+            <Field
+              icon={ShieldCheck}
+              label="Regulatory Status"
+              value={row[COLUMN_KEYS.REG_STATUS]}
+              dim={!row[COLUMN_KEYS.REG_STATUS]}
+            />
+            <Field
               icon={IndianRupee}
               label="India Market Size"
               value={fmtINRPlain(row[COLUMN_KEYS.MARKET_SIZE])}
@@ -223,6 +254,17 @@ export default function RowDetailDrawer({ row, allRows = [], onClose }) {
                 row[COLUMN_KEYS.MARKET_SIZE] === null ||
                 row[COLUMN_KEYS.MARKET_SIZE] === undefined
               }
+            />
+            <Field
+              icon={IndianRupee}
+              label="Deal Consideration"
+              value={
+                dealValue != null
+                  ? `₹${Number(dealValue).toLocaleString('en-IN')} Cr`
+                  : null
+              }
+              mono
+              dim={dealValue == null}
             />
             <Field icon={Building2} label="Buyer" value={row[COLUMN_KEYS.BUYER]} />
             <Field icon={Briefcase} label="Seller" value={row[COLUMN_KEYS.SELLER]} />

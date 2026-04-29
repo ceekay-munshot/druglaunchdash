@@ -18,11 +18,14 @@ export const COLUMN_KEYS = {
   SELLER: 'Seller',
   BUYER: 'Buyer',
   DEAL_TYPE: 'Deal Type',
+  GEO_RIGHTS: 'Geographic Rights',
+  REG_STATUS: 'Regulatory Status',
   MOLECULE: 'Molecule',
   PRICING: 'Pricing',
   THERAPY: 'Therapy',
   INDICATION: 'Disease / Indication',
   MARKET_SIZE: 'India TAM (₹Cr)',
+  DEAL_VALUE: 'Deal Consideration (₹Cr)',
   PRE_EXISTING_BRAND: "Buyer's Pre-existing Brand",
   COMPETITOR_BRANDS: 'Competitor Brands (Same Molecule)',
   CHRONIC_ACUTE: 'Chronic / Acute',
@@ -35,11 +38,14 @@ export const COLUMN_ORDER = [
   COLUMN_KEYS.SELLER,
   COLUMN_KEYS.BUYER,
   COLUMN_KEYS.DEAL_TYPE,
+  COLUMN_KEYS.GEO_RIGHTS,
+  COLUMN_KEYS.REG_STATUS,
   COLUMN_KEYS.MOLECULE,
   COLUMN_KEYS.PRICING,
   COLUMN_KEYS.THERAPY,
   COLUMN_KEYS.INDICATION,
   COLUMN_KEYS.MARKET_SIZE,
+  COLUMN_KEYS.DEAL_VALUE,
   COLUMN_KEYS.PRE_EXISTING_BRAND,
   COLUMN_KEYS.COMPETITOR_BRANDS,
   COLUMN_KEYS.CHRONIC_ACUTE,
@@ -76,11 +82,14 @@ export function fromScrapedRow(r) {
     [COLUMN_KEYS.SELLER]: r.seller || '—',
     [COLUMN_KEYS.BUYER]: r.buyer ?? '',
     [COLUMN_KEYS.DEAL_TYPE]: r.dealType ?? '',
+    [COLUMN_KEYS.GEO_RIGHTS]: r.geoRights ?? null,
+    [COLUMN_KEYS.REG_STATUS]: r.regStatus ?? null,
     [COLUMN_KEYS.MOLECULE]: r.molecule ?? '',
     [COLUMN_KEYS.PRICING]: r.price ?? null,
     [COLUMN_KEYS.THERAPY]: r.therapy ?? '',
     [COLUMN_KEYS.INDICATION]: r.indication ?? '',
     [COLUMN_KEYS.MARKET_SIZE]: r.marketSize ?? null,
+    [COLUMN_KEYS.DEAL_VALUE]: r.dealValue ?? null,
     [COLUMN_KEYS.COMPETITOR_BRANDS]: r.existingBrand || '—',
     [COLUMN_KEYS.CHRONIC_ACUTE]: r.chronicAcute ?? '',
   };
@@ -798,6 +807,218 @@ export function enrichRowsWithPreExistingBrand(rows) {
       }
     }
     return { ...r, [COLUMN_KEYS.PRE_EXISTING_BRAND]: preExisting };
+  });
+}
+
+// ──────────────────────────────────────────────────────────────────────────
+// DEAL_VALUES — disclosed cash/equity consideration paid for each
+// acquisition or perpetual licensing transaction, in INR Cr. Sourced from
+// the BSE / NSE filings, press releases and Business Standard / BioSpectrum
+// coverage cited inline in the dataset comments.
+//
+// Keyed by `${Buyer}|${Date}` (the same dealKey that powers parent/child
+// rollups), so every row inside a multi-brand portfolio deal inherits the
+// same deal-level consideration. Standalone single-brand acquisitions can
+// also be keyed here. Undisclosed deals are simply omitted (left null →
+// rendered as "—" in the table).
+// ──────────────────────────────────────────────────────────────────────────
+export const DEAL_VALUES = {
+  // ── Sun Pharma ──
+  'Sun Pharma|2015-03-25': 24400,           // Ranbaxy — $4B all-stock @ ~Rs 24,400 Cr (Mar-2015)
+  'Sun Pharma|2023-03-06': 4800,            // Concert Pharmaceuticals — $576M @ ~Rs 4,800 Cr
+  'Sun Pharma|2024-06-24': 2900,            // Taro 21.5% buyout — $348M @ ~Rs 2,900 Cr
+  'Sun Pharma|2025-05-30': 3000,            // Checkpoint Therapeutics — $355M @ ~Rs 3,000 Cr
+
+  // ── Torrent Pharma ──
+  'Torrent Pharma|2013-12-13': 2004,        // Elder Pharma India business
+  'Torrent Pharma|2017-11-03': 3600,        // Unichem Labs India + Nepal
+  'Torrent Pharma|2022-09-27': 2000,        // Curatio Healthcare
+  'Torrent Pharma|2026-01-21': 25689,       // JB Chemicals (KKR 46.39% controlling stake)
+
+  // ── Mankind Pharma ──
+  'Mankind Pharma|2022-03-01': 1872,        // Panacea Biotec domestic formulations
+  'Mankind Pharma|2024-10-23': 13630,       // Bharat Serums & Vaccines (BSV) — Advent
+
+  // ── Eris Lifesciences ──
+  'Eris Lifesciences|2022-05-04': 650,      // Oaknet Healthcare
+  'Eris Lifesciences|2023-11-08': 366,      // Biocon BFI Nephrology + Dermatology
+  'Eris Lifesciences|2024-02-15': 637.5,    // Swiss Parenterals 51% stake
+  'Eris Lifesciences|2024-03-14': 1242,     // Biocon BFI Metabolics + Oncology + Critical Care
+  'Eris Lifesciences|2025-11-25': 423.3,    // Swiss Parenterals balance 30% (full consolidation)
+
+  // ── Alkem ──
+  'Alkem|2025-04-23': 140,                  // Adroit Biomed
+  'Alkem|2025-10-01': 533,                  // Alkem Wellness internal slump sale (Rs 532.5 Cr)
+
+  // ── Aurobindo ──
+  'Aurobindo|2026-01-01': 325,              // Khandelwal Labs non-oncology
+
+  // ── Corona Remedies ──
+  'Corona Remedies|2023-06-28': 234,        // Sanofi India — Myoril
+
+  // ── Cipla ──
+  'Cipla|2026-01-01': 1107,                 // Novartis Galvus / Galvus Met perpetual licence
+};
+
+// Fills DEAL_VALUE for parent rows and standalone-acquired rows whose
+// `${Buyer}|${Date}` is in the DEAL_VALUES map. Children of a multi-brand
+// deal are intentionally LEFT NULL — repeating ₹13,630 Cr on every BSV
+// brand row is visually noisy and reads as if each brand cost that much
+// individually. Users see the consideration on the parent row (and in the
+// row-detail drawer of any child).
+export function enrichRowsWithDealValue(rows, dealValues = DEAL_VALUES) {
+  const parents = parentDealKeys(rows);
+  return rows.map((r) => {
+    if (r[COLUMN_KEYS.DEAL_VALUE] != null) return r;
+    const key = acquisitionDealKey(r);
+    const v = dealValues[key];
+    if (v == null) return r;
+    // If this dealKey has a parent row, only fill on the parent itself.
+    if (parents.has(key) && !isAcquisitionParent(r)) return r;
+    return { ...r, [COLUMN_KEYS.DEAL_VALUE]: v };
+  });
+}
+
+// ──────────────────────────────────────────────────────────────────────────
+// GEOGRAPHIC_RIGHTS — territorial scope of the rights actually transferred
+// in the deal. Investors care because a buyer may only have India rights
+// while the seller retains the rest of the world (typical for in-licensing
+// deals like "Vonoprazan (Takeda licence)") or vice versa (Sun's Concert
+// acquisition gave it global rights to Leqselvi).
+//
+// Two layers:
+//   1. GEO_RIGHTS_DEAL_OVERRIDES — by `${Buyer}|${Date}` for known multi-row
+//      deals where every row in the deal shares the same scope.
+//   2. GEO_RIGHTS_BRAND_OVERRIDES — by lower-cased Brand for one-off rows.
+// Anything not overridden falls back to the deal-type heuristic in
+// deriveGeoRights() below.
+// ──────────────────────────────────────────────────────────────────────────
+export const GEO_RIGHTS_DEAL_OVERRIDES = {
+  // Sun's three global-asset acquisitions — they got worldwide rights.
+  'Sun Pharma|2023-03-06': 'Global',        // Concert / Leqselvi
+  'Sun Pharma|2024-06-24': 'Global',        // Taro full buyout
+  'Sun Pharma|2025-05-30': 'Global',        // Checkpoint / UNLOXCYT
+  'Sun Pharma|2015-03-25': 'India + Global (629 ANDAs)', // Ranbaxy
+  // Eris Swiss Parenterals — sterile injectables across 80+ emerging markets.
+  'Eris Lifesciences|2024-02-15': 'India + Emerging Markets',
+  'Eris Lifesciences|2024-03-14': 'India',
+  'Eris Lifesciences|2025-11-25': 'India + Emerging Markets',
+};
+
+export const GEO_RIGHTS_BRAND_OVERRIDES = {
+  // Sun's US-led specialty in-licensings.
+  'winlevi': 'US + Canada (expansion)',
+  'ilumya': 'Global',
+  'cequa': 'Global',
+  'leqselvi': 'Global',
+  'unloxcyt': 'Global',
+  'odomzo': 'Global',
+  'absorica ld': 'Global',
+  // Voluntary licences for HIV — typically LMIC scope.
+  'cabotegravir la (via mpp / viiv)': 'LMIC (90+ countries)',
+  // Harvard tech licence — research-stage, global rights to develop.
+  'harvard otd vascular-disease platform': 'Global',
+};
+
+// Pulls a parenthetical scope from a deal-type label like
+// "In-license (India)", "In-license (US + Canada + expansion)",
+// "Co-marketing", etc. Returns null when no parenthetical is found.
+function geoFromDealType(dealType) {
+  if (!dealType) return null;
+  const m = String(dealType).match(/\(([^)]+)\)/);
+  if (!m) return null;
+  return m[1].trim();
+}
+
+function deriveGeoRights(row) {
+  const launchType = row[COLUMN_KEYS.LAUNCH_TYPE];
+  const dealType = row[COLUMN_KEYS.DEAL_TYPE];
+  // Most India pharma deals are India-rights by default.
+  if (launchType === 'Own Launched') return 'India';
+  // For acquired and in-licensed rows, prefer an explicit
+  // parenthetical scope on the deal-type column when present.
+  const fromDealType = geoFromDealType(dealType);
+  if (fromDealType) return fromDealType;
+  if (launchType === 'Acquired') return 'India';
+  if (launchType === 'In-licensed') return 'India';
+  return null;
+}
+
+export function enrichRowsWithGeoRights(
+  rows,
+  dealOverrides = GEO_RIGHTS_DEAL_OVERRIDES,
+  brandOverrides = GEO_RIGHTS_BRAND_OVERRIDES
+) {
+  return rows.map((r) => {
+    if (r[COLUMN_KEYS.GEO_RIGHTS]) return r;
+    const dealKey = acquisitionDealKey(r);
+    if (dealOverrides[dealKey]) {
+      return { ...r, [COLUMN_KEYS.GEO_RIGHTS]: dealOverrides[dealKey] };
+    }
+    const brand = String(r[COLUMN_KEYS.BRAND] ?? '').toLowerCase().trim();
+    if (brandOverrides[brand]) {
+      return { ...r, [COLUMN_KEYS.GEO_RIGHTS]: brandOverrides[brand] };
+    }
+    return { ...r, [COLUMN_KEYS.GEO_RIGHTS]: deriveGeoRights(r) };
+  });
+}
+
+// ──────────────────────────────────────────────────────────────────────────
+// REGULATORY_STATUS — whether the molecule is actually launchable in India.
+// Marketed brands acquired or own-launched are presumed "DCGI Approved";
+// pipeline / pre-launch in-licensings get an explicit pipeline label so an
+// investor can distinguish "in market today" from "approval pending / in
+// development" at a glance.
+// ──────────────────────────────────────────────────────────────────────────
+export const REG_STATUS_BRAND_OVERRIDES = {
+  // Pipeline / pre-launch in-licensed assets.
+  'son-080 (il-6 fusion protein)': 'Phase 3 (India trial)',
+  'acm-001.1 (s-pindolol)': 'Phase 3',
+  'bat2506 (golimumab biosimilar)': 'Phase 3 (India)',
+  'sintilimab': 'Filed (CDSCO)',
+  'afrezza': 'Filed (CDSCO)',
+  'harvard otd vascular-disease platform': 'Pre-clinical (tech licence)',
+  'ciplostem': 'Phase 3 (India approval pending full launch)',
+  // Cabotegravir long-acting got CDSCO nod via voluntary licence.
+  'cabotegravir la (via mpp / viiv)': 'DCGI Approved (Cabenuva)',
+  // Recently approved novel mechanisms.
+  'leqselvi': 'US FDA Approved · India filing pending',
+  'unloxcyt': 'US FDA Approved · India filing pending',
+  'fexuclue': 'DCGI Approved (P-CAB)',
+  'kabvie (vonoprazan)': 'DCGI Approved (P-CAB)',
+  'vonzai (vonoprazan)': 'DCGI Approved (P-CAB)',
+  'tegoprazan': 'DCGI Approved',
+  'vorxar (saroglitazar)': 'DCGI Approved',
+  'yurpeak (tirzepatide)': 'DCGI Approved (2025)',
+  'semanext / livarise': 'DCGI Approved',
+  'sembolic': 'DCGI Approved',
+  'semalix': 'DCGI Approved',
+};
+
+function deriveRegStatus(row) {
+  // Parent envelope rows describe a portfolio — leave blank.
+  if (isAcquisitionParent(row)) return null;
+  const launchType = row[COLUMN_KEYS.LAUNCH_TYPE];
+  const date = row[COLUMN_KEYS.DATE];
+  if (!launchType || !date) return null;
+  // Anything that's been Acquired or Own Launched is by definition already
+  // marketed in India — implies DCGI approval.
+  if (launchType === 'Acquired') return 'DCGI Approved';
+  if (launchType === 'Own Launched') return 'DCGI Approved';
+  // In-licensed rows default to DCGI Approved unless flagged in the
+  // override map (pipeline / filed-but-not-launched cases).
+  if (launchType === 'In-licensed') return 'DCGI Approved';
+  return null;
+}
+
+export function enrichRowsWithRegStatus(rows, brandOverrides = REG_STATUS_BRAND_OVERRIDES) {
+  return rows.map((r) => {
+    if (r[COLUMN_KEYS.REG_STATUS]) return r;
+    const brand = String(r[COLUMN_KEYS.BRAND] ?? '').toLowerCase().trim();
+    if (brandOverrides[brand]) {
+      return { ...r, [COLUMN_KEYS.REG_STATUS]: brandOverrides[brand] };
+    }
+    return { ...r, [COLUMN_KEYS.REG_STATUS]: deriveRegStatus(r) };
   });
 }
 

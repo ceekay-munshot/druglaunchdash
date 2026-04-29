@@ -35,7 +35,11 @@ const CHRONIC_STYLES = {
   Acute: 'bg-amber-50 text-amber-700 border-amber-200',
 };
 
-const NUMERIC_COLS = new Set([COLUMN_KEYS.MARKET_SIZE, COLUMN_KEYS.PRICING]);
+const NUMERIC_COLS = new Set([
+  COLUMN_KEYS.MARKET_SIZE,
+  COLUMN_KEYS.DEAL_VALUE,
+  COLUMN_KEYS.PRICING,
+]);
 
 // Per-column min-width — keeps long-text columns from collapsing while
 // short columns (Date, Chronic/Acute) stay tight.
@@ -46,11 +50,14 @@ const WIDTH_HINT = {
   [COLUMN_KEYS.SELLER]: 'min-w-[180px]',
   [COLUMN_KEYS.BUYER]: 'min-w-[160px]',
   [COLUMN_KEYS.DEAL_TYPE]: 'min-w-[180px]',
+  [COLUMN_KEYS.GEO_RIGHTS]: 'min-w-[170px]',
+  [COLUMN_KEYS.REG_STATUS]: 'min-w-[180px]',
   [COLUMN_KEYS.MOLECULE]: 'min-w-[230px]',
   [COLUMN_KEYS.PRICING]: 'min-w-[260px]',
   [COLUMN_KEYS.THERAPY]: 'min-w-[240px]',
   [COLUMN_KEYS.INDICATION]: 'min-w-[210px]',
   [COLUMN_KEYS.MARKET_SIZE]: 'min-w-[140px]',
+  [COLUMN_KEYS.DEAL_VALUE]: 'min-w-[160px]',
   [COLUMN_KEYS.PRE_EXISTING_BRAND]: 'min-w-[180px]',
   [COLUMN_KEYS.COMPETITOR_BRANDS]: 'min-w-[200px]',
   [COLUMN_KEYS.CHRONIC_ACUTE]: 'min-w-[120px]',
@@ -65,10 +72,34 @@ const ALIGN = {
   [COLUMN_KEYS.LAUNCH_TYPE]: 'center',
   [COLUMN_KEYS.DATE]: 'center',
   [COLUMN_KEYS.DEAL_TYPE]: 'center',
+  [COLUMN_KEYS.GEO_RIGHTS]: 'center',
+  [COLUMN_KEYS.REG_STATUS]: 'center',
   [COLUMN_KEYS.THERAPY]: 'center',
   [COLUMN_KEYS.PRICING]: 'right',
   [COLUMN_KEYS.MARKET_SIZE]: 'right',
+  [COLUMN_KEYS.DEAL_VALUE]: 'right',
   [COLUMN_KEYS.CHRONIC_ACUTE]: 'center',
+};
+
+// Regulatory-status chip colour map. Investors care about a one-glance
+// distinction between "in market today" (green) and "still pending /
+// in development" (amber/orange) — the prefix match keeps it tolerant
+// of override wording like "DCGI Approved (P-CAB)".
+const REG_STATUS_STYLES = [
+  [/^DCGI Approved/i, 'bg-emerald-50 text-emerald-700 border-emerald-200'],
+  [/Approved/i,       'bg-emerald-50 text-emerald-700 border-emerald-200'],
+  [/^Filed/i,         'bg-amber-50 text-amber-700 border-amber-200'],
+  [/^Pending/i,       'bg-amber-50 text-amber-700 border-amber-200'],
+  [/^Phase 3/i,       'bg-orange-50 text-orange-700 border-orange-200'],
+  [/^Phase 2/i,       'bg-orange-50 text-orange-700 border-orange-200'],
+  [/^Phase 1/i,       'bg-rose-50 text-rose-700 border-rose-200'],
+  [/^Pre-clinical/i,  'bg-rose-50 text-rose-700 border-rose-200'],
+];
+
+const regStatusClass = (v) => {
+  if (!v) return 'bg-ink-100 text-ink-700 border-ink-100';
+  for (const [re, cls] of REG_STATUS_STYLES) if (re.test(v)) return cls;
+  return 'bg-ink-100 text-ink-700 border-ink-100';
 };
 
 const alignClass = (col) => {
@@ -220,6 +251,36 @@ export default function MainTable({ rows, allRows, selectedCompany }) {
     }
     if (col === COLUMN_KEYS.MARKET_SIZE) {
       return <span className="tabular-nums font-medium text-ink-900">{fmtINRPlain(v)}</span>;
+    }
+    if (col === COLUMN_KEYS.DEAL_VALUE) {
+      if (v === null || v === undefined || v === '') {
+        return <span className="text-ink-300">—</span>;
+      }
+      const n = Number(v);
+      if (!Number.isFinite(n)) return <span className="text-ink-700">{v}</span>;
+      return (
+        <span className="tabular-nums font-medium text-ink-900 whitespace-nowrap">
+          ₹{n.toLocaleString('en-IN')} Cr
+        </span>
+      );
+    }
+    if (col === COLUMN_KEYS.GEO_RIGHTS) {
+      if (!v) return <span className="text-ink-300">—</span>;
+      return (
+        <span className="inline-flex items-center px-2 py-0.5 text-[11px] font-medium rounded-full border bg-pharma-50/60 text-pharma-700 border-pharma-100 whitespace-nowrap">
+          {v}
+        </span>
+      );
+    }
+    if (col === COLUMN_KEYS.REG_STATUS) {
+      if (!v) return <span className="text-ink-300">—</span>;
+      return (
+        <span
+          className={`inline-flex items-center px-2 py-0.5 text-[11px] font-semibold rounded-full border whitespace-nowrap ${regStatusClass(v)}`}
+        >
+          {v}
+        </span>
+      );
     }
     if (col === COLUMN_KEYS.PRICING) {
       if (v === null || v === undefined || v === '') {

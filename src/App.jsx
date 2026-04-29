@@ -15,6 +15,9 @@ import {
   enrichRowsWithPrices,
   enrichRowsWithTAM,
   enrichRowsWithPreExistingBrand,
+  enrichRowsWithDealValue,
+  enrichRowsWithGeoRights,
+  enrichRowsWithRegStatus,
   isAcquisitionParent,
 } from './data/mockData';
 
@@ -131,10 +134,16 @@ export default function App() {
 
   const allRows = useMemo(
     () =>
-      enrichRowsWithPreExistingBrand(
-        enrichRowsWithTAM(
-          enrichRowsWithPrices(
-            mergeLaunchRows(LAUNCH_TRACKER_ROWS, scrapedRows)
+      enrichRowsWithRegStatus(
+        enrichRowsWithGeoRights(
+          enrichRowsWithDealValue(
+            enrichRowsWithPreExistingBrand(
+              enrichRowsWithTAM(
+                enrichRowsWithPrices(
+                  mergeLaunchRows(LAUNCH_TRACKER_ROWS, scrapedRows)
+                )
+              )
+            )
           )
         )
       ),
@@ -163,6 +172,8 @@ export default function App() {
           r[COLUMN_KEYS.PRE_EXISTING_BRAND],
           r[COLUMN_KEYS.COMPETITOR_BRANDS],
           r[COLUMN_KEYS.DEAL_TYPE],
+          r[COLUMN_KEYS.GEO_RIGHTS],
+          r[COLUMN_KEYS.REG_STATUS],
         ]
           .map((v) => String(v ?? '').toLowerCase())
           .join(' | ');
