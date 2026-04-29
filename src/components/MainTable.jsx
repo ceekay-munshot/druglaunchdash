@@ -31,7 +31,8 @@ const WIDTH_HINT = {
   [COLUMN_KEYS.THERAPY]: 'min-w-[240px]',
   [COLUMN_KEYS.INDICATION]: 'min-w-[210px]',
   [COLUMN_KEYS.MARKET_SIZE]: 'min-w-[140px]',
-  [COLUMN_KEYS.EXISTING_BRAND]: 'min-w-[180px]',
+  [COLUMN_KEYS.PRE_EXISTING_BRAND]: 'min-w-[180px]',
+  [COLUMN_KEYS.COMPETITOR_BRANDS]: 'min-w-[200px]',
   [COLUMN_KEYS.CHRONIC_ACUTE]: 'min-w-[120px]',
 };
 

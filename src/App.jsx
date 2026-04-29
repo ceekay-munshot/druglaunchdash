@@ -14,6 +14,7 @@ import {
   mergeLaunchRows,
   enrichRowsWithPrices,
   enrichRowsWithTAM,
+  enrichRowsWithPreExistingBrand,
 } from './data/mockData';
 
 const LAUNCHES_ENDPOINT = '/launches.json';
@@ -129,9 +130,11 @@ export default function App() {
 
   const allRows = useMemo(
     () =>
-      enrichRowsWithTAM(
-        enrichRowsWithPrices(
-          mergeLaunchRows(LAUNCH_TRACKER_ROWS, scrapedRows)
+      enrichRowsWithPreExistingBrand(
+        enrichRowsWithTAM(
+          enrichRowsWithPrices(
+            mergeLaunchRows(LAUNCH_TRACKER_ROWS, scrapedRows)
+          )
         )
       ),
     [scrapedRows]
@@ -156,7 +159,8 @@ export default function App() {
           r[COLUMN_KEYS.THERAPY],
           r[COLUMN_KEYS.BUYER],
           r[COLUMN_KEYS.SELLER],
-          r[COLUMN_KEYS.EXISTING_BRAND],
+          r[COLUMN_KEYS.PRE_EXISTING_BRAND],
+          r[COLUMN_KEYS.COMPETITOR_BRANDS],
           r[COLUMN_KEYS.DEAL_TYPE],
         ]
           .map((v) => String(v ?? '').toLowerCase())

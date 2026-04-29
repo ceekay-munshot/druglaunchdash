@@ -23,7 +23,8 @@ export const COLUMN_KEYS = {
   THERAPY: 'Therapy',
   INDICATION: 'Disease / Indication',
   MARKET_SIZE: 'India TAM (₹Cr)',
-  EXISTING_BRAND: 'Existing Brand (Same Molecule)',
+  PRE_EXISTING_BRAND: "Buyer's Pre-existing Brand",
+  COMPETITOR_BRANDS: 'Competitor Brands (Same Molecule)',
   CHRONIC_ACUTE: 'Chronic / Acute',
 };
 
@@ -39,7 +40,8 @@ export const COLUMN_ORDER = [
   COLUMN_KEYS.THERAPY,
   COLUMN_KEYS.INDICATION,
   COLUMN_KEYS.MARKET_SIZE,
-  COLUMN_KEYS.EXISTING_BRAND,
+  COLUMN_KEYS.PRE_EXISTING_BRAND,
+  COLUMN_KEYS.COMPETITOR_BRANDS,
   COLUMN_KEYS.CHRONIC_ACUTE,
 ];
 
@@ -59,7 +61,7 @@ const row = (vals) => ({
   [COLUMN_KEYS.THERAPY]: vals[7],
   [COLUMN_KEYS.INDICATION]: vals[8],
   [COLUMN_KEYS.MARKET_SIZE]: vals[9],
-  [COLUMN_KEYS.EXISTING_BRAND]: vals[11],
+  [COLUMN_KEYS.COMPETITOR_BRANDS]: vals[11],
   [COLUMN_KEYS.CHRONIC_ACUTE]: vals[13],
   [COLUMN_KEYS.PRICING]: vals[14] ?? null,
 });
@@ -79,7 +81,7 @@ export function fromScrapedRow(r) {
     [COLUMN_KEYS.THERAPY]: r.therapy ?? '',
     [COLUMN_KEYS.INDICATION]: r.indication ?? '',
     [COLUMN_KEYS.MARKET_SIZE]: r.marketSize ?? null,
-    [COLUMN_KEYS.EXISTING_BRAND]: r.existingBrand || '—',
+    [COLUMN_KEYS.COMPETITOR_BRANDS]: r.existingBrand || '—',
     [COLUMN_KEYS.CHRONIC_ACUTE]: r.chronicAcute ?? '',
   };
 }
@@ -666,6 +668,58 @@ export function enrichRowsWithTAM(rows, tam = TAM_BY_MOLECULE) {
     }
     if (v == null || v === 0) return r;
     return { ...r, [COLUMN_KEYS.MARKET_SIZE]: v };
+  });
+}
+
+// ── Buyer's Pre-existing Brand — auto-derived ─────────────────────────────
+// For each row, looks for any EARLIER row where the SAME Buyer launched a
+// brand on the SAME lead-active molecule. If found, this row is a portfolio
+// extension on that molecule; if not, it's the Buyer's first entry.
+//
+// Uses primaryMolecule() (loose matcher) so a combination like 'Telmisartan
+// + Hydrochlorothiazide' matches an earlier 'Telmisartan' monotherapy by
+// the same buyer — which is the investor signal we want.
+//
+// Skips umbrella rows whose molecule is a portfolio descriptor rather than
+// a specific molecule (parent-acquisition rows = 'Various …', Corona-style
+// division-launch rows = 'Multiple …'). These don't represent a single
+// molecule and would otherwise create false matches across unrelated rows
+// that share the same generic descriptor.
+export function enrichRowsWithPreExistingBrand(rows) {
+  const isUmbrella = (molLead) =>
+    !molLead || /^(various|multiple)( |$)/.test(molLead);
+
+  // Index: Buyer → primaryMolecule → [{ date, brand }]
+  const idx = new Map();
+  for (const r of rows) {
+    const buyer = String(r[COLUMN_KEYS.BUYER] || '').trim();
+    const date = String(r[COLUMN_KEYS.DATE] || '').trim();
+    const brand = String(r[COLUMN_KEYS.BRAND] || '').trim();
+    const molLead = primaryMolecule(r[COLUMN_KEYS.MOLECULE]);
+    if (!buyer || !date || !brand || isUmbrella(molLead)) continue;
+    if (!idx.has(buyer)) idx.set(buyer, new Map());
+    const buyerIdx = idx.get(buyer);
+    if (!buyerIdx.has(molLead)) buyerIdx.set(molLead, []);
+    buyerIdx.get(molLead).push({ date, brand });
+  }
+  // Sort each list ascending by date so .find() returns the earliest match.
+  for (const [, byMol] of idx) {
+    for (const [, list] of byMol) list.sort((a, b) => a.date.localeCompare(b.date));
+  }
+  return rows.map((r) => {
+    const buyer = String(r[COLUMN_KEYS.BUYER] || '').trim();
+    const date = String(r[COLUMN_KEYS.DATE] || '').trim();
+    const brand = String(r[COLUMN_KEYS.BRAND] || '').trim();
+    const molLead = primaryMolecule(r[COLUMN_KEYS.MOLECULE]);
+    let preExisting = '—';
+    if (buyer && date && brand && !isUmbrella(molLead)) {
+      const list = idx.get(buyer)?.get(molLead);
+      if (list) {
+        const earlier = list.find((x) => x.date < date && x.brand !== brand);
+        if (earlier) preExisting = earlier.brand;
+      }
+    }
+    return { ...r, [COLUMN_KEYS.PRE_EXISTING_BRAND]: preExisting };
   });
 }
 

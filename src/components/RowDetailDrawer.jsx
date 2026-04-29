@@ -238,8 +238,13 @@ export default function RowDetailDrawer({ row, allRows = [], onClose }) {
             />
             <Field
               icon={Layers}
-              label="Existing Brand (Same Molecule)"
-              value={row[COLUMN_KEYS.EXISTING_BRAND]}
+              label="Buyer's Pre-existing Brand"
+              value={row[COLUMN_KEYS.PRE_EXISTING_BRAND]}
+            />
+            <Field
+              icon={Layers}
+              label="Competitor Brands (Same Molecule)"
+              value={row[COLUMN_KEYS.COMPETITOR_BRANDS]}
             />
           </Section>
 

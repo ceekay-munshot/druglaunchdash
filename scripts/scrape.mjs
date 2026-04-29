@@ -63,7 +63,7 @@ const rowItemSchema = {
     molecule: { type: 'string', description: 'Active molecule(s) involved. If combination, use plus-separated list.' },
     therapy: { type: 'string', description: 'Therapy area: Cardiology / Anti-Diabetic / Anti-Infectives / Gastroenterology / Dermatology / Oncology / Respiratory / Neurology / CNS / Women\'s Health / Urology / Nephrology / Immunology / Nutraceuticals / Pain Management / Consumer Health etc.' },
     indication: { type: 'string', description: 'Disease / clinical indication.' },
-    existingBrand: { type: 'string', description: 'Name of an existing market-leading brand for the same molecule, if known. Dash (—) if none.' },
+    existingBrand: { type: 'string', description: 'Name of a COMPETITOR market-leading brand for the same molecule (from any company OTHER than the buyer). Dash (—) if none. The buyer\'s own pre-existing brand on this molecule is auto-derived in the dashboard — do NOT include it here.' },
     chronicAcute: {
       type: ['string', 'null'],
       enum: ['Chronic', 'Acute', '—', null],
@@ -127,8 +127,11 @@ Specific guardrails:
     If unstated, use "—" (the schema enum allows this — return null).
   • date: must come from the release date or an explicit launch date in
     the body. If the release has no date, SKIP the row entirely.
-  • existingBrand: only fill if the release names a competitor / leading
-    brand for the same molecule. Otherwise "—".
+  • existingBrand: COMPETITOR brands only — i.e., a market-leading brand
+    from a company OTHER than the buyer that already sells the same
+    molecule (e.g., "Telma" for Glenmark when reporting a Mankind launch
+    of telmisartan). Do NOT include the buyer's own pre-existing brand
+    here — that's auto-derived by the dashboard. Otherwise "—".
   • sourceUrl: MUST be the exact URL of the specific press release
     announcing THIS brand. Do NOT reuse a sourceUrl across multiple rows.
     If you can't find a unique press-release URL for the brand, drop the
