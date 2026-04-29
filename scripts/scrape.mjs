@@ -13,6 +13,13 @@
  * Append-only: does NOT touch src/data/mockData.js (the curated baseline).
  * Emits public/launches.json — the frontend fetches and merges it over the
  * bundled baseline at mount time (and on Refresh-button click).
+ *
+ * Two-pass pipeline:
+ *   1) Press-release extraction (per source URL) → captures launches but
+ *      rarely yields an MRP because press releases seldom quote retail price.
+ *   2) Price hydration (per NEW row) → second Firecrawl /scrape against
+ *      1mg.com/search/all?name=<brand> to fill the price field. Only runs
+ *      for newly-discovered rows so existing rows (and budget) are unaffected.
  */
 
 import fs from 'node:fs/promises';
@@ -150,6 +157,87 @@ PRICE SOURCING RULES for the \`price\` field:
 Use \`sourceUrl\` to link back to the specific press-release page for each
 event (not the index page). Dates must be ISO YYYY-MM-DD.`;
 
+// ── Price-lookup (1mg) — fills MRP for new rows whose press release didn't
+// quote a price. Strict no-guess: returns null if 1mg has no exact-brand
+// match, so we never write a fabricated number into launches.json.
+const PRICE_LOOKUP_SCHEMA = {
+  type: 'object',
+  properties: {
+    price: {
+      type: ['string', 'null'],
+      description: 'Retail MRP string for the smallest typical pack, formatted like "₹190 / strip of 10 (625 mg)" preserving currency, pack size, and strength. Null if no exact-brand match on the page.',
+    },
+  },
+  required: ['price'],
+};
+
+const PRICE_LOOKUP_PROMPT_TEMPLATE = `You are reading 1mg.com's search-results page for the brand "<<BRAND>>".
+
+TASK: Find the listing whose displayed brand name matches "<<BRAND>>"
+(case-insensitive; ignore punctuation, hyphens, and dosage suffixes). Return
+the MRP for the smallest typical pack.
+
+OUTPUT FORMAT for the \`price\` field:
+  • A string like "₹190 / strip of 10 (625 mg)" — preserve the displayed
+    currency, pack-size, and strength so the dashboard can show the unit.
+  • If multiple strengths are listed, pick the LOWEST-strength pack.
+  • If the page shows "No results", or only shows loosely-related brands
+    that don't match the query, return null.
+
+STRICT NO-GUESS: a null is far better than a wrong number. Do NOT estimate,
+infer, or fabricate. Only return a price you can read directly from a
+matching listing on the page.`;
+
+// Reduce a brand string down to its lead token for searching. Examples:
+//   'Telmikind / Telmikind-H'        → 'Telmikind'
+//   'Manforce (condoms + rx)'        → 'Manforce'
+//   'Yurpeak (tirzepatide)'          → 'Yurpeak'
+function cleanBrandForSearch(brand) {
+  if (!brand) return '';
+  return String(brand).split(/[/(+]/)[0].trim();
+}
+
+async function lookupPriceOn1mg(brand) {
+  const search = cleanBrandForSearch(brand);
+  if (!search) return null;
+  const url = `https://www.1mg.com/search/all?name=${encodeURIComponent(search)}`;
+  const body = {
+    url,
+    formats: ['json'],
+    jsonOptions: {
+      schema: PRICE_LOOKUP_SCHEMA,
+      prompt: PRICE_LOOKUP_PROMPT_TEMPLATE.replace(/<<BRAND>>/g, search),
+    },
+    onlyMainContent: true,
+    waitFor: 2500,
+  };
+
+  const res = await fetch('https://api.firecrawl.dev/v1/scrape', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${FIRECRAWL_API_KEY}`,
+    },
+    body: JSON.stringify(body),
+  });
+
+  if (!res.ok) {
+    const text = await res.text().catch(() => '');
+    throw new Error(`Firecrawl ${res.status}: ${text.slice(0, 200)}`);
+  }
+  const json = await res.json();
+  const price = json?.data?.json?.price;
+  if (!price || typeof price !== 'string' || !price.trim()) return null;
+  return price.trim();
+}
+
+function priceIsEmpty(v) {
+  if (v == null) return true;
+  if (typeof v === 'number') return false;
+  const s = String(v).trim();
+  return s === '' || s === '—' || s === '-';
+}
+
 // ── Helpers ──────────────────────────────────────────────────────────────
 const sleep = (ms) => new Promise((res) => setTimeout(res, ms));
 
@@ -222,6 +310,38 @@ async function main() {
     }
     // Gentle rate-limit between sources
     await sleep(1500);
+  }
+
+  // ── Pass 2: price hydration ────────────────────────────────────────────
+  // Press releases rarely quote retail MRP, so most newRows arrive with
+  // price=null. Look up each new brand on 1mg.com so the price-comparison
+  // widget in the frontend has real data to work with.
+  //
+  // Scope-limited to NEW rows: existing rows are skipped because (a) they
+  // either already have a price, or (b) a previous run already failed to
+  // find one — re-running would just burn Firecrawl budget. If 1mg later
+  // lists a brand that's already in `existing`, the curated BRAND_PRICES
+  // dict in mockData.js can fill it manually.
+  if (newRows.length > 0) {
+    console.log(`▶ Hydrating prices for ${newRows.length} new rows via 1mg.com …`);
+    let filled = 0;
+    for (const row of newRows) {
+      if (!priceIsEmpty(row.price)) continue;
+      try {
+        const price = await lookupPriceOn1mg(row.brand);
+        if (price) {
+          row.price = price;
+          filled += 1;
+          console.log(`  ₹ ${row.brand} → ${price}`);
+        } else {
+          console.log(`  ₹ ${row.brand} → no match on 1mg`);
+        }
+      } catch (err) {
+        console.error(`  ₹ ${row.brand} lookup failed: ${err.message}`);
+      }
+      await sleep(800);
+    }
+    console.log(`✔ price hydration: filled ${filled}/${newRows.length} new rows`);
   }
 
   const allRows = [...existing, ...newRows];
