@@ -8,7 +8,11 @@ import {
   FlaskConical,
   Users,
 } from 'lucide-react';
-import { COLUMN_KEYS } from '../data/mockData';
+import {
+  COLUMN_KEYS,
+  countAcquisitionDeals,
+  isAcquisitionParent,
+} from '../data/mockData';
 import { sum, countBy, fmtINR } from '../utils/format';
 
 function KpiCard({ icon: Icon, label, value, sub, accent = 'green', tint }) {
@@ -40,26 +44,37 @@ function KpiCard({ icon: Icon, label, value, sub, accent = 'green', tint }) {
 }
 
 export default function KPICards({ rows }) {
-  const total = rows.length;
-  const acquired = rows.filter((r) => r[COLUMN_KEYS.LAUNCH_TYPE] === 'Acquired').length;
-  const ownLaunched = rows.filter((r) => r[COLUMN_KEYS.LAUNCH_TYPE] === 'Own Launched').length;
-  const inLicensed = rows.filter((r) => r[COLUMN_KEYS.LAUNCH_TYPE] === 'In-licensed').length;
+  // Parent rows are deal envelopes (e.g. "Bharat Serums & Vaccines (parent)"),
+  // not real brands. They use placeholder values like Therapy='Multi-therapy'
+  // and MARKET_SIZE=deal-EV-not-TAM, which would skew per-brand KPIs. Filter
+  // them out for everything except the deal count.
+  const brandRows = rows.filter((r) => !isAcquisitionParent(r));
+  const total = brandRows.length;
+  // "Acquired Launches" counts deal events: one parent row collapses all its
+  // child brand lines into a single deal, so the BSV ₹13,630 Cr deal counts
+  // as 1, not 14.
+  const acquired = countAcquisitionDeals(rows);
+  const acquiredBrands = brandRows.filter(
+    (r) => r[COLUMN_KEYS.LAUNCH_TYPE] === 'Acquired'
+  ).length;
+  const ownLaunched = brandRows.filter((r) => r[COLUMN_KEYS.LAUNCH_TYPE] === 'Own Launched').length;
+  const inLicensed = brandRows.filter((r) => r[COLUMN_KEYS.LAUNCH_TYPE] === 'In-licensed').length;
 
   const isNum = (v) => v !== null && v !== undefined && !isNaN(Number(v));
-  const marketVals = rows.map((r) => r[COLUMN_KEYS.MARKET_SIZE]).filter(isNum).map(Number);
+  const marketVals = brandRows.map((r) => r[COLUMN_KEYS.MARKET_SIZE]).filter(isNum).map(Number);
   const totalMarket = marketVals.length ? sum(marketVals) : null;
 
-  const chronic = rows.filter((r) => r[COLUMN_KEYS.CHRONIC_ACUTE] === 'Chronic').length;
-  const acute = rows.filter((r) => r[COLUMN_KEYS.CHRONIC_ACUTE] === 'Acute').length;
+  const chronic = brandRows.filter((r) => r[COLUMN_KEYS.CHRONIC_ACUTE] === 'Chronic').length;
+  const acute = brandRows.filter((r) => r[COLUMN_KEYS.CHRONIC_ACUTE] === 'Acute').length;
   const chronicPct = total ? Math.round((chronic / total) * 100) : 0;
 
-  const therapyCounts = countBy(rows, COLUMN_KEYS.THERAPY).sort((a, b) => b.value - a.value);
+  const therapyCounts = countBy(brandRows, COLUMN_KEYS.THERAPY).sort((a, b) => b.value - a.value);
   const topTherapy = therapyCounts[0];
   const therapyConcentration = total && topTherapy ? Math.round((topTherapy.value / total) * 100) : 0;
 
-  const uniqueBuyers = new Set(rows.map((r) => r[COLUMN_KEYS.BUYER])).size;
+  const uniqueBuyers = new Set(brandRows.map((r) => r[COLUMN_KEYS.BUYER])).size;
   const uniqueSellers = new Set(
-    rows.map((r) => r[COLUMN_KEYS.SELLER]).filter((v) => v && v !== '—')
+    brandRows.map((r) => r[COLUMN_KEYS.SELLER]).filter((v) => v && v !== '—')
   ).size;
 
   return (
@@ -75,7 +90,11 @@ export default function KPICards({ rows }) {
         icon={ShoppingBag}
         label="Acquired Launches"
         value={acquired}
-        sub={`${total ? Math.round((acquired / total) * 100) : 0}% of portfolio`}
+        sub={
+          acquiredBrands && acquiredBrands !== acquired
+            ? `${acquiredBrands} brands across ${acquired} deal${acquired === 1 ? '' : 's'}`
+            : `${acquired} deal${acquired === 1 ? '' : 's'}`
+        }
         accent="teal"
         tint="bg-teal-50"
       />

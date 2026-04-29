@@ -24,7 +24,7 @@ import {
   Handshake,
   IndianRupee,
 } from 'lucide-react';
-import { COLUMN_KEYS } from '../data/mockData';
+import { COLUMN_KEYS, isAcquisitionParent } from '../data/mockData';
 import { countBy, sumBy, fmtINRPlain } from '../utils/format';
 
 // Unified green → teal brand palette, ordered from strongest to lightest. Used
@@ -148,11 +148,16 @@ export default function Charts({ rows, selectedCompany, timeline }) {
   // Activity-over-time only makes sense across a long horizon; hide it on the
   // default Last-2-Quarters window since the line collapses to 1–2 points.
   const showActivityChart = !singleCompanyView && timeline !== '2Q';
-  const total = rows.length;
+  // Parent rows are deal envelopes ("Bharat Serums & Vaccines (parent)") —
+  // exclude them from per-brand chart bins so a 14-row BSV deal contributes
+  // 13 brands, not 14, and Therapy='Multi-therapy' / DealType='Company
+  // Acquisition' don't get a bogus +1 from the deal header.
+  const brandRows = rows.filter((r) => !isAcquisitionParent(r));
+  const total = brandRows.length;
 
-  const therapy = countBy(rows, COLUMN_KEYS.THERAPY).sort((a, b) => b.value - a.value).slice(0, 10);
-  const launchType = countBy(rows, COLUMN_KEYS.LAUNCH_TYPE).sort((a, b) => b.value - a.value);
-  const sellerCount = countBy(rows, COLUMN_KEYS.SELLER)
+  const therapy = countBy(brandRows, COLUMN_KEYS.THERAPY).sort((a, b) => b.value - a.value).slice(0, 10);
+  const launchType = countBy(brandRows, COLUMN_KEYS.LAUNCH_TYPE).sort((a, b) => b.value - a.value);
+  const sellerCount = countBy(brandRows, COLUMN_KEYS.SELLER)
     .filter((d) => d.name && d.name !== '—')
     .sort((a, b) => b.value - a.value)
     .slice(0, 8);
@@ -169,23 +174,23 @@ export default function Charts({ rows, selectedCompany, timeline }) {
   };
 
   const marketByTherapy = compactTopN(
-    sumBy(rows, COLUMN_KEYS.THERAPY, COLUMN_KEYS.MARKET_SIZE)
+    sumBy(brandRows, COLUMN_KEYS.THERAPY, COLUMN_KEYS.MARKET_SIZE)
       .filter((d) => d.value > 0)
       .sort((a, b) => b.value - a.value),
     8
   );
-  const chronicAcute = countBy(rows, COLUMN_KEYS.CHRONIC_ACUTE);
+  const chronicAcute = countBy(brandRows, COLUMN_KEYS.CHRONIC_ACUTE);
   const chronicCount = chronicAcute.find((d) => d.name === 'Chronic')?.value ?? 0;
   const acuteCount = chronicAcute.find((d) => d.name === 'Acute')?.value ?? 0;
   const chronicPct = total ? Math.round((chronicCount / total) * 100) : 0;
   const acutePct = total ? 100 - chronicPct : 0;
   const dealType = compactTopN(
-    countBy(rows, COLUMN_KEYS.DEAL_TYPE).sort((a, b) => b.value - a.value),
+    countBy(brandRows, COLUMN_KEYS.DEAL_TYPE).sort((a, b) => b.value - a.value),
     8
   );
 
   const yearMap = new Map();
-  rows.forEach((r) => {
+  brandRows.forEach((r) => {
     const d = new Date(r[COLUMN_KEYS.DATE]);
     if (!isNaN(d.getTime())) {
       const y = d.getFullYear();

@@ -1,6 +1,10 @@
 import React, { useMemo } from 'react';
 import { Users } from 'lucide-react';
-import { COLUMN_KEYS } from '../data/mockData';
+import {
+  COLUMN_KEYS,
+  countAcquisitionDeals,
+  isAcquisitionParent,
+} from '../data/mockData';
 
 // Strip noise suffixes so 7 columns fit comfortably on widescreen.
 function shortName(name) {
@@ -10,18 +14,23 @@ function shortName(name) {
 }
 
 function computeCompanyMetrics(rows) {
-  const launchCount = rows.length;
-  const acquired = rows.filter((r) => r[COLUMN_KEYS.LAUNCH_TYPE] === 'Acquired').length;
-  const ownLaunched = rows.filter((r) => r[COLUMN_KEYS.LAUNCH_TYPE] === 'Own Launched').length;
-  const inLicensed = rows.filter((r) => r[COLUMN_KEYS.LAUNCH_TYPE] === 'In-licensed').length;
+  // Parent rows are deal envelopes (e.g. "Bharat Serums & Vaccines (parent)"),
+  // not individual brands — drop them so per-brand counts and chronic-share
+  // aren't inflated by the deal header. Acquired deals are counted separately
+  // via countAcquisitionDeals so a 14-row BSV deal contributes 1, not 14.
+  const brandRows = rows.filter((r) => !isAcquisitionParent(r));
+  const launchCount = brandRows.length;
+  const acquired = countAcquisitionDeals(rows);
+  const ownLaunched = brandRows.filter((r) => r[COLUMN_KEYS.LAUNCH_TYPE] === 'Own Launched').length;
+  const inLicensed = brandRows.filter((r) => r[COLUMN_KEYS.LAUNCH_TYPE] === 'In-licensed').length;
 
-  const chronic = rows.filter((r) => r[COLUMN_KEYS.CHRONIC_ACUTE] === 'Chronic').length;
-  const acute = rows.filter((r) => r[COLUMN_KEYS.CHRONIC_ACUTE] === 'Acute').length;
+  const chronic = brandRows.filter((r) => r[COLUMN_KEYS.CHRONIC_ACUTE] === 'Chronic').length;
+  const acute = brandRows.filter((r) => r[COLUMN_KEYS.CHRONIC_ACUTE] === 'Acute').length;
   const chronicDenom = chronic + acute;
   const chronicPct = chronicDenom ? Math.round((chronic / chronicDenom) * 100) : null;
 
   const therapyCounts = new Map();
-  rows.forEach((r) => {
+  brandRows.forEach((r) => {
     const t = r[COLUMN_KEYS.THERAPY];
     if (!t) return;
     therapyCounts.set(t, (therapyCounts.get(t) || 0) + 1);
@@ -36,7 +45,7 @@ function computeCompanyMetrics(rows) {
     : null;
 
   const sellerCounts = new Map();
-  rows.forEach((r) => {
+  brandRows.forEach((r) => {
     const s = r[COLUMN_KEYS.SELLER];
     if (!s || s === '—') return;
     sellerCounts.set(s, (sellerCounts.get(s) || 0) + 1);

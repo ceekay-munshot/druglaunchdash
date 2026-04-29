@@ -114,6 +114,84 @@ export function mergeLaunchRows(baseline, scrapedRaw) {
 }
 
 // ──────────────────────────────────────────────────────────────────────────
+// Acquisition parent/child grouping
+//
+// Some acquisitions are stored as a parent row + per-brand child rows
+// (BSV deal = 1 parent + 13 brands; Panacea = 1 + 7; Ranbaxy/Elder/Unichem/
+// Curatio/JB Chemicals/Oaknet/Adroit/etc.). The parent's BRAND column ends
+// with "(parent)" by convention. Children share the same Buyer + Date as
+// the parent.
+//
+// Use these helpers to:
+//   - count distinct acquisition *deals* (deal events, not brand line items)
+//   - render the table as parent rows that collapse their child brands
+// ──────────────────────────────────────────────────────────────────────────
+const PARENT_BRAND_RE = /\(parent\)\s*$/i;
+
+export function isAcquisitionParent(row) {
+  return PARENT_BRAND_RE.test(String(row?.[COLUMN_KEYS.BRAND] ?? ''));
+}
+
+export function acquisitionDealKey(row) {
+  return `${row?.[COLUMN_KEYS.BUYER] ?? ''}|${row?.[COLUMN_KEYS.DATE] ?? ''}`;
+}
+
+// Returns the set of dealKeys that have an explicit parent row in `rows`.
+export function parentDealKeys(rows) {
+  const out = new Set();
+  for (const r of rows) {
+    if (isAcquisitionParent(r)) out.add(acquisitionDealKey(r));
+  }
+  return out;
+}
+
+// True if `row` is a child of an explicit parent inside `parentKeys`
+// (i.e. it's an Acquired row that shares Buyer+Date with a parent and is
+// not itself the parent).
+export function isAcquisitionChild(row, parentKeys) {
+  if (row?.[COLUMN_KEYS.LAUNCH_TYPE] !== 'Acquired') return false;
+  if (isAcquisitionParent(row)) return false;
+  return parentKeys.has(acquisitionDealKey(row));
+}
+
+// Counts acquisition *deals* in a row set: each parent row counts once
+// (children collapsed into it); standalone Acquired rows (no matching
+// parent) count once each. This is the "deal events" KPI that ignores
+// per-brand line-item duplication from multi-brand portfolio deals.
+export function countAcquisitionDeals(rows) {
+  const parents = parentDealKeys(rows);
+  let count = 0;
+  for (const r of rows) {
+    if (r?.[COLUMN_KEYS.LAUNCH_TYPE] !== 'Acquired') continue;
+    if (isAcquisitionChild(r, parents)) continue;
+    count += 1;
+  }
+  return count;
+}
+
+// Splits acquisition rows into a parent-anchored hierarchy.
+// Returns:
+//   topLevel       — rows that render as their own row (non-Acquired,
+//                    standalone Acquired, and parent rows themselves)
+//   childrenByKey  — Map of dealKey → array of child rows (in input order)
+export function groupAcquisitionRows(rows) {
+  const parents = parentDealKeys(rows);
+  const childrenByKey = new Map();
+  const topLevel = [];
+  for (const r of rows) {
+    if (isAcquisitionChild(r, parents)) {
+      const k = acquisitionDealKey(r);
+      const arr = childrenByKey.get(k);
+      if (arr) arr.push(r);
+      else childrenByKey.set(k, [r]);
+    } else {
+      topLevel.push(r);
+    }
+  }
+  return { topLevel, childrenByKey };
+}
+
+// ──────────────────────────────────────────────────────────────────────────
 // BRAND_PRICES — retail MRP (INR) for the smallest typical pack, sourced
 // from 1mg / Netmeds / PharmEasy / Apollo Pharmacy / MedPlusMart / Medindia
 // drug-price index. Numeric = ₹ value; string = non-unit pricing (e.g.

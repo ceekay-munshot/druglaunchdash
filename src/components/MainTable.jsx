@@ -1,8 +1,28 @@
 import React, { useMemo, useState } from 'react';
-import { ArrowUpDown, ArrowUp, ArrowDown, Search, Table as TableIcon, Download } from 'lucide-react';
-import { COLUMN_KEYS, COLUMN_ORDER } from '../data/mockData';
+import {
+  ArrowUpDown,
+  ArrowUp,
+  ArrowDown,
+  ChevronRight,
+  ChevronDown,
+  Search,
+  Table as TableIcon,
+  Download,
+} from 'lucide-react';
+import {
+  COLUMN_KEYS,
+  COLUMN_ORDER,
+  acquisitionDealKey,
+  groupAcquisitionRows,
+  isAcquisitionParent,
+} from '../data/mockData';
 import { fmtINRPlain, fmtDate } from '../utils/format';
 import RowDetailDrawer from './RowDetailDrawer';
+
+// Strip the trailing "(parent)" annotation from a brand label when we render
+// the parent row — the chevron + child count already conveys the rollup,
+// "Bharat Serums & Vaccines (parent)" reads cleaner as "Bharat Serums & Vaccines".
+const stripParentSuffix = (s) => String(s ?? '').replace(/\s*\(parent\)\s*$/i, '');
 
 const LAUNCH_TYPE_STYLES = {
   Acquired: 'bg-emerald-50 text-emerald-700 border-emerald-200',
@@ -70,6 +90,18 @@ export default function MainTable({ rows, allRows, selectedCompany }) {
   const [sortKey, setSortKey] = useState(COLUMN_KEYS.DATE);
   const [sortDir, setSortDir] = useState('desc');
   const [activeRow, setActiveRow] = useState(null);
+  // dealKeys whose children are user-expanded. Parents start collapsed by
+  // default; an active table search auto-expands matching deals separately.
+  const [expandedDeals, setExpandedDeals] = useState(() => new Set());
+
+  const toggleDeal = (key) => {
+    setExpandedDeals((prev) => {
+      const next = new Set(prev);
+      if (next.has(key)) next.delete(key);
+      else next.add(key);
+      return next;
+    });
+  };
 
   // When a specific company is selected from the Header dropdown, the Buyer
   // column is redundant (every row has the same Buyer = selected company), so
@@ -97,16 +129,12 @@ export default function MainTable({ rows, allRows, selectedCompany }) {
     return m ? Number(m[0].replace(/,/g, '')) : 0;
   };
 
-  const visibleRows = useMemo(() => {
-    let r = rows;
-    const q = tableQuery.trim().toLowerCase();
-    if (q) {
-      r = r.filter((row) =>
-        COLUMN_ORDER.some((k) => String(row[k] ?? '').toLowerCase().includes(q))
-      );
-    }
+  // Sort comparator shared by top-level row sort and child-row sort within
+  // a deal group. Sorted top-level keeps parent rows anchored at the parent
+  // date; children render under their parent regardless of natural order.
+  const sortRows = (arr) => {
     const dir = sortDir === 'asc' ? 1 : -1;
-    const sorted = [...r].sort((a, b) => {
+    return [...arr].sort((a, b) => {
       const av = a[sortKey];
       const bv = b[sortKey];
       if (sortKey === COLUMN_KEYS.DATE) {
@@ -118,8 +146,53 @@ export default function MainTable({ rows, allRows, selectedCompany }) {
       if (NUMERIC_COLS.has(sortKey)) return ((Number(av) || 0) - (Number(bv) || 0)) * dir;
       return String(av ?? '').localeCompare(String(bv ?? '')) * dir;
     });
-    return sorted;
+  };
+
+  const matchesQuery = (row, q) =>
+    COLUMN_ORDER.some((k) => String(row[k] ?? '').toLowerCase().includes(q));
+
+  // Build the parent-anchored hierarchy from the App-level filtered rows,
+  // then apply the in-table search and sort. Children stay attached to
+  // their parent regardless of sort. When a search query matches a child,
+  // the parent is auto-included (and auto-expanded) so the row has context.
+  const { topLevelRows, childrenByKey, autoExpandedKeys, totalRowCount } = useMemo(() => {
+    const grouped = groupAcquisitionRows(rows);
+    const q = tableQuery.trim().toLowerCase();
+
+    let visibleChildren = grouped.childrenByKey;
+    let visibleTop = grouped.topLevel;
+    const autoExpanded = new Set();
+
+    if (q) {
+      const filteredChildren = new Map();
+      for (const [key, kids] of grouped.childrenByKey) {
+        const m = kids.filter((r) => matchesQuery(r, q));
+        if (m.length) {
+          filteredChildren.set(key, m);
+          autoExpanded.add(key);
+        }
+      }
+      visibleChildren = filteredChildren;
+      visibleTop = grouped.topLevel.filter((r) => {
+        if (matchesQuery(r, q)) return true;
+        // Keep parent visible if any of its children matched.
+        if (isAcquisitionParent(r) && filteredChildren.has(acquisitionDealKey(r))) return true;
+        return false;
+      });
+    }
+
+    let totalCount = visibleTop.length;
+    for (const arr of visibleChildren.values()) totalCount += arr.length;
+
+    return {
+      topLevelRows: sortRows(visibleTop),
+      childrenByKey: visibleChildren,
+      autoExpandedKeys: autoExpanded,
+      totalRowCount: totalCount,
+    };
   }, [rows, tableQuery, sortKey, sortDir]);
+
+  const isExpanded = (key) => expandedDeals.has(key) || autoExpandedKeys.has(key);
 
   const renderCell = (row, col) => {
     const v = row[col];
@@ -169,7 +242,7 @@ export default function MainTable({ rows, allRows, selectedCompany }) {
       return <span className="tabular-nums text-ink-700">{fmtDate(v)}</span>;
     }
     if (col === COLUMN_KEYS.BRAND) {
-      return <span className="font-semibold text-ink-900">{v}</span>;
+      return <span className="font-semibold text-ink-900">{stripParentSuffix(v)}</span>;
     }
     if (v === null || v === undefined || v === '') return <span className="text-ink-300">—</span>;
     return <span className="text-ink-700">{v}</span>;
@@ -181,7 +254,18 @@ export default function MainTable({ rows, allRows, selectedCompany }) {
       const s = String(val ?? '');
       return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
     };
-    const body = visibleRows.map((r) => COLUMN_ORDER.map((k) => escape(r[k])).join(',')).join('\n');
+    // Export the full hierarchy flat — parent + all its children, regardless
+    // of whether the user has the deal expanded in the UI. Brand-level data
+    // is the whole point of the export; collapsing is a viewing aid only.
+    const flat = [];
+    for (const r of topLevelRows) {
+      flat.push(r);
+      if (isAcquisitionParent(r)) {
+        const kids = childrenByKey.get(acquisitionDealKey(r)) || [];
+        for (const k of kids) flat.push(k);
+      }
+    }
+    const body = flat.map((r) => COLUMN_ORDER.map((k) => escape(r[k])).join(',')).join('\n');
     const blob = new Blob([header + '\n' + body], { type: 'text/csv;charset=utf-8;' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
@@ -201,7 +285,13 @@ export default function MainTable({ rows, allRows, selectedCompany }) {
           <div>
             <h3 className="text-sm font-semibold text-ink-900">Drug Launch Tracker — Core Table</h3>
             <p className="text-[11px] text-ink-500">
-              Single source of truth · {visibleRows.length} row{visibleRows.length === 1 ? '' : 's'}
+              Single source of truth · {totalRowCount} row{totalRowCount === 1 ? '' : 's'}
+              {childrenByKey.size > 0 && (
+                <>
+                  {' · '}
+                  {childrenByKey.size} multi-brand deal{childrenByKey.size === 1 ? '' : 's'}
+                </>
+              )}
             </p>
           </div>
         </div>
@@ -255,27 +345,91 @@ export default function MainTable({ rows, allRows, selectedCompany }) {
             </tr>
           </thead>
           <tbody>
-            {visibleRows.map((r, i) => (
-              <tr
-                key={`${r[COLUMN_KEYS.BRAND]}-${i}`}
-                onClick={() => setActiveRow(r)}
-                className={`group cursor-pointer transition-colors hover:bg-pharma-50/60 ${
-                  i % 2 === 1 ? 'bg-ink-100/20' : 'bg-white'
-                }`}
-              >
-                {visibleColumns.map((col) => (
-                  <td
-                    key={col}
-                    className={`px-4 py-2.5 align-middle leading-snug border-b border-ink-100/60 ${alignClass(col)} ${
-                      WIDTH_HINT[col] || ''
-                    }`}
+            {topLevelRows.map((r, i) => {
+              const stripeBg = i % 2 === 1 ? 'bg-ink-100/20' : 'bg-white';
+              const isParent = isAcquisitionParent(r);
+              const dealKey = isParent ? acquisitionDealKey(r) : null;
+              const kids = isParent ? childrenByKey.get(dealKey) || [] : [];
+              const expanded = isParent && isExpanded(dealKey);
+              const Chevron = expanded ? ChevronDown : ChevronRight;
+
+              return (
+                <React.Fragment key={`${r[COLUMN_KEYS.BRAND]}-${i}`}>
+                  <tr
+                    onClick={() => setActiveRow(r)}
+                    className={`group cursor-pointer transition-colors hover:bg-pharma-50/60 ${stripeBg}`}
                   >
-                    {renderCell(r, col)}
-                  </td>
-                ))}
-              </tr>
-            ))}
-            {visibleRows.length === 0 && (
+                    {visibleColumns.map((col) => (
+                      <td
+                        key={col}
+                        className={`px-4 py-2.5 align-middle leading-snug border-b border-ink-100/60 ${alignClass(col)} ${
+                          WIDTH_HINT[col] || ''
+                        }`}
+                      >
+                        {col === COLUMN_KEYS.BRAND && isParent && kids.length > 0 ? (
+                          <div className="flex items-center gap-1.5">
+                            <button
+                              type="button"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                toggleDeal(dealKey);
+                              }}
+                              className="shrink-0 w-5 h-5 inline-flex items-center justify-center rounded hover:bg-pharma-100 text-pharma-700"
+                              aria-label={expanded ? 'Collapse deal' : 'Expand deal'}
+                            >
+                              <Chevron className="w-3.5 h-3.5" />
+                            </button>
+                            <span className="font-semibold text-ink-900 truncate">
+                              {stripParentSuffix(r[COLUMN_KEYS.BRAND])}
+                            </span>
+                            <span className="ml-1 inline-flex items-center px-1.5 py-0.5 text-[10px] font-semibold rounded-full bg-pharma-50 text-pharma-700 border border-pharma-200 whitespace-nowrap">
+                              {kids.length} brand{kids.length === 1 ? '' : 's'}
+                            </span>
+                          </div>
+                        ) : (
+                          renderCell(r, col)
+                        )}
+                      </td>
+                    ))}
+                  </tr>
+
+                  {expanded &&
+                    sortRows(kids).map((c, ci) => (
+                      <tr
+                        key={`${dealKey}-child-${c[COLUMN_KEYS.BRAND]}-${ci}`}
+                        onClick={() => setActiveRow(c)}
+                        className="group cursor-pointer transition-colors hover:bg-pharma-50/60 bg-pharma-50/20"
+                      >
+                        {visibleColumns.map((col) => (
+                          <td
+                            key={col}
+                            className={`px-4 py-2 align-middle leading-snug border-b border-ink-100/60 text-[13px] ${alignClass(col)} ${
+                              WIDTH_HINT[col] || ''
+                            }`}
+                          >
+                            {col === COLUMN_KEYS.BRAND ? (
+                              <div className="flex items-center gap-2 pl-6">
+                                <span
+                                  className="text-pharma-300 select-none"
+                                  aria-hidden="true"
+                                >
+                                  └
+                                </span>
+                                <span className="font-medium text-ink-800">
+                                  {c[COLUMN_KEYS.BRAND]}
+                                </span>
+                              </div>
+                            ) : (
+                              renderCell(c, col)
+                            )}
+                          </td>
+                        ))}
+                      </tr>
+                    ))}
+                </React.Fragment>
+              );
+            })}
+            {topLevelRows.length === 0 && (
               <tr>
                 <td
                   colSpan={visibleColumns.length}
