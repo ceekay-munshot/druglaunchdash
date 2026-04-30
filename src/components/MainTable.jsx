@@ -8,13 +8,31 @@ import {
   Search,
   Table as TableIcon,
   Download,
+  Hourglass,
 } from 'lucide-react';
+
+// Small "pending verification" pill rendered next to a brand name when the
+// row was scraped but most of its descriptive fields are still empty. The
+// scraper merges richer extractions into existing rows on subsequent runs,
+// so this pill should disappear once the source page discloses the detail.
+function PendingPill() {
+  return (
+    <span
+      title="Auto-scraped row · brand-level details pending verification. The next daily scrape will merge in any new fields the source publishes."
+      className="inline-flex items-center gap-1 shrink-0 px-1.5 py-0.5 text-[10px] font-semibold rounded-full bg-amber-50 text-amber-700 border border-amber-200 whitespace-nowrap"
+    >
+      <Hourglass className="w-2.5 h-2.5" />
+      Pending
+    </span>
+  );
+}
 import {
   COLUMN_KEYS,
   COLUMN_ORDER,
   acquisitionDealKey,
   groupAcquisitionRows,
   isAcquisitionParent,
+  isStubRow,
 } from '../data/mockData';
 import { fmtINRPlain, fmtDate } from '../utils/format';
 import RowDetailDrawer from './RowDetailDrawer';
@@ -303,7 +321,14 @@ export default function MainTable({ rows, allRows, selectedCompany }) {
       return <span className="tabular-nums text-ink-700">{fmtDate(v)}</span>;
     }
     if (col === COLUMN_KEYS.BRAND) {
-      return <span className="font-semibold text-ink-900">{stripParentSuffix(v)}</span>;
+      return (
+        <span className="inline-flex items-center gap-1.5 min-w-0">
+          <span className="font-semibold text-ink-900 truncate">
+            {stripParentSuffix(v)}
+          </span>
+          {isStubRow(row) && <PendingPill />}
+        </span>
+      );
     }
     if (v === null || v === undefined || v === '') return <span className="text-ink-300">—</span>;
     return <span className="text-ink-700">{v}</span>;
@@ -461,16 +486,17 @@ export default function MainTable({ rows, allRows, selectedCompany }) {
                             }`}
                           >
                             {col === COLUMN_KEYS.BRAND ? (
-                              <div className="flex items-center gap-2 pl-6">
+                              <div className="flex items-center gap-2 pl-6 min-w-0">
                                 <span
                                   className="text-pharma-300 select-none"
                                   aria-hidden="true"
                                 >
                                   └
                                 </span>
-                                <span className="font-medium text-ink-800">
+                                <span className="font-medium text-ink-800 truncate">
                                   {c[COLUMN_KEYS.BRAND]}
                                 </span>
+                                {isStubRow(c) && <PendingPill />}
                               </div>
                             ) : (
                               renderCell(c, col)

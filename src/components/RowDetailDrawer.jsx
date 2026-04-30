@@ -23,6 +23,7 @@ import {
   dosageFormLabel,
   acquisitionDealKey,
   isAcquisitionParent,
+  isStubRow,
 } from '../data/mockData';
 import { fmtDate, fmtINRPlain } from '../utils/format';
 
@@ -231,6 +232,18 @@ export default function RowDetailDrawer({ row, allRows = [], onClose }) {
         </div>
 
         <div className="flex-1 overflow-y-auto px-5 py-5 space-y-6 scrollbar-thin">
+          {isStubRow(row) && (
+            <div className="rounded-lg border border-amber-200 bg-amber-50 px-3.5 py-2.5 text-[12px] text-amber-800 leading-snug flex items-start gap-2">
+              <span className="font-semibold">Pending verification.</span>
+              <span>
+                This row was auto-scraped from a recent press-release announcement
+                that hasn't yet disclosed full brand-level detail. The next daily
+                scrape will merge in any new fields the source publishes —
+                molecule, therapy, indication, and pricing.
+              </span>
+            </div>
+          )}
+
           <Section title="Deal">
             <Field icon={Tag} label="Deal Type" value={row[COLUMN_KEYS.DEAL_TYPE]} />
             <Field

@@ -145,6 +145,47 @@ export function acquisitionDealKey(row) {
   return `${row?.[COLUMN_KEYS.BUYER] ?? ''}|${row?.[COLUMN_KEYS.DATE] ?? ''}`;
 }
 
+// A row is a "stub" if at least 3 of its key descriptive fields are blank
+// (null / empty string / em-dash / hyphen). These are typically scraped
+// rows from a press-release announcement that hadn't yet disclosed brand-
+// level detail at the time of the scrape — e.g. the Organon row from
+// Sun Pharma's 27-Apr-2026 announcement, which has the deal envelope but
+// molecule / therapy / indication / chronic-acute / competitor / pricing
+// all empty. The next scrape merge-fills these slots when the source page
+// is updated; in the meantime we flag the row so a viewer doesn't mistake
+// "—" for verified-no-data.
+//
+// Parent envelope rows are intentionally umbrella ("Various", "Multi-
+// therapy") and are NEVER flagged as stubs.
+const STUB_CANDIDATE_FIELDS = [
+  COLUMN_KEYS.MOLECULE,
+  COLUMN_KEYS.THERAPY,
+  COLUMN_KEYS.INDICATION,
+  COLUMN_KEYS.CHRONIC_ACUTE,
+  COLUMN_KEYS.COMPETITOR_BRANDS,
+  COLUMN_KEYS.PRICING,
+];
+
+function fieldIsBlank(v) {
+  if (v == null) return true;
+  if (typeof v === 'number') return false;
+  const s = String(v).trim();
+  return s === '' || s === '—' || s === '-';
+}
+
+// Constant threshold (no second arg) so this can be passed straight to
+// Array.prototype.filter without the array index getting bound to a
+// `threshold` parameter — that bug used to silently zero out the stub
+// list past the 3rd row.
+const STUB_THRESHOLD = 3;
+export function isStubRow(row) {
+  if (!row) return false;
+  if (isAcquisitionParent(row)) return false;
+  let blanks = 0;
+  for (const k of STUB_CANDIDATE_FIELDS) if (fieldIsBlank(row[k])) blanks += 1;
+  return blanks >= STUB_THRESHOLD;
+}
+
 // Returns the set of dealKeys that have an explicit parent row in `rows`.
 export function parentDealKeys(rows) {
   const out = new Set();

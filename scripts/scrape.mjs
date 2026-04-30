@@ -241,6 +241,34 @@ function priceIsEmpty(v) {
   return s === '' || s === '—' || s === '-';
 }
 
+// Generalised "is this field blank?" check used by the merge-fill pass.
+// Press releases often arrive in tranches — first the headline ("Sun
+// acquires brands from Organon"), then days later the molecule list, the
+// indication, the chronic/acute marker, etc. We treat null / "" / em-dash /
+// hyphen as blank so a richer subsequent extraction can fill them in.
+function fieldIsEmpty(v) {
+  if (v == null) return true;
+  if (typeof v === 'number') return false;
+  const s = String(v).trim();
+  return s === '' || s === '—' || s === '-';
+}
+
+// Merge a fresh extraction into an existing row: keep every non-empty field
+// from `existing`, and fill in only the slots that were blank with whatever
+// `fresh` has. Returns { merged, filledKeys } where filledKeys lists the
+// fields that just got hydrated (used for logging + retry-price-lookup).
+function mergeRow(existing, fresh) {
+  const out = { ...existing };
+  const filledKeys = [];
+  for (const [k, v] of Object.entries(fresh)) {
+    if (fieldIsEmpty(out[k]) && !fieldIsEmpty(v)) {
+      out[k] = v;
+      filledKeys.push(k);
+    }
+  }
+  return { merged: out, filledKeys };
+}
+
 // ── Helpers ──────────────────────────────────────────────────────────────
 const sleep = (ms) => new Promise((res) => setTimeout(res, ms));
 
@@ -292,20 +320,56 @@ async function scrapeOne({ company, url }) {
 async function main() {
   console.log(`▶ Scraping ${SOURCES.length} sources with Firecrawl …`);
   const existing = await loadExisting();
-  const existingKeys = new Set(existing.map(rowKey));
+  // Insertion-ordered map keyed by rowKey. Initial seed = current contents
+  // of launches.json so subsequent merges don't shuffle existing rows
+  // around. New keys get appended to the end as we encounter them.
+  const byKey = new Map();
+  for (const r of existing) byKey.set(rowKey(r), r);
   console.log(`  existing scraped rows: ${existing.length}`);
 
-  const newRows = [];
+  // Track rows that were either freshly added OR materially enriched by a
+  // re-scrape. Pass 2 (price hydration) retargets these so a stub Organon-
+  // style row has its 1mg price re-attempted the moment richer extraction
+  // fills in the brand identity.
+  const newRows = [];           // never-seen-before keys
+  const enrichedRows = [];      // existing rows that just gained ≥1 field
+
+  let freshRowCount = 0;
+  let mergedRowCount = 0;
+  let filledFieldCount = 0;
+
   for (const src of SOURCES) {
     const tag = `[${src.company}]`;
     try {
       const rows = await scrapeOne(src);
       console.log(`  ${tag} extracted ${rows.length} rows`);
+      freshRowCount += rows.length;
       for (const r of rows) {
         if (!r.brand || !r.date) continue;
-        if (!existingKeys.has(rowKey(r))) {
+        const k = rowKey(r);
+        if (!byKey.has(k)) {
+          // Brand-new row — append to the end of the map and queue for
+          // price hydration in Pass 2.
+          byKey.set(k, r);
           newRows.push(r);
-          existingKeys.add(rowKey(r));
+        } else {
+          // Same dealKey already on file. Merge fresh fields into any blank
+          // slots in the existing row — this is what lets a 2-day-old
+          // "Organon: brand=—, molecule=—, therapy=—" stub auto-enrich
+          // when Sun Pharma's release is re-scraped after the company
+          // discloses the actual brand list. Non-empty existing fields are
+          // preserved (we never clobber curated / previously-scraped data).
+          const cur = byKey.get(k);
+          const { merged, filledKeys } = mergeRow(cur, r);
+          if (filledKeys.length > 0) {
+            byKey.set(k, merged);
+            mergedRowCount += 1;
+            filledFieldCount += filledKeys.length;
+            enrichedRows.push(merged);
+            console.log(
+              `  ${tag} merged ${filledKeys.length} field${filledKeys.length === 1 ? '' : 's'} into "${merged.brand}" (${filledKeys.join(', ')})`
+            );
+          }
         }
       }
     } catch (err) {
@@ -315,21 +379,24 @@ async function main() {
     await sleep(1500);
   }
 
+  console.log(
+    `  pass 1 summary: ${newRows.length} new · ${mergedRowCount} merged ` +
+      `(${filledFieldCount} fields filled) · ${freshRowCount} extracted total`
+  );
+
   // ── Pass 2: price hydration ────────────────────────────────────────────
-  // Press releases rarely quote retail MRP, so most newRows arrive with
-  // price=null. Look up each new brand on 1mg.com so the price-comparison
-  // widget in the frontend has real data to work with.
-  //
-  // Scope-limited to NEW rows: existing rows are skipped because (a) they
-  // either already have a price, or (b) a previous run already failed to
-  // find one — re-running would just burn Firecrawl budget. If 1mg later
-  // lists a brand that's already in `existing`, the curated BRAND_PRICES
-  // dict in mockData.js can fill it manually.
-  if (newRows.length > 0) {
-    console.log(`▶ Hydrating prices for ${newRows.length} new rows via 1mg.com …`);
+  // Looks up retail MRP on 1mg for any row that's still missing one — both
+  // brand-new rows AND existing rows that just got enriched (their brand
+  // identity may have only just become known on this run, so a previous
+  // 1mg lookup would have failed). Rows whose price was already populated
+  // are skipped to keep Firecrawl budget under control.
+  const priceCandidates = [...newRows, ...enrichedRows].filter(
+    (r) => priceIsEmpty(r.price) && !fieldIsEmpty(r.brand)
+  );
+  if (priceCandidates.length > 0) {
+    console.log(`▶ Hydrating prices for ${priceCandidates.length} rows via 1mg.com …`);
     let filled = 0;
-    for (const row of newRows) {
-      if (!priceIsEmpty(row.price)) continue;
+    for (const row of priceCandidates) {
       try {
         const price = await lookupPriceOn1mg(row.brand);
         if (price) {
@@ -344,10 +411,10 @@ async function main() {
       }
       await sleep(800);
     }
-    console.log(`✔ price hydration: filled ${filled}/${newRows.length} new rows`);
+    console.log(`✔ price hydration: filled ${filled}/${priceCandidates.length} rows`);
   }
 
-  const allRows = [...existing, ...newRows];
+  const allRows = [...byKey.values()];
   const payload = {
     generatedAt: new Date().toISOString(),
     rowCount: allRows.length,
@@ -356,7 +423,10 @@ async function main() {
 
   await fs.mkdir(path.dirname(OUT_PATH), { recursive: true });
   await fs.writeFile(OUT_PATH, JSON.stringify(payload, null, 2) + '\n');
-  console.log(`✔ wrote ${OUT_PATH} · ${allRows.length} rows (+${newRows.length} new)`);
+  console.log(
+    `✔ wrote ${OUT_PATH} · ${allRows.length} rows total ` +
+      `(+${newRows.length} new, ${mergedRowCount} enriched)`
+  );
 }
 
 main().catch((err) => {
