@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { CalendarClock, ChevronDown, ChevronRight, Download } from 'lucide-react';
 import { PATENT_CLIFFS, PATENT_CLIFF_THERAPIES } from '../data/patentCliffs';
 import { COLUMN_KEYS } from '../data/mockData';
@@ -89,6 +89,56 @@ export default function PatentCliffs({ allRows = [], companies = [] }) {
   const [sortKey, setSortKey] = useState('expiry');
   const [openCliff, setOpenCliff] = useState(null);
   const [showAll, setShowAll] = useState(false);
+  // Set of cliff molecules currently flashed because of a deep-link
+  // ("focus-patent-cliffs" event from the InsightRibbon). Auto-clears
+  // after 3.5s so the highlight feels like a momentary "here you are"
+  // rather than a permanent selection.
+  const [highlighted, setHighlighted] = useState(() => new Set());
+  const sectionRef = useRef(null);
+
+  // Listen for ribbon-driven focus events. Right now the only window we
+  // accept is "6mo" (cliffs expiring in next 6 months), but the event
+  // shape is generic so a "12mo" / "this-quarter" deep-link can be added
+  // without changing the contract.
+  useEffect(() => {
+    const monthIndex = (m) =>
+      ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec']
+        .indexOf((m || '').toLowerCase().slice(0, 3));
+
+    const handler = (e) => {
+      const win = e.detail?.window || '6mo';
+      const monthsAhead = win === '12mo' ? 12 : 6;
+      const now = new Date();
+      const cutoff = new Date(now.getFullYear(), now.getMonth() + monthsAhead, 1);
+      const matches = new Set();
+      for (const p of PATENT_CLIFFS) {
+        if (!p.expiryYear) continue;
+        const m = p.expiryMonth ? monthIndex(p.expiryMonth) : 0;
+        if (m < 0) continue;
+        const d = new Date(p.expiryYear, m, 1);
+        if (d >= now && d < cutoff) matches.add(p.molecule);
+      }
+      if (matches.size === 0) return;
+
+      // Reset filters so matching rows are guaranteed visible (the user
+      // may have therapy-filtered or collapsed the table earlier).
+      setTherapy('__ALL__');
+      setSortKey('expiry');
+      setShowAll(true);
+      setHighlighted(matches);
+
+      // Defer the scroll one frame so React has flushed the state
+      // changes that expand the table.
+      requestAnimationFrame(() => {
+        sectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+
+      // Clear the flash after a moment.
+      setTimeout(() => setHighlighted(new Set()), 3500);
+    };
+    window.addEventListener('focus-patent-cliffs', handler);
+    return () => window.removeEventListener('focus-patent-cliffs', handler);
+  }, []);
 
   // For each cliff molecule, derive which tracked companies have launched a
   // matching brand. Drives the positioning pill in the main row AND populates
@@ -188,7 +238,11 @@ export default function PatentCliffs({ allRows = [], companies = [] }) {
   };
 
   return (
-    <div className="bg-white rounded-2xl border border-ink-100 shadow-card p-4">
+    <div
+      ref={sectionRef}
+      id="patent-cliffs"
+      className="bg-white rounded-2xl border border-ink-100 shadow-card p-4 scroll-mt-4"
+    >
       <div className="flex items-start justify-between gap-3 mb-3 flex-wrap">
         <div className="flex items-center gap-2.5">
           <div className="w-8 h-8 rounded-lg flex items-center justify-center bg-pharma-50">
@@ -270,10 +324,15 @@ export default function PatentCliffs({ allRows = [], companies = [] }) {
               const conf = CONFIDENCE_STYLES[p.confidence] || CONFIDENCE_STYLES.medium;
               const filers = filersByMolecule.get(p.molecule) || { launched: [], absent: [] };
               const launchedCount = filers.launched.length;
+              const isFlashed = highlighted.has(p.molecule);
               return (
                 <tr
                   key={id}
-                  className={`group cursor-pointer hover:bg-ink-50/80 transition-colors ${tint}`}
+                  className={`group cursor-pointer transition-all duration-700 ${
+                    isFlashed
+                      ? '!bg-amber-50 ring-2 ring-amber-300 shadow-[0_0_0_4px_rgba(251,191,36,0.18)]'
+                      : `hover:bg-ink-50/80 ${tint}`
+                  }`}
                   onClick={() => setOpenCliff(p)}
                 >
                   <td className="py-2.5 pl-4 pr-3 border-b border-ink-100/70 align-middle text-center">

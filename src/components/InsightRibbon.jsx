@@ -74,18 +74,36 @@ function shortPartner(name) {
   return String(name).replace(/\s*\([^)]*\)\s*$/, '').trim();
 }
 
-function InsightItem({ icon: Icon, label, primary, secondary }) {
+function InsightItem({ icon: Icon, label, primary, secondary, onClick, accent = 'pharma' }) {
+  const isClickable = typeof onClick === 'function';
+  const Wrapper = isClickable ? 'button' : 'span';
+  const accentClass = accent === 'amber' ? 'text-amber-600' : 'text-pharma-600';
   return (
-    <span className="inline-flex items-center gap-2 min-w-0">
-      <Icon className="w-3.5 h-3.5 text-pharma-600 shrink-0" />
+    <Wrapper
+      type={isClickable ? 'button' : undefined}
+      onClick={onClick}
+      title={isClickable ? `${label}: click to view` : undefined}
+      className={`inline-flex items-center gap-2 min-w-0 ${
+        isClickable
+          ? 'group cursor-pointer rounded-md px-1.5 py-0.5 -my-0.5 hover:bg-amber-50/70 active:bg-amber-100/70 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-300'
+          : ''
+      }`}
+    >
+      <Icon className={`w-3.5 h-3.5 shrink-0 ${accentClass}`} />
       <span className="text-[10px] uppercase tracking-wider font-semibold text-ink-500 shrink-0">
         {label}
       </span>
-      <span className="text-xs font-semibold text-ink-900 truncate">{primary}</span>
+      <span
+        className={`text-xs font-semibold text-ink-900 truncate ${
+          isClickable ? 'group-hover:underline decoration-amber-400 decoration-2 underline-offset-4' : ''
+        }`}
+      >
+        {primary}
+      </span>
       {secondary && (
         <span className="text-xs text-ink-500 truncate hidden md:inline">{secondary}</span>
       )}
-    </span>
+    </Wrapper>
   );
 }
 
@@ -149,6 +167,12 @@ export default function InsightRibbon({ rows }) {
               label="Patents"
               primary={`${insights.cliffs} cliff${insights.cliffs === 1 ? '' : 's'}`}
               secondary="expiring in next 6 months"
+              accent="amber"
+              onClick={() =>
+                window.dispatchEvent(
+                  new CustomEvent('focus-patent-cliffs', { detail: { window: '6mo' } })
+                )
+              }
             />
           </>
         )}
