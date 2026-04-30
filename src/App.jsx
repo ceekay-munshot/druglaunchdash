@@ -201,7 +201,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gradient-to-br from-pharma-50/40 via-white to-teal-50/30 bg-fixed">
       <Header
         searchQuery={searchQuery}
         onSearchChange={setSearchQuery}

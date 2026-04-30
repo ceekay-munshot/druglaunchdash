@@ -9,6 +9,7 @@ import {
   Table as TableIcon,
   Download,
   Hourglass,
+  CheckCircle2,
 } from 'lucide-react';
 
 // Small "pending verification" pill rendered next to a brand name when the
@@ -340,6 +341,17 @@ export default function MainTable({ rows, allRows, selectedCompany }) {
   };
 
   const [isExporting, setIsExporting] = useState(false);
+  // Tiny in-component toast used to confirm post-action feedback like
+  // "Excel ready". Auto-dismisses after a few seconds so we don't have
+  // to pull in a notification library for one or two surfaces.
+  const [toast, setToast] = useState(null);
+
+  const showToast = (message) => {
+    setToast({ id: Date.now(), message });
+    setTimeout(() => {
+      setToast((cur) => (cur && Date.now() - cur.id >= 3300 ? null : cur));
+    }, 3500);
+  };
 
   // Styled XLSX export — exceljs is ~280KB gz so we dynamic-import it on
   // click rather than bundling it into the initial page load. Always
@@ -352,6 +364,16 @@ export default function MainTable({ rows, allRows, selectedCompany }) {
     try {
       const { exportXlsx } = await import('../utils/exportXlsx');
       await exportXlsx({ topLevelRows, childrenByKey });
+      // Count what we just exported (parent + all its children, regardless
+      // of expansion state) so the toast can confirm an exact number.
+      let exportCount = 0;
+      for (const r of topLevelRows) {
+        exportCount += 1;
+        if (isAcquisitionParent(r)) {
+          exportCount += (childrenByKey.get(acquisitionDealKey(r)) || []).length;
+        }
+      }
+      showToast(`drug_launch_tracker.xlsx ready · ${exportCount} rows`);
     } finally {
       setIsExporting(false);
     }
@@ -531,6 +553,28 @@ export default function MainTable({ rows, allRows, selectedCompany }) {
         allRows={allRows ?? rows}
         onClose={() => setActiveRow(null)}
       />
+
+      {/* Action-confirmation toast. Renders fixed-position so it floats
+          above the table regardless of scroll, slides in from the bottom
+          via a CSS transition, and auto-dismisses after ~3.3s. */}
+      <div
+        role="status"
+        aria-live="polite"
+        className={`fixed bottom-6 right-6 z-50 transition-all duration-300 ease-out ${
+          toast
+            ? 'translate-y-0 opacity-100'
+            : 'translate-y-3 opacity-0 pointer-events-none'
+        }`}
+      >
+        <div className="inline-flex items-center gap-2.5 rounded-xl border border-pharma-200 bg-white shadow-cardHover pl-3 pr-4 py-2.5">
+          <span className="w-7 h-7 rounded-full bg-pharma-50 inline-flex items-center justify-center">
+            <CheckCircle2 className="w-4 h-4 text-pharma-600" />
+          </span>
+          <span className="text-sm font-medium text-ink-900 whitespace-nowrap">
+            {toast?.message || ''}
+          </span>
+        </div>
+      </div>
     </div>
   );
 }
