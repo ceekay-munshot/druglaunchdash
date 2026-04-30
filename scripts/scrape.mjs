@@ -317,6 +317,155 @@ async function scrapeOne({ company, url }) {
   return rows.map((r) => ({ ...r, buyer: company }));
 }
 
+// ── Pass 1.5: stub-targeted detail-page enrichment ──────────────────────
+// Index-page extractions sometimes only catch the deal headline ("Sun
+// Pharma acquires Organon brands") and leave molecule / therapy /
+// indication / chronic-acute / pricing blank. The detail page (or its
+// linked PDF) usually carries more detail, but blanket-scraping every
+// detail page would 50× the Firecrawl bill. So we only re-scrape rows
+// that are actually empty AND were last attempted ≥ENRICH_RETRY_DAYS ago,
+// capped at MAX_DETAIL_SCRAPES_PER_RUN per run for predictable spend.
+
+const ENRICH_RETRY_DAYS = 7;
+const MAX_DETAIL_SCRAPES_PER_RUN = 10;
+// Number of empty descriptive fields that qualifies a row as a "stub"
+// — must match the threshold in src/data/mockData.js's isStubRow.
+const STUB_BLANKS_THRESHOLD = 3;
+// Camel-case scrape-side equivalents of the dashboard's stub-detection
+// fields. (The frontend uses Excel column labels; the scraper uses the
+// camelCase originals from the rowItemSchema.)
+const STUB_FIELDS_SCRAPE = ['molecule', 'therapy', 'indication', 'chronicAcute', 'existingBrand', 'price'];
+
+function countBlanks(row) {
+  let n = 0;
+  for (const k of STUB_FIELDS_SCRAPE) if (fieldIsEmpty(row[k])) n += 1;
+  return n;
+}
+
+function isStubScrapeRow(row) {
+  return countBlanks(row) >= STUB_BLANKS_THRESHOLD;
+}
+
+// Set of index URLs Pass 1 already covers; skipping these in Pass 1.5
+// avoids burning credits re-doing index extractions.
+const SOURCE_URLS = new Set(SOURCES.map((s) => s.url));
+
+function shouldRetryStub(row, now = Date.now()) {
+  if (!row.sourceUrl || typeof row.sourceUrl !== 'string') return false;
+  if (SOURCE_URLS.has(row.sourceUrl.trim())) return false;
+  if (!row.lastEnrichmentAttempt) return true;
+  const last = new Date(row.lastEnrichmentAttempt).getTime();
+  if (isNaN(last)) return true;
+  return now - last >= ENRICH_RETRY_DAYS * 86_400_000;
+}
+
+// Same Firecrawl /scrape call as scrapeOne(), but pointed at a single
+// press-release URL instead of a company index. The extraction prompt and
+// schema are identical — Firecrawl/LLM sees fewer rows to extract because
+// the page is one event, but everything else stays the same.
+async function scrapeDetailPage(url) {
+  const body = {
+    url,
+    formats: ['json'],
+    jsonOptions: {
+      schema: extractionSchema,
+      prompt: extractionPrompt,
+    },
+    onlyMainContent: true,
+    waitFor: 2500,
+  };
+  const res = await fetch('https://api.firecrawl.dev/v1/scrape', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${FIRECRAWL_API_KEY}`,
+    },
+    body: JSON.stringify(body),
+  });
+  if (!res.ok) {
+    const text = await res.text().catch(() => '');
+    throw new Error(`Firecrawl ${res.status} for ${url}: ${text.slice(0, 200)}`);
+  }
+  const json = await res.json();
+  return json?.data?.json?.rows || [];
+}
+
+// Operates on the byKey insertion-ordered map from main(): identifies
+// stale stub rows, re-scrapes their sourceUrl, and merges any newly-
+// disclosed fields back into the same row (or appends genuine new
+// brand-rows the press release reveals). Returns the list of rows that
+// gained at least one field on this run, so Pass 2 can retry price-
+// hydration on them too.
+async function passEnrichStubs(byKey) {
+  if ((process.env.SCRAPE_STUB_ENRICHMENT || 'on').toLowerCase() === 'off') {
+    console.log('▶ Pass 1.5 (stub enrichment): SKIPPED (SCRAPE_STUB_ENRICHMENT=off)');
+    return [];
+  }
+
+  const now = Date.now();
+  const candidates = [];
+  for (const r of byKey.values()) {
+    if (isStubScrapeRow(r) && shouldRetryStub(r, now)) candidates.push(r);
+  }
+  // Oldest-attempted first so each weekly run cycles through the backlog
+  // rather than getting stuck on the same 10 rows.
+  candidates.sort((a, b) => {
+    const aT = a.lastEnrichmentAttempt ? new Date(a.lastEnrichmentAttempt).getTime() : 0;
+    const bT = b.lastEnrichmentAttempt ? new Date(b.lastEnrichmentAttempt).getTime() : 0;
+    return aT - bT;
+  });
+  const limit = candidates.slice(0, MAX_DETAIL_SCRAPES_PER_RUN);
+  console.log(
+    `▶ Pass 1.5 (stub enrichment): ${candidates.length} eligible · re-scraping top ${limit.length} ` +
+      `(cap ${MAX_DETAIL_SCRAPES_PER_RUN}/run, retry every ${ENRICH_RETRY_DAYS} days)`
+  );
+
+  const enrichedRows = [];
+  for (const stub of limit) {
+    const url = stub.sourceUrl;
+    const tag = `📋 ${stub.brand} (${stub.buyer})`;
+    // Mark the attempt regardless of outcome so a flaky URL doesn't burn
+    // budget on every subsequent run.
+    stub.lastEnrichmentAttempt = new Date().toISOString();
+    try {
+      const detailRows = await scrapeDetailPage(url);
+      let mergedCount = 0;
+      let addedCount = 0;
+      for (const r of detailRows) {
+        if (!r.brand || !r.date) continue;
+        // Carry over the buyer from the stub — detail-page extractions
+        // sometimes don't echo the buyer back, but we know it from context.
+        if (!r.buyer) r.buyer = stub.buyer;
+        const k = rowKey(r);
+        if (byKey.has(k)) {
+          const cur = byKey.get(k);
+          const { merged, filledKeys } = mergeRow(cur, r);
+          if (filledKeys.length > 0) {
+            byKey.set(k, merged);
+            mergedCount += 1;
+            enrichedRows.push(merged);
+          }
+        } else {
+          // The detail page revealed a brand that wasn't on the index —
+          // append it. Seed lastEnrichmentAttempt so we don't immediately
+          // re-scrape the same URL on the next run.
+          if (!r.lastEnrichmentAttempt) r.lastEnrichmentAttempt = stub.lastEnrichmentAttempt;
+          byKey.set(k, r);
+          addedCount += 1;
+        }
+      }
+      console.log(
+        `  ${tag} → extracted ${detailRows.length} (merged ${mergedCount}, added ${addedCount})`
+      );
+    } catch (err) {
+      console.error(`  ${tag} FAILED: ${err.message}`);
+    }
+    // Gentle rate-limit between detail scrapes
+    await sleep(1200);
+  }
+  return enrichedRows;
+}
+
 async function main() {
   console.log(`▶ Scraping ${SOURCES.length} sources with Firecrawl …`);
   const existing = await loadExisting();
@@ -349,7 +498,11 @@ async function main() {
         const k = rowKey(r);
         if (!byKey.has(k)) {
           // Brand-new row — append to the end of the map and queue for
-          // price hydration in Pass 2.
+          // price hydration in Pass 2. Seed lastEnrichmentAttempt so the
+          // weekly-cadence stub re-scrape in Pass 1.5 doesn't immediately
+          // hit the detail page for a row we just added (we already have
+          // what the source page said today).
+          if (!r.lastEnrichmentAttempt) r.lastEnrichmentAttempt = new Date().toISOString();
           byKey.set(k, r);
           newRows.push(r);
         } else {
@@ -383,6 +536,14 @@ async function main() {
     `  pass 1 summary: ${newRows.length} new · ${mergedRowCount} merged ` +
       `(${filledFieldCount} fields filled) · ${freshRowCount} extracted total`
   );
+
+  // ── Pass 1.5: stub-targeted detail-page enrichment ─────────────────────
+  // Re-scrapes the press-release URL of stub rows (≥3 blanks, last attempt
+  // ≥7 days ago), capped at 10 detail-scrapes per run. Any newly-disclosed
+  // fields merge back into the same row; brand-rows the press release
+  // reveals (that weren't on the index summary) get appended.
+  const stubEnriched = await passEnrichStubs(byKey);
+  enrichedRows.push(...stubEnriched);
 
   // ── Pass 2: price hydration ────────────────────────────────────────────
   // Looks up retail MRP on 1mg for any row that's still missing one — both
