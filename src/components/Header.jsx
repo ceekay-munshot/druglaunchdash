@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Pill, Search, Building2, Sparkles, RefreshCw, Archive, Plus, X, Clock, CheckCircle2 } from 'lucide-react';
+import { CompanyAvatar } from './CompanyAvatar';
 
 export default function Header({
   searchQuery,
@@ -158,7 +159,10 @@ export default function Header({
                             key={c}
                             className="group flex items-center justify-between gap-2 px-4 py-2 hover:bg-pharma-50/50"
                           >
-                            <span className="text-sm text-ink-900 truncate">{c}</span>
+                            <span className="inline-flex items-center gap-2 min-w-0">
+                              <CompanyAvatar name={c} size="sm" />
+                              <span className="text-sm text-ink-900 truncate">{c}</span>
+                            </span>
                             <button
                               onClick={() => onUnarchive && onUnarchive(c)}
                               className="inline-flex items-center gap-1 text-[11px] font-semibold text-white bg-pharma-600 hover:bg-pharma-700 rounded-md px-2.5 py-1 transition shrink-0"
@@ -183,7 +187,10 @@ export default function Header({
                             key={c}
                             className="group flex items-center justify-between gap-2 px-4 py-1.5 hover:bg-ink-100/40"
                           >
-                            <span className="text-xs text-ink-700 truncate">{c}</span>
+                            <span className="inline-flex items-center gap-2 min-w-0">
+                              <CompanyAvatar name={c} size="xs" />
+                              <span className="text-xs text-ink-700 truncate">{c}</span>
+                            </span>
                             <button
                               onClick={() => onArchive && onArchive(c)}
                               className="inline-flex items-center gap-1 text-[11px] text-ink-500 hover:text-pharma-700 transition opacity-0 group-hover:opacity-100"
@@ -218,8 +225,9 @@ export default function Header({
             {filteredRows} of {totalRows} launches
           </span>
           {selectedCompany !== '__ALL__' && (
-            <span className="px-2.5 py-1 rounded-full bg-teal-50 text-teal-700 border border-teal-100 font-medium">
-              Company: {selectedCompany}
+            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-teal-50 text-teal-700 border border-teal-100 font-medium">
+              <CompanyAvatar name={selectedCompany} size="xs" />
+              {selectedCompany}
             </span>
           )}
           <span className="px-2.5 py-1 rounded-full bg-white text-ink-500 border border-ink-100">

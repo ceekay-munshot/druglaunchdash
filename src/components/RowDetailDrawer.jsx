@@ -26,6 +26,7 @@ import {
   isStubRow,
 } from '../data/mockData';
 import { fmtDate, fmtINRPlain } from '../utils/format';
+import { CompanyAvatar, CompanyTag } from './CompanyAvatar';
 
 const LAUNCH_TYPE_STYLES = {
   Acquired: 'bg-emerald-50 text-emerald-700 border-emerald-200',
@@ -221,12 +222,21 @@ export default function RowDetailDrawer({ row, allRows = [], onClose }) {
           </div>
 
           <div className="flex items-center gap-2 mt-4 text-xs">
-            <span className="font-medium text-ink-700 truncate">
-              {row[COLUMN_KEYS.SELLER] || '—'}
-            </span>
+            {row[COLUMN_KEYS.SELLER] && row[COLUMN_KEYS.SELLER] !== '—' ? (
+              <CompanyTag
+                name={row[COLUMN_KEYS.SELLER]}
+                size="sm"
+                textClass="font-medium text-ink-700"
+              />
+            ) : (
+              <span className="font-medium text-ink-700 truncate">—</span>
+            )}
             <ArrowRight className="w-3.5 h-3.5 text-pharma-600 shrink-0" />
-            <span className="font-semibold text-ink-900 truncate">
-              {row[COLUMN_KEYS.BUYER] || '—'}
+            <span className="inline-flex items-center gap-1.5 min-w-0">
+              <CompanyAvatar name={row[COLUMN_KEYS.BUYER] || ''} size="sm" />
+              <span className="font-semibold text-ink-900 truncate">
+                {row[COLUMN_KEYS.BUYER] || '—'}
+              </span>
             </span>
           </div>
         </div>

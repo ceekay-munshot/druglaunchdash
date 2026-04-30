@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react';
 import { Users } from 'lucide-react';
+import { CompanyAvatar } from './CompanyAvatar';
 import {
   COLUMN_KEYS,
   countAcquisitionDeals,
@@ -163,8 +164,11 @@ export default function PeerBenchmark({ rows, companies }) {
                     c.name === bestLaunches ? 'bg-pharma-50/70' : ''
                   }`}
                 >
-                  <div className="text-xs font-semibold text-ink-900 truncate">
-                    {shortName(c.name)}
+                  <div className="flex items-center justify-center gap-1.5 min-w-0">
+                    <CompanyAvatar name={c.name} size="md" />
+                    <span className="text-xs font-semibold text-ink-900 truncate">
+                      {shortName(c.name)}
+                    </span>
                   </div>
                   <div className="text-[10px] text-ink-500 mt-0.5 tabular-nums">
                     {c.metrics.launchCount} launches

@@ -36,6 +36,7 @@ import {
 } from '../data/mockData';
 import { fmtINRPlain, fmtDate } from '../utils/format';
 import RowDetailDrawer from './RowDetailDrawer';
+import { CompanyTag } from './CompanyAvatar';
 
 // Strip the trailing "(parent)" annotation from a brand label when we render
 // the parent row — the chevron + child count already conveys the rollup,
@@ -329,6 +330,10 @@ export default function MainTable({ rows, allRows, selectedCompany }) {
           {isStubRow(row) && <PendingPill />}
         </span>
       );
+    }
+    if (col === COLUMN_KEYS.BUYER) {
+      if (!v) return <span className="text-ink-300">—</span>;
+      return <CompanyTag name={v} size="sm" textClass="text-ink-700" />;
     }
     if (v === null || v === undefined || v === '') return <span className="text-ink-300">—</span>;
     return <span className="text-ink-700">{v}</span>;
