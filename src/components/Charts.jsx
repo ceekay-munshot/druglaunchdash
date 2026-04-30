@@ -307,10 +307,23 @@ export default function Charts({ rows, selectedCompany, timeline }) {
   const brandRows = rows.filter((r) => !isAcquisitionParent(r));
   const total = brandRows.length;
 
-  const therapy = countBy(brandRows, COLUMN_KEYS.THERAPY).sort((a, b) => b.value - a.value).slice(0, 10);
+  // Filters out "category" entries that are actually placeholders for
+  // undisclosed data (em-dash, hyphen, blank) — these aren't real
+  // therapies/deal-types/sellers, just stub rows awaiting verification,
+  // and showing them as "—" bars on the chart is misleading.
+  const isRealCategory = (d) => {
+    if (!d?.name) return false;
+    const s = String(d.name).trim();
+    return s !== '' && s !== '—' && s !== '-';
+  };
+
+  const therapy = countBy(brandRows, COLUMN_KEYS.THERAPY)
+    .filter(isRealCategory)
+    .sort((a, b) => b.value - a.value)
+    .slice(0, 10);
   const launchType = countBy(brandRows, COLUMN_KEYS.LAUNCH_TYPE).sort((a, b) => b.value - a.value);
   const sellerCount = countBy(brandRows, COLUMN_KEYS.SELLER)
-    .filter((d) => d.name && d.name !== '—')
+    .filter(isRealCategory)
     .sort((a, b) => b.value - a.value)
     .slice(0, 8);
 
@@ -327,6 +340,7 @@ export default function Charts({ rows, selectedCompany, timeline }) {
 
   const marketByTherapy = compactTopN(
     sumBy(brandRows, COLUMN_KEYS.THERAPY, COLUMN_KEYS.MARKET_SIZE)
+      .filter(isRealCategory)
       .filter((d) => d.value > 0)
       .sort((a, b) => b.value - a.value),
     8
@@ -337,7 +351,9 @@ export default function Charts({ rows, selectedCompany, timeline }) {
   const chronicPct = total ? Math.round((chronicCount / total) * 100) : 0;
   const acutePct = total ? 100 - chronicPct : 0;
   const dealType = compactTopN(
-    countBy(brandRows, COLUMN_KEYS.DEAL_TYPE).sort((a, b) => b.value - a.value),
+    countBy(brandRows, COLUMN_KEYS.DEAL_TYPE)
+      .filter(isRealCategory)
+      .sort((a, b) => b.value - a.value),
     8
   );
 
