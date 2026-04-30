@@ -30,29 +30,43 @@ import { countBy, sumBy, fmtINRPlain } from '../utils/format';
 // Unified green → teal brand palette, ordered from strongest to lightest. Used
 // for ranked data (therapies, buyers, sellers). Bars with more items simply
 // wrap the palette.
-const PALETTE = [
-  '#16a34a',
-  '#0d9488',
-  '#22c55e',
-  '#14b8a6',
-  '#4ade80',
-  '#2dd4bf',
-  '#10b981',
-  '#84cc16',
-  '#5eead4',
-  '#a3e635',
-  '#34d399',
-  '#6ee7b7',
-];
+// Per-chart gradient pairs. Each chart gets its own colour so they stop
+// blurring together when scanned side-by-side. The palette is anchored in
+// the brand identity (greens + teal) but extends into amber/indigo/sky so
+// each chart reads as "the gold one", "the indigo one" etc.
+//
+// `from` is the lighter shade rendered at the start of each bar (origin
+// edge); `to` is the deeper shade at the bar's tip. The id is used as the
+// SVG defs identifier — must be unique per ResponsiveContainer instance.
+const GRADIENTS = {
+  green:  { from: '#86efac', to: '#15803d', id: 'cg-grad-green' },   // Therapy / hero brand colour
+  amber:  { from: '#fde68a', to: '#b45309', id: 'cg-grad-amber' },   // TAM / money-coded
+  indigo: { from: '#c7d2fe', to: '#3730a3', id: 'cg-grad-indigo' },  // Sellers / counterparties
+  sky:    { from: '#bae6fd', to: '#0369a1', id: 'cg-grad-sky' },     // Deal Type / structural
+  teal:   { from: '#99f6e4', to: '#0f766e', id: 'cg-grad-teal' },    // Activity over time
+};
+
+// Fallback per-bar palette when a chart wants discrete colours per bar
+// rather than a single gradient (e.g. ranking visualisations). Mirrors the
+// gradient endpoints so the look stays consistent.
+const ACCENT_BY_PALETTE = {
+  green:  '#16a34a',
+  amber:  '#d97706',
+  indigo: '#4f46e5',
+  sky:    '#0284c7',
+  teal:   '#0d9488',
+};
 
 // Separate palette for binary categories so Chronic vs Acute reads clearly
 const CHRONIC_ACUTE_COLORS = { Chronic: '#16a34a', Acute: '#f59e0b' };
 
-// Tricolour palette for Launch Type donut (Acquired / In-licensed / Own Launched)
-const LAUNCH_TYPE_COLORS = {
-  Acquired: '#0d9488',
-  'In-licensed': '#22c55e',
-  'Own Launched': '#16a34a',
+// Tricolour palette for Launch Type donut (Acquired / In-licensed / Own Launched).
+// Each wedge maps to its own gradient so the donut also gets the depth
+// treatment instead of flat solid fills.
+const LAUNCH_TYPE_GRADIENTS = {
+  Acquired:      { from: '#5eead4', to: '#0d9488', id: 'cg-grad-launch-acquired' },
+  'In-licensed': { from: '#86efac', to: '#15803d', id: 'cg-grad-launch-inlic' },
+  'Own Launched':{ from: '#bbf7d2', to: '#16a34a', id: 'cg-grad-launch-own' },
 };
 
 function ChartCard({ icon: Icon, title, subtitle, children, accent = 'green' }) {
@@ -109,11 +123,25 @@ const catTick = { fontSize: 11, fill: '#334155' };
 // and Market-Size-by-Therapy (all of which have long category labels). Height
 // is dynamically sized to the number of bars so they always have breathing
 // room (no overlapping labels even with 8-12 bars).
-function HBar({ data, valueFormatter, tooltipLabel, height, categoryWidth = 140, labelFormatter }) {
+//
+// Each chart receives a `palette` key ('green' | 'amber' | 'indigo' | 'sky'
+// | 'teal') so charts on the same page read as distinct rather than seven
+// shades of green. All bars within a single chart share the chart's
+// gradient — the LENGTH of the bar already encodes ranking, so giving each
+// bar a different colour just adds noise.
+function HBar({ data, valueFormatter, tooltipLabel, height, categoryWidth = 140, labelFormatter, palette = 'green' }) {
   const computed = height ?? Math.max(240, data.length * 36 + 40);
+  const grad = GRADIENTS[palette] || GRADIENTS.green;
+  const labelColor = ACCENT_BY_PALETTE[palette] || ACCENT_BY_PALETTE.green;
   return (
     <ResponsiveContainer width="100%" height={computed}>
       <BarChart data={data} layout="vertical" margin={{ left: 4, right: 56, top: 4, bottom: 4 }}>
+        <defs>
+          <linearGradient id={grad.id} x1="0" x2="1" y1="0" y2="0">
+            <stop offset="0%" stopColor={grad.from} />
+            <stop offset="100%" stopColor={grad.to} />
+          </linearGradient>
+        </defs>
         <CartesianGrid horizontal={false} strokeDasharray="3 3" stroke={gridStyle.stroke} />
         <XAxis type="number" tick={axisTick} allowDecimals={false} tickFormatter={labelFormatter} />
         <YAxis
@@ -127,15 +155,12 @@ function HBar({ data, valueFormatter, tooltipLabel, height, categoryWidth = 140,
           cursor={{ fill: '#f1f5f9' }}
           content={<CustomTooltip formatter={valueFormatter} labelPrefix={tooltipLabel} />}
         />
-        <Bar dataKey="value" radius={[0, 8, 8, 0]} barSize={18}>
-          {data.map((_, i) => (
-            <Cell key={i} fill={PALETTE[i % PALETTE.length]} />
-          ))}
+        <Bar dataKey="value" fill={`url(#${grad.id})`} radius={[0, 8, 8, 0]} barSize={18}>
           <LabelList
             dataKey="value"
             position="right"
             formatter={labelFormatter || ((v) => v)}
-            style={{ fontSize: 11, fill: '#334155', fontWeight: 600 }}
+            style={{ fontSize: 11, fill: labelColor, fontWeight: 700 }}
           />
         </Bar>
       </BarChart>
@@ -217,7 +242,7 @@ export default function Charts({ rows, selectedCompany, timeline }) {
       {/* Therapy Split — horizontal bar ranked (long labels render cleanly) */}
       <ChartCard icon={PieIcon} title="Therapy Split" subtitle="Top 10 therapies by brand count">
         {therapy.length ? (
-          <HBar data={therapy} tooltipLabel="Brands" categoryWidth={150} />
+          <HBar data={therapy} tooltipLabel="Brands" categoryWidth={150} palette="green" />
         ) : (
           <EmptyChart msg="No therapy data." />
         )}
@@ -232,6 +257,14 @@ export default function Charts({ rows, selectedCompany, timeline }) {
       >
         <ResponsiveContainer width="100%" height={260}>
           <PieChart>
+            <defs>
+              {Object.values(LAUNCH_TYPE_GRADIENTS).map((g) => (
+                <linearGradient key={g.id} id={g.id} x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0%" stopColor={g.from} />
+                  <stop offset="100%" stopColor={g.to} />
+                </linearGradient>
+              ))}
+            </defs>
             <Pie
               data={launchType}
               dataKey="value"
@@ -242,9 +275,15 @@ export default function Charts({ rows, selectedCompany, timeline }) {
               stroke="#fff"
               strokeWidth={2}
             >
-              {launchType.map((d, i) => (
-                <Cell key={i} fill={LAUNCH_TYPE_COLORS[d.name] || PALETTE[i % PALETTE.length]} />
-              ))}
+              {launchType.map((d, i) => {
+                const g = LAUNCH_TYPE_GRADIENTS[d.name];
+                return (
+                  <Cell
+                    key={i}
+                    fill={g ? `url(#${g.id})` : ACCENT_BY_PALETTE.green}
+                  />
+                );
+              })}
             </Pie>
             <Tooltip
               content={
@@ -326,7 +365,7 @@ export default function Charts({ rows, selectedCompany, timeline }) {
         accent="teal"
       >
         {sellerCount.length ? (
-          <HBar data={sellerCount} tooltipLabel="Deals" categoryWidth={160} />
+          <HBar data={sellerCount} tooltipLabel="Deals" categoryWidth={160} palette="indigo" />
         ) : (
           <EmptyChart msg="No seller-side counterparties in view." />
         )}
@@ -346,6 +385,7 @@ export default function Charts({ rows, selectedCompany, timeline }) {
             valueFormatter={fmtINRPlain}
             labelFormatter={(v) => (v >= 1000 ? `₹${(v / 1000).toFixed(1)}K` : `₹${v}`)}
             categoryWidth={170}
+            palette="amber"
           />
         ) : (
           <EmptyChart msg="TAM data not available for this selection — requires public estimates from broker / industry coverage." />
@@ -359,7 +399,7 @@ export default function Charts({ rows, selectedCompany, timeline }) {
         subtitle="Top 8 transaction structures"
       >
         {dealType.length ? (
-          <HBar data={dealType} tooltipLabel="Deals" categoryWidth={190} />
+          <HBar data={dealType} tooltipLabel="Deals" categoryWidth={190} palette="sky" />
         ) : (
           <EmptyChart msg="No deal-type data." />
         )}
@@ -378,8 +418,8 @@ export default function Charts({ rows, selectedCompany, timeline }) {
               <AreaChart data={activityByYear} margin={{ left: 0, right: 12, top: 10, bottom: 4 }}>
                 <defs>
                   <linearGradient id="activityFill" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="5%" stopColor="#16a34a" stopOpacity={0.4} />
-                    <stop offset="95%" stopColor="#16a34a" stopOpacity={0} />
+                    <stop offset="5%" stopColor={GRADIENTS.teal.to} stopOpacity={0.45} />
+                    <stop offset="95%" stopColor={GRADIENTS.teal.to} stopOpacity={0} />
                   </linearGradient>
                 </defs>
                 <CartesianGrid strokeDasharray="3 3" stroke={gridStyle.stroke} />
@@ -389,10 +429,10 @@ export default function Charts({ rows, selectedCompany, timeline }) {
                 <Area
                   type="monotone"
                   dataKey="value"
-                  stroke="#16a34a"
+                  stroke={GRADIENTS.teal.to}
                   strokeWidth={2.5}
                   fill="url(#activityFill)"
-                  dot={{ r: 4, fill: '#16a34a', strokeWidth: 2, stroke: '#fff' }}
+                  dot={{ r: 4, fill: GRADIENTS.teal.to, strokeWidth: 2, stroke: '#fff' }}
                   activeDot={{ r: 6 }}
                 />
               </AreaChart>
