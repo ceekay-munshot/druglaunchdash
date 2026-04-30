@@ -5,6 +5,7 @@ import KPICards from './components/KPICards';
 import Charts from './components/Charts';
 import MainTable from './components/MainTable';
 import InsightWidgets from './components/InsightWidgets';
+import InsightRibbon from './components/InsightRibbon';
 import PeerBenchmark from './components/PeerBenchmark';
 import PatentCliffs from './components/PatentCliffs';
 import {
@@ -219,6 +220,8 @@ export default function App() {
       />
 
       <main className="max-w-[1840px] mx-auto px-4 py-4 space-y-4">
+        <InsightRibbon rows={filteredRows} />
+
         <FilterBar
           timeline={timeline}
           setTimeline={setTimeline}
