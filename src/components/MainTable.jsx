@@ -311,8 +311,20 @@ export default function MainTable({ rows, allRows, selectedCompany }) {
 
   const exportCsv = () => {
     const header = COLUMN_ORDER.join(',');
+    // Excel on Windows opens CSVs as Windows-1252 unless the file starts
+    // with a UTF-8 BOM, which mangles ₹ → â‚¹ and — → â€". Prepend the
+    // BOM so Excel auto-detects UTF-8 correctly.
+    const BOM = '﻿';
+    // Replace the em-dash blank-placeholder with a plain hyphen on export
+    // so spreadsheet users see "-" instead of a wide en-dash glyph that
+    // some fonts can't render.
+    const cleanCell = (val) => {
+      if (val === null || val === undefined || val === '') return '-';
+      const s = String(val);
+      return s === '—' ? '-' : s.replace(/—/g, '-');
+    };
     const escape = (val) => {
-      const s = String(val ?? '');
+      const s = cleanCell(val);
       return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
     };
     // Export the full hierarchy flat — parent + all its children, regardless
@@ -327,7 +339,7 @@ export default function MainTable({ rows, allRows, selectedCompany }) {
       }
     }
     const body = flat.map((r) => COLUMN_ORDER.map((k) => escape(r[k])).join(',')).join('\n');
-    const blob = new Blob([header + '\n' + body], { type: 'text/csv;charset=utf-8;' });
+    const blob = new Blob([BOM + header + '\n' + body], { type: 'text/csv;charset=utf-8;' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
