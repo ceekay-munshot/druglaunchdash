@@ -14,6 +14,7 @@ import {
   AreaChart,
   Area,
   Legend,
+  Treemap,
 } from 'recharts';
 import {
   PieChart as PieIcon,
@@ -158,12 +159,138 @@ function HBar({ data, valueFormatter, tooltipLabel, height, categoryWidth = 140,
         <Bar dataKey="value" fill={`url(#${grad.id})`} radius={[0, 8, 8, 0]} barSize={18}>
           <LabelList
             dataKey="value"
-            position="right"
-            formatter={labelFormatter || ((v) => v)}
-            style={{ fontSize: 11, fill: labelColor, fontWeight: 700 }}
+            content={(props) => {
+              const { x, y, width, height, value, index } = props;
+              if (value == null) return null;
+              const fmt = labelFormatter ? labelFormatter(value) : String(value);
+              const isTop = index === 0;
+              return (
+                <text
+                  x={Number(x) + Number(width) + 6}
+                  y={Number(y) + Number(height) / 2 + 4}
+                  fill={labelColor}
+                  fontSize={isTop ? 12 : 11}
+                  fontWeight={isTop ? 800 : 700}
+                >
+                  {isTop ? `★ ${fmt}` : fmt}
+                </text>
+              );
+            }}
           />
         </Bar>
       </BarChart>
+    </ResponsiveContainer>
+  );
+}
+
+// Treemap rectangle. Recharts gives us the geometry (x, y, width, height)
+// plus the cell's data; we render our own SVG so the label, gradient
+// shading and hover interactions all match the rest of the dashboard.
+//
+// Colour intensity scales with the cell's value relative to the largest
+// in the set — a darker green = more brands in that therapy. The #1
+// rectangle gets a tiny ★ marker so the leader is unmissable.
+function TreemapNode({ x, y, width, height, name, value, root, index, colorMin, colorMax }) {
+  if (width <= 0 || height <= 0) return null;
+  const total = root?.value || 1;
+  const rootChildren = root?.children || [];
+  const max = rootChildren.reduce((m, c) => (c.value > m ? c.value : m), 1);
+  // Linearly interpolate between the gradient endpoints by relative size.
+  const t = Math.min(1, Math.max(0, value / max));
+  // crude lerp between two hex colors via decompose/compose
+  const lerp = (lo, hi) => {
+    const ah = parseInt(lo.slice(1), 16);
+    const bh = parseInt(hi.slice(1), 16);
+    const ar = (ah >> 16) & 255, ag = (ah >> 8) & 255, ab = ah & 255;
+    const br = (bh >> 16) & 255, bg = (bh >> 8) & 255, bb = bh & 255;
+    const cr = Math.round(ar + (br - ar) * t);
+    const cg = Math.round(ag + (bg - ag) * t);
+    const cb = Math.round(ab + (bb - ab) * t);
+    return `rgb(${cr},${cg},${cb})`;
+  };
+  const fill = lerp(colorMin, colorMax);
+  // Pick label colour for contrast — dark text on light cells, light on dark.
+  const luminance = t;
+  const textColor = luminance > 0.55 ? '#ffffff' : '#15803d';
+  const subColor = luminance > 0.55 ? 'rgba(255,255,255,0.78)' : '#475569';
+  const showLabel = width > 70 && height > 36;
+  const pct = total ? Math.round((value / total) * 100) : 0;
+  return (
+    <g>
+      <rect
+        x={x}
+        y={y}
+        width={width}
+        height={height}
+        rx={8}
+        ry={8}
+        fill={fill}
+        stroke="#fff"
+        strokeWidth={2}
+      />
+      {showLabel && (
+        <>
+          <text
+            x={x + 10}
+            y={y + 18}
+            fill={textColor}
+            fontSize={11}
+            fontWeight={700}
+            style={{ pointerEvents: 'none' }}
+          >
+            {index === 0 ? '★ ' : ''}
+            {name.length > Math.max(8, Math.floor(width / 8))
+              ? name.slice(0, Math.max(8, Math.floor(width / 8) - 1)) + '…'
+              : name}
+          </text>
+          <text
+            x={x + 10}
+            y={y + 34}
+            fill={subColor}
+            fontSize={10.5}
+            fontWeight={500}
+            style={{ pointerEvents: 'none' }}
+          >
+            {value} brand{value === 1 ? '' : 's'} · {pct}%
+          </text>
+        </>
+      )}
+    </g>
+  );
+}
+
+function TherapyTreemap({ data }) {
+  // Recharts requires { name, size } for treemap; map our { name, value }
+  // shape over.
+  const tmData = data.map((d) => ({ name: d.name, size: d.value, value: d.value }));
+  return (
+    <ResponsiveContainer width="100%" height={300}>
+      <Treemap
+        data={tmData}
+        dataKey="size"
+        stroke="#fff"
+        content={
+          <TreemapNode
+            colorMin={GRADIENTS.green.from}
+            colorMax={GRADIENTS.green.to}
+          />
+        }
+      >
+        <Tooltip
+          content={({ active, payload }) => {
+            if (!active || !payload?.[0]) return null;
+            const p = payload[0].payload;
+            return (
+              <div className="bg-white border border-ink-100 shadow-cardHover rounded-lg px-3 py-1.5 text-xs">
+                <div className="font-semibold text-ink-900">{p.name}</div>
+                <div className="text-ink-500 mt-0.5 tabular-nums">
+                  {p.value} brand{p.value === 1 ? '' : 's'}
+                </div>
+              </div>
+            );
+          }}
+        />
+      </Treemap>
     </ResponsiveContainer>
   );
 }
@@ -239,10 +366,12 @@ export default function Charts({ rows, selectedCompany, timeline }) {
 
   return (
     <div className={`grid ${gridCols} gap-3`}>
-      {/* Therapy Split — horizontal bar ranked (long labels render cleanly) */}
+      {/* Therapy Split — treemap so the "where is this company concentrated"
+          question reads in 1 second. Cell size = brand count, cell shade =
+          relative position in the ranking (deeper green = larger cluster). */}
       <ChartCard icon={PieIcon} title="Therapy Split" subtitle="Top 10 therapies by brand count">
         {therapy.length ? (
-          <HBar data={therapy} tooltipLabel="Brands" categoryWidth={150} palette="green" />
+          <TherapyTreemap data={therapy} />
         ) : (
           <EmptyChart msg="No therapy data." />
         )}
