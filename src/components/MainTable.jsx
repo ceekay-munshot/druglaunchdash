@@ -309,43 +309,22 @@ export default function MainTable({ rows, allRows, selectedCompany }) {
     return <span className="text-ink-700">{v}</span>;
   };
 
-  const exportCsv = () => {
-    const header = COLUMN_ORDER.join(',');
-    // Excel on Windows opens CSVs as Windows-1252 unless the file starts
-    // with a UTF-8 BOM, which mangles ₹ → â‚¹ and — → â€". Prepend the
-    // BOM so Excel auto-detects UTF-8 correctly.
-    const BOM = '﻿';
-    // Replace the em-dash blank-placeholder with a plain hyphen on export
-    // so spreadsheet users see "-" instead of a wide en-dash glyph that
-    // some fonts can't render.
-    const cleanCell = (val) => {
-      if (val === null || val === undefined || val === '') return '-';
-      const s = String(val);
-      return s === '—' ? '-' : s.replace(/—/g, '-');
-    };
-    const escape = (val) => {
-      const s = cleanCell(val);
-      return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
-    };
-    // Export the full hierarchy flat — parent + all its children, regardless
-    // of whether the user has the deal expanded in the UI. Brand-level data
-    // is the whole point of the export; collapsing is a viewing aid only.
-    const flat = [];
-    for (const r of topLevelRows) {
-      flat.push(r);
-      if (isAcquisitionParent(r)) {
-        const kids = childrenByKey.get(acquisitionDealKey(r)) || [];
-        for (const k of kids) flat.push(k);
-      }
+  const [isExporting, setIsExporting] = useState(false);
+
+  // Styled XLSX export — exceljs is ~280KB gz so we dynamic-import it on
+  // click rather than bundling it into the initial page load. Always
+  // exports the full deal hierarchy (parent + children), regardless of
+  // which deals the user has expanded in the UI; the collapse state is
+  // only a viewing aid.
+  const exportXlsxClick = async () => {
+    if (isExporting) return;
+    setIsExporting(true);
+    try {
+      const { exportXlsx } = await import('../utils/exportXlsx');
+      await exportXlsx({ topLevelRows, childrenByKey });
+    } finally {
+      setIsExporting(false);
     }
-    const body = flat.map((r) => COLUMN_ORDER.map((k) => escape(r[k])).join(',')).join('\n');
-    const blob = new Blob([BOM + header + '\n' + body], { type: 'text/csv;charset=utf-8;' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'drug_launch_tracker.csv';
-    a.click();
-    URL.revokeObjectURL(url);
   };
 
   return (
@@ -379,11 +358,12 @@ export default function MainTable({ rows, allRows, selectedCompany }) {
             />
           </div>
           <button
-            onClick={exportCsv}
-            className="inline-flex items-center gap-1.5 text-xs font-medium text-pharma-700 bg-pharma-50 hover:bg-pharma-100 border border-pharma-200 px-3 py-2 rounded-lg transition"
+            onClick={exportXlsxClick}
+            disabled={isExporting}
+            className="inline-flex items-center gap-1.5 text-xs font-medium text-pharma-700 bg-pharma-50 hover:bg-pharma-100 border border-pharma-200 px-3 py-2 rounded-lg transition disabled:opacity-60 disabled:cursor-wait"
           >
-            <Download className="w-3.5 h-3.5" />
-            Export CSV
+            <Download className={`w-3.5 h-3.5 ${isExporting ? 'animate-pulse' : ''}`} />
+            {isExporting ? 'Building…' : 'Export Excel'}
           </button>
         </div>
       </div>
