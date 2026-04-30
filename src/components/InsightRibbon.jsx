@@ -148,7 +148,7 @@ export default function InsightRibbon({ rows }) {
               icon={AlertTriangle}
               label="Patents"
               primary={`${insights.cliffs} cliff${insights.cliffs === 1 ? '' : 's'}`}
-              secondary="next 6 months"
+              secondary="expiring in next 6 months"
             />
           </>
         )}
