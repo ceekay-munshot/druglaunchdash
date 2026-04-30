@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import {
   ArrowUpDown,
   ArrowUp,
@@ -145,6 +145,23 @@ export default function MainTable({ rows, allRows, selectedCompany }) {
   // default; an active table search auto-expands matching deals separately.
   const [expandedDeals, setExpandedDeals] = useState(() => new Set());
 
+  // Single rowKey currently flashed because the InsightRibbon sent us a
+  // 'focus-launch-row' event. Auto-clears after ~3.5s. Same UX pattern
+  // as the patent-cliff highlight: brief glow, then back to normal.
+  const [highlightedRowKey, setHighlightedRowKey] = useState(null);
+  const sectionRef = useRef(null);
+
+  // Stable per-row identifier matching the (brand|date|seller|buyer) shape
+  // used everywhere else in the codebase. We compute it inline rather than
+  // export rowKey() from mockData because we don't need cross-file parity.
+  const computeRowKey = (r) =>
+    [
+      String(r?.[COLUMN_KEYS.BRAND] ?? '').trim().toLowerCase(),
+      String(r?.[COLUMN_KEYS.DATE] ?? '').trim(),
+      String(r?.[COLUMN_KEYS.SELLER] ?? '').trim().toLowerCase(),
+      String(r?.[COLUMN_KEYS.BUYER] ?? '').trim().toLowerCase(),
+    ].join('|');
+
   const toggleDeal = (key) => {
     setExpandedDeals((prev) => {
       const next = new Set(prev);
@@ -244,6 +261,71 @@ export default function MainTable({ rows, allRows, selectedCompany }) {
   }, [rows, tableQuery, sortKey, sortDir]);
 
   const isExpanded = (key) => expandedDeals.has(key) || autoExpandedKeys.has(key);
+
+  // Listen for ribbon-driven deep-links ("focus-launch-row"). On event:
+  // 1. Find the matching row by computeRowKey(brand|date|seller|buyer)
+  // 2. Clear any internal table search that might be hiding it
+  // 3. If the row is a child of a multi-brand deal, auto-expand the parent
+  //    so the child <tr> actually renders in the DOM
+  // 4. After React flushes the resulting state changes, scrollIntoView
+  //    centres the row in the viewport and we flash it for ~3.5s
+  useEffect(() => {
+    const handler = (e) => {
+      const { brand, date, buyer, seller } = e.detail || {};
+      if (!brand) return;
+      const targetKey = computeRowKey({
+        [COLUMN_KEYS.BRAND]: brand,
+        [COLUMN_KEYS.DATE]: date,
+        [COLUMN_KEYS.SELLER]: seller,
+        [COLUMN_KEYS.BUYER]: buyer,
+      });
+
+      // Confirm the row is actually in the current filtered set. (The
+      // ribbon pulls from the same filteredRows, so this should always
+      // pass — but if filter state changed between ribbon-render and
+      // click, we silently no-op rather than scroll to nothing.)
+      const matched = rows.find((r) => computeRowKey(r) === targetKey);
+      if (!matched) return;
+
+      setTableQuery('');
+
+      // If the matched row is a child of a parent deal, expand its
+      // parent so the child <tr> mounts. Find the parent dealKey via
+      // childrenByKey: every child shares its parent's dealKey.
+      if (!isAcquisitionParent(matched)) {
+        const parentKey = acquisitionDealKey(matched);
+        if (childrenByKey.has(parentKey)) {
+          setExpandedDeals((prev) => {
+            if (prev.has(parentKey)) return prev;
+            const next = new Set(prev);
+            next.add(parentKey);
+            return next;
+          });
+        }
+      }
+
+      setHighlightedRowKey(targetKey);
+
+      // Defer the actual scroll one tick so React can flush the search-
+      // reset and parent-expansion state changes before we querySelector.
+      setTimeout(() => {
+        const escaped =
+          typeof CSS !== 'undefined' && CSS.escape ? CSS.escape(targetKey) : targetKey;
+        const el = sectionRef.current?.querySelector(`[data-row-key="${escaped}"]`);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else if (sectionRef.current) {
+          // Fallback: at least surface the section even if the exact row
+          // couldn't be located (e.g. a future filter change drops it).
+          sectionRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 120);
+
+      setTimeout(() => setHighlightedRowKey(null), 3500);
+    };
+    window.addEventListener('focus-launch-row', handler);
+    return () => window.removeEventListener('focus-launch-row', handler);
+  }, [rows, childrenByKey]);
 
   const renderCell = (row, col) => {
     const v = row[col];
@@ -380,7 +462,11 @@ export default function MainTable({ rows, allRows, selectedCompany }) {
   };
 
   return (
-    <div className="bg-white rounded-2xl border border-ink-100 shadow-card overflow-hidden">
+    <div
+      ref={sectionRef}
+      id="launch-table"
+      className="bg-white rounded-2xl border border-ink-100 shadow-card overflow-hidden scroll-mt-4"
+    >
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 px-4 py-3 border-b border-ink-100">
         <div className="flex items-center gap-2">
           <div className="w-7 h-7 rounded-lg bg-pharma-50 flex items-center justify-center">
@@ -458,11 +544,18 @@ export default function MainTable({ rows, allRows, selectedCompany }) {
               const expanded = isParent && isExpanded(dealKey);
               const Chevron = expanded ? ChevronDown : ChevronRight;
 
+              const rowKeyAttr = computeRowKey(r);
+              const flashed = highlightedRowKey === rowKeyAttr;
               return (
                 <React.Fragment key={`${r[COLUMN_KEYS.BRAND]}-${i}`}>
                   <tr
+                    data-row-key={rowKeyAttr}
                     onClick={() => setActiveRow(r)}
-                    className={`group cursor-pointer transition-colors hover:bg-pharma-50/60 ${stripeBg}`}
+                    className={`group cursor-pointer transition-all duration-700 ${
+                      flashed
+                        ? '!bg-amber-50 shadow-[inset_0_0_0_2px_rgba(251,191,36,0.55)]'
+                        : `hover:bg-pharma-50/60 ${stripeBg}`
+                    }`}
                   >
                     {visibleColumns.map((col) => (
                       <td
@@ -499,11 +592,19 @@ export default function MainTable({ rows, allRows, selectedCompany }) {
                   </tr>
 
                   {expanded &&
-                    sortRows(kids).map((c, ci) => (
+                    sortRows(kids).map((c, ci) => {
+                      const childKeyAttr = computeRowKey(c);
+                      const childFlashed = highlightedRowKey === childKeyAttr;
+                      return (
                       <tr
                         key={`${dealKey}-child-${c[COLUMN_KEYS.BRAND]}-${ci}`}
+                        data-row-key={childKeyAttr}
                         onClick={() => setActiveRow(c)}
-                        className="group cursor-pointer transition-colors hover:bg-pharma-50/60 bg-pharma-50/20"
+                        className={`group cursor-pointer transition-all duration-700 ${
+                          childFlashed
+                            ? '!bg-amber-50 shadow-[inset_0_0_0_2px_rgba(251,191,36,0.55)]'
+                            : 'hover:bg-pharma-50/60 bg-pharma-50/20'
+                        }`}
                       >
                         {visibleColumns.map((col) => (
                           <td
@@ -531,7 +632,8 @@ export default function MainTable({ rows, allRows, selectedCompany }) {
                           </td>
                         ))}
                       </tr>
-                    ))}
+                      );
+                    })}
                 </React.Fragment>
               );
             })}

@@ -78,6 +78,13 @@ function InsightItem({ icon: Icon, label, primary, secondary, onClick, accent = 
   const isClickable = typeof onClick === 'function';
   const Wrapper = isClickable ? 'button' : 'span';
   const accentClass = accent === 'amber' ? 'text-amber-600' : 'text-pharma-600';
+  // Hover-tint matches the icon accent, so the amber-icon Patents item
+  // gets an amber hover and the green-icon Latest/Biggest items get a
+  // soft pharma hover.
+  const hoverTint =
+    accent === 'amber'
+      ? 'hover:bg-amber-50/70 active:bg-amber-100/70 focus-visible:ring-amber-300 decoration-amber-400'
+      : 'hover:bg-pharma-50/70 active:bg-pharma-100/70 focus-visible:ring-pharma-300 decoration-pharma-400';
   return (
     <Wrapper
       type={isClickable ? 'button' : undefined}
@@ -85,7 +92,7 @@ function InsightItem({ icon: Icon, label, primary, secondary, onClick, accent = 
       title={isClickable ? `${label}: click to view` : undefined}
       className={`inline-flex items-center gap-2 min-w-0 ${
         isClickable
-          ? 'group cursor-pointer rounded-md px-1.5 py-0.5 -my-0.5 hover:bg-amber-50/70 active:bg-amber-100/70 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-300'
+          ? `group cursor-pointer rounded-md px-1.5 py-0.5 -my-0.5 ${hoverTint} transition-colors focus:outline-none focus-visible:ring-2`
           : ''
       }`}
     >
@@ -95,7 +102,7 @@ function InsightItem({ icon: Icon, label, primary, secondary, onClick, accent = 
       </span>
       <span
         className={`text-xs font-semibold text-ink-900 truncate ${
-          isClickable ? 'group-hover:underline decoration-amber-400 decoration-2 underline-offset-4' : ''
+          isClickable ? 'group-hover:underline decoration-2 underline-offset-4' : ''
         }`}
       >
         {primary}
@@ -104,6 +111,23 @@ function InsightItem({ icon: Icon, label, primary, secondary, onClick, accent = 
         <span className="text-xs text-ink-500 truncate hidden md:inline">{secondary}</span>
       )}
     </Wrapper>
+  );
+}
+
+// Dispatches the focus-launch-row event with enough identifying info that
+// MainTable can locate the row uniquely via its (brand|date|seller|buyer)
+// rowKey shape.
+function focusLaunchRow(row) {
+  if (!row) return;
+  window.dispatchEvent(
+    new CustomEvent('focus-launch-row', {
+      detail: {
+        brand: row[COLUMN_KEYS.BRAND],
+        date: row[COLUMN_KEYS.DATE],
+        seller: row[COLUMN_KEYS.SELLER],
+        buyer: row[COLUMN_KEYS.BUYER],
+      },
+    })
   );
 }
 
@@ -144,6 +168,7 @@ export default function InsightRibbon({ rows }) {
             label="Latest"
             primary={`${insights.latest[COLUMN_KEYS.BRAND]} → ${shortPartner(insights.latest[COLUMN_KEYS.BUYER])}`}
             secondary={fmtDate(insights.latest[COLUMN_KEYS.DATE])}
+            onClick={() => focusLaunchRow(insights.latest)}
           />
         )}
 
@@ -155,6 +180,7 @@ export default function InsightRibbon({ rows }) {
               label="Biggest deal"
               primary={`₹${Number(insights.biggest[COLUMN_KEYS.DEAL_VALUE]).toLocaleString('en-IN')} Cr`}
               secondary={`${shortPartner(insights.biggest[COLUMN_KEYS.SELLER])} → ${shortPartner(insights.biggest[COLUMN_KEYS.BUYER])}`}
+              onClick={() => focusLaunchRow(insights.biggest)}
             />
           </>
         )}
