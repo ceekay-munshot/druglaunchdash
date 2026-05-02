@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-01T05:01:11.056Z",
+  "generatedAt": "2026-05-02T04:01:19.675Z",
   "rowCount": 61,
   "rows": [
     {
@@ -237,7 +237,8 @@
       "chronicAcute": "—",
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/01/UNLOXCYT-Commercial-Launch-Press-Release.pdf",
-      "buyer": "Sun Pharma"
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-02T04:01:05.707Z"
     },
     {
       "brand": "Sovateltide",
@@ -252,7 +253,8 @@
       "chronicAcute": "—",
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/09/Press-Release-Sun-Pharma-and-Pharmazz-Inc.-licensing-agreement-for-Sovateltide-in-India.pdf",
-      "buyer": "Sun Pharma"
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-02T04:01:07.096Z"
     },
     {
       "brand": "—",
@@ -267,7 +269,8 @@
       "chronicAcute": "—",
       "price": null,
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/amp_articleshow/100775508.cms",
-      "buyer": "Alkem"
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-05-02T04:01:08.586Z"
     },
     {
       "brand": "—",
@@ -282,7 +285,8 @@
       "chronicAcute": "—",
       "price": null,
       "sourceUrl": "https://health.economictimes.indiatimes.com/news/pharma/drug-approvals-launches/alkem-forays-into-ophthalmology-with-launch-of-eye-care-products/101642253",
-      "buyer": "Alkem"
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-05-02T04:01:09.956Z"
     },
     {
       "brand": "Obimet",
@@ -297,7 +301,8 @@
       "chronicAcute": "—",
       "price": "—",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
-      "buyer": "Corona Remedies"
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-02T04:01:11.374Z"
     },
     {
       "brand": "Thyrocab",
@@ -312,7 +317,8 @@
       "chronicAcute": "—",
       "price": "—",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
-      "buyer": "Corona Remedies"
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-02T04:01:12.805Z"
     },
     {
       "brand": "GSK Brands",
@@ -327,7 +333,8 @@
       "chronicAcute": "—",
       "price": "—",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
-      "buyer": "Corona Remedies"
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-02T04:01:14.182Z"
     },
     {
       "brand": "Semaglutide",
@@ -357,7 +364,8 @@
       "chronicAcute": "—",
       "price": null,
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
-      "buyer": "Corona Remedies"
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-02T04:01:15.549Z"
     },
     {
       "brand": "Thyrocab",
@@ -372,7 +380,8 @@
       "chronicAcute": "—",
       "price": null,
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
-      "buyer": "Corona Remedies"
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-02T04:01:16.921Z"
     },
     {
       "brand": "GSK's Brands",
@@ -387,7 +396,8 @@
       "chronicAcute": "—",
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
-      "buyer": "Corona Remedies"
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-02T04:01:18.278Z"
     },
     {
       "brand": "N/A",
