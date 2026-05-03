@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-02T04:01:19.675Z",
+  "generatedAt": "2026-05-03T04:29:42.987Z",
   "rowCount": 61,
   "rows": [
     {
@@ -427,7 +427,8 @@
       "chronicAcute": "Chronic",
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/PR-for-Semaglutide.pdf",
-      "buyer": "Sun Pharma"
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-03T04:29:29.003Z"
     },
     {
       "brand": "Molxvir® (Molnupiravir)",
@@ -442,7 +443,8 @@
       "chronicAcute": "—",
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/12/Press-Release-Sun-Pharma-receives-DCGI-approval-for-Molxvir-Molnupiravir-in-India.pdf",
-      "buyer": "Sun Pharma"
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-03T04:29:30.462Z"
     },
     {
       "brand": "Alkem Antibiotic Combo",
@@ -457,7 +459,8 @@
       "chronicAcute": "—",
       "price": "—",
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/amp_articleshow/100775508.cms",
-      "buyer": "Alkem"
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-05-03T04:29:31.923Z"
     },
     {
       "brand": "Obimet",
@@ -472,7 +475,8 @@
       "chronicAcute": "—",
       "price": "—",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
-      "buyer": "Corona Remedies"
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-03T04:29:33.338Z"
     },
     {
       "brand": "Thyrocab",
@@ -487,7 +491,8 @@
       "chronicAcute": "—",
       "price": "—",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
-      "buyer": "Corona Remedies"
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-03T04:29:34.628Z"
     },
     {
       "brand": "—",
@@ -502,7 +507,8 @@
       "chronicAcute": "—",
       "price": "—",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
-      "buyer": "Corona Remedies"
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-03T04:29:36.077Z"
     },
     {
       "brand": "AcmeBio 123",
@@ -562,7 +568,8 @@
       "chronicAcute": "—",
       "price": null,
       "sourceUrl": "https://www.mankindpharma.com/products/new-gst-prices/",
-      "buyer": "Mankind Pharma"
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-05-03T04:29:37.521Z"
     },
     {
       "brand": "Noveltreat",
@@ -577,7 +584,8 @@
       "chronicAcute": "Chronic",
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/PR-for-Semaglutide.pdf",
-      "buyer": "Sun Pharma"
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-03T04:29:38.970Z"
     },
     {
       "brand": "Sematrinity",
@@ -592,7 +600,8 @@
       "chronicAcute": "Chronic",
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/PR-for-Semaglutide.pdf",
-      "buyer": "Sun Pharma"
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-03T04:29:40.257Z"
     },
     {
       "brand": "Molxvir",
@@ -607,7 +616,8 @@
       "chronicAcute": "—",
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/12/Press-Release-Sun-Pharma-receives-DCGI-approval-for-Molxvir-Molnupiravir-in-India.pdf",
-      "buyer": "Sun Pharma"
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-03T04:29:41.646Z"
     },
     {
       "brand": "Chericof® 12",
