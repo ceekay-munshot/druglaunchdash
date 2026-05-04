@@ -78,21 +78,25 @@ const regStatusFill = (t) => {
 // Brand are kept on stakeholder request. Text-heavy columns get the
 // most space; chip / numeric columns stay tight.
 const COLUMN_WIDTHS_MM = {
-  [COLUMN_KEYS.BRAND]:              22,
+  [COLUMN_KEYS.BRAND]:              21,
   [COLUMN_KEYS.LAUNCH_TYPE]:        14,
   [COLUMN_KEYS.DATE]:               13,
-  [COLUMN_KEYS.SELLER]:             20,
-  [COLUMN_KEYS.BUYER]:              15,
-  [COLUMN_KEYS.DEAL_TYPE]:          17,
-  [COLUMN_KEYS.GEO_RIGHTS]:         16,
-  [COLUMN_KEYS.REG_STATUS]:         18,
-  [COLUMN_KEYS.MOLECULE]:           22,
-  [COLUMN_KEYS.PRICING]:            22,
+  [COLUMN_KEYS.SELLER]:             19,
+  [COLUMN_KEYS.BUYER]:              13,
+  [COLUMN_KEYS.DEAL_TYPE]:          16,
+  [COLUMN_KEYS.GEO_RIGHTS]:         15,
+  [COLUMN_KEYS.REG_STATUS]:         17,
+  [COLUMN_KEYS.MOLECULE]:           21,
+  // Pricing carries the longest free-form strings ("Rs 190 / strip of
+  // 10 (625 mg)"). 27mm so common formulations don't wrap mid-word at
+  // 6.5pt — width borrowed from Buyer / Pre-existing Brand which are
+  // short categorical labels.
+  [COLUMN_KEYS.PRICING]:            27,
   [COLUMN_KEYS.THERAPY]:            17,
   [COLUMN_KEYS.INDICATION]:         22,
   [COLUMN_KEYS.MARKET_SIZE]:        12,
   [COLUMN_KEYS.DEAL_VALUE]:         13,
-  [COLUMN_KEYS.PRE_EXISTING_BRAND]: 15,
+  [COLUMN_KEYS.PRE_EXISTING_BRAND]: 13,
   [COLUMN_KEYS.COMPETITOR_BRANDS]:  17,
   [COLUMN_KEYS.CHRONIC_ACUTE]:      12,
 };
@@ -101,8 +105,8 @@ const COLUMN_WIDTHS_MM = {
 // label ("Acquired / In-licensed / Own Launched") wouldn't fit at 7pt.
 const HEADER_OVERRIDES = {
   [COLUMN_KEYS.LAUNCH_TYPE]:        'Launch Type',
-  [COLUMN_KEYS.MARKET_SIZE]:        'India TAM\n(₹Cr)',
-  [COLUMN_KEYS.DEAL_VALUE]:         'Deal Value\n(₹Cr)',
+  [COLUMN_KEYS.MARKET_SIZE]:        'India TAM\n(Rs Cr)',
+  [COLUMN_KEYS.DEAL_VALUE]:         'Deal Value\n(Rs Cr)',
   [COLUMN_KEYS.PRE_EXISTING_BRAND]: "Buyer's Pre-\nexisting Brand",
   [COLUMN_KEYS.COMPETITOR_BRANDS]:  'Competitor\nBrands',
   [COLUMN_KEYS.GEO_RIGHTS]:         'Geographic\nRights',
@@ -111,20 +115,31 @@ const HEADER_OVERRIDES = {
   [COLUMN_KEYS.CHRONIC_ACUTE]:      'Chronic /\nAcute',
 };
 
-// Strip em-dash / null / undefined into a plain hyphen for print legibility
-// (some PDF fonts choke on the wide en-dash glyph at small point sizes).
-function cellText(v) {
-  if (v === null || v === undefined || v === '' || v === '—') return '-';
-  if (typeof v === 'string') return v.replace(/—/g, '-');
-  return String(v);
+// Sanitise a cell value for PDF printing:
+//   1. ₹ (U+20B9 INDIAN RUPEE SIGN) is outside the Latin-1 range that
+//      jsPDF's built-in Helvetica supports, and it silently renders as
+//      an apostrophe. Convention in Indian financial reports is "Rs"
+//      anyway — HDFC, ICICI, BSE filings all use it. Replace globally.
+//   2. Em-dash → plain hyphen for legibility at 6.5pt (some PDF fonts
+//      drop the wide en-dash glyph at small point sizes).
+//   3. Null / blank / em-dash placeholder collapses to "-" so empty
+//      cells read as intentional rather than blank gaps.
+function sanitizePdfText(s) {
+  if (s == null) return '';
+  return String(s).replace(/₹/g, 'Rs ').replace(/—/g, '-');
 }
 
-// Numeric ₹Cr format that matches the dashboard's currency style.
+function cellText(v) {
+  if (v === null || v === undefined || v === '' || v === '—') return '-';
+  return sanitizePdfText(v);
+}
+
+// Numeric ₹Cr format using "Rs" prefix (jsPDF built-in font has no ₹ glyph).
 function fmtRupeeCr(v) {
   if (v === null || v === undefined || v === '') return '-';
   const n = Number(v);
   if (!Number.isFinite(n)) return cellText(v);
-  return `₹${n.toLocaleString('en-IN')} Cr`;
+  return `Rs ${n.toLocaleString('en-IN')} Cr`;
 }
 
 // Date column: render as the same "DD MMM YYYY" the dashboard uses.
