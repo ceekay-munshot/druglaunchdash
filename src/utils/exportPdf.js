@@ -68,37 +68,33 @@ const regStatusFill = (t) => {
   return null;
 };
 
-// Per-column width (mm). Total budget for landscape A4 with 10mm side
-// margins is 277mm; we aim for ~265 so cell padding + borders never push
-// the table off the page (which was cropping the right edge in v1).
+// Per-column width (mm). Total budget: A4 landscape page is 297mm wide;
+// with 6mm side margins (×2 = 12mm) we get a usable 285mm. Subtracting
+// 1.8mm for the 18 vertical cell-borders leaves ~283mm for the 17
+// columns. Widths below sum to ~280mm so there's a small safety
+// buffer that prevents the right edge from cropping the way v1 did.
 //
-// PDF_COLUMN_ORDER deliberately drops two columns from the Excel/screen
-// view: Pricing (specific MRP — insider detail) and Pre-existing Brand
-// (buyer's earlier brand for the same molecule — useful in the table
-// drawer but cluttering in a CEO print summary). The on-screen table and
-// the Excel export still carry all 17; the PDF is the curated print
-// deliverable. Drop list lives here so it's easy to flip a column back
-// in if a stakeholder asks.
-const PDF_COLUMN_ORDER = COLUMN_ORDER.filter(
-  (c) => c !== COLUMN_KEYS.PRICING && c !== COLUMN_KEYS.PRE_EXISTING_BRAND
-);
-
+// All 17 dashboard columns are present — Pricing and Pre-existing
+// Brand are kept on stakeholder request. Text-heavy columns get the
+// most space; chip / numeric columns stay tight.
 const COLUMN_WIDTHS_MM = {
-  [COLUMN_KEYS.BRAND]:              26,
-  [COLUMN_KEYS.LAUNCH_TYPE]:        17,
-  [COLUMN_KEYS.DATE]:               14,
-  [COLUMN_KEYS.SELLER]:             24,
-  [COLUMN_KEYS.BUYER]:              17,
-  [COLUMN_KEYS.DEAL_TYPE]:          19,
-  [COLUMN_KEYS.GEO_RIGHTS]:         18,
-  [COLUMN_KEYS.REG_STATUS]:         22,
-  [COLUMN_KEYS.MOLECULE]:           26,
-  [COLUMN_KEYS.THERAPY]:            20,
-  [COLUMN_KEYS.INDICATION]:         24,
-  [COLUMN_KEYS.MARKET_SIZE]:        13,
-  [COLUMN_KEYS.DEAL_VALUE]:         15,
-  [COLUMN_KEYS.COMPETITOR_BRANDS]:  16,
-  [COLUMN_KEYS.CHRONIC_ACUTE]:      14,
+  [COLUMN_KEYS.BRAND]:              22,
+  [COLUMN_KEYS.LAUNCH_TYPE]:        14,
+  [COLUMN_KEYS.DATE]:               13,
+  [COLUMN_KEYS.SELLER]:             20,
+  [COLUMN_KEYS.BUYER]:              15,
+  [COLUMN_KEYS.DEAL_TYPE]:          17,
+  [COLUMN_KEYS.GEO_RIGHTS]:         16,
+  [COLUMN_KEYS.REG_STATUS]:         18,
+  [COLUMN_KEYS.MOLECULE]:           22,
+  [COLUMN_KEYS.PRICING]:            22,
+  [COLUMN_KEYS.THERAPY]:            17,
+  [COLUMN_KEYS.INDICATION]:         22,
+  [COLUMN_KEYS.MARKET_SIZE]:        12,
+  [COLUMN_KEYS.DEAL_VALUE]:         13,
+  [COLUMN_KEYS.PRE_EXISTING_BRAND]: 15,
+  [COLUMN_KEYS.COMPETITOR_BRANDS]:  17,
+  [COLUMN_KEYS.CHRONIC_ACUTE]:      12,
 };
 
 // Short header label override for narrow columns whose full Excel-style
@@ -174,7 +170,10 @@ export async function exportPdf({
   const doc = new jsPDF({ orientation: 'landscape', unit: 'mm', format: 'a4' });
   const pageWidth = doc.internal.pageSize.getWidth();
   const pageHeight = doc.internal.pageSize.getHeight();
-  const marginX = 10;
+  // 6mm side margins (was 10) so all 17 columns get enough horizontal
+  // breathing room without the right edge cropping. A4-printable area
+  // typically allows down to 5mm; 6 is conservative.
+  const marginX = 6;
 
   // Flatten parent + children into a single ordered list. Mirrors the
   // Excel export so both deliverables represent the same row sequence.
@@ -191,10 +190,10 @@ export async function exportPdf({
   // per-column formatter; styling decisions happen in didParseCell so we
   // can react to the actual value.
   const head = [
-    PDF_COLUMN_ORDER.map((c) => HEADER_OVERRIDES[c] || c),
+    COLUMN_ORDER.map((c) => HEADER_OVERRIDES[c] || c),
   ];
   const body = flat.map(({ row, isChild }) =>
-    PDF_COLUMN_ORDER.map((col) => {
+    COLUMN_ORDER.map((col) => {
       const v = row[col];
       if (col === COLUMN_KEYS.DATE) return fmtDateCell(v);
       if (col === COLUMN_KEYS.MARKET_SIZE || col === COLUMN_KEYS.DEAL_VALUE) {
@@ -211,7 +210,7 @@ export async function exportPdf({
 
   // Per-column style spec for autoTable (column widths + alignment).
   const columnStyles = {};
-  PDF_COLUMN_ORDER.forEach((col, i) => {
+  COLUMN_ORDER.forEach((col, i) => {
     columnStyles[i] = {
       cellWidth: COLUMN_WIDTHS_MM[col] || 16,
       halign: alignFor(col),
@@ -260,8 +259,8 @@ export async function exportPdf({
     showHead: 'everyPage',
     styles: {
       font: 'helvetica',
-      fontSize: 7,
-      cellPadding: { top: 2, right: 1.5, bottom: 2, left: 1.5 },
+      fontSize: 6.5,
+      cellPadding: { top: 1.5, right: 1, bottom: 1.5, left: 1 },
       lineColor: C.ink100,
       lineWidth: 0.1,
       textColor: C.ink700,
@@ -272,17 +271,17 @@ export async function exportPdf({
       fillColor: C.ink900,
       textColor: C.white,
       fontStyle: 'bold',
-      fontSize: 7.5,
+      fontSize: 7,
       halign: 'center',
       lineColor: C.ink900,
-      cellPadding: { top: 2.5, right: 1.5, bottom: 2.5, left: 1.5 },
+      cellPadding: { top: 2, right: 1, bottom: 2, left: 1 },
     },
     alternateRowStyles: { fillColor: C.bandRow },
     columnStyles,
     didParseCell: (data) => {
       // Body-only styling — leave header rows alone.
       if (data.section !== 'body') return;
-      const colKey = PDF_COLUMN_ORDER[data.column.index];
+      const colKey = COLUMN_ORDER[data.column.index];
       const flatIndex = data.row.index;
       const meta = flat[flatIndex];
       if (!meta) return;
