@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-03T04:29:42.987Z",
+  "generatedAt": "2026-05-04T04:29:11.091Z",
   "rowCount": 61,
   "rows": [
     {
@@ -632,7 +632,8 @@
       "chronicAcute": "—",
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/09/Press-Release-Sun-Pharma-launches-Chericof-12.pdf",
-      "buyer": "Sun Pharma"
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-04T04:28:56.925Z"
     },
     {
       "brand": "New Drug A",
@@ -662,7 +663,8 @@
       "chronicAcute": "—",
       "price": null,
       "sourceUrl": "https://www.mankindpharma.com/products/company-b-acquisition/",
-      "buyer": "Mankind Pharma"
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-05-04T04:28:58.362Z"
     },
     {
       "brand": "In-License Drug C",
@@ -692,7 +694,8 @@
       "chronicAcute": "—",
       "price": null,
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/04/PR-Sun-Organon-announcement-Apr-26.pdf",
-      "buyer": "Sun Pharma"
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-04T04:28:59.887Z"
     },
     {
       "brand": "Tyvalzi",
@@ -707,7 +710,8 @@
       "chronicAcute": "—",
       "price": null,
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/09/Press-Release-Sun-Pharma-and-Pharmazz-Inc.-licensing-agreement-for-Sovateltide-in-India.pdf",
-      "buyer": "Sun Pharma"
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-04T04:29:01.261Z"
     },
     {
       "brand": "—",
@@ -722,7 +726,8 @@
       "chronicAcute": "—",
       "price": "—",
       "sourceUrl": "https://www.cnbctv18.com/healthcare/alkem-oncology-novel-breast-cancer-treatment-drug-launch-palbociclib-palbo-15703241.htm",
-      "buyer": "Alkem"
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-05-04T04:29:02.637Z"
     },
     {
       "brand": "GSK Portfolio",
@@ -737,7 +742,8 @@
       "chronicAcute": "—",
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
-      "buyer": "Corona Remedies"
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-04T04:29:04.059Z"
     },
     {
       "brand": "API Stake in La Chandra Pharmalab",
@@ -752,7 +758,8 @@
       "chronicAcute": "—",
       "price": null,
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-picks-up-stake-in-api-maker-la-chandra-pharmalab/article32543933.ece",
-      "buyer": "Corona Remedies"
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-04T04:29:05.429Z"
     },
     {
       "brand": "Levomilnacipran",
@@ -782,7 +789,8 @@
       "chronicAcute": "—",
       "price": "₹21.8 / bottle of 30 ml syrup",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/09/Press-Release-Sun-Pharma-forays-into-Nutrition-Bar-segment-with-the-launch-of-Revital-NXT.pdf",
-      "buyer": "Sun Pharma"
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-04T04:29:06.812Z"
     },
     {
       "brand": "Desidustat",
@@ -797,7 +805,8 @@
       "chronicAcute": "—",
       "price": "null",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/10/Press-Release-Sun-Pharma-and-Zydus-sign-licensing-agreement-for-co-marketing-of-Desidustat-in-India.pdf",
-      "buyer": "Sun Pharma"
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-04T04:29:08.259Z"
     },
     {
       "brand": "EVERON",
@@ -812,7 +821,8 @@
       "chronicAcute": "—",
       "price": "₹39.7 / strip of 10 tablet md",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2022/03/Press-Release-EVERON-Launch.pdf",
-      "buyer": "Sun Pharma"
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-04T04:29:09.638Z"
     },
     {
       "brand": "Pharmazz Inc.",
