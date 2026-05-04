@@ -68,27 +68,36 @@ const regStatusFill = (t) => {
   return null;
 };
 
-// Per-column width (mm). Sum ≈ 277 to fit landscape A4 usable area
-// (297 - 2×10mm margins). Tuned by hand: text-heavy columns get more
-// space, chip / numeric columns get less. autoTable will wrap text in
-// any cell whose content exceeds its column width.
+// Per-column width (mm). Total budget for landscape A4 with 10mm side
+// margins is 277mm; we aim for ~265 so cell padding + borders never push
+// the table off the page (which was cropping the right edge in v1).
+//
+// PDF_COLUMN_ORDER deliberately drops two columns from the Excel/screen
+// view: Pricing (specific MRP — insider detail) and Pre-existing Brand
+// (buyer's earlier brand for the same molecule — useful in the table
+// drawer but cluttering in a CEO print summary). The on-screen table and
+// the Excel export still carry all 17; the PDF is the curated print
+// deliverable. Drop list lives here so it's easy to flip a column back
+// in if a stakeholder asks.
+const PDF_COLUMN_ORDER = COLUMN_ORDER.filter(
+  (c) => c !== COLUMN_KEYS.PRICING && c !== COLUMN_KEYS.PRE_EXISTING_BRAND
+);
+
 const COLUMN_WIDTHS_MM = {
-  [COLUMN_KEYS.BRAND]:              22,
-  [COLUMN_KEYS.LAUNCH_TYPE]:        15,
-  [COLUMN_KEYS.DATE]:               13,
-  [COLUMN_KEYS.SELLER]:             20,
-  [COLUMN_KEYS.BUYER]:              16,
-  [COLUMN_KEYS.DEAL_TYPE]:          17,
-  [COLUMN_KEYS.GEO_RIGHTS]:         16,
-  [COLUMN_KEYS.REG_STATUS]:         18,
-  [COLUMN_KEYS.MOLECULE]:           22,
-  [COLUMN_KEYS.PRICING]:            22,
-  [COLUMN_KEYS.THERAPY]:            18,
-  [COLUMN_KEYS.INDICATION]:         22,
+  [COLUMN_KEYS.BRAND]:              26,
+  [COLUMN_KEYS.LAUNCH_TYPE]:        17,
+  [COLUMN_KEYS.DATE]:               14,
+  [COLUMN_KEYS.SELLER]:             24,
+  [COLUMN_KEYS.BUYER]:              17,
+  [COLUMN_KEYS.DEAL_TYPE]:          19,
+  [COLUMN_KEYS.GEO_RIGHTS]:         18,
+  [COLUMN_KEYS.REG_STATUS]:         22,
+  [COLUMN_KEYS.MOLECULE]:           26,
+  [COLUMN_KEYS.THERAPY]:            20,
+  [COLUMN_KEYS.INDICATION]:         24,
   [COLUMN_KEYS.MARKET_SIZE]:        13,
   [COLUMN_KEYS.DEAL_VALUE]:         15,
-  [COLUMN_KEYS.PRE_EXISTING_BRAND]: 16,
-  [COLUMN_KEYS.COMPETITOR_BRANDS]:  18,
+  [COLUMN_KEYS.COMPETITOR_BRANDS]:  16,
   [COLUMN_KEYS.CHRONIC_ACUTE]:      14,
 };
 
@@ -182,10 +191,10 @@ export async function exportPdf({
   // per-column formatter; styling decisions happen in didParseCell so we
   // can react to the actual value.
   const head = [
-    COLUMN_ORDER.map((c) => HEADER_OVERRIDES[c] || c),
+    PDF_COLUMN_ORDER.map((c) => HEADER_OVERRIDES[c] || c),
   ];
   const body = flat.map(({ row, isChild }) =>
-    COLUMN_ORDER.map((col) => {
+    PDF_COLUMN_ORDER.map((col) => {
       const v = row[col];
       if (col === COLUMN_KEYS.DATE) return fmtDateCell(v);
       if (col === COLUMN_KEYS.MARKET_SIZE || col === COLUMN_KEYS.DEAL_VALUE) {
@@ -202,7 +211,7 @@ export async function exportPdf({
 
   // Per-column style spec for autoTable (column widths + alignment).
   const columnStyles = {};
-  COLUMN_ORDER.forEach((col, i) => {
+  PDF_COLUMN_ORDER.forEach((col, i) => {
     columnStyles[i] = {
       cellWidth: COLUMN_WIDTHS_MM[col] || 16,
       halign: alignFor(col),
@@ -273,7 +282,7 @@ export async function exportPdf({
     didParseCell: (data) => {
       // Body-only styling — leave header rows alone.
       if (data.section !== 'body') return;
-      const colKey = COLUMN_ORDER[data.column.index];
+      const colKey = PDF_COLUMN_ORDER[data.column.index];
       const flatIndex = data.row.index;
       const meta = flat[flatIndex];
       if (!meta) return;
