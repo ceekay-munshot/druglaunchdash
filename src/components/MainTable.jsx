@@ -10,6 +10,7 @@ import {
   Download,
   Hourglass,
   CheckCircle2,
+  FileText,
 } from 'lucide-react';
 
 // Small "pending verification" pill rendered next to a brand name when the
@@ -461,6 +462,30 @@ export default function MainTable({ rows, allRows, selectedCompany }) {
     }
   };
 
+  // CEO-level styled PDF — landscape A4, repeating column headers across
+  // pages, chip-coloured cells, page numbers in the footer. jspdf +
+  // autotable lazy-loaded on click (~110KB gz) so the main bundle stays
+  // slim, same dynamic-import pattern as the Excel export.
+  const [isExportingPdf, setIsExportingPdf] = useState(false);
+  const exportPdfClick = async () => {
+    if (isExportingPdf) return;
+    setIsExportingPdf(true);
+    try {
+      const { exportPdf } = await import('../utils/exportPdf');
+      await exportPdf({ topLevelRows, childrenByKey });
+      let exportCount = 0;
+      for (const r of topLevelRows) {
+        exportCount += 1;
+        if (isAcquisitionParent(r)) {
+          exportCount += (childrenByKey.get(acquisitionDealKey(r)) || []).length;
+        }
+      }
+      showToast(`drug_launch_tracker.pdf ready · ${exportCount} rows`);
+    } finally {
+      setIsExportingPdf(false);
+    }
+  };
+
   return (
     <div
       ref={sectionRef}
@@ -495,6 +520,15 @@ export default function MainTable({ rows, allRows, selectedCompany }) {
               className="pl-8 pr-3 py-2 text-sm bg-white border border-ink-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-pharma-300 focus:border-pharma-400 w-64"
             />
           </div>
+          <button
+            onClick={exportPdfClick}
+            disabled={isExportingPdf}
+            className="inline-flex items-center gap-1.5 text-xs font-medium text-rose-700 bg-rose-50 hover:bg-rose-100 border border-rose-200 px-3 py-2 rounded-lg transition disabled:opacity-60 disabled:cursor-wait"
+            title="Landscape A4 · all 17 columns on one page · repeating headers across pages"
+          >
+            <FileText className={`w-3.5 h-3.5 ${isExportingPdf ? 'animate-pulse' : ''}`} />
+            {isExportingPdf ? 'Building…' : 'Export PDF'}
+          </button>
           <button
             onClick={exportXlsxClick}
             disabled={isExporting}
