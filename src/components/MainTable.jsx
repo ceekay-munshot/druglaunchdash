@@ -481,6 +481,11 @@ export default function MainTable({ rows, allRows, selectedCompany }) {
         }
       }
       showToast(`drug_launch_tracker.pdf ready · ${exportCount} rows`);
+    } catch (err) {
+      // Don't let runtime errors fail silently — surface in the console
+      // and tell the user something went wrong via the toast queue.
+      console.error('PDF export failed:', err);
+      showToast(`PDF export failed — ${err?.message || 'unknown error'}`);
     } finally {
       setIsExportingPdf(false);
     }

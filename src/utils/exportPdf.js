@@ -155,10 +155,12 @@ export async function exportPdf({
   fileName = 'drug_launch_tracker.pdf',
   generatedAt = new Date(),
 }) {
-  // Lazy-load both libraries — the autotable side-effect import attaches
-  // itself to the jsPDF prototype.
+  // Lazy-load both libraries. jspdf-autotable v5 changed its API: the
+  // default export is a function `autoTable(doc, opts)` that applies the
+  // plugin per-call rather than attaching to the jsPDF prototype, so
+  // `doc.autoTable(...)` is undefined under modern bundlers.
   const { default: jsPDF } = await import('jspdf');
-  await import('jspdf-autotable');
+  const { default: autoTable } = await import('jspdf-autotable');
 
   const doc = new jsPDF({ orientation: 'landscape', unit: 'mm', format: 'a4' });
   const pageWidth = doc.internal.pageSize.getWidth();
@@ -240,7 +242,7 @@ export async function exportPdf({
     doc.text(pageLabel, pageWidth - marginX - w, pageHeight - 5);
   };
 
-  doc.autoTable({
+  autoTable(doc, {
     head,
     body,
     startY: 22,
