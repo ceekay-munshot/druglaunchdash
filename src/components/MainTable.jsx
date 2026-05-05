@@ -515,7 +515,7 @@ export default function MainTable({ rows, allRows, selectedCompany }) {
             </p>
           </div>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2" data-pdf-hide>
           <div className="relative">
             <Search className="w-4 h-4 text-ink-500 absolute left-2.5 top-1/2 -translate-y-1/2" />
             <input
@@ -548,6 +548,7 @@ export default function MainTable({ rows, allRows, selectedCompany }) {
       <div
         className="max-h-[640px] overflow-auto scrollbar-thin"
         style={{ scrollbarGutter: 'stable' }}
+        data-pdf-scroller
       >
         <table className="min-w-full text-sm border-separate border-spacing-0">
           <thead className="sticky top-0 z-10 bg-white table-sticky-shadow">

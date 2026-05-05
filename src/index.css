@@ -89,3 +89,25 @@ body {
     animation: none;
   }
 }
+
+/* PDF export styles. The export utility adds `pdf-export-clone` to the root
+   of the html2canvas-cloned tree so we can neutralize on-screen-only styles
+   (sticky headers that double-render in a flat snapshot, internal scroll
+   containers that crop content, hover/transition flicker, scrollbars). The
+   `data-pdf-hide` attribute lets components mark elements that should be
+   omitted from the export entirely (e.g. inline search inputs / CSV export
+   button on the Core Table). */
+.pdf-export-clone [data-pdf-hide] {
+  display: none !important;
+}
+.pdf-export-clone .scrollbar-thin::-webkit-scrollbar,
+.pdf-export-clone *::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+}
+.pdf-export-clone .sticky {
+  position: static !important;
+}
+.pdf-export-clone {
+  background: #ffffff;
+}

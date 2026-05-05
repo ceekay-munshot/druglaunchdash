@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Pill, Search, Building2, Sparkles, RefreshCw, Archive, Plus, X, Clock, CheckCircle2 } from 'lucide-react';
+import { Pill, Search, Building2, Sparkles, RefreshCw, Archive, Plus, X, Clock, CheckCircle2, FileDown, Loader2 } from 'lucide-react';
 import { CompanyAvatar } from './CompanyAvatar';
 
 export default function Header({
@@ -16,6 +16,8 @@ export default function Header({
   lastUpdated,
   onRefresh,
   refreshing = false,
+  onExportPdf,
+  exportingPdf = false,
 }) {
   const [archiveOpen, setArchiveOpen] = useState(false);
   const archiveRef = useRef(null);
@@ -207,6 +209,21 @@ export default function Header({
                 </div>
               )}
             </div>
+
+            <button
+              onClick={onExportPdf}
+              disabled={exportingPdf}
+              title="Export the entire dashboard as a CEO-grade PDF briefing — single-page sections, repeated table headers, no charts split across pages."
+              data-pdf-hide
+              className="inline-flex items-center justify-center gap-2 px-3.5 py-2.5 text-sm font-semibold rounded-lg bg-white text-pharma-700 border border-pharma-200 hover:border-pharma-400 hover:bg-pharma-50 shadow-card transition disabled:opacity-70 disabled:cursor-wait"
+            >
+              {exportingPdf ? (
+                <Loader2 className="w-4 h-4 animate-spin" />
+              ) : (
+                <FileDown className="w-4 h-4" />
+              )}
+              <span className="hidden sm:inline">{exportingPdf ? 'Generating…' : 'Export PDF'}</span>
+            </button>
 
             <button
               onClick={handleRefresh}

@@ -21,6 +21,7 @@ import {
   enrichRowsWithRegStatus,
   isAcquisitionParent,
 } from './data/mockData';
+import { exportDashboardPdf } from './utils/exportDashboardPdf';
 
 const LAUNCHES_ENDPOINT = '/launches.json';
 
@@ -201,6 +202,32 @@ export default function App() {
     fetchScraped();
   };
 
+  const [exportingPdf, setExportingPdf] = useState(false);
+  const handleExportPdf = async () => {
+    if (exportingPdf) return;
+    setExportingPdf(true);
+    try {
+      await exportDashboardPdf({
+        rows: filteredRows,
+        allRows,
+        company: selectedCompany === '__ALL__' ? 'All Companies' : selectedCompany,
+        timelineLabel: TIMELINE_PRESETS[timeline]?.label || timeline,
+        generatedAt: new Date().toLocaleString('en-IN', {
+          year: 'numeric',
+          month: 'short',
+          day: '2-digit',
+          hour: '2-digit',
+          minute: '2-digit',
+        }),
+      });
+    } catch (err) {
+      console.error('PDF export failed', err);
+      alert('PDF export failed. Please try again.');
+    } finally {
+      setExportingPdf(false);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-pharma-50/40 via-white to-teal-50/30 bg-fixed">
       <Header
@@ -217,6 +244,8 @@ export default function App() {
         lastUpdated={lastUpdated}
         onRefresh={handleRefresh}
         refreshing={isRefreshing}
+        onExportPdf={handleExportPdf}
+        exportingPdf={exportingPdf}
       />
 
       <main className="max-w-[1840px] mx-auto px-4 py-4 space-y-4">
@@ -229,7 +258,12 @@ export default function App() {
           timelineCutoff={timelineCutoff}
         />
 
-        <section aria-label="KPI summary">
+        <section
+          aria-label="KPI summary"
+          data-pdf-section
+          data-pdf-title="Executive Summary"
+          data-pdf-subtitle="Headline KPIs across launches in scope"
+        >
           <KPICards rows={filteredRows} />
         </section>
 
@@ -237,7 +271,12 @@ export default function App() {
             Any narrower selection produces tiny per-company samples that
             make percentages misleading (e.g. "100% chronic" on N=1). */}
         {selectedCompany === '__ALL__' && timeline === 'ALL' && (
-          <section aria-label="Peer benchmark">
+          <section
+            aria-label="Peer benchmark"
+            data-pdf-section
+            data-pdf-title="Peer Benchmark"
+            data-pdf-subtitle="Cross-company portfolio mix and launch tempo"
+          >
             <PeerBenchmark rows={filteredRows} companies={activeCompanies} />
           </section>
         )}
@@ -249,16 +288,32 @@ export default function App() {
             still render. Switching to "All time" or "All Companies"
             restores the charts. */}
         {!(selectedCompany !== '__ALL__' && timeline === '2Q') && (
-          <section aria-label="Summary charts">
+          <section
+            aria-label="Summary charts"
+            data-pdf-section
+            data-pdf-title="Portfolio Analytics"
+            data-pdf-subtitle="Therapy mix, launch type and quarterly cadence"
+          >
             <Charts rows={filteredRows} selectedCompany={selectedCompany} timeline={timeline} />
           </section>
         )}
 
-        <section aria-label="Patent cliff calendar">
+        <section
+          aria-label="Patent cliff calendar"
+          data-pdf-section
+          data-pdf-title="Patent Cliff Calendar"
+          data-pdf-subtitle="Upcoming originator expiries and India opportunity windows"
+        >
           <PatentCliffs allRows={allRows} companies={activeCompanies} />
         </section>
 
-        <section aria-label="Core table">
+        <section
+          aria-label="Core table"
+          data-pdf-section
+          data-pdf-table
+          data-pdf-title="Drug Launch Tracker"
+          data-pdf-subtitle="Single source of truth — all launches in scope"
+        >
           <MainTable
             rows={filteredRows}
             allRows={allRows}
@@ -266,7 +321,12 @@ export default function App() {
           />
         </section>
 
-        <section aria-label="Investor insights">
+        <section
+          aria-label="Investor insights"
+          data-pdf-section
+          data-pdf-title="Investor Insights"
+          data-pdf-subtitle="Concentration, deal flow and pricing signals"
+        >
           <InsightWidgets rows={filteredRows} selectedCompany={selectedCompany} />
         </section>
 
@@ -276,6 +336,38 @@ export default function App() {
           All KPIs, charts, and insights derive from the same filtered core table.
         </footer>
       </main>
+
+      {/* Full-screen overlay shown during PDF export. Hidden from the
+          captured snapshot via data-pdf-no-capture (the export utility's
+          html2canvas onclone handler removes any element with this
+          attribute from the cloned tree). */}
+      {exportingPdf && (
+        <div
+          data-pdf-no-capture
+          className="fixed inset-0 z-50 bg-white/85 backdrop-blur-sm flex items-center justify-center"
+          role="status"
+          aria-live="polite"
+        >
+          <div className="bg-white rounded-2xl border border-pharma-200 shadow-cardHover px-7 py-6 flex items-center gap-4 max-w-md mx-4">
+            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-pharma-500 to-teal-accent flex items-center justify-center shrink-0">
+              <svg
+                className="w-6 h-6 text-white animate-spin"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <circle cx="12" cy="12" r="9" strokeWidth="2.5" strokeLinecap="round" strokeDasharray="40 16" />
+              </svg>
+            </div>
+            <div>
+              <p className="text-sm font-semibold text-ink-900">Generating PDF briefing…</p>
+              <p className="text-xs text-ink-500 mt-0.5">
+                Capturing each section at full resolution. Your download will start automatically.
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
