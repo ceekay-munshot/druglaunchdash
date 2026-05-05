@@ -50,6 +50,16 @@ const COL = {
 
 const CAPTURE_SCALE = 2;
 
+// Force every section to render at this width during capture. The
+// dashboard's outer container is `max-w-[1840px]`, so this width matches
+// the layout at full desktop breakpoint — Tailwind's `lg:` / `xl:` /
+// `2xl:` classes activate and nothing flex-wraps to a vertical stack just
+// because the user happened to take the export at a 1280-wide window.
+const FORCED_CAPTURE_WIDTH = 1600;
+
+// Vertical gap between two packed sections on the same page.
+const PACK_GAP_PT = 18;
+
 // Helvetica (jsPDF's built-in font) doesn't ship the rupee glyph. Replace
 // it with "Rs " for any text we draw natively into the PDF (cover page,
 // page header, KPI tiles). Captured canvases keep ₹ correctly because
@@ -247,24 +257,51 @@ function drawPageChrome(pdf, { title, subtitle, pageNum, totalPages, generatedAt
 // Capture helpers
 // ────────────────────────────────────────────────────────────────────────
 
-// Lift internal scroll containers (data-pdf-scroller) for the duration of
-// measurement + capture so html2canvas sees the full content. Returns a
-// restore function — always call it in finally.
-function liftRestraints(section) {
+// Pin the dashboard layout to its full desktop width and lift internal
+// scroll containers (data-pdf-scroller) for the duration of measurement +
+// capture. Without this, captures taken on a narrow viewport flex-wrap
+// the section's controls into a vertical stack and leave huge gaps on
+// the PDF page. Returns a restore function — always call it in finally.
+function lockWideLayoutAndLiftRestraints(section) {
   const restorers = [];
-  section.querySelectorAll('[data-pdf-scroller]').forEach((el) => {
-    const orig = {
-      maxHeight: el.style.maxHeight,
-      overflow: el.style.overflow,
-      overflowX: el.style.overflowX,
-      overflowY: el.style.overflowY,
-    };
-    el.style.maxHeight = 'none';
-    el.style.overflow = 'visible';
-    el.style.overflowX = 'visible';
-    el.style.overflowY = 'visible';
+
+  const lockEl = (el, styles) => {
+    const orig = {};
+    for (const k of Object.keys(styles)) orig[k] = el.style[k];
+    Object.assign(el.style, styles);
     restorers.push(() => Object.assign(el.style, orig));
+  };
+
+  // Pin the section AND its <main> ancestor to a fixed wide width so
+  // responsive utilities resolve at the desktop breakpoint, not the
+  // user's actual viewport.
+  const main = section.closest('main') || document.querySelector('main');
+  if (main) {
+    lockEl(main, {
+      width: `${FORCED_CAPTURE_WIDTH}px`,
+      minWidth: `${FORCED_CAPTURE_WIDTH}px`,
+      maxWidth: `${FORCED_CAPTURE_WIDTH}px`,
+    });
+  }
+  lockEl(section, {
+    width: `${FORCED_CAPTURE_WIDTH - 32}px`,
+    minWidth: `${FORCED_CAPTURE_WIDTH - 32}px`,
   });
+
+  // Hide the body scrollbar so the user doesn't briefly see the dashboard
+  // overflow horizontally when we widen the layout beyond their viewport.
+  lockEl(document.body, { overflow: 'hidden' });
+
+  // Lift internal scroll containers (e.g. the table's max-h-[640px]).
+  section.querySelectorAll('[data-pdf-scroller]').forEach((el) => {
+    lockEl(el, {
+      maxHeight: 'none',
+      overflow: 'visible',
+      overflowX: 'visible',
+      overflowY: 'visible',
+    });
+  });
+
   // Force reflow.
   // eslint-disable-next-line no-unused-expressions
   section.offsetHeight;
@@ -294,18 +331,18 @@ async function captureSection(section) {
     backgroundColor: COL.white,
     useCORS: true,
     logging: false,
-    windowWidth: document.documentElement.clientWidth,
-    windowHeight: Math.max(section.scrollHeight, document.documentElement.clientHeight) + 200,
+    // Tell the cloned document its viewport is FORCED_CAPTURE_WIDTH so
+    // CSS media queries (Tailwind responsive utilities) match the
+    // desktop breakpoint regardless of the user's actual window size.
+    windowWidth: FORCED_CAPTURE_WIDTH,
+    windowHeight: Math.max(section.scrollHeight, 900) + 200,
+    width: section.offsetWidth,
     height: section.scrollHeight,
     onclone: (doc, cloned) => {
       cloned.classList.add('pdf-export-clone');
-      // Body-level overlays (the "Generating PDF…" curtain) overlap the
-      // captured section's bbox and would otherwise appear in the snapshot.
       doc.querySelectorAll('[data-pdf-no-capture]').forEach((el) => {
         el.style.display = 'none';
       });
-      // Body gradient bleeds into outer padding around the section card —
-      // force flat white so PDF page margins read clean.
       if (doc.body) doc.body.style.background = '#ffffff';
     },
   });
@@ -413,7 +450,7 @@ function buildTableSlices(canvas, rowEdges, topmatterPxH, maxSlicePxH) {
 async function captureAll(sections) {
   const captures = [];
   for (const sec of sections) {
-    const restore = liftRestraints(sec);
+    const restore = lockWideLayoutAndLiftRestraints(sec);
     try {
       const sectionRect = sec.getBoundingClientRect();
       const sectionTop = sectionRect.top;
@@ -454,84 +491,113 @@ async function captureAll(sections) {
   return captures;
 }
 
-// Plan how each capture lays out (single page, fit-to-page, or sliced).
-// Returns an array of "page jobs" describing what to draw on each page.
+// Natural draw height of a canvas at full PDF content width, in pt.
+const naturalDrawHpt = (cap) =>
+  CONTENT_W * (cap.canvas.height / cap.canvas.width);
+
+// Plan how each capture lays out. A page can hold one tall section (or
+// slice of one), one short section anchored to the top, or two short
+// sections stacked. The packing logic prevents the wasteful "single
+// short section centered on a near-empty page" output.
 function planPages(captures) {
   const jobs = [];
+  let i = 0;
+  while (i < captures.length) {
+    const cap = captures[i];
+    const naturalH = naturalDrawHpt(cap);
 
-  for (const cap of captures) {
-    const ratio = cap.canvas.height / cap.canvas.width; // h/w in canvas px
-    // At full content width, draw height in pt:
-    const naturalDrawH = CONTENT_W * ratio;
-
-    if (naturalDrawH <= CONTENT_H) {
-      jobs.push({ kind: 'single', cap, fit: 'natural' });
-      continue;
-    }
-
-    if (!cap.isTable && naturalDrawH <= CONTENT_H * 1.35) {
-      jobs.push({ kind: 'single', cap, fit: 'shrink' });
-      continue;
-    }
-
-    // Multi-page split.
-    if (cap.isTable && cap.rowMetrics && cap.rowMetrics.length > 0) {
-      const topmatterPx = cap.topmatterCss * cap.cssToCanvas;
-      const rowEdgesPx = cap.rowMetrics.map((r) => ({
-        top: r.top * cap.cssToCanvas,
-        bottom: r.bottom * cap.cssToCanvas,
-      }));
-      // Convert page-content height (pt) into canvas px at our display width.
+    // Tall section that won't fit one page → slice into pages.
+    if (naturalH > CONTENT_H) {
+      // Charts/non-table sections that are only modestly over a page get
+      // shrunk to fit; tables and very tall content get sliced cleanly.
+      if (!cap.isTable && naturalH <= CONTENT_H * 1.35) {
+        jobs.push({ kind: 'single', cap, fit: 'shrink' });
+        i++;
+        continue;
+      }
       const pxPerPt = cap.canvas.width / CONTENT_W;
       const maxSlicePxH = CONTENT_H * pxPerPt;
-      const slices = buildTableSlices(cap.canvas, rowEdgesPx, topmatterPx, maxSlicePxH);
+      let slices;
+      if (cap.isTable && cap.rowMetrics && cap.rowMetrics.length > 0) {
+        const topmatterPx = cap.topmatterCss * cap.cssToCanvas;
+        const rowEdgesPx = cap.rowMetrics.map((r) => ({
+          top: r.top * cap.cssToCanvas,
+          bottom: r.bottom * cap.cssToCanvas,
+        }));
+        slices = buildTableSlices(cap.canvas, rowEdgesPx, topmatterPx, maxSlicePxH);
+      } else {
+        slices = genericSlices(cap.canvas, maxSlicePxH);
+      }
       slices.forEach((sliceCanvas, idx) => {
         jobs.push({
           kind: 'slice',
           cap,
           sliceCanvas,
-          isFirstSlice: idx === 0,
           continuation: idx > 0,
         });
       });
-    } else {
-      // Generic vertical slicing for non-table tall sections.
-      const pxPerPt = cap.canvas.width / CONTENT_W;
-      const maxSlicePxH = CONTENT_H * pxPerPt;
-      const slices = genericSlices(cap.canvas, maxSlicePxH);
-      slices.forEach((sliceCanvas, idx) => {
-        jobs.push({
-          kind: 'slice',
-          cap,
-          sliceCanvas,
-          isFirstSlice: idx === 0,
-          continuation: idx > 0,
-        });
-      });
+      i++;
+      continue;
     }
+
+    // Section fits on one page — see if we can pack the next short
+    // section onto the same page underneath it.
+    const next = captures[i + 1];
+    if (next && !next.isTable) {
+      const nextH = naturalDrawHpt(next);
+      if (nextH <= CONTENT_H && naturalH + PACK_GAP_PT + nextH <= CONTENT_H) {
+        jobs.push({ kind: 'pair', cap1: cap, cap2: next });
+        i += 2;
+        continue;
+      }
+    }
+
+    jobs.push({ kind: 'single', cap, fit: 'natural' });
+    i++;
   }
-
   return jobs;
 }
 
-function placeImage(pdf, sourceCanvas, fit) {
+// Place a single captured image on the page. Top-anchored — empty space
+// (when content is shorter than the page) drops to the bottom where it
+// reads as deliberate breathing room rather than a broken layout.
+function placeImage(pdf, sourceCanvas, fit, opts = {}) {
   const ratio = sourceCanvas.height / sourceCanvas.width;
   let drawW = CONTENT_W;
   let drawH = drawW * ratio;
-  if (fit === 'shrink' && drawH > CONTENT_H) {
-    const s = CONTENT_H / drawH;
-    drawH = CONTENT_H;
+  const maxH = opts.maxH ?? CONTENT_H;
+  if (drawH > maxH) {
+    const s = maxH / drawH;
+    drawH = maxH;
     drawW = drawW * s;
-  } else if (drawH > CONTENT_H) {
-    // For slices: shouldn't normally exceed, but clamp defensively.
-    const s = CONTENT_H / drawH;
-    drawH = CONTENT_H;
+  } else if (fit === 'shrink' && drawH > maxH) {
+    const s = maxH / drawH;
+    drawH = maxH;
     drawW = drawW * s;
   }
   const x = CONTENT_X + (CONTENT_W - drawW) / 2;
-  const y = CONTENT_TOP + (CONTENT_H - drawH) / 2;
+  const y = (opts.top ?? CONTENT_TOP);
   const dataUrl = sourceCanvas.toDataURL('image/jpeg', 0.92);
   pdf.addImage(dataUrl, 'JPEG', x, y, drawW, drawH, undefined, 'FAST');
+  return { drawW, drawH, x, y };
+}
+
+// Two stacked images on a single page: top-anchored, equal-priority
+// presentation. A thin divider rule sits between them so the page doesn't
+// read as one continuous block.
+function placePair(pdf, cap1, cap2) {
+  const placed1 = placeImage(pdf, cap1.canvas, 'natural', {
+    top: CONTENT_TOP,
+    maxH: CONTENT_H,
+  });
+  const dividerY = placed1.y + placed1.drawH + PACK_GAP_PT / 2;
+  pdf.setDrawColor(COL.ink300);
+  pdf.setLineWidth(0.4);
+  pdf.line(CONTENT_X + 40, dividerY, CONTENT_X + CONTENT_W - 40, dividerY);
+  placeImage(pdf, cap2.canvas, 'natural', {
+    top: placed1.y + placed1.drawH + PACK_GAP_PT,
+    maxH: CONTENT_H - placed1.drawH - PACK_GAP_PT,
+  });
 }
 
 // ────────────────────────────────────────────────────────────────────────
@@ -589,10 +655,23 @@ export async function exportDashboardPdf({ rows, allRows, company, timelineLabel
     for (let i = 0; i < jobs.length; i++) {
       const job = jobs[i];
       pdf.addPage();
+      const pageNum = i + 2;
+      if (job.kind === 'pair') {
+        drawPageChrome(pdf, {
+          title: `${job.cap1.title}  +  ${job.cap2.title}`,
+          subtitle: job.cap1.subtitle || job.cap2.subtitle || '',
+          pageNum,
+          totalPages,
+          generatedAt,
+          continuation: false,
+        });
+        placePair(pdf, job.cap1, job.cap2);
+        continue;
+      }
       drawPageChrome(pdf, {
         title: job.cap.title,
         subtitle: job.cap.subtitle,
-        pageNum: i + 2,
+        pageNum,
         totalPages,
         generatedAt,
         continuation: !!job.continuation,

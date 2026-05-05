@@ -260,7 +260,7 @@ export default function PatentCliffs({ allRows = [], companies = [] }) {
           </div>
         </div>
 
-        <div className="flex items-center gap-2 flex-wrap">
+        <div className="flex items-center gap-2 flex-wrap" data-pdf-hide>
           <div className="relative">
             <select
               value={therapy}
