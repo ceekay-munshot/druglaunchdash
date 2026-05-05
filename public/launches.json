@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T04:29:11.091Z",
+  "generatedAt": "2026-05-05T03:57:41.744Z",
   "rowCount": 61,
   "rows": [
     {
@@ -837,7 +837,8 @@
       "chronicAcute": "—",
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/09/Press-Release-Sun-Pharma-and-Pharmazz-Inc.-licensing-agreement-for-Sovateltide-in-India.pdf",
-      "buyer": "Sun Pharma"
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-05T03:57:36.090Z"
     },
     {
       "brand": "Cipla's New Cardiovascular Drug",
@@ -867,7 +868,8 @@
       "chronicAcute": "—",
       "price": "₹20.94 / strip of 15 tablets",
       "sourceUrl": "https://www.cipla.com/press-releases-statements/cipla-acquisition-generic-portfolio",
-      "buyer": "Cipla"
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-05-05T03:57:37.471Z"
     },
     {
       "brand": "Cipla In-licensing Anti-Diabetic Drug",
@@ -897,7 +899,8 @@
       "chronicAcute": "—",
       "price": "₹21.7 / strip of 10 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
-      "buyer": "Corona Remedies"
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-05T03:57:38.882Z"
     },
     {
       "brand": "GSK Brands",
@@ -912,7 +915,8 @@
       "chronicAcute": "—",
       "price": "₹523 / bottle of 150 ml",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
-      "buyer": "Corona Remedies"
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-05T03:57:40.346Z"
     },
     {
       "brand": "BrandX",
