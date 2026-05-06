@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-05T03:57:41.744Z",
-  "rowCount": 61,
+  "generatedAt": "2026-05-06T04:25:49.979Z",
+  "rowCount": 64,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -263,7 +263,7 @@
       "seller": "—",
       "dealType": "Generic Launch",
       "molecule": "—",
-      "therapy": "—",
+      "therapy": "Anti-Infectives",
       "indication": "Drug-resistant infections",
       "existingBrand": "—",
       "chronicAcute": "—",
@@ -280,7 +280,7 @@
       "dealType": "Device Launch",
       "molecule": "—",
       "therapy": "Ophthalmology",
-      "indication": "—",
+      "indication": "Eye care",
       "existingBrand": "—",
       "chronicAcute": "—",
       "price": null,
@@ -947,6 +947,54 @@
       "price": "Rs 650",
       "sourceUrl": "https://www.company.com/press-release/BrandY-acquisition",
       "buyer": "Torrent Pharma"
+    },
+    {
+      "brand": "Telma",
+      "launchType": "Own Launched",
+      "date": "2023-09-22",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Telmisartan",
+      "therapy": "Anti-Hypertensive",
+      "indication": "Hypertension",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "₹90 / strip of 10 tablets",
+      "sourceUrl": "https://www.mankindpharma.com/products/new-gst-prices/",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-05-06T04:23:23.377Z"
+    },
+    {
+      "brand": "Noveltreat and Sematrinity",
+      "launchType": "Own Launched",
+      "date": "2026-03-21",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "semaglutide",
+      "therapy": "—",
+      "indication": "Psoriatic Arthritis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹19.6 / strip of 10 tablets",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/PR-for-Semaglutide.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-06T04:24:13.851Z"
+    },
+    {
+      "brand": "GSK Brands",
+      "launchType": "Acquired",
+      "date": "2017-10-01",
+      "seller": "GlaxoSmithKline",
+      "dealType": "Brand Portfolio Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹80.7 / bottle of 10 ml nasal drops",
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-06T04:24:54.286Z"
     }
   ]
 }
