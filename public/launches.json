@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-07T04:25:34.280Z",
-  "rowCount": 71,
+  "generatedAt": "2026-05-07T07:17:05.471Z",
+  "rowCount": 76,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -1107,6 +1107,86 @@
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
       "lastEnrichmentAttempt": "2026-05-07T04:24:42.162Z"
+    },
+    {
+      "brand": "Swasthya  Arogya",
+      "launchType": "Own Launched",
+      "date": "2023-09-22",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "Healthcare affordability",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹346 / combo pack of 8 bottles",
+      "sourceUrl": "https://www.mankindpharma.com/products/new-gst-prices/",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-05-07T07:14:10.115Z"
+    },
+    {
+      "brand": "GSK Brands",
+      "launchType": "Acquired",
+      "date": "2022-06-20",
+      "seller": "GSK",
+      "dealType": "Brand Portfolio Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹80.8 / bottle of 10 ml",
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-07T07:16:21.142Z"
+    },
+    {
+      "brand": "MediCore",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "MediCore-1",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "Herceptin",
+      "chronicAcute": "—",
+      "price": "Rs 5,000 / vial",
+      "sourceUrl": "https://www.examplepharma.com/press-releases/medi-core-1-launch",
+      "buyer": "Torrent Pharma",
+      "lastEnrichmentAttempt": "2026-05-07T07:16:36.379Z"
+    },
+    {
+      "brand": "HealMax",
+      "launchType": "Acquired",
+      "date": "2023-08-10",
+      "seller": "Old Pharma Inc.",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "Pain Management",
+      "indication": "Chronic Pain",
+      "existingBrand": "PainEase",
+      "chronicAcute": "Chronic",
+      "price": "Rs 750 / bottle",
+      "sourceUrl": "https://www.examplepharma.com/press-releases/healmax-acquisition",
+      "buyer": "Torrent Pharma",
+      "lastEnrichmentAttempt": "2026-05-07T07:16:36.379Z"
+    },
+    {
+      "brand": "NutriCare",
+      "launchType": "In-licensed",
+      "date": "2023-07-20",
+      "seller": "Nutraceuticals Ltd.",
+      "dealType": "In-license (India)",
+      "molecule": "Fish Oil",
+      "therapy": "Nutraceuticals",
+      "indication": "Heart Health",
+      "existingBrand": "CardioFish",
+      "chronicAcute": "—",
+      "price": "Rs 1,200 / pack",
+      "sourceUrl": "https://www.examplepharma.com/press-releases/nutricare-inlicensing",
+      "buyer": "Torrent Pharma",
+      "lastEnrichmentAttempt": "2026-05-07T07:16:36.379Z"
     }
   ]
 }
