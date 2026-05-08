@@ -44,86 +44,6 @@ const { PATENT_CLIFFS } = await import(cliffsModuleUrl);
 // to dial it down for budget.
 const MAX_MOLECULES_PER_RUN = Number(process.env.PATENT_CLIFFS_MAX || 40);
 
-// Each event comes from a single India-news-search result. Schema is the
-// shape Firecrawl is asked to populate per molecule.
-const EXTRACTION_SCHEMA = {
-  type: 'object',
-  properties: {
-    events: {
-      type: 'array',
-      items: {
-        type: 'object',
-        properties: {
-          date: {
-            type: ['string', 'null'],
-            description: 'ISO YYYY-MM-DD if a published date is visible on the article snippet. YYYY-MM if only month/year known. Null if no verifiable date.',
-          },
-          headline: { type: 'string', description: 'Article title verbatim.' },
-          kind: {
-            type: 'string',
-            enum: [
-              'litigation',
-              'compulsoryLicence',
-              'genericLaunch',
-              'expiryUpdate',
-              'priceCut',
-              'biosimilarLaunch',
-              'other',
-            ],
-            description: 'Closest single category. litigation=court orders / injunctions / revocations / settlements. compulsoryLicence=CL applied/granted/denied. genericLaunch=Indian generic launched. expiryUpdate=patent term-extension / shortening news. priceCut=NPPA / NLEM action. biosimilarLaunch=Indian biosimilar launched. other=use sparingly.',
-          },
-          summary: {
-            type: 'string',
-            description: 'ONE sentence, India-specific, factual. NO speculation.',
-          },
-          sourceUrl: { type: 'string', description: 'Direct article URL (not the search-results page).' },
-          publication: { type: 'string', description: 'Outlet name (e.g., "ET Health World", "Pharmabiz", "LiveMint").' },
-        },
-        required: ['headline', 'kind', 'sourceUrl'],
-      },
-    },
-    relatedMolecules: {
-      type: 'array',
-      items: { type: 'string' },
-      description: 'OTHER molecule INNs mentioned in the search results that look patent-relevant in India (e.g., a court ruling on a different drug). Cap to 5. EXCLUDE the queried molecule.',
-    },
-  },
-};
-
-const buildPrompt = (molecule) => `You are reading the search-results page for "${molecule}" on an Indian pharma news outlet.
-
-EXTRACT a list of NEWS EVENTS that bear directly on ${molecule}'s Indian patent / generic-launch / compulsory-licence / pricing situation.
-
-INCLUDE:
-  • Court orders, injunctions, patent revocations, infringement settlements
-  • Compulsory-licence applications / grants / denials by IP India
-  • Indian generic / biosimilar launches of ${molecule}
-  • NPPA / NLEM price-cap actions on ${molecule}
-  • Term-extension or expiry-shift announcements
-
-EXCLUDE:
-  • Articles older than 24 months from today
-  • Articles not actually about ${molecule}
-  • Generic industry-wide commentary that doesn't reference ${molecule}
-  • Non-India market events (FDA approvals, EU launches, etc.) UNLESS they
-    directly affect Indian availability
-
-For each event:
-  • date: YYYY-MM-DD from the article's published date if visible, else YYYY-MM,
-    else null. NEVER use today's date as a fallback.
-  • headline: article title verbatim.
-  • kind: pick the closest single enum value. Use 'other' sparingly.
-  • summary: ONE plain-English sentence focused on the India-market impact.
-  • sourceUrl: the exact article URL (NOT the search page).
-  • publication: outlet name as displayed.
-
-STRICT NO-GUESS: a missing field set to "—" / null is far better than a
-fabricated value. If you can't find an article-level URL, drop the event.
-
-Also extract relatedMolecules: any OTHER molecule INNs mentioned in the
-result snippets that look patent-relevant in India. EXCLUDE ${molecule}
-itself. Cap to top 5. These feed our auto-discovery review queue.`;
-
 async function loadExisting() {
   try {
     const raw = await fs.readFile(OUT_PATH, 'utf8');
@@ -136,28 +56,104 @@ async function loadExisting() {
 
 const sleep = (ms) => new Promise((res) => setTimeout(res, ms));
 
-// Search-results URL for a molecule. ET Health World is a broad India pharma
-// outlet that covers court rulings, generic launches, NPPA actions, and
-// compulsory-licence news — single-source for now to keep Firecrawl spend
-// predictable. If coverage gets thin we can add Pharmabiz as a fallback.
-function searchUrlFor(molecule) {
-  const q = encodeURIComponent(molecule);
-  return `https://health.economictimes.indiatimes.com/searchresult.cms?q=${q}`;
+// Build the India-relevance search query for a molecule. We bias the LLM-
+// powered search engine toward Indian patent / generic-launch / CL / NPPA
+// coverage by stacking query terms; Firecrawl's /v1/search uses Google as
+// the underlying engine and ranks accordingly.
+function buildSearchQuery(molecule) {
+  return `"${molecule}" India (patent OR generic OR launch OR "compulsory licence" OR NPPA OR Cipla OR Sun OR Mankind OR Torrent OR DCGI)`;
+}
+
+const HOST_TO_PUBLICATION = {
+  'health.economictimes.indiatimes.com': 'ET Health World',
+  'economictimes.indiatimes.com': 'Economic Times',
+  'www.pharmabiz.com': 'Pharmabiz',
+  'pharmabiz.com': 'Pharmabiz',
+  'www.livemint.com': 'LiveMint',
+  'livemint.com': 'LiveMint',
+  'www.business-standard.com': 'Business Standard',
+  'www.thehindubusinessline.com': 'BusinessLine',
+  'www.expresspharma.in': 'Express Pharma',
+  'www.moneycontrol.com': 'Moneycontrol',
+  'www.bloomberg.com': 'Bloomberg',
+  'www.reuters.com': 'Reuters',
+  'www.thelancet.com': 'The Lancet',
+};
+
+function publicationFromUrl(url) {
+  try {
+    const host = new URL(url).hostname.toLowerCase();
+    if (HOST_TO_PUBLICATION[host]) return HOST_TO_PUBLICATION[host];
+    // Strip www. and TLD for a presentable fallback.
+    return host.replace(/^www\./, '').split('.')[0]
+      .replace(/^./, (c) => c.toUpperCase());
+  } catch {
+    return '—';
+  }
+}
+
+// Heuristic classifier — keyword-matches the headline+description to one of
+// our 7 event kinds. Cheap and deterministic; a stricter LLM pass can be
+// re-introduced later if the noise-floor matters more than spend.
+function classifyKind(text) {
+  const t = String(text || '').toLowerCase();
+  if (/\b(compulsory licen[cs]e|cl grant|cl applicat|cl petit)\b/.test(t)) return 'compulsoryLicence';
+  if (/\b(court|injunct|revok|infring|settlement|interim order|stay order|high court|supreme court|delhi hc)\b/.test(t)) return 'litigation';
+  if (/\b(biosimilar)\b/.test(t)) return 'biosimilarLaunch';
+  if (/\b(nppa|price cap|price cut|nlem|drug price control|dpco)\b/.test(t)) return 'priceCut';
+  if (/\b(patent expir|patent expiry|term extension|patent term)\b/.test(t)) return 'expiryUpdate';
+  if (/\b(generic launch|launches|launching|launched|introduces|rolls out)\b/.test(t)) return 'genericLaunch';
+  return 'other';
+}
+
+// Try to pull a YYYY-MM-DD date from common URL patterns
+// (e.g. /2026/04/15/, /news/2026-04-15-..., /article-20260415.cms).
+function dateFromUrl(url) {
+  if (!url) return null;
+  const slashed = url.match(/\/(20\d{2})[/-](\d{1,2})(?:[/-](\d{1,2}))?(?:\/|$|-)/);
+  if (slashed) {
+    const [, y, mo, d] = slashed;
+    return `${y}-${String(mo).padStart(2, '0')}-${String(d || '01').padStart(2, '0')}`;
+  }
+  const compact = url.match(/(20\d{2})(\d{2})(\d{2})/);
+  if (compact) {
+    const [, y, mo, d] = compact;
+    return `${y}-${mo}-${d}`;
+  }
+  return null;
+}
+
+// Drug INNs almost always end in a recognized stem: -ib, -mab, -nib, -pril,
+// -sartan, -azole, -gliflozin, -gliptin, -prazole, -coxib, -caine, etc. We
+// use this to filter discovery candidates so genes (CYP2R1), viruses (H5N1),
+// and diseases (COVID-19) don't end up in the review queue.
+const DRUG_NAME_STEMS = [
+  'mab', 'nib', 'tinib', 'rafenib', 'parib', 'lisib', 'cinib',
+  'gliflozin', 'gliptin', 'glutide', 'glitazone',
+  'prazole', 'coxib', 'pril', 'sartan', 'olol', 'pine', 'statin',
+  'caine', 'azole', 'mycin', 'cycline', 'cillin', 'penem', 'floxacin',
+  'vudine', 'navir', 'ciclovir', 'tegravir', 'asvir', 'previr',
+  'mustine', 'rubicin', 'taxel', 'platin',
+  'etine', 'oxetine', 'pram', 'azepam', 'zepine',
+];
+
+function looksLikeDrugName(name) {
+  const s = String(name || '').toLowerCase().trim();
+  if (s.length < 5 || s.length > 40) return false;
+  // Reject obvious non-drugs: anything with digits (H5N1, COVID-19),
+  // anything ALL-CAPS-LIKE in original (gene symbols).
+  if (/\d/.test(s)) return false;
+  if (/^[a-z]+$/.test(s) === false) return false;
+  return DRUG_NAME_STEMS.some((stem) => s.endsWith(stem));
 }
 
 async function scrapeMolecule(molecule) {
   const body = {
-    url: searchUrlFor(molecule),
-    formats: ['json'],
-    jsonOptions: {
-      schema: EXTRACTION_SCHEMA,
-      prompt: buildPrompt(molecule),
-    },
-    onlyMainContent: true,
-    waitFor: 2500,
+    query: buildSearchQuery(molecule),
+    limit: 8,
   };
 
-  const res = await fetch('https://api.firecrawl.dev/v1/scrape', {
+  const res = await fetch('https://api.firecrawl.dev/v1/search', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -171,9 +167,51 @@ async function scrapeMolecule(molecule) {
     throw new Error(`Firecrawl ${res.status} for "${molecule}": ${text.slice(0, 200)}`);
   }
   const json = await res.json();
-  const data = json?.data?.json || {};
-  const events = Array.isArray(data.events) ? data.events : [];
-  const related = Array.isArray(data.relatedMolecules) ? data.relatedMolecules : [];
+  const results = Array.isArray(json?.data)
+    ? json.data
+    : Array.isArray(json?.results)
+      ? json.results
+      : [];
+
+  const events = [];
+  const relatedSet = new Set();
+
+  const moleculeLower = molecule.toLowerCase();
+  for (const r of results) {
+    const headline = r.title || r.metadata?.title || '';
+    const url = r.url || r.metadata?.sourceURL || '';
+    const description = r.description || r.metadata?.description || r.snippet || '';
+    if (!headline || !url) continue;
+
+    const indiaRelevant = /\bindia|delhi|mumbai|nppa|dcgi|cdsco|pharm[aex]|ipo\b/i.test(
+      `${headline} ${description}`
+    );
+    const moleculeMentioned =
+      headline.toLowerCase().includes(moleculeLower) ||
+      description.toLowerCase().includes(moleculeLower);
+    if (!moleculeMentioned || !indiaRelevant) {
+      // Mine the result for OTHER drug-like names (still useful for discovery)
+      const tokens = `${headline} ${description}`.match(/\b[A-Z][a-z]{4,}\b/g) || [];
+      for (const tok of tokens) {
+        if (looksLikeDrugName(tok) && tok.toLowerCase() !== moleculeLower) {
+          relatedSet.add(tok);
+        }
+      }
+      continue;
+    }
+
+    events.push({
+      headline,
+      summary: description || '',
+      sourceUrl: url,
+      publication: publicationFromUrl(url),
+      kind: classifyKind(`${headline} ${description}`),
+      date: dateFromUrl(url),
+    });
+  }
+
+  // Cap related to top 5 by alphabetic order (deterministic across runs).
+  const related = [...relatedSet].sort().slice(0, 5);
   return { events, related };
 }
 
