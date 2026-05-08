@@ -330,11 +330,6 @@ export default function App() {
           <InsightWidgets rows={filteredRows} selectedCompany={selectedCompany} />
         </section>
 
-        <footer className="pt-2 pb-6 text-center text-[11px] text-ink-500">
-          Curated baseline in <code className="text-ink-700">src/data/mockData.js</code> merged
-          with daily scrape in <code className="text-ink-700">public/launches.json</code>.
-          All KPIs, charts, and insights derive from the same filtered core table.
-        </footer>
       </main>
 
       {/* Full-screen overlay shown during PDF export. Hidden from the
