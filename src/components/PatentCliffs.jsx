@@ -1,9 +1,25 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { CalendarClock, ChevronDown, ChevronRight, Download } from 'lucide-react';
-import { PATENT_CLIFFS, PATENT_CLIFF_THERAPIES } from '../data/patentCliffs';
+import { CalendarClock, ChevronDown, ChevronRight, Download, Radio, Sparkles, X } from 'lucide-react';
+import { PATENT_CLIFFS, PATENT_CLIFF_THERAPIES, enrichCliffsWithLive } from '../data/patentCliffs';
 import { COLUMN_KEYS } from '../data/mockData';
 import { fmtINR } from '../utils/format';
 import PatentCliffDrawer from './PatentCliffDrawer';
+
+// Format an ISO timestamp as a relative "Xd ago" / "today" string. Used for
+// the per-row "last checked" pill — gives the client a quick read on how
+// fresh the live overlay is without dumping a full datetime.
+function fmtRelativeFromNow(iso) {
+  if (!iso) return null;
+  const t = new Date(iso).getTime();
+  if (isNaN(t)) return null;
+  const diff = Date.now() - t;
+  const day = 86_400_000;
+  if (diff < day) return 'today';
+  const days = Math.round(diff / day);
+  if (days < 7) return `${days}d ago`;
+  if (days < 60) return `${Math.round(days / 7)}w ago`;
+  return `${Math.round(days / 30)}mo ago`;
+}
 
 // Strip dosage / parens / combo separators so we can fuzzy-match a launch-row
 // molecule against a cliff molecule. Combo cliffs like "Vilanterol/Fluticasone"
@@ -84,11 +100,20 @@ function PositioningPill({ launched, total }) {
 const DEFAULT_THERAPY = 'Anti-Diabetic';
 const DEFAULT_LIMIT = 5;
 
-export default function PatentCliffs({ allRows = [], companies = [] }) {
+export default function PatentCliffs({ allRows = [], companies = [], livePatentCliffs = null }) {
   const [therapy, setTherapy] = useState(DEFAULT_THERAPY);
   const [sortKey, setSortKey] = useState('expiry');
   const [openCliff, setOpenCliff] = useState(null);
   const [showAll, setShowAll] = useState(false);
+  const [discoveryOpen, setDiscoveryOpen] = useState(false);
+
+  // Curated baseline + live overlay (events + lastCheckedAt per molecule).
+  // The overlay is additive — expiry dates / TAMs / confidence stay curated.
+  const cliffsWithLive = useMemo(
+    () => enrichCliffsWithLive(PATENT_CLIFFS, livePatentCliffs),
+    [livePatentCliffs]
+  );
+  const pendingDiscovery = livePatentCliffs?.pendingDiscovery || [];
   // Set of cliff molecules currently flashed because of a deep-link
   // ("focus-patent-cliffs" event from the InsightRibbon). Auto-clears
   // after 3.5s so the highlight feels like a momentary "here you are"
@@ -145,7 +170,7 @@ export default function PatentCliffs({ allRows = [], companies = [] }) {
   // the CSV export's Launched / Whitespace columns.
   const filersByMolecule = useMemo(() => {
     const map = new Map();
-    PATENT_CLIFFS.forEach((p) => {
+    cliffsWithLive.forEach((p) => {
       const launched = new Set();
       allRows.forEach((r) => {
         if (!moleculeMatchesCliff(r[COLUMN_KEYS.MOLECULE], p.molecule)) return;
@@ -158,14 +183,14 @@ export default function PatentCliffs({ allRows = [], companies = [] }) {
       });
     });
     return map;
-  }, [allRows, companies]);
+  }, [allRows, companies, cliffsWithLive]);
 
   const filtered = useMemo(() => {
     const base = therapy === '__ALL__'
-      ? PATENT_CLIFFS
-      : PATENT_CLIFFS.filter((p) => p.therapy === therapy);
+      ? cliffsWithLive
+      : cliffsWithLive.filter((p) => p.therapy === therapy);
     return [...base].sort(SORT_OPTIONS[sortKey].cmp);
-  }, [therapy, sortKey]);
+  }, [therapy, sortKey, cliffsWithLive]);
 
   const visible = showAll ? filtered : filtered.slice(0, DEFAULT_LIMIT);
   const hiddenCount = filtered.length - visible.length;
@@ -249,7 +274,18 @@ export default function PatentCliffs({ allRows = [], companies = [] }) {
             <CalendarClock className="w-4 h-4 text-pharma-600" />
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-ink-900">Patent Cliff Calendar</h3>
+            <h3 className="text-sm font-semibold text-ink-900 flex items-center gap-2">
+              Patent Cliff Calendar
+              {livePatentCliffs?.generatedAt && (
+                <span
+                  className="inline-flex items-center gap-1 text-[10px] font-semibold text-pharma-700 bg-pharma-50 border border-pharma-200 rounded-full px-1.5 py-0.5"
+                  title={`Live India news overlay · last refreshed ${new Date(livePatentCliffs.generatedAt).toLocaleString('en-IN')}`}
+                >
+                  <Radio className="w-2.5 h-2.5" />
+                  Live · {fmtRelativeFromNow(livePatentCliffs.generatedAt) || 'today'}
+                </span>
+              )}
+            </h3>
             <p className="text-[11px] text-ink-500">
               High-value molecules going generic in India · 2026-2028 ·{' '}
               <span className="font-semibold text-ink-700 tabular-nums">
@@ -297,6 +333,26 @@ export default function PatentCliffs({ allRows = [], companies = [] }) {
         </div>
       </div>
 
+      {pendingDiscovery.length > 0 && (
+        <button
+          type="button"
+          onClick={() => setDiscoveryOpen(true)}
+          className="w-full flex items-center justify-between gap-3 mb-3 px-3 py-2 rounded-lg bg-amber-50 border border-amber-200 hover:bg-amber-100 transition text-left"
+          data-pdf-hide
+        >
+          <span className="flex items-center gap-2 text-xs">
+            <Sparkles className="w-3.5 h-3.5 text-amber-600 shrink-0" />
+            <span className="font-semibold text-amber-900">
+              {pendingDiscovery.length} new molecule{pendingDiscovery.length === 1 ? '' : 's'} mentioned in India news
+            </span>
+            <span className="text-amber-700 hidden sm:inline">
+              · pending review (not auto-added to tracker)
+            </span>
+          </span>
+          <ChevronRight className="w-3.5 h-3.5 text-amber-700 shrink-0" />
+        </button>
+      )}
+
       <div className="overflow-x-auto -mx-4">
         <table className="w-full text-sm border-separate border-spacing-0 table-fixed">
           <colgroup>
@@ -339,6 +395,15 @@ export default function PatentCliffs({ allRows = [], companies = [] }) {
                     <div className="text-xs font-semibold text-ink-900 truncate">{p.molecule}</div>
                     {p.brand && (
                       <div className="text-[10px] text-ink-500 mt-0.5 truncate">{p.brand}</div>
+                    )}
+                    {Array.isArray(p.liveEvents) && p.liveEvents.length > 0 && (
+                      <div
+                        className="inline-flex items-center gap-1 mt-1 text-[10px] font-semibold text-pharma-700 bg-pharma-50 border border-pharma-200 rounded-full px-1.5 py-0.5"
+                        title={`${p.liveEvents.length} live India event${p.liveEvents.length === 1 ? '' : 's'} · last checked ${fmtRelativeFromNow(p.lastCheckedAt) || 'recently'}`}
+                      >
+                        <Radio className="w-2.5 h-2.5" />
+                        {p.liveEvents.length} event{p.liveEvents.length === 1 ? '' : 's'}
+                      </div>
                     )}
                   </td>
                   <td className="py-2.5 px-3 border-b border-ink-100/70 text-xs text-ink-700 align-middle text-center truncate">
@@ -419,6 +484,83 @@ export default function PatentCliffs({ allRows = [], companies = [] }) {
         companies={companies}
         onClose={() => setOpenCliff(null)}
       />
+
+      {discoveryOpen && (
+        <div
+          className="fixed inset-0 z-40"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Pending molecule review"
+        >
+          <div
+            className="absolute inset-0 bg-ink-900/40 backdrop-blur-[1px]"
+            onClick={() => setDiscoveryOpen(false)}
+          />
+          <aside className="absolute top-0 right-0 h-full w-full sm:w-[460px] bg-white shadow-2xl border-l border-ink-100 flex flex-col">
+            <div className="px-5 pt-5 pb-4 border-b border-ink-100 bg-gradient-to-b from-amber-50/60 to-white">
+              <div className="flex items-start justify-between gap-3">
+                <div>
+                  <p className="text-[11px] uppercase tracking-wider font-semibold text-amber-700">
+                    Auto-discovered
+                  </p>
+                  <h2 className="text-lg font-bold text-ink-900 mt-0.5">
+                    Pending molecule review
+                  </h2>
+                  <p className="text-[11px] text-ink-500 mt-1 leading-snug">
+                    Mentioned in India patent / generic news but not yet in our curated 33.
+                    Promote manually by adding to <code className="text-ink-700">src/data/patentCliffs.js</code>.
+                  </p>
+                </div>
+                <button
+                  onClick={() => setDiscoveryOpen(false)}
+                  aria-label="Close"
+                  className="w-8 h-8 rounded-lg bg-white border border-ink-100 hover:bg-ink-100/60 flex items-center justify-center text-ink-700 shrink-0"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+              </div>
+            </div>
+            <div className="flex-1 overflow-y-auto px-5 py-4">
+              {pendingDiscovery.length === 0 ? (
+                <p className="text-xs text-ink-500 text-center py-8">
+                  No pending discoveries.
+                </p>
+              ) : (
+                <ul className="space-y-2">
+                  {pendingDiscovery.map((d) => (
+                    <li
+                      key={d.name}
+                      className="px-3 py-2.5 rounded-lg border border-ink-100 hover:border-amber-200 transition"
+                    >
+                      <div className="flex items-center justify-between gap-2 flex-wrap">
+                        <span className="text-sm font-semibold text-ink-900">{d.name}</span>
+                        <span className="inline-flex items-center gap-1 text-[10px] font-semibold text-amber-800 bg-amber-50 border border-amber-200 rounded-full px-1.5 py-0.5">
+                          {d.mentionCount}× mention{d.mentionCount === 1 ? '' : 's'}
+                        </span>
+                      </div>
+                      <p className="text-[11px] text-ink-500 mt-1">
+                        First seen {fmtRelativeFromNow(d.firstSeenAt) || '—'}
+                        {d.lastSeenAt && d.lastSeenAt !== d.firstSeenAt && (
+                          <> · last {fmtRelativeFromNow(d.lastSeenAt)}</>
+                        )}
+                      </p>
+                      {Array.isArray(d.sampleHeadlines) && d.sampleHeadlines.length > 0 && (
+                        <ul className="mt-1.5 space-y-0.5">
+                          {d.sampleHeadlines.slice(0, 2).map((h, i) => (
+                            <li key={i} className="text-[11px] text-ink-600 leading-snug truncate">
+                              · {h}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          </aside>
+        </div>
+      )}
     </div>
   );
 }

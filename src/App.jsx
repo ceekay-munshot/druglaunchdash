@@ -24,6 +24,7 @@ import {
 import { exportDashboardPdf } from './utils/exportDashboardPdf';
 
 const LAUNCHES_ENDPOINT = '/launches.json';
+const PATENT_CLIFFS_ENDPOINT = '/patentCliffs.json';
 
 // Returns the earliest date (start of quarter) that should be included for a
 // preset of "N calendar quarters inclusive of the current quarter". 3Q is the
@@ -112,15 +113,26 @@ export default function App() {
   const [scrapeGeneratedAt, setScrapeGeneratedAt] = useState(null);
   const [isRefreshing, setIsRefreshing] = useState(false);
   const [lastRefreshAt, setLastRefreshAt] = useState(() => new Date());
+  // Live patent-cliff overlay (public/patentCliffs.json) — events array per
+  // molecule + auto-discovery review queue. Refreshed on the same Refresh
+  // button so a manual pull picks up both layers.
+  const [livePatentCliffs, setLivePatentCliffs] = useState(null);
 
   const fetchScraped = async () => {
     setIsRefreshing(true);
     try {
-      const res = await fetch(`${LAUNCHES_ENDPOINT}?t=${Date.now()}`, { cache: 'no-store' });
-      if (res.ok) {
-        const data = await res.json();
+      const [launchRes, cliffRes] = await Promise.all([
+        fetch(`${LAUNCHES_ENDPOINT}?t=${Date.now()}`, { cache: 'no-store' }),
+        fetch(`${PATENT_CLIFFS_ENDPOINT}?t=${Date.now()}`, { cache: 'no-store' }),
+      ]);
+      if (launchRes.ok) {
+        const data = await launchRes.json();
         setScrapedRows(Array.isArray(data.rows) ? data.rows : []);
         setScrapeGeneratedAt(data.generatedAt || null);
+      }
+      if (cliffRes.ok) {
+        const data = await cliffRes.json();
+        setLivePatentCliffs(data && typeof data === 'object' ? data : null);
       }
     } catch {
       /* swallow; we fall back to bundled baseline silently */
@@ -304,7 +316,11 @@ export default function App() {
           data-pdf-title="Patent Cliff Calendar"
           data-pdf-subtitle="Upcoming originator expiries and India opportunity windows"
         >
-          <PatentCliffs allRows={allRows} companies={activeCompanies} />
+          <PatentCliffs
+            allRows={allRows}
+            companies={activeCompanies}
+            livePatentCliffs={livePatentCliffs}
+          />
         </section>
 
         <section

@@ -1,0 +1,47 @@
+name: Scrape patent cliffs
+
+on:
+  schedule:
+    # 02:00 UTC every 2 days = 07:30 IST. Staggered after launches scrape
+    # (which runs at 00:30 UTC daily) so the two jobs don't fight over the
+    # same Firecrawl rate-limit window.
+    - cron: '0 2 */2 * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scrape-patent-cliffs
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run patent-cliff scraper
+        env:
+          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+        run: node scripts/scrape-patent-cliffs.mjs
+
+      - name: Commit updated patentCliffs.json
+        run: |
+          if ! git diff --quiet public/patentCliffs.json; then
+            git config user.name 'github-actions[bot]'
+            git config user.email 'github-actions[bot]@users.noreply.github.com'
+            git add public/patentCliffs.json
+            EVENTS=$(node -e "const d=JSON.parse(require('fs').readFileSync('public/patentCliffs.json','utf8'));let n=0;for(const m of Object.values(d.molecules||{}))n+=(m.events||[]).length;console.log(n)")
+            PENDING=$(node -e "const d=JSON.parse(require('fs').readFileSync('public/patentCliffs.json','utf8'));console.log((d.pendingDiscovery||[]).length)")
+            git commit -m "chore(data): patent-cliff refresh — $EVENTS events · $PENDING pending"
+            git push
+          else
+            echo "No changes to commit"
+          fi

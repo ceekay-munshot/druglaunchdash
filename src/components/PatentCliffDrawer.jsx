@@ -8,6 +8,8 @@ import {
   Circle,
   AlertCircle,
   TrendingUp,
+  Radio,
+  ExternalLink,
 } from 'lucide-react';
 import { COLUMN_KEYS } from '../data/mockData';
 import { fmtINR, fmtDate } from '../utils/format';
@@ -38,6 +40,36 @@ const CONFIDENCE_STYLES = {
   medium: { dot: 'bg-amber-500', label: 'Medium confidence' },
   low: { dot: 'bg-ink-300', label: 'Low confidence' },
 };
+
+const EVENT_KIND_STYLE = {
+  litigation: { label: 'Litigation', cls: 'bg-rose-50 text-rose-700 border-rose-200' },
+  compulsoryLicence: { label: 'Compulsory Licence', cls: 'bg-purple-50 text-purple-700 border-purple-200' },
+  genericLaunch: { label: 'Generic Launch', cls: 'bg-pharma-50 text-pharma-700 border-pharma-200' },
+  expiryUpdate: { label: 'Expiry Update', cls: 'bg-amber-50 text-amber-700 border-amber-200' },
+  priceCut: { label: 'Price Action', cls: 'bg-teal-50 text-teal-700 border-teal-200' },
+  biosimilarLaunch: { label: 'Biosimilar Launch', cls: 'bg-pharma-50 text-pharma-700 border-pharma-200' },
+  other: { label: 'Other', cls: 'bg-ink-50 text-ink-600 border-ink-200' },
+};
+
+function fmtEventDate(iso) {
+  if (!iso) return '—';
+  const d = new Date(iso);
+  if (isNaN(d.getTime())) return iso;
+  return d.toLocaleDateString('en-IN', { day: '2-digit', month: 'short', year: 'numeric' });
+}
+
+function fmtRelativeFromNow(iso) {
+  if (!iso) return null;
+  const t = new Date(iso).getTime();
+  if (isNaN(t)) return null;
+  const diff = Date.now() - t;
+  const day = 86_400_000;
+  if (diff < day) return 'today';
+  const days = Math.round(diff / day);
+  if (days < 7) return `${days}d ago`;
+  if (days < 60) return `${Math.round(days / 7)}w ago`;
+  return `${Math.round(days / 30)}mo ago`;
+}
 
 function fmtExpiry(p) {
   return p.expiryMonth ? `${p.expiryMonth} ${p.expiryYear}` : String(p.expiryYear);
@@ -311,6 +343,72 @@ export default function PatentCliffDrawer({ cliff, allRows = [], companies = [],
               </div>
             </section>
           )}
+
+          {/* Recent India events — populated by the bi-daily Firecrawl scrape
+              over Indian pharma news. Empty state: shown only if we've ever
+              checked this molecule (lastCheckedAt set) so brand-new molecules
+              that haven't been scraped yet don't render an empty card. */}
+          {(Array.isArray(cliff.liveEvents) && cliff.liveEvents.length > 0) ||
+          cliff.lastCheckedAt ? (
+            <section>
+              <div className="flex items-center justify-between gap-2 mb-2">
+                <div className="flex items-center gap-2">
+                  <Radio className="w-4 h-4 text-pharma-600" />
+                  <h3 className="text-[10px] uppercase tracking-wider font-bold text-ink-700">
+                    Recent India events
+                  </h3>
+                </div>
+                {cliff.lastCheckedAt && (
+                  <span className="text-[10px] text-ink-500">
+                    last checked {fmtRelativeFromNow(cliff.lastCheckedAt)}
+                  </span>
+                )}
+              </div>
+              {Array.isArray(cliff.liveEvents) && cliff.liveEvents.length > 0 ? (
+                <ul className="space-y-2">
+                  {cliff.liveEvents.slice(0, 8).map((e, i) => {
+                    const style = EVENT_KIND_STYLE[e.kind] || EVENT_KIND_STYLE.other;
+                    return (
+                      <li
+                        key={`${e.sourceUrl || e.headline}-${i}`}
+                        className="px-3 py-2 rounded-lg border border-ink-100 hover:border-pharma-200 transition"
+                      >
+                        <div className="flex items-center justify-between gap-2 flex-wrap">
+                          <span className={`inline-flex items-center text-[10px] font-semibold border rounded-full px-1.5 py-0.5 ${style.cls}`}>
+                            {style.label}
+                          </span>
+                          <span className="text-[10px] text-ink-500 tabular-nums">
+                            {fmtEventDate(e.date)}
+                          </span>
+                        </div>
+                        <p className="text-[12px] text-ink-900 font-semibold mt-1 leading-snug">
+                          {e.headline}
+                        </p>
+                        {e.summary && (
+                          <p className="text-[11px] text-ink-600 mt-1 leading-snug">{e.summary}</p>
+                        )}
+                        {e.sourceUrl && (
+                          <a
+                            href={e.sourceUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1 mt-1.5 text-[11px] font-semibold text-pharma-700 hover:text-pharma-800"
+                          >
+                            {e.publication || 'Source'}
+                            <ExternalLink className="w-3 h-3" />
+                          </a>
+                        )}
+                      </li>
+                    );
+                  })}
+                </ul>
+              ) : (
+                <p className="text-[11px] text-ink-500 italic">
+                  No India-specific events found in the last 24 months.
+                </p>
+              )}
+            </section>
+          ) : null}
 
           <p className="text-[10px] text-ink-400 leading-relaxed pt-2 border-t border-ink-100">
             Estimates compiled from public sources (USFDA Orange Book, IPO DRHPs,

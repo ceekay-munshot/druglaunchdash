@@ -430,3 +430,24 @@ export const PATENT_CLIFFS = [
 export const PATENT_CLIFF_THERAPIES = Array.from(
   new Set(PATENT_CLIFFS.map((p) => p.therapy))
 ).sort();
+
+// Merge a live patent-cliff overlay (public/patentCliffs.json) onto the
+// curated baseline. Live data NEVER overrides expiryYear/TAM/confidence —
+// it only attaches `liveEvents` (recent India headlines) and
+// `lastCheckedAt` (when we last refreshed). Returns a fresh array;
+// PATENT_CLIFFS is left untouched.
+export function enrichCliffsWithLive(baseline, live) {
+  if (!live || typeof live !== 'object') return baseline;
+  const byMolecule = live.molecules || {};
+  return baseline.map((cliff) => {
+    const overlay = byMolecule[cliff.molecule];
+    if (!overlay) return cliff;
+    return {
+      ...cliff,
+      liveEvents: Array.isArray(overlay.events) ? overlay.events : [],
+      lastCheckedAt: overlay.lastCheckedAt || null,
+      lastError: overlay.lastError || null,
+    };
+  });
+}
+
