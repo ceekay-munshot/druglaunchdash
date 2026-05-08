@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-07T07:17:05.471Z",
-  "rowCount": 76,
+  "generatedAt": "2026-05-08T04:02:16.881Z",
+  "rowCount": 80,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -1187,6 +1187,70 @@
       "sourceUrl": "https://www.examplepharma.com/press-releases/nutricare-inlicensing",
       "buyer": "Torrent Pharma",
       "lastEnrichmentAttempt": "2026-05-07T07:16:36.379Z"
+    },
+    {
+      "brand": "Semaglutide",
+      "launchType": "Own Launched",
+      "date": "2023-11-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Semaglutide",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Ozempic",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,200 / injection",
+      "sourceUrl": "https://www.example.com/semaglutide-launch",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-05-08T03:59:40.313Z"
+    },
+    {
+      "brand": "Telmisartan",
+      "launchType": "Acquired",
+      "date": "2023-09-15",
+      "seller": "Mankind Pharma",
+      "dealType": "Brand Acquisition",
+      "molecule": "Telmisartan",
+      "therapy": "Cardiology",
+      "indication": "Hypertension",
+      "existingBrand": "Telma",
+      "chronicAcute": "Chronic",
+      "price": "Rs 300 / strip",
+      "sourceUrl": "https://www.example.com/telmisartan-acquisition",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-05-08T03:59:40.313Z"
+    },
+    {
+      "brand": "Molxvir®",
+      "launchType": "Own Launched",
+      "date": "2021-11-11",
+      "seller": "MSD and Ridgeback",
+      "dealType": "In-license (India)",
+      "molecule": "molnupiravir",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹1357 / bottle of 40 capsules",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/11/Press-Release-Sun-Pharma-gearing-up-to-introduce-molnupiravir-under-the-brand-name-Molxvir%C2%AE-in-India.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-08T04:00:08.884Z"
+    },
+    {
+      "brand": "GlaxoSmithKline brands",
+      "launchType": "Acquired",
+      "date": "2017-10-01",
+      "seller": "GlaxoSmithKline",
+      "dealType": "Brand Portfolio Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹16.5 / strip of 20 tablets",
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-08T04:01:06.627Z"
     }
   ]
 }
