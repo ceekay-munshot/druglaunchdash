@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-08T04:02:16.881Z",
-  "rowCount": 80,
+  "generatedAt": "2026-05-08T07:14:43.654Z",
+  "rowCount": 91,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -57,7 +57,7 @@
       "chronicAcute": "Chronic",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/10/Press-Release-Sun-Pharma-and-Zydus-sign-licensing-agreement-for-co-marketing-of-Desidustat-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-01T04:48:52.261Z"
+      "lastEnrichmentAttempt": "2026-05-08T07:13:00.390Z"
     },
     {
       "brand": "Tyvalzi™",
@@ -72,7 +72,7 @@
       "chronicAcute": "Chronic",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/09/Press-Release-Sun-Pharma-and-Pharmazz-Inc.-licensing-agreement-for-Sovateltide-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-01T04:48:54.463Z"
+      "lastEnrichmentAttempt": "2026-05-08T07:13:06.876Z"
     },
     {
       "brand": "Molxvir®",
@@ -87,7 +87,7 @@
       "chronicAcute": "Chronic",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/12/Press-Release-Sun-Pharma-receives-DCGI-approval-for-Molxvir-Molnupiravir-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-01T04:52:15.675Z"
+      "lastEnrichmentAttempt": "2026-05-08T07:13:13.668Z"
     },
     {
       "brand": "Palbo",
@@ -130,7 +130,7 @@
       "chronicAcute": "Acute",
       "sourceUrl": "https://health.economictimes.indiatimes.com/news/pharma/drug-approvals-launches/alkem-forays-into-ophthalmology-with-launch-of-eye-care-products/101642253",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-05-01T04:53:11.123Z"
+      "lastEnrichmentAttempt": "2026-05-08T07:13:28.697Z"
     },
     {
       "brand": "Cetuximab",
@@ -145,7 +145,7 @@
       "chronicAcute": "Chronic",
       "sourceUrl": "https://www.cnbctv18.com/healthcare/alkem-oncology-novel-breast-cancer-treatment-drug-launch-palbociclib-palbo-15703241.htm",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-05-01T04:55:20.592Z"
+      "lastEnrichmentAttempt": "2026-05-08T07:13:40.208Z"
     },
     {
       "brand": "Myoril",
@@ -160,7 +160,7 @@
       "chronicAcute": "Chronic",
       "sourceUrl": "https://www.coronaremedies.com/wp-content/uploads/2024/11/myoril-news-2024.png",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-01T04:56:13.499Z"
+      "lastEnrichmentAttempt": "2026-05-08T07:13:51.295Z"
     },
     {
       "brand": "Obimet & Thyrocab",
@@ -175,7 +175,7 @@
       "chronicAcute": "Chronic",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-01T04:56:15.821Z"
+      "lastEnrichmentAttempt": "2026-05-08T07:13:58.176Z"
     },
     {
       "brand": "GSK Brands",
@@ -190,7 +190,7 @@
       "chronicAcute": "Chronic",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-01T04:59:27.408Z"
+      "lastEnrichmentAttempt": "2026-05-08T07:14:07.441Z"
     },
     {
       "brand": "Sematreat",
@@ -206,7 +206,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/PR-for-Semaglutide.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-01T05:01:08.302Z"
+      "lastEnrichmentAttempt": "2026-05-08T07:14:18.254Z"
     },
     {
       "brand": "Semaglutide Injection",
@@ -582,7 +582,7 @@
       "indication": "Psoriatic Arthritis",
       "existingBrand": "—",
       "chronicAcute": "Chronic",
-      "price": "—",
+      "price": "₹900 to ₹2000",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/PR-for-Semaglutide.pdf",
       "buyer": "Sun Pharma",
       "lastEnrichmentAttempt": "2026-05-03T04:29:38.970Z"
@@ -598,7 +598,7 @@
       "indication": "Psoriatic Arthritis",
       "existingBrand": "—",
       "chronicAcute": "Chronic",
-      "price": "—",
+      "price": "₹750 to ₹1300",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/PR-for-Semaglutide.pdf",
       "buyer": "Sun Pharma",
       "lastEnrichmentAttempt": "2026-05-03T04:29:40.257Z"
@@ -611,10 +611,10 @@
       "dealType": "Generic Launch",
       "molecule": "Molnupiravir",
       "therapy": "—",
-      "indication": "—",
+      "indication": "Covid-19",
       "existingBrand": "—",
       "chronicAcute": "—",
-      "price": "—",
+      "price": "₹1347 / bottle of 40 capsules",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/12/Press-Release-Sun-Pharma-receives-DCGI-approval-for-Molxvir-Molnupiravir-in-India.pdf",
       "buyer": "Sun Pharma",
       "lastEnrichmentAttempt": "2026-05-03T04:29:41.646Z"
@@ -721,7 +721,7 @@
       "dealType": "NCE Launch",
       "molecule": "—",
       "therapy": "—",
-      "indication": "—",
+      "indication": "Eye care",
       "existingBrand": "—",
       "chronicAcute": "—",
       "price": "—",
@@ -1251,6 +1251,182 @@
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
       "lastEnrichmentAttempt": "2026-05-08T04:01:06.627Z"
+    },
+    {
+      "brand": "Lizardin",
+      "launchType": "Own Launched",
+      "date": "2023-09-22",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Liraglutide",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "GlucoMitra",
+      "chronicAcute": "Chronic",
+      "price": "Rs 3,200 / pack",
+      "sourceUrl": "https://www.mankindpharma.com/press-release/lizardin-launch",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-05-08T07:11:44.223Z"
+    },
+    {
+      "brand": "Organon",
+      "launchType": "Acquired",
+      "date": "2026-04-27",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹41 / bottle of 10 ml dilution",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/04/PR-Sun-Organon-announcement-Apr-26.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-08T07:12:17.518Z"
+    },
+    {
+      "brand": "Cipla's New Antihypertensive Drug",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Telmisartan",
+      "therapy": "Cardiology",
+      "indication": "Hypertension",
+      "existingBrand": "Telma",
+      "chronicAcute": "Chronic",
+      "price": "Rs 250 / strip of 10 tablets",
+      "sourceUrl": "https://www.cipla.com/press-releases-statements/new-antihypertensive-product-launch",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-05-08T07:12:22.099Z"
+    },
+    {
+      "brand": "Novartis India",
+      "launchType": "Own Launched",
+      "date": "2023-08-10",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Entresto (sacubitril/valsartan)",
+      "therapy": "Cardiology",
+      "indication": "Heart Failure",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 2,800 / bottle",
+      "sourceUrl": "https://www.novartis.in/press-release/entresto-launch",
+      "buyer": "Torrent Pharma",
+      "lastEnrichmentAttempt": "2026-05-08T07:12:58.889Z"
+    },
+    {
+      "brand": "RYTSTAT",
+      "launchType": "In-licensed",
+      "date": "2023-10-30",
+      "seller": "Zydus Lifesciences Limited",
+      "dealType": "Co-marketing",
+      "molecule": "Desidustat",
+      "therapy": "—",
+      "indication": "anemia associated with Chronic Kidney Disease",
+      "existingBrand": "Oxemia",
+      "chronicAcute": "Chronic",
+      "price": "—",
+      "sourceUrl": "—",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-08T07:13:00.390Z"
+    },
+    {
+      "brand": "Tyvalzi™ (Sovateltide)",
+      "launchType": "In-licensed",
+      "date": "2023-09-14",
+      "seller": "Pharmazz Inc.",
+      "dealType": "In-license (India)",
+      "molecule": "Sovateltide",
+      "therapy": "—",
+      "indication": "cerebral ischemic stroke",
+      "existingBrand": "—",
+      "chronicAcute": "Acute",
+      "price": "—",
+      "sourceUrl": "https://www.pharmazz.com/launch-tyvalzi-sovateltide-india",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-08T07:13:06.876Z"
+    },
+    {
+      "brand": "Alkem",
+      "launchType": "Own Launched",
+      "date": "2023-07-10",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "Ophthalmology",
+      "indication": "eye diseases",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://health.economictimes.indiatimes.com/news/pharma/drug-approvals-launches/alkem-forays-into-ophthalmology-with-launch-of-eye-care-products/101642253",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-05-08T07:13:28.697Z"
+    },
+    {
+      "brand": "Palbo",
+      "launchType": "Own Launched",
+      "date": "2023-01-18",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Palbociclib",
+      "therapy": "Oncology",
+      "indication": "breast cancer",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 6,125 / 21 capsules",
+      "sourceUrl": "https://www.cnbctv18.com/healthcare/alkem-oncology-novel-breast-cancer-treatment-drug-launch-palbociclib-palbo-15703241.htm",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-05-08T07:13:40.208Z"
+    },
+    {
+      "brand": "Obimet",
+      "launchType": "Acquired",
+      "date": "2018-04-02",
+      "seller": "Abbott India",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "Anti-Diabetic",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-08T07:13:58.176Z"
+    },
+    {
+      "brand": "Thyrocab",
+      "launchType": "Acquired",
+      "date": "2018-04-02",
+      "seller": "Abbott India",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-08T07:13:58.176Z"
+    },
+    {
+      "brand": "Dilo-BM, Dilo-DX, Stelbid, Vitneurin",
+      "launchType": "Acquired",
+      "date": "2017-03-07",
+      "seller": "GlaxoSmithKline",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-08T07:14:07.441Z"
     }
   ]
 }
