@@ -97,18 +97,25 @@ export function fromScrapedRow(r) {
 
 // Dedup key used for both baseline vs. scraped merging and for the scraper's
 // own dedup. Keep this stable across both sides.
+//
+// Seller is intentionally NOT in the key. The same deal can land in
+// launches.json twice with the seller filled differently across runs (e.g.
+// the Sun–Organon event arrived once as seller="Organon & Co." classified
+// "Brand Acquisition", then again as seller="—" classified "Company
+// Acquisition"). Brand+date+buyer is unique enough — portfolio acquisitions
+// already differ on `brand` per line item, so dropping seller from the key
+// only collides when rows are genuinely the same event.
 function rowKey(r) {
   return [
     String(r[COLUMN_KEYS.BRAND] ?? '').trim().toLowerCase(),
     String(r[COLUMN_KEYS.DATE] ?? '').trim(),
-    String(r[COLUMN_KEYS.SELLER] ?? '').trim().toLowerCase(),
     String(r[COLUMN_KEYS.BUYER] ?? '').trim().toLowerCase(),
   ].join('|');
 }
 
 // Merge bundled curated rows with rows fetched from public/launches.json.
 // Curated (baseline) rows are source-of-truth and always win on key collision;
-// scraped rows are only appended when they introduce a new (brand+date+seller+buyer).
+// scraped rows are only appended when they introduce a new (brand+date+buyer).
 export function mergeLaunchRows(baseline, scrapedRaw) {
   if (!Array.isArray(scrapedRaw) || scrapedRaw.length === 0) return baseline;
   const baselineKeys = new Set(baseline.map(rowKey));

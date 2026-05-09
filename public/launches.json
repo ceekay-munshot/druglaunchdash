@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-05-09T04:07:05.975Z",
-  "rowCount": 108,
+  "rowCount": 107,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -692,10 +692,10 @@
       "indication": "—",
       "existingBrand": "—",
       "chronicAcute": "—",
-      "price": null,
+      "price": "₹41 / bottle of 10 ml dilution",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/04/PR-Sun-Organon-announcement-Apr-26.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-04T04:28:59.887Z"
+      "lastEnrichmentAttempt": "2026-05-08T07:12:17.518Z"
     },
     {
       "brand": "Tyvalzi",
@@ -1267,22 +1267,6 @@
       "sourceUrl": "https://www.mankindpharma.com/press-release/lizardin-launch",
       "buyer": "Mankind Pharma",
       "lastEnrichmentAttempt": "2026-05-08T07:11:44.223Z"
-    },
-    {
-      "brand": "Organon",
-      "launchType": "Acquired",
-      "date": "2026-04-27",
-      "seller": "—",
-      "dealType": "Company Acquisition",
-      "molecule": "—",
-      "therapy": "—",
-      "indication": "—",
-      "existingBrand": "—",
-      "chronicAcute": "—",
-      "price": "₹41 / bottle of 10 ml dilution",
-      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/04/PR-Sun-Organon-announcement-Apr-26.pdf",
-      "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-08T07:12:17.518Z"
     },
     {
       "brand": "Cipla's New Antihypertensive Drug",
