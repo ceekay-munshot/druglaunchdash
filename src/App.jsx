@@ -11,6 +11,10 @@ import PatentCliffs from './components/PatentCliffs';
 import BriefingHero from './components/BriefingHero';
 import ActionRequired from './components/ActionRequired';
 import WhitespaceMatrix from './components/WhitespaceMatrix';
+import TimeMachineSlider from './components/TimeMachineSlider';
+// AskAnything pulls in the Anthropic SDK (~140KB gz). Lazy-load it so
+// users who never press ⌘K don't pay the bundle cost on initial render.
+const AskAnything = React.lazy(() => import('./components/AskAnything'));
 import {
   LAUNCH_TRACKER_ROWS,
   UNIQUE_BUYERS,
@@ -74,6 +78,15 @@ export default function App() {
   const [selectedCompany, setSelectedCompany] = useState('__ALL__');
   const [timeline, setTimeline] = useState('2Q');
   const [archivedCompanies, setArchivedCompanies] = useState(loadInitialArchived);
+  // Time-machine viewing date (epoch ms). null = live (today). When set
+  // to a past timestamp, every downstream view filters out rows whose
+  // Date > viewingDate, recomputing as if the dashboard were rendered
+  // on that day.
+  const [viewingDate, setViewingDate] = useState(null);
+  const isLiveView = viewingDate == null;
+  // Ask-Anything modal (⌘K). Lazy-mounted only when opened so the
+  // Anthropic SDK / streaming logic doesn't run on initial page load.
+  const [askOpen, setAskOpen] = useState(false);
 
   const activeCompanies = useMemo(
     () => UNIQUE_BUYERS.filter((c) => !archivedCompanies.includes(c)),
@@ -88,6 +101,22 @@ export default function App() {
       /* ignore */
     }
   }, [archivedCompanies]);
+
+  // ⌘K / Ctrl+K opens the Ask-Anything modal — the same shortcut Linear,
+  // Notion, GitHub, etc. use for command palettes, so the muscle memory
+  // is already there for power users.
+  useEffect(() => {
+    const handler = (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        setAskOpen((v) => !v);
+      } else if (e.key === 'Escape') {
+        setAskOpen(false);
+      }
+    };
+    window.addEventListener('keydown', handler);
+    return () => window.removeEventListener('keydown', handler);
+  }, []);
 
   const unarchiveCompany = (name) =>
     setArchivedCompanies((prev) => prev.filter((c) => c !== name));
@@ -167,8 +196,23 @@ export default function App() {
     [scrapedRows]
   );
 
-  const filteredRows = useMemo(() => {
+  // Rows visible under the time-machine cap. We apply the viewingDate
+  // filter BEFORE the user-facing filteredRows pipeline so every
+  // downstream consumer (KPIs, charts, table, whitespace matrix, patent
+  // cliffs' "your 7 positioning" pill) sees the same as-of-date snapshot.
+  const timeMachineRows = useMemo(() => {
+    if (viewingDate == null) return allRows;
     return allRows.filter((r) => {
+      const d = r[COLUMN_KEYS.DATE];
+      if (!d) return true; // un-dated rows always survive
+      const t = new Date(d).getTime();
+      if (isNaN(t)) return true;
+      return t <= viewingDate;
+    });
+  }, [allRows, viewingDate]);
+
+  const filteredRows = useMemo(() => {
+    return timeMachineRows.filter((r) => {
       if (timelineCutoff) {
         const d = new Date(r[COLUMN_KEYS.DATE]);
         if (isNaN(d.getTime()) || d < timelineCutoff) return false;
@@ -198,7 +242,7 @@ export default function App() {
       }
       return true;
     });
-  }, [searchQuery, selectedCompany, timelineCutoff, archivedCompanies, allRows]);
+  }, [searchQuery, selectedCompany, timelineCutoff, archivedCompanies, timeMachineRows]);
 
   // "Last refresh" shows the scrape timestamp when we have one, otherwise the
   // last time the button was pressed / page loaded.
@@ -302,16 +346,28 @@ export default function App() {
           timelineCutoff={timelineCutoff}
         />
 
-        {/* "Since you last looked" briefing — drives habitual return-
-            visits by surfacing what's changed via a localStorage diff. */}
-        <BriefingHero allRows={allRows} />
+        {/* Time-machine date scrubber. When pulled back, every section
+            below renders against the as-of-date row set, and the
+            real-time-only sections (briefing, action panel) hide. */}
+        <TimeMachineSlider
+          allRows={allRows}
+          viewingDate={viewingDate}
+          onChange={setViewingDate}
+        />
+
+        {/* "Since you last looked" briefing — only meaningful when the
+            user is viewing live data. In time-machine mode the diff
+            against last-visit is incoherent, so we hide the card. */}
+        {isLiveView && <BriefingHero allRows={allRows} />}
 
         <InsightRibbon rows={filteredRows} />
 
-        {/* Action Required panel — patents expiring soon where you have
-            no brand, peer activity in the last fortnight, etc. Hidden if
-            no items rank high enough to surface. */}
-        <ActionRequired allRows={allRows} companies={activeCompanies} />
+        {/* Action Required panel — same logic: real-time alerts about
+            imminent patent cliffs and peer activity don't make sense
+            when looking at a past snapshot, so hide in time-machine mode. */}
+        {isLiveView && (
+          <ActionRequired allRows={timeMachineRows} companies={activeCompanies} />
+        )}
 
         <section
           aria-label="KPI summary"
@@ -360,7 +416,7 @@ export default function App() {
           data-pdf-subtitle="Upcoming originator expiries and India opportunity windows"
         >
           <PatentCliffs
-            allRows={allRows}
+            allRows={timeMachineRows}
             companies={activeCompanies}
             livePatentCliffs={livePatentCliffs}
           />
@@ -376,7 +432,7 @@ export default function App() {
           data-pdf-title="Whitespace Matrix"
           data-pdf-subtitle="Patent-cliff molecules × tracked companies"
         >
-          <WhitespaceMatrix allRows={allRows} companies={activeCompanies} />
+          <WhitespaceMatrix allRows={timeMachineRows} companies={activeCompanies} />
         </section>
 
         <section
@@ -388,7 +444,7 @@ export default function App() {
         >
           <MainTable
             rows={filteredRows}
-            allRows={allRows}
+            allRows={timeMachineRows}
             selectedCompany={selectedCompany}
           />
         </section>
@@ -403,6 +459,39 @@ export default function App() {
         </section>
 
       </main>
+
+      {/* Ask Anything modal — lazy-loaded on first open so the Anthropic
+          SDK chunk doesn't hit users who never press ⌘K. Suspense
+          fallback is null because the modal is inherently async-opening
+          (no flash needed before the chunk arrives). */}
+      {askOpen && (
+        <React.Suspense fallback={null}>
+          <AskAnything
+            allRows={allRows}
+            isOpen={askOpen}
+            onClose={() => setAskOpen(false)}
+          />
+        </React.Suspense>
+      )}
+
+      {/* Floating ⌘K hint pill — bottom-right, hidden while the modal
+          is open so it doesn't compete with the input. */}
+      {!askOpen && (
+        <button
+          onClick={() => setAskOpen(true)}
+          aria-label="Open Ask Anything"
+          className="fixed bottom-5 right-5 z-30 inline-flex items-center gap-2 px-3.5 py-2.5 rounded-full bg-gradient-to-br from-pharma-600 to-teal-accent text-white shadow-cardHover hover:shadow-2xl hover:scale-[1.03] transition group"
+          title="Ask anything (⌘K)"
+        >
+          <span className="w-5 h-5 rounded-md bg-white/20 flex items-center justify-center">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="w-3 h-3">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9.5 14.5L12 12m0 0l2.5-2.5M12 12l2.5 2.5M12 12L9.5 9.5m9 6a8 8 0 11-16 0 8 8 0 0116 0z" />
+            </svg>
+          </span>
+          <span className="text-xs font-semibold hidden sm:inline">Ask anything</span>
+          <kbd className="font-mono text-[10px] px-1.5 py-0.5 rounded bg-white/20 hidden sm:inline">⌘K</kbd>
+        </button>
+      )}
 
       {/* Full-screen overlay shown during PDF export. Hidden from the
           captured snapshot via data-pdf-no-capture (the export utility's
