@@ -8,6 +8,9 @@ import InsightWidgets from './components/InsightWidgets';
 import InsightRibbon from './components/InsightRibbon';
 import PeerBenchmark from './components/PeerBenchmark';
 import PatentCliffs from './components/PatentCliffs';
+import BriefingHero from './components/BriefingHero';
+import ActionRequired from './components/ActionRequired';
+import WhitespaceMatrix from './components/WhitespaceMatrix';
 import {
   LAUNCH_TRACKER_ROWS,
   UNIQUE_BUYERS,
@@ -240,6 +243,35 @@ export default function App() {
     }
   };
 
+  // Boardroom-grade PowerPoint export. Lazy-imports pptxgenjs (~600KB
+  // minified) so it stays out of the initial bundle and only loads when
+  // the user clicks the button.
+  const [exportingPptx, setExportingPptx] = useState(false);
+  const handleExportPptx = async () => {
+    if (exportingPptx) return;
+    setExportingPptx(true);
+    try {
+      const { exportPptx } = await import('./utils/exportPptx');
+      await exportPptx({
+        rows: filteredRows,
+        company: selectedCompany === '__ALL__' ? 'All Companies' : selectedCompany,
+        timelineLabel: TIMELINE_PRESETS[timeline]?.label || timeline,
+        generatedAt: new Date().toLocaleString('en-IN', {
+          year: 'numeric',
+          month: 'short',
+          day: '2-digit',
+          hour: '2-digit',
+          minute: '2-digit',
+        }),
+      });
+    } catch (err) {
+      console.error('PPTX export failed', err);
+      alert('PowerPoint export failed. Please try again.');
+    } finally {
+      setExportingPptx(false);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-pharma-50/40 via-white to-teal-50/30 bg-fixed">
       <Header
@@ -258,10 +290,21 @@ export default function App() {
         refreshing={isRefreshing}
         onExportPdf={handleExportPdf}
         exportingPdf={exportingPdf}
+        onExportPptx={handleExportPptx}
+        exportingPptx={exportingPptx}
       />
 
       <main className="max-w-[1840px] mx-auto px-4 py-4 space-y-4">
+        {/* "Since you last looked" briefing — drives habitual return-
+            visits by surfacing what's changed via a localStorage diff. */}
+        <BriefingHero allRows={allRows} />
+
         <InsightRibbon rows={filteredRows} />
+
+        {/* Action Required panel — patents expiring soon where you have
+            no brand, peer activity in the last fortnight, etc. Hidden if
+            no items rank high enough to surface. */}
+        <ActionRequired allRows={allRows} companies={activeCompanies} />
 
         <FilterBar
           timeline={timeline}
@@ -321,6 +364,19 @@ export default function App() {
             companies={activeCompanies}
             livePatentCliffs={livePatentCliffs}
           />
+        </section>
+
+        {/* Whitespace matrix — molecule × tracked-company grid showing
+            launched (✓) vs whitespace (—) for every patent-cliff
+            molecule. Sorted to surface the cells with the most strategic
+            whitespace at the top. */}
+        <section
+          aria-label="Whitespace matrix"
+          data-pdf-section
+          data-pdf-title="Whitespace Matrix"
+          data-pdf-subtitle="Patent-cliff molecules × tracked companies"
+        >
+          <WhitespaceMatrix allRows={allRows} companies={activeCompanies} />
         </section>
 
         <section

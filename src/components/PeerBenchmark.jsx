@@ -14,6 +14,12 @@ function shortName(name) {
     .trim();
 }
 
+// Rolling-12-month window cut-off used for the deal-velocity row. We pick
+// 12 months specifically because it strips out launch-cadence seasonality
+// (companies tend to cluster launches around fiscal-year-end pushes) while
+// still being recent enough to feel like a "current pace" reading.
+const VELOCITY_WINDOW_DAYS = 365;
+
 function computeCompanyMetrics(rows) {
   // Parent rows are deal envelopes (e.g. "Bharat Serums & Vaccines (parent)"),
   // not individual brands — drop them so per-brand counts and chronic-share
@@ -24,6 +30,15 @@ function computeCompanyMetrics(rows) {
   const acquired = countAcquisitionDeals(rows);
   const ownLaunched = brandRows.filter((r) => r[COLUMN_KEYS.LAUNCH_TYPE] === 'Own Launched').length;
   const inLicensed = brandRows.filter((r) => r[COLUMN_KEYS.LAUNCH_TYPE] === 'In-licensed').length;
+
+  // Deal velocity = brand-level events in the rolling 12-month window. We
+  // use brand rows (not deal events) so multi-brand acquisitions reflect
+  // the actual portfolio breadth a company brought online.
+  const cutoff = Date.now() - VELOCITY_WINDOW_DAYS * 86_400_000;
+  const recent = brandRows.filter((r) => {
+    const t = new Date(r[COLUMN_KEYS.DATE]).getTime();
+    return !isNaN(t) && t >= cutoff;
+  }).length;
 
   const chronic = brandRows.filter((r) => r[COLUMN_KEYS.CHRONIC_ACUTE] === 'Chronic').length;
   const acute = brandRows.filter((r) => r[COLUMN_KEYS.CHRONIC_ACUTE] === 'Acute').length;
@@ -64,6 +79,7 @@ function computeCompanyMetrics(rows) {
     chronicPct,
     topTherapy,
     topCounterparty,
+    velocity12mo: recent,
   };
 }
 
@@ -137,6 +153,18 @@ export default function PeerBenchmark({ rows, companies }) {
 
   const bestLaunches = bestBy((m) => m.launchCount);
   const bestChronic = bestBy((m) => m.chronicPct);
+  const bestVelocity = bestBy((m) => m.velocity12mo);
+
+  // Peer median for the deal-velocity row — drives the "above / below
+  // median" annotation on each cell. We use median (not mean) so a single
+  // outlier deal-flow burst doesn't drag the reference line up.
+  const velocities = perCompany.map((c) => c.metrics.velocity12mo).sort((a, b) => a - b);
+  const peerMedian = velocities.length
+    ? velocities.length % 2
+      ? velocities[Math.floor(velocities.length / 2)]
+      : (velocities[velocities.length / 2 - 1] + velocities[velocities.length / 2]) / 2
+    : 0;
+  const velocityMax = Math.max(1, ...velocities);
 
   return (
     <div className="bg-white rounded-2xl border border-ink-100 shadow-card p-4">
@@ -242,6 +270,54 @@ export default function PeerBenchmark({ rows, companies }) {
                   )}
                 </td>
               ))}
+            </tr>
+
+            <tr>
+              <td className="py-2.5 pr-4 text-[11px] uppercase tracking-wider text-ink-500 font-semibold border-b border-ink-100/60">
+                Deal velocity
+                <div className="text-[10px] normal-case tracking-normal text-ink-400 font-normal mt-0.5">
+                  Last 12mo · peer median {peerMedian}
+                </div>
+              </td>
+              {perCompany.map((c) => {
+                const v = c.metrics.velocity12mo;
+                const delta = v - peerMedian;
+                const pctOfMax = velocityMax ? (v / velocityMax) * 100 : 0;
+                const medianPct = velocityMax ? (peerMedian / velocityMax) * 100 : 0;
+                const isBest = c.name === bestVelocity && v > 0;
+                return (
+                  <HighlightCell key={c.name} isBest={isBest}>
+                    <div className="text-sm font-semibold text-ink-900 tabular-nums">{v}</div>
+                    <div className="relative mt-1 h-1.5 w-full bg-ink-100 rounded-full overflow-hidden">
+                      <div
+                        className={`h-full rounded-full ${
+                          delta >= 0
+                            ? 'bg-gradient-to-r from-pharma-500 to-teal-accent'
+                            : 'bg-gradient-to-r from-amber-400 to-amber-500'
+                        }`}
+                        style={{ width: `${pctOfMax}%` }}
+                      />
+                      {/* Peer-median tick — vertical hairline overlaid on
+                          every bar so cells read as "where you stand vs
+                          the group" at a glance. */}
+                      {peerMedian > 0 && (
+                        <span
+                          className="absolute top-[-2px] bottom-[-2px] w-px bg-ink-700/50"
+                          style={{ left: `calc(${medianPct}% - 0.5px)` }}
+                          title={`Peer median: ${peerMedian}`}
+                        />
+                      )}
+                    </div>
+                    <div
+                      className={`text-[10px] mt-1 font-medium tabular-nums ${
+                        delta > 0 ? 'text-pharma-700' : delta < 0 ? 'text-amber-700' : 'text-ink-500'
+                      }`}
+                    >
+                      {delta > 0 ? `↑ +${delta} vs median` : delta < 0 ? `↓ ${delta} vs median` : 'at median'}
+                    </div>
+                  </HighlightCell>
+                );
+              })}
             </tr>
 
             <tr>
