@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Pill, Search, Building2, Sparkles, RefreshCw, Archive, Plus, X, Clock, CheckCircle2, FileDown, Loader2 } from 'lucide-react';
+import { Pill, Search, Building2, Sparkles, RefreshCw, Archive, Plus, X, Clock, CheckCircle2, FileDown, Loader2, Presentation } from 'lucide-react';
 import { CompanyAvatar } from './CompanyAvatar';
 
 export default function Header({
@@ -18,6 +18,8 @@ export default function Header({
   refreshing = false,
   onExportPdf,
   exportingPdf = false,
+  onExportPptx,
+  exportingPptx = false,
 }) {
   const [archiveOpen, setArchiveOpen] = useState(false);
   const archiveRef = useRef(null);
@@ -223,6 +225,21 @@ export default function Header({
                 <FileDown className="w-4 h-4" />
               )}
               <span className="hidden sm:inline">{exportingPdf ? 'Generating…' : 'Export PDF'}</span>
+            </button>
+
+            <button
+              onClick={onExportPptx}
+              disabled={exportingPptx}
+              title="Boardroom slides — 4-slide PowerPoint deck (cover, KPIs, recent launches, peer scorecard) ready to drop into a board update."
+              data-pdf-hide
+              className="inline-flex items-center justify-center gap-2 px-3.5 py-2.5 text-sm font-semibold rounded-lg bg-white text-rose-700 border border-rose-200 hover:border-rose-400 hover:bg-rose-50 shadow-card transition disabled:opacity-70 disabled:cursor-wait"
+            >
+              {exportingPptx ? (
+                <Loader2 className="w-4 h-4 animate-spin" />
+              ) : (
+                <Presentation className="w-4 h-4" />
+              )}
+              <span className="hidden sm:inline">{exportingPptx ? 'Generating…' : 'Boardroom PPT'}</span>
             </button>
 
             <button

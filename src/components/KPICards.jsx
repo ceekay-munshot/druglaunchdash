@@ -14,20 +14,42 @@ import {
   isAcquisitionParent,
 } from '../data/mockData';
 import { sum, countBy, fmtINR } from '../utils/format';
+import { useAnimatedNumber } from '../utils/animation';
 
-function KpiCard({ icon: Icon, label, value, sub, accent = 'green', tint }) {
+// Wrapper that animates a numeric value from 0 → target on mount, then
+// formats it via the supplied `format` callback (default: locale-grouped
+// integer). Strings (e.g. "₹2.5K Cr", "Oncology") render as-is.
+function AnimatedValue({ value, format }) {
+  const isNumeric = typeof value === 'number' && Number.isFinite(value);
+  const animated = useAnimatedNumber(isNumeric ? value : 0);
+  if (!isNumeric) return <>{value}</>;
+  const display = format ? format(animated) : Math.round(animated).toLocaleString('en-IN');
+  return <span className="tabular-nums">{display}</span>;
+}
+
+function KpiCard({ icon: Icon, label, value, sub, accent = 'green', tint, why, format }) {
   const accents = {
     green: 'from-pharma-500 to-pharma-600',
     teal: 'from-teal-500 to-teal-accent',
     slate: 'from-slate-500 to-slate-600',
     amber: 'from-amber-500 to-orange-500',
   };
+  // The native title= tooltip is the cheapest way to ship the trend
+  // explainer ("Top Therapy is X because Y") without pulling in a tooltip
+  // library — works on hover desktop, and surfaces via long-press on
+  // touch devices. The card itself gets a subtle help-cursor when a
+  // `why` tooltip is present, signalling "there's more here".
   return (
-    <div className="group relative bg-white rounded-2xl border border-ink-100 shadow-card hover:shadow-cardHover transition-all overflow-hidden">
+    <div
+      title={why || undefined}
+      className={`group relative bg-white rounded-2xl border border-ink-100 shadow-card hover:shadow-cardHover hover:-translate-y-0.5 transition-all duration-200 overflow-hidden ${
+        why ? 'cursor-help' : ''
+      }`}
+    >
       <div className={`absolute inset-x-0 top-0 h-1 bg-gradient-to-r ${accents[accent]}`} />
       <div className="p-4 flex items-start gap-3">
         <div
-          className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 ${
+          className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 transition-transform duration-200 group-hover:scale-105 ${
             tint || 'bg-pharma-50'
           }`}
         >
@@ -35,12 +57,54 @@ function KpiCard({ icon: Icon, label, value, sub, accent = 'green', tint }) {
         </div>
         <div className="min-w-0">
           <p className="text-[11px] uppercase tracking-wider font-semibold text-ink-500">{label}</p>
-          <p className="text-xl font-bold text-ink-900 mt-0.5 leading-tight truncate">{value}</p>
+          <p className="text-xl font-bold text-ink-900 mt-0.5 leading-tight truncate">
+            <AnimatedValue value={value} format={format} />
+          </p>
           {sub && <p className="text-[11px] text-ink-500 mt-0.5 truncate">{sub}</p>}
         </div>
       </div>
     </div>
   );
+}
+
+// Build a one-line "why" tooltip for each KPI from the data the card
+// already has. Phrasing aims at the CEO scan: short, declarative, and
+// pointing at the dominant driver — not a full audit trail.
+function buildExplainers({ total, ownLaunched, inLicensed, acquired, acquiredBrands,
+  marketVals, totalMarket, chronic, acute, chronicPct,
+  topTherapy, therapyConcentration, therapyCounts,
+  uniqueBuyers, uniqueSellers }) {
+  return {
+    totalBrands:
+      `${total} distinct brands in scope · ` +
+      `${ownLaunched} own-launched, ${acquired} acquired, ${inLicensed} in-licensed`,
+    acquired:
+      acquired === 0
+        ? 'No acquisition deals in scope'
+        : acquiredBrands && acquiredBrands !== acquired
+          ? `${acquired} deal${acquired === 1 ? '' : 's'} captured ${acquiredBrands} brand line-items — multi-brand portfolios collapsed into one deal each`
+          : `Each of the ${acquired} acquisition${acquired === 1 ? ' is' : 's are'} a single-brand event`,
+    ownLaunched:
+      total === 0
+        ? 'No launches in scope'
+        : `${ownLaunched} of ${total} brands are own-launched (vs acquired/in-licensed)`,
+    market:
+      marketVals.length === 0
+        ? 'India TAM not disclosed publicly for any brand in scope'
+        : `Sum of disclosed India TAM across ${marketVals.length} of ${total} brands · remaining ${total - marketVals.length} have no public estimate`,
+    chronic:
+      total === 0
+        ? 'No launches in scope'
+        : `${chronic} chronic, ${acute} acute, ${total - chronic - acute} unclassified · chronic skew signals annuity-style revenue`,
+    topTherapy:
+      !topTherapy
+        ? 'No therapy assigned in any row'
+        : therapyCounts.length === 1
+          ? `Only ${topTherapy.name} represented in scope`
+          : `${topTherapy.value} brands in ${topTherapy.name} (${therapyConcentration}% of portfolio) · 2nd: ${therapyCounts[1]?.name} (${therapyCounts[1]?.value})`,
+    buyers:
+      `${uniqueBuyers} buyer compan${uniqueBuyers === 1 ? 'y' : 'ies'} active · ${uniqueSellers} unique seller${uniqueSellers === 1 ? '' : 's'} on the other side`,
+  };
 }
 
 export default function KPICards({ rows }) {
@@ -86,6 +150,13 @@ export default function KPICards({ rows }) {
     brandRows.map((r) => r[COLUMN_KEYS.SELLER]).filter((v) => v && v !== '—')
   ).size;
 
+  const why = buildExplainers({
+    total, ownLaunched, inLicensed, acquired, acquiredBrands,
+    marketVals, totalMarket, chronic, acute, chronicPct,
+    topTherapy, therapyConcentration, therapyCounts,
+    uniqueBuyers, uniqueSellers,
+  });
+
   return (
     <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-7 gap-3">
       <KpiCard
@@ -94,6 +165,7 @@ export default function KPICards({ rows }) {
         value={total}
         sub={`${inLicensed} in-licensed`}
         accent="green"
+        why={why.totalBrands}
       />
       <KpiCard
         icon={ShoppingBag}
@@ -106,6 +178,7 @@ export default function KPICards({ rows }) {
         }
         accent="teal"
         tint="bg-teal-50"
+        why={why.acquired}
       />
       <KpiCard
         icon={Rocket}
@@ -113,6 +186,7 @@ export default function KPICards({ rows }) {
         value={ownLaunched}
         sub={`${total ? Math.round((ownLaunched / total) * 100) : 0}% of portfolio`}
         accent="green"
+        why={why.ownLaunched}
       />
       <KpiCard
         icon={IndianRupee}
@@ -124,13 +198,16 @@ export default function KPICards({ rows }) {
             : 'Not in public sources'
         }
         accent="green"
+        why={why.market}
       />
       <KpiCard
         icon={HeartPulse}
         label="Chronic vs Acute"
-        value={`${chronicPct}% Chronic`}
+        value={chronicPct}
+        format={(n) => `${Math.round(n)}% Chronic`}
         sub={`${chronic} chronic · ${acute} acute`}
         accent="green"
+        why={why.chronic}
       />
       <KpiCard
         icon={FlaskConical}
@@ -139,6 +216,7 @@ export default function KPICards({ rows }) {
         sub={topTherapy ? `${therapyConcentration}% of portfolio` : ''}
         accent="teal"
         tint="bg-teal-50"
+        why={why.topTherapy}
       />
       <KpiCard
         icon={Users}
@@ -146,6 +224,7 @@ export default function KPICards({ rows }) {
         value={uniqueBuyers}
         sub={`${uniqueSellers} unique sellers`}
         accent="green"
+        why={why.buyers}
       />
     </div>
   );
