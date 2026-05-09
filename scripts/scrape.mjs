@@ -273,7 +273,12 @@ function mergeRow(existing, fresh) {
 const sleep = (ms) => new Promise((res) => setTimeout(res, ms));
 
 function rowKey(row) {
-  return `${(row.brand || '').trim().toLowerCase()}|${(row.date || '').trim()}|${(row.seller || '').trim().toLowerCase()}|${(row.buyer || '').trim().toLowerCase()}`;
+  // Seller intentionally excluded — the same deal can land twice with seller
+  // filled differently across runs (Sun–Organon was a real example: once as
+  // "Organon & Co." / "Brand Acquisition", once as "—" / "Company
+  // Acquisition"). Brand+date+buyer is the stable identity. Mirrored in
+  // src/data/mockData.js's rowKey.
+  return `${(row.brand || '').trim().toLowerCase()}|${(row.date || '').trim()}|${(row.buyer || '').trim().toLowerCase()}`;
 }
 
 async function loadExisting() {
