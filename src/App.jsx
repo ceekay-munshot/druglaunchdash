@@ -295,6 +295,13 @@ export default function App() {
       />
 
       <main className="max-w-[1840px] mx-auto px-4 py-4 space-y-4">
+        <FilterBar
+          timeline={timeline}
+          setTimeline={setTimeline}
+          timelinePresets={TIMELINE_PRESETS}
+          timelineCutoff={timelineCutoff}
+        />
+
         {/* "Since you last looked" briefing — drives habitual return-
             visits by surfacing what's changed via a localStorage diff. */}
         <BriefingHero allRows={allRows} />
@@ -305,13 +312,6 @@ export default function App() {
             no brand, peer activity in the last fortnight, etc. Hidden if
             no items rank high enough to surface. */}
         <ActionRequired allRows={allRows} companies={activeCompanies} />
-
-        <FilterBar
-          timeline={timeline}
-          setTimeline={setTimeline}
-          timelinePresets={TIMELINE_PRESETS}
-          timelineCutoff={timelineCutoff}
-        />
 
         <section
           aria-label="KPI summary"
