@@ -96,6 +96,17 @@ export default function App() {
     }
   }, [archivedCompanies]);
 
+  // Auto-reset the time-machine cap when the user leaves the All-time
+  // preset. The slider only renders on `timeline === 'ALL'`; if they
+  // switch to a narrower preset while in past mode, the slider would
+  // disappear but the cap would silently stay in effect — which is the
+  // exact "why is half my data missing?" footgun we want to avoid.
+  useEffect(() => {
+    if (timeline !== 'ALL' && viewingDate != null) {
+      setViewingDate(null);
+    }
+  }, [timeline, viewingDate]);
+
   const unarchiveCompany = (name) =>
     setArchivedCompanies((prev) => prev.filter((c) => c !== name));
   const archiveCompany = (name) => {
@@ -324,14 +335,20 @@ export default function App() {
           timelineCutoff={timelineCutoff}
         />
 
-        {/* Time-machine date scrubber. When pulled back, every section
-            below renders against the as-of-date row set, and the
-            real-time-only sections (briefing, action panel) hide. */}
-        <TimeMachineSlider
-          allRows={allRows}
-          viewingDate={viewingDate}
-          onChange={setViewingDate}
-        />
+        {/* Time-machine date scrubber. Only relevant on the All-time
+            timeline preset — at narrower windows (Last 2 Quarters etc.)
+            the timeline preset already caps the visible row range, so
+            the time machine would just compete with it. When pulled
+            back, every section below renders against the as-of-date
+            row set, and the real-time-only sections (briefing, action
+            panel) hide. */}
+        {timeline === 'ALL' && (
+          <TimeMachineSlider
+            allRows={allRows}
+            viewingDate={viewingDate}
+            onChange={setViewingDate}
+          />
+        )}
 
         {/* "Since you last looked" briefing — only meaningful when the
             user is viewing live data. In time-machine mode the diff
