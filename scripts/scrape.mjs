@@ -305,10 +305,20 @@ const JUNK_SOURCE_HOSTS = new Set([
   'company.com', 'www.company.com',
   'pharmaceuticalcompany.com', 'www.pharmaceuticalcompany.com',
 ]);
+// See src/data/mockData.js for context on each entry. Mirror this list
+// when updating the frontend filter — the scraper applies it at ingestion.
+const JUNK_SOURCE_URLS = new Set([
+  'https://www.mankindpharma.com/products/new-gst-prices/',
+  'https://www.mankindpharma.com/press-release/levomilnacipran-launch',
+  'https://www.mankindpharma.com/press-release/lizardin-launch',
+  'https://www.cipla.com/press-releases/expedition-launch',
+]);
 function junkSourceUrl(url) {
   if (!url || typeof url !== 'string') return false;
+  const trimmed = url.trim();
+  if (JUNK_SOURCE_URLS.has(trimmed)) return true;
   try {
-    return JUNK_SOURCE_HOSTS.has(new URL(url).hostname.toLowerCase());
+    return JUNK_SOURCE_HOSTS.has(new URL(trimmed).hostname.toLowerCase());
   } catch {
     return false;
   }
