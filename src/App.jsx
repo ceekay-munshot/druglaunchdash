@@ -12,9 +12,6 @@ import BriefingHero from './components/BriefingHero';
 import ActionRequired from './components/ActionRequired';
 import WhitespaceMatrix from './components/WhitespaceMatrix';
 import TimeMachineSlider from './components/TimeMachineSlider';
-// AskAnything pulls in the Anthropic SDK (~140KB gz). Lazy-load it so
-// users who never press ⌘K don't pay the bundle cost on initial render.
-const AskAnything = React.lazy(() => import('./components/AskAnything'));
 import {
   LAUNCH_TRACKER_ROWS,
   UNIQUE_BUYERS,
@@ -84,9 +81,6 @@ export default function App() {
   // on that day.
   const [viewingDate, setViewingDate] = useState(null);
   const isLiveView = viewingDate == null;
-  // Ask-Anything modal (⌘K). Lazy-mounted only when opened so the
-  // Anthropic SDK / streaming logic doesn't run on initial page load.
-  const [askOpen, setAskOpen] = useState(false);
 
   const activeCompanies = useMemo(
     () => UNIQUE_BUYERS.filter((c) => !archivedCompanies.includes(c)),
@@ -101,22 +95,6 @@ export default function App() {
       /* ignore */
     }
   }, [archivedCompanies]);
-
-  // ⌘K / Ctrl+K opens the Ask-Anything modal — the same shortcut Linear,
-  // Notion, GitHub, etc. use for command palettes, so the muscle memory
-  // is already there for power users.
-  useEffect(() => {
-    const handler = (e) => {
-      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
-        e.preventDefault();
-        setAskOpen((v) => !v);
-      } else if (e.key === 'Escape') {
-        setAskOpen(false);
-      }
-    };
-    window.addEventListener('keydown', handler);
-    return () => window.removeEventListener('keydown', handler);
-  }, []);
 
   const unarchiveCompany = (name) =>
     setArchivedCompanies((prev) => prev.filter((c) => c !== name));
@@ -459,39 +437,6 @@ export default function App() {
         </section>
 
       </main>
-
-      {/* Ask Anything modal — lazy-loaded on first open so the Anthropic
-          SDK chunk doesn't hit users who never press ⌘K. Suspense
-          fallback is null because the modal is inherently async-opening
-          (no flash needed before the chunk arrives). */}
-      {askOpen && (
-        <React.Suspense fallback={null}>
-          <AskAnything
-            allRows={allRows}
-            isOpen={askOpen}
-            onClose={() => setAskOpen(false)}
-          />
-        </React.Suspense>
-      )}
-
-      {/* Floating ⌘K hint pill — bottom-right, hidden while the modal
-          is open so it doesn't compete with the input. */}
-      {!askOpen && (
-        <button
-          onClick={() => setAskOpen(true)}
-          aria-label="Open Ask Anything"
-          className="fixed bottom-5 right-5 z-30 inline-flex items-center gap-2 px-3.5 py-2.5 rounded-full bg-gradient-to-br from-pharma-600 to-teal-accent text-white shadow-cardHover hover:shadow-2xl hover:scale-[1.03] transition group"
-          title="Ask anything (⌘K)"
-        >
-          <span className="w-5 h-5 rounded-md bg-white/20 flex items-center justify-center">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="w-3 h-3">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9.5 14.5L12 12m0 0l2.5-2.5M12 12l2.5 2.5M12 12L9.5 9.5m9 6a8 8 0 11-16 0 8 8 0 0116 0z" />
-            </svg>
-          </span>
-          <span className="text-xs font-semibold hidden sm:inline">Ask anything</span>
-          <kbd className="font-mono text-[10px] px-1.5 py-0.5 rounded bg-white/20 hidden sm:inline">⌘K</kbd>
-        </button>
-      )}
 
       {/* Full-screen overlay shown during PDF export. Hidden from the
           captured snapshot via data-pdf-no-capture (the export utility's
