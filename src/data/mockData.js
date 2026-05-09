@@ -155,11 +155,32 @@ const JUNK_SOURCE_HOSTS = new Set([
   'www.pharmaceuticalcompany.com',
 ]);
 
+// Specific URLs known to corrupt the LLM extraction. These are real-looking
+// pharma-company URLs (mankindpharma.com, cipla.com) that either don't
+// resolve to a launch announcement, or return template / catalog content
+// that confuses the extractor into emitting placeholder rows.
+//   • mankindpharma.com/products/new-gst-prices/  — catalog page that
+//     returned the literal "[Brand Name]" template + the misattributed
+//     Telma / Dapagliflozin / Remdesivir / Swasthya rows.
+//   • mankindpharma.com/press-release/{levomilnacipran,lizardin}-launch
+//     — fake URLs that match the same fictional pattern as the dummy
+//     "/press-release/new-drug-a-launch/" we already removed.
+//   • cipla.com/press-releases/expedition-launch — uses /press-releases/
+//     (not the legitimate /press-releases-statements/ path) and emits
+//     "Expedition", which is not a known Cipla brand.
+const JUNK_SOURCE_URLS = new Set([
+  'https://www.mankindpharma.com/products/new-gst-prices/',
+  'https://www.mankindpharma.com/press-release/levomilnacipran-launch',
+  'https://www.mankindpharma.com/press-release/lizardin-launch',
+  'https://www.cipla.com/press-releases/expedition-launch',
+]);
+
 function junkSourceUrl(url) {
   if (!url || typeof url !== 'string') return false;
+  const trimmed = url.trim();
+  if (JUNK_SOURCE_URLS.has(trimmed)) return true;
   try {
-    const host = new URL(url).hostname.toLowerCase();
-    return JUNK_SOURCE_HOSTS.has(host);
+    return JUNK_SOURCE_HOSTS.has(new URL(trimmed).hostname.toLowerCase());
   } catch {
     return false;
   }
