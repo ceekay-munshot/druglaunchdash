@@ -36,7 +36,7 @@ function cliffExpiryMs(c) {
   return new Date(c.expiryYear, m, 1).getTime();
 }
 
-const DEFAULT_VISIBLE = 8;
+const DEFAULT_VISIBLE = 3;
 
 export default function WhitespaceMatrix({ allRows = [], companies = [] }) {
   const [showAll, setShowAll] = useState(false);
