@@ -68,7 +68,16 @@ export default function KPICards({ rows }) {
   const acute = brandRows.filter((r) => r[COLUMN_KEYS.CHRONIC_ACUTE] === 'Acute').length;
   const chronicPct = total ? Math.round((chronic / total) * 100) : 0;
 
-  const therapyCounts = countBy(brandRows, COLUMN_KEYS.THERAPY).sort((a, b) => b.value - a.value);
+  // Drop placeholder therapy values ("—", "-", blank) before ranking so the
+  // KPI card never surfaces an em-dash as the "top" therapy when scraped
+  // rows haven't yet disclosed a real one. Charts.jsx already does the same.
+  const isRealTherapy = (d) => {
+    const s = String(d?.name ?? '').trim();
+    return s !== '' && s !== '—' && s !== '-';
+  };
+  const therapyCounts = countBy(brandRows, COLUMN_KEYS.THERAPY)
+    .filter(isRealTherapy)
+    .sort((a, b) => b.value - a.value);
   const topTherapy = therapyCounts[0];
   const therapyConcentration = total && topTherapy ? Math.round((topTherapy.value / total) * 100) : 0;
 
