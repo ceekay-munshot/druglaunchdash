@@ -30,7 +30,10 @@ function fmtMonth(ms) {
 }
 
 export default function TimeMachineSlider({ allRows, viewingDate, onChange }) {
-  const [collapsed, setCollapsed] = useState(true);
+  // Slider is always visible by default — the previous "click the icon to
+  // expand" affordance was invisible to first-time users. The collapse
+  // toggle still exists if a user wants to compact the bar.
+  const [collapsed, setCollapsed] = useState(false);
 
   // Slider range = earliest dated row → today. We snap min back a month so
   // the leftmost slider position is meaningfully empty (not "1 row visible").
@@ -134,7 +137,7 @@ export default function TimeMachineSlider({ allRows, viewingDate, onChange }) {
             )}
           </div>
           <p className="text-[11px] text-ink-500 mt-0.5">
-            Drag to view the dashboard as it would have looked on a past date · briefing & action panels hide when not live
+            Drag the slider below to rewind the entire dashboard to a past date — KPIs, charts, table all re-render as of then. Hit ▶ to auto-advance.
           </p>
         </div>
         <div className="flex items-center gap-1.5 shrink-0">
