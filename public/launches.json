@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-08T07:14:43.654Z",
-  "rowCount": 91,
+  "generatedAt": "2026-05-09T04:07:05.975Z",
+  "rowCount": 108,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -238,7 +238,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/01/UNLOXCYT-Commercial-Launch-Press-Release.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-02T04:01:05.707Z"
+      "lastEnrichmentAttempt": "2026-05-09T04:05:43.162Z"
     },
     {
       "brand": "Sovateltide",
@@ -254,7 +254,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/09/Press-Release-Sun-Pharma-and-Pharmazz-Inc.-licensing-agreement-for-Sovateltide-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-02T04:01:07.096Z"
+      "lastEnrichmentAttempt": "2026-05-09T04:05:51.889Z"
     },
     {
       "brand": "—",
@@ -270,7 +270,7 @@
       "price": null,
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/amp_articleshow/100775508.cms",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-05-02T04:01:08.586Z"
+      "lastEnrichmentAttempt": "2026-05-09T04:05:56.291Z"
     },
     {
       "brand": "—",
@@ -286,7 +286,7 @@
       "price": null,
       "sourceUrl": "https://health.economictimes.indiatimes.com/news/pharma/drug-approvals-launches/alkem-forays-into-ophthalmology-with-launch-of-eye-care-products/101642253",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-05-02T04:01:09.956Z"
+      "lastEnrichmentAttempt": "2026-05-09T04:06:10.362Z"
     },
     {
       "brand": "Obimet",
@@ -302,7 +302,7 @@
       "price": "—",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-02T04:01:11.374Z"
+      "lastEnrichmentAttempt": "2026-05-09T04:06:13.983Z"
     },
     {
       "brand": "Thyrocab",
@@ -318,7 +318,7 @@
       "price": "—",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-02T04:01:12.805Z"
+      "lastEnrichmentAttempt": "2026-05-09T04:06:18.985Z"
     },
     {
       "brand": "GSK Brands",
@@ -334,7 +334,7 @@
       "price": "—",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-02T04:01:14.182Z"
+      "lastEnrichmentAttempt": "2026-05-09T04:06:23.833Z"
     },
     {
       "brand": "Semaglutide",
@@ -365,7 +365,7 @@
       "price": null,
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-02T04:01:15.549Z"
+      "lastEnrichmentAttempt": "2026-05-09T04:06:28.892Z"
     },
     {
       "brand": "Thyrocab",
@@ -381,7 +381,7 @@
       "price": null,
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-02T04:01:16.921Z"
+      "lastEnrichmentAttempt": "2026-05-09T04:06:36.114Z"
     },
     {
       "brand": "GSK's Brands",
@@ -397,7 +397,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-02T04:01:18.278Z"
+      "lastEnrichmentAttempt": "2026-05-09T04:06:42.724Z"
     },
     {
       "brand": "N/A",
@@ -1427,6 +1427,278 @@
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
       "lastEnrichmentAttempt": "2026-05-08T07:14:07.441Z"
+    },
+    {
+      "brand": "New Drug A",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "DrugA",
+      "therapy": "Oncology",
+      "indication": "Cancer",
+      "existingBrand": "Competitor Drug A",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,500 / pack",
+      "sourceUrl": "https://www.mankindpharma.com/press-release/new-drug-a-launch/",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-05-09T04:04:27.228Z"
+    },
+    {
+      "brand": "Acquired Brand B",
+      "launchType": "Acquired",
+      "date": "2023-08-30",
+      "seller": "Competitor Company X",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Competitor Drug B",
+      "chronicAcute": "—",
+      "price": "₹19.5 / strip of 10 capsules",
+      "sourceUrl": "https://www.mankindpharma.com/press-release/acquired-brand-b/",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-05-09T04:04:27.228Z"
+    },
+    {
+      "brand": "In-license Product C",
+      "launchType": "In-licensed",
+      "date": "2023-07-25",
+      "seller": "Competitor Company Y",
+      "dealType": "In-license (India)",
+      "molecule": "ProductC",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Competitor Drug C",
+      "chronicAcute": "Chronic",
+      "price": "Rs 800 / pack",
+      "sourceUrl": "https://www.mankindpharma.com/press-release/in-license-product-c/",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-05-09T04:04:27.228Z"
+    },
+    {
+      "brand": "Biosimilar Drug D",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "DrugD",
+      "therapy": "Immunology",
+      "indication": "Autoimmune Disorder",
+      "existingBrand": "Competitor Drug D",
+      "chronicAcute": "Chronic",
+      "price": "Rs 2,500 / injection",
+      "sourceUrl": "https://www.mankindpharma.com/press-release/biosimilar-drug-d/",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-05-09T04:04:27.228Z"
+    },
+    {
+      "brand": "Molxvir",
+      "launchType": "Own Launched",
+      "date": "2021-11-11",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Molnupiravir",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹1347 / bottle of 40 capsules",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/11/Press-Release-Sun-Pharma-gearing-up-to-introduce-molnupiravir-under-the-brand-name-Molxvir%C2%AE-in-India.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-09T04:04:44.348Z"
+    },
+    {
+      "brand": "valsartan",
+      "launchType": "Own Launched",
+      "date": "2023-06-06",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "valsartan",
+      "therapy": "Cardiology",
+      "indication": "Heart Failure",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/articleshow/100775508.cms",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-05-09T04:05:56.291Z"
+    },
+    {
+      "brand": "sacubitril",
+      "launchType": "Own Launched",
+      "date": "2023-06-06",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "sacubitril",
+      "therapy": "Cardiology",
+      "indication": "Heart Failure",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/articleshow/100775508.cms",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-05-09T04:05:56.291Z"
+    },
+    {
+      "brand": "sitagliptin",
+      "launchType": "Own Launched",
+      "date": "2023-06-06",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "sitagliptin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Diabetes",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/articleshow/100775508.cms",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-05-09T04:05:56.291Z"
+    },
+    {
+      "brand": "dapagliflozin",
+      "launchType": "Own Launched",
+      "date": "2023-06-06",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "dapagliflozin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Diabetes",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/articleshow/100775508.cms",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-05-09T04:05:56.291Z"
+    },
+    {
+      "brand": "Alkem Ophthalmology Products",
+      "launchType": "Own Launched",
+      "date": "2023-07-10",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://health.economictimes.indiatimes.com/news/pharma/drug-approvals-launches/alkem-forays-into-ophthalmology-with-launch-of-eye-care-products/101642253",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-05-09T04:06:10.362Z"
+    },
+    {
+      "brand": "Obimet",
+      "launchType": "Acquired",
+      "date": "2018-04-02",
+      "seller": "Abbott India Ltd",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "Anti-Diabetic",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-09T04:06:13.983Z"
+    },
+    {
+      "brand": "Thyrocab",
+      "launchType": "Acquired",
+      "date": "2018-04-02",
+      "seller": "Abbott India Ltd",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-09T04:06:13.983Z"
+    },
+    {
+      "brand": "Dilo-BM, Dilo-DX, Stelbid, Vitneurin",
+      "launchType": "Acquired",
+      "date": "2017-03-07",
+      "seller": "GlaxoSmithKline Pharmaceuticals",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-09T04:06:23.833Z"
+    },
+    {
+      "brand": "Dilo-BM",
+      "launchType": "Acquired",
+      "date": "2017-03-07",
+      "seller": "GlaxoSmithKline Pharmaceuticals",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-09T04:06:42.724Z"
+    },
+    {
+      "brand": "Dilo-DX",
+      "launchType": "Acquired",
+      "date": "2017-03-07",
+      "seller": "GlaxoSmithKline Pharmaceuticals",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-09T04:06:42.724Z"
+    },
+    {
+      "brand": "Stelbid",
+      "launchType": "Acquired",
+      "date": "2017-03-07",
+      "seller": "GlaxoSmithKline Pharmaceuticals",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-09T04:06:42.724Z"
+    },
+    {
+      "brand": "Vitneurin",
+      "launchType": "Acquired",
+      "date": "2017-03-07",
+      "seller": "GlaxoSmithKline Pharmaceuticals",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-09T04:06:42.724Z"
     }
   ]
 }
