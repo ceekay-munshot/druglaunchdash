@@ -106,13 +106,88 @@ function rowKey(r) {
   ].join('|');
 }
 
+// ──────────────────────────────────────────────────────────────────────────
+// Junk-row filter for scraped data.
+//
+// The Firecrawl + LLM extraction occasionally hallucinates rows when a
+// source page isn't actually a launch announcement — e.g. a "GST prices"
+// page, a generic FAQ, or a 404. The hallucinations show up as:
+//   • literal template placeholders ("[Brand Name]", "[Molecule Name]")
+//   • dummy brand names ("New Drug A", "Acquired Brand B", "AcmeBio 123")
+//   • generic descriptions instead of brands ("GSK Brands", "Eye Care
+//     Products", "Cipla's New Cardiovascular Drug")
+//   • em-dash / "N/A" placeholder strings
+//   • fabricated source URLs (example.com, pharmaceuticalcompany.com, etc.)
+// We drop these at the merge step so the dashboard never renders them, and
+// the scraper applies the same check at ingestion so they don't recur.
+//
+// Curated baseline rows are unaffected — this only touches scraped rows.
+// ──────────────────────────────────────────────────────────────────────────
+const JUNK_BRAND_PATTERNS = [
+  /^—+$|^-+$|^n\/a$/i,                           // em-dash / hyphen / N/A
+  /^\[.*\]$/,                                     // [Brand Name] template
+  /^new drug [a-z]\b/i,                           // "New Drug A"
+  /^acquired brand [a-z]\b/i,                     // "Acquired Brand B"
+  /^biosimilar drug [a-z]\b/i,                    // "Biosimilar Drug D"
+  /^in[- ]?license[d]? (drug|product) [a-z]\b/i,  // "In-license Product C"
+  /^company [a-z]( |\b)/i,                        // "Company B Acquisition"
+  /^(brandx|brandy)\b/i,                          // "BrandX", "BrandY"
+  /^(acmebio|novelgen|healthplus|healmax|medicore|nutricare)\b/i,
+  /^eye care products$/i,
+  /^gsk['’]?s?\s+(brands|portfolio)$/i,
+  /^glaxosmithkline brands$/i,
+  /^novel antibiotic( combination)?$/i,
+  /^alkem (antibiotic combo|ophthalmology products)$/i,
+  /^cipla\b.*(acquisition of generic|in[- ]?licensing|new (cardiovascular|antihypertensive|antibiotic))/i,
+  /'s new (cardiovascular|antihypertensive|antibiotic|generic)\b/i,
+  /^api stake in/i,
+  /^(alkem|pharmazz inc\.?|novartis india)$/i,    // company name used as brand
+];
+
+const JUNK_SOURCE_HOSTS = new Set([
+  'example.com',
+  'www.example.com',
+  'examplepharma.com',
+  'www.examplepharma.com',
+  'company.com',
+  'www.company.com',
+  'pharmaceuticalcompany.com',
+  'www.pharmaceuticalcompany.com',
+]);
+
+function junkSourceUrl(url) {
+  if (!url || typeof url !== 'string') return false;
+  try {
+    const host = new URL(url).hostname.toLowerCase();
+    return JUNK_SOURCE_HOSTS.has(host);
+  } catch {
+    return false;
+  }
+}
+
+// Returns true for clearly-bogus scraped rows. Operates on the raw scraped
+// shape (camelCase keys) so we can sniff sourceUrl too. Curated baseline
+// rows go through a separate path and are never tested here.
+export function isJunkScrapedRow(raw) {
+  if (!raw || typeof raw !== 'object') return true;
+  const brand = String(raw.brand ?? '').trim();
+  if (!brand) return true;
+  if (JUNK_BRAND_PATTERNS.some((re) => re.test(brand))) return true;
+  if (junkSourceUrl(raw.sourceUrl)) return true;
+  return false;
+}
+
 // Merge bundled curated rows with rows fetched from public/launches.json.
 // Curated (baseline) rows are source-of-truth and always win on key collision;
 // scraped rows are only appended when they introduce a new (brand+date+seller+buyer).
+//
+// Scraped rows that match isJunkScrapedRow() are dropped before merging so
+// historical scrape-output that's still sitting in launches.json can't leak
+// junk into the rendered dashboard.
 export function mergeLaunchRows(baseline, scrapedRaw) {
   if (!Array.isArray(scrapedRaw) || scrapedRaw.length === 0) return baseline;
   const baselineKeys = new Set(baseline.map(rowKey));
-  const scraped = scrapedRaw.map(fromScrapedRow);
+  const scraped = scrapedRaw.filter((r) => !isJunkScrapedRow(r)).map(fromScrapedRow);
   const unique = scraped.filter((r) => {
     const k = rowKey(r);
     if (baselineKeys.has(k)) return false;
