@@ -36,7 +36,7 @@ if (!FIRECRAWL_API_KEY) {
   process.exit(1);
 }
 
-// ── Companies to scrape (the 7 active ones) ──────────────────────────────
+// ── Companies to scrape (the 7 active ones) ──────────────────────
 const SOURCES = [
   { company: 'Mankind Pharma',     url: 'https://www.mankindpharma.com/media/press-release/' },
   { company: 'Eris Lifesciences',  url: 'https://eris.co.in/press-release/' },
@@ -47,7 +47,7 @@ const SOURCES = [
   { company: 'Torrent Pharma',     url: 'https://www.torrentpharma.com/investors-media.html' },
 ];
 
-// ── Schema Firecrawl is asked to populate per URL ─────────────────────────
+// ── Schema Firecrawl is asked to populate per URL ───────────────────
 const rowItemSchema = {
   type: 'object',
   properties: {
@@ -98,9 +98,9 @@ For India focus: prefer India-market events. Include global events only if they
 are likely to reach India (e.g., US FDA approval of a drug the Indian company
 owns globally).
 
-═══════════════════════════════════════════════════════════════════════════
+════════════════════════════════════════════════════════════════════════
 STRICT NO-GUESS MODE — APPLIES TO EVERY FIELD
-═══════════════════════════════════════════════════════════════════════════
+════════════════════════════════════════════════════════════════════════
 For every field below, populate it ONLY if the press release / linked PDF
 states the value EXPLICITLY (verbatim or near-verbatim). If the press
 release does not say it, set the field to "—" (em-dash) for strings or
@@ -269,11 +269,57 @@ function mergeRow(existing, fresh) {
   return { merged: out, filledKeys };
 }
 
-// ── Helpers ──────────────────────────────────────────────────────────────
+// ── Helpers ─────────────────────────────────────────────────
 const sleep = (ms) => new Promise((res) => setTimeout(res, ms));
 
 function rowKey(row) {
   return `${(row.brand || '').trim().toLowerCase()}|${(row.date || '').trim()}|${(row.seller || '').trim().toLowerCase()}|${(row.buyer || '').trim().toLowerCase()}`;
+}
+
+// Mirror of src/data/mockData.js's isJunkScrapedRow. Drops obviously-bogus
+// LLM extractions at ingestion so they never make it into launches.json.
+// Keep this list in sync with the frontend constant on every change.
+const JUNK_BRAND_PATTERNS = [
+  /^—+$|^-+$|^n\/a$/i,
+  /^\[.*\]$/,
+  /^new drug [a-z]\b/i,
+  /^acquired brand [a-z]\b/i,
+  /^biosimilar drug [a-z]\b/i,
+  /^in[- ]?license[d]? (drug|product) [a-z]\b/i,
+  /^company [a-z]( |\b)/i,
+  /^(brandx|brandy)\b/i,
+  /^(acmebio|novelgen|healthplus|healmax|medicore|nutricare)\b/i,
+  /^eye care products$/i,
+  /^gsk['’]?s?\s+(brands|portfolio)$/i,
+  /^glaxosmithkline brands$/i,
+  /^novel antibiotic( combination)?$/i,
+  /^alkem (antibiotic combo|ophthalmology products)$/i,
+  /^cipla\b.*(acquisition of generic|in[- ]?licensing|new (cardiovascular|antihypertensive|antibiotic))/i,
+  /'s new (cardiovascular|antihypertensive|antibiotic|generic)\b/i,
+  /^api stake in/i,
+  /^(alkem|pharmazz inc\.?|novartis india)$/i,
+];
+const JUNK_SOURCE_HOSTS = new Set([
+  'example.com', 'www.example.com',
+  'examplepharma.com', 'www.examplepharma.com',
+  'company.com', 'www.company.com',
+  'pharmaceuticalcompany.com', 'www.pharmaceuticalcompany.com',
+]);
+function junkSourceUrl(url) {
+  if (!url || typeof url !== 'string') return false;
+  try {
+    return JUNK_SOURCE_HOSTS.has(new URL(url).hostname.toLowerCase());
+  } catch {
+    return false;
+  }
+}
+function isJunkScrapedRow(raw) {
+  if (!raw || typeof raw !== 'object') return true;
+  const brand = String(raw.brand ?? '').trim();
+  if (!brand) return true;
+  if (JUNK_BRAND_PATTERNS.some((re) => re.test(brand))) return true;
+  if (junkSourceUrl(raw.sourceUrl)) return true;
+  return false;
 }
 
 async function loadExisting() {
@@ -317,7 +363,7 @@ async function scrapeOne({ company, url }) {
   return rows.map((r) => ({ ...r, buyer: company }));
 }
 
-// ── Pass 1.5: stub-targeted detail-page enrichment ──────────────────────
+// ── Pass 1.5: stub-targeted detail-page enrichment ──────────────────
 // Index-page extractions sometimes only catch the deal headline ("Sun
 // Pharma acquires Organon brands") and leave molecule / therapy /
 // indication / chronic-acute / pricing blank. The detail page (or its
@@ -433,6 +479,7 @@ async function passEnrichStubs(byKey) {
       let addedCount = 0;
       for (const r of detailRows) {
         if (!r.brand || !r.date) continue;
+        if (isJunkScrapedRow(r)) continue;
         // Carry over the buyer from the stub — detail-page extractions
         // sometimes don't echo the buyer back, but we know it from context.
         if (!r.buyer) r.buyer = stub.buyer;
@@ -473,8 +520,18 @@ async function main() {
   // of launches.json so subsequent merges don't shuffle existing rows
   // around. New keys get appended to the end as we encounter them.
   const byKey = new Map();
-  for (const r of existing) byKey.set(rowKey(r), r);
-  console.log(`  existing scraped rows: ${existing.length}`);
+  let purgedExisting = 0;
+  for (const r of existing) {
+    if (isJunkScrapedRow(r)) {
+      purgedExisting += 1;
+      continue;
+    }
+    byKey.set(rowKey(r), r);
+  }
+  console.log(
+    `  existing scraped rows: ${existing.length}` +
+      (purgedExisting > 0 ? ` (purged ${purgedExisting} junk rows)` : '')
+  );
 
   // Track rows that were either freshly added OR materially enriched by a
   // re-scrape. Pass 2 (price hydration) retargets these so a stub Organon-
@@ -495,6 +552,7 @@ async function main() {
       freshRowCount += rows.length;
       for (const r of rows) {
         if (!r.brand || !r.date) continue;
+        if (isJunkScrapedRow(r)) continue;
         const k = rowKey(r);
         if (!byKey.has(k)) {
           // Brand-new row — append to the end of the map and queue for
@@ -537,7 +595,7 @@ async function main() {
       `(${filledFieldCount} fields filled) · ${freshRowCount} extracted total`
   );
 
-  // ── Pass 1.5: stub-targeted detail-page enrichment ─────────────────────
+  // ── Pass 1.5: stub-targeted detail-page enrichment ─────────────────
   // Re-scrapes the press-release URL of stub rows (≥3 blanks, last attempt
   // ≥7 days ago), capped at 10 detail-scrapes per run. Any newly-disclosed
   // fields merge back into the same row; brand-rows the press release
@@ -545,7 +603,7 @@ async function main() {
   const stubEnriched = await passEnrichStubs(byKey);
   enrichedRows.push(...stubEnriched);
 
-  // ── Pass 2: price hydration ────────────────────────────────────────────
+  // ── Pass 2: price hydration ────────────────────────────────────────
   // Looks up retail MRP on 1mg for any row that's still missing one — both
   // brand-new rows AND existing rows that just got enriched (their brand
   // identity may have only just become known on this run, so a previous
