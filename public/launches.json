@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-09T04:07:05.975Z",
-  "rowCount": 28,
+  "generatedAt": "2026-05-10T04:35:14.385Z",
+  "rowCount": 33,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -181,7 +181,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/PR-for-Semaglutide.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-03T04:29:29.003Z"
+      "lastEnrichmentAttempt": "2026-05-10T04:34:25.009Z"
     },
     {
       "brand": "Noveltreat",
@@ -225,11 +225,11 @@
       "therapy": "—",
       "indication": "Covid-19",
       "existingBrand": "—",
-      "chronicAcute": "—",
+      "chronicAcute": "Acute",
       "price": "₹1347 / bottle of 40 capsules",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/12/Press-Release-Sun-Pharma-receives-DCGI-approval-for-Molxvir-Molnupiravir-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-03T04:29:41.646Z"
+      "lastEnrichmentAttempt": "2026-05-10T04:34:29.185Z"
     },
     {
       "brand": "Chericof® 12",
@@ -438,6 +438,86 @@
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
       "lastEnrichmentAttempt": "2026-05-09T04:06:42.724Z"
+    },
+    {
+      "brand": "Noveltreat and Sematrinity",
+      "launchType": "Own Launched",
+      "date": "2026-03-21",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "semaglutide",
+      "therapy": "—",
+      "indication": "Psoriatic Arthritis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/PR-for-Semaglutide.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-10T04:33:41.514Z"
+    },
+    {
+      "brand": "Tyvalzi (Sovateltide)",
+      "launchType": "In-licensed",
+      "date": "2023-09-14",
+      "seller": "Pharmazz Inc.",
+      "dealType": "In-license (India)",
+      "molecule": "Sovateltide",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹33.4 / strip of 10 tablets",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/09/Press-Release-Sun-Pharma-and-Pharmazz-Inc.-licensing-agreement-for-Sovateltide-in-India.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-10T04:33:41.514Z"
+    },
+    {
+      "brand": "Molxvir",
+      "launchType": "Own Launched",
+      "date": "2021-11-11",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "molnupiravir",
+      "therapy": "—",
+      "indication": "COVID-19",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹1347 / bottle of 40 capsules",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/11/Press-Release-Sun-Pharma-gearing-up-to-introduce-molnupiravir-under-the-brand-name-Molxvir%C2%AE-in-India.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-10T04:33:41.514Z"
+    },
+    {
+      "brand": "Cetuximab",
+      "launchType": "Own Launched",
+      "date": "2023-10-23",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "Cetuximab",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Erbitux",
+      "chronicAcute": "—",
+      "price": "₹9281 / vial of 20 ml infusion",
+      "sourceUrl": "https://www.cnbctv18.com/healthcare/alkem-oncology-novel-breast-cancer-treatment-drug-launch-palbociclib-palbo-15703241.htm",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-05-10T04:34:03.977Z"
+    },
+    {
+      "brand": "Obimet & Thyrocab",
+      "launchType": "Acquired",
+      "date": "2022-06-30",
+      "seller": "Abbott India",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹21.7 / strip of 10 tablets",
+      "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-10T04:34:16.580Z"
     }
   ]
 }
