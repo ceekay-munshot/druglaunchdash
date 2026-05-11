@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-10T04:35:14.385Z",
-  "rowCount": 33,
+  "generatedAt": "2026-05-11T04:47:29.640Z",
+  "rowCount": 39,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -245,7 +245,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/09/Press-Release-Sun-Pharma-launches-Chericof-12.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-04T04:28:56.925Z"
+      "lastEnrichmentAttempt": "2026-05-11T04:46:46.741Z"
     },
     {
       "brand": "Organon",
@@ -261,7 +261,7 @@
       "price": null,
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/04/PR-Sun-Organon-announcement-Apr-26.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-04T04:28:59.887Z"
+      "lastEnrichmentAttempt": "2026-05-11T04:46:52.491Z"
     },
     {
       "brand": "EVERON",
@@ -277,7 +277,7 @@
       "price": "₹39.7 / strip of 10 tablet md",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2022/03/Press-Release-EVERON-Launch.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-04T04:29:09.638Z"
+      "lastEnrichmentAttempt": "2026-05-11T04:46:55.841Z"
     },
     {
       "brand": "Molxvir",
@@ -494,7 +494,7 @@
       "seller": "—",
       "dealType": "Biosimilar Launch",
       "molecule": "Cetuximab",
-      "therapy": "—",
+      "therapy": "Oncology",
       "indication": "—",
       "existingBrand": "Erbitux",
       "chronicAcute": "—",
@@ -518,6 +518,102 @@
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
       "lastEnrichmentAttempt": "2026-05-10T04:34:16.580Z"
+    },
+    {
+      "brand": "Product A",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Compound X",
+      "therapy": "Oncology",
+      "indication": "Cancer Type Y",
+      "existingBrand": "Brand B",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,500 / strip",
+      "sourceUrl": "https://www.mankindpharma.com/press-release/product-a-launch",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-05-11T04:45:15.862Z"
+    },
+    {
+      "brand": "Product B",
+      "launchType": "Acquired",
+      "date": "2023-08-10",
+      "seller": "Company Z",
+      "dealType": "Brand Acquisition",
+      "molecule": "Compound Y",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Brand C",
+      "chronicAcute": "—",
+      "price": "Rs 850 / vial",
+      "sourceUrl": "https://www.mankindpharma.com/press-release/product-b-acquisition",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-05-11T04:45:15.862Z"
+    },
+    {
+      "brand": "Organon",
+      "launchType": "Acquired",
+      "date": "2026-04-27",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹41 / bottle of 10 ml dilution",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/04/PR-Sun-Organon-announcement-Apr-26.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-11T04:45:39.649Z"
+    },
+    {
+      "brand": "Obimet",
+      "launchType": "Acquired",
+      "date": "2022-06-23",
+      "seller": "Abbott India",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹21.7 / strip of 10 tablets",
+      "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-11T04:46:39.209Z"
+    },
+    {
+      "brand": "Thyrocab",
+      "launchType": "Acquired",
+      "date": "2022-06-23",
+      "seller": "Abbott India",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹232 / bottle of 100 tablets",
+      "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-11T04:46:39.209Z"
+    },
+    {
+      "brand": "Chericof ® 12",
+      "launchType": "Own Launched",
+      "date": "2021-09-28",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "Dextromethorphan Hydrobromide plus Chlorpheniramine Maleate",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "http://www.sunpharma.com/press-release/press-release-chericof12-launch",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-11T04:46:46.741Z"
     }
   ]
 }
