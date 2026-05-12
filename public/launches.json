@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-11T04:47:29.640Z",
+  "generatedAt": "2026-05-12T04:25:45.537Z",
   "rowCount": 39,
   "rows": [
     {
@@ -50,14 +50,15 @@
       "date": "2023-10-30",
       "seller": "Zydus",
       "dealType": "Co-marketing",
-      "molecule": "—",
+      "molecule": "Desidustat",
       "therapy": "—",
       "indication": "—",
       "existingBrand": "—",
       "chronicAcute": "Chronic",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/10/Press-Release-Sun-Pharma-and-Zydus-sign-licensing-agreement-for-co-marketing-of-Desidustat-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-08T07:13:00.390Z"
+      "lastEnrichmentAttempt": "2026-05-08T07:13:00.390Z",
+      "price": "null"
     },
     {
       "brand": "Palbo",
