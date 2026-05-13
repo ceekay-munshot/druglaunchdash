@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-12T04:25:45.537Z",
-  "rowCount": 39,
+  "generatedAt": "2026-05-13T04:32:50.874Z",
+  "rowCount": 42,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -615,6 +615,54 @@
       "sourceUrl": "http://www.sunpharma.com/press-release/press-release-chericof12-launch",
       "buyer": "Sun Pharma",
       "lastEnrichmentAttempt": "2026-05-11T04:46:46.741Z"
+    },
+    {
+      "brand": "Antibiotic Combination",
+      "launchType": "Own Launched",
+      "date": "2023-10-02",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "Drug-resistant infections",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹210 / strip of 10 capsules",
+      "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/amp_articleshow/100775508.cms",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-05-13T04:32:06.214Z"
+    },
+    {
+      "brand": "Cetuximab Biosimilar",
+      "launchType": "Own Launched",
+      "date": "2023-10-23",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "Cetuximab",
+      "therapy": "Oncology",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹9281 / vial of 20 ml infusion",
+      "sourceUrl": "https://www.cnbctv18.com/healthcare/alkem-oncology-novel-breast-cancer-treatment-drug-launch-palbociclib-palbo-15703241.htm",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-05-13T04:32:06.214Z"
+    },
+    {
+      "brand": "Obimet",
+      "launchType": "Acquired",
+      "date": "2022-06-01",
+      "seller": "Abbott India",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹30.6 / strip of 15 tablet sr",
+      "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-13T04:32:18.583Z"
     }
   ]
 }
