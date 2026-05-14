@@ -7,20 +7,22 @@
 //     numbered footer.
 //
 // Page-break rules (the "no chart/table cut in half" requirement):
-//   1. Every section is captured as its own canvas, never spanning a break
-//      with arbitrary content.
-//   2. If the captured section is ≤ one page tall, it is centered on a
-//      single page.
-//   3. If a section is up to ~1.35× a page tall AND not the data table,
-//      it is uniformly scaled down to fit one page — keeps charts intact.
-//   4. The data table (data-pdf-table) is always sliced at <tr> row
-//      boundaries so a row never gets split across pages. The card header
-//      and column-header strip are repeated on every continuation page.
+//   1. Each chart / KPI section is captured as its own canvas, never
+//      spanning a break with arbitrary content.
+//   2. A captured section ≤ one page tall is placed on a single page;
+//      two short sections may be packed onto one page.
+//   3. A section up to ~1.35× a page tall is uniformly scaled down to
+//      fit one page — keeps charts intact.
+//   4. The Drug Launch Tracker table (data-pdf-table) is NOT captured as
+//      an image. It is drawn natively with jspdf-autotable — the same
+//      renderer the standalone table export uses — so all 17 columns fit
+//      one landscape page width and rows paginate cleanly with the column
+//      header repeated on every page.
 
 // jsPDF + html2canvas-pro are heavy (~600 KB minified combined) and only
 // needed when the user clicks Export PDF. Defer their load with dynamic
 // import so the initial dashboard bundle stays lean.
-import { COLUMN_KEYS } from '../data/mockData';
+import { COLUMN_KEYS, groupAcquisitionRows } from '../data/mockData';
 
 // A4 landscape in pt (1pt = 1/72in). 297mm × 210mm → 842pt × 595pt.
 const PAGE_W = 842;
@@ -75,9 +77,9 @@ function fmtINRCr(crores) {
   return `Rs ${Math.round(crores).toLocaleString('en-IN')} Cr`;
 }
 
-// ────────────────────────────────────────────────────────────────────────
+// ─────────────────────────────────────────────────────────────
 // Cover page
-// ────────────────────────────────────────────────────────────────────────
+// ─────────────────────────────────────────────────────────────
 function drawCover(pdf, ctx) {
   const { company, timelineLabel, generatedAt, kpis } = ctx;
 
@@ -198,10 +200,10 @@ function drawCover(pdf, ctx) {
   );
 }
 
-// ────────────────────────────────────────────────────────────────────────
+// ─────────────────────────────────────────────────────────────
 // Section page chrome (header + footer)
-// ────────────────────────────────────────────────────────────────────────
-function drawPageChrome(pdf, { title, subtitle, pageNum, totalPages, generatedAt, continuation }) {
+// ─────────────────────────────────────────────────────────────
+function drawPageChrome(pdf, { title, subtitle, generatedAt, continuation }) {
   // Top accent.
   pdf.setFillColor(COL.green);
   pdf.rect(0, 0, PAGE_W, 4, 'F');
@@ -243,19 +245,31 @@ function drawPageChrome(pdf, { title, subtitle, pageNum, totalPages, generatedAt
   pdf.setLineWidth(0.5);
   pdf.line(MARGIN, PAGE_H - MARGIN - FOOTER_H + 4, PAGE_W - MARGIN, PAGE_H - MARGIN - FOOTER_H + 4);
 
-  // Footer text.
+  // Footer text. The page number is stamped separately in a final pass
+  // (drawPageNumber) once the true total page count is known — the Drug
+  // Launch Tracker table self-paginates via autoTable, so the total
+  // isn't known while chrome is being drawn.
   pdf.setFont('helvetica', 'normal');
   pdf.setFontSize(8);
   pdf.setTextColor(COL.ink500);
   pdf.text(`Generated ${safe(generatedAt)}  ·  Confidential`, MARGIN, PAGE_H - MARGIN - 6);
+}
+
+// Stamp "Page X of Y" bottom-right. Run as a final pass over every
+// content page after the whole document is laid out, so Y reflects the
+// real total including the table's self-paginated continuation pages.
+function drawPageNumber(pdf, pageNum, totalPages) {
+  pdf.setFont('helvetica', 'normal');
+  pdf.setFontSize(8);
+  pdf.setTextColor(COL.ink500);
   const pageText = `Page ${pageNum} of ${totalPages}`;
   const ptw = pdf.getTextWidth(pageText);
   pdf.text(pageText, PAGE_W - MARGIN - ptw, PAGE_H - MARGIN - 6);
 }
 
-// ────────────────────────────────────────────────────────────────────────
+// ─────────────────────────────────────────────────────────────
 // Capture helpers
-// ────────────────────────────────────────────────────────────────────────
+// ─────────────────────────────────────────────────────────────
 
 // Pin the dashboard layout to its full desktop width and lift internal
 // scroll containers (data-pdf-scroller) for the duration of measurement +
@@ -348,12 +362,13 @@ async function captureSection(section) {
   });
 }
 
-// ────────────────────────────────────────────────────────────────────────
-// Slice composition (table-aware row splitting)
-// ────────────────────────────────────────────────────────────────────────
+// ─────────────────────────────────────────────────────────────
+// Slice composition (vertical strips for tall captured sections)
+// ─────────────────────────────────────────────────────────────
 
-// For non-table tall sections, slice the canvas into vertical strips that
-// each fit one page. No DOM awareness — used as a generic fallback.
+// Slice a tall section's canvas into vertical strips that each fit one
+// page. Used for chart sections that exceed ~1.35× a page; the data
+// table is never sliced this way — it is drawn natively instead.
 function genericSlices(canvas, maxSlicePxH) {
   const slices = [];
   let y = 0;
@@ -379,116 +394,43 @@ function makeSliceCanvas(src, sx, sy, sw, sh) {
   return out;
 }
 
-// Composite a "topmatter + rows" slice for a table page. Topmatter is
-// rows 0..topmatterPxH of the source (card header + column-header strip)
-// and is repeated on every continuation page so the table never appears
-// to start mid-stream.
-function makeTableSlice(src, topmatterPxH, rowFromPx, rowToPx) {
-  const sw = src.width;
-  const rowsH = rowToPx - rowFromPx;
-  const out = document.createElement('canvas');
-  out.width = sw;
-  out.height = topmatterPxH + rowsH;
-  const ctx = out.getContext('2d');
-  ctx.fillStyle = COL.white;
-  ctx.fillRect(0, 0, out.width, out.height);
-  ctx.drawImage(src, 0, 0, sw, topmatterPxH, 0, 0, sw, topmatterPxH);
-  ctx.drawImage(src, 0, rowFromPx, sw, rowsH, 0, topmatterPxH, sw, rowsH);
-  return out;
-}
-
-// Build table slices. rowEdges[i] = { top, bottom } in canvas pixels for
-// each <tbody> row. topmatterPxH is the y at which the first row starts.
-// Each slice (after the first) repeats topmatter.
-function buildTableSlices(canvas, rowEdges, topmatterPxH, maxSlicePxH) {
-  if (rowEdges.length === 0) {
-    return [makeSliceCanvas(canvas, 0, 0, canvas.width, canvas.height)];
-  }
-
-  const slices = [];
-
-  // First slice: starts at canvas top (already includes topmatter inline).
-  let i = 0;
-  let firstSliceEnd = topmatterPxH;
-  while (i < rowEdges.length && rowEdges[i].bottom - 0 <= maxSlicePxH) {
-    firstSliceEnd = rowEdges[i].bottom;
-    i++;
-  }
-  if (i === 0) {
-    // First row alone is taller than a page (vanishingly unlikely) — force
-    // include it even though it overflows; better than an empty page.
-    firstSliceEnd = rowEdges[0].bottom;
-    i = 1;
-  }
-  slices.push(makeSliceCanvas(canvas, 0, 0, canvas.width, firstSliceEnd));
-
-  // Continuation slices: each starts with the topmatter band, then rows.
-  while (i < rowEdges.length) {
-    const rowFrom = rowEdges[i].top;
-    let rowToIdx = i;
-    let rowToBottom = rowEdges[i].bottom;
-    // How many rows fit after the topmatter strip?
-    const availForRows = maxSlicePxH - topmatterPxH;
-    while (
-      rowToIdx + 1 < rowEdges.length &&
-      rowEdges[rowToIdx + 1].bottom - rowFrom <= availForRows
-    ) {
-      rowToIdx += 1;
-      rowToBottom = rowEdges[rowToIdx].bottom;
-    }
-    slices.push(makeTableSlice(canvas, topmatterPxH, rowFrom, rowToBottom));
-    i = rowToIdx + 1;
-  }
-
-  return slices;
-}
-
-// ────────────────────────────────────────────────────────────────────────
+// ─────────────────────────────────────────────────────────────
 // Capture pipeline
-// ────────────────────────────────────────────────────────────────────────
+// ─────────────────────────────────────────────────────────────
 
+// Walk the dashboard sections in document order. Every section is
+// rasterised with html2canvas EXCEPT the Drug Launch Tracker table
+// (data-pdf-table): that one is emitted as a lightweight marker and
+// drawn natively later, so its 17 columns fit one landscape page width
+// instead of being captured as a column-cropping image.
 async function captureAll(sections) {
-  const captures = [];
+  const items = [];
   for (const sec of sections) {
+    if (sec.hasAttribute('data-pdf-table')) {
+      items.push({
+        isNativeTable: true,
+        // isTable also stops planPages from packing an image section
+        // onto the same page as the table.
+        isTable: true,
+        title: sec.getAttribute('data-pdf-title') || 'Drug Launch Tracker',
+        subtitle: sec.getAttribute('data-pdf-subtitle') || '',
+      });
+      continue;
+    }
     const restore = lockWideLayoutAndLiftRestraints(sec);
     try {
-      const sectionRect = sec.getBoundingClientRect();
-      const sectionTop = sectionRect.top;
-
-      const isTable = sec.hasAttribute('data-pdf-table');
-      let rowMetrics = null;
-      let topmatterCss = 0;
-      if (isTable) {
-        const rows = Array.from(sec.querySelectorAll('tbody > tr'));
-        rowMetrics = rows.map((r) => {
-          const rr = r.getBoundingClientRect();
-          return {
-            top: rr.top - sectionTop,
-            bottom: rr.top - sectionTop + rr.height,
-          };
-        });
-        if (rowMetrics.length > 0) {
-          topmatterCss = rowMetrics[0].top;
-        }
-      }
-
       const canvas = await captureSection(sec);
-      const cssToCanvas = canvas.width / sectionRect.width;
-
-      captures.push({
+      items.push({
         title: sec.getAttribute('data-pdf-title') || '',
         subtitle: sec.getAttribute('data-pdf-subtitle') || '',
-        isTable,
+        isTable: false,
         canvas,
-        cssToCanvas,
-        rowMetrics,
-        topmatterCss,
       });
     } finally {
       restore();
     }
   }
-  return captures;
+  return items;
 }
 
 // Natural draw height of a canvas at full PDF content width, in pt.
@@ -499,35 +441,34 @@ const naturalDrawHpt = (cap) =>
 // slice of one), one short section anchored to the top, or two short
 // sections stacked. The packing logic prevents the wasteful "single
 // short section centered on a near-empty page" output.
-function planPages(captures) {
+function planPages(items) {
   const jobs = [];
   let i = 0;
-  while (i < captures.length) {
-    const cap = captures[i];
+  while (i < items.length) {
+    const cap = items[i];
+
+    // The Drug Launch Tracker table is drawn natively and self-paginates
+    // — emit a single job; the emitter runs the autotable renderer, which
+    // adds however many pages the row count needs.
+    if (cap.isNativeTable) {
+      jobs.push({ kind: 'nativeTable', cap });
+      i++;
+      continue;
+    }
+
     const naturalH = naturalDrawHpt(cap);
 
-    // Tall section that won't fit one page → slice into pages.
+    // Tall section that won't fit one page → shrink content that is only
+    // modestly over a page, or slice very tall content into clean strips.
     if (naturalH > CONTENT_H) {
-      // Charts/non-table sections that are only modestly over a page get
-      // shrunk to fit; tables and very tall content get sliced cleanly.
-      if (!cap.isTable && naturalH <= CONTENT_H * 1.35) {
+      if (naturalH <= CONTENT_H * 1.35) {
         jobs.push({ kind: 'single', cap, fit: 'shrink' });
         i++;
         continue;
       }
       const pxPerPt = cap.canvas.width / CONTENT_W;
       const maxSlicePxH = CONTENT_H * pxPerPt;
-      let slices;
-      if (cap.isTable && cap.rowMetrics && cap.rowMetrics.length > 0) {
-        const topmatterPx = cap.topmatterCss * cap.cssToCanvas;
-        const rowEdgesPx = cap.rowMetrics.map((r) => ({
-          top: r.top * cap.cssToCanvas,
-          bottom: r.bottom * cap.cssToCanvas,
-        }));
-        slices = buildTableSlices(cap.canvas, rowEdgesPx, topmatterPx, maxSlicePxH);
-      } else {
-        slices = genericSlices(cap.canvas, maxSlicePxH);
-      }
+      const slices = genericSlices(cap.canvas, maxSlicePxH);
       slices.forEach((sliceCanvas, idx) => {
         jobs.push({
           kind: 'slice',
@@ -541,8 +482,9 @@ function planPages(captures) {
     }
 
     // Section fits on one page — see if we can pack the next short
-    // section onto the same page underneath it.
-    const next = captures[i + 1];
+    // section onto the same page underneath it. The native table marker
+    // carries isTable, so it is never packed onto another section's page.
+    const next = items[i + 1];
     if (next && !next.isTable) {
       const nextH = naturalDrawHpt(next);
       if (nextH <= CONTENT_H && naturalH + PACK_GAP_PT + nextH <= CONTENT_H) {
@@ -600,9 +542,9 @@ function placePair(pdf, cap1, cap2) {
   });
 }
 
-// ────────────────────────────────────────────────────────────────────────
+// ─────────────────────────────────────────────────────────────
 // Public entry
-// ────────────────────────────────────────────────────────────────────────
+// ─────────────────────────────────────────────────────────────
 
 export async function exportDashboardPdf({ rows, allRows, company, timelineLabel, generatedAt }) {
   const sections = Array.from(document.querySelectorAll('[data-pdf-section]'));
@@ -631,15 +573,30 @@ export async function exportDashboardPdf({ rows, allRows, company, timelineLabel
   document.body.classList.add('pdf-export-active');
   let pdf;
   try {
-    // Kick off the jsPDF load in parallel with section captures.
+    // Kick off the heavy-module loads in parallel with section captures.
+    // drawTrackerTable lives in exportPdf.js and is shared with the
+    // standalone table export — lazy-imported so it stays out of the
+    // initial dashboard bundle.
     const jsPDFLoad = loadJsPDF();
-    const captures = await captureAll(sections);
-    const jobs = planPages(captures);
+    const trackerLoad = import('./exportPdf').then((m) => m.drawTrackerTable);
+    const items = await captureAll(sections);
+    const jobs = planPages(items);
 
     const JsPDF = await jsPDFLoad;
+    const drawTrackerTable = await trackerLoad;
     pdf = new JsPDF({ orientation: 'landscape', unit: 'pt', format: 'a4', compress: true });
 
-    const totalPages = 1 + jobs.length;
+    // The Drug Launch Tracker section is drawn natively, so build the
+    // parent-anchored row hierarchy its renderer expects. Top-level rows
+    // go date-descending to match the dashboard's default table sort;
+    // children stay in input order under their parent.
+    const grouped = groupAcquisitionRows(rows);
+    const topLevelRows = [...grouped.topLevel].sort(
+      (a, b) =>
+        new Date(b[COLUMN_KEYS.DATE]).getTime() -
+        new Date(a[COLUMN_KEYS.DATE]).getTime()
+    );
+    const childrenByKey = grouped.childrenByKey;
 
     // Page 1: cover.
     drawCover(pdf, {
@@ -651,28 +608,57 @@ export async function exportDashboardPdf({ rows, allRows, company, timelineLabel
       totalCount,
     });
 
-    // Pages 2..N
+    // Pages 2..N — one page per image job; the native-table job draws
+    // itself and may span several continuation pages.
     for (let i = 0; i < jobs.length; i++) {
       const job = jobs[i];
       pdf.addPage();
-      const pageNum = i + 2;
+
+      if (job.kind === 'nativeTable') {
+        // autoTable self-paginates; its didDrawPage hook draws the page
+        // chrome on every page it produces (first + continuations).
+        let tablePage = 0;
+        await drawTrackerTable(pdf, {
+          topLevelRows,
+          childrenByKey,
+          // Scale all 17 columns to fill the content width — the fix:
+          // columns fit one landscape page width, never cropped.
+          tableWidth: CONTENT_W - 6,
+          startY: CONTENT_TOP,
+          margin: {
+            top: CONTENT_TOP,
+            bottom: PAGE_H - CONTENT_BOTTOM,
+            left: MARGIN + 3,
+            right: MARGIN + 3,
+          },
+          unit: 'pt',
+          didDrawPage: () => {
+            drawPageChrome(pdf, {
+              title: job.cap.title,
+              subtitle: job.cap.subtitle,
+              generatedAt,
+              continuation: tablePage > 0,
+            });
+            tablePage += 1;
+          },
+        });
+        continue;
+      }
+
       if (job.kind === 'pair') {
         drawPageChrome(pdf, {
           title: `${job.cap1.title}  +  ${job.cap2.title}`,
           subtitle: job.cap1.subtitle || job.cap2.subtitle || '',
-          pageNum,
-          totalPages,
           generatedAt,
           continuation: false,
         });
         placePair(pdf, job.cap1, job.cap2);
         continue;
       }
+
       drawPageChrome(pdf, {
         title: job.cap.title,
         subtitle: job.cap.subtitle,
-        pageNum,
-        totalPages,
         generatedAt,
         continuation: !!job.continuation,
       });
@@ -681,6 +667,15 @@ export async function exportDashboardPdf({ rows, allRows, company, timelineLabel
       } else {
         placeImage(pdf, job.sliceCanvas, 'slice');
       }
+    }
+
+    // Final pass: stamp "Page X of Y" on every page after the cover, now
+    // that the true total — including the table's self-paginated pages —
+    // is known.
+    const totalPages = pdf.internal.getNumberOfPages();
+    for (let p = 2; p <= totalPages; p++) {
+      pdf.setPage(p);
+      drawPageNumber(pdf, p, totalPages);
     }
 
     const stamp = new Date().toISOString().slice(0, 10);
