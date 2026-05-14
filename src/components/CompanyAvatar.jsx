@@ -13,6 +13,7 @@ const COMPANY_COLORS = {
   'Alkem':              { bg: 'bg-slate-600',    text: 'text-white' },
   'Corona Remedies':    { bg: 'bg-rose-500',     text: 'text-white' },
   'Torrent Pharma':     { bg: 'bg-emerald-600',  text: 'text-white' },
+  'Natco Pharma':       { bg: 'bg-purple-600',   text: 'text-white' },
   'Lupin':              { bg: 'bg-violet-500',   text: 'text-white' },
   'Aurobindo':          { bg: 'bg-indigo-500',   text: 'text-white' },
   "Dr. Reddy's":        { bg: 'bg-red-600',      text: 'text-white' },

@@ -995,6 +995,9 @@ export const DEAL_VALUES = {
 
   // ── Cipla ──
   'Cipla|2026-01-01': 1107,                 // Novartis Galvus / Galvus Met perpetual licence
+
+  // ── Natco Pharma ──
+  'Natco Pharma|2025-11-11': 2000,          // Adcock Ingram 35.75% stake — ~Rs 2,000 Cr (US$226M)
 };
 
 // Fills DEAL_VALUE for parent rows and standalone-acquired rows whose
@@ -1055,6 +1058,10 @@ export const GEO_RIGHTS_BRAND_OVERRIDES = {
   'cabotegravir la (via mpp / viiv)': 'LMIC (90+ countries)',
   // Harvard tech licence — research-stage, global rights to develop.
   'harvard otd vascular-disease platform': 'Global',
+  // Natco's US partner launches — US-market generics (Teva / Mylan / Breckenridge).
+  'glatiramer acetate (gcopaxone — us)': 'US',
+  'lenalidomide (grevlimid — us)': 'US',
+  'pomalidomide (gpomalyst — us)': 'US',
 };
 
 // Pulls a parenthetical scope from a deal-type label like
@@ -1130,6 +1137,10 @@ export const REG_STATUS_BRAND_OVERRIDES = {
   'semanext / livarise': 'DCGI Approved',
   'sembolic': 'DCGI Approved',
   'semalix': 'DCGI Approved',
+  // Natco's US partner launches — FDA-approved generics sold via Teva / Mylan / Breckenridge.
+  'glatiramer acetate (gcopaxone — us)': 'US FDA Approved',
+  'lenalidomide (grevlimid — us)': 'US FDA Approved',
+  'pomalidomide (gpomalyst — us)': 'US FDA Approved',
 };
 
 function deriveRegStatus(row) {
@@ -1758,6 +1769,72 @@ export const LAUNCH_TRACKER_ROWS = [
 
   // ── 5th MNC deal: Dr. Reddy's — Wokadine (30-Mar-2026, ₹648 Cr povidone iodine market) ──
   row(['Wokadine', 'Acquired', '2026-03-30', "Dr. Reddy's Laboratories", 'Corona Remedies', 'Brand Acquisition', 'Povidone Iodine', 'Anti-Infectives', 'Topical Antiseptic / Pre-surgical Skin Prep', 648, null, 'Betadine', null, 'Acute']),
+
+  // ──────────────────────────────────────────────────────────────────────────
+  // Natco Pharma — LIVE DATASET (deep-research edition)
+  // Sources: natcopharma.co.in press releases + investor filings, BSE / NSE
+  // filings, Business Standard / BusinessToday / Fierce Pharma / MSF Access /
+  // medicaldialogues coverage, Teva / Mylan / Breckenridge press releases for
+  // the US partner launches, generic-pharmacy listings for pricing. Natco is
+  // India's leading complex-generics + oncology specialist — known for India's
+  // FIRST compulsory licence (Sorafenat, 2012) and first-mover hepatitis C
+  // generics. Older oncology engine-brand launch years are [est.] — exact
+  // launch dates are not publicly disclosed.
+  // ──────────────────────────────────────────────────────────────────────────
+
+  // ── Oncology engine brands (Own Launched) — the Natco India backbone ──
+  // Veenat (Imatinib) — Natco's flagship oncology brand, launched 2003 for CML
+  row(['Veenat', 'Own Launched', '2003-01-01', '—', 'Natco Pharma', 'Generic Launch', 'Imatinib Mesylate', 'Oncology', 'Chronic Myeloid Leukaemia (CML) / GIST', null, null, 'Glivec / Imatib', null, 'Chronic']),
+  // Geftinat (Gefitinib) — EGFR+ NSCLC [launch year est.]
+  row(['Geftinat', 'Own Launched', '2007-01-01', '—', 'Natco Pharma', 'Generic Launch', 'Gefitinib', 'Oncology', 'EGFR+ Non-Small Cell Lung Cancer', null, null, 'Iressa / Gefitik', null, 'Chronic']),
+  // Erlonat (Erlotinib) — NSCLC / pancreatic cancer [launch year est.]
+  row(['Erlonat', 'Own Launched', '2008-01-01', '—', 'Natco Pharma', 'Generic Launch', 'Erlotinib', 'Oncology', 'NSCLC / Pancreatic Cancer', null, null, 'Tarceva / Erlocip', null, 'Chronic']),
+  // Bortenat (Bortezomib) — multiple myeloma [launch year est.]
+  row(['Bortenat', 'Own Launched', '2009-01-01', '—', 'Natco Pharma', 'Generic Launch', 'Bortezomib', 'Oncology', 'Multiple Myeloma / Mantle Cell Lymphoma', null, null, 'Velcade / Bortecad', null, 'Chronic']),
+  // Lenalid (Lenalidomide) — multiple myeloma / MDS [launch year est.]
+  row(['Lenalid', 'Own Launched', '2010-01-01', '—', 'Natco Pharma', 'Generic Launch', 'Lenalidomide', 'Oncology', 'Multiple Myeloma / Myelodysplastic Syndrome', null, null, 'Revlimid / Lenmid', null, 'Chronic']),
+  // Trombonat (Eltrombopag) — chronic immune thrombocytopenia [launch year est.]
+  row(['Trombonat', 'Own Launched', '2018-01-01', '—', 'Natco Pharma', 'Generic Launch', 'Eltrombopag', 'Oncology', 'Chronic Immune Thrombocytopenia (ITP)', null, null, 'Revolade / Eltrombopag', null, 'Chronic']),
+
+  // ── Sorafenat (Sorafenib) — India's FIRST compulsory licence, granted 12-Mar-2012 ──
+  // MSF Access / Knowledge@Wharton — the Controller of Patents granted Natco a
+  // compulsory licence on Bayer's Nexavar patent; Natco priced Sorafenat ~97%
+  // below Bayer (~₹8,800/month vs Bayer's ~₹2.8 lakh/month).
+  row(['Sorafenat', 'Own Launched', '2012-03-12', '—', 'Natco Pharma', 'Compulsory Licence Launch', 'Sorafenib', 'Oncology', 'Hepatocellular & Renal Cell Carcinoma', null, null, 'Nexavar', null, 'Chronic', '₹8,800 / month (120 tabs)']),
+
+  // ── Hepatitis C portfolio — first-mover generics under the Gilead voluntary licence ──
+  // Fierce Pharma / Business Standard — Natco signed a non-exclusive licence with
+  // Gilead (91 developing countries) and was first in India with a DCGI nod for
+  // generic sofosbuvir. (Daclatasvir is BMS's molecule — modelled as own-launched.)
+  // Hepcinat (Sofosbuvir) — DCGI approval Mar-2015 [day approximate]
+  row(['Hepcinat', 'In-licensed', '2015-03-15', 'Gilead Sciences', 'Natco Pharma', 'In-license (India + 90+ countries)', 'Sofosbuvir', 'Anti-Infectives', 'Chronic Hepatitis C', null, null, 'Sovaldi / MyHep / Resof', null, 'Chronic', '₹19,900 / bottle of 28 tabs']),
+  // Hepcinat LP (Ledipasvir + Sofosbuvir) — DCGI approval 14-Dec-2015; generic of Harvoni
+  row(['Hepcinat LP', 'In-licensed', '2015-12-14', 'Gilead Sciences', 'Natco Pharma', 'In-license (India + 90+ countries)', 'Ledipasvir + Sofosbuvir', 'Anti-Infectives', 'Chronic Hepatitis C (Genotype 1)', null, null, 'Harvoni / Ledifos', null, 'Chronic', '₹25,000 / bottle of 28 tabs']),
+  // Natdac (Daclatasvir) — DCGI approval 17-Dec-2015; generic of BMS's Daklinza
+  row(['Natdac', 'Own Launched', '2015-12-17', '—', 'Natco Pharma', 'Generic Launch', 'Daclatasvir', 'Anti-Infectives', 'Chronic Hepatitis C (with Sofosbuvir)', null, null, 'Daklinza / Daclahep', null, 'Chronic', '₹6,000 / bottle of 28 tabs (60 mg)']),
+  // Velpanat (Sofosbuvir + Velpatasvir) — Business Standard (09-May-2017); pan-genotypic, generic of Epclusa
+  row(['Velpanat', 'In-licensed', '2017-05-09', 'Gilead Sciences', 'Natco Pharma', 'In-license (India + 90+ countries)', 'Sofosbuvir + Velpatasvir', 'Anti-Infectives', 'Chronic Hepatitis C (Pan-Genotypic)', null, null, 'Epclusa / Velasof', null, 'Chronic']),
+
+  // ── Recent India launches ──
+  // Risdiplam — Business Standard / Outlook — launched Apr-2025 at ₹15,900 (~97% below
+  // Roche's Evrysdi) after a landmark Delhi HC patent ruling in Natco's favour.
+  row(['Risdiplam (Natco)', 'Own Launched', '2025-04-01', '—', 'Natco Pharma', 'Generic Launch (post-litigation)', 'Risdiplam', 'Neurology / CNS', 'Spinal Muscular Atrophy (SMA)', null, null, 'Evrysdi', null, 'Chronic', '₹15,900 / bottle (60 mg)']),
+  // Semaglutide — CDSCO approval 14-Feb-2026; Natco co-markets via Eris (Sundae) and
+  // other partners. The Eris side of this partnership is tracked under Eris Lifesciences.
+  row(['Semaglutide (Natco)', 'Own Launched', '2026-03-01', '—', 'Natco Pharma', 'Generic Launch (India — co-marketing)', 'Semaglutide', 'Anti-Diabetic', 'Type 2 Diabetes / Chronic Weight Management', null, null, 'Rybelsus / Ozempic / Sundae', null, 'Chronic']),
+
+  // ── US launches (Natco manufactures; a marketing partner sells) ──
+  // Glatiramer Acetate — FDA approved Oct-2017; first generic Copaxone, marketed by Mylan
+  row(['Glatiramer Acetate (gCopaxone — US)', 'Own Launched', '2017-10-03', '—', 'Natco Pharma', 'Generic Launch (US — Mylan partner)', 'Glatiramer Acetate', 'Neurology / CNS', 'Relapsing Multiple Sclerosis', null, null, 'Copaxone / Glatopa', null, 'Chronic']),
+  // Lenalidomide (gRevlimid) — volume-limited US launch from Mar-2022 with Teva; Natco's largest earner
+  row(['Lenalidomide (gRevlimid — US)', 'Own Launched', '2022-03-01', '—', 'Natco Pharma', 'Generic Launch (US — Teva partner)', 'Lenalidomide', 'Oncology', 'Multiple Myeloma', null, null, 'Revlimid', null, 'Chronic']),
+  // Pomalidomide (gPomalyst) — US launch 03-Mar-2026 with Breckenridge; 180-day shared exclusivity
+  row(['Pomalidomide (gPomalyst — US)', 'Own Launched', '2026-03-03', '—', 'Natco Pharma', 'Generic Launch (US — Breckenridge partner)', 'Pomalidomide', 'Oncology', 'Multiple Myeloma / Kaposi Sarcoma', null, null, 'Pomalyst', null, 'Chronic']),
+
+  // ── Adcock Ingram — 35.75% strategic stake in South Africa's oldest pharma ──
+  // medicaldialogues / BSE filings — ~₹2,000 Cr (US$226M); shareholder nod Oct-2025,
+  // JSE delisting completed 11-Nov-2025. Natco's largest M&A; emerging-markets push.
+  row(['Adcock Ingram (35.75% stake)', 'Acquired', '2025-11-11', 'Adcock Ingram minority shareholders', 'Natco Pharma', 'Strategic Stake Acquisition', 'Various (branded generics, OTC, hospital)', 'Multi-therapy', 'Multi-indication (South Africa + emerging markets)', null, null, 'Various', null, 'Chronic']),
 ];
 
 // Derived list of unique Buyers — these are the selectable "companies"

@@ -56,6 +56,7 @@ const DEFAULT_ACTIVE_COMPANIES = [
   'Alkem',
   'Corona Remedies',
   'Torrent Pharma',
+  'Natco Pharma',
 ];
 
 const ARCHIVE_STORAGE_KEY = 'dlt.archivedCompanies.v1';
