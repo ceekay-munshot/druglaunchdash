@@ -998,6 +998,11 @@ export const DEAL_VALUES = {
 
   // ── Natco Pharma ──
   'Natco Pharma|2025-11-11': 2000,          // Adcock Ingram 35.75% stake — ~Rs 2,000 Cr (US$226M)
+
+  // ── Dr. Reddy's ──
+  "Dr. Reddy's|2006-03-01": 2712,           // Betapharm (Germany) — €480M (~Rs 2,712 Cr at 2006 rates)
+  "Dr. Reddy's|2020-06-10": 1850,           // Wockhardt branded generics — 62 brands + Baddi plant
+  "Dr. Reddy's|2024-09-30": 5250,           // Haleon Nicotinell / NRT — £500M / US$633M (~Rs 5,250 Cr)
 };
 
 // Fills DEAL_VALUE for parent rows and standalone-acquired rows whose
@@ -1062,6 +1067,8 @@ export const GEO_RIGHTS_BRAND_OVERRIDES = {
   'glatiramer acetate (gcopaxone — us)': 'US',
   'lenalidomide (grevlimid — us)': 'US',
   'pomalidomide (gpomalyst — us)': 'US',
+  // Dr. Reddy's US launch — US-market generic.
+  'lenalidomide capsules (grevlimid — us)': 'US',
 };
 
 // Pulls a parenthetical scope from a deal-type label like
@@ -1141,6 +1148,8 @@ export const REG_STATUS_BRAND_OVERRIDES = {
   'glatiramer acetate (gcopaxone — us)': 'US FDA Approved',
   'lenalidomide (grevlimid — us)': 'US FDA Approved',
   'pomalidomide (gpomalyst — us)': 'US FDA Approved',
+  // Dr. Reddy's US launch — FDA-approved generic.
+  'lenalidomide capsules (grevlimid — us)': 'US FDA Approved',
 };
 
 function deriveRegStatus(row) {
@@ -1261,12 +1270,6 @@ export const LAUNCH_TRACKER_ROWS = [
 
   // ── Noveltreat / Sematrinity — Semaglutide Day-1 launch (20-Mar-2026) ──
   row(['Noveltreat / Sematrinity', 'Own Launched', '2026-03-20', '—', 'Sun Pharma', 'Generic Launch', 'Semaglutide (injection)', 'Anti-Diabetic', 'Type 2 Diabetes / Chronic Weight Management', null, null, 'Rybelsus / Wegovy / Samakind', null, 'Chronic']),
-
-  // ─── Dr. Reddy's — LIVE (press releases / drreddys.com) ───
-  // Business Standard "Dr Reddy's launches Tegoprazan in India for acid peptic diseases" (16-Sep-2025)
-  row(['Tegoprazan', 'In-licensed', '2025-09-16', 'HK inno.N (Korea)', "Dr. Reddy's", 'In-license (India)', 'Tegoprazan', 'Gastroenterology', 'GERD / Erosive Esophagitis / Gastric Ulcers', null, null, '—', null, 'Chronic']),
-  // drreddys.com / Stock Titan (Mar 2026) — India launch post Delhi HC nod; export since late 2025
-  row(['Obeda', 'Own Launched', '2026-03-20', '—', "Dr. Reddy's", 'Generic Launch', 'Semaglutide', 'Anti-Diabetic', 'Type 2 Diabetes / Weight Management', null, null, 'Rybelsus / Ozempic', null, 'Chronic']),
 
   // ──────────────────────────────────────────────────────────────────────────
   // Cipla — EXPANDED LIVE DATASET (deep-research edition)
@@ -1835,6 +1838,74 @@ export const LAUNCH_TRACKER_ROWS = [
   // medicaldialogues / BSE filings — ~₹2,000 Cr (US$226M); shareholder nod Oct-2025,
   // JSE delisting completed 11-Nov-2025. Natco's largest M&A; emerging-markets push.
   row(['Adcock Ingram (35.75% stake)', 'Acquired', '2025-11-11', 'Adcock Ingram minority shareholders', 'Natco Pharma', 'Strategic Stake Acquisition', 'Various (branded generics, OTC, hospital)', 'Multi-therapy', 'Multi-indication (South Africa + emerging markets)', null, null, 'Various', null, 'Chronic']),
+
+  // ──────────────────────────────────────────────────────────────────────────
+  // Dr. Reddy's Laboratories — LIVE DATASET (deep-research edition)
+  // Sources: drreddys.com press releases + investor filings, BSE / NSE filings,
+  // Business Standard / BusinessToday / Fierce Pharma / GaBI Online / BioSpace
+  // coverage, Nestlé India + Haleon + RDIF press releases for the partnerships,
+  // generic-pharmacy listings for pricing. Dr. Reddy's is one of India's largest
+  // pharma companies — iconic India branded generics, an India biosimilars
+  // pioneer (Grafeel, Reditux, Cresp), a large US generics book, and an active
+  // acquirer. Older India engine-brand launch years are [est.] — exact launch
+  // dates are not publicly disclosed.
+  // ──────────────────────────────────────────────────────────────────────────
+
+  // ── India branded engine brands (Own Launched) — the DRL India backbone ──
+  // Omez (Omeprazole) — DRL's breakthrough brand, launched at ~half competitors' price [launch year est.]
+  row(['Omez', 'Own Launched', '1994-01-01', '—', "Dr. Reddy's", 'Generic Launch', 'Omeprazole (± Domperidone)', 'Gastroenterology', 'GERD / Peptic Ulcer / Acid Reflux', null, null, 'Omee / Ocid / Prilosec', null, 'Chronic']),
+  // Enam (Enalapril) — legacy ACE-inhibitor, ORG top-300 brand [launch year est.]
+  row(['Enam', 'Own Launched', '1993-01-01', '—', "Dr. Reddy's", 'Generic Launch', 'Enalapril Maleate', 'Cardiology', 'Hypertension / Chronic Heart Failure', null, null, 'Envas / Enapril', null, 'Chronic']),
+  // Nise (Nimesulide) — high-volume NSAID pain brand [launch year est.]
+  row(['Nise', 'Own Launched', '1995-01-01', '—', "Dr. Reddy's", 'Generic Launch', 'Nimesulide', 'Pain Management', 'Pain / Inflammation / Fever', null, null, 'Nimulid / Nimegesic', null, 'Acute']),
+  // Stamlo (Amlodipine) — calcium-channel-blocker engine brand [launch year est.]
+  row(['Stamlo', 'Own Launched', '1996-01-01', '—', "Dr. Reddy's", 'Generic Launch', 'Amlodipine (± Atenolol / Benazepril)', 'Cardiology', 'Hypertension / Angina', null, null, 'Amlopres / Amlong / Norvasc', null, 'Chronic']),
+  // Atocor (Atorvastatin) — statin [launch year est.]
+  row(['Atocor', 'Own Launched', '2001-01-01', '—', "Dr. Reddy's", 'Generic Launch', 'Atorvastatin', 'Cardiology', 'Dyslipidemia', null, null, 'Atorva / Storvas / Lipitor', null, 'Chronic']),
+  // Razo (Rabeprazole) — PPI [launch year est.]
+  row(['Razo', 'Own Launched', '2003-01-01', '—', "Dr. Reddy's", 'Generic Launch', 'Rabeprazole (± Domperidone / Levosulpiride)', 'Gastroenterology', 'GERD / Peptic Ulcer', null, null, 'Rabicip / Veloz / Pariet', null, 'Chronic']),
+
+  // ── Biosimilars (Own Launched, India) — DRL is an India biosimilars pioneer ──
+  // Grafeel (Filgrastim) — DRL's first biosimilar (2001)
+  row(['Grafeel', 'Own Launched', '2001-01-01', '—', "Dr. Reddy's", 'Biosimilar Launch', 'Filgrastim (biosimilar)', 'Oncology', 'Chemotherapy-Induced Neutropenia', null, null, 'Neupogen / Emgrast', null, 'Chronic']),
+  // Reditux (Rituximab) — landmark: one of the world's first rituximab biosimilars (Apr-2007)
+  row(['Reditux', 'Own Launched', '2007-04-01', '—', "Dr. Reddy's", 'Biosimilar Launch', 'Rituximab (biosimilar)', 'Oncology', "Non-Hodgkin's Lymphoma / CLL / Rheumatoid Arthritis", null, null, 'MabThera / Rituxan / Maball', null, 'Chronic']),
+  // Cresp (Darbepoetin alfa) — GaBI Online — launched 09-Aug-2010
+  row(['Cresp', 'Own Launched', '2010-08-09', '—', "Dr. Reddy's", 'Biosimilar Launch', 'Darbepoetin Alfa (biosimilar)', 'Nephrology', 'Anaemia in Chronic Kidney Disease', null, null, 'Aranesp', null, 'Chronic']),
+  // Hervycta (Trastuzumab) — GaBI Online / Center for Biosimilars — launched 26-Jul-2018
+  row(['Hervycta', 'Own Launched', '2018-07-26', '—', "Dr. Reddy's", 'Biosimilar Launch', 'Trastuzumab (biosimilar)', 'Oncology', 'HER2+ Breast Cancer / Metastatic Gastric Cancer', null, null, 'Herceptin / Canmab', null, 'Chronic']),
+  // Versavo (Bevacizumab) — GaBI Online / BioSpace — launched 19-Aug-2019
+  row(['Versavo', 'Own Launched', '2019-08-19', '—', "Dr. Reddy's", 'Biosimilar Launch', 'Bevacizumab (biosimilar)', 'Oncology', 'Metastatic Colorectal & Lung Cancer', null, null, 'Avastin / Bevatas', null, 'Chronic']),
+
+  // ── In-licensing / partnerships ──
+  // Sputnik V — DRL held India rights via RDIF; soft launch in Hyderabad 14-May-2021 (~Rs 995.40/dose)
+  row(['Sputnik V', 'In-licensed', '2021-05-14', 'RDIF / Gamaleya Institute', "Dr. Reddy's", 'Distribution + Manufacturing Licence (India)', 'Gam-COVID-Vac (adenoviral-vector vaccine)', 'Vaccines', 'COVID-19 Prevention', null, null, 'Covishield / Covaxin', null, 'Acute', '₹995.40 / dose']),
+  // Nestlé Dr Reddy's JV — Nestlé India + DRL nutraceuticals JV (49:51), announced 25-Apr-2024
+  row(["Nestlé Dr Reddy's JV", 'In-licensed', '2024-04-25', 'Nestlé India', "Dr. Reddy's", 'Joint Venture (India + agreed territories)', "Various (Nature's Bounty / Osteo Bi-Flex / Ester-C + DRL nutra brands)", 'Nutraceuticals', 'Metabolic / Wellness / Hospital Nutrition', null, null, 'Various', null, 'Chronic']),
+  // Tegoprazan — Business Standard — DRL launches in-licensed P-CAB in India (16-Sep-2025)
+  row(['Tegoprazan', 'In-licensed', '2025-09-16', 'HK inno.N (Korea)', "Dr. Reddy's", 'In-license (India)', 'Tegoprazan', 'Gastroenterology', 'GERD / Erosive Esophagitis / Gastric Ulcers', null, null, '—', null, 'Chronic']),
+
+  // ── Recent India launch + US launch ──
+  // Obeda (Semaglutide) — drreddys.com / Stock Titan — India launch post Delhi HC nod (20-Mar-2026)
+  row(['Obeda', 'Own Launched', '2026-03-20', '—', "Dr. Reddy's", 'Generic Launch', 'Semaglutide', 'Anti-Diabetic', 'Type 2 Diabetes / Weight Management', null, null, 'Rybelsus / Ozempic', null, 'Chronic']),
+  // Lenalidomide Capsules (gRevlimid) — BusinessWire — US launch 07-Sep-2022; first-to-market 180-day exclusivity on 2.5/20 mg
+  row(['Lenalidomide Capsules (gRevlimid — US)', 'Own Launched', '2022-09-07', '—', "Dr. Reddy's", 'Generic Launch (US)', 'Lenalidomide', 'Oncology', 'Multiple Myeloma', null, null, 'Revlimid', null, 'Chronic']),
+
+  // ── Acquisitions ──
+  // Betapharm — Mar-2006, €480M; then the largest overseas acquisition by an Indian pharma company
+  row(['Betapharm (Germany)', 'Acquired', '2006-03-01', '3i Group', "Dr. Reddy's", 'Company Acquisition (Germany / EU)', 'Various (German branded-generics portfolio)', 'Multi-therapy', 'Multi-indication (Germany / EU generics)', null, null, 'Various', null, 'Chronic']),
+  // Wockhardt branded generics — BusinessWire — completed 10-Jun-2020; Rs 1,850 Cr, 62 brands + Baddi plant
+  row(['Wockhardt Branded Generics Portfolio (parent)', 'Acquired', '2020-06-10', 'Wockhardt', "Dr. Reddy's", 'Brand Portfolio Acquisition (India + South Asia)', 'Various (62-brand branded-generics portfolio)', 'Multi-therapy', 'Respiratory / Neurology / Derma / Gastro / Pain / Vaccines', null, null, 'Various', null, 'Chronic']),
+  // Wockhardt sub-brand — Practin (Cyproheptadine) — appetite stimulant
+  row(['Practin', 'Acquired', '2020-06-10', 'Wockhardt', "Dr. Reddy's", 'Brand Acquisition', 'Cyproheptadine', 'Nutrition / Wellness', 'Appetite Stimulant', null, null, 'Ciplactin / Apetamin', null, 'Acute']),
+  // Wockhardt sub-brand — Bro-Zedex (cough)
+  row(['Bro-Zedex', 'Acquired', '2020-06-10', 'Wockhardt', "Dr. Reddy's", 'Brand Acquisition', 'Bromhexine + Guaifenesin + Terbutaline + Menthol', 'Respiratory', 'Productive Cough / Bronchospasm', null, null, 'Ascoril / Grilinctus', null, 'Acute']),
+  // Wockhardt sub-brand — Tryptomer (Amitriptyline)
+  row(['Tryptomer', 'Acquired', '2020-06-10', 'Wockhardt', "Dr. Reddy's", 'Brand Acquisition', 'Amitriptyline', 'Neurology / CNS', 'Depression / Neuropathic Pain / Migraine Prophylaxis', null, null, 'Amitone / Elavil', null, 'Chronic']),
+  // Wockhardt sub-brand — Biovac (Hepatitis A vaccine)
+  row(['Biovac', 'Acquired', '2020-06-10', 'Wockhardt', "Dr. Reddy's", 'Brand Acquisition', 'Hepatitis A Vaccine', 'Vaccines', 'Hepatitis A Prevention', null, null, 'Havrix / Avaxim', null, 'Acute']),
+  // Haleon Nicotinell / NRT — completed 30-Sep-2024; ~£500M (US$633M); ex-US nicotine-replacement portfolio
+  row(['Haleon Nicotinell / NRT Portfolio', 'Acquired', '2024-09-30', 'Haleon', "Dr. Reddy's", 'Brand Portfolio Acquisition (ex-US global)', 'Nicotine (gum / lozenge / patch)', 'Consumer Health', 'Smoking Cessation / Nicotine Replacement', null, null, 'Nicorette / Kwit', null, 'Acute']),
 ];
 
 // Derived list of unique Buyers — these are the selectable "companies"

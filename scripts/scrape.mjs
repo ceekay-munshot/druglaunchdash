@@ -36,7 +36,7 @@ if (!FIRECRAWL_API_KEY) {
   process.exit(1);
 }
 
-// ── Companies to scrape (the 8 active ones) ──────────────────────
+// ── Companies to scrape (the 9 active ones) ──────────────────────
 const SOURCES = [
   { company: 'Mankind Pharma',     url: 'https://www.mankindpharma.com/media/press-release/' },
   { company: 'Eris Lifesciences',  url: 'https://eris.co.in/press-release/' },
@@ -46,6 +46,7 @@ const SOURCES = [
   { company: 'Corona Remedies',    url: 'https://www.coronaremedies.com/news/' },
   { company: 'Torrent Pharma',     url: 'https://www.torrentpharma.com/investors-media.html' },
   { company: 'Natco Pharma',       url: 'https://www.natcopharma.co.in/insights/news-and-announcements' },
+  { company: "Dr. Reddy's",        url: 'https://www.drreddys.com/newsroom/press-releases/' },
 ];
 
 // ── Schema Firecrawl is asked to populate per URL ───────────────────
