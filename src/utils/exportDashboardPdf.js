@@ -77,7 +77,9 @@ function fmtINRCr(crores) {
   return `Rs ${Math.round(crores).toLocaleString('en-IN')} Cr`;
 }
 
-// ───────────────────────────────────────────────────────────────────────────────────
+// ────────────
+// Cover page
+// ────────────
 function drawCover(pdf, ctx) {
   const { company, timelineLabel, generatedAt, kpis } = ctx;
 
@@ -198,9 +200,9 @@ function drawCover(pdf, ctx) {
   );
 }
 
-// ───────────────────────────────────────────────────────────────────────────────────
+// ────────────
 // Section page chrome (header + footer)
-// ───────────────────────────────────────────────────────────────────────────────────
+// ────────────
 function drawPageChrome(pdf, { title, subtitle, generatedAt, continuation }) {
   // Top accent.
   pdf.setFillColor(COL.green);
@@ -265,9 +267,9 @@ function drawPageNumber(pdf, pageNum, totalPages) {
   pdf.text(pageText, PAGE_W - MARGIN - ptw, PAGE_H - MARGIN - 6);
 }
 
-// ───────────────────────────────────────────────────────────────────────────────────
+// ────────────
 // Capture helpers
-// ───────────────────────────────────────────────────────────────────────────────────
+// ────────────
 
 // Pin the dashboard layout to its full desktop width and lift internal
 // scroll containers (data-pdf-scroller) for the duration of measurement +
@@ -360,9 +362,9 @@ async function captureSection(section) {
   });
 }
 
-// ───────────────────────────────────────────────────────────────────────────────────
+// ────────────
 // Slice composition (vertical strips for tall captured sections)
-// ───────────────────────────────────────────────────────────────────────────────────
+// ────────────
 
 // Slice a tall section's canvas into vertical strips that each fit one
 // page. Used for chart sections that exceed ~1.35× a page; the data
@@ -392,9 +394,9 @@ function makeSliceCanvas(src, sx, sy, sw, sh) {
   return out;
 }
 
-// ───────────────────────────────────────────────────────────────────────────────────
+// ────────────
 // Capture pipeline
-// ───────────────────────────────────────────────────────────────────────────────────
+// ────────────
 
 // Walk the dashboard sections in document order. Every section is
 // rasterised with html2canvas EXCEPT the Drug Launch Tracker table
@@ -540,9 +542,9 @@ function placePair(pdf, cap1, cap2) {
   });
 }
 
-// ───────────────────────────────────────────────────────────────────────────────────
+// ────────────
 // Public entry
-// ───────────────────────────────────────────────────────────────────────────────────
+// ────────────
 
 export async function exportDashboardPdf({ rows, allRows, company, timelineLabel, generatedAt }) {
   const sections = Array.from(document.querySelectorAll('[data-pdf-section]'));
