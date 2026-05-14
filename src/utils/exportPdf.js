@@ -169,26 +169,35 @@ function alignFor(col) {
   return 'left';
 }
 
-export async function exportPdf({
+// ── Shared table renderer ─────────────────────────────────────────────
+// Draws the Drug Launch Tracker as a jspdf-autotable into an EXISTING
+// jsPDF doc. Both the standalone table export (below) and the full-
+// dashboard PDF export call this, so the table reads identically in
+// both: all 17 columns sized to one landscape page width, rows
+// paginating vertically with the column header repeated on every page.
+//
+//   doc         — a jsPDF instance (landscape). unit may be 'mm' or 'pt'.
+//   tableWidth  — total width (in the doc's unit) the 17 columns scale
+//                 to fill. Omit to use the natural mm widths unchanged
+//                 (keeps the standalone export byte-identical).
+//   startY      — y at which the table starts on page 1 (doc units).
+//   margin      — autoTable margin object (doc units).
+//   unit        — 'mm' | 'pt'; scales cell padding + border widths so a
+//                 pt-based doc gets the same physical spacing as mm.
+//   didDrawPage — autoTable per-page hook; the caller draws page chrome.
+export async function drawTrackerTable(doc, {
   topLevelRows,
   childrenByKey,
-  fileName = 'drug_launch_tracker.pdf',
-  generatedAt = new Date(),
+  tableWidth,
+  startY,
+  margin,
+  unit = 'mm',
+  didDrawPage,
 }) {
-  // Lazy-load both libraries. jspdf-autotable v5 changed its API: the
-  // default export is a function `autoTable(doc, opts)` that applies the
-  // plugin per-call rather than attaching to the jsPDF prototype, so
-  // `doc.autoTable(...)` is undefined under modern bundlers.
-  const { default: jsPDF } = await import('jspdf');
+  // jspdf-autotable v5: the default export is a function
+  // `autoTable(doc, opts)` applied per-call, not attached to the jsPDF
+  // prototype — `doc.autoTable(...)` is undefined under modern bundlers.
   const { default: autoTable } = await import('jspdf-autotable');
-
-  const doc = new jsPDF({ orientation: 'landscape', unit: 'mm', format: 'a4' });
-  const pageWidth = doc.internal.pageSize.getWidth();
-  const pageHeight = doc.internal.pageSize.getHeight();
-  // 6mm side margins (was 10) so all 17 columns get enough horizontal
-  // breathing room without the right edge cropping. A4-printable area
-  // typically allows down to 5mm; 6 is conservative.
-  const marginX = 6;
 
   // Flatten parent + children into a single ordered list. Mirrors the
   // Excel export so both deliverables represent the same row sequence.
@@ -223,61 +232,35 @@ export async function exportPdf({
     })
   );
 
-  // Per-column style spec for autoTable (column widths + alignment).
+  // Columns scale proportionally to fill tableWidth. Omitting tableWidth
+  // keeps the natural mm spec unchanged.
+  const sumMm = COLUMN_ORDER.reduce((s, c) => s + (COLUMN_WIDTHS_MM[c] || 16), 0);
+  const widthScale = tableWidth ? tableWidth / sumMm : 1;
   const columnStyles = {};
   COLUMN_ORDER.forEach((col, i) => {
     columnStyles[i] = {
-      cellWidth: COLUMN_WIDTHS_MM[col] || 16,
+      cellWidth: (COLUMN_WIDTHS_MM[col] || 16) * widthScale,
       halign: alignFor(col),
     };
   });
 
-  // Title band — drawn once per page via the didDrawPage hook so it
-  // repeats automatically on continuation pages.
-  const drawHeader = () => {
-    doc.setFillColor(...C.teal50);
-    doc.rect(0, 0, pageWidth, 18, 'F');
-    doc.setTextColor(...C.teal700);
-    doc.setFont('helvetica', 'bold');
-    doc.setFontSize(15);
-    doc.text('Drug Launch Tracker — India Pharma', marginX, 10);
-    doc.setFont('helvetica', 'normal');
-    doc.setFontSize(8.5);
-    doc.setTextColor(...C.ink500);
-    const subtitle = `Generated ${generatedAt.toLocaleDateString('en-IN', {
-      year: 'numeric', month: 'short', day: '2-digit',
-    })}  ·  ${flat.length} row${flat.length === 1 ? '' : 's'}  ·  curated baseline + daily scrape`;
-    doc.text(subtitle, marginX, 15);
-  };
-
-  const drawFooter = (data) => {
-    const total = doc.internal.getNumberOfPages();
-    doc.setFontSize(7.5);
-    doc.setTextColor(...C.ink500);
-    doc.setFont('helvetica', 'normal');
-    doc.text(
-      'Source: company press releases · BSE / NSE filings · 1mg.com pricing',
-      marginX,
-      pageHeight - 5
-    );
-    const pageLabel = `Page ${data.pageNumber} of ${total}`;
-    const w = doc.getTextWidth(pageLabel);
-    doc.text(pageLabel, pageWidth - marginX - w, pageHeight - 5);
-  };
+  // Cell padding + border widths are authored in mm; scale them to the
+  // doc's unit so a pt-based doc gets the same physical spacing as mm.
+  const u = unit === 'pt' ? 72 / 25.4 : 1;
 
   autoTable(doc, {
     head,
     body,
-    startY: 22,
-    margin: { top: 22, right: marginX, bottom: 12, left: marginX },
+    startY,
+    margin,
     theme: 'grid',
     showHead: 'everyPage',
     styles: {
       font: 'helvetica',
       fontSize: 6.5,
-      cellPadding: { top: 1.5, right: 1, bottom: 1.5, left: 1 },
+      cellPadding: { top: 1.5 * u, right: 1 * u, bottom: 1.5 * u, left: 1 * u },
       lineColor: C.ink100,
-      lineWidth: 0.1,
+      lineWidth: 0.1 * u,
       textColor: C.ink700,
       overflow: 'linebreak',
       valign: 'middle',
@@ -289,7 +272,7 @@ export async function exportPdf({
       fontSize: 7,
       halign: 'center',
       lineColor: C.ink900,
-      cellPadding: { top: 2, right: 1, bottom: 2, left: 1 },
+      cellPadding: { top: 2 * u, right: 1 * u, bottom: 2 * u, left: 1 * u },
     },
     alternateRowStyles: { fillColor: C.bandRow },
     columnStyles,
@@ -334,6 +317,74 @@ export async function exportPdf({
         }
       }
     },
+    didDrawPage,
+  });
+}
+
+export async function exportPdf({
+  topLevelRows,
+  childrenByKey,
+  fileName = 'drug_launch_tracker.pdf',
+  generatedAt = new Date(),
+}) {
+  const { default: jsPDF } = await import('jspdf');
+
+  const doc = new jsPDF({ orientation: 'landscape', unit: 'mm', format: 'a4' });
+  const pageWidth = doc.internal.pageSize.getWidth();
+  const pageHeight = doc.internal.pageSize.getHeight();
+  // 6mm side margins (was 10) so all 17 columns get enough horizontal
+  // breathing room without the right edge cropping. A4-printable area
+  // typically allows down to 5mm; 6 is conservative.
+  const marginX = 6;
+
+  // Total row count (parent + children) for the header subtitle.
+  let rowCount = 0;
+  for (const r of topLevelRows) {
+    rowCount += 1;
+    if (isAcquisitionParent(r)) {
+      rowCount += (childrenByKey.get(acquisitionDealKey(r)) || []).length;
+    }
+  }
+
+  // Title band — drawn once per page via the didDrawPage hook so it
+  // repeats automatically on continuation pages.
+  const drawHeader = () => {
+    doc.setFillColor(...C.teal50);
+    doc.rect(0, 0, pageWidth, 18, 'F');
+    doc.setTextColor(...C.teal700);
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(15);
+    doc.text('Drug Launch Tracker — India Pharma', marginX, 10);
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(8.5);
+    doc.setTextColor(...C.ink500);
+    const subtitle = `Generated ${generatedAt.toLocaleDateString('en-IN', {
+      year: 'numeric', month: 'short', day: '2-digit',
+    })}  ·  ${rowCount} row${rowCount === 1 ? '' : 's'}  ·  curated baseline + daily scrape`;
+    doc.text(subtitle, marginX, 15);
+  };
+
+  const drawFooter = (data) => {
+    const total = doc.internal.getNumberOfPages();
+    doc.setFontSize(7.5);
+    doc.setTextColor(...C.ink500);
+    doc.setFont('helvetica', 'normal');
+    doc.text(
+      'Source: company press releases · BSE / NSE filings · 1mg.com pricing',
+      marginX,
+      pageHeight - 5
+    );
+    const pageLabel = `Page ${data.pageNumber} of ${total}`;
+    const w = doc.getTextWidth(pageLabel);
+    doc.text(pageLabel, pageWidth - marginX - w, pageHeight - 5);
+  };
+
+  await drawTrackerTable(doc, {
+    topLevelRows,
+    childrenByKey,
+    startY: 22,
+    margin: { top: 22, right: marginX, bottom: 12, left: marginX },
+    unit: 'mm',
     didDrawPage: (data) => {
       drawHeader();
       drawFooter(data);
