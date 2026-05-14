@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-13T04:32:50.874Z",
-  "rowCount": 42,
+  "generatedAt": "2026-05-14T04:31:16.006Z",
+  "rowCount": 46,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -288,13 +288,13 @@
       "dealType": "NCE Launch",
       "molecule": "molnupiravir",
       "therapy": "—",
-      "indication": "—",
+      "indication": "COVID-19",
       "existingBrand": "—",
-      "chronicAcute": "—",
+      "chronicAcute": "Acute",
       "price": "₹1357 / bottle of 40 capsules",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/11/Press-Release-Sun-Pharma-gearing-up-to-introduce-molnupiravir-under-the-brand-name-Molxvir%C2%AE-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-07T04:24:13.381Z"
+      "lastEnrichmentAttempt": "2026-05-14T04:30:39.789Z"
     },
     {
       "brand": "BromSite",
@@ -310,7 +310,7 @@
       "price": "null",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2020/12/Press-Release-Sun-Pharma-launches-first-branded-ophthalmic-product-Bromsite-in-USA.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-07T04:24:13.381Z"
+      "lastEnrichmentAttempt": "2026-05-14T04:30:49.788Z"
     },
     {
       "brand": "RYTSTAT",
@@ -663,6 +663,70 @@
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
       "lastEnrichmentAttempt": "2026-05-13T04:32:18.583Z"
+    },
+    {
+      "brand": "Molxvir (Molnupiravir)",
+      "launchType": "Own Launched",
+      "date": "2021-12-28",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "molnupiravir",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹1347 / bottle of 40 capsules",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/12/Press-Release-Sun-Pharma-receives-DCGI-approval-for-Molxvir-Molnupiravir-in-India.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-14T04:30:07.741Z"
+    },
+    {
+      "brand": "WINLEVI",
+      "launchType": "Acquired",
+      "date": "2021-08-31",
+      "seller": "Cassiopea",
+      "dealType": "Brand Acquisition",
+      "molecule": "clascoterone",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹21.3 / bottle of 30 ml syrup",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/08/Sun-Pharma-and-Cassiopea-announce-the-expiry-of-the-HSR-Act-process-and-the-successful-consummation-of-their-Winlevi®-agreement.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-14T04:30:07.741Z"
+    },
+    {
+      "brand": "Sovateltide (Tyvalzi)",
+      "launchType": "In-licensed",
+      "date": "2023-09-14",
+      "seller": "Pharmazz Inc.",
+      "dealType": "In-license (India)",
+      "molecule": "sovateltide",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹3978 / box of 3 vials",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/09/Press-Release-Sun-Pharma-and-Pharmazz-Inc.-licensing-agreement-for-Sovateltide-in-India.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-14T04:30:07.741Z"
+    },
+    {
+      "brand": "BromSite™",
+      "launchType": "Own Launched",
+      "date": "2016-11-28",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "bromfenac",
+      "therapy": "—",
+      "indication": "postoperative inflammation and prevention of ocular pain",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "http://www.sunpharma.com/",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-14T04:30:49.788Z"
     }
   ]
 }
