@@ -1003,6 +1003,10 @@ export const DEAL_VALUES = {
   "Dr. Reddy's|2006-03-01": 2712,           // Betapharm (Germany) — €480M (~Rs 2,712 Cr at 2006 rates)
   "Dr. Reddy's|2020-06-10": 1850,           // Wockhardt branded generics — 62 brands + Baddi plant
   "Dr. Reddy's|2024-09-30": 5250,           // Haleon Nicotinell / NRT — £500M / US$633M (~Rs 5,250 Cr)
+
+  // ── Lupin ──
+  'Lupin|2015-07-23': 5632,                 // Gavis Pharmaceuticals — $880M (~Rs 5,632 Cr at 2015 rates)
+  'Lupin|2017-10-01': 975,                  // Symbiomix Therapeutics — $150M (~Rs 975 Cr at 2017 rates)
 };
 
 // Fills DEAL_VALUE for parent rows and standalone-acquired rows whose
@@ -1069,6 +1073,10 @@ export const GEO_RIGHTS_BRAND_OVERRIDES = {
   'pomalidomide (gpomalyst — us)': 'US',
   // Dr. Reddy's US launch — US-market generic.
   'lenalidomide capsules (grevlimid — us)': 'US',
+  // Lupin US launches — US-market generics + specialty.
+  'solosec': 'US',
+  'mirabegron er (gmyrbetriq — us)': 'US',
+  'tolvaptan (gjynarque — us)': 'US',
 };
 
 // Pulls a parenthetical scope from a deal-type label like
@@ -1152,6 +1160,10 @@ export const REG_STATUS_BRAND_OVERRIDES = {
   'lenalidomide capsules (grevlimid — us)': 'US FDA Approved',
   // Glenmark in-licensed pipeline asset — not yet launched / filed in India.
   'trastuzumab rezetecan (hengrui adc)': 'In Development (India)',
+  // Lupin US launches — FDA-approved (Solosec is the marquee NCE via Symbiomix).
+  'solosec': 'US FDA Approved',
+  'mirabegron er (gmyrbetriq — us)': 'US FDA Approved',
+  'tolvaptan (gjynarque — us)': 'US FDA Approved',
 };
 
 function deriveRegStatus(row) {
@@ -1333,10 +1345,6 @@ export const LAUNCH_TRACKER_ROWS = [
 
   // ── Novartis Galvus perpetual licence (effective 01-Jan-2026, Rs 1,107 Cr) ──
   row(['Galvus / Galvus Met (perpetual licence)', 'In-licensed', '2026-01-01', 'Novartis Pharma AG', 'Cipla', 'Perpetual Trademark Licence', 'Vildagliptin (± Metformin)', 'Anti-Diabetic', 'Type 2 Diabetes (DPP-4 inhibitor)', null, null, 'Zomelis / Jalra', null, 'Chronic']),
-
-  // ─── Lupin — LIVE (lupin.com press releases) ───
-  // lupin.com "Lupin and Zydus Sign Licensing Agreement for Co-marketing Innovative Semaglutide Injection in India" (17-Mar-2026)
-  row(['Semanext / Livarise', 'In-licensed', '2026-03-17', 'Zydus Lifesciences', 'Lupin', 'Co-marketing', 'Semaglutide (innovative pen)', 'Anti-Diabetic', 'Type 2 Diabetes / Obesity', null, null, 'Semaglyn', null, 'Chronic']),
 
   // ─── Zydus Lifesciences — LIVE (zyduslife.com press releases) ───
   // zyduslife.com "Zydus launches world's first biosimilar of Nivolumab Tishtha in India" (22-Jan-2026)
@@ -1964,6 +1972,67 @@ export const LAUNCH_TRACKER_ROWS = [
   row(['Glempa + Glempa-L + Glempa-M', 'Own Launched', '2025-03-12', '—', 'Glenmark', 'Generic Launch', 'Empagliflozin (± Linagliptin / Metformin)', 'Anti-Diabetic', 'Type 2 Diabetes', null, null, 'Jardiance', null, 'Chronic']),
   // GLIPIQ — Business Standard — Glenmark launches semaglutide in India (21-Mar-2026)
   row(['GLIPIQ', 'Own Launched', '2026-03-21', '—', 'Glenmark', 'Generic Launch', 'Semaglutide', 'Anti-Diabetic', 'Type 2 Diabetes / Obesity', null, null, 'Rybelsus / Ozempic', null, 'Chronic']),
+
+  // ──────────────────────────────────────────────────────────────────────────
+  // Lupin — LIVE DATASET (deep-research edition)
+  // Sources: lupin.com press releases + investor filings, BSE / NSE filings,
+  // Business Standard / BusinessToday / GenEngNews / BioPharma Dive coverage,
+  // Eli Lilly + Boehringer Ingelheim press releases for the partnerships, FDA
+  // approval history for the US launches. Lupin is a Mumbai-based top-5 Indian
+  // pharma — the global leader in anti-TB, India's #3 in anti-diabetic, with a
+  // strong US generics + specialty (Solosec) book and active in / out-licensing
+  // with Boehringer Ingelheim and Eli Lilly. Older India engine-brand launch
+  // years are [est.] — exact launch dates are not publicly disclosed.
+  // ──────────────────────────────────────────────────────────────────────────
+
+  // ── India branded engine brands (Own Launched) — the Lupin India backbone ──
+  // Tonact (Atorvastatin) — Lupin's flagship statin [launch year est.]
+  row(['Tonact', 'Own Launched', '2003-01-01', '—', 'Lupin', 'Generic Launch', 'Atorvastatin (± Fenofibrate / Ezetimibe)', 'Cardiology', 'Dyslipidemia', null, null, 'Atorva / Storvas / Lipitor', null, 'Chronic']),
+  // Ramistar (Ramipril) — cardio ACE-inhibitor [launch year est.]
+  row(['Ramistar', 'Own Launched', '2004-01-01', '—', 'Lupin', 'Generic Launch', 'Ramipril (± Hydrochlorothiazide / Amlodipine)', 'Cardiology', 'Hypertension / CV Risk Reduction', null, null, 'Cardace / Hopace', null, 'Chronic']),
+  // Telista (Telmisartan) — cardio ARB [launch year est.]
+  row(['Telista', 'Own Launched', '2008-01-01', '—', 'Lupin', 'Generic Launch', 'Telmisartan (± Hydrochlorothiazide / Amlodipine)', 'Cardiology', 'Hypertension', null, null, 'Telma / Telsartan / Micardis', null, 'Chronic']),
+  // Gluconorm-G (Glimepiride + Metformin) — top-300 India brand; Lupin = India #3 in anti-diabetic [launch year est.]
+  row(['Gluconorm-G', 'Own Launched', '2005-01-01', '—', 'Lupin', 'Generic Launch', 'Glimepiride + Metformin (± Voglibose / Pioglitazone)', 'Anti-Diabetic', 'Type 2 Diabetes', null, null, 'Amaryl-M / Glimestar-M', null, 'Chronic']),
+  // Lupisulin (Human Insulin range) — Lupin's own recombinant human insulin franchise [launch year est.]
+  row(['Lupisulin', 'Own Launched', '2007-01-01', '—', 'Lupin', 'Generic Launch', 'Recombinant Human Insulin (R / NPH / 30-70 / 50-50)', 'Anti-Diabetic', 'Type 1 / Type 2 Diabetes', null, null, 'Huminsulin / Actrapid / Insugen', null, 'Chronic']),
+  // Akurit / Akurit-4 (FDC anti-TB) — Lupin is the GLOBAL leader in anti-TB [launch year est.]
+  row(['Akurit / Akurit-4', 'Own Launched', '2000-01-01', '—', 'Lupin', 'Generic Launch', 'Rifampicin + Isoniazid + Pyrazinamide + Ethambutol (4-FDC) / DOTS variants', 'Anti-TB', 'Drug-Sensitive Tuberculosis', null, null, 'R-Cinex / Combutol', null, 'Chronic']),
+  // R-Cinex (Rifampicin + Isoniazid) — long-standing anti-TB continuation-phase FDC [launch year est.]
+  row(['R-Cinex', 'Own Launched', '1995-01-01', '—', 'Lupin', 'Generic Launch', 'Rifampicin + Isoniazid', 'Anti-TB', 'Tuberculosis (continuation phase)', null, null, 'Akurit / Rcin', null, 'Chronic']),
+  // Budamate (Budesonide + Formoterol DPI) — Lupin's respiratory FDC inhaler [launch year est.]
+  row(['Budamate', 'Own Launched', '2010-01-01', '—', 'Lupin', 'Generic Launch', 'Budesonide + Formoterol (DPI inhaler)', 'Respiratory', 'Asthma / COPD', null, null, 'Foracort / Symbicort', null, 'Chronic']),
+
+  // ── Recent India launch (Own Launched) ──
+  // RaniEyes — first India ranibizumab biosimilar; for AMD / DME (2022)
+  row(['RaniEyes', 'Own Launched', '2022-01-01', '—', 'Lupin', 'Biosimilar Launch', 'Ranibizumab (biosimilar)', 'Ophthalmology', 'Age-related Macular Degeneration / DME', null, null, 'Lucentis / Razumab', null, 'Chronic']),
+
+  // ── India in-licensing ──
+  // ONDERO + ONDERO MET (Linagliptin) — Lupin & Boehringer Ingelheim co-marketing agreement (14-Oct-2015)
+  row(['ONDERO + ONDERO MET', 'In-licensed', '2015-10-14', 'Boehringer Ingelheim India', 'Lupin', 'Co-marketing (India)', 'Linagliptin (± Metformin)', 'Anti-Diabetic', 'Type 2 Diabetes (DPP-4)', null, null, 'Trajenta / Trajenta Duo', null, 'Chronic']),
+  // Semanext / Livarise — lupin.com — Lupin + Zydus co-marketing for innovative semaglutide pen (17-Mar-2026)
+  row(['Semanext / Livarise', 'In-licensed', '2026-03-17', 'Zydus Lifesciences', 'Lupin', 'Co-marketing', 'Semaglutide (innovative pen)', 'Anti-Diabetic', 'Type 2 Diabetes / Obesity', null, null, 'Semaglyn', null, 'Chronic']),
+
+  // ── US launches (Own Launched) ──
+  // Solosec (Secnidazole) — Lupin's marquee US specialty asset (via Symbiomix); FDA approved 15-Sep-2017
+  row(['Solosec', 'Own Launched', '2017-09-15', '—', 'Lupin', 'NCE Launch (US)', 'Secnidazole 2g granules', "Women's Health", 'Bacterial Vaginosis / Trichomoniasis', null, null, 'Tindamax / Flagyl', null, 'Acute']),
+  // Mirabegron ER (gMyrbetriq) — Lupin press release — 25 mg launch 22-Apr-2024 (50 mg Sep-2024); US$1.6B market
+  row(['Mirabegron ER (gMyrbetriq — US)', 'Own Launched', '2024-04-22', '—', 'Lupin', 'Generic Launch (US)', 'Mirabegron Extended-Release', 'Urology', 'Overactive Bladder (OAB)', null, null, 'Myrbetriq', null, 'Chronic']),
+  // Tolvaptan (gJynarque) — Lupin press release — May-2025 US launch with 180-day first-to-market exclusivity
+  row(['Tolvaptan (gJynarque — US)', 'Own Launched', '2025-05-01', '—', 'Lupin', 'Generic Launch (US)', 'Tolvaptan', 'Nephrology', 'Autosomal Dominant Polycystic Kidney Disease (ADPKD)', null, null, 'Jynarque / Samsca', null, 'Chronic']),
+
+  // ── Acquisitions ──
+  // Gavis Pharmaceuticals — Jul-2015 announcement, ~$880M; then the biggest overseas pharma deal by an
+  // Indian company; brought a US manufacturing plant + 66 pending ANDAs + Novel Laboratories
+  row(['Gavis Pharmaceuticals (US)', 'Acquired', '2015-07-23', 'Gavis / Novel Laboratories', 'Lupin', 'Company Acquisition (US)', 'Various (US generics — 66 ANDAs + niche dosage forms)', 'Multi-therapy', 'Multi-indication (US generics)', null, null, 'Various', null, 'Chronic']),
+  // Symbiomix Therapeutics — Oct-2017, ~$150M; brought Solosec + the reproductive-infection portfolio
+  row(['Symbiomix Therapeutics (US)', 'Acquired', '2017-10-01', 'Symbiomix Therapeutics shareholders', 'Lupin', 'Company Acquisition (US)', 'Secnidazole (Solosec) + reproductive-infection portfolio', "Women's Health", 'Bacterial Vaginosis / Reproductive Infections', null, null, 'Various', null, 'Acute']),
+  // Boehringer Ingelheim trademarks — 13-Dec-2024; Lupin acquires GIBTULIO / GIBTULIO MET / AJADUO
+  // empagliflozin franchise outright (co-marketed since 2016 / 2018)
+  row(['GIBTULIO + GIBTULIO MET + AJADUO', 'Acquired', '2024-12-13', 'Boehringer Ingelheim International', 'Lupin', 'Brand Portfolio Acquisition (India)', 'Empagliflozin (± Metformin / Linagliptin)', 'Anti-Diabetic', 'Type 2 Diabetes (SGLT2)', null, null, 'Jardiance / Glempa / Empanorm', null, 'Chronic']),
+  // Huminsulin — Dec-2024; Lupin acquires Eli Lilly's recombinant human insulin range for India after
+  // years of distribution + promotion
+  row(['Huminsulin', 'Acquired', '2024-12-30', 'Eli Lilly and Company', 'Lupin', 'Brand Acquisition (India)', 'Recombinant Human Insulin (R / NPH / 30-70 / 50-50)', 'Anti-Diabetic', 'Type 1 / Type 2 Diabetes', null, null, 'Lupisulin / Actrapid', null, 'Chronic']),
 ];
 
 // Derived list of unique Buyers — these are the selectable "companies"

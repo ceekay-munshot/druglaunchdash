@@ -59,6 +59,7 @@ const DEFAULT_ACTIVE_COMPANIES = [
   'Natco Pharma',
   "Dr. Reddy's",
   'Glenmark',
+  'Lupin',
 ];
 
 const ARCHIVE_STORAGE_KEY = 'dlt.archivedCompanies.v1';
