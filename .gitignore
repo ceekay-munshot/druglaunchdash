@@ -7,3 +7,8 @@ dist-ssr
 .idea
 .vscode
 *.log
+
+# Subscription-only research PDFs (e.g. IIFL Capital Services). Their data
+# is extracted into src/data/ipmReport.js; the source PDFs themselves
+# should not live in the repo.
+*.pdf
