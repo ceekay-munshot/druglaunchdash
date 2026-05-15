@@ -48,7 +48,10 @@ function computeCompanyMetrics(rows) {
   const therapyCounts = new Map();
   brandRows.forEach((r) => {
     const t = r[COLUMN_KEYS.THERAPY];
-    if (!t) return;
+    // Skip rows that have no real therapy value — the em-dash / hyphen
+    // sentinels come in via scraped stub rows and shouldn't be ranked
+    // alongside actual therapy areas.
+    if (!t || t === '—' || t === '-') return;
     therapyCounts.set(t, (therapyCounts.get(t) || 0) + 1);
   });
   const therapyEntries = [...therapyCounts.entries()].sort((a, b) => b[1] - a[1]);
@@ -88,12 +91,13 @@ function StackedMix({ acquired, own, inLic, total }) {
   const pa = (acquired / total) * 100;
   const po = (own / total) * 100;
   const pi = (inLic / total) * 100;
-  // Build a plain-English summary, dropping zero-count buckets so the line
-  // doesn't get padded with "0 own · 0 in-licensed" noise.
+  // Compact one-line summary — dropping zero-count buckets and using the
+  // short Acq / Own / InL labels matches the row's subtitle and keeps the
+  // line from wrapping in narrow columns.
   const parts = [];
-  if (acquired) parts.push(`${acquired} acquired`);
-  if (own) parts.push(`${own} own`);
-  if (inLic) parts.push(`${inLic} in-licensed`);
+  if (acquired) parts.push(`Acq ${acquired}`);
+  if (own) parts.push(`Own ${own}`);
+  if (inLic) parts.push(`InL ${inLic}`);
   return (
     <div>
       <div className="flex h-2 rounded-full overflow-hidden bg-ink-100">
@@ -101,7 +105,9 @@ function StackedMix({ acquired, own, inLic, total }) {
         <div style={{ width: `${po}%` }} className="bg-pharma-500" title={`${own} own launched`} />
         <div style={{ width: `${pi}%` }} className="bg-pharma-300" title={`${inLic} in-licensed`} />
       </div>
-      <div className="text-[10px] text-ink-500 mt-1.5 leading-snug">{parts.join(' · ')}</div>
+      <div className="text-[10px] text-ink-500 mt-1.5 tabular-nums whitespace-nowrap">
+        {parts.join(' · ')}
+      </div>
     </div>
   );
 }
@@ -184,11 +190,11 @@ export default function PeerBenchmark({ rows, companies }) {
         <table className="w-full text-sm border-separate border-spacing-0">
           <thead>
             <tr>
-              <th className="text-left text-[10px] uppercase tracking-wider text-ink-500 font-semibold py-2 pr-4 w-[180px] border-b border-ink-100" />
+              <th className="text-left text-[10px] uppercase tracking-wider text-ink-500 font-semibold py-2 pr-4 w-[180px] border-b border-ink-100 sticky left-0 z-10 bg-white border-r border-ink-100" />
               {perCompany.map((c) => (
                 <th
                   key={c.name}
-                  className={`text-center px-3 py-2 border-b border-ink-100 ${
+                  className={`text-center px-3 py-2 border-b border-ink-100 min-w-[150px] ${
                     c.name === bestLaunches ? 'bg-pharma-50/70' : ''
                   }`}
                 >
@@ -207,7 +213,7 @@ export default function PeerBenchmark({ rows, companies }) {
           </thead>
           <tbody>
             <tr>
-              <td className="py-2.5 pr-4 text-[11px] uppercase tracking-wider text-ink-500 font-semibold border-b border-ink-100/60">
+              <td className="py-2.5 pr-4 text-[11px] uppercase tracking-wider text-ink-500 font-semibold border-b border-ink-100/60 sticky left-0 z-10 bg-white border-r border-ink-100/60">
                 Strategy mix
                 <div className="text-[10px] normal-case tracking-normal text-ink-400 font-normal mt-0.5">
                   Acq / Own / In-lic
@@ -226,7 +232,7 @@ export default function PeerBenchmark({ rows, companies }) {
             </tr>
 
             <tr>
-              <td className="py-2.5 pr-4 text-[11px] uppercase tracking-wider text-ink-500 font-semibold border-b border-ink-100/60">
+              <td className="py-2.5 pr-4 text-[11px] uppercase tracking-wider text-ink-500 font-semibold border-b border-ink-100/60 sticky left-0 z-10 bg-white border-r border-ink-100/60">
                 Chronic share
               </td>
               {perCompany.map((c) => (
@@ -251,14 +257,17 @@ export default function PeerBenchmark({ rows, companies }) {
             </tr>
 
             <tr>
-              <td className="py-2.5 pr-4 text-[11px] uppercase tracking-wider text-ink-500 font-semibold border-b border-ink-100/60">
+              <td className="py-2.5 pr-4 text-[11px] uppercase tracking-wider text-ink-500 font-semibold border-b border-ink-100/60 sticky left-0 z-10 bg-white border-r border-ink-100/60">
                 Top therapy
               </td>
               {perCompany.map((c) => (
                 <td key={c.name} className="px-3 py-2.5 text-center align-middle border-b border-ink-100/60">
                   {c.metrics.topTherapy ? (
                     <div>
-                      <div className="text-xs font-semibold text-ink-900 truncate">
+                      <div
+                        className="text-xs font-semibold text-ink-900 truncate max-w-[140px] mx-auto"
+                        title={c.metrics.topTherapy.name}
+                      >
                         {c.metrics.topTherapy.name}
                       </div>
                       <div className="text-[10px] text-ink-500 mt-0.5 tabular-nums">
@@ -273,7 +282,7 @@ export default function PeerBenchmark({ rows, companies }) {
             </tr>
 
             <tr>
-              <td className="py-2.5 pr-4 text-[11px] uppercase tracking-wider text-ink-500 font-semibold border-b border-ink-100/60">
+              <td className="py-2.5 pr-4 text-[11px] uppercase tracking-wider text-ink-500 font-semibold border-b border-ink-100/60 sticky left-0 z-10 bg-white border-r border-ink-100/60">
                 Deal velocity
                 <div className="text-[10px] normal-case tracking-normal text-ink-400 font-normal mt-0.5">
                   Last 12mo · peer median {peerMedian}
@@ -321,14 +330,17 @@ export default function PeerBenchmark({ rows, companies }) {
             </tr>
 
             <tr>
-              <td className="py-2.5 pr-4 text-[11px] uppercase tracking-wider text-ink-500 font-semibold border-b border-ink-100/60">
+              <td className="py-2.5 pr-4 text-[11px] uppercase tracking-wider text-ink-500 font-semibold border-b border-ink-100/60 sticky left-0 z-10 bg-white border-r border-ink-100/60">
                 Top counterparty
               </td>
               {perCompany.map((c) => (
                 <td key={c.name} className="px-3 py-2.5 text-center align-middle border-b border-ink-100/60">
                   {c.metrics.topCounterparty ? (
                     <div>
-                      <div className="text-xs font-semibold text-ink-900 truncate">
+                      <div
+                        className="text-xs font-semibold text-ink-900 truncate max-w-[140px] mx-auto"
+                        title={c.metrics.topCounterparty.name}
+                      >
                         {c.metrics.topCounterparty.name}
                       </div>
                       <div className="text-[10px] text-ink-500 mt-0.5 tabular-nums">
