@@ -205,16 +205,64 @@ export function isJunkScrapedRow(raw) {
 // Scraped rows that match isJunkScrapedRow() are dropped before merging so
 // historical scrape-output that's still sitting in launches.json can't leak
 // junk into the rendered dashboard.
+//
+// Second-pass dedup (scraped rows only): the LLM occasionally extracts the
+// same press release twice with slightly different fields — one pass gets the
+// real counterparty name in seller, another pass leaves it as "—". Those
+// arrive as two scraped rows that share brand+date+buyer but differ on
+// seller, so the first-pass rowKey treats them as distinct. We collapse them:
+// inside each (brand+date+buyer) group of scraped rows, drop entries whose
+// seller is the em-dash / hyphen placeholder when a sibling has a real
+// seller; if every sibling has a placeholder, keep the first and drop the
+// rest. Never touches baseline rows.
 export function mergeLaunchRows(baseline, scrapedRaw) {
   if (!Array.isArray(scrapedRaw) || scrapedRaw.length === 0) return baseline;
   const baselineKeys = new Set(baseline.map(rowKey));
   const scraped = scrapedRaw.filter((r) => !isJunkScrapedRow(r)).map(fromScrapedRow);
-  const unique = scraped.filter((r) => {
+
+  // First pass: drop scraped rows that key-collide with baseline.
+  const candidates = [];
+  for (const r of scraped) {
     const k = rowKey(r);
-    if (baselineKeys.has(k)) return false;
+    if (baselineKeys.has(k)) continue;
     baselineKeys.add(k);
-    return true;
+    candidates.push(r);
+  }
+
+  // Second pass: collapse scraped duplicates that differ only in seller.
+  const isBlankSeller = (v) =>
+    v == null || v === '—' || v === '-' || String(v).trim() === '';
+  const brandDateBuyerKey = (r) =>
+    [
+      String(r[COLUMN_KEYS.BRAND] ?? '').trim().toLowerCase(),
+      String(r[COLUMN_KEYS.DATE] ?? '').trim(),
+      String(r[COLUMN_KEYS.BUYER] ?? '').trim().toLowerCase(),
+    ].join('|');
+  const groups = new Map();
+  candidates.forEach((r, i) => {
+    const k = brandDateBuyerKey(r);
+    const arr = groups.get(k);
+    if (arr) arr.push(i);
+    else groups.set(k, [i]);
   });
+  const drop = new Set();
+  for (const indices of groups.values()) {
+    if (indices.length <= 1) continue;
+    const hasReal = indices.some(
+      (i) => !isBlankSeller(candidates[i][COLUMN_KEYS.SELLER])
+    );
+    if (hasReal) {
+      // Drop placeholder-seller rows; keep the ones with real counterparty names.
+      for (const i of indices) {
+        if (isBlankSeller(candidates[i][COLUMN_KEYS.SELLER])) drop.add(i);
+      }
+    } else {
+      // Every sibling has a placeholder seller — keep the first, drop the rest.
+      for (let j = 1; j < indices.length; j++) drop.add(indices[j]);
+    }
+  }
+  const unique = candidates.filter((_, i) => !drop.has(i));
+
   return [...baseline, ...unique];
 }
 
