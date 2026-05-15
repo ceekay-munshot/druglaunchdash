@@ -1150,6 +1150,8 @@ export const REG_STATUS_BRAND_OVERRIDES = {
   'pomalidomide (gpomalyst — us)': 'US FDA Approved',
   // Dr. Reddy's US launch — FDA-approved generic.
   'lenalidomide capsules (grevlimid — us)': 'US FDA Approved',
+  // Glenmark in-licensed pipeline asset — not yet launched / filed in India.
+  'trastuzumab rezetecan (hengrui adc)': 'In Development (India)',
 };
 
 function deriveRegStatus(row) {
@@ -1413,12 +1415,6 @@ export const LAUNCH_TRACKER_ROWS = [
   // torrentpharma.com press release + BSE filing — Semalix (India's first generic oral semaglutide) + Sembolic (injectable, co-marketed with Zydus starting Rs 3,999/month)
   row(['Semalix', 'Own Launched', '2026-03-21', '—', 'Torrent Pharma', 'Generic Launch', 'Semaglutide (oral — India-first generic)', 'Anti-Diabetic', 'Type 2 Diabetes', null, null, 'Rybelsus', null, 'Chronic']),
   row(['Sembolic', 'In-licensed', '2026-03-21', 'Zydus Lifesciences', 'Torrent Pharma', 'Co-marketing', 'Semaglutide (injectable pen)', 'Anti-Diabetic', 'Type 2 Diabetes / Obesity', null, null, 'Ozempic / Semaglyn', null, 'Chronic']),
-
-  // ─── Glenmark — LIVE (glenmarkpharma.com press releases) ───
-  // Business Standard "Glenmark launches Empagliflozin for diabetes in India under Glempa brand" (12-Mar-2025)
-  row(['Glempa + Glempa-L + Glempa-M', 'Own Launched', '2025-03-12', '—', 'Glenmark', 'Generic Launch', 'Empagliflozin (± Linagliptin / Metformin)', 'Anti-Diabetic', 'Type 2 Diabetes', null, null, 'Jardiance', null, 'Chronic']),
-  // Business Standard "Glenmark Pharma launches GLIPIQ (semaglutide) in India" (21-Mar-2026)
-  row(['GLIPIQ', 'Own Launched', '2026-03-21', '—', 'Glenmark', 'Generic Launch', 'Semaglutide', 'Anti-Diabetic', 'Type 2 Diabetes / Obesity', null, null, 'Rybelsus / Ozempic', null, 'Chronic']),
 
   // ──────────────────────────────────────────────────────────────────────────
   // Alkem Laboratories — EXPANDED LIVE DATASET (deep-research edition)
@@ -1906,6 +1902,68 @@ export const LAUNCH_TRACKER_ROWS = [
   row(['Biovac', 'Acquired', '2020-06-10', 'Wockhardt', "Dr. Reddy's", 'Brand Acquisition', 'Hepatitis A Vaccine', 'Vaccines', 'Hepatitis A Prevention', null, null, 'Havrix / Avaxim', null, 'Acute']),
   // Haleon Nicotinell / NRT — completed 30-Sep-2024; ~£500M (US$633M); ex-US nicotine-replacement portfolio
   row(['Haleon Nicotinell / NRT Portfolio', 'Acquired', '2024-09-30', 'Haleon', "Dr. Reddy's", 'Brand Portfolio Acquisition (ex-US global)', 'Nicotine (gum / lozenge / patch)', 'Consumer Health', 'Smoking Cessation / Nicotine Replacement', null, null, 'Nicorette / Kwit', null, 'Acute']),
+
+  // ──────────────────────────────────────────────────────────────────────────
+  // Glenmark Pharmaceuticals — LIVE DATASET (deep-research edition)
+  // Sources: glenmarkpharma.com press releases + investor filings, BSE / NSE
+  // filings, Business Standard / BusinessToday / Fierce Pharma / PR Newswire
+  // coverage, SaNOtize / BeiGene / Hengrui press releases for the partnerships,
+  // generic-pharmacy listings for pricing. Glenmark is a Mumbai-based
+  // respiratory / dermatology / cardio-metabolic leader with a strong
+  // innovation + in/out-licensing streak (first-in-world Remogliflozin, the
+  // SaNOtize and BeiGene / Hengrui in-licences, the AbbVie ISB 2001 out-licence).
+  // Growth has been organic + licensing-driven, not acquisition-driven — hence
+  // no acquisition rows. Older India engine-brand launch years are [est.].
+  // ──────────────────────────────────────────────────────────────────────────
+
+  // ── India branded engine brands (Own Launched) — the Glenmark India backbone ──
+  // Ascoril — Glenmark's flagship respiratory brand, India's top cough-syrup franchise [launch year est.]
+  row(['Ascoril', 'Own Launched', '1998-01-01', '—', 'Glenmark', 'Generic Launch', 'Bromhexine + Guaifenesin + Terbutaline + Menthol (± Salbutamol)', 'Respiratory', 'Productive Cough / Bronchospasm', null, null, 'Grilinctus / Bro-Zedex / Chericof', null, 'Acute']),
+  // Alex — long-running Glenmark cough range [launch year est.]
+  row(['Alex', 'Own Launched', '2000-01-01', '—', 'Glenmark', 'Generic Launch', 'Phenylephrine + Chlorpheniramine + Dextromethorphan (cough range)', 'Respiratory', 'Dry / Allergic Cough', null, null, 'Benadryl / Corex', null, 'Acute']),
+  // Telma — Glenmark's leading cardiology brand (telmisartan franchise) [launch year est.]
+  row(['Telma', 'Own Launched', '2007-01-01', '—', 'Glenmark', 'Generic Launch', 'Telmisartan (± Hydrochlorothiazide / Amlodipine / Cilnidipine / Metoprolol)', 'Cardiology', 'Hypertension', null, null, 'Telsartan / Telvas / Micardis', null, 'Chronic']),
+  // Candid — Glenmark's flagship antifungal; the company leads the India antifungal segment [launch year est.]
+  row(['Candid', 'Own Launched', '1995-01-01', '—', 'Glenmark', 'Generic Launch', 'Clotrimazole (± Beclomethasone — Candid-B)', 'Dermatology', 'Fungal Skin Infections / Candidiasis', null, null, 'Canesten / Surfaz', null, 'Acute']),
+  // Momate — top topical-corticosteroid brand [launch year est.]
+  row(['Momate', 'Own Launched', '2004-01-01', '—', 'Glenmark', 'Generic Launch', 'Mometasone Furoate', 'Dermatology', 'Eczema / Psoriasis / Inflammatory Dermatoses', null, null, 'Elocon / Momecon', null, 'Chronic']),
+  // Zita — teneligliptin franchise; Glenmark was an India teneligliptin pioneer [launch year est.]
+  row(['Zita / Zita-Plus', 'Own Launched', '2015-01-01', '—', 'Glenmark', 'Generic Launch', 'Teneligliptin (± Metformin)', 'Anti-Diabetic', 'Type 2 Diabetes', null, null, 'Tenepure / Teneza / Dynaglipt', null, 'Chronic']),
+
+  // ── Innovation-led India launches (Own Launched) ──
+  // Remogliflozin (Remo / Remozen) — PR Newswire — Glenmark was the FIRST in the world to
+  // commercialise remogliflozin (May-2019); India was the first country to get the SGLT2 inhibitor
+  row(['Remo / Remozen', 'Own Launched', '2019-05-01', '—', 'Glenmark', 'NCE Launch (first-in-world)', 'Remogliflozin Etabonate (± Vildagliptin / Metformin)', 'Anti-Diabetic', 'Type 2 Diabetes', null, null, 'Jardiance / Forxiga (SGLT2 class)', null, 'Chronic']),
+  // Ryaltris-AZ — PR Newswire — Glenmark-developed olopatadine+mometasone FDC nasal spray, launched
+  // in India 03-May-2021 at Rs 175/pack (~52% below the top-10 average)
+  row(['Ryaltris-AZ', 'Own Launched', '2021-05-03', '—', 'Glenmark', 'Novel FDC Launch (India)', 'Olopatadine + Mometasone Furoate (nasal spray)', 'Respiratory', 'Moderate-Severe Allergic Rhinitis', null, null, 'Duonase / Momeflo', null, 'Chronic', '₹175 / pack (75 metered doses)']),
+  // Sacu V — Business Standard — Glenmark launches generic Sacubitril+Valsartan in India (17-Jan-2023)
+  row(['Sacu V', 'Own Launched', '2023-01-17', '—', 'Glenmark', 'Generic Launch', 'Sacubitril + Valsartan', 'Cardiology', 'Chronic Heart Failure (HFrEF)', null, null, 'Entresto / Vymada / Azmarda', null, 'Chronic', '₹19–45 / tablet (50 / 100 / 200 mg)']),
+  // Lirafit — PR Newswire — Glenmark is the FIRST to launch a liraglutide biosimilar in India
+  // (03-Jan-2024), cutting therapy cost ~70%
+  row(['Lirafit', 'Own Launched', '2024-01-03', '—', 'Glenmark', 'Biosimilar Launch', 'Liraglutide (biosimilar)', 'Anti-Diabetic', 'Type 2 Diabetes / Chronic Weight Management', null, null, 'Victoza / Saxenda', null, 'Chronic']),
+
+  // ── COVID-19 portfolio ──
+  // FabiFlu — Business Standard — first oral favipiravir approved in India for mild-moderate COVID-19
+  // (launched 20-Jun-2020 at Rs 103/tablet)
+  row(['FabiFlu', 'Own Launched', '2020-06-20', '—', 'Glenmark', 'Generic Launch', 'Favipiravir', 'Anti-Infectives', 'Mild-Moderate COVID-19', null, null, 'Coviflu / Favipira', null, 'Acute', '₹103 / tablet (400 mg, at launch)']),
+  // FabiSpray — PR Newswire — Nitric Oxide Nasal Spray in-licensed from SaNOtize (partnership
+  // Jul-2021); DCGI accelerated approval, launched Feb-2022
+  row(['FabiSpray', 'In-licensed', '2022-02-01', 'SaNOtize', 'Glenmark', 'In-license (India + Asia)', 'Nitric Oxide Nasal Spray (NONS)', 'Anti-Infectives', 'Mild COVID-19 (upper-airway viral load)', null, null, '—', null, 'Acute']),
+
+  // ── Oncology in-licensing ──
+  // BeiGene — PR Newswire — Glenmark Specialty exclusive marketing & distribution agreement to
+  // register and commercialise BeiGene's oncology medicines in India (21-May-2024)
+  row(['Tislelizumab + Zanubrutinib (BeiGene)', 'In-licensed', '2024-05-21', 'BeiGene', 'Glenmark', 'In-license (India)', 'Tislelizumab (anti-PD-1) + Zanubrutinib (BTK inhibitor)', 'Oncology', 'Solid Tumours / B-cell Malignancies', null, null, 'Keytruda / Imbruvica', null, 'Chronic']),
+  // Trastuzumab Rezetecan — Fierce Pharma — Glenmark in-licenses Hengrui's anti-HER2 ADC for India +
+  // select emerging markets; $18M upfront, up to $1.1B milestones (Sep-2025) — pipeline asset
+  row(['Trastuzumab Rezetecan (Hengrui ADC)', 'In-licensed', '2025-09-01', 'Jiangsu Hengrui Pharma', 'Glenmark', 'In-license (India + emerging markets)', 'Trastuzumab Rezetecan (anti-HER2 antibody-drug conjugate)', 'Oncology', 'HER2-expressing Solid Tumours', null, null, 'Enhertu', null, 'Chronic']),
+
+  // ── Recent metabolic launches ──
+  // Glempa — Business Standard — Glenmark launches generic empagliflozin in India (12-Mar-2025)
+  row(['Glempa + Glempa-L + Glempa-M', 'Own Launched', '2025-03-12', '—', 'Glenmark', 'Generic Launch', 'Empagliflozin (± Linagliptin / Metformin)', 'Anti-Diabetic', 'Type 2 Diabetes', null, null, 'Jardiance', null, 'Chronic']),
+  // GLIPIQ — Business Standard — Glenmark launches semaglutide in India (21-Mar-2026)
+  row(['GLIPIQ', 'Own Launched', '2026-03-21', '—', 'Glenmark', 'Generic Launch', 'Semaglutide', 'Anti-Diabetic', 'Type 2 Diabetes / Obesity', null, null, 'Rybelsus / Ozempic', null, 'Chronic']),
 ];
 
 // Derived list of unique Buyers — these are the selectable "companies"
