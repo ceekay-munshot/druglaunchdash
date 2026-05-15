@@ -72,6 +72,18 @@ const row = (vals) => ({
   [COLUMN_KEYS.PRICING]: vals[14] ?? null,
 });
 
+// Canonicalise common scraper case-variants for therapy strings — keeps the
+// therapy ranking + chart buckets consistent (without this, "Anti-diabetic"
+// from a Lupin US press release would group separately from "Anti-Diabetic").
+// Extend as new variants appear.
+const THERAPY_ALIASES = {
+  'anti-diabetic': 'Anti-Diabetic',
+};
+function normaliseTherapy(t) {
+  if (!t || typeof t !== 'string') return t;
+  return THERAPY_ALIASES[t.toLowerCase().trim()] ?? t;
+}
+
 // Maps a scraped row (camelCase keys, see scripts/scrape.mjs schema) into the
 // internal column-label shape used by the whole dashboard.
 export function fromScrapedRow(r) {
@@ -86,7 +98,7 @@ export function fromScrapedRow(r) {
     [COLUMN_KEYS.REG_STATUS]: r.regStatus ?? null,
     [COLUMN_KEYS.MOLECULE]: r.molecule ?? '',
     [COLUMN_KEYS.PRICING]: r.price ?? null,
-    [COLUMN_KEYS.THERAPY]: r.therapy ?? '',
+    [COLUMN_KEYS.THERAPY]: normaliseTherapy(r.therapy ?? ''),
     [COLUMN_KEYS.INDICATION]: r.indication ?? '',
     [COLUMN_KEYS.MARKET_SIZE]: r.marketSize ?? null,
     [COLUMN_KEYS.DEAL_VALUE]: r.dealValue ?? null,
