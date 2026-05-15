@@ -160,83 +160,135 @@ function MarketPulse() {
 
 // ── Scene 2 — Scoreboard ────────────────────────────────────────────────────
 function Scoreboard() {
-  const ranked = useMemo(
-    () => [...COMPANIES].sort((a, b) => b.compositeFY22_26 - a.compositeFY22_26),
+  // This-year ranking (FY22-26), sorted by composite score desc.
+  const fy26Ranked = useMemo(
+    () =>
+      [...COMPANIES]
+        .sort((a, b) => b.compositeFY22_26 - a.compositeFY22_26 || a.short.localeCompare(b.short))
+        .map((c, i) => ({ ...c, fy26Rank: i + 1 })),
     []
   );
 
-  const tier = (score) =>
-    score >= 65 ? 'top'
-    : score >= 45 ? 'mid'
-    : 'bottom';
+  // Last-year ranking (FY23-25) — only across companies that had a previous score.
+  // Torrent+JB merged didn't exist; Emcure wasn't in last year's analysis.
+  const fy25RankByName = useMemo(() => {
+    const previous = COMPANIES.filter((c) => c.compositeFY23_25 != null);
+    const sorted = [...previous].sort(
+      (a, b) => b.compositeFY23_25 - a.compositeFY23_25 || a.short.localeCompare(b.short)
+    );
+    const m = new Map();
+    sorted.forEach((c, i) => m.set(c.name, i + 1));
+    return m;
+  }, []);
 
-  const tierColor = {
-    top: 'bg-pharma-500',
-    mid: 'bg-ink-300',
-    bottom: 'bg-rose-400',
-  };
-  const tierRow = {
-    top: 'bg-pharma-50/30',
-    mid: '',
-    bottom: 'bg-rose-50/30',
-  };
+  // Tier tint — left-border accent + soft row background, no abstract score bar.
+  const tierTint = (score) =>
+    score >= 65 ? 'bg-pharma-50/40 border-l-2 border-pharma-400'
+    : score >= 45 ? 'border-l-2 border-ink-200'
+    : 'bg-rose-50/30 border-l-2 border-rose-300';
 
   return (
     <Section
       icon={Trophy}
-      title="The scoreboard — 4-year ranking"
-      subtitle="Composite score across 17 operating metrics (market share gain, brand depth, sales productivity, chronic mix, etc.) — 0 to 100"
+      title="The scoreboard — rank movers"
+      subtitle="IIFL's 21-company composite ranking. This year's rank, last year's rank, and the movement."
     >
-      <div className="space-y-1">
-        {ranked.map((c) => {
-          const t = tier(c.compositeFY22_26);
-          const arrow =
-            c.compositeFY23_25 == null ? null
-            : c.compositeFY22_26 > c.compositeFY23_25 + 3 ? 'up'
-            : c.compositeFY22_26 < c.compositeFY23_25 - 3 ? 'down'
-            : 'flat';
+      <div className="grid grid-cols-[40px_1fr_70px_120px] md:grid-cols-[56px_1fr_90px_140px] gap-3 px-3 py-2 text-[10px] uppercase tracking-wider font-semibold text-ink-500 border-b border-ink-100">
+        <div>Rank</div>
+        <div>Company</div>
+        <div className="text-right">Was</div>
+        <div className="text-right">Change</div>
+      </div>
+      <div>
+        {fy26Ranked.map((c) => {
+          const lastRank = fy25RankByName.get(c.name);
+          const isNew = c.compositeFY23_25 == null;
+          const delta = isNew ? null : lastRank - c.fy26Rank;
+
+          let changeNode;
+          if (isNew) {
+            changeNode = (
+              <span className="text-[10px] font-bold text-pharma-700 bg-pharma-50 px-2 py-0.5 rounded border border-pharma-200">
+                NEW
+              </span>
+            );
+          } else if (delta === 0) {
+            changeNode = <span className="text-xs text-ink-400">─ no change</span>;
+          } else if (delta > 0) {
+            const fire = delta >= 5;
+            changeNode = (
+              <span className={`inline-flex items-center gap-1 text-xs font-bold text-pharma-700 ${fire ? 'bg-pharma-50 px-2 py-0.5 rounded' : ''}`}>
+                {fire && <span>🔥</span>}
+                <ArrowUpRight className="w-3.5 h-3.5" />
+                <span>+{delta} {fire ? '' : 'spot' + (delta === 1 ? '' : 's')}</span>
+              </span>
+            );
+          } else {
+            const warn = delta <= -5;
+            changeNode = (
+              <span className={`inline-flex items-center gap-1 text-xs font-bold text-rose-700 ${warn ? 'bg-rose-50 px-2 py-0.5 rounded' : ''}`}>
+                {warn && <span>⚠️</span>}
+                <ArrowDownRight className="w-3.5 h-3.5" />
+                <span>{delta} {warn ? '' : 'spot' + (delta === -1 ? '' : 's')}</span>
+              </span>
+            );
+          }
+
           return (
             <div
               key={c.name}
-              className={`grid grid-cols-[140px_1fr_56px_28px] items-center gap-3 px-3 py-2 rounded-lg ${tierRow[t]}`}
+              className={`grid grid-cols-[40px_1fr_70px_120px] md:grid-cols-[56px_1fr_90px_140px] gap-3 px-3 py-2.5 items-center ${tierTint(c.compositeFY22_26)} ${c.fy26Rank > 1 ? 'border-t border-ink-100/50' : ''}`}
             >
-              <div className="text-xs font-semibold text-ink-900 truncate" title={c.name}>
-                {c.short}
+              <div className="text-sm font-bold text-ink-900 tabular-nums">#{c.fy26Rank}</div>
+              <div className="text-sm font-medium text-ink-900 truncate" title={c.name}>{c.short}</div>
+              <div className="text-xs text-ink-500 tabular-nums text-right">
+                {isNew ? '—' : `#${lastRank}`}
               </div>
-              <Bar pct={c.compositeFY22_26} color={tierColor[t]} height="h-2.5" />
-              <div className="text-xs font-bold text-ink-900 tabular-nums text-right">
-                {c.compositeFY22_26}
-              </div>
-              <div className="text-[10px] text-ink-500 text-right">
-                {arrow === 'up' && <ArrowUpRight className="w-3.5 h-3.5 text-pharma-600 inline" title="Improved YoY" />}
-                {arrow === 'down' && <ArrowDownRight className="w-3.5 h-3.5 text-rose-600 inline" title="Slipped YoY" />}
-                {arrow === 'flat' && <span title="Roughly unchanged">·</span>}
-              </div>
+              <div className="flex justify-end">{changeNode}</div>
             </div>
           );
         })}
       </div>
-
-      <div className="flex items-center gap-4 mt-3 text-[10px] text-ink-500">
-        <div className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-pharma-500" />Top tier (≥65)</div>
-        <div className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-ink-300" />Middle pack</div>
-        <div className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-rose-400" />Bottom (&lt;45)</div>
-        <div className="flex items-center gap-1.5 ml-auto">
-          <ArrowUpRight className="w-3 h-3 text-pharma-600" /> improved YoY ·{' '}
-          <ArrowDownRight className="w-3 h-3 text-rose-600" /> slipped
-        </div>
+      <div className="flex flex-wrap items-center gap-4 mt-3 text-[10px] text-ink-500">
+        <div className="flex items-center gap-1.5"><span className="w-2 h-3 rounded-sm bg-pharma-400" />Top tier (score ≥65)</div>
+        <div className="flex items-center gap-1.5"><span className="w-2 h-3 rounded-sm bg-ink-200" />Middle pack</div>
+        <div className="flex items-center gap-1.5"><span className="w-2 h-3 rounded-sm bg-rose-300" />Bottom (&lt;45)</div>
+        <div className="ml-auto">🔥 big climber · ⚠️ big slip (≥5 spots)</div>
       </div>
-
       <Caption>
-        Higher score = the kind of business you'd want to own. The big movers worth flagging: <b>Mankind, Cipla, Alkem</b> climbed
-        from middle-pack into the top tier this year. <b>Ipca, Abbott, Glenmark</b> slipped meaningfully.
+        The movement column tells the story. Big climbers this year: <b>Alkem (+8), Mankind (+7), Torrent (+6)</b> — all
+        moving into the top tier. Big slippers: <b>Ipca (−13), Abbott (−10), FDC (−9)</b> — significant fall-offs
+        worth investigating if any of these are in a portfolio.
       </Caption>
     </Section>
   );
 }
 
 // ── Scene 3 — Quality of Growth (volume vs price) ───────────────────────────
+// Small "where the market is heading" trend tile. The IIFL report only gives
+// per-company Cagr in aggregate — no year-by-year decomposition — but it DOES
+// give the FY22-25 vs FY26 breakdown for the IPM as a whole, which answers
+// the "what's the trend" question at market level.
+function TrendTile({ label, oldVal, newVal, direction }) {
+  const c =
+    direction === 'up'   ? { newCls: 'text-pharma-700', tagCls: 'text-pharma-700', tag: '↑ accelerating' }
+    : direction === 'down' ? { newCls: 'text-rose-700',   tagCls: 'text-rose-700',   tag: '↓ decelerating' }
+    : { newCls: 'text-ink-700', tagCls: 'text-ink-500', tag: '→ flat' };
+  return (
+    <div>
+      <div className="text-[10px] uppercase tracking-wider font-semibold text-ink-500">{label}</div>
+      <div className="flex items-baseline gap-2 mt-1">
+        <span className="text-sm text-ink-400 tabular-nums">{oldVal}</span>
+        <span className="text-ink-400 text-xs">→</span>
+        <span className={`text-lg font-bold tabular-nums ${c.newCls}`}>{newVal}</span>
+      </div>
+      <div className={`text-[10px] font-semibold mt-0.5 ${c.tagCls}`}>{c.tag}</div>
+    </div>
+  );
+}
+
 function GrowthQuality() {
+  const h = IPM_HEADLINE;
   const volumeLed = useMemo(
     () => [...COMPANIES].filter((c) => c.volContPct >= 25 && c.volCagrFY22_26 > 0)
       .sort((a, b) => b.volCagrFY22_26 - a.volCagrFY22_26)
@@ -258,23 +310,46 @@ function GrowthQuality() {
       title="How they're growing — units vs price"
       subtitle="Volume-led growth = more patients buying. Price-led = same patients, costlier prescription."
     >
+      {/* Where the market is heading — IPM-level trend tile */}
+      <div className="bg-ink-50/60 rounded-xl p-4 mb-4 border border-ink-100/80">
+        <div className="text-xs font-semibold text-ink-900 mb-3 flex items-center gap-1.5">
+          📊 Where the market is heading <span className="text-[10px] text-ink-500 font-normal">(FY22-25 4-yr average → FY26 latest year)</span>
+        </div>
+        <div className="grid grid-cols-3 gap-4">
+          <TrendTile label="Volume"       oldVal={`+${h.fy22_25_volumeCagr}%`}     newVal={`+${h.fy26_volumeYoY}%`}     direction="up" />
+          <TrendTile label="Price"        oldVal={`+${h.fy22_25_priceCagr}%`}      newVal={`+${h.fy26_priceYoY}%`}      direction="flat" />
+          <TrendTile label="New launches" oldVal={`+${h.fy22_25_newLaunchCagr}%`}  newVal={`+${h.fy26_newLaunchYoY}%`}  direction="flat" />
+        </div>
+        <div className="text-[11px] text-ink-600 mt-3 leading-relaxed">
+          The market shift is real: <b>volume growth is accelerating sharply</b> (GLP-1 wave + LoEs falling out of base);
+          <b> price growth has plateaued</b> (NLEM caps + Jan Aushadhi pressure). Companies still leaning on price hikes
+          are running an aging playbook.
+        </div>
+      </div>
+
       <div className="grid md:grid-cols-2 gap-4">
         <div className="bg-pharma-50/40 rounded-xl p-4 border border-pharma-100/60">
           <div className="flex items-center gap-2 mb-3">
             <TrendingUp className="w-4 h-4 text-pharma-700" />
             <div>
               <div className="text-xs font-semibold text-ink-900">Growing by selling more units</div>
-              <div className="text-[10px] text-ink-500">Volume-led · sustainable demand</div>
+              <div className="text-[10px] text-ink-500">Volume-led · sustainable demand · aligned with market trend</div>
             </div>
           </div>
-          <div className="space-y-2">
-            {volumeLed.map((c) => (
-              <div key={c.name} className="grid grid-cols-[100px_1fr_46px] items-center gap-2">
-                <div className="text-[11px] font-medium text-ink-900 truncate" title={c.name}>{c.short}</div>
-                <Bar pct={(c.volCagrFY22_26 / maxVol) * 100} color="bg-pharma-500" height="h-2" />
-                <div className="text-[11px] font-semibold text-pharma-700 tabular-nums text-right">+{c.volCagrFY22_26}%</div>
-              </div>
-            ))}
+          <div className="space-y-2.5">
+            {volumeLed.map((c) => {
+              const gap = (c.volCagrFY22_26 - IPM_AVG.volCagrFY22_26).toFixed(1);
+              return (
+                <div key={c.name} className="grid grid-cols-[90px_1fr_82px] items-center gap-2">
+                  <div className="text-[11px] font-medium text-ink-900 truncate" title={c.name}>{c.short}</div>
+                  <Bar pct={(c.volCagrFY22_26 / maxVol) * 100} color="bg-pharma-500" height="h-2" />
+                  <div className="text-right">
+                    <div className="text-[11px] font-bold text-pharma-700 tabular-nums leading-none">+{c.volCagrFY22_26}%</div>
+                    <div className="text-[9px] text-ink-500 tabular-nums mt-0.5">+{gap} pp vs mkt</div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
           <div className="text-[10px] text-ink-500 mt-3">Volume Cagr FY22-26 · IPM avg <b className="text-ink-700">+{IPM_AVG.volCagrFY22_26}%</b></div>
         </div>
@@ -284,26 +359,34 @@ function GrowthQuality() {
             <TrendingUp className="w-4 h-4 text-amber-700" />
             <div>
               <div className="text-xs font-semibold text-ink-900">Growing by raising prices</div>
-              <div className="text-[10px] text-ink-500">Price + new launches · limited headroom</div>
+              <div className="text-[10px] text-ink-500">Price + new launches · limited headroom · old playbook</div>
             </div>
           </div>
-          <div className="space-y-2">
-            {priceLed.map((c) => (
-              <div key={c.name} className="grid grid-cols-[100px_1fr_46px] items-center gap-2">
-                <div className="text-[11px] font-medium text-ink-900 truncate" title={c.name}>{c.short}</div>
-                <Bar pct={(c.priceNICagrFY22_26 / maxPrice) * 100} color="bg-amber-500" height="h-2" />
-                <div className="text-[11px] font-semibold text-amber-700 tabular-nums text-right">+{c.priceNICagrFY22_26}%</div>
-              </div>
-            ))}
+          <div className="space-y-2.5">
+            {priceLed.map((c) => {
+              const gap = (c.priceNICagrFY22_26 - IPM_AVG.priceNICagrFY22_26).toFixed(1);
+              const gapSign = gap >= 0 ? '+' : '';
+              return (
+                <div key={c.name} className="grid grid-cols-[90px_1fr_82px] items-center gap-2">
+                  <div className="text-[11px] font-medium text-ink-900 truncate" title={c.name}>{c.short}</div>
+                  <Bar pct={(c.priceNICagrFY22_26 / maxPrice) * 100} color="bg-amber-500" height="h-2" />
+                  <div className="text-right">
+                    <div className="text-[11px] font-bold text-amber-700 tabular-nums leading-none">+{c.priceNICagrFY22_26}%</div>
+                    <div className="text-[9px] text-ink-500 tabular-nums mt-0.5">{gapSign}{gap} pp vs mkt</div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
           <div className="text-[10px] text-ink-500 mt-3">Price + new-launch Cagr FY22-26 · IPM avg <b className="text-ink-700">+{IPM_AVG.priceNICagrFY22_26}%</b></div>
         </div>
       </div>
 
       <Caption>
-        India has limited price-hike headroom — government caps prices on essential medicines, and Jan Aushadhi pressure is rising.
-        So <b>volume-led growth is the better long-term signal</b>. Corona, Ajanta, Cipla, Glenmark, Alkem and FDC are all expanding by getting
-        more patients on their products. Torrent+JB, Zydus, Abbott have grown almost entirely on price — that well is running dry.
+        The market is rotating toward <b>volume-led growth</b> (top panel shows volume accelerating from +0.7% to +2.7%).
+        Corona, Ajanta, Cipla, Glenmark, Alkem and FDC are riding that wave — getting more patients on their products.
+        Torrent+JB, Zydus, Abbott have grown almost entirely on price — fine while the market allowed it, but price headroom
+        is shrinking and that well is starting to run dry.
       </Caption>
     </Section>
   );
@@ -364,44 +447,75 @@ function ChronicShift() {
   );
 }
 
-// ── Scene 5 — Price-Control Risk ────────────────────────────────────────────
+// ── Scene 5 — Pricing freedom (NLEM risk, plain-English framing) ────────────
 function NlemRisk() {
+  // Sort by capped % descending — most squeezed at top.
   const ranked = useMemo(
     () => [...COMPANIES].sort((a, b) => b.nlemExposurePct - a.nlemExposurePct),
     []
   );
-  const riskColor = (n) =>
-    n >= 30 ? 'bg-rose-500'
-    : n >= 20 ? 'bg-amber-500'
-    : n >= 12 ? 'bg-amber-300'
-    : 'bg-pharma-500';
 
   return (
     <Section
       icon={ShieldAlert}
-      title="Price-control risk (NLEM exposure)"
-      subtitle="% of India sales subject to government price caps. Higher = can't raise prices to offset rising costs."
+      title="Pricing freedom — who can raise prices, who's stuck"
+      subtitle="The government caps prices on ~17% of all India pharma sales. Companies overweight that capped basket have no pricing flexibility."
     >
-      <div className="space-y-1.5">
-        {ranked.map((c) => (
-          <div key={c.name} className="grid grid-cols-[120px_1fr_50px] items-center gap-3">
-            <div className="text-[11px] font-medium text-ink-900 truncate" title={c.name}>{c.short}</div>
-            <Bar pct={c.nlemExposurePct * 1.5} color={riskColor(c.nlemExposurePct)} height="h-2.5" />
-            <div className="text-[11px] font-bold tabular-nums text-right text-ink-900">{c.nlemExposurePct}%</div>
-          </div>
-        ))}
+      {/* Why-this-matters context tile */}
+      <div className="bg-amber-50/40 rounded-xl p-3.5 mb-4 border border-amber-200/80">
+        <div className="text-xs font-semibold text-ink-900 mb-1">💡 Why this matters</div>
+        <div className="text-[12px] text-ink-700 leading-relaxed">
+          In FY25 and FY26 the government allowed almost <b>0% price increases</b> on essential medicines.
+          FY27 is set at ~0.65%. Companies overweight the capped basket can't raise prices to offset rising
+          input costs — so their margins shrink every year inflation runs higher.
+        </div>
       </div>
-      <div className="flex items-center gap-4 mt-3 text-[10px] text-ink-500">
-        <div className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-rose-500" />High risk (≥30%)</div>
-        <div className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-amber-500" />Elevated (20-29%)</div>
-        <div className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-amber-300" />Moderate (12-19%)</div>
-        <div className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-pharma-500" />Low (&lt;12%)</div>
-        <div className="ml-auto">IPM avg <b className="text-ink-700">{IPM_AVG.nlemExposurePct}%</b></div>
+
+      {/* Stacked Free / Capped bar per company */}
+      <div className="space-y-2">
+        {ranked.map((c) => {
+          const freePct = 100 - c.nlemExposurePct;
+          const cappedPct = c.nlemExposurePct;
+          return (
+            <div key={c.name} className="grid grid-cols-[110px_1fr] gap-3 items-center">
+              <div className="text-[11px] font-medium text-ink-900 truncate" title={c.name}>{c.short}</div>
+              <div className="flex items-center gap-3">
+                <div className="flex flex-1 h-4 rounded-full overflow-hidden bg-ink-100">
+                  <div
+                    className="bg-pharma-500 flex items-center justify-end pr-1.5"
+                    style={{ width: `${freePct}%` }}
+                    title={`${freePct}% free to price`}
+                  >
+                    {freePct >= 22 && (
+                      <span className="text-[9px] font-bold text-white tabular-nums">{freePct}%</span>
+                    )}
+                  </div>
+                  <div
+                    className="bg-rose-500 flex items-center justify-start pl-1.5"
+                    style={{ width: `${cappedPct}%` }}
+                    title={`${cappedPct}% government-capped`}
+                  >
+                    {cappedPct >= 12 && (
+                      <span className="text-[9px] font-bold text-white tabular-nums">{cappedPct}%</span>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
       </div>
+
+      <div className="flex flex-wrap items-center gap-4 mt-4 text-[10px] text-ink-500">
+        <div className="flex items-center gap-1.5"><span className="w-3 h-2.5 rounded-sm bg-pharma-500" />Free to price (can raise)</div>
+        <div className="flex items-center gap-1.5"><span className="w-3 h-2.5 rounded-sm bg-rose-500" />Government-capped (NLEM)</div>
+        <div className="ml-auto">IPM avg <b className="text-ink-700">{IPM_AVG.nlemExposurePct}% capped</b></div>
+      </div>
+
       <Caption>
-        The government caps prices on the ~17% of all India pharma sales it classifies as "essential" (NLEM list). For FY25-FY27,
-        NPPA has allowed almost zero price increases. <b>FDC, GSK, Sanofi, Alkem, Cipla</b> are most exposed — their margins
-        get squeezed every time costs rise. <b>Torrent+JB, Corona, Ajanta, Sun, Dr. Reddy's</b> have the most pricing freedom.
+        Most squeezed: <b>FDC (58%), GSK (41%), Sanofi (33%), Alkem (28%), Cipla (27%)</b> — over a quarter of their revenue is government-capped.
+        Most pricing freedom: <b>Torrent (6%), Torrent+JB (7%), Corona (9%), Indoco (9%), Sun (11%)</b> — they keep
+        pricing power on ~90% of their book.
       </Caption>
     </Section>
   );
