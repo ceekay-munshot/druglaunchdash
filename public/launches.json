@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-16T04:12:40.480Z",
-  "rowCount": 64,
+  "generatedAt": "2026-05-17T04:43:33.845Z",
+  "rowCount": 73,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -182,7 +182,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/PR-for-Semaglutide.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-10T04:34:25.009Z"
+      "lastEnrichmentAttempt": "2026-05-17T04:42:39.628Z"
     },
     {
       "brand": "Noveltreat",
@@ -368,10 +368,10 @@
       "dealType": "Brand Acquisition",
       "molecule": "—",
       "therapy": "Anti-Diabetic",
-      "indication": "—",
+      "indication": "Diabetes",
       "existingBrand": "—",
       "chronicAcute": "—",
-      "price": null,
+      "price": "₹21.7 / strip of 10 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
       "lastEnrichmentAttempt": "2026-05-16T04:11:18.269Z"
@@ -438,7 +438,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-09T04:06:42.724Z"
+      "lastEnrichmentAttempt": "2026-05-17T04:42:08.959Z"
     },
     {
       "brand": "Noveltreat and Sematrinity",
@@ -450,7 +450,7 @@
       "therapy": "—",
       "indication": "Psoriatic Arthritis",
       "existingBrand": "—",
-      "chronicAcute": "—",
+      "chronicAcute": "Chronic",
       "price": "null",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/PR-for-Semaglutide.pdf",
       "buyer": "Sun Pharma",
@@ -470,7 +470,7 @@
       "price": "₹33.4 / strip of 10 tablets",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/09/Press-Release-Sun-Pharma-and-Pharmazz-Inc.-licensing-agreement-for-Sovateltide-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-10T04:33:41.514Z"
+      "lastEnrichmentAttempt": "2026-05-17T04:42:22.210Z"
     },
     {
       "brand": "Molxvir",
@@ -486,7 +486,7 @@
       "price": "₹1347 / bottle of 40 capsules",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/11/Press-Release-Sun-Pharma-gearing-up-to-introduce-molnupiravir-under-the-brand-name-Molxvir%C2%AE-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-10T04:33:41.514Z"
+      "lastEnrichmentAttempt": "2026-05-17T04:42:26.498Z"
     },
     {
       "brand": "Cetuximab",
@@ -518,7 +518,7 @@
       "price": "₹21.7 / strip of 10 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-10T04:34:16.580Z"
+      "lastEnrichmentAttempt": "2026-05-17T04:42:30.637Z"
     },
     {
       "brand": "Product A",
@@ -976,10 +976,10 @@
       "dealType": "Brand Acquisition",
       "molecule": "—",
       "therapy": "—",
-      "indication": "—",
+      "indication": "Hyperthyroidism",
       "existingBrand": "—",
       "chronicAcute": "—",
-      "price": null,
+      "price": "₹232 / bottle of 100 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
       "lastEnrichmentAttempt": "2026-05-16T04:11:18.269Z"
@@ -1015,6 +1015,150 @@
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
       "lastEnrichmentAttempt": "2026-05-16T04:12:00.119Z"
+    },
+    {
+      "brand": "Pomalidomide Capsules",
+      "launchType": "Own Launched",
+      "date": "2026-03-03",
+      "seller": "—",
+      "dealType": "—",
+      "molecule": "Pomalidomide",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Pomalyst®",
+      "chronicAcute": "—",
+      "price": "₹5118 / bottle of 21 capsules",
+      "sourceUrl": "https://www.natcopharma.co.in/insights/news-and-announcements",
+      "buyer": "Natco Pharma",
+      "lastEnrichmentAttempt": "2026-05-17T04:41:24.899Z"
+    },
+    {
+      "brand": "Semaglutide",
+      "launchType": "Own Launched",
+      "date": "2026-02-14",
+      "seller": "—",
+      "dealType": "—",
+      "molecule": "Semaglutide",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹1840 / box of 1 pre-filled pen",
+      "sourceUrl": "https://www.natcopharma.co.in/insights/news-and-announcements",
+      "buyer": "Natco Pharma",
+      "lastEnrichmentAttempt": "2026-05-17T04:41:24.899Z"
+    },
+    {
+      "brand": "Helsinn’s AKYNZEO®",
+      "launchType": "Acquired",
+      "date": "2018-07-10",
+      "seller": "Helsinn",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "Oncology",
+      "indication": "Chemotherapy-Induced Nausea and Vomiting",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹5316 / strip of 1 capsule",
+      "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-expands-its-oncology-franchise-in-India-with-the-launch-of-Helsinn.pdf",
+      "buyer": "Glenmark",
+      "lastEnrichmentAttempt": "2026-05-17T04:41:52.451Z"
+    },
+    {
+      "brand": "Generic Tiotropium Bromide Dry Powder Inhaler",
+      "launchType": "In-licensed",
+      "date": "2018-08-29",
+      "seller": "—",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹304 / packet of 120 mdi inhaler",
+      "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-enters-into-an-exclusive-licensing.pdf",
+      "buyer": "Glenmark",
+      "lastEnrichmentAttempt": "2026-05-17T04:41:52.451Z"
+    },
+    {
+      "brand": "Glycerol Phenylbutyrate Oral Liquid",
+      "launchType": "Own Launched",
+      "date": "2026-05-05",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Glycerol Phenylbutyrate",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-u-s-fda-approval-for-glycerol-phenylbutyrate-oral-liquid",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-05-17T04:42:07.458Z"
+    },
+    {
+      "brand": "Dilo-BM",
+      "launchType": "Acquired",
+      "date": "2017-03-07",
+      "seller": "GlaxoSmithKline",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-17T04:42:08.959Z"
+    },
+    {
+      "brand": "Dilo-DX",
+      "launchType": "Acquired",
+      "date": "2017-03-07",
+      "seller": "GlaxoSmithKline",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-17T04:42:08.959Z"
+    },
+    {
+      "brand": "Stelbid",
+      "launchType": "Acquired",
+      "date": "2017-03-07",
+      "seller": "GlaxoSmithKline",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-17T04:42:08.959Z"
+    },
+    {
+      "brand": "Vitneurin",
+      "launchType": "Acquired",
+      "date": "2017-03-07",
+      "seller": "GlaxoSmithKline",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-17T04:42:08.959Z"
     }
   ]
 }
