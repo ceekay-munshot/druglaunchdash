@@ -63,6 +63,7 @@ const DEFAULT_ACTIVE_COMPANIES = [
   'Glenmark',
   'Lupin',
   'Zydus Lifesciences',
+  'Abbott India',
 ];
 
 const ARCHIVE_STORAGE_KEY = 'dlt.archivedCompanies.v1';

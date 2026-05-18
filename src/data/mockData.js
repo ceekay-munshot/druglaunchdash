@@ -1070,6 +1070,9 @@ export const DEAL_VALUES = {
 
   // ── Zydus Lifesciences ──
   'Zydus Lifesciences|2019-01-30': 4595,    // Heinz India consumer brands (Complan + Glucon-D + Nycil + Sampriti Ghee)
+
+  // ── Abbott India ──
+  'Abbott India|2010-09-07': 17000,         // Piramal Healthcare formulations — $3.7B (~Rs 17,000 Cr at 2010 rates) — biggest India pharma M&A at the time
 };
 
 // Fills DEAL_VALUE for parent rows and standalone-acquired rows whose
@@ -1567,10 +1570,6 @@ export const LAUNCH_TRACKER_ROWS = [
   // ─── Aurobindo Pharma — LIVE (BSE filings) ───
   // Business Standard / Pharmatutor "Aurobindo Pharma arm acquires Khandelwal Labs non-oncology business for Rs 325 Cr" (effective 01-Jan-2026)
   row(['Khandelwal Non-Oncology Brands', 'Acquired', '2026-01-01', 'Khandelwal Laboratories', 'Aurobindo', 'Brand Portfolio Acquisition', 'Various (23 brands / 67 SKUs)', 'Multi-therapy', 'Multi-indication (non-oncology)', null, null, 'Various', null, 'Chronic']),
-
-  // ─── Abbott India — LIVE (abbott.in press releases) ───
-  // abbott.in "Abbott and MSD Announce Strategic Partnership to Distribute Sitagliptin in India" (18-Jun-2025)
-  row(['Januvia / Janumet / Janumet XR (MSD distribution)', 'In-licensed', '2025-06-18', 'MSD Pharmaceuticals', 'Abbott India', 'Co-marketing', 'Sitagliptin (± Metformin)', 'Anti-Diabetic', 'Type 2 Diabetes', null, null, 'Istavel / Istamet', null, 'Chronic']),
 
   // ─── Mankind Pharma — EXPANDED LIVE DATASET (deep-research edition) ───
   // Sources: mankindpharma.com (heritage + press releases), Mankind DRHP / IPO
@@ -2181,6 +2180,62 @@ export const LAUNCH_TRACKER_ROWS = [
   row(['Nycil', 'Acquired', '2019-01-30', 'Kraft Heinz Company', 'Zydus Lifesciences', 'Brand Acquisition', 'Chlorphenesin + Boric Acid + Zinc Oxide (medicated talc)', 'Dermatology / Consumer Health', 'Prickly Heat / Mild Fungal Skin Infections', null, null, 'Candid Powder / Dermicool', null, 'Acute']),
   // Heinz sub-brand — Sampriti Ghee (premium edible ghee)
   row(['Sampriti Ghee', 'Acquired', '2019-01-30', 'Kraft Heinz Company', 'Zydus Lifesciences', 'Brand Acquisition', 'Cow / Buffalo Ghee', 'Nutrition / Wellness', 'Culinary / Nutrition', null, null, 'Amul Ghee / Mother Dairy', null, 'Chronic']),
+
+  // ──────────────────────────────────────────────────────────────────────────
+  // Abbott India — LIVE DATASET (deep-research edition)
+  // Sources: abbott.in press releases + investor filings, BSE / NSE filings,
+  // Business Standard / BusinessToday / Fierce Pharma / Knowledge@Wharton /
+  // BioSpectrum coverage, Piramal Healthcare + Novo Nordisk + MSD press
+  // releases for the deals. Abbott India is the listed Indian arm of Abbott
+  // Laboratories (US) — historically India's #1 pharma (post-Piramal-2010
+  // acquisition); IIFL flags Abbott has lost ~20 bps of MS over FY22-26 with
+  // volume Cagr at -3.7%, but the brand book — Thyronorm, Duphaston, Brufen,
+  // Vertin, Cremaffin, Digene, Udiliv — remains category-leading. Older
+  // engine-brand launch years are [est.].
+  // ──────────────────────────────────────────────────────────────────────────
+
+  // ── India branded engine brands (Own Launched / Solvay heritage) ──
+  // Brufen (Ibuprofen) — Abbott's legacy global analgesic brand in India [launch year est.]
+  row(['Brufen', 'Own Launched', '1985-01-01', '—', 'Abbott India', 'Generic Launch', 'Ibuprofen', 'Pain Management', 'Pain / Inflammation / Fever', null, null, 'Combiflam / Ibumol', null, 'Acute']),
+  // Duphaston (Dydrogesterone) — Solvay heritage; #1 progesterone brand in India [launch year est.]
+  row(['Duphaston', 'Own Launched', '1990-01-01', '—', 'Abbott India', 'Generic Launch', 'Dydrogesterone', "Women's Health", 'Threatened Miscarriage / Endometriosis / Menopause', null, null, 'Susten / Dubagest', null, 'Chronic']),
+  // Duphalac (Lactulose) — Solvay heritage; flagship constipation/hepatic-encephalopathy brand [launch year est.]
+  row(['Duphalac', 'Own Launched', '1995-01-01', '—', 'Abbott India', 'Generic Launch', 'Lactulose', 'Gastroenterology', 'Constipation / Hepatic Encephalopathy', null, null, 'Looz / Lactihep / Cremalax', null, 'Chronic']),
+  // Vertin (Betahistine) — Solvay heritage; India CNS / vertigo leader [launch year est.]
+  row(['Vertin', 'Own Launched', '2003-01-01', '—', 'Abbott India', 'Generic Launch', 'Betahistine Dihydrochloride', 'Neurology / CNS', 'Vertigo / Meniere\'s Disease', null, null, 'Stugeron / Stemetil', null, 'Chronic']),
+  // Udiliv (Ursodeoxycholic acid) — Solvay heritage; flagship hepatology brand [launch year est.]
+  row(['Udiliv', 'Own Launched', '1995-01-01', '—', 'Abbott India', 'Generic Launch', 'Ursodeoxycholic Acid', 'Gastroenterology / Hepatology', 'Cholestatic Liver Disease / Gallstone Dissolution', null, null, 'Ursocol / Udihep', null, 'Chronic']),
+
+  // ── Recent India launch (Own Launched) ──
+  // PneumoShield 14 — abbott.in / BioSpectrum — Abbott launches 14-valent PCV in India (Nov-2024)
+  row(['PneumoShield 14', 'Own Launched', '2024-11-01', '—', 'Abbott India', 'NCE Launch (India)', '14-valent Pneumococcal Conjugate Vaccine', 'Vaccines', 'Invasive Pneumococcal Disease Prevention (6 wks+)', null, null, 'Prevnar 13 / Synflorix', null, 'Acute']),
+
+  // ── Piramal Healthcare formulations acquisition — 21-May-2010 announce / 07-Sep-2010 close ──
+  // Business Standard / Fierce Pharma / Knowledge@Wharton — Abbott acquires Piramal's
+  // Healthcare Solutions (Domestic Formulations) business for $3.7 bn (~Rs 17,500 Cr at
+  // 2010 rates); biggest pharma M&A deal in India at the time; 350+ brands + 5,500
+  // employees + Baddi plant; propelled Abbott to #1 in India pharma (~7% MS).
+  row(['Piramal Healthcare Formulations Portfolio (parent)', 'Acquired', '2010-09-07', 'Piramal Healthcare', 'Abbott India', 'Brand Portfolio Acquisition (India + neighbours)', 'Various (350+ branded-generics across therapy areas)', 'Multi-therapy', 'Multi-indication (India domestic formulations)', null, null, 'Various', null, 'Chronic']),
+  // Piramal sub-brand — Thyronorm (Levothyroxine) — became Abbott's #1 India brand, ~50% MS in hypothyroid
+  row(['Thyronorm', 'Acquired', '2010-09-07', 'Piramal Healthcare', 'Abbott India', 'Brand Acquisition', 'Levothyroxine Sodium', 'Endocrinology', 'Hypothyroidism', null, null, 'Eltroxin / Thyrofit', null, 'Chronic']),
+  // Piramal sub-brand — Phensedyl (Codeine + Promethazine cough syrup) — legacy India cough brand
+  row(['Phensedyl', 'Acquired', '2010-09-07', 'Piramal Healthcare', 'Abbott India', 'Brand Acquisition', 'Codeine Phosphate + Promethazine HCl', 'Respiratory', 'Dry Cough', null, null, 'Codoze / Codopect', null, 'Acute']),
+  // Piramal sub-brand — Cremaffin / Cremaffin Plus (laxative)
+  row(['Cremaffin / Cremaffin Plus', 'Acquired', '2010-09-07', 'Piramal Healthcare', 'Abbott India', 'Brand Acquisition', 'Magnesium Hydroxide + Liquid Paraffin (± Sodium Picosulfate)', 'Gastroenterology', 'Constipation', null, null, 'Looz / Lactihep / Cremalax', null, 'Chronic']),
+  // Piramal sub-brand — Digene (antacid range) — Economic Times "Best Brand Award" 2020
+  row(['Digene', 'Acquired', '2010-09-07', 'Piramal Healthcare', 'Abbott India', 'Brand Acquisition', 'Magnesium Hydroxide + Aluminium Hydroxide + Simethicone', 'Gastroenterology', 'Acidity / Heartburn / Hyperacidity', null, null, 'Gelusil / Eno', null, 'Acute']),
+  // Piramal sub-brand — Pacimol (Paracetamol)
+  row(['Pacimol', 'Acquired', '2010-09-07', 'Piramal Healthcare', 'Abbott India', 'Brand Acquisition', 'Paracetamol', 'Pain Management', 'Pain / Fever', null, null, 'Crocin / Calpol', null, 'Acute']),
+
+  // ── In-licensing / co-marketing partnerships ──
+  // Januvia / Janumet — abbott.in — Abbott + MSD Pharmaceuticals strategic partnership to
+  // co-market MSD's sitagliptin franchise in India (18-Jun-2025)
+  row(['Januvia / Janumet / Janumet XR (MSD distribution)', 'In-licensed', '2025-06-18', 'MSD Pharmaceuticals', 'Abbott India', 'Co-marketing (India)', 'Sitagliptin (± Metformin)', 'Anti-Diabetic', 'Type 2 Diabetes', null, null, 'Istavel / Istamet', null, 'Chronic']),
+  // Extensior — abbott.in / Business Standard — Abbott + Novo Nordisk India agree to launch
+  // a second brand of Ozempic (semaglutide) in India; Abbott exclusively distributes
+  // (27-Feb-2026). Unlike most peers (who launched generics), Abbott co-markets the
+  // originator — different competitive position in the Sema price war.
+  row(['Extensior', 'In-licensed', '2026-02-27', 'Novo Nordisk India', 'Abbott India', 'Co-marketing (India)', 'Semaglutide (originator brand)', 'Anti-Diabetic', 'Type 2 Diabetes / Obesity', null, null, 'Rybelsus / Ozempic / Semaglyn / Sundae', null, 'Chronic']),
 ];
 
 // Derived list of unique Buyers — these are the selectable "companies"
