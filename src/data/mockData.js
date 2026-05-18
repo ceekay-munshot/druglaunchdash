@@ -1067,6 +1067,9 @@ export const DEAL_VALUES = {
   // ── Lupin ──
   'Lupin|2015-07-23': 5632,                 // Gavis Pharmaceuticals — $880M (~Rs 5,632 Cr at 2015 rates)
   'Lupin|2017-10-01': 975,                  // Symbiomix Therapeutics — $150M (~Rs 975 Cr at 2017 rates)
+
+  // ── Zydus Lifesciences ──
+  'Zydus Lifesciences|2019-01-30': 4595,    // Heinz India consumer brands (Complan + Glucon-D + Nycil + Sampriti Ghee)
 };
 
 // Fills DEAL_VALUE for parent rows and standalone-acquired rows whose
@@ -1137,6 +1140,10 @@ export const GEO_RIGHTS_BRAND_OVERRIDES = {
   'solosec': 'US',
   'mirabegron er (gmyrbetriq — us)': 'US',
   'tolvaptan (gjynarque — us)': 'US',
+  // Zydus US launches — US-market generics (Sentynl's Zokinvy is global, derived from deal type).
+  'mirabegron extended-release (gmyrbetriq — us)': 'US',
+  'eltrombopag tablets (gpromacta — us)': 'US',
+  'dapagliflozin (gfarxiga — us)': 'US',
 };
 
 // Pulls a parenthetical scope from a deal-type label like
@@ -1224,6 +1231,11 @@ export const REG_STATUS_BRAND_OVERRIDES = {
   'solosec': 'US FDA Approved',
   'mirabegron er (gmyrbetriq — us)': 'US FDA Approved',
   'tolvaptan (gjynarque — us)': 'US FDA Approved',
+  // Zydus US launches + Sentynl specialty asset — FDA-approved.
+  'mirabegron extended-release (gmyrbetriq — us)': 'US FDA Approved',
+  'eltrombopag tablets (gpromacta — us)': 'US FDA Approved',
+  'dapagliflozin (gfarxiga — us)': 'US FDA Approved',
+  'zokinvy (lonafarnib) — sentynl': 'US FDA Approved',
 };
 
 function deriveRegStatus(row) {
@@ -1405,14 +1417,6 @@ export const LAUNCH_TRACKER_ROWS = [
 
   // ── Novartis Galvus perpetual licence (effective 01-Jan-2026, Rs 1,107 Cr) ──
   row(['Galvus / Galvus Met (perpetual licence)', 'In-licensed', '2026-01-01', 'Novartis Pharma AG', 'Cipla', 'Perpetual Trademark Licence', 'Vildagliptin (± Metformin)', 'Anti-Diabetic', 'Type 2 Diabetes (DPP-4 inhibitor)', null, null, 'Zomelis / Jalra', null, 'Chronic']),
-
-  // ─── Zydus Lifesciences — LIVE (zyduslife.com press releases) ───
-  // zyduslife.com "Zydus launches world's first biosimilar of Nivolumab Tishtha in India" (22-Jan-2026)
-  row(['Tishtha', 'Own Launched', '2026-01-22', '—', 'Zydus Lifesciences', 'Biosimilar Launch', 'Nivolumab', 'Oncology', 'NSCLC / Melanoma / RCC (PD-1)', null, null, 'Opdyta / Nivolutab', null, 'Chronic']),
-  // scanx.trade "Zydus launches India's first indigenous Aflibercept biosimilar ANYRA" (19-Feb-2026)
-  row(['ANYRA', 'Own Launched', '2026-02-19', '—', 'Zydus Lifesciences', 'Biosimilar Launch', 'Aflibercept', 'Ophthalmology', 'Wet AMD / Diabetic Macular Edema', null, null, 'Eylea', null, 'Chronic']),
-  // Zydus Lifesciences press release — Semaglutide launch on patent-expiry Day 1 (25-Feb-2026)
-  row(['Semaglyn / Mashema / Alterme', 'Own Launched', '2026-02-25', '—', 'Zydus Lifesciences', 'Generic Launch', 'Semaglutide (reusable pen)', 'Anti-Diabetic', 'Type 2 Diabetes / Obesity', null, null, 'Rybelsus / Ozempic', null, 'Chronic']),
 
   // ──────────────────────────────────────────────────────────────────────────
   // Torrent Pharma — EXPANDED LIVE DATASET (deep-research edition)
@@ -2093,6 +2097,90 @@ export const LAUNCH_TRACKER_ROWS = [
   // Huminsulin — Dec-2024; Lupin acquires Eli Lilly's recombinant human insulin range for India after
   // years of distribution + promotion
   row(['Huminsulin', 'Acquired', '2024-12-30', 'Eli Lilly and Company', 'Lupin', 'Brand Acquisition (India)', 'Recombinant Human Insulin (R / NPH / 30-70 / 50-50)', 'Anti-Diabetic', 'Type 1 / Type 2 Diabetes', null, null, 'Lupisulin / Actrapid', null, 'Chronic']),
+
+  // ──────────────────────────────────────────────────────────────────────────
+  // Zydus Lifesciences — LIVE DATASET (deep-research edition)
+  // Sources: zyduslife.com press releases + investor filings, BSE / NSE filings,
+  // Business Standard / BusinessToday / Fierce Pharma / Pharmaletter / GaBI Online /
+  // PR Newswire coverage, Kraft Heinz + Eiger Biopharmaceuticals press releases for
+  // partner deals. Zydus is one of India's top-5 pharma companies and a global
+  // biosimilars / vaccines pioneer — first to launch a biosimilar adalimumab
+  // (Exemptia, 2014), the first NCE from Indian R&D (Saroglitazar / Lipaglyn,
+  // 2013), the world's first DNA-plasmid COVID-19 vaccine (ZyCoV-D, 2021),
+  // and most recently the world's first nivolumab biosimilar (Tishtha, Jan-2026).
+  // Older India engine-brand launch years are [est.] — exact launch dates are
+  // not publicly disclosed.
+  // ──────────────────────────────────────────────────────────────────────────
+
+  // ── India branded engine brands (Own Launched) — the Zydus India backbone ──
+  // Atorva (Atorvastatin) — Zydus's flagship statin brand [launch year est.]
+  row(['Atorva', 'Own Launched', '2001-01-01', '—', 'Zydus Lifesciences', 'Generic Launch', 'Atorvastatin (± Fenofibrate / Ezetimibe)', 'Cardiology', 'Dyslipidemia', null, null, 'Lipitor / Storvas / Atocor', null, 'Chronic']),
+  // Aten (Atenolol) — long-standing cardio beta-blocker [launch year est.]
+  row(['Aten', 'Own Launched', '1995-01-01', '—', 'Zydus Lifesciences', 'Generic Launch', 'Atenolol (± Amlodipine / Chlorthalidone)', 'Cardiology', 'Hypertension / Angina', null, null, 'Tenormin / Beten', null, 'Chronic']),
+  // Mifegest-Kit (Mifepristone + Misoprostol) — Zydus's flagship women's-health kit [launch year est.]
+  row(['Mifegest-Kit', 'Own Launched', '2003-01-01', '—', 'Zydus Lifesciences', 'Generic Launch', 'Mifepristone + Misoprostol', "Women's Health", 'Medical Termination of Pregnancy', null, null, 'Mifeprex / Cytotec', null, 'Acute']),
+  // Nucoxia (Etoricoxib) — Zydus pain franchise; launched 2004 per company disclosure
+  row(['Nucoxia / Nucoxia-MR', 'Own Launched', '2004-01-01', '—', 'Zydus Lifesciences', 'Generic Launch', 'Etoricoxib (± Thiocolchicoside)', 'Pain Management', 'Osteoarthritis / Rheumatoid Arthritis / Gout', null, null, 'Arcoxia / Etody', null, 'Chronic']),
+  // Skinlite (Hydroquinone + Tretinoin + Mometasone) — flagship Indian melasma cream [launch year est.]
+  row(['Skinlite', 'Own Launched', '2002-01-01', '—', 'Zydus Lifesciences', 'Generic Launch', 'Hydroquinone + Tretinoin + Mometasone Furoate', 'Dermatology', 'Melasma / Hyperpigmentation', null, null, 'Melalumin / Demelan', null, 'Chronic']),
+  // Falcigo (Artesunate injection) — Zydus anti-malarial workhorse [launch year est.]
+  row(['Falcigo', 'Own Launched', '2000-01-01', '—', 'Zydus Lifesciences', 'Generic Launch', 'Artesunate (injection)', 'Anti-Infectives', 'Severe Falciparum Malaria', null, null, 'Larinate / Tetan', null, 'Acute']),
+  // Glip-M (Glimepiride + Metformin) — Zydus anti-diabetic combo [launch year est.]
+  row(['Glip-M', 'Own Launched', '2005-01-01', '—', 'Zydus Lifesciences', 'Generic Launch', 'Glimepiride + Metformin (± Voglibose / Pioglitazone)', 'Anti-Diabetic', 'Type 2 Diabetes', null, null, 'Amaryl-M / Glimestar-M', null, 'Chronic']),
+
+  // ── Innovation-led India launches (Own Launched) ──
+  // Lipaglyn (Saroglitazar) — Asian Scientist / PIB — first NCE from Indian R&D;
+  // DCGI approval June-2013; dual PPAR α/γ agonist for diabetic dyslipidemia,
+  // later expanded to NASH / NAFLD via line extensions (Bilypsa, Vorxar co-marketing)
+  row(['Lipaglyn', 'Own Launched', '2013-06-01', '—', 'Zydus Lifesciences', 'NCE Launch (first from Indian R&D)', 'Saroglitazar Magnesium', 'Gastroenterology / Hepatology', 'Diabetic Dyslipidemia / NASH / NAFLD', null, null, 'Vorxar / Bilypsa (own)', null, 'Chronic']),
+
+  // ── Biosimilars — Zydus is a global biosimilars pioneer ──
+  // Exemptia — PR Newswire — WORLD-FIRST adalimumab biosimilar launched 09-Dec-2014;
+  // priced ~80% below originator Humira at launch
+  row(['Exemptia', 'Own Launched', '2014-12-09', '—', 'Zydus Lifesciences', 'Biosimilar Launch (world-first)', 'Adalimumab (biosimilar)', 'Immunology', 'Rheumatoid Arthritis / Psoriatic Arthritis / Ankylosing Spondylitis / UC', null, null, 'Humira', null, 'Chronic']),
+  // Tishtha — zyduslife.com — WORLD-FIRST nivolumab biosimilar in India (22-Jan-2026)
+  row(['Tishtha', 'Own Launched', '2026-01-22', '—', 'Zydus Lifesciences', 'Biosimilar Launch (world-first)', 'Nivolumab (biosimilar)', 'Oncology', 'NSCLC / Melanoma / RCC (PD-1)', null, null, 'Opdyta / Nivolutab', null, 'Chronic']),
+  // ANYRA — scanx.trade — India's first indigenous aflibercept biosimilar (19-Feb-2026)
+  row(['ANYRA', 'Own Launched', '2026-02-19', '—', 'Zydus Lifesciences', 'Biosimilar Launch (India-first)', 'Aflibercept (biosimilar)', 'Ophthalmology', 'Wet AMD / Diabetic Macular Edema', null, null, 'Eylea', null, 'Chronic']),
+
+  // ── Vaccines ──
+  // ZyCoV-D — PIB / Wikipedia — WORLD-FIRST DNA-plasmid COVID-19 vaccine; DCGI EUA
+  // 20-Aug-2021, full supply rollout to Government of India from Feb-2022
+  row(['ZyCoV-D', 'Own Launched', '2021-08-20', '—', 'Zydus Lifesciences', 'NCE Launch (world-first DNA vaccine)', 'DNA Plasmid Vaccine (SARS-CoV-2 Spike protein)', 'Vaccines', 'COVID-19 Prevention (12+ years)', null, null, 'Covishield / Covaxin', null, 'Acute']),
+
+  // ── Recent metabolic launch ──
+  // Semaglyn / Mashema / Alterme — Zydus press release — Day-1 patent-expiry
+  // semaglutide launch via own reusable pen platform (25-Feb-2026)
+  row(['Semaglyn / Mashema / Alterme', 'Own Launched', '2026-02-25', '—', 'Zydus Lifesciences', 'Generic Launch', 'Semaglutide (reusable pen)', 'Anti-Diabetic', 'Type 2 Diabetes / Obesity', null, null, 'Rybelsus / Ozempic / Sundae', null, 'Chronic']),
+
+  // ── US launches (Own Launched) ──
+  // Mirabegron ER — Business Standard / BusinessWire — Zydus US launch (22-Apr-2024);
+  // ~US$2.42 bn annual market for Myrbetriq
+  row(['Mirabegron Extended-Release (gMyrbetriq — US)', 'Own Launched', '2024-04-22', '—', 'Zydus Lifesciences', 'Generic Launch (US)', 'Mirabegron Extended-Release', 'Urology', 'Overactive Bladder (OAB)', null, null, 'Myrbetriq', null, 'Chronic']),
+  // Eltrombopag Tablets — scanx.trade — FY26 Zydus US launch; ~US$1.26 bn annual market
+  row(['Eltrombopag Tablets (gPromacta — US)', 'Own Launched', '2025-09-01', '—', 'Zydus Lifesciences', 'Generic Launch (US)', 'Eltrombopag', 'Oncology', 'Chronic Immune Thrombocytopenia (ITP)', null, null, 'Promacta / Revolade', null, 'Chronic']),
+  // Dapagliflozin — Whalesbook — Zydus US launch 08-Apr-2026 with 180-day shared exclusivity
+  row(['Dapagliflozin (gFarxiga — US)', 'Own Launched', '2026-04-08', '—', 'Zydus Lifesciences', 'Generic Launch (US — 180-day shared exclusivity)', 'Dapagliflozin (± Metformin)', 'Anti-Diabetic', 'Type 2 Diabetes', null, null, 'Farxiga', null, 'Chronic']),
+
+  // ── Specialty US (via Sentynl Therapeutics — Zydus's US specialty subsidiary) ──
+  // Zokinvy (Lonafarnib) — facebook.com / Eiger PR — Sentynl acquires global rights from
+  // Eiger Biopharmaceuticals (May-2024); the only approved therapy for Hutchinson-Gilford
+  // Progeria Syndrome (HGPS) — ultra-rare paediatric disease
+  row(['Zokinvy (Lonafarnib) — Sentynl', 'Acquired', '2024-05-15', 'Eiger Biopharmaceuticals', 'Zydus Lifesciences', 'Asset Acquisition (Global)', 'Lonafarnib', 'Endocrinology / Rare Disease', 'Hutchinson-Gilford Progeria Syndrome', null, null, 'N/A (first-in-class)', null, 'Chronic']),
+
+  // ── Acquisitions — Heinz India consumer brands (Oct-2018 announce / Jan-2019 close, ~Rs 4,595 Cr) ──
+  // Kraft Heinz Co press release — Zydus Wellness (group company) acquired Heinz India for
+  // Rs 4,595 Cr / US$652M; 4 marquee FMCG brands + Aligarh & Sitarganj plants (definitive
+  // agreement 24-Oct-2018, completion 30-Jan-2019). Attributed here to the Zydus parent.
+  row(['Heinz India Consumer Brands (parent)', 'Acquired', '2019-01-30', 'Kraft Heinz Company', 'Zydus Lifesciences', 'Brand Portfolio Acquisition (India)', 'Various (consumer health + nutraceuticals)', 'Nutraceuticals / Consumer Health', 'Wellness / Nutrition / Personal Care', null, null, 'Various', null, 'Chronic']),
+  // Heinz sub-brand — Complan (malt-based health drink)
+  row(['Complan', 'Acquired', '2019-01-30', 'Kraft Heinz Company', 'Zydus Lifesciences', 'Brand Acquisition', 'Multi-vitamin Malt-based Health Drink', 'Nutraceuticals / Consumer Health', 'Children / Adult Nutrition', null, null, 'Horlicks / Boost', null, 'Chronic']),
+  // Heinz sub-brand — Glucon-D (glucose + vitamin energy drink)
+  row(['Glucon-D', 'Acquired', '2019-01-30', 'Kraft Heinz Company', 'Zydus Lifesciences', 'Brand Acquisition', 'Anhydrous Dextrose + Vitamins', 'Nutraceuticals / Consumer Health', 'Energy / Hydration / Fatigue', null, null, 'Glucose-D / Glucolife', null, 'Acute']),
+  // Heinz sub-brand — Nycil (medicated prickly-heat talc with antifungal chlorphenesin)
+  row(['Nycil', 'Acquired', '2019-01-30', 'Kraft Heinz Company', 'Zydus Lifesciences', 'Brand Acquisition', 'Chlorphenesin + Boric Acid + Zinc Oxide (medicated talc)', 'Dermatology / Consumer Health', 'Prickly Heat / Mild Fungal Skin Infections', null, null, 'Candid Powder / Dermicool', null, 'Acute']),
+  // Heinz sub-brand — Sampriti Ghee (premium edible ghee)
+  row(['Sampriti Ghee', 'Acquired', '2019-01-30', 'Kraft Heinz Company', 'Zydus Lifesciences', 'Brand Acquisition', 'Cow / Buffalo Ghee', 'Nutrition / Wellness', 'Culinary / Nutrition', null, null, 'Amul Ghee / Mother Dairy', null, 'Chronic']),
 ];
 
 // Derived list of unique Buyers — these are the selectable "companies"

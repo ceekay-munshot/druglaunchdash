@@ -62,6 +62,7 @@ const DEFAULT_ACTIVE_COMPANIES = [
   "Dr. Reddy's",
   'Glenmark',
   'Lupin',
+  'Zydus Lifesciences',
 ];
 
 const ARCHIVE_STORAGE_KEY = 'dlt.archivedCompanies.v1';
