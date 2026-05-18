@@ -36,7 +36,7 @@ if (!FIRECRAWL_API_KEY) {
   process.exit(1);
 }
 
-// ── Companies to scrape (the 13 active ones) ─────────────────────
+// ── Companies to scrape (the 14 active ones) ─────────────────────
 const SOURCES = [
   { company: 'Mankind Pharma',     url: 'https://www.mankindpharma.com/media/press-release/' },
   { company: 'Eris Lifesciences',  url: 'https://eris.co.in/press-release/' },
@@ -51,6 +51,7 @@ const SOURCES = [
   { company: 'Lupin',              url: 'https://www.lupin.com/media/press-releases/' },
   { company: 'Zydus Lifesciences', url: 'https://www.zyduslife.com/media/press-releases/' },
   { company: 'Abbott India',       url: 'https://www.abbott.in/media-center/press-releases.html' },
+  { company: 'Aurobindo',          url: 'https://www.aurobindo.com/media/press-releases' },
 ];
 
 // ── Schema Firecrawl is asked to populate per URL ───────────────────

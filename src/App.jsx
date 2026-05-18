@@ -64,6 +64,7 @@ const DEFAULT_ACTIVE_COMPANIES = [
   'Lupin',
   'Zydus Lifesciences',
   'Abbott India',
+  'Aurobindo',
 ];
 
 const ARCHIVE_STORAGE_KEY = 'dlt.archivedCompanies.v1';

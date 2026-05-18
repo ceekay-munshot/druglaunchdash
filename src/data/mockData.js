@@ -1048,6 +1048,10 @@ export const DEAL_VALUES = {
   'Alkem|2025-10-01': 533,                  // Alkem Wellness internal slump sale (Rs 532.5 Cr)
 
   // ── Aurobindo ──
+  'Aurobindo|2014-10-01': 254,              // Actavis Western Europe — $41M (~Rs 254 Cr at 2014 rates), 7 EU countries
+  'Aurobindo|2017-12-13': 1000,             // Generis Farmaceutica (Portugal) — €135M (~Rs 1,000 Cr at 2017 rates)
+  'Aurobindo|2019-02-12': 593,              // Apotex Europe — €74M (~Rs 593 Cr at 2019 rates), 5 EU countries
+  'Aurobindo|2022-04-01': 171,              // Veritaz Healthcare India formulations — Rs 171 Cr (disclosed)
   'Aurobindo|2026-01-01': 325,              // Khandelwal Labs non-oncology
 
   // ── Corona Remedies ──
@@ -1147,6 +1151,11 @@ export const GEO_RIGHTS_BRAND_OVERRIDES = {
   'mirabegron extended-release (gmyrbetriq — us)': 'US',
   'eltrombopag tablets (gpromacta — us)': 'US',
   'dapagliflozin (gfarxiga — us)': 'US',
+  // Aurobindo (CuraTeQ) biosimilars — EU / UK / India launches.
+  'zefylti (filgrastim — eu)': 'EU',
+  'dyrupeg (pegfilgrastim — eu)': 'EU',
+  'bevqolva (bevacizumab — uk)': 'UK',
+  'dazublys (trastuzumab — eu/uk/india)': 'EU + UK + India',
 };
 
 // Pulls a parenthetical scope from a deal-type label like
@@ -1239,6 +1248,11 @@ export const REG_STATUS_BRAND_OVERRIDES = {
   'eltrombopag tablets (gpromacta — us)': 'US FDA Approved',
   'dapagliflozin (gfarxiga — us)': 'US FDA Approved',
   'zokinvy (lonafarnib) — sentynl': 'US FDA Approved',
+  // Aurobindo (CuraTeQ) EU / UK / India biosimilar launches.
+  'zefylti (filgrastim — eu)': 'EMA + MHRA Approved',
+  'dyrupeg (pegfilgrastim — eu)': 'EMA + MHRA Approved',
+  'bevqolva (bevacizumab — uk)': 'MHRA Approved',
+  'dazublys (trastuzumab — eu/uk/india)': 'EMA + MHRA + DCGI Approved',
 };
 
 function deriveRegStatus(row) {
@@ -1566,10 +1580,6 @@ export const LAUNCH_TRACKER_ROWS = [
   // ─── Intas Pharmaceuticals — LIVE (Bio-Thera / press releases) ───
   // PRNewswire / BioSpace "Bio-Thera expands partnership with Intas for BAT2506 Golimumab biosimilar in India" (23-Mar-2026)
   row(['BAT2506 (Golimumab biosimilar)', 'In-licensed', '2026-03-23', 'Bio-Thera Solutions', 'Intas', 'In-license (India)', 'Golimumab', 'Immunology', 'Psoriatic Arthritis / Ankylosing Spondylitis / UC', null, null, 'Simponi', null, 'Chronic']),
-
-  // ─── Aurobindo Pharma — LIVE (BSE filings) ───
-  // Business Standard / Pharmatutor "Aurobindo Pharma arm acquires Khandelwal Labs non-oncology business for Rs 325 Cr" (effective 01-Jan-2026)
-  row(['Khandelwal Non-Oncology Brands', 'Acquired', '2026-01-01', 'Khandelwal Laboratories', 'Aurobindo', 'Brand Portfolio Acquisition', 'Various (23 brands / 67 SKUs)', 'Multi-therapy', 'Multi-indication (non-oncology)', null, null, 'Various', null, 'Chronic']),
 
   // ─── Mankind Pharma — EXPANDED LIVE DATASET (deep-research edition) ───
   // Sources: mankindpharma.com (heritage + press releases), Mankind DRHP / IPO
@@ -2236,6 +2246,52 @@ export const LAUNCH_TRACKER_ROWS = [
   // (27-Feb-2026). Unlike most peers (who launched generics), Abbott co-markets the
   // originator — different competitive position in the Sema price war.
   row(['Extensior', 'In-licensed', '2026-02-27', 'Novo Nordisk India', 'Abbott India', 'Co-marketing (India)', 'Semaglutide (originator brand)', 'Anti-Diabetic', 'Type 2 Diabetes / Obesity', null, null, 'Rybelsus / Ozempic / Semaglyn / Sundae', null, 'Chronic']),
+
+  // ──────────────────────────────────────────────────────────────────────────
+  // Aurobindo Pharma — LIVE DATASET (deep-research edition)
+  // Sources: aurobindo.com press releases + investor filings, BSE / NSE filings,
+  // Business Standard / Fierce Pharma / BioSpectrum / PRNewswire / medicaldialogues
+  // coverage, CuraTeQ Biologics / STADA Arzneimittel press releases for the
+  // biosimilar deals. Aurobindo is India's top-5 pharma by revenue and the
+  // #1 US generics player by Rx volume (per IMS Apr-2024) — historically API +
+  // US-focused with a thin India branded book; the growth thesis sits in
+  // Europe expansion, the CuraTeQ biosimilars pipeline (FY29 inflection
+  // expected), and the ramp-up of the Penicillin-G plant in Andhra Pradesh.
+  // ──────────────────────────────────────────────────────────────────────────
+
+  // ── Acquisitions — Aurobindo's M&A-led EU expansion ──
+  // Actavis Western Europe — Aurobindo press release — commercial generics operations
+  // across 7 Western European countries (Germany / UK / France / Netherlands / Italy /
+  // Spain / Portugal); $41M deal closed Q4-2014
+  row(['Actavis Western Europe', 'Acquired', '2014-10-01', 'Actavis plc', 'Aurobindo', 'Company Acquisition (Western Europe)', 'Various (EU generics — 7 countries)', 'Multi-therapy', 'Multi-indication (EU generics)', null, null, 'Various', null, 'Chronic']),
+  // Generis Farmaceutica — Aurobindo / BioSpectrum — Portugal generics #1 by Rx; €135M
+  // from Magnum Capital Partners (deal signed Dec-2017)
+  row(['Generis Farmaceutica (Portugal)', 'Acquired', '2017-12-13', 'Magnum Capital Partners', 'Aurobindo', 'Company Acquisition (Portugal)', 'Various (Portugal generics #1 by Rx)', 'Multi-therapy', 'Multi-indication (Portugal generics)', null, null, 'Various', null, 'Chronic']),
+  // Apotex Europe — PRNewswire — commercial activities + 200+ Rx + 88 OTC across
+  // Poland / Czech Republic / Netherlands / Spain / Belgium; €74M (binding agreement
+  // Jul-2018, closing 12-Feb-2019)
+  row(['Apotex Europe (5-country business)', 'Acquired', '2019-02-12', 'Apotex Inc.', 'Aurobindo', 'Brand Portfolio Acquisition (Poland + Czech + Netherlands + Spain + Belgium)', 'Various (200+ Rx + 88 OTC across 5 EU markets)', 'Multi-therapy', 'Multi-indication (EU generics + OTC)', null, null, 'Various', null, 'Chronic']),
+  // Veritaz Healthcare — Fierce Pharma — Rs 171 Cr / $22.6M deal; 180 trademarks +
+  // 40 products in anti-infectives + pain management; designed as the launch pad
+  // for CuraTeQ biosimilars in India (effective 01-Apr-2022)
+  row(['Veritaz Healthcare (India formulations)', 'Acquired', '2022-04-01', 'Veritaz Healthcare', 'Aurobindo', 'Brand Portfolio Acquisition (India)', 'Various (~40 brands in anti-infectives + pain management)', 'Anti-Infectives / Pain Management', 'Multi-indication (India branded)', null, null, 'Various', null, 'Chronic']),
+  // Khandelwal Labs non-oncology — Business Standard / Pharmatutor — Rs 325 Cr;
+  // 23 brands across 67 SKUs (effective 01-Jan-2026)
+  row(['Khandelwal Non-Oncology Brands', 'Acquired', '2026-01-01', 'Khandelwal Laboratories', 'Aurobindo', 'Brand Portfolio Acquisition (India)', 'Various (23 brands / 67 SKUs)', 'Multi-therapy', 'Multi-indication (non-oncology)', null, null, 'Various', null, 'Chronic']),
+
+  // ── Biosimilars (CuraTeQ Biologics — wholly-owned Aurobindo subsidiary) ──
+  // CuraTeQ commercialises in the EU via the STADA Arzneimittel partnership (2025).
+  // Zefylti (Filgrastim biosimilar) — CuraTeQ — EC + MHRA approvals [EU launch year approx 2024]
+  row(['Zefylti (Filgrastim — EU)', 'Own Launched', '2024-04-01', '—', 'Aurobindo', 'Biosimilar Launch (EU)', 'Filgrastim (biosimilar)', 'Oncology', 'Chemotherapy-Induced Neutropenia', null, null, 'Neupogen / Zarzio', null, 'Chronic']),
+  // Dyrupeg (Pegfilgrastim biosimilar) — CuraTeQ press release — EMA CHMP positive
+  // opinion, formal EC approval expected Apr-2025 (used as launch reference)
+  row(['Dyrupeg (Pegfilgrastim — EU)', 'Own Launched', '2025-04-15', '—', 'Aurobindo', 'Biosimilar Launch (EU)', 'Pegfilgrastim (biosimilar)', 'Oncology', 'Chemotherapy-Induced Neutropenia (long-acting)', null, null, 'Neulasta / Pelmeg', null, 'Chronic']),
+  // Bevqolva (Bevacizumab biosimilar) — CuraTeQ — UK launch via STADA partnership,
+  // MHRA-approved (mid-2025)
+  row(['Bevqolva (Bevacizumab — UK)', 'Own Launched', '2025-06-01', '—', 'Aurobindo', 'Biosimilar Launch (UK)', 'Bevacizumab (biosimilar)', 'Oncology', 'Metastatic Colorectal / Lung / Ovarian Cancer', null, null, 'Avastin / Mvasi', null, 'Chronic']),
+  // Dazublys (Trastuzumab biosimilar) — CuraTeQ — EC + MHRA + CDSCO approvals;
+  // launched in Lithuania first, then France / Germany via STADA (mid-2025)
+  row(['Dazublys (Trastuzumab — EU/UK/India)', 'Own Launched', '2025-05-01', '—', 'Aurobindo', 'Biosimilar Launch (EU + UK + India)', 'Trastuzumab (biosimilar)', 'Oncology', 'HER2+ Breast / Gastric Cancer', null, null, 'Herceptin / Hervycta / Canmab', null, 'Chronic']),
 ];
 
 // Derived list of unique Buyers — these are the selectable "companies"
