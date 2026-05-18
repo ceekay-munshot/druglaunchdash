@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-17T04:43:33.845Z",
-  "rowCount": 73,
+  "generatedAt": "2026-05-18T04:57:09.697Z",
+  "rowCount": 81,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -238,15 +238,15 @@
       "date": "2021-09-28",
       "seller": "—",
       "dealType": "Consumer Launch",
-      "molecule": "—",
+      "molecule": "Dextromethorphan Hydrobromide plus Chlorpheniramine Maleate",
       "therapy": "—",
       "indication": "—",
       "existingBrand": "—",
       "chronicAcute": "—",
-      "price": "—",
+      "price": "₹104 / bottle of 60 ml oral suspension",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/09/Press-Release-Sun-Pharma-launches-Chericof-12.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-11T04:46:46.741Z"
+      "lastEnrichmentAttempt": "2026-05-18T04:54:50.483Z"
     },
     {
       "brand": "Organon",
@@ -262,7 +262,7 @@
       "price": null,
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/04/PR-Sun-Organon-announcement-Apr-26.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-11T04:46:52.491Z"
+      "lastEnrichmentAttempt": "2026-05-18T04:55:11.071Z"
     },
     {
       "brand": "EVERON",
@@ -278,7 +278,7 @@
       "price": "₹39.7 / strip of 10 tablet md",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2022/03/Press-Release-EVERON-Launch.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-11T04:46:55.841Z"
+      "lastEnrichmentAttempt": "2026-05-18T04:55:31.388Z"
     },
     {
       "brand": "Molxvir",
@@ -566,7 +566,7 @@
       "price": "₹41 / bottle of 10 ml dilution",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/04/PR-Sun-Organon-announcement-Apr-26.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-11T04:45:39.649Z"
+      "lastEnrichmentAttempt": "2026-05-18T04:54:20.892Z"
     },
     {
       "brand": "Obimet",
@@ -582,7 +582,7 @@
       "price": "₹21.7 / strip of 10 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-11T04:46:39.209Z"
+      "lastEnrichmentAttempt": "2026-05-18T04:54:32.799Z"
     },
     {
       "brand": "Thyrocab",
@@ -598,7 +598,7 @@
       "price": "₹232 / bottle of 100 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-11T04:46:39.209Z"
+      "lastEnrichmentAttempt": "2026-05-18T04:54:45.271Z"
     },
     {
       "brand": "Chericof ® 12",
@@ -614,7 +614,7 @@
       "price": "—",
       "sourceUrl": "http://www.sunpharma.com/press-release/press-release-chericof12-launch",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-11T04:46:46.741Z"
+      "lastEnrichmentAttempt": "2026-05-18T04:54:54.921Z"
     },
     {
       "brand": "Antibiotic Combination",
@@ -944,7 +944,7 @@
       "dealType": "Line Extension",
       "molecule": "—",
       "therapy": "Oncology",
-      "indication": "—",
+      "indication": "prevention of CINV (chemotherapy-induced nausea and vomiting)",
       "existingBrand": "—",
       "chronicAcute": "—",
       "price": "₹5316 / strip of 1 capsule",
@@ -1159,6 +1159,134 @@
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
       "lastEnrichmentAttempt": "2026-05-17T04:42:08.959Z"
+    },
+    {
+      "brand": "Mastihal",
+      "launchType": "Own Launched",
+      "date": "2023-09-22",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Mucaine",
+      "chronicAcute": "—",
+      "price": "Rs 154 / strip",
+      "sourceUrl": "https://www.mankindpharma.com/products/mastihal-launch/",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-05-18T04:51:41.703Z"
+    },
+    {
+      "brand": "Softra",
+      "launchType": "Own Launched",
+      "date": "2023-09-22",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 780 / vial",
+      "sourceUrl": "https://www.mankindpharma.com/products/softra-launch/",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-05-18T04:51:41.703Z"
+    },
+    {
+      "brand": "ILUMYA® (tildrakizumab-asmn)",
+      "launchType": "Own Launched",
+      "date": "2026-03-16",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "tildrakizumab-asmn",
+      "therapy": "Oncology",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/Sun-Pharma-Announces-US-FDA-Acceptance-of-sBLA-Application-for-ILUMYA.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-18T04:52:08.716Z"
+    },
+    {
+      "brand": "generic semaglutide injection",
+      "launchType": "Own Launched",
+      "date": "2026-01-23",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "semaglutide",
+      "therapy": "—",
+      "indication": "chronic weight management",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "₹8049 / box of 1 injection",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/01/PR-SEMAGLUTIDE-DCGI-APPROVAL.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-18T04:52:08.716Z"
+    },
+    {
+      "brand": "Molxvir® (Molnupiravir)",
+      "launchType": "Own Launched",
+      "date": "2021-11-11",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Molnupiravir",
+      "therapy": "Antiviral",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹1347 / bottle of 40 capsules",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/11/Press-Release-Sun-Pharma-gearing-up-to-introduce-molnupiravir-under-the-brand-name-Molxvir%C2%AE-in-India.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-18T04:52:08.716Z"
+    },
+    {
+      "brand": "Tiohromium Bromide",
+      "launchType": "In-licensed",
+      "date": "2018-08-29",
+      "seller": "—",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-enters-into-an-exclusive-licensing.pdf",
+      "buyer": "Glenmark",
+      "lastEnrichmentAttempt": "2026-05-18T04:53:53.430Z"
+    },
+    {
+      "brand": "Obimet",
+      "launchType": "Acquired",
+      "date": "2018-04-02",
+      "seller": "Abbott India Ltd",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "Anti-Diabetic",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-18T04:54:32.799Z"
+    },
+    {
+      "brand": "Thyrocab",
+      "launchType": "Acquired",
+      "date": "2018-04-02",
+      "seller": "Abbott India Ltd",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-18T04:54:32.799Z"
     }
   ]
 }
