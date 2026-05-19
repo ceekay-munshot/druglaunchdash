@@ -65,6 +65,7 @@ const DEFAULT_ACTIVE_COMPANIES = [
   'Zydus Lifesciences',
   'Abbott India',
   'Aurobindo',
+  'Intas',
 ];
 
 const ARCHIVE_STORAGE_KEY = 'dlt.archivedCompanies.v1';

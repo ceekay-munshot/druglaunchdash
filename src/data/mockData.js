@@ -1054,6 +1054,9 @@ export const DEAL_VALUES = {
   'Aurobindo|2022-04-01': 171,              // Veritaz Healthcare India formulations — Rs 171 Cr (disclosed)
   'Aurobindo|2026-01-01': 325,              // Khandelwal Labs non-oncology
 
+  // ── Intas ──
+  'Intas|2017-01-09': 4975,                 // Actavis UK + Ireland generics (via Accord) — £603M (~Rs 4,975 Cr at 2017 rates)
+
   // ── Corona Remedies ──
   'Corona Remedies|2023-06-28': 234,        // Sanofi India — Myoril
 
@@ -1156,6 +1159,9 @@ export const GEO_RIGHTS_BRAND_OVERRIDES = {
   'dyrupeg (pegfilgrastim — eu)': 'EU',
   'bevqolva (bevacizumab — uk)': 'UK',
   'dazublys (trastuzumab — eu/uk/india)': 'EU + UK + India',
+  // Intas (Accord) EU biosimilars — UDENYCA derived from deal type parenthetical.
+  'accofil (filgrastim — eu)': 'EU',
+  'pelgraz (pegfilgrastim — eu)': 'EU',
 };
 
 // Pulls a parenthetical scope from a deal-type label like
@@ -1253,6 +1259,10 @@ export const REG_STATUS_BRAND_OVERRIDES = {
   'dyrupeg (pegfilgrastim — eu)': 'EMA + MHRA Approved',
   'bevqolva (bevacizumab — uk)': 'MHRA Approved',
   'dazublys (trastuzumab — eu/uk/india)': 'EMA + MHRA + DCGI Approved',
+  // Intas (Accord) EU biosimilar launches + UDENYCA US franchise.
+  'accofil (filgrastim — eu)': 'EMA Approved',
+  'pelgraz (pegfilgrastim — eu)': 'EMA Approved',
+  'udenyca (pegfilgrastim-cbqv — us franchise)': 'US FDA Approved',
 };
 
 function deriveRegStatus(row) {
@@ -1576,10 +1586,6 @@ export const LAUNCH_TRACKER_ROWS = [
 
   // ── Semasize / Obesema / Hepaglide — Semaglutide Day-1 launch (21-Mar-2026) ──
   row(['Semasize / Obesema / Hepaglide', 'Own Launched', '2026-03-21', '—', 'Alkem', 'Generic Launch', 'Semaglutide (1 mg disposable + reusable pen)', 'Anti-Diabetic', 'Type 2 Diabetes / Chronic Weight Management', null, null, 'Rybelsus / Ozempic', null, 'Chronic']),
-
-  // ─── Intas Pharmaceuticals — LIVE (Bio-Thera / press releases) ───
-  // PRNewswire / BioSpace "Bio-Thera expands partnership with Intas for BAT2506 Golimumab biosimilar in India" (23-Mar-2026)
-  row(['BAT2506 (Golimumab biosimilar)', 'In-licensed', '2026-03-23', 'Bio-Thera Solutions', 'Intas', 'In-license (India)', 'Golimumab', 'Immunology', 'Psoriatic Arthritis / Ankylosing Spondylitis / UC', null, null, 'Simponi', null, 'Chronic']),
 
   // ─── Mankind Pharma — EXPANDED LIVE DATASET (deep-research edition) ───
   // Sources: mankindpharma.com (heritage + press releases), Mankind DRHP / IPO
@@ -2292,6 +2298,57 @@ export const LAUNCH_TRACKER_ROWS = [
   // Dazublys (Trastuzumab biosimilar) — CuraTeQ — EC + MHRA + CDSCO approvals;
   // launched in Lithuania first, then France / Germany via STADA (mid-2025)
   row(['Dazublys (Trastuzumab — EU/UK/India)', 'Own Launched', '2025-05-01', '—', 'Aurobindo', 'Biosimilar Launch (EU + UK + India)', 'Trastuzumab (biosimilar)', 'Oncology', 'HER2+ Breast / Gastric Cancer', null, null, 'Herceptin / Hervycta / Canmab', null, 'Chronic']),
+
+  // ──────────────────────────────────────────────────────────────────────────
+  // Intas Pharmaceuticals — LIVE DATASET (deep-research edition)
+  // Sources: intaspharma.com press releases + corporate filings, BSE / NSE
+  // (note: Intas is privately held, not listed), PRNewswire / BioSpace /
+  // Manufacturing Chemist / Pearce IP coverage, Coherus BioSciences + Teva +
+  // Bio-Thera + Apotex press releases for the deals. Intas is India's #7 by
+  // IPM share (~3.1%) and one of the country's biggest biosimilars +
+  // injectables players — strong CNS / cardio / oncology India franchise,
+  // 70% revenue from international markets (US + EU via Accord Healthcare).
+  // Intas's tracked story is biosimilars + acquisitions; specific India
+  // engine-brand launch years are [est.] where exact dates aren't disclosed.
+  // ──────────────────────────────────────────────────────────────────────────
+
+  // ── India branded brand (Own Launched) ──
+  // Anxit (Alprazolam) — Intas's flagship CNS / anxiolytic brand [launch year est.]
+  row(['Anxit', 'Own Launched', '1995-01-01', '—', 'Intas', 'Generic Launch', 'Alprazolam', 'Neurology / CNS', 'Generalised Anxiety Disorder / Panic Disorder', null, null, 'Restyl / Alprax', null, 'Chronic']),
+
+  // ── India biosimilars (Own Launched) — Intas has the largest biosimilars portfolio in India ──
+  // Razumab — PRNewswire / Modern Retina — WORLD-FIRST ranibizumab biosimilar;
+  // DCGI approval Jun-2015; priced ~30% below originator Lucentis (Roche)
+  row(['Razumab', 'Own Launched', '2015-06-01', '—', 'Intas', 'Biosimilar Launch (world-first)', 'Ranibizumab (biosimilar)', 'Ophthalmology', 'Wet AMD / DME / RVO / Pathologic Myopia', null, null, 'Lucentis / RaniEyes', null, 'Chronic']),
+  // Neukine (Filgrastim biosimilar) — long-running Intas oncology supportive-care brand [launch year est.]
+  row(['Neukine', 'Own Launched', '2007-01-01', '—', 'Intas', 'Biosimilar Launch', 'Filgrastim (biosimilar)', 'Oncology', 'Chemotherapy-Induced Neutropenia', null, null, 'Neupogen / Grafeel / Zefylti', null, 'Chronic']),
+  // Pegasta / Neupeg (Pegfilgrastim biosimilar) — Intas's long-acting CINP brand [launch year est.]
+  row(['Pegasta / Neupeg', 'Own Launched', '2010-01-01', '—', 'Intas', 'Biosimilar Launch', 'Pegfilgrastim (biosimilar)', 'Oncology', 'Chemotherapy-Induced Neutropenia (long-acting)', null, null, 'Neulasta / Pegasta', null, 'Chronic']),
+
+  // ── EU biosimilars (Own Launched via Accord Healthcare — Intas's UK / EU arm) ──
+  // Accofil — Intas / Accord — first Indian-developed biosimilar approved in the EU
+  // (filgrastim), launched 2014
+  row(['Accofil (Filgrastim — EU)', 'Own Launched', '2014-09-01', '—', 'Intas', 'Biosimilar Launch (EU)', 'Filgrastim (biosimilar)', 'Oncology', 'Chemotherapy-Induced Neutropenia', null, null, 'Neupogen / Zarzio / Zefylti', null, 'Chronic']),
+  // Pelgraz — Intas / Accord — biosimilardevelopment.com — first pegfilgrastim biosimilar
+  // launched in Europe (2018)
+  row(['Pelgraz (Pegfilgrastim — EU)', 'Own Launched', '2018-08-01', '—', 'Intas', 'Biosimilar Launch (EU — first pegfilgrastim biosimilar in Europe)', 'Pegfilgrastim (biosimilar)', 'Oncology', 'Chemotherapy-Induced Neutropenia (long-acting)', null, null, 'Neulasta / Pelmeg / Dyrupeg', null, 'Chronic']),
+
+  // ── In-licensing (existing — consolidated) ──
+  // BAT2506 — PRNewswire / BioSpace — Bio-Thera expands partnership with Intas for
+  // BAT2506 (golimumab biosimilar) commercialisation in India (23-Mar-2026)
+  row(['BAT2506 (Golimumab biosimilar)', 'In-licensed', '2026-03-23', 'Bio-Thera Solutions', 'Intas', 'In-license (India)', 'Golimumab', 'Immunology', 'Psoriatic Arthritis / Ankylosing Spondylitis / UC', null, null, 'Simponi', null, 'Chronic']),
+
+  // ── Acquisitions ──
+  // Actavis UK + Ireland — PRNewswire / PMLiVE — Accord Healthcare (Intas's UK subsidiary)
+  // acquired the Actavis UK + Ireland generics business + Barnstaple plant from Teva for
+  // £603M (~Rs 4,975 Cr at 2017 rates); a Teva post-Allergan EC-mandated divestiture
+  // that doubled Intas Europe sales to over $500M (close 09-Jan-2017)
+  row(['Actavis UK + Ireland (Accord)', 'Acquired', '2017-01-09', 'Teva Pharmaceutical Industries', 'Intas', 'Company Acquisition (UK + Ireland)', 'Various (UK + Ireland generics + Barnstaple plant)', 'Multi-therapy', 'Multi-indication (UK + Ireland generics)', null, null, 'Various', null, 'Chronic']),
+  // UDENYCA — PRNewswire / Pearce IP — Accord BioPharma (Intas's US arm) acquired the
+  // UDENYCA (pegfilgrastim-cbqv) franchise from Coherus BioSciences; deal announced
+  // Dec-2024, closed 06-Aug-2025; UDENYCA had ~US$127M FY23 sales — makes Intas / Accord
+  // one of the largest global pegfilgrastim suppliers (deal value not publicly disclosed)
+  row(['UDENYCA (Pegfilgrastim-cbqv — US franchise)', 'Acquired', '2025-08-06', 'Coherus BioSciences', 'Intas', 'Brand Acquisition (US)', 'Pegfilgrastim-cbqv (biosimilar)', 'Oncology', 'Chemotherapy-Induced Neutropenia (long-acting)', null, null, 'Neulasta / Fulphila / Ziextenzo', null, 'Chronic']),
 ];
 
 // Derived list of unique Buyers — these are the selectable "companies"
