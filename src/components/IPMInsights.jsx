@@ -499,11 +499,12 @@ function NlemRisk() {
         })}
       </div>
 
-      <div className="flex flex-wrap items-center gap-4 mt-4 text-[10px] text-ink-500">
-        <div className="flex items-center gap-1.5"><span className="w-3 h-2.5 rounded-sm bg-rose-500" />Squeezed · ≥25% capped</div>
-        <div className="flex items-center gap-1.5"><span className="w-3 h-2.5 rounded-sm bg-amber-500" />Some exposure · 12–24%</div>
-        <div className="flex items-center gap-1.5"><span className="w-3 h-2.5 rounded-sm bg-pharma-500" />Pricing freedom · &lt;12%</div>
-        <div className="ml-auto">IPM avg <b className="text-ink-700">{IPM_AVG.nlemExposurePct}% capped</b></div>
+      <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 mt-4 text-[10px] text-ink-500">
+        <span className="font-semibold text-ink-600">Share of sales under price control:</span>
+        <div className="flex items-center gap-1.5"><span className="w-3 h-2.5 rounded-sm bg-rose-500" />High · 25%+</div>
+        <div className="flex items-center gap-1.5"><span className="w-3 h-2.5 rounded-sm bg-amber-500" />Medium · 12–24%</div>
+        <div className="flex items-center gap-1.5"><span className="w-3 h-2.5 rounded-sm bg-pharma-500" />Low · under 12%</div>
+        <div className="ml-auto">IPM avg <b className="text-ink-700">{IPM_AVG.nlemExposurePct}%</b></div>
       </div>
     </Section>
   );
