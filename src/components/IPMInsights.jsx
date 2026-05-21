@@ -660,25 +660,26 @@ function AnalystTakes() {
 
 export default function IPMInsights() {
   return (
-    <main className="max-w-[1840px] mx-auto px-4 py-4 space-y-4">
-      {/* Header strip */}
-      <div className="bg-gradient-to-r from-pharma-50 via-white to-teal-50/40 rounded-2xl border border-ink-100 shadow-card p-5">
+    <>
+      {/* In-page band divider — marks the start of the IPM market-context
+          section within the single unified dashboard (no longer a tab). */}
+      <div className="bg-gradient-to-r from-pharma-600 to-teal-accent rounded-2xl shadow-card p-5 mt-1">
         <div className="flex items-start gap-3 flex-wrap">
-          <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-pharma-500 to-teal-accent flex items-center justify-center shrink-0">
+          <div className="w-11 h-11 rounded-xl bg-white/15 flex items-center justify-center shrink-0">
             <ChartNoAxesColumn className="w-5 h-5 text-white" />
           </div>
           <div className="min-w-0 flex-1">
-            <h2 className="text-base font-bold text-ink-900">IPM Insights — a buy-side scorecard of the Indian Pharma Market</h2>
-            <p className="text-[12px] text-ink-600 mt-1 leading-relaxed">
-              Static analysis derived from <b>IIFL Capital Services</b> equity-research data. Compares 21 pharma companies across 17 operating
-              parameters over the FY22-FY26 window. Tells you who's compounding, who's leaking share, where the price-control risk sits,
-              and what GLP-1 means for the next 2-3 years.
+            <h2 className="text-base font-bold text-white">India Pharma Market — buy-side scorecard</h2>
+            <p className="text-[12px] text-white/90 mt-1 leading-relaxed">
+              The market backdrop the launch activity above plays out against. Compares 21 pharma companies across
+              17 operating parameters — who's compounding, who's leaking share, where the price-control risk sits,
+              and what the GLP-1 wave means for the next 2-3 years.
             </p>
           </div>
-          <div className="text-[10px] text-ink-500 text-right shrink-0">
-            <div className="font-semibold text-ink-700">Data as of {IPM_REPORT_META.reportDate}</div>
-            <div>IIFL Capital Services</div>
-            <div className="italic">Static — not auto-updated</div>
+          <div className="text-[10px] text-white/85 text-right shrink-0">
+            <div className="font-semibold text-white">IPM data · {IPM_REPORT_META.asOf}</div>
+            <div>AIOCD AWACS · IIFL research</div>
+            <div className="italic">Periodic snapshot · monthly cycle</div>
           </div>
         </div>
       </div>
@@ -698,12 +699,13 @@ export default function IPMInsights() {
           <div>
             <b className="text-ink-900">Provenance:</b> {IPM_REPORT_META.primarySource}, {IPM_REPORT_META.reportDate}
             (Rahul Jeewani et al.). Earlier reference report: IIFL FY23-FY25 analysis, 23-Apr-2025.{' '}
-            {IPM_REPORT_META.caveat} This tab is a <b>static snapshot</b> — not refreshed by the daily scraper. FY26-28
-            projections in the analyst-take section are IIFL's, clearly labelled as forward estimates. All data is presented
-            as observations for the reader to interpret — none of it constitutes a recommendation.
+            {IPM_REPORT_META.basis} This is a <b>periodic snapshot</b> — the AIOCD AWACS audit publishes monthly,
+            so this section refreshes on that cycle (not daily, by design — unlike the live launch tracker above).
+            FY26-28 figures in the analyst-take cards are IIFL forward estimates, clearly labelled. All data is
+            presented as observations for the reader to interpret — none of it constitutes a recommendation.
           </div>
         </div>
       </div>
-    </main>
+    </>
   );
 }

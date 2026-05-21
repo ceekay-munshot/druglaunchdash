@@ -27,7 +27,7 @@ import {
 } from './data/mockData';
 import { exportDashboardPdf } from './utils/exportDashboardPdf';
 import IPMInsights from './components/IPMInsights';
-import { Table, BarChart3 } from 'lucide-react';
+import TherapyComparison from './components/TherapyComparison';
 
 const LAUNCHES_ENDPOINT = '/launches.json';
 const PATENT_CLIFFS_ENDPOINT = '/patentCliffs.json';
@@ -85,10 +85,6 @@ export default function App() {
   const [selectedCompany, setSelectedCompany] = useState('__ALL__');
   const [timeline, setTimeline] = useState('2Q');
   const [archivedCompanies, setArchivedCompanies] = useState(loadInitialArchived);
-  // Top-level tab — 'launches' shows the existing tracker, 'ipm' shows the
-  // static IIFL IPM Insights scorecard. Persisted only in component state for
-  // now; deep-linking can be added later via a URL hash if needed.
-  const [activeTab, setActiveTab] = useState('launches');
   // Time-machine viewing date (epoch ms). null = live (today). When set
   // to a past timestamp, every downstream view filters out rows whose
   // Date > viewingDate, recomputing as if the dashboard were rendered
@@ -321,40 +317,6 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-pharma-50/40 via-white to-teal-50/30 bg-fixed">
-      {/* Top tab switcher — always visible across both views. */}
-      <div className="max-w-[1840px] mx-auto px-4 pt-3">
-        <div className="inline-flex bg-white rounded-xl border border-ink-100 p-1 shadow-card text-xs font-semibold">
-          <button
-            type="button"
-            onClick={() => setActiveTab('launches')}
-            className={`px-3 py-1.5 rounded-lg flex items-center gap-1.5 transition ${
-              activeTab === 'launches'
-                ? 'bg-pharma-50 text-pharma-700'
-                : 'text-ink-500 hover:text-ink-700'
-            }`}
-          >
-            <Table className="w-3.5 h-3.5" />
-            Launch Tracker
-          </button>
-          <button
-            type="button"
-            onClick={() => setActiveTab('ipm')}
-            className={`px-3 py-1.5 rounded-lg flex items-center gap-1.5 transition ${
-              activeTab === 'ipm'
-                ? 'bg-pharma-50 text-pharma-700'
-                : 'text-ink-500 hover:text-ink-700'
-            }`}
-          >
-            <BarChart3 className="w-3.5 h-3.5" />
-            IPM Insights
-          </button>
-        </div>
-      </div>
-
-      {activeTab === 'ipm' ? (
-        <IPMInsights />
-      ) : (
-        <>
       <Header
         searchQuery={searchQuery}
         onSearchChange={setSearchQuery}
@@ -452,6 +414,18 @@ export default function App() {
           </section>
         )}
 
+        {/* Company-vs-IPM therapy comparison — sits right beside the therapy
+            split so launch activity can be read against where the India
+            Pharma Market is actually growing. */}
+        <section
+          aria-label="Therapy mix vs IPM"
+          data-pdf-section
+          data-pdf-title="Therapy Mix vs IPM"
+          data-pdf-subtitle="Where this company launches vs where the India Pharma Market is growing"
+        >
+          <TherapyComparison rows={filteredRows} selectedCompany={selectedCompany} />
+        </section>
+
         <section
           aria-label="Patent cliff calendar"
           data-pdf-section
@@ -501,9 +475,10 @@ export default function App() {
           <InsightWidgets rows={filteredRows} selectedCompany={selectedCompany} />
         </section>
 
+        {/* India Pharma Market context band — periodic IIFL/AWACS data. */}
+        <IPMInsights />
+
       </main>
-        </>
-      )}
 
       {/* Full-screen overlay shown during PDF export. Hidden from the
           captured snapshot via data-pdf-no-capture (the export utility's

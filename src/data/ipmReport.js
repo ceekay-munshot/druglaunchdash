@@ -19,8 +19,15 @@ export const IPM_REPORT_META = {
   reportDate: '2026-04-30',
   authors: 'Rahul Jeewani, Naman Bagrecha, Aman Goyal, Vighnesh Indure',
   periodCovered: 'FY22-FY26',
-  caveat:
-    'IPM (India Pharma Market) values derive from IIFL’s analysis of secondary AIOCD/PharmaTrac data.',
+  // The India Pharma Market data is a PERIODIC snapshot — the AIOCD AWACS
+  // audit publishes on a fixed date each month; the latest cut here is the
+  // FY26 year-end (Apr-2026) release. It is "data as of [date]", refreshed
+  // on the monthly AWACS cycle — it is not stale, and is not meant to update
+  // daily the way the launch scraper does.
+  asOf: 'FY26 · year ending Mar-2026',
+  cadence: 'Monthly — AIOCD AWACS release cycle',
+  basis:
+    'India Pharma Market figures are from the AIOCD AWACS audit, as analysed in IIFL Capital Services research.',
 };
 
 // ── IPM headline numbers ────────────────────────────────────────────────────
@@ -53,28 +60,56 @@ export const IPM_HEADLINE = {
 };
 
 // ── Therapy area sales + Cagrs (IIFL Figure 10) ─────────────────────────────
-// 19 therapy areas, sorted by FY26 contribution. Used in the Therapy Map.
+// 19 therapy areas with the full FY22→FY26 sales series (Rs Cr), so the
+// dashboard can show real year-on-year growth, not just a 4-year Cagr.
+// contFY26 = % of total IPM in FY26; cagrFY22_26 = 4-year Cagr.
 export const THERAPY_AREAS = [
-  { name: 'Cardiac',           salesFY26Cr: 34297, contFY26: 13.9, cagrFY22_26: 10.9, segment: 'Chronic' },
-  { name: 'Gastro Intestinal', salesFY26Cr: 28894, contFY26: 11.7, cagrFY22_26: 8.5,  segment: 'Sub-Chronic' },
-  { name: 'Anti-Infectives',   salesFY26Cr: 27821, contFY26: 11.3, cagrFY22_26: 3.1,  segment: 'Acute' },
-  { name: 'Anti-Diabetic',     salesFY26Cr: 23051, contFY26: 9.4,  cagrFY22_26: 8.2,  segment: 'Chronic' },
-  { name: 'VMN',               salesFY26Cr: 21845, contFY26: 8.9,  cagrFY22_26: 7.6,  segment: 'Acute' },
-  { name: 'Respiratory',       salesFY26Cr: 19270, contFY26: 7.8,  cagrFY22_26: 7.0,  segment: 'Chronic' },
-  { name: 'Pain / Analgesics', salesFY26Cr: 16757, contFY26: 6.8,  cagrFY22_26: 9.2,  segment: 'Acute' },
-  { name: 'Neuro / CNS',       salesFY26Cr: 16580, contFY26: 6.7,  cagrFY22_26: 10.6, segment: 'Chronic' },
-  { name: 'Derma',             salesFY26Cr: 15923, contFY26: 6.5,  cagrFY22_26: 10.2, segment: 'Sub-Chronic' },
-  { name: 'Gynaecological',    salesFY26Cr: 7781,  contFY26: 3.2,  cagrFY22_26: 10.7, segment: 'Sub-Chronic' },
-  { name: 'Blood Related',     salesFY26Cr: 7260,  contFY26: 3.0,  cagrFY22_26: 9.3,  segment: 'Sub-Chronic' },
-  { name: 'Anti-Neoplastics',  salesFY26Cr: 5810,  contFY26: 2.4,  cagrFY22_26: 14.1, segment: 'Chronic' },
-  { name: 'Ophthal',           salesFY26Cr: 4538,  contFY26: 1.8,  cagrFY22_26: 10.0, segment: 'Sub-Chronic' },
-  { name: 'Urology',           salesFY26Cr: 4424,  contFY26: 1.8,  cagrFY22_26: 13.6, segment: 'Chronic' },
-  { name: 'Hormones',          salesFY26Cr: 3933,  contFY26: 1.6,  cagrFY22_26: 8.3,  segment: 'Sub-Chronic' },
-  { name: 'Vaccines',          salesFY26Cr: 2434,  contFY26: 1.0,  cagrFY22_26: 8.6,  segment: 'Acute' },
-  { name: 'Stomatologicals',   salesFY26Cr: 1696,  contFY26: 0.7,  cagrFY22_26: 10.2, segment: 'Acute' },
-  { name: 'Sex Stimulants',    salesFY26Cr: 1294,  contFY26: 0.5,  cagrFY22_26: 11.6, segment: 'Acute' },
-  { name: 'Anti Malarials',    salesFY26Cr: 654,   contFY26: 0.3,  cagrFY22_26: 1.4,  segment: 'Acute' },
+  { name: 'Cardiac',           salesByYear: { fy22: 22634, fy23: 24595, fy24: 27173, fy25: 30074, fy26: 34297 }, salesFY26Cr: 34297, contFY26: 13.9, cagrFY22_26: 10.9, segment: 'Chronic' },
+  { name: 'Gastro Intestinal', salesByYear: { fy22: 20825, fy23: 22980, fy24: 25078, fy25: 27759, fy26: 28894 }, salesFY26Cr: 28894, contFY26: 11.7, cagrFY22_26: 8.5,  segment: 'Sub-Chronic' },
+  { name: 'Anti-Infectives',   salesByYear: { fy22: 24671, fy23: 23637, fy24: 24914, fy25: 26407, fy26: 27821 }, salesFY26Cr: 27821, contFY26: 11.3, cagrFY22_26: 3.1,  segment: 'Acute' },
+  { name: 'Anti-Diabetic',     salesByYear: { fy22: 16842, fy23: 17700, fy24: 19029, fy25: 20706, fy26: 23051 }, salesFY26Cr: 23051, contFY26: 9.4,  cagrFY22_26: 8.2,  segment: 'Chronic' },
+  { name: 'VMN',               salesByYear: { fy22: 16298, fy23: 17649, fy24: 19055, fy25: 20444, fy26: 21845 }, salesFY26Cr: 21845, contFY26: 8.9,  cagrFY22_26: 7.6,  segment: 'Acute' },
+  { name: 'Respiratory',       salesByYear: { fy22: 14713, fy23: 15979, fy24: 16874, fy25: 17330, fy26: 19270 }, salesFY26Cr: 19270, contFY26: 7.8,  cagrFY22_26: 7.0,  segment: 'Chronic' },
+  { name: 'Pain / Analgesics', salesByYear: { fy22: 11796, fy23: 13192, fy24: 14540, fy25: 15735, fy26: 16757 }, salesFY26Cr: 16757, contFY26: 6.8,  cagrFY22_26: 9.2,  segment: 'Acute' },
+  { name: 'Neuro / CNS',       salesByYear: { fy22: 11095, fy23: 12509, fy24: 13768, fy25: 15059, fy26: 16580 }, salesFY26Cr: 16580, contFY26: 6.7,  cagrFY22_26: 10.6, segment: 'Chronic' },
+  { name: 'Derma',             salesByYear: { fy22: 10806, fy23: 12117, fy24: 13281, fy25: 14810, fy26: 15923 }, salesFY26Cr: 15923, contFY26: 6.5,  cagrFY22_26: 10.2, segment: 'Sub-Chronic' },
+  { name: 'Gynaecological',    salesByYear: { fy22: 5180,  fy23: 6324,  fy24: 6956,  fy25: 7232,  fy26: 7781 },  salesFY26Cr: 7781,  contFY26: 3.2,  cagrFY22_26: 10.7, segment: 'Sub-Chronic' },
+  { name: 'Blood Related',     salesByYear: { fy22: 5090,  fy23: 5611,  fy24: 6256,  fy25: 6774,  fy26: 7260 },  salesFY26Cr: 7260,  contFY26: 3.0,  cagrFY22_26: 9.3,  segment: 'Sub-Chronic' },
+  { name: 'Anti-Neoplastics',  salesByYear: { fy22: 3430,  fy23: 4494,  fy24: 4720,  fy25: 5341,  fy26: 5810 },  salesFY26Cr: 5810,  contFY26: 2.4,  cagrFY22_26: 14.1, segment: 'Chronic' },
+  { name: 'Ophthal',           salesByYear: { fy22: 3102,  fy23: 3710,  fy24: 4124,  fy25: 4273,  fy26: 4538 },  salesFY26Cr: 4538,  contFY26: 1.8,  cagrFY22_26: 10.0, segment: 'Sub-Chronic' },
+  { name: 'Urology',           salesByYear: { fy22: 2655,  fy23: 2995,  fy24: 3334,  fy25: 3839,  fy26: 4424 },  salesFY26Cr: 4424,  contFY26: 1.8,  cagrFY22_26: 13.6, segment: 'Chronic' },
+  { name: 'Hormones',          salesByYear: { fy22: 2864,  fy23: 3037,  fy24: 3332,  fy25: 3682,  fy26: 3933 },  salesFY26Cr: 3933,  contFY26: 1.6,  cagrFY22_26: 8.3,  segment: 'Sub-Chronic' },
+  { name: 'Vaccines',          salesByYear: { fy22: 1748,  fy23: 1700,  fy24: 1912,  fy25: 2027,  fy26: 2434 },  salesFY26Cr: 2434,  contFY26: 1.0,  cagrFY22_26: 8.6,  segment: 'Acute' },
+  { name: 'Stomatologicals',   salesByYear: { fy22: 1150,  fy23: 1280,  fy24: 1423,  fy25: 1560,  fy26: 1696 },  salesFY26Cr: 1696,  contFY26: 0.7,  cagrFY22_26: 10.2, segment: 'Acute' },
+  { name: 'Sex Stimulants',    salesByYear: { fy22: 833,   fy23: 1014,  fy24: 1100,  fy25: 1235,  fy26: 1294 },  salesFY26Cr: 1294,  contFY26: 0.5,  cagrFY22_26: 11.6, segment: 'Acute' },
+  { name: 'Anti Malarials',    salesByYear: { fy22: 620,   fy23: 531,   fy24: 595,   fy25: 642,   fy26: 654 },   salesFY26Cr: 654,   contFY26: 0.3,  cagrFY22_26: 1.4,  segment: 'Acute' },
 ];
+
+// Maps Launch-Tracker therapy strings (the dataset's COLUMN_KEYS.THERAPY values)
+// onto IPM therapy-area names so the two datasets can be compared. The
+// comparison component splits compound strings like "Gastroenterology /
+// Hepatology" on " / " and looks up the first (primary) token here.
+// Launch-tracker therapies with no clean IPM equivalent (Nephrology,
+// Immunology, Rheumatology, Multi-therapy, …) are intentionally absent —
+// they simply won't get an IPM comparison row.
+export const LAUNCH_TO_IPM_THERAPY = {
+  'Cardiology': 'Cardiac',
+  'Anti-Diabetic': 'Anti-Diabetic',
+  'Gastroenterology': 'Gastro Intestinal',
+  'Anti-Infectives': 'Anti-Infectives',
+  'Anti-TB': 'Anti-Infectives',
+  'Respiratory': 'Respiratory',
+  'Neurology': 'Neuro / CNS',
+  'Dermatology': 'Derma',
+  'Pain Management': 'Pain / Analgesics',
+  'Oncology': 'Anti-Neoplastics',
+  "Women's Health": 'Gynaecological',
+  'Ophthalmology': 'Ophthal',
+  'Urology': 'Urology',
+  'Vaccines': 'Vaccines',
+  'Endocrinology': 'Hormones',
+  'Nutraceuticals': 'VMN',
+};
 
 // ── Per-company scorecard (IIFL Figures 1, 3, 4, 5) ─────────────────────────
 // 21 distinct entries — note Torrent appears twice as IIFL tracks the standalone
