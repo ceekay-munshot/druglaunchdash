@@ -10,8 +10,6 @@ import PeerBenchmark from './components/PeerBenchmark';
 import PatentCliffs from './components/PatentCliffs';
 import BriefingHero from './components/BriefingHero';
 import ActionRequired from './components/ActionRequired';
-import WhitespaceMatrix from './components/WhitespaceMatrix';
-import TimeMachineSlider from './components/TimeMachineSlider';
 import {
   LAUNCH_TRACKER_ROWS,
   UNIQUE_BUYERS,
@@ -85,12 +83,6 @@ export default function App() {
   const [selectedCompany, setSelectedCompany] = useState('__ALL__');
   const [timeline, setTimeline] = useState('2Q');
   const [archivedCompanies, setArchivedCompanies] = useState(loadInitialArchived);
-  // Time-machine viewing date (epoch ms). null = live (today). When set
-  // to a past timestamp, every downstream view filters out rows whose
-  // Date > viewingDate, recomputing as if the dashboard were rendered
-  // on that day.
-  const [viewingDate, setViewingDate] = useState(null);
-  const isLiveView = viewingDate == null;
 
   const activeCompanies = useMemo(
     () => UNIQUE_BUYERS.filter((c) => !archivedCompanies.includes(c)),
@@ -105,17 +97,6 @@ export default function App() {
       /* ignore */
     }
   }, [archivedCompanies]);
-
-  // Auto-reset the time-machine cap when the user leaves the All-time
-  // preset. The slider only renders on `timeline === 'ALL'`; if they
-  // switch to a narrower preset while in past mode, the slider would
-  // disappear but the cap would silently stay in effect — which is the
-  // exact "why is half my data missing?" footgun we want to avoid.
-  useEffect(() => {
-    if (timeline !== 'ALL' && viewingDate != null) {
-      setViewingDate(null);
-    }
-  }, [timeline, viewingDate]);
 
   const unarchiveCompany = (name) =>
     setArchivedCompanies((prev) => prev.filter((c) => c !== name));
@@ -195,23 +176,8 @@ export default function App() {
     [scrapedRows]
   );
 
-  // Rows visible under the time-machine cap. We apply the viewingDate
-  // filter BEFORE the user-facing filteredRows pipeline so every
-  // downstream consumer (KPIs, charts, table, whitespace matrix, patent
-  // cliffs' "your 7 positioning" pill) sees the same as-of-date snapshot.
-  const timeMachineRows = useMemo(() => {
-    if (viewingDate == null) return allRows;
-    return allRows.filter((r) => {
-      const d = r[COLUMN_KEYS.DATE];
-      if (!d) return true; // un-dated rows always survive
-      const t = new Date(d).getTime();
-      if (isNaN(t)) return true;
-      return t <= viewingDate;
-    });
-  }, [allRows, viewingDate]);
-
   const filteredRows = useMemo(() => {
-    return timeMachineRows.filter((r) => {
+    return allRows.filter((r) => {
       if (timelineCutoff) {
         const d = new Date(r[COLUMN_KEYS.DATE]);
         if (isNaN(d.getTime()) || d < timelineCutoff) return false;
@@ -241,7 +207,7 @@ export default function App() {
       }
       return true;
     });
-  }, [searchQuery, selectedCompany, timelineCutoff, archivedCompanies, timeMachineRows]);
+  }, [searchQuery, selectedCompany, timelineCutoff, archivedCompanies, allRows]);
 
   // "Last refresh" shows the scrape timestamp when we have one, otherwise the
   // last time the button was pressed / page loaded.
@@ -345,34 +311,11 @@ export default function App() {
           timelineCutoff={timelineCutoff}
         />
 
-        {/* Time-machine date scrubber. Only relevant on the All-time
-            timeline preset — at narrower windows (Last 2 Quarters etc.)
-            the timeline preset already caps the visible row range, so
-            the time machine would just compete with it. When pulled
-            back, every section below renders against the as-of-date
-            row set, and the real-time-only sections (briefing, action
-            panel) hide. */}
-        {timeline === 'ALL' && (
-          <TimeMachineSlider
-            allRows={allRows}
-            viewingDate={viewingDate}
-            onChange={setViewingDate}
-          />
-        )}
-
-        {/* "Since you last looked" briefing — only meaningful when the
-            user is viewing live data. In time-machine mode the diff
-            against last-visit is incoherent, so we hide the card. */}
-        {isLiveView && <BriefingHero allRows={allRows} />}
+        <BriefingHero allRows={allRows} />
 
         <InsightRibbon rows={filteredRows} />
 
-        {/* Action Required panel — same logic: real-time alerts about
-            imminent patent cliffs and peer activity don't make sense
-            when looking at a past snapshot, so hide in time-machine mode. */}
-        {isLiveView && (
-          <ActionRequired allRows={timeMachineRows} companies={activeCompanies} />
-        )}
+        <ActionRequired allRows={allRows} companies={activeCompanies} />
 
         <section
           aria-label="KPI summary"
@@ -433,23 +376,10 @@ export default function App() {
           data-pdf-subtitle="Upcoming originator expiries and India opportunity windows"
         >
           <PatentCliffs
-            allRows={timeMachineRows}
+            allRows={allRows}
             companies={activeCompanies}
             livePatentCliffs={livePatentCliffs}
           />
-        </section>
-
-        {/* Whitespace matrix — molecule × tracked-company grid showing
-            launched (✓) vs whitespace (—) for every patent-cliff
-            molecule. Sorted to surface the cells with the most strategic
-            whitespace at the top. */}
-        <section
-          aria-label="Whitespace matrix"
-          data-pdf-section
-          data-pdf-title="Whitespace Matrix"
-          data-pdf-subtitle="Patent-cliff molecules × tracked companies"
-        >
-          <WhitespaceMatrix allRows={timeMachineRows} companies={activeCompanies} />
         </section>
 
         <section
@@ -461,7 +391,7 @@ export default function App() {
         >
           <MainTable
             rows={filteredRows}
-            allRows={timeMachineRows}
+            allRows={allRows}
             selectedCompany={selectedCompany}
           />
         </section>

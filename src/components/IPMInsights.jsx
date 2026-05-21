@@ -1,7 +1,7 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useState } from 'react';
 import {
   Activity, TrendingUp, TrendingDown, ArrowUpRight, ArrowDownRight,
-  ChartNoAxesColumn, Layers, ShieldAlert, Syringe, Trophy, Info,
+  ChartNoAxesColumn, Layers, ShieldAlert, Syringe, Trophy, Info, ChevronDown,
 } from 'lucide-react';
 import {
   IPM_REPORT_META, IPM_HEADLINE, THERAPY_AREAS, COMPANIES, IPM_AVG,
@@ -160,6 +160,7 @@ function MarketPulse() {
 
 // ── Scene 2 — Scoreboard ────────────────────────────────────────────────────
 function Scoreboard() {
+  const [expanded, setExpanded] = useState(false);
   // This-year ranking (FY22-26), sorted by composite score desc.
   const fy26Ranked = useMemo(
     () =>
@@ -187,6 +188,10 @@ function Scoreboard() {
     : score >= 45 ? 'border-l-2 border-ink-200'
     : 'bg-rose-50/30 border-l-2 border-rose-300';
 
+  // Collapsed to the top 10; the rest reveal behind a button.
+  const visible = expanded ? fy26Ranked : fy26Ranked.slice(0, 10);
+  const hiddenCount = fy26Ranked.length - 10;
+
   return (
     <Section
       icon={Trophy}
@@ -200,7 +205,7 @@ function Scoreboard() {
         <div className="text-right">Change</div>
       </div>
       <div>
-        {fy26Ranked.map((c) => {
+        {visible.map((c) => {
           const lastRank = fy25RankByName.get(c.name);
           const isNew = c.compositeFY23_25 == null;
           const delta = isNew ? null : lastRank - c.fy26Rank;
@@ -249,6 +254,18 @@ function Scoreboard() {
           );
         })}
       </div>
+      {hiddenCount > 0 && (
+        <div className="flex justify-center mt-2.5">
+          <button
+            type="button"
+            onClick={() => setExpanded((v) => !v)}
+            className="inline-flex items-center gap-1.5 text-[11px] font-semibold text-pharma-700 bg-pharma-50 hover:bg-pharma-100 border border-pharma-200 rounded-full px-3.5 py-1.5 transition-colors"
+          >
+            {expanded ? 'Show top 10 only' : `Show ${hiddenCount} more companies`}
+            <ChevronDown className={`w-3.5 h-3.5 transition-transform ${expanded ? 'rotate-180' : ''}`} />
+          </button>
+        </div>
+      )}
       <div className="flex flex-wrap items-center gap-4 mt-3 text-[10px] text-ink-500">
         <div className="flex items-center gap-1.5"><span className="w-2 h-3 rounded-sm bg-pharma-400" />Top tier (score ≥65)</div>
         <div className="flex items-center gap-1.5"><span className="w-2 h-3 rounded-sm bg-ink-200" />Middle pack</div>
@@ -455,51 +472,27 @@ function NlemRisk() {
     []
   );
 
+  // Severity grade by the share of revenue under government price control.
+  const grade = (pct) =>
+    pct >= 25 ? { bar: 'bg-rose-500', text: 'text-rose-700' }
+    : pct >= 12 ? { bar: 'bg-amber-500', text: 'text-amber-700' }
+    : { bar: 'bg-pharma-500', text: 'text-pharma-700' };
+
   return (
     <Section
       icon={ShieldAlert}
       title="Pricing freedom — who can raise prices, who's stuck"
-      subtitle="The government caps prices on ~17% of all India pharma sales. Companies overweight that capped basket have no pricing flexibility."
+      subtitle="Each bar is the share of a company's sales under government price control (NLEM). Shorter bar = more freedom to raise prices."
     >
-      {/* Why-this-matters context tile */}
-      <div className="bg-amber-50/40 rounded-xl p-3.5 mb-4 border border-amber-200/80">
-        <div className="text-xs font-semibold text-ink-900 mb-1">💡 Why this matters</div>
-        <div className="text-[12px] text-ink-700 leading-relaxed">
-          In FY25 and FY26 the government allowed almost <b>0% price increases</b> on essential medicines.
-          FY27 is set at ~0.65%. Companies overweight the capped basket can't raise prices to offset rising
-          input costs — so their margins shrink every year inflation runs higher.
-        </div>
-      </div>
-
-      {/* Stacked Free / Capped bar per company */}
-      <div className="space-y-2">
+      <div className="space-y-1.5">
         {ranked.map((c) => {
-          const freePct = 100 - c.nlemExposurePct;
-          const cappedPct = c.nlemExposurePct;
+          const g = grade(c.nlemExposurePct);
           return (
-            <div key={c.name} className="grid grid-cols-[110px_1fr] gap-3 items-center">
+            <div key={c.name} className="grid grid-cols-[110px_1fr_44px] items-center gap-3">
               <div className="text-[11px] font-medium text-ink-900 truncate" title={c.name}>{c.short}</div>
-              <div className="flex items-center gap-3">
-                <div className="flex flex-1 h-4 rounded-full overflow-hidden bg-ink-100">
-                  <div
-                    className="bg-pharma-500 flex items-center justify-end pr-1.5"
-                    style={{ width: `${freePct}%` }}
-                    title={`${freePct}% free to price`}
-                  >
-                    {freePct >= 22 && (
-                      <span className="text-[9px] font-bold text-white tabular-nums">{freePct}%</span>
-                    )}
-                  </div>
-                  <div
-                    className="bg-rose-500 flex items-center justify-start pl-1.5"
-                    style={{ width: `${cappedPct}%` }}
-                    title={`${cappedPct}% government-capped`}
-                  >
-                    {cappedPct >= 12 && (
-                      <span className="text-[9px] font-bold text-white tabular-nums">{cappedPct}%</span>
-                    )}
-                  </div>
-                </div>
+              <Bar pct={c.nlemExposurePct} color={g.bar} height="h-2.5" />
+              <div className={`text-[11px] font-bold tabular-nums text-right ${g.text}`}>
+                {c.nlemExposurePct}%
               </div>
             </div>
           );
@@ -507,16 +500,11 @@ function NlemRisk() {
       </div>
 
       <div className="flex flex-wrap items-center gap-4 mt-4 text-[10px] text-ink-500">
-        <div className="flex items-center gap-1.5"><span className="w-3 h-2.5 rounded-sm bg-pharma-500" />Free to price (can raise)</div>
-        <div className="flex items-center gap-1.5"><span className="w-3 h-2.5 rounded-sm bg-rose-500" />Government-capped (NLEM)</div>
+        <div className="flex items-center gap-1.5"><span className="w-3 h-2.5 rounded-sm bg-rose-500" />Squeezed · ≥25% capped</div>
+        <div className="flex items-center gap-1.5"><span className="w-3 h-2.5 rounded-sm bg-amber-500" />Some exposure · 12–24%</div>
+        <div className="flex items-center gap-1.5"><span className="w-3 h-2.5 rounded-sm bg-pharma-500" />Pricing freedom · &lt;12%</div>
         <div className="ml-auto">IPM avg <b className="text-ink-700">{IPM_AVG.nlemExposurePct}% capped</b></div>
       </div>
-
-      <Caption>
-        Most squeezed: <b>FDC (58%), GSK (41%), Sanofi (33%), Alkem (28%), Cipla (27%)</b> — over a quarter of their revenue is government-capped.
-        Most pricing freedom: <b>Torrent (6%), Torrent+JB (7%), Corona (9%), Indoco (9%), Sun (11%)</b> — they keep
-        pricing power on ~90% of their book.
-      </Caption>
     </Section>
   );
 }
