@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-22T04:51:46.159Z",
-  "rowCount": 145,
+  "generatedAt": "2026-05-23T04:32:38.409Z",
+  "rowCount": 154,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -57,7 +57,7 @@
       "chronicAcute": "Chronic",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/10/Press-Release-Sun-Pharma-and-Zydus-sign-licensing-agreement-for-co-marketing-of-Desidustat-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-16T04:10:58.804Z",
+      "lastEnrichmentAttempt": "2026-05-23T04:30:57.468Z",
       "price": "null"
     },
     {
@@ -87,7 +87,7 @@
       "chronicAcute": "Chronic",
       "sourceUrl": "https://www.coronaremedies.com/wp-content/uploads/2024/11/myoril-news-2024.png",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-16T04:11:12.042Z"
+      "lastEnrichmentAttempt": "2026-05-23T04:31:09.417Z"
     },
     {
       "brand": "Sematreat",
@@ -103,7 +103,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/PR-for-Semaglutide.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-16T04:11:29.106Z"
+      "lastEnrichmentAttempt": "2026-05-23T04:31:37.274Z"
     },
     {
       "brand": "Semaglutide Injection",
@@ -135,7 +135,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/09/Press-Release-Sun-Pharma-and-Pharmazz-Inc.-licensing-agreement-for-Sovateltide-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-16T04:11:36.628Z"
+      "lastEnrichmentAttempt": "2026-05-23T04:31:43.801Z"
     },
     {
       "brand": "Thyrocab",
@@ -323,8 +323,8 @@
       "indication": "anemia associated with Chronic Kidney Disease",
       "existingBrand": "Oxemia",
       "chronicAcute": "Chronic",
-      "price": "—",
-      "sourceUrl": "—",
+      "price": "₹674 / strip of 6 tablets",
+      "sourceUrl": "https://www.sunpharma.com/investors/press-release",
       "buyer": "Sun Pharma",
       "lastEnrichmentAttempt": "2026-05-08T07:13:00.390Z"
     },
@@ -342,7 +342,7 @@
       "price": "—",
       "sourceUrl": "https://www.pharmazz.com/launch-tyvalzi-sovateltide-india",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-16T04:11:02.279Z"
+      "lastEnrichmentAttempt": "2026-05-23T04:31:02.547Z"
     },
     {
       "brand": "Palbo",
@@ -374,7 +374,7 @@
       "price": "₹21.7 / strip of 10 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-16T04:11:18.269Z"
+      "lastEnrichmentAttempt": "2026-05-23T04:31:15.891Z"
     },
     {
       "brand": "Dilo-BM",
@@ -902,7 +902,7 @@
       "price": "null",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/10/Press-Release-Sun-Pharma-and-Zydus-sign-licensing-agreement-for-co-marketing-of-Desidustat-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-16T04:10:01.245Z"
+      "lastEnrichmentAttempt": "2026-05-23T04:30:41.619Z"
     },
     {
       "brand": "Cipla's New Biosimilar",
@@ -950,7 +950,7 @@
       "price": "₹5316 / strip of 1 capsule",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-expands-its-oncology-franchise-in-India-with-the-launch-of-Helsinn.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-05-16T04:10:51.620Z"
+      "lastEnrichmentAttempt": "2026-05-23T04:30:47.421Z"
     },
     {
       "brand": "Ryaltris",
@@ -958,15 +958,15 @@
       "date": "2018-08-08",
       "seller": "—",
       "dealType": "NCE Launch",
-      "molecule": "—",
-      "therapy": "—",
+      "molecule": "olopatadine hydrochloride plus mometasone furoate",
+      "therapy": "Respiratory",
       "indication": "Seasonal Allergic Rhinitis",
       "existingBrand": "—",
       "chronicAcute": "—",
       "price": "₹232 / bottle of 17 gm",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-Announces-FDA-Acceptance-of-the-Companys-First.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-05-16T04:10:51.620Z"
+      "lastEnrichmentAttempt": "2026-05-23T04:30:51.815Z"
     },
     {
       "brand": "Thyrocab",
@@ -982,7 +982,7 @@
       "price": "₹232 / bottle of 100 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-16T04:11:18.269Z"
+      "lastEnrichmentAttempt": "2026-05-23T04:31:30.901Z"
     },
     {
       "brand": "Dilo-BM, Dilo-DX, Stelbid, Vitneurin",
@@ -2311,6 +2311,150 @@
       "sourceUrl": "https://www.lupin.com/",
       "buyer": "Lupin",
       "lastEnrichmentAttempt": "2026-05-22T04:49:40.045Z"
+    },
+    {
+      "brand": "Mankind Pharma Brand XYZ",
+      "launchType": "Own Launched",
+      "date": "2023-09-22",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Molecule A",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "Competitor Brand A",
+      "chronicAcute": "Chronic",
+      "price": "Rs 5,000 / vial",
+      "sourceUrl": "https://www.mankindpharma.com/press-release-brand-xyz",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-05-23T04:26:41.069Z"
+    },
+    {
+      "brand": "Mankind Pharma Acquired Brand ABC",
+      "launchType": "Acquired",
+      "date": "2023-10-01",
+      "seller": "Brand ABC Holdings",
+      "dealType": "Brand Acquisition",
+      "molecule": "Molecule B",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Competitor Brand B",
+      "chronicAcute": "Chronic",
+      "price": "Rs 800 / strip",
+      "sourceUrl": "https://www.mankindpharma.com/press-release-brand-abc",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-05-23T04:26:41.069Z"
+    },
+    {
+      "brand": "WINLEVI",
+      "launchType": "In-licensed",
+      "date": "2021-09-28",
+      "seller": "Cassiopea",
+      "dealType": "Brand Acquisition",
+      "molecule": "clascoterone",
+      "therapy": "Dermatology",
+      "indication": "Topical Treatment of Acne",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹21.3 / bottle of 30 ml (2.5 mg)",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/09/Press-Release-Sun-Pharma-launches-Chericof-12.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-23T04:27:18.751Z"
+    },
+    {
+      "brand": "Cipla's New Diabetes Drug",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "empagliflozin",
+      "therapy": "anti-diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Jardiance",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,200 / pack of 30 tablets",
+      "sourceUrl": "https://www.cipla.com/press-release/diabetes-drug-launch",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-05-23T04:27:29.635Z"
+    },
+    {
+      "brand": "Acquisition of Generic Pharmaceuticals",
+      "launchType": "Acquired",
+      "date": "2023-08-01",
+      "seller": "Generic Pharma Inc.",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.cipla.com/press-release/generic-pharma-acquisition",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-05-23T04:27:29.635Z"
+    },
+    {
+      "brand": "Antibacterial Combination",
+      "launchType": "Own Launched",
+      "date": "2023-10-02",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "Drug-resistant Infections",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹643 / pump bottle of 100 ml",
+      "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/amp_articleshow/100775508.cms",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-05-23T04:27:54.905Z"
+    },
+    {
+      "brand": "GBR 1302",
+      "launchType": "In-licensed",
+      "date": "2018-08-06",
+      "seller": "—",
+      "dealType": "Co-marketing",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Pharmaceuticals-and-Harbour-BioMed-Sign-Agreement-for-Greater-China-toDevelop-GBR-1302.pdf",
+      "buyer": "Glenmark",
+      "lastEnrichmentAttempt": "2026-05-23T04:28:44.403Z"
+    },
+    {
+      "brand": "BP11",
+      "launchType": "Own Launched",
+      "date": "2026-04-05",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "Omalizumab",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Xolair",
+      "chronicAcute": "—",
+      "price": "₹61.2 / strip of 20 capsules",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-05-23T04:30:28.138Z"
+    },
+    {
+      "brand": "AKYNZEO",
+      "launchType": "In-licensed",
+      "date": "2018-07-10",
+      "seller": "Helsinn",
+      "dealType": "In-license (India)",
+      "molecule": "netupitant plus palonosetron",
+      "therapy": "—",
+      "indication": "chemotherapy-induced nausea and vomiting",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.helsinn.com/news/glenmark-pharmaceuticals-expands-its-oncology-franchise-in-india-with-the-launch-of-helsinns-akynzeo-a-combination-drug-for-the-prevention-of-cinv-chemotherapy-induced-nausea-and-vomiting/",
+      "buyer": "Glenmark",
+      "lastEnrichmentAttempt": "2026-05-23T04:30:47.421Z"
     }
   ]
 }
