@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-23T04:32:38.409Z",
-  "rowCount": 154,
+  "generatedAt": "2026-05-24T04:53:56.441Z",
+  "rowCount": 159,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -151,7 +151,7 @@
       "price": "—",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-16T04:11:40.663Z"
+      "lastEnrichmentAttempt": "2026-05-24T04:51:52.012Z"
     },
     {
       "brand": "Semaglutide",
@@ -390,7 +390,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-16T04:11:45.759Z"
+      "lastEnrichmentAttempt": "2026-05-24T04:52:03.277Z"
     },
     {
       "brand": "Dilo-DX",
@@ -406,7 +406,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-16T04:11:55.115Z"
+      "lastEnrichmentAttempt": "2026-05-24T04:52:19.686Z"
     },
     {
       "brand": "Stelbid",
@@ -422,7 +422,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-16T04:12:00.119Z"
+      "lastEnrichmentAttempt": "2026-05-24T04:52:28.851Z"
     },
     {
       "brand": "Vitneurin",
@@ -438,7 +438,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-17T04:42:08.959Z"
+      "lastEnrichmentAttempt": "2026-05-24T04:52:59.146Z"
     },
     {
       "brand": "Noveltreat and Sematrinity",
@@ -849,7 +849,7 @@
       "molecule": "Famotidine",
       "therapy": "—",
       "indication": "—",
-      "existingBrand": "—",
+      "existingBrand": "Pepcid",
       "chronicAcute": "—",
       "price": "₹2.1 / vial of 2 ml (Famotidine Injection)",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-u-s-fda-approval-for-famotidine-injection-usp",
@@ -998,7 +998,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-16T04:11:45.759Z"
+      "lastEnrichmentAttempt": "2026-05-24T04:52:15.269Z"
     },
     {
       "brand": "Dilo-BM, Dilo-DX, Stelbid and Vitneurin",
@@ -1014,7 +1014,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-16T04:12:00.119Z"
+      "lastEnrichmentAttempt": "2026-05-24T04:52:36.012Z"
     },
     {
       "brand": "Pomalidomide Capsules",
@@ -1062,7 +1062,7 @@
       "price": "₹5316 / strip of 1 capsule",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-expands-its-oncology-franchise-in-India-with-the-launch-of-Helsinn.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-05-17T04:41:52.451Z"
+      "lastEnrichmentAttempt": "2026-05-24T04:52:42.075Z"
     },
     {
       "brand": "Generic Tiotropium Bromide Dry Powder Inhaler",
@@ -1078,7 +1078,7 @@
       "price": "₹304 / packet of 120 mdi inhaler",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-enters-into-an-exclusive-licensing.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-05-17T04:41:52.451Z"
+      "lastEnrichmentAttempt": "2026-05-24T04:52:45.259Z"
     },
     {
       "brand": "Glycerol Phenylbutyrate Oral Liquid",
@@ -1088,13 +1088,13 @@
       "dealType": "NCE Launch",
       "molecule": "Glycerol Phenylbutyrate",
       "therapy": "—",
-      "indication": "—",
-      "existingBrand": "—",
-      "chronicAcute": "—",
+      "indication": "Urea cycle disorders (UCDs)",
+      "existingBrand": "Ravicti®",
+      "chronicAcute": "Chronic",
       "price": "null",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-u-s-fda-approval-for-glycerol-phenylbutyrate-oral-liquid",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-05-17T04:42:07.458Z"
+      "lastEnrichmentAttempt": "2026-05-24T04:52:49.413Z"
     },
     {
       "brand": "Dilo-BM",
@@ -1264,10 +1264,10 @@
       "dealType": "Brand Acquisition",
       "molecule": "—",
       "therapy": "Anti-Diabetic",
-      "indication": "—",
+      "indication": "Diabetes",
       "existingBrand": "—",
       "chronicAcute": "—",
-      "price": null,
+      "price": "₹21.7 / strip of 10 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
       "lastEnrichmentAttempt": "2026-05-18T04:54:32.799Z"
@@ -1280,10 +1280,10 @@
       "dealType": "Brand Acquisition",
       "molecule": "—",
       "therapy": "—",
-      "indication": "—",
+      "indication": "Hyperthyroidism",
       "existingBrand": "—",
       "chronicAcute": "—",
-      "price": null,
+      "price": "₹232 / bottle of 100 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
       "lastEnrichmentAttempt": "2026-05-18T04:54:32.799Z"
@@ -1759,10 +1759,10 @@
       "seller": "—",
       "dealType": "NCE Launch",
       "molecule": "Revefenacin",
-      "therapy": "—",
-      "indication": "—",
+      "therapy": "Respiratory",
+      "indication": "Chronic Obstructive Pulmonary Disease",
       "existingBrand": "—",
-      "chronicAcute": "—",
+      "chronicAcute": "Chronic",
       "price": null,
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-tentative-approval-from-u-s-fda-for-revefenacin-inhalation-solution",
       "buyer": "Lupin",
@@ -2455,6 +2455,86 @@
       "sourceUrl": "https://www.helsinn.com/news/glenmark-pharmaceuticals-expands-its-oncology-franchise-in-india-with-the-launch-of-helsinns-akynzeo-a-combination-drug-for-the-prevention-of-cinv-chemotherapy-induced-nausea-and-vomiting/",
       "buyer": "Glenmark",
       "lastEnrichmentAttempt": "2026-05-23T04:30:47.421Z"
+    },
+    {
+      "brand": "Ryaltris",
+      "launchType": "In-licensed",
+      "date": "2018-07-06",
+      "seller": "Seqirus",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹232 / bottle of 17 gm (nasal spray)",
+      "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-Announces-Exclusive-Licensing-Agreement-with-Se.pdf",
+      "buyer": "Glenmark",
+      "lastEnrichmentAttempt": "2026-05-24T04:50:25.115Z"
+    },
+    {
+      "brand": "Oseltamivir Phosphate Oral Suspension",
+      "launchType": "Own Launched",
+      "date": "2026-05-22",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "Oseltamivir",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Tamiflu",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-china-approval-for-oseltamivir-phosphate-oral-suspension",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-05-24T04:50:43.075Z"
+    },
+    {
+      "brand": "ADQUEY™ difamilast 1 Ointment",
+      "launchType": "Acquired",
+      "date": "2026-02-16",
+      "seller": "Otsuka Pharmaceutical Co., Ltd.",
+      "dealType": "Brand Acquisition",
+      "molecule": "difamilast",
+      "therapy": "Dermatology",
+      "indication": "Atopic Dermatitis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/Adquey-(Difamilast)_NDA%20Approval_PressRelease_13-Feb-26.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-05-24T04:51:42.840Z"
+    },
+    {
+      "brand": "Dilo-BM, Dilo-DX, Stelbid, Vitneurin",
+      "launchType": "Acquired",
+      "date": "2017-03-07",
+      "seller": "GlaxoSmithKline Pharmaceuticals",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-24T04:52:15.269Z"
+    },
+    {
+      "brand": "Tiotropium Bromide DPI",
+      "launchType": "In-licensed",
+      "date": "2018-08-29",
+      "seller": "—",
+      "dealType": "In-license (India)",
+      "molecule": "Tiotropium Bromide",
+      "therapy": "Respiratory",
+      "indication": "chronic obstructive pulmonary disease",
+      "existingBrand": "Spiriva® Handihaler",
+      "chronicAcute": "Chronic",
+      "price": null,
+      "sourceUrl": "—",
+      "buyer": "Glenmark",
+      "lastEnrichmentAttempt": "2026-05-24T04:52:45.259Z"
     }
   ]
 }
