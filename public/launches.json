@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-24T04:53:56.441Z",
-  "rowCount": 159,
+  "generatedAt": "2026-05-25T05:15:02.472Z",
+  "rowCount": 167,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -182,7 +182,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/PR-for-Semaglutide.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-17T04:42:39.628Z"
+      "lastEnrichmentAttempt": "2026-05-25T05:13:12.128Z"
     },
     {
       "brand": "Noveltreat",
@@ -470,7 +470,7 @@
       "price": "₹33.4 / strip of 10 tablets",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/09/Press-Release-Sun-Pharma-and-Pharmazz-Inc.-licensing-agreement-for-Sovateltide-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-17T04:42:22.210Z"
+      "lastEnrichmentAttempt": "2026-05-25T05:12:28.714Z"
     },
     {
       "brand": "Molxvir",
@@ -486,7 +486,7 @@
       "price": "₹1347 / bottle of 40 capsules",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/11/Press-Release-Sun-Pharma-gearing-up-to-introduce-molnupiravir-under-the-brand-name-Molxvir%C2%AE-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-17T04:42:26.498Z"
+      "lastEnrichmentAttempt": "2026-05-25T05:12:55.804Z"
     },
     {
       "brand": "Cetuximab",
@@ -518,7 +518,7 @@
       "price": "₹21.7 / strip of 10 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-17T04:42:30.637Z"
+      "lastEnrichmentAttempt": "2026-05-25T05:13:01.384Z"
     },
     {
       "brand": "Product A",
@@ -1110,7 +1110,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-17T04:42:08.959Z"
+      "lastEnrichmentAttempt": "2026-05-25T05:11:58.924Z"
     },
     {
       "brand": "Dilo-DX",
@@ -1126,7 +1126,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-17T04:42:08.959Z"
+      "lastEnrichmentAttempt": "2026-05-25T05:12:08.021Z"
     },
     {
       "brand": "Stelbid",
@@ -1142,7 +1142,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-17T04:42:08.959Z"
+      "lastEnrichmentAttempt": "2026-05-25T05:12:14.684Z"
     },
     {
       "brand": "Vitneurin",
@@ -1158,7 +1158,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-17T04:42:08.959Z"
+      "lastEnrichmentAttempt": "2026-05-25T05:12:23.632Z"
     },
     {
       "brand": "Mastihal",
@@ -1174,7 +1174,7 @@
       "price": "Rs 154 / strip",
       "sourceUrl": "https://www.mankindpharma.com/products/mastihal-launch/",
       "buyer": "Mankind Pharma",
-      "lastEnrichmentAttempt": "2026-05-18T04:51:41.703Z"
+      "lastEnrichmentAttempt": "2026-05-25T05:13:18.917Z"
     },
     {
       "brand": "Softra",
@@ -1190,7 +1190,7 @@
       "price": "Rs 780 / vial",
       "sourceUrl": "https://www.mankindpharma.com/products/softra-launch/",
       "buyer": "Mankind Pharma",
-      "lastEnrichmentAttempt": "2026-05-18T04:51:41.703Z"
+      "lastEnrichmentAttempt": "2026-05-25T05:13:27.294Z"
     },
     {
       "brand": "ILUMYA® (tildrakizumab-asmn)",
@@ -1376,7 +1376,7 @@
       "dealType": "Consumer Launch",
       "molecule": "—",
       "therapy": "—",
-      "indication": "—",
+      "indication": "blood sugar management",
       "existingBrand": "—",
       "chronicAcute": "—",
       "price": "₹432 / box of 200 gm powder",
@@ -1489,7 +1489,7 @@
       "molecule": "Sitagliptin and its combination",
       "therapy": "Anti-Diabetic",
       "indication": "—",
-      "existingBrand": "—",
+      "existingBrand": "Januvia",
       "chronicAcute": "—",
       "price": "₹121 / strip of 10 (100 mg)",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-and-msd-announce-strategic-partnership-to-distribute-innovative-oral-anti-diabetic-medicines-in-india.html",
@@ -2275,8 +2275,8 @@
       "indication": "chronic obstructive pulmonary disease (COPD)",
       "existingBrand": "Spiriva® Handihaler",
       "chronicAcute": "Chronic",
-      "price": "—",
-      "sourceUrl": "—",
+      "price": "₹69.3 / strip of 10 capsules",
+      "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-enters-into-an-exclusive-licensing.pdf",
       "buyer": "Glenmark",
       "lastEnrichmentAttempt": "2026-05-22T04:49:28.430Z"
     },
@@ -2535,6 +2535,134 @@
       "sourceUrl": "—",
       "buyer": "Glenmark",
       "lastEnrichmentAttempt": "2026-05-24T04:52:45.259Z"
+    },
+    {
+      "brand": "Alkem Resista",
+      "launchType": "Own Launched",
+      "date": "2023-10-02",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "drug-resistant infections",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹31.2 / strip of 10 tablets",
+      "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/amp_articleshow/100775508.cms",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-05-25T05:08:48.331Z"
+    },
+    {
+      "brand": "Cetu",
+      "launchType": "Own Launched",
+      "date": "2023-10-23",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹24.8 / bottle of 60 ml (5 mg/5 ml)",
+      "sourceUrl": "https://www.cnbctv18.com/healthcare/alkem-oncology-novel-breast-cancer-treatment-drug-launch-palbociclib-palbo-15703241.htm",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-05-25T05:08:48.332Z"
+    },
+    {
+      "brand": "AKYNZEO®",
+      "launchType": "Own Launched",
+      "date": "2018-07-10",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "Oncology",
+      "indication": "CINV (chemotherapy-induced nausea and vomiting)",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹5316 / strip of 1 capsule",
+      "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-expands-its-oncology-franchise-in-India-with-the-launch-of-Helsinn.pdf",
+      "buyer": "Glenmark",
+      "lastEnrichmentAttempt": "2026-05-25T05:10:13.680Z"
+    },
+    {
+      "brand": "GBR 1302",
+      "launchType": "In-licensed",
+      "date": "2018-08-06",
+      "seller": "Harbour BioMed",
+      "dealType": "Co-marketing",
+      "molecule": "GBR 1302",
+      "therapy": "—",
+      "indication": "Treatment of HER2-Positive Cancers",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Pharmaceuticals-and-Harbour-BioMed-Sign-Agreement-for-Greater-China-toDevelop-GBR-1302.pdf",
+      "buyer": "Glenmark",
+      "lastEnrichmentAttempt": "2026-05-25T05:10:13.680Z"
+    },
+    {
+      "brand": "Nourkrin®",
+      "launchType": "Own Launched",
+      "date": "2018-11-01",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹3285 / strip of 60 tablets",
+      "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-launches-globally-renowned-hair-growth-formula-Nourkrin-in-Russia.pdf",
+      "buyer": "Glenmark",
+      "lastEnrichmentAttempt": "2026-05-25T05:10:13.680Z"
+    },
+    {
+      "brand": "AVEIR™ VR Leadless Pacemaker",
+      "launchType": "Own Launched",
+      "date": "2024-11-21",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "slow heart rhythms",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-aveir-vr-leadless-pacemaker-system-in-india-to-treat-patients-with-slow-heart-rhythms.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-05-25T05:11:29.611Z"
+    },
+    {
+      "brand": "Dextromethorphan Polistirex Extended-Release Oral Suspension, 30 mg/5 mL",
+      "launchType": "Own Launched",
+      "date": "2026-04-16",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Dextromethorphan",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Delsym",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/2LtrToSEsAurobindoPRUSFDA17042026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-05-25T05:11:49.115Z"
+    },
+    {
+      "brand": "Glycerol Phenylbutyrate Oral Liquid, 1.1 grams per mL",
+      "launchType": "Own Launched",
+      "date": "2026-04-16",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Glycerol Phenylbutyrate",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Ravicti",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoPRUSFDA17042026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-05-25T05:11:49.115Z"
     }
   ]
 }
