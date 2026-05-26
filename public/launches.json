@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-25T05:15:02.472Z",
-  "rowCount": 167,
+  "generatedAt": "2026-05-26T04:50:08.619Z",
+  "rowCount": 172,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -246,7 +246,7 @@
       "price": "₹104 / bottle of 60 ml oral suspension",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/09/Press-Release-Sun-Pharma-launches-Chericof-12.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-18T04:54:50.483Z"
+      "lastEnrichmentAttempt": "2026-05-26T04:49:22.323Z"
     },
     {
       "brand": "Organon",
@@ -262,7 +262,7 @@
       "price": null,
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/04/PR-Sun-Organon-announcement-Apr-26.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-18T04:55:11.071Z"
+      "lastEnrichmentAttempt": "2026-05-26T04:49:37.217Z"
     },
     {
       "brand": "EVERON",
@@ -566,7 +566,7 @@
       "price": "₹41 / bottle of 10 ml dilution",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/04/PR-Sun-Organon-announcement-Apr-26.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-18T04:54:20.892Z"
+      "lastEnrichmentAttempt": "2026-05-26T04:48:56.390Z"
     },
     {
       "brand": "Obimet",
@@ -574,11 +574,11 @@
       "date": "2022-06-23",
       "seller": "Abbott India",
       "dealType": "Brand Acquisition",
-      "molecule": "—",
-      "therapy": "—",
-      "indication": "—",
-      "existingBrand": "—",
-      "chronicAcute": "—",
+      "molecule": "Metformin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Glyciphage",
+      "chronicAcute": "Chronic",
       "price": "₹21.7 / strip of 10 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
@@ -598,7 +598,7 @@
       "price": "₹232 / bottle of 100 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-18T04:54:45.271Z"
+      "lastEnrichmentAttempt": "2026-05-26T04:49:16.054Z"
     },
     {
       "brand": "Chericof ® 12",
@@ -614,7 +614,7 @@
       "price": "—",
       "sourceUrl": "http://www.sunpharma.com/press-release/press-release-chericof12-launch",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-18T04:54:54.921Z"
+      "lastEnrichmentAttempt": "2026-05-26T04:49:27.567Z"
     },
     {
       "brand": "Antibiotic Combination",
@@ -1206,7 +1206,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/Sun-Pharma-Announces-US-FDA-Acceptance-of-sBLA-Application-for-ILUMYA.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-18T04:52:08.716Z"
+      "lastEnrichmentAttempt": "2026-05-26T04:48:34.759Z"
     },
     {
       "brand": "generic semaglutide injection",
@@ -1238,7 +1238,7 @@
       "price": "₹1347 / bottle of 40 capsules",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/11/Press-Release-Sun-Pharma-gearing-up-to-introduce-molnupiravir-under-the-brand-name-Molxvir%C2%AE-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-18T04:52:08.716Z"
+      "lastEnrichmentAttempt": "2026-05-26T04:48:41.730Z"
     },
     {
       "brand": "Tiohromium Bromide",
@@ -1254,7 +1254,7 @@
       "price": "—",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-enters-into-an-exclusive-licensing.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-05-18T04:53:53.430Z"
+      "lastEnrichmentAttempt": "2026-05-26T04:48:47.889Z"
     },
     {
       "brand": "Obimet",
@@ -1270,7 +1270,7 @@
       "price": "₹21.7 / strip of 10 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-18T04:54:32.799Z"
+      "lastEnrichmentAttempt": "2026-05-26T04:49:03.227Z"
     },
     {
       "brand": "Thyrocab",
@@ -1286,7 +1286,7 @@
       "price": "₹232 / bottle of 100 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-18T04:54:32.799Z"
+      "lastEnrichmentAttempt": "2026-05-26T04:49:10.032Z"
     },
     {
       "brand": "Molxvir®",
@@ -2663,6 +2663,86 @@
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
       "lastEnrichmentAttempt": "2026-05-25T05:11:49.115Z"
+    },
+    {
+      "brand": "WINLEVI",
+      "launchType": "Acquired",
+      "date": "2021-09-08",
+      "seller": "Cassiopea",
+      "dealType": "Brand Acquisition",
+      "molecule": "Clascoterone",
+      "therapy": "—",
+      "indication": "Acne Vulgaris",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹21.3 / bottle of 30 ml syrup",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/08/Sun-Pharma-and-Cassiopea-announce-the-expiry-of-the-HSR-Act-process-and-the-successful-consummation-of-their-Winlevi%C2%AE.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-26T04:46:38.786Z"
+    },
+    {
+      "brand": "Myoril",
+      "launchType": "Own Launched",
+      "date": "2024-11-01",
+      "seller": "—",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹308 / strip of 10 capsules",
+      "sourceUrl": "https://www.coronaremedies.com/wp-content/uploads/2024/11/myoril-news-2024.png",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-26T04:47:02.822Z"
+    },
+    {
+      "brand": "Generic version of Seretide® Accuhaler®",
+      "launchType": "Acquired",
+      "date": "2018-09-10",
+      "seller": "—",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Seretide",
+      "chronicAcute": "—",
+      "price": "₹836 / box of 60 (50 mcg / 250 mcg)",
+      "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-secures-marketing-authorization-in-Germany_0.pdf",
+      "buyer": "Glenmark",
+      "lastEnrichmentAttempt": "2026-05-26T04:47:28.508Z"
+    },
+    {
+      "brand": "ILUMYA",
+      "launchType": "In-licensed",
+      "date": "2026-03-16",
+      "seller": "—",
+      "dealType": "In-license (India)",
+      "molecule": "tildrakizumab-asmn",
+      "therapy": "—",
+      "indication": "Psoriatic Arthritis",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": null,
+      "sourceUrl": "https://www.sunpharma.com/press-release/2026-03-16-us-fda-acceptance-sbla-ilumya",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-26T04:48:34.759Z"
+    },
+    {
+      "brand": "Molxvir",
+      "launchType": "In-licensed",
+      "date": "2021-11-11",
+      "seller": "Merck® Sharpe Dohme (MSD) and Ridgeback",
+      "dealType": "In-license (India)",
+      "molecule": "molnupiravir",
+      "therapy": "—",
+      "indication": "COVID-19",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "http://www.sunpharma.com/press-release/mumbai-november-11-2021-sun-pharmaceutical-industries-limited-reuters-sun-bo-bloomberg-sunp-in-nse-sunpharma-bse-524715-sun-pharma-includes-its-subsidiaries-andor-associate-companies-today-said-that-it-is-gearing-up-to-introduce-merck-sharpe-dohme-msd-and-ridgebacks-molnupiravir-under-the-brand-name-molxvir-in-india.",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-26T04:48:41.730Z"
     }
   ]
 }
