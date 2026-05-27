@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-26T04:50:08.619Z",
-  "rowCount": 172,
+  "generatedAt": "2026-05-27T05:05:27.426Z",
+  "rowCount": 178,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -278,7 +278,7 @@
       "price": "₹39.7 / strip of 10 tablet md",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2022/03/Press-Release-EVERON-Launch.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-18T04:55:31.388Z"
+      "lastEnrichmentAttempt": "2026-05-27T05:02:51.591Z"
     },
     {
       "brand": "Molxvir",
@@ -847,8 +847,8 @@
       "seller": "—",
       "dealType": "NCE Launch",
       "molecule": "Famotidine",
-      "therapy": "—",
-      "indication": "—",
+      "therapy": "Gastroenterology",
+      "indication": "Gastric ulcers",
       "existingBrand": "Pepcid",
       "chronicAcute": "—",
       "price": "₹2.1 / vial of 2 ml (Famotidine Injection)",
@@ -1302,7 +1302,7 @@
       "price": "₹1347 / bottle of 40 capsules",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/12/Press-Release-Sun-Pharma-receives-DCGI-approval-for-Molxvir-Molnupiravir-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-19T04:44:08.622Z"
+      "lastEnrichmentAttempt": "2026-05-27T05:02:59.159Z"
     },
     {
       "brand": "Ensure® Strength Pro",
@@ -1318,7 +1318,7 @@
       "price": "₹679 / box of 400 gm",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-ensure-strength-pro-in-india-to-support-healthy-ageing.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-05-19T04:46:04.042Z"
+      "lastEnrichmentAttempt": "2026-05-27T05:03:06.014Z"
     },
     {
       "brand": "TriClip™",
@@ -1334,7 +1334,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-introduces-triclip-in-india-a-first-of-its-kind-device-to-repair-a-leaky-tricuspid-valve.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-05-19T04:46:04.042Z"
+      "lastEnrichmentAttempt": "2026-05-27T05:03:14.591Z"
     },
     {
       "brand": "XIENCE Skypoint™",
@@ -1350,7 +1350,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-introduces-its-most-advanced-drug-eluting-stent-xience-skypoint-in-india.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-05-19T04:46:04.042Z"
+      "lastEnrichmentAttempt": "2026-05-27T05:03:23.994Z"
     },
     {
       "brand": "Extensior®",
@@ -1382,7 +1382,7 @@
       "price": "₹432 / box of 200 gm powder",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-new-and-advanced-ensure-diabetes-care-a-clinically-proven-formula-to-help-manage-blood-sugar.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-05-19T04:46:04.042Z"
+      "lastEnrichmentAttempt": "2026-05-27T05:03:32.843Z"
     },
     {
       "brand": "AVEIR™ DR",
@@ -1392,13 +1392,13 @@
       "dealType": "Device Launch",
       "molecule": "—",
       "therapy": "—",
-      "indication": "—",
+      "indication": "bradycardia",
       "existingBrand": "—",
       "chronicAcute": "—",
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-aveir-dr-the-worlds-first-dual-chamber-leadless-pacemaker-in-india.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-05-19T04:46:04.042Z"
+      "lastEnrichmentAttempt": "2026-05-27T05:03:41.317Z"
     },
     {
       "brand": "FreeStyle Libre 2 Plus",
@@ -1414,7 +1414,7 @@
       "price": "₹4881 / box of 1 unit",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-next-gen-freestyle-libre2-plus-with-continuous-glucose-readings-every-minute-and-optional-alarms.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-05-19T04:46:04.042Z"
+      "lastEnrichmentAttempt": "2026-05-27T05:03:49.936Z"
     },
     {
       "brand": "TactiFlex™ Sensor Enabled™ Ablation Catheter",
@@ -1430,7 +1430,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-introduces-tactiflex-sensor-enabled-ablation-catheter-in-india-for-treatment-of-abnormal-heart-rhythms.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-05-19T04:46:04.042Z"
+      "lastEnrichmentAttempt": "2026-05-27T05:04:01.973Z"
     },
     {
       "brand": "Navitor™ Vision",
@@ -1446,7 +1446,7 @@
       "price": "null",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-introduces-navitor-vision-in-india-the-next-generation-of-heart-valve-technology-designed-to-treat-aortic-stenosis.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-05-19T04:46:04.042Z"
+      "lastEnrichmentAttempt": "2026-05-27T05:04:12.177Z"
     },
     {
       "brand": "PneumoShield 14",
@@ -2447,11 +2447,11 @@
       "seller": "Helsinn",
       "dealType": "In-license (India)",
       "molecule": "netupitant plus palonosetron",
-      "therapy": "—",
+      "therapy": "Oncology",
       "indication": "chemotherapy-induced nausea and vomiting",
       "existingBrand": "—",
       "chronicAcute": "—",
-      "price": "—",
+      "price": "₹5316 / strip of 1 capsule",
       "sourceUrl": "https://www.helsinn.com/news/glenmark-pharmaceuticals-expands-its-oncology-franchise-in-india-with-the-launch-of-helsinns-akynzeo-a-combination-drug-for-the-prevention-of-cinv-chemotherapy-induced-nausea-and-vomiting/",
       "buyer": "Glenmark",
       "lastEnrichmentAttempt": "2026-05-23T04:30:47.421Z"
@@ -2479,10 +2479,10 @@
       "seller": "—",
       "dealType": "Consumer Launch",
       "molecule": "Oseltamivir",
-      "therapy": "—",
-      "indication": "—",
+      "therapy": "Anti-Infectives",
+      "indication": "Influenza",
       "existingBrand": "Tamiflu",
-      "chronicAcute": "—",
+      "chronicAcute": "Acute",
       "price": "—",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-china-approval-for-oseltamivir-phosphate-oral-suspension",
       "buyer": "Lupin",
@@ -2743,6 +2743,102 @@
       "sourceUrl": "http://www.sunpharma.com/press-release/mumbai-november-11-2021-sun-pharmaceutical-industries-limited-reuters-sun-bo-bloomberg-sunp-in-nse-sunpharma-bse-524715-sun-pharma-includes-its-subsidiaries-andor-associate-companies-today-said-that-it-is-gearing-up-to-introduce-merck-sharpe-dohme-msd-and-ridgebacks-molnupiravir-under-the-brand-name-molxvir-in-india.",
       "buyer": "Sun Pharma",
       "lastEnrichmentAttempt": "2026-05-26T04:48:41.730Z"
+    },
+    {
+      "brand": "Obimet & Thyrocab",
+      "launchType": "Acquired",
+      "date": "2022-06-01",
+      "seller": "Abbott India",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹21.7 / strip of 10 tablets",
+      "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-27T04:59:08.010Z"
+    },
+    {
+      "brand": "Ryaltris",
+      "launchType": "In-licensed",
+      "date": "2018-07-06",
+      "seller": "—",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹232 / bottle of 17 gm (nasal spray)",
+      "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-Announces-Exclusive-Licensing-Agreement-with-Se.pdf",
+      "buyer": "Glenmark",
+      "lastEnrichmentAttempt": "2026-05-27T04:59:50.498Z"
+    },
+    {
+      "brand": "TriClip",
+      "launchType": "Own Launched",
+      "date": "2026-05-11",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "tricuspid regurgitation",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.abbott.com/press-release-triclip-launch-india.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-05-27T05:03:14.591Z"
+    },
+    {
+      "brand": "XIENCE Skypoint",
+      "launchType": "Own Launched",
+      "date": "2026-03-10",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "everolimus",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.cardiovascular.abbott/us/en/hcp/products/percutaneous-coronary-intervention/xience-family/xience-skypoint.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-05-27T05:03:23.994Z"
+    },
+    {
+      "brand": "FreeStyle Libre 2 Plus",
+      "launchType": "Own Launched",
+      "date": "2025-08-21",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://urldefense.proofpoint.com/v2/url?u=http-3A__www.abbott.com&d=DwMFAg&c=Y79EjzVEpgcQoCenoFaxQY8xoeA9rIAVbAq2xFBK1Ao&r=oV_taibTU6WWDgin4kkMwAPaPchfuS76BHUO_UHNvwM&m=pecJl28dBLDpg01U6nZUOeoCNZaH3mwecFOiJZmvoXw&s=nus6YMlzeVdc6eWUDel2l3mVJxV0P5ABFc1GEZxS8eQ&e=",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-05-27T05:03:49.936Z"
+    },
+    {
+      "brand": "Navitor Vision",
+      "launchType": "Own Launched",
+      "date": "2025-01-28",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "Aortic stenosis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.abbott.com/",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-05-27T05:04:12.177Z"
     }
   ]
 }
