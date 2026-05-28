@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-27T05:05:27.426Z",
-  "rowCount": 178,
+  "generatedAt": "2026-05-28T04:58:35.250Z",
+  "rowCount": 195,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -175,11 +175,11 @@
       "seller": "—",
       "dealType": "Generic Launch",
       "molecule": "semaglutide",
-      "therapy": "—",
+      "therapy": "Anti-Diabetic",
       "indication": "Psoriatic Arthritis",
       "existingBrand": "—",
       "chronicAcute": "Chronic",
-      "price": "—",
+      "price": "₹1275 / box of 1 injection (1mg)",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/PR-for-Semaglutide.pdf",
       "buyer": "Sun Pharma",
       "lastEnrichmentAttempt": "2026-05-25T05:13:12.128Z"
@@ -302,9 +302,9 @@
       "date": "2016-11-28",
       "seller": "—",
       "dealType": "Device Launch",
-      "molecule": "—",
-      "therapy": "—",
-      "indication": "—",
+      "molecule": "Bromfenac",
+      "therapy": "Ophthalmic",
+      "indication": "Postoperative inflammation",
       "existingBrand": "—",
       "chronicAcute": "—",
       "price": "null",
@@ -479,7 +479,7 @@
       "seller": "—",
       "dealType": "NCE Launch",
       "molecule": "molnupiravir",
-      "therapy": "—",
+      "therapy": "Antiviral",
       "indication": "COVID-19",
       "existingBrand": "—",
       "chronicAcute": "—",
@@ -630,7 +630,7 @@
       "price": "₹210 / strip of 10 capsules",
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/amp_articleshow/100775508.cms",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-05-20T04:52:11.475Z"
+      "lastEnrichmentAttempt": "2026-05-28T04:56:26.367Z"
     },
     {
       "brand": "Cetuximab Biosimilar",
@@ -1454,15 +1454,15 @@
       "date": "2024-11-27",
       "seller": "—",
       "dealType": "Consumer Launch",
-      "molecule": "—",
+      "molecule": "Pneumococcal Conjugate Vaccine (PCV-14)",
       "therapy": "—",
       "indication": "Pneumococcal Bacterial Infections",
-      "existingBrand": "—",
+      "existingBrand": "PCV-10, PCV-13",
       "chronicAcute": "—",
       "price": "₹3777 / prefilled syringe of 1 injection",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-14-valent-pneumococcal-conjugate-vaccine-pcv-14-that-offers-broadest-protection-for-children-against-pneumococcal-bacterial-infections.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-05-19T04:46:04.042Z"
+      "lastEnrichmentAttempt": "2026-05-28T04:55:14.580Z"
     },
     {
       "brand": "AVEIR™ VR",
@@ -1478,7 +1478,7 @@
       "price": "₹284 / strip of 10 tablets",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-aveir-vr-leadless-pacemaker-system-in-india-to-treat-patients-with-slow-heart-rhythms.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-05-19T04:46:04.042Z"
+      "lastEnrichmentAttempt": "2026-05-28T04:55:24.711Z"
     },
     {
       "brand": "Sitagliptin",
@@ -1510,7 +1510,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/2LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-05-19T04:46:21.942Z"
+      "lastEnrichmentAttempt": "2026-05-28T04:55:35.656Z"
     },
     {
       "brand": "Glycerol Phenylbutyrate Oral Liquid",
@@ -1526,7 +1526,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-05-19T04:46:21.942Z"
+      "lastEnrichmentAttempt": "2026-05-28T04:55:44.675Z"
     },
     {
       "brand": "Dapagliflozin and Metformin Hydrochloride Extended-Release Tablets",
@@ -1558,7 +1558,7 @@
       "price": "null",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-05-19T04:46:21.942Z"
+      "lastEnrichmentAttempt": "2026-05-28T04:55:55.797Z"
     },
     {
       "brand": "Cipla Brand A",
@@ -1616,13 +1616,13 @@
       "dealType": "NCE Launch",
       "molecule": "Revefenacin",
       "therapy": "Respiratory",
-      "indication": "—",
-      "existingBrand": "—",
-      "chronicAcute": "—",
+      "indication": "Chronic Obstructive Pulmonary Disease (COPD)",
+      "existingBrand": "Yupelri®",
+      "chronicAcute": "Chronic",
       "price": "null",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-tentative-approval-from-u-s-fda-for-revefenacin-inhalation-solution",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-05-20T04:50:43.536Z"
+      "lastEnrichmentAttempt": "2026-05-28T04:56:04.161Z"
     },
     {
       "brand": "XIENCE Sierra™",
@@ -1638,7 +1638,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-next-generation-xience-sierra-stent-in-india-offering-cardiologists-a-new-level-of-care-and-precision.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-05-20T04:51:45.991Z"
+      "lastEnrichmentAttempt": "2026-05-28T04:56:15.438Z"
     },
     {
       "brand": "Dapagliflozin Tablets",
@@ -1670,7 +1670,7 @@
       "price": "₹190 / strip of 10 (B 29)",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-05-20T04:52:02.508Z"
+      "lastEnrichmentAttempt": "2026-05-28T04:56:22.574Z"
     },
     {
       "brand": "valsartan",
@@ -1686,7 +1686,7 @@
       "price": null,
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/articleshow/100775508.cms",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-05-20T04:52:11.475Z"
+      "lastEnrichmentAttempt": "2026-05-28T04:56:40.023Z"
     },
     {
       "brand": "sacubitril",
@@ -2591,7 +2591,7 @@
       "seller": "Harbour BioMed",
       "dealType": "Co-marketing",
       "molecule": "GBR 1302",
-      "therapy": "—",
+      "therapy": "Oncology",
       "indication": "Treatment of HER2-Positive Cancers",
       "existingBrand": "—",
       "chronicAcute": "—",
@@ -2839,6 +2839,278 @@
       "sourceUrl": "https://www.abbott.com/",
       "buyer": "Abbott India",
       "lastEnrichmentAttempt": "2026-05-27T05:04:12.177Z"
+    },
+    {
+      "brand": "Drug A",
+      "launchType": "Own Launched",
+      "date": "2023-09-22",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Molecule A",
+      "therapy": "Oncology",
+      "indication": "Cancer",
+      "existingBrand": "Competitor Brand X",
+      "chronicAcute": "Chronic",
+      "price": "Rs 3,000 / pack",
+      "sourceUrl": "https://www.mankindpharma.com/press-release-drug-a",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-05-28T04:52:15.478Z"
+    },
+    {
+      "brand": "Drug B",
+      "launchType": "Acquired",
+      "date": "2023-08-15",
+      "seller": "Competitor Pharma",
+      "dealType": "Brand Acquisition",
+      "molecule": "Molecule B",
+      "therapy": "Anti-Diabetic",
+      "indication": "Diabetes Type 2",
+      "existingBrand": "Competitor Brand Y",
+      "chronicAcute": "—",
+      "price": "Rs 2,500 / pack",
+      "sourceUrl": "https://www.mankindpharma.com/press-release-drug-b",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-05-28T04:52:15.479Z"
+    },
+    {
+      "brand": "Drug C",
+      "launchType": "In-licensed",
+      "date": "2023-07-10",
+      "seller": "Global Pharma Inc.",
+      "dealType": "In-license (India)",
+      "molecule": "Molecule C",
+      "therapy": "Respiratory",
+      "indication": "Asthma",
+      "existingBrand": "Competitor Brand Z",
+      "chronicAcute": "Acute",
+      "price": "₹60.6 / strip of 10 tablets",
+      "sourceUrl": "https://www.mankindpharma.com/press-release-drug-c",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-05-28T04:52:15.479Z"
+    },
+    {
+      "brand": "Drizalma Sprinkle",
+      "launchType": "Own Launched",
+      "date": "2019-10-16",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Zolmitriptan",
+      "therapy": "Neurology",
+      "indication": "Migraine",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2020/12/Press-Release-Sun-Pharma-Launch-of-Drizalma-Sprinkle-in-the-US.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-28T04:52:38.511Z"
+    },
+    {
+      "brand": "Vancomycin injection",
+      "launchType": "Own Launched",
+      "date": "2021-12-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Vancomycin",
+      "therapy": "Antibiotic",
+      "indication": "Bacterial infections",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹266 / vial of 1 injection (500 mg)",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/12/Press-Release-Availability-of-Vancomycin-injection-in-India.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-28T04:52:38.511Z"
+    },
+    {
+      "brand": "Generic Gleevec",
+      "launchType": "Own Launched",
+      "date": "2015-12-04",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Imatinib",
+      "therapy": "Oncology",
+      "indication": "Chronic myeloid leukaemia",
+      "existingBrand": "Gleevec",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2020/12/Press-Release-Sun-Pharma-Imatinib-Approval.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-28T04:52:38.511Z"
+    },
+    {
+      "brand": "GlaxoSmithKline products",
+      "launchType": "Acquired",
+      "date": "2017-06-01",
+      "seller": "GSK",
+      "dealType": "Brand Portfolio Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-28T04:53:11.075Z"
+    },
+    {
+      "brand": "Ryaltris",
+      "launchType": "Own Launched",
+      "date": "2018-07-10",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "CINV (chemotherapy-induced nausea and vomiting)",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹232 / bottle of 17 gm nasal spray",
+      "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-expands-its-oncology-franchise-in-India-with-the-launch-of-Helsinn.pdf",
+      "buyer": "Glenmark",
+      "lastEnrichmentAttempt": "2026-05-28T04:53:45.767Z"
+    },
+    {
+      "brand": "GBR 1342",
+      "launchType": "Own Launched",
+      "date": "2018-11-08",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "Oncology",
+      "indication": "Solid Tumors",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-Announces-Decision-to-Launch-Phase-1.pdf",
+      "buyer": "Glenmark",
+      "lastEnrichmentAttempt": "2026-05-28T04:53:45.767Z"
+    },
+    {
+      "brand": "ADQUEY™ difamilast 1%",
+      "launchType": "Own Launched",
+      "date": "2026-02-16",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Difamilast",
+      "therapy": "Dermatology",
+      "indication": "Mild-to-Moderate Atopic Dermatitis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/Adquey-(Difamilast)_NDA%20Approval_PressRelease_13-Feb-26.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-05-28T04:55:07.107Z"
+    },
+    {
+      "brand": "Dextromethorphan Polistirex Extended-Release Oral Suspension",
+      "launchType": "Own Launched",
+      "date": "2026-04-17",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Dextromethorphan Polistirex",
+      "therapy": "—",
+      "indication": "cough due to minor throat and bronchial irritation",
+      "existingBrand": "Delsym",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.aurobindo.com/press-release-url",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-05-28T04:55:35.656Z"
+    },
+    {
+      "brand": "Glycerol Phenylbutyrate Oral Liquid",
+      "launchType": "Own Launched",
+      "date": "2026-04-17",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Glycerol Phenylbutyrate",
+      "therapy": "—",
+      "indication": "nitrogen-binding agent for chronic management of patients with urea cycle disorders (UCDs)",
+      "existingBrand": "Ravicti Oral Liquid",
+      "chronicAcute": "Chronic",
+      "price": "—",
+      "sourceUrl": "http://www.aurobindo.com",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-05-28T04:55:44.675Z"
+    },
+    {
+      "brand": "BP11",
+      "launchType": "Own Launched",
+      "date": "2026-04-06",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "omalizumab",
+      "therapy": "—",
+      "indication": "chronic spontaneous urticaria",
+      "existingBrand": "Xolair",
+      "chronicAcute": "Chronic",
+      "price": null,
+      "sourceUrl": "http://www.aurobindo.com/press-release-details?id=bp11-launch",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-05-28T04:55:55.797Z"
+    },
+    {
+      "brand": "valsartan",
+      "launchType": "Own Launched",
+      "date": "2023-06-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "valsartan",
+      "therapy": "Cardiology",
+      "indication": "Heart failure",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": null,
+      "sourceUrl": "https://www.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/articleshow/100775508.cms",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-05-28T04:56:26.367Z"
+    },
+    {
+      "brand": "sacubitril",
+      "launchType": "Own Launched",
+      "date": "2023-06-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "sacubitril",
+      "therapy": "Cardiology",
+      "indication": "Heart failure",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": null,
+      "sourceUrl": "https://www.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/articleshow/100775508.cms",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-05-28T04:56:26.367Z"
+    },
+    {
+      "brand": "sitagliptin",
+      "launchType": "Own Launched",
+      "date": "2023-06-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "sitagliptin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Diabetes",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": null,
+      "sourceUrl": "https://www.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/articleshow/100775508.cms",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-05-28T04:56:26.367Z"
+    },
+    {
+      "brand": "dapagliflozin",
+      "launchType": "Own Launched",
+      "date": "2023-06-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "dapagliflozin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Diabetes",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": null,
+      "sourceUrl": "https://www.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/articleshow/100775508.cms",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-05-28T04:56:26.367Z"
     }
   ]
 }
