@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-28T04:58:35.250Z",
-  "rowCount": 195,
+  "generatedAt": "2026-05-29T05:02:00.776Z",
+  "rowCount": 204,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -646,7 +646,7 @@
       "price": "₹9281 / vial of 20 ml infusion",
       "sourceUrl": "https://www.cnbctv18.com/healthcare/alkem-oncology-novel-breast-cancer-treatment-drug-launch-palbociclib-palbo-15703241.htm",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-05-20T04:52:42.596Z"
+      "lastEnrichmentAttempt": "2026-05-29T04:58:35.056Z"
     },
     {
       "brand": "Obimet",
@@ -662,7 +662,7 @@
       "price": "₹30.6 / strip of 15 tablet sr",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-20T04:52:58.858Z"
+      "lastEnrichmentAttempt": "2026-05-29T04:58:46.286Z"
     },
     {
       "brand": "Molxvir (Molnupiravir)",
@@ -1702,7 +1702,7 @@
       "price": null,
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/articleshow/100775508.cms",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-05-20T04:52:11.475Z"
+      "lastEnrichmentAttempt": "2026-05-29T04:58:00.597Z"
     },
     {
       "brand": "sitagliptin",
@@ -1714,8 +1714,8 @@
       "therapy": "Anti-Diabetic",
       "indication": "diabetes",
       "existingBrand": "—",
-      "chronicAcute": "—",
-      "price": null,
+      "chronicAcute": "Chronic",
+      "price": "₹121 / strip of 10 tablets",
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/articleshow/100775508.cms",
       "buyer": "Alkem",
       "lastEnrichmentAttempt": "2026-05-20T04:52:11.475Z"
@@ -1730,8 +1730,8 @@
       "therapy": "Anti-Diabetic",
       "indication": "diabetes",
       "existingBrand": "—",
-      "chronicAcute": "—",
-      "price": null,
+      "chronicAcute": "Chronic",
+      "price": "₹104 / strip of 15 tablets",
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/articleshow/100775508.cms",
       "buyer": "Alkem",
       "lastEnrichmentAttempt": "2026-05-20T04:52:11.475Z"
@@ -1750,7 +1750,7 @@
       "price": "₹69.3 / strip of 10 capsules",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-enters-into-an-exclusive-licensing.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-05-21T04:56:42.730Z"
+      "lastEnrichmentAttempt": "2026-05-29T04:58:56.234Z"
     },
     {
       "brand": "Revefenacin",
@@ -1782,7 +1782,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/Abbotts-New-Coronary-Imaging-Software-Powered-by-Artificial-Intelligence-Launched-in-India.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-05-21T04:58:05.104Z"
+      "lastEnrichmentAttempt": "2026-05-29T04:58:58.955Z"
     },
     {
       "brand": "Dextromethorphan Polistirex",
@@ -1798,7 +1798,7 @@
       "price": "₹190 / strip of 10 (625 mg)",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/2LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-05-21T04:58:24.046Z"
+      "lastEnrichmentAttempt": "2026-05-29T04:59:07.411Z"
     },
     {
       "brand": "Glycerol Phenylbutyrate",
@@ -1814,7 +1814,7 @@
       "price": "₹84.53 / bottle of 250 ml",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-05-21T04:58:24.046Z"
+      "lastEnrichmentAttempt": "2026-05-29T04:59:14.460Z"
     },
     {
       "brand": "Everolimus Tablets",
@@ -1830,7 +1830,7 @@
       "price": "₹666.78 / strip of 10 tablets",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtsToSEsPREugiaUSFDA26022026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-05-21T04:58:24.046Z"
+      "lastEnrichmentAttempt": "2026-05-29T04:59:21.088Z"
     },
     {
       "brand": "Noveltreat",
@@ -3010,7 +3010,7 @@
       "therapy": "—",
       "indication": "cough due to minor throat and bronchial irritation",
       "existingBrand": "Delsym",
-      "chronicAcute": "—",
+      "chronicAcute": "Acute",
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/press-release-url",
       "buyer": "Aurobindo",
@@ -3111,6 +3111,150 @@
       "sourceUrl": "https://www.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/articleshow/100775508.cms",
       "buyer": "Alkem",
       "lastEnrichmentAttempt": "2026-05-28T04:56:26.367Z"
+    },
+    {
+      "brand": "Noveltreat / Sematrinity",
+      "launchType": "Own Launched",
+      "date": "2026-03-21",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "semaglutide",
+      "therapy": "—",
+      "indication": "Psoriatic Arthritis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹1483 / box of 2 pre-filled pens",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/PR-for-Semaglutide.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-29T04:54:51.459Z"
+    },
+    {
+      "brand": "Molxvir®",
+      "launchType": "Own Launched",
+      "date": "2021-11-11",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Molnupiravir",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹1361 / bottle of 40 capsules",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/11/Press-Release-Sun-Pharma-gearing-up-to-introduce-molnupiravir-under-the-brand-name-Molxvir%C2%AE-in-India.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-29T04:54:51.460Z"
+    },
+    {
+      "brand": "FIBROMUN",
+      "launchType": "Own Launched",
+      "date": "2024-10-01",
+      "seller": "Philogen",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹240 / strip of 10 tablets",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2024/10/Press-Release-Commercializing-specialty-product-FIBROMUN.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-29T04:54:51.460Z"
+    },
+    {
+      "brand": "Brands from GSK",
+      "launchType": "Acquired",
+      "date": "—",
+      "seller": "GSK",
+      "dealType": "Brand Portfolio Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹523 / bottle of 150 ml cleanser",
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-29T04:55:37.477Z"
+    },
+    {
+      "brand": "Navitor™",
+      "launchType": "Own Launched",
+      "date": "2022-12-06",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "aortic stenosis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹84.6 / tube of 10 gm",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-navitor-its-latest-generation-transcatheter-aortic-valve-implantation-tavi-system-to-treat-aortic-stenosis-in-india.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-05-29T04:57:25.769Z"
+    },
+    {
+      "brand": "BP11 (Biosimilar to Omalizumab)",
+      "launchType": "Own Launched",
+      "date": "2026-04-05",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "Omalizumab",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Xolair",
+      "chronicAcute": "—",
+      "price": "₹190 / strip of 15 tablets",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-05-29T04:57:48.345Z"
+    },
+    {
+      "brand": "valsartan and sacubitril",
+      "launchType": "Own Launched",
+      "date": "2023-06-06",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "valsartan plus sacubitril",
+      "therapy": "Cardiology",
+      "indication": "Heart Failure",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "—",
+      "sourceUrl": "https://economictimes.indiatimes.com/alkem-laboratories-ltd/stocks/companyid-15059.cms",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-05-29T04:58:00.597Z"
+    },
+    {
+      "brand": "Ultreon 1.0 Software",
+      "launchType": "Own Launched",
+      "date": "2023-10-16",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://abbott.mediaroom.com/2023-10-16-Abbott-launches-Ultreon-1-0-Software-in-India",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-05-29T04:58:58.955Z"
+    },
+    {
+      "brand": "Everolimus Tablets",
+      "launchType": "Own Launched",
+      "date": "2026-02-26",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Everolimus",
+      "therapy": "—",
+      "indication": "prophylaxis of organ rejection in adult patients",
+      "existingBrand": "Zortress Tablets",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "http://www.aurobindo.com/press-release-everolimus-tablets",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-05-29T04:59:21.088Z"
     }
   ]
 }
