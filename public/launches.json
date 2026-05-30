@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-29T05:02:00.776Z",
-  "rowCount": 204,
+  "generatedAt": "2026-05-30T04:39:25.489Z",
+  "rowCount": 210,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -240,7 +240,7 @@
       "dealType": "Consumer Launch",
       "molecule": "Dextromethorphan Hydrobromide plus Chlorpheniramine Maleate",
       "therapy": "—",
-      "indication": "—",
+      "indication": "Cough",
       "existingBrand": "—",
       "chronicAcute": "—",
       "price": "₹104 / bottle of 60 ml oral suspension",
@@ -447,7 +447,7 @@
       "seller": "—",
       "dealType": "NCE Launch",
       "molecule": "semaglutide",
-      "therapy": "—",
+      "therapy": "anti-diabetic",
       "indication": "Psoriatic Arthritis",
       "existingBrand": "—",
       "chronicAcute": "Chronic",
@@ -678,7 +678,7 @@
       "price": "₹1347 / bottle of 40 capsules",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/12/Press-Release-Sun-Pharma-receives-DCGI-approval-for-Molxvir-Molnupiravir-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-21T04:58:33.380Z"
+      "lastEnrichmentAttempt": "2026-05-30T04:37:29.450Z"
     },
     {
       "brand": "WINLEVI",
@@ -694,7 +694,7 @@
       "price": "₹21.3 / bottle of 30 ml syrup",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/08/Sun-Pharma-and-Cassiopea-announce-the-expiry-of-the-HSR-Act-process-and-the-successful-consummation-of-their-Winlevi®-agreement.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-21T04:58:38.264Z"
+      "lastEnrichmentAttempt": "2026-05-30T04:37:33.642Z"
     },
     {
       "brand": "Sovateltide (Tyvalzi)",
@@ -710,7 +710,7 @@
       "price": "₹3978 / box of 3 vials",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/09/Press-Release-Sun-Pharma-and-Pharmazz-Inc.-licensing-agreement-for-Sovateltide-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-21T04:58:45.867Z"
+      "lastEnrichmentAttempt": "2026-05-30T04:37:39.389Z"
     },
     {
       "brand": "BromSite™",
@@ -1846,7 +1846,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-launches-its-semaglutide-injection-under-the-brand-names-noveltreat-and-sematrinity-in-india/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-21T04:58:59.065Z"
+      "lastEnrichmentAttempt": "2026-05-30T04:37:43.925Z"
     },
     {
       "brand": "Sematrinity",
@@ -1862,7 +1862,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-launches-its-semaglutide-injection-under-the-brand-names-noveltreat-and-sematrinity-in-india/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-21T04:58:59.065Z"
+      "lastEnrichmentAttempt": "2026-05-30T04:37:51.623Z"
     },
     {
       "brand": "Organon",
@@ -1878,7 +1878,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-signs-definitive-agreement-to-acquire-organon/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-21T04:58:59.065Z"
+      "lastEnrichmentAttempt": "2026-05-30T04:37:56.241Z"
     },
     {
       "brand": "UNLOXCYT",
@@ -1894,7 +1894,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-announces-the-availability-of-unloxcyt-cosibelimab-ipdl-for-advanced-cutaneous-squamous-cell-carcinoma-acscc/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-21T04:58:59.065Z"
+      "lastEnrichmentAttempt": "2026-05-30T04:38:05.055Z"
     },
     {
       "brand": "ILUMYA",
@@ -1910,7 +1910,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-introduces-its-global-innovative-drug-ilumya-in-india-for-treatment-of-moderate-to-severe-plaque-psoriasis/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-21T04:58:59.065Z"
+      "lastEnrichmentAttempt": "2026-05-30T04:38:13.148Z"
     },
     {
       "brand": "ILUMYA",
@@ -1926,7 +1926,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-announces-us-fda-acceptance-of-supplemental-biologics-license-sbla-application-for-ilumya-tildrakizumab-asmn-for-the-treatment-o/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-21T04:58:59.065Z"
+      "lastEnrichmentAttempt": "2026-05-30T04:38:24.462Z"
     },
     {
       "brand": "Cipla's New Drug",
@@ -1958,7 +1958,7 @@
       "price": "null",
       "sourceUrl": "https://www.cipla.com/press-release/brand-acquisition",
       "buyer": "Cipla",
-      "lastEnrichmentAttempt": "2026-05-22T04:46:01.708Z"
+      "lastEnrichmentAttempt": "2026-05-30T04:38:33.222Z"
     },
     {
       "brand": "Cipla In-Licenses Molecule Z",
@@ -3255,6 +3255,102 @@
       "sourceUrl": "http://www.aurobindo.com/press-release-everolimus-tablets",
       "buyer": "Aurobindo",
       "lastEnrichmentAttempt": "2026-05-29T04:59:21.088Z"
+    },
+    {
+      "brand": "WINLEVI®",
+      "launchType": "Own Launched",
+      "date": "2021-09-28",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "clascoterone",
+      "therapy": "dermatology",
+      "indication": "Acne Vulgaris",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹21.7 / bottle of 30 ml syrup",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/09/Press-Release-Sun-Pharma-launches-WINLEVI-for-topical-treatment-of-acne-vulgaris.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-30T04:36:12.875Z"
+    },
+    {
+      "brand": "Obimet",
+      "launchType": "Acquired",
+      "date": "2022-06-22",
+      "seller": "Abbott India",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹21.7 / strip of 10 tablets",
+      "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-30T04:36:28.720Z"
+    },
+    {
+      "brand": "Thyrocab",
+      "launchType": "Acquired",
+      "date": "2022-06-22",
+      "seller": "Abbott India",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹232 / bottle of 100 tablets",
+      "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-30T04:36:28.720Z"
+    },
+    {
+      "brand": "Lupin’s Oseltamivir Phosphate Oral Suspension",
+      "launchType": "Own Launched",
+      "date": "2026-05-22",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Oseltamivir Phosphate",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Tamiflu",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-china-approval-for-oseltamivir-phosphate-oral-suspension",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-05-30T04:36:50.679Z"
+    },
+    {
+      "brand": "UNLOXCYT™",
+      "launchType": "Own Launched",
+      "date": "2026-01-16",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "cosibelimab-ipdl",
+      "therapy": "Oncology",
+      "indication": "Advanced Cutaneous Squamous Cell Carcinoma",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/01/UNLOXCYT-Commercial-Launch-Press-Release.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-30T04:38:05.055Z"
+    },
+    {
+      "brand": "ILUMYA®",
+      "launchType": "Own Launched",
+      "date": "2026-03-16",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "tildrakizumab-asmn",
+      "therapy": "—",
+      "indication": "Active Psoriatic Arthritis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/Sun-Pharma-Announces-US-FDA-Acceptance-of-sBLA-Application-for-ILUMYA.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-30T04:38:24.462Z"
     }
   ]
 }
