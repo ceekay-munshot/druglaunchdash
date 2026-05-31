@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-30T04:39:25.489Z",
-  "rowCount": 210,
+  "generatedAt": "2026-05-31T05:10:53.652Z",
+  "rowCount": 217,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -726,7 +726,7 @@
       "price": "—",
       "sourceUrl": "http://www.sunpharma.com/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-22T04:48:48.816Z"
+      "lastEnrichmentAttempt": "2026-05-31T05:09:26.914Z"
     },
     {
       "brand": "Chericof",
@@ -1887,7 +1887,7 @@
       "seller": "—",
       "dealType": "NCE Launch",
       "molecule": "cosibelimab-ipdl",
-      "therapy": "—",
+      "therapy": "Oncology",
       "indication": "advanced cutaneous squamous cell carcinoma",
       "existingBrand": "—",
       "chronicAcute": "—",
@@ -1990,7 +1990,7 @@
       "price": "₹42 / packet of 10 ml",
       "sourceUrl": "https://health.economictimes.indiatimes.com/news/pharma/drug-approvals-launches/alkem-forays-into-ophthalmology-with-launch-of-eye-care-products/101642253",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-05-22T04:46:25.456Z"
+      "lastEnrichmentAttempt": "2026-05-31T05:08:48.306Z"
     },
     {
       "brand": "Ryaltris™",
@@ -2006,23 +2006,23 @@
       "price": "₹232 / bottle of 17 gm (nasal spray)",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-expands-its-oncology-franchise-in-India-with-the-launch-of-Helsinn.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-05-22T04:47:07.698Z"
+      "lastEnrichmentAttempt": "2026-05-31T05:08:56.504Z"
     },
     {
       "brand": "Fluocinolone Acetonide Oil",
       "launchType": "Own Launched",
       "date": "2018-12-18",
       "seller": "—",
-      "dealType": "—",
+      "dealType": "Generic Launch",
       "molecule": "Fluocinolone Acetonide",
       "therapy": "—",
       "indication": "—",
-      "existingBrand": "—",
+      "existingBrand": "DermOtic® Oil",
       "chronicAcute": "—",
       "price": "₹430 / bottle of 30 ml",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-receives-ANDA-approval-for-Fluocinolone-Acetonide-Oil-0.01%25-Ear-Drops.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-05-22T04:47:07.698Z"
+      "lastEnrichmentAttempt": "2026-05-31T05:08:59.711Z"
     },
     {
       "brand": "Fluocinolone Acetonide Ointment",
@@ -2038,7 +2038,7 @@
       "price": "null",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-receives-ANDA-approval-for-Hydrocortisone-Valerate-Ointment-USP-%200.2%25.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-05-22T04:47:07.698Z"
+      "lastEnrichmentAttempt": "2026-05-31T05:09:03.928Z"
     },
     {
       "brand": "Clobetasol Propionate Foam",
@@ -2054,7 +2054,7 @@
       "price": "₹464 / bottle of 50 gm foam",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-receives-tentative-ANDA-approval-for-Clobetasol-Propionate-Foam-0.05%25-%28Emulsion-Formulation%29.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-05-22T04:47:07.698Z"
+      "lastEnrichmentAttempt": "2026-05-31T05:09:09.075Z"
     },
     {
       "brand": "Azelaic Acid Gel",
@@ -2070,7 +2070,7 @@
       "price": "₹151 / tube of 15 gm gel",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-receives-ANDA-approval-for-Azelaic-Acid-Gel-15%25.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-05-22T04:47:07.698Z"
+      "lastEnrichmentAttempt": "2026-05-31T05:09:15.226Z"
     },
     {
       "brand": "Breztri",
@@ -2134,7 +2134,7 @@
       "price": "₹3800 / bottle of 21 capsules",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/PressReleaseEugia04032026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-05-22T04:48:42.266Z"
+      "lastEnrichmentAttempt": "2026-05-31T05:09:18.893Z"
     },
     {
       "brand": "ADQUEY™ (difamilast) Ointment",
@@ -2166,7 +2166,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-signs-definitive-agreement-to-acquire-organon/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-22T04:48:48.816Z"
+      "lastEnrichmentAttempt": "2026-05-31T05:09:48.973Z"
     },
     {
       "brand": "semaglutide",
@@ -2198,7 +2198,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-introduces-its-global-innovative-drug-ilumya-in-india-for-treatment-of-moderate-to-severe-plaque-psoriasis/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-22T04:48:48.816Z"
+      "lastEnrichmentAttempt": "2026-05-31T05:09:57.118Z"
     },
     {
       "brand": "UNLOXCYT",
@@ -3351,6 +3351,118 @@
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/Sun-Pharma-Announces-US-FDA-Acceptance-of-sBLA-Application-for-ILUMYA.pdf",
       "buyer": "Sun Pharma",
       "lastEnrichmentAttempt": "2026-05-30T04:38:24.462Z"
+    },
+    {
+      "brand": "Tyvalzi",
+      "launchType": "In-licensed",
+      "date": "2023-09-14",
+      "seller": "Pharmazz Inc.",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹33.7 / strip of 10 tablets",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/09/Press-Release-Sun-Pharma-and-Pharmazz-Inc.-licensing-agreement-for-Sovateltide-in-India.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-31T05:06:01.986Z"
+    },
+    {
+      "brand": "Various Brands",
+      "launchType": "Acquired",
+      "date": "2022-06-23",
+      "seller": "GSK",
+      "dealType": "Brand Portfolio Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹421 / tube of 40 gm cream",
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-05-31T05:06:46.151Z"
+    },
+    {
+      "brand": "Alkem's Ophthalmology Products",
+      "launchType": "Own Launched",
+      "date": "2023-07-10",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://health.economictimes.indiatimes.com/news/pharma/drug-approvals-launches/alkem-forays-into-ophthalmology-with-launch-of-eye-care-products/101642253",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-05-31T05:08:48.306Z"
+    },
+    {
+      "brand": "Hydrocortisone Valerate Ointment USP, 0.2%",
+      "launchType": "Own Launched",
+      "date": "2018-12-17",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Hydrocortisone Valerate",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Westcort®",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "—",
+      "buyer": "Glenmark",
+      "lastEnrichmentAttempt": "2026-05-31T05:09:03.928Z"
+    },
+    {
+      "brand": "Clobetasol Propionate Foam, 0.05%",
+      "launchType": "Own Launched",
+      "date": "2018-11-26",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Clobetasol Propionate",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Olux-E®",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.glenmarkpharma.com/press-release/clobetasol-propionate-foam-0-05-approval",
+      "buyer": "Glenmark",
+      "lastEnrichmentAttempt": "2026-05-31T05:09:09.075Z"
+    },
+    {
+      "brand": "Azelaic Acid Gel, 15%",
+      "launchType": "Own Launched",
+      "date": "2018-11-20",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Azelaic Acid",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Finacea® Gel, 15%",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "—",
+      "buyer": "Glenmark",
+      "lastEnrichmentAttempt": "2026-05-31T05:09:15.226Z"
+    },
+    {
+      "brand": "Noveltreat and Sematrinity",
+      "launchType": "Own Launched",
+      "date": "2026-03-01",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "semaglutide",
+      "therapy": "Anti-Diabetic",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": null,
+      "sourceUrl": "https://sunpharma.com/blog/sun-pharma-launches-its-semaglutide-injection-under-the-brand-names-noveltreat-and-sematrinity-in-india/",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-05-31T05:09:26.914Z"
     }
   ]
 }
