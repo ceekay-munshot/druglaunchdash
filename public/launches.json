@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-31T05:10:53.652Z",
-  "rowCount": 217,
+  "generatedAt": "2026-06-01T05:34:54.451Z",
+  "rowCount": 232,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -742,7 +742,7 @@
       "price": "₹28.3 / strip of 10 capsules",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/09/Press-Release-Sun-Pharma-launches-Chericof-12.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-22T04:49:17.488Z"
+      "lastEnrichmentAttempt": "2026-06-01T05:31:46.254Z"
     },
     {
       "brand": "WINLEVI",
@@ -822,7 +822,7 @@
       "price": "₹304 / packet of 120 mdi inhaler",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-enters-into-an-exclusive-licensing.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-05-22T04:49:28.430Z"
+      "lastEnrichmentAttempt": "2026-06-01T05:32:14.491Z"
     },
     {
       "brand": "GBR 310",
@@ -831,14 +831,14 @@
       "seller": "—",
       "dealType": "Biosimilar Launch",
       "molecule": "Omalizumab",
-      "therapy": "—",
+      "therapy": "Respiratory",
       "indication": "Allergic asthma and chronic idiopathic urticaria (CIU)",
       "existingBrand": "Xolair",
-      "chronicAcute": "—",
+      "chronicAcute": "Chronic",
       "price": null,
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark%20Pharmaceuticals%20Announces%20Encouraging%20Phase%201%20Results%20Supporting%20Biosimilarity%20Criteria%20for%20GBR%20310.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-05-22T04:49:33.309Z"
+      "lastEnrichmentAttempt": "2026-06-01T05:32:17.891Z"
     },
     {
       "brand": "Famotidine Injection, USP",
@@ -1839,11 +1839,11 @@
       "seller": "—",
       "dealType": "Generic Launch",
       "molecule": "semaglutide",
-      "therapy": "—",
+      "therapy": "Anti-Diabetic",
       "indication": "—",
       "existingBrand": "—",
       "chronicAcute": "Chronic",
-      "price": "—",
+      "price": "₹1745 / box of 2 pre-filled pens",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-launches-its-semaglutide-injection-under-the-brand-names-noveltreat-and-sematrinity-in-india/",
       "buyer": "Sun Pharma",
       "lastEnrichmentAttempt": "2026-05-30T04:37:43.925Z"
@@ -1855,11 +1855,11 @@
       "seller": "—",
       "dealType": "Generic Launch",
       "molecule": "semaglutide",
-      "therapy": "—",
+      "therapy": "Anti-Diabetic",
       "indication": "—",
       "existingBrand": "—",
       "chronicAcute": "Chronic",
-      "price": "—",
+      "price": "₹2960 / pre-filled pen of 1.5 ml (2 mg)",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-launches-its-semaglutide-injection-under-the-brand-names-noveltreat-and-sematrinity-in-india/",
       "buyer": "Sun Pharma",
       "lastEnrichmentAttempt": "2026-05-30T04:37:51.623Z"
@@ -2214,7 +2214,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-announces-the-availability-of-unloxcyt-cosibelimab-ipdl-for-advanced-cutaneous-squamous-cell-carcinoma-acscc/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-22T04:48:48.816Z"
+      "lastEnrichmentAttempt": "2026-06-01T05:31:12.795Z"
     },
     {
       "brand": "ILUMYA",
@@ -2230,7 +2230,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-announces-us-fda-acceptance-of-supplemental-biologics-license-sbla-application-for-ilumya-tildrakizumab-asmn-for-the-treatment-o/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-22T04:48:48.816Z"
+      "lastEnrichmentAttempt": "2026-06-01T05:31:38.175Z"
     },
     {
       "brand": "Chericof 12",
@@ -2246,7 +2246,7 @@
       "price": "—",
       "sourceUrl": "http://www.sunpharma.com",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-22T04:49:17.488Z"
+      "lastEnrichmentAttempt": "2026-06-01T05:31:51.061Z"
     },
     {
       "brand": "GBR 310",
@@ -2262,7 +2262,7 @@
       "price": "—",
       "sourceUrl": "—",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-05-22T04:49:22.199Z"
+      "lastEnrichmentAttempt": "2026-06-01T05:32:13.052Z"
     },
     {
       "brand": "Tiotropium Bromide",
@@ -2294,7 +2294,7 @@
       "price": null,
       "sourceUrl": "https://www.lupin.com/",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-05-22T04:49:40.045Z"
+      "lastEnrichmentAttempt": "2026-06-01T05:32:23.171Z"
     },
     {
       "brand": "Lupin",
@@ -2310,7 +2310,7 @@
       "price": null,
       "sourceUrl": "https://www.lupin.com/",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-05-22T04:49:40.045Z"
+      "lastEnrichmentAttempt": "2026-06-01T05:32:48.947Z"
     },
     {
       "brand": "Mankind Pharma Brand XYZ",
@@ -2390,7 +2390,7 @@
       "price": "null",
       "sourceUrl": "https://www.cipla.com/press-release/generic-pharma-acquisition",
       "buyer": "Cipla",
-      "lastEnrichmentAttempt": "2026-05-23T04:27:29.635Z"
+      "lastEnrichmentAttempt": "2026-06-01T05:32:56.043Z"
     },
     {
       "brand": "Antibacterial Combination",
@@ -2768,7 +2768,7 @@
       "dealType": "In-license (India)",
       "molecule": "—",
       "therapy": "—",
-      "indication": "—",
+      "indication": "seasonal allergic rhinitis",
       "existingBrand": "—",
       "chronicAcute": "—",
       "price": "₹232 / bottle of 17 gm (nasal spray)",
@@ -3135,10 +3135,10 @@
       "seller": "—",
       "dealType": "NCE Launch",
       "molecule": "Molnupiravir",
-      "therapy": "—",
-      "indication": "—",
+      "therapy": "Anti-Viral",
+      "indication": "COVID-19",
       "existingBrand": "—",
-      "chronicAcute": "—",
+      "chronicAcute": "Acute",
       "price": "₹1361 / bottle of 40 capsules",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/11/Press-Release-Sun-Pharma-gearing-up-to-introduce-molnupiravir-under-the-brand-name-Molxvir%C2%AE-in-India.pdf",
       "buyer": "Sun Pharma",
@@ -3463,6 +3463,246 @@
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-launches-its-semaglutide-injection-under-the-brand-names-noveltreat-and-sematrinity-in-india/",
       "buyer": "Sun Pharma",
       "lastEnrichmentAttempt": "2026-05-31T05:09:26.914Z"
+    },
+    {
+      "brand": "Brand B Acquisition",
+      "launchType": "Acquired",
+      "date": "2023-09-21",
+      "seller": "Company A",
+      "dealType": "Brand Acquisition",
+      "molecule": "Active Ingredient B",
+      "therapy": "Cardiology",
+      "indication": "Heart Disease",
+      "existingBrand": "Competitor Brand B",
+      "chronicAcute": "—",
+      "price": "₹19.7 / strip of 10 capsules",
+      "sourceUrl": "https://www.mankindpharma.com/media/press-release/brand-b-acquisition",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-06-01T05:27:01.883Z"
+    },
+    {
+      "brand": "Tyvalzi™",
+      "launchType": "In-licensed",
+      "date": "2023-09-14",
+      "seller": "Pharmazz Inc.",
+      "dealType": "In-license (India)",
+      "molecule": "Sovateltide",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹33.7 / strip of 10 tablets",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/09/Press-Release-Sun-Pharma-and-Pharmazz-Inc.-licensing-agreement-for-Sovateltide-in-India.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-06-01T05:27:24.383Z"
+    },
+    {
+      "brand": "Lupin’s Ankleshwar Facility",
+      "launchType": "Acquired",
+      "date": "2026-05-28",
+      "seller": "—",
+      "dealType": "—",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹264.28 / strip of 10 tablets",
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-s-ankleshwar-facility-receives-eir-from-u-s-fda",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-06-01T05:29:06.782Z"
+    },
+    {
+      "brand": "LNP8701",
+      "launchType": "Own Launched",
+      "date": "2026-05-28",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "LNP8701",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹54 / strip of 10 tablets",
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-shares-phase-1-data-on-lnp-8701-at-the-asco-annual-meeting-2026",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-06-01T05:29:06.782Z"
+    },
+    {
+      "brand": "AstraZeneza",
+      "launchType": "Own Launched",
+      "date": "2023-08-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Dapagliflozin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Jardiance",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,499 / strip",
+      "sourceUrl": "https://www.astrazeneca.com/press-releases/2023/astrazeneca-launches-dapagliflozin-in-india.html",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-06-01T05:29:21.909Z"
+    },
+    {
+      "brand": "Bharat Biotech",
+      "launchType": "Own Launched",
+      "date": "2023-07-10",
+      "seller": "—",
+      "dealType": "Vaccine Launch",
+      "molecule": "Covaxin",
+      "therapy": "Immunology",
+      "indication": "COVID-19",
+      "existingBrand": "Covishield",
+      "chronicAcute": "—",
+      "price": "Rs 1,200 / vial",
+      "sourceUrl": "https://www.bharatbiotech.com/press-releases/2023/covaxin-launch.html",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-06-01T05:29:21.909Z"
+    },
+    {
+      "brand": "Mylan",
+      "launchType": "In-licensed",
+      "date": "2023-06-30",
+      "seller": "Glenmark",
+      "dealType": "In-license (India)",
+      "molecule": "Amisulpride",
+      "therapy": "Neurology",
+      "indication": "Schizophrenia",
+      "existingBrand": "Solian",
+      "chronicAcute": "Chronic",
+      "price": "—",
+      "sourceUrl": "https://www.mylan.com/news/press-releases/2023/mylan-glenmark-in-license.html",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-06-01T05:29:21.909Z"
+    },
+    {
+      "brand": "Dextromethorphan Polistirex Extended-Release Oral Suspension, 30 mg/5 mL",
+      "launchType": "Own Launched",
+      "date": "2023-04-16",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Dextromethorphan Polistirex",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Delsym",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/2LtrToSEsAurobindoPRUSFDA17042026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-06-01T05:30:19.687Z"
+    },
+    {
+      "brand": "Glycerol Phenylbutyrate Oral Liquid, 1.1 grams per mL",
+      "launchType": "Own Launched",
+      "date": "2023-04-16",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Glycerol Phenylbutyrate",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Ravicti",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoPRUSFDA17042026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-06-01T05:30:19.687Z"
+    },
+    {
+      "brand": "Dapagliflozin and Metformin Hydrochloride Extended-Release Tablets",
+      "launchType": "Own Launched",
+      "date": "2023-04-06",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Dapagliflozin plus Metformin Hydrochloride",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹95.5 / strip of 10 tablet er",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoUSFDAmetformin07042026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-06-01T05:30:19.687Z"
+    },
+    {
+      "brand": "Dapagliflozin Tablets",
+      "launchType": "Own Launched",
+      "date": "2023-04-06",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Dapagliflozin",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Farxiga",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoUSFDA07042026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-06-01T05:30:19.687Z"
+    },
+    {
+      "brand": "BP11, Investigational Biosimilar to Xolair® (omalizumab)",
+      "launchType": "Own Launched",
+      "date": "2023-04-05",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "Omalizumab",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Xolair",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-06-01T05:30:19.687Z"
+    },
+    {
+      "brand": "generic semaglutide",
+      "launchType": "Own Launched",
+      "date": "2026-01-01",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "semaglutide",
+      "therapy": "Anti-Diabetic",
+      "indication": "Chronic Weight Management",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": null,
+      "sourceUrl": "https://sunpharma.com/blog/sun-pharma-receives-dcgi-approval-to-manufacture-and-market-generic-semaglutide-injection-in-india-for-chronic-weight-management/",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-06-01T05:31:51.061Z"
+    },
+    {
+      "brand": "Plasil®",
+      "launchType": "In-licensed",
+      "date": "2025-12-18",
+      "seller": "Neopharmed",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "Gastroenterology",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-signs-exclusive-licensing-agreement-with-neopharmed-for-gastroenterology-brand-plasil-in-the-philippines-and-brazil",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-06-01T05:32:23.171Z"
+    },
+    {
+      "brand": "GLP-1 receptor agonist",
+      "launchType": "In-licensed",
+      "date": "2025-12-29",
+      "seller": "Gan & Lee Pharmaceuticals",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-signs-exclusive-licensing-agreement-with-gan-lee-pharmaceuticals-for-novel-glp-1-receptor-agonist",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-06-01T05:32:48.947Z"
     }
   ]
 }
