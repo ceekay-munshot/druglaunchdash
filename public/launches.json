@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-01T05:34:54.451Z",
-  "rowCount": 232,
+  "generatedAt": "2026-06-02T05:16:33.586Z",
+  "rowCount": 237,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -57,7 +57,7 @@
       "chronicAcute": "Chronic",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/10/Press-Release-Sun-Pharma-and-Zydus-sign-licensing-agreement-for-co-marketing-of-Desidustat-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-23T04:30:57.468Z",
+      "lastEnrichmentAttempt": "2026-06-02T05:15:56.062Z",
       "price": "null"
     },
     {
@@ -87,7 +87,7 @@
       "chronicAcute": "Chronic",
       "sourceUrl": "https://www.coronaremedies.com/wp-content/uploads/2024/11/myoril-news-2024.png",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-23T04:31:09.417Z"
+      "lastEnrichmentAttempt": "2026-06-02T05:16:09.713Z"
     },
     {
       "brand": "Sematreat",
@@ -342,7 +342,7 @@
       "price": "—",
       "sourceUrl": "https://www.pharmazz.com/launch-tyvalzi-sovateltide-india",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-23T04:31:02.547Z"
+      "lastEnrichmentAttempt": "2026-06-02T05:16:00.081Z"
     },
     {
       "brand": "Palbo",
@@ -374,7 +374,7 @@
       "price": "₹21.7 / strip of 10 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-23T04:31:15.891Z"
+      "lastEnrichmentAttempt": "2026-06-02T05:16:13.428Z"
     },
     {
       "brand": "Dilo-BM",
@@ -902,7 +902,7 @@
       "price": "null",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/10/Press-Release-Sun-Pharma-and-Zydus-sign-licensing-agreement-for-co-marketing-of-Desidustat-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-23T04:30:41.619Z"
+      "lastEnrichmentAttempt": "2026-06-02T05:15:45.937Z"
     },
     {
       "brand": "Cipla's New Biosimilar",
@@ -950,7 +950,7 @@
       "price": "₹5316 / strip of 1 capsule",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-expands-its-oncology-franchise-in-India-with-the-launch-of-Helsinn.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-05-23T04:30:47.421Z"
+      "lastEnrichmentAttempt": "2026-06-02T05:15:51.973Z"
     },
     {
       "brand": "Ryaltris",
@@ -982,7 +982,7 @@
       "price": "₹232 / bottle of 100 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-23T04:31:30.901Z"
+      "lastEnrichmentAttempt": "2026-06-02T05:16:22.948Z"
     },
     {
       "brand": "Dilo-BM, Dilo-DX, Stelbid, Vitneurin",
@@ -2406,7 +2406,7 @@
       "price": "₹643 / pump bottle of 100 ml",
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/amp_articleshow/100775508.cms",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-05-23T04:27:54.905Z"
+      "lastEnrichmentAttempt": "2026-06-02T05:15:19.822Z"
     },
     {
       "brand": "GBR 1302",
@@ -2422,7 +2422,7 @@
       "price": "—",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Pharmaceuticals-and-Harbour-BioMed-Sign-Agreement-for-Greater-China-toDevelop-GBR-1302.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-05-23T04:28:44.403Z"
+      "lastEnrichmentAttempt": "2026-06-02T05:15:34.036Z"
     },
     {
       "brand": "BP11",
@@ -2438,7 +2438,7 @@
       "price": "₹61.2 / strip of 20 capsules",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-05-23T04:30:28.138Z"
+      "lastEnrichmentAttempt": "2026-06-02T05:15:38.116Z"
     },
     {
       "brand": "AKYNZEO",
@@ -3703,6 +3703,86 @@
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-signs-exclusive-licensing-agreement-with-gan-lee-pharmaceuticals-for-novel-glp-1-receptor-agonist",
       "buyer": "Lupin",
       "lastEnrichmentAttempt": "2026-06-01T05:32:48.947Z"
+    },
+    {
+      "brand": "Vasonex",
+      "launchType": "Own Launched",
+      "date": "2023-09-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "Respiratory",
+      "indication": "Asthma",
+      "existingBrand": "Seretide",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,200 / inhaler",
+      "sourceUrl": "https://www.mankindpharma.com/media/press-release/vasonex-launch",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-06-02T05:12:42.463Z"
+    },
+    {
+      "brand": "Semaglutide Generic Injection",
+      "launchType": "Own Launched",
+      "date": "2026-03-20",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Semaglutide",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "1,290",
+      "sourceUrl": "https://www.natcopharma.co.in/insights/news-and-announcements",
+      "buyer": "Natco Pharma",
+      "lastEnrichmentAttempt": "2026-06-02T05:13:53.340Z"
+    },
+    {
+      "brand": "Cipla",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Breztri",
+      "therapy": "Respiratory",
+      "indication": "COPD",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "₹1,873 / inhaler",
+      "sourceUrl": "https://www.cipla.com/news/breztri-launch",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-06-02T05:14:01.765Z"
+    },
+    {
+      "brand": "Sun Pharma",
+      "launchType": "In-licensed",
+      "date": "2023-08-30",
+      "seller": "Bristol-Myers Squibb",
+      "dealType": "In-license (India)",
+      "molecule": "Dabigatran",
+      "therapy": "Cardiology",
+      "indication": "Atrial Fibrillation",
+      "existingBrand": "Pradaxa",
+      "chronicAcute": "—",
+      "price": "₹2,200 / strip",
+      "sourceUrl": "https://www.sunpharma.com/press-releases/dabigatran-in-licensing",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-06-02T05:14:01.765Z"
+    },
+    {
+      "brand": "Zydus Cadila",
+      "launchType": "Acquired",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "Brand Acquisition",
+      "molecule": "Diclofenac",
+      "therapy": "Pain Management",
+      "indication": "Pain Relief",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹75 / pack",
+      "sourceUrl": "https://www.zyduscadila.com/news/diclofenac-acquisition",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-06-02T05:14:01.765Z"
     }
   ]
 }
