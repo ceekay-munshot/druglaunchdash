@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-02T05:16:33.586Z",
-  "rowCount": 237,
+  "generatedAt": "2026-06-03T05:36:41.963Z",
+  "rowCount": 248,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -103,7 +103,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/PR-for-Semaglutide.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-23T04:31:37.274Z"
+      "lastEnrichmentAttempt": "2026-06-03T05:33:06.790Z"
     },
     {
       "brand": "Semaglutide Injection",
@@ -135,7 +135,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/09/Press-Release-Sun-Pharma-and-Pharmazz-Inc.-licensing-agreement-for-Sovateltide-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-23T04:31:43.801Z"
+      "lastEnrichmentAttempt": "2026-06-03T05:33:16.572Z"
     },
     {
       "brand": "Thyrocab",
@@ -151,7 +151,7 @@
       "price": "—",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-24T04:51:52.012Z"
+      "lastEnrichmentAttempt": "2026-06-03T05:33:40.083Z"
     },
     {
       "brand": "Semaglutide",
@@ -390,7 +390,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-24T04:52:03.277Z"
+      "lastEnrichmentAttempt": "2026-06-03T05:33:52.797Z"
     },
     {
       "brand": "Dilo-DX",
@@ -406,7 +406,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-24T04:52:19.686Z"
+      "lastEnrichmentAttempt": "2026-06-03T05:34:21.567Z"
     },
     {
       "brand": "Stelbid",
@@ -422,7 +422,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-24T04:52:28.851Z"
+      "lastEnrichmentAttempt": "2026-06-03T05:34:28.004Z"
     },
     {
       "brand": "Vitneurin",
@@ -998,7 +998,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-24T04:52:15.269Z"
+      "lastEnrichmentAttempt": "2026-06-03T05:34:02.862Z"
     },
     {
       "brand": "Dilo-BM, Dilo-DX, Stelbid and Vitneurin",
@@ -2470,7 +2470,7 @@
       "price": "₹232 / bottle of 17 gm (nasal spray)",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-Announces-Exclusive-Licensing-Agreement-with-Se.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-05-24T04:50:25.115Z"
+      "lastEnrichmentAttempt": "2026-06-03T05:33:22.301Z"
     },
     {
       "brand": "Oseltamivir Phosphate Oral Suspension",
@@ -2502,7 +2502,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/Adquey-(Difamilast)_NDA%20Approval_PressRelease_13-Feb-26.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-05-24T04:51:42.840Z"
+      "lastEnrichmentAttempt": "2026-06-03T05:33:29.455Z"
     },
     {
       "brand": "Dilo-BM, Dilo-DX, Stelbid, Vitneurin",
@@ -2518,7 +2518,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-24T04:52:15.269Z"
+      "lastEnrichmentAttempt": "2026-06-03T05:34:08.115Z"
     },
     {
       "brand": "Tiotropium Bromide DPI",
@@ -2574,7 +2574,7 @@
       "date": "2018-07-10",
       "seller": "—",
       "dealType": "Consumer Launch",
-      "molecule": "—",
+      "molecule": "Combination Drug (not specified)",
       "therapy": "Oncology",
       "indication": "CINV (chemotherapy-induced nausea and vomiting)",
       "existingBrand": "—",
@@ -3488,9 +3488,9 @@
       "dealType": "In-license (India)",
       "molecule": "Sovateltide",
       "therapy": "—",
-      "indication": "—",
+      "indication": "cerebral ischemic stroke",
       "existingBrand": "—",
-      "chronicAcute": "—",
+      "chronicAcute": "Acute",
       "price": "₹33.7 / strip of 10 tablets",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/09/Press-Release-Sun-Pharma-and-Pharmazz-Inc.-licensing-agreement-for-Sovateltide-in-India.pdf",
       "buyer": "Sun Pharma",
@@ -3783,6 +3783,182 @@
       "sourceUrl": "https://www.zyduscadila.com/news/diclofenac-acquisition",
       "buyer": "Dr. Reddy's",
       "lastEnrichmentAttempt": "2026-06-02T05:14:01.765Z"
+    },
+    {
+      "brand": "Molxvir®",
+      "launchType": "Own Launched",
+      "date": "2021-11-11",
+      "seller": "MSD and Ridgeback",
+      "dealType": "NCE Launch",
+      "molecule": "Molnupiravir",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹1361 / bottle of 40 capsules",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/11/Press-Release-Sun-Pharma-gearing-up-to-introduce-molnupiravir-under-the-brand-name-Molxvir%C2%AE-in-India.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-06-03T05:29:04.245Z"
+    },
+    {
+      "brand": "Obimet & Thyrocab",
+      "launchType": "Acquired",
+      "date": "2022-06-23",
+      "seller": "Abbott India",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹31.6 / strip of 15 tablets",
+      "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-06-03T05:29:49.546Z"
+    },
+    {
+      "brand": "Pomalidomide",
+      "launchType": "Own Launched",
+      "date": "2026-03-03",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Pomalidomide",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹3840 / bottle of 21 capsules",
+      "sourceUrl": "—",
+      "buyer": "Natco Pharma",
+      "lastEnrichmentAttempt": "2026-06-03T05:30:29.627Z"
+    },
+    {
+      "brand": "Sodium Sulfate, Magnesium Sulfate, and Potassium Chloride Tablets",
+      "launchType": "Own Launched",
+      "date": "2026-05-29",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-approval-from-u-s-fda-for-sodium-sulfate-magnesium-sulfate-and-potassium-chloride-tablets",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-06-03T05:31:21.851Z"
+    },
+    {
+      "brand": "Ultreon 1.0 Software",
+      "launchType": "Own Launched",
+      "date": "2023-11-28",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/Abbotts-New-Coronary-Imaging-Software-Powered-by-Artificial-Intelligence-Launched-in-India.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-06-03T05:32:14.183Z"
+    },
+    {
+      "brand": "PediaSure",
+      "launchType": "Own Launched",
+      "date": "2023-11-17",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹316 / box of 200 gm powder",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-new-pediaSure-with-nutri-pull-system-to-help-support-catch-up-growth-and-overall-health-in-children.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-06-03T05:32:14.183Z"
+    },
+    {
+      "brand": "Vertigo Coach",
+      "launchType": "Own Launched",
+      "date": "2023-08-24",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "vertigo",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹196 / bottle of 30 ml drop",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/Abbott-Helps-People-with-Vertigo-Take-Control-of-Their-Health-with-the-Launch-of-an-Easy-to-Use-Vertigo-Coach-App-in-India.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-06-03T05:32:14.183Z"
+    },
+    {
+      "brand": "Dextromethorphan Polistirex Extended-Release Oral Suspension, 30 mg/5 mL (OTC)",
+      "launchType": "Own Launched",
+      "date": "2026-04-16",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Dextromethorphan",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Delsym",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/2LtrToSEsAurobindoPRUSFDA17042026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-06-03T05:32:54.637Z"
+    },
+    {
+      "brand": "ADQUEY™ (difamilast)",
+      "launchType": "Own Launched",
+      "date": "2026-02-16",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Difamilast",
+      "therapy": "—",
+      "indication": "Mild-to-Moderate Atopic Dermatitis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/Adquey-(Difamilast)_NDA%20Approval_PressRelease_13-Feb-26.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-06-03T05:32:54.637Z"
+    },
+    {
+      "brand": "Ryaltris",
+      "launchType": "In-licensed",
+      "date": "2018-07-06",
+      "seller": "Seqirus Pty. Ltd.",
+      "dealType": "In-license (India)",
+      "molecule": "olopatadine hydrochloride plus mometasone furoate",
+      "therapy": "—",
+      "indication": "treatment of symptoms associated with seasonal allergic rhinitis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "http://www.glenmarkpharma.com/press-release/glenmark-pharmaceuticals-announces-exclusive-licensing-agreement-with-seqirus-for-its-investigational-seasonal-allergic-rhinitis-nasal-spray-ryaltris-for-australia-and-new-zealand-markets",
+      "buyer": "Glenmark",
+      "lastEnrichmentAttempt": "2026-06-03T05:33:22.301Z"
+    },
+    {
+      "brand": "ADQUEY",
+      "launchType": "In-licensed",
+      "date": "2026-02-13",
+      "seller": "Otsuka Pharmaceutical Co., Ltd.",
+      "dealType": "In-license (India)",
+      "molecule": "difamilast",
+      "therapy": "Dermatology",
+      "indication": "mild-to-moderate atopic dermatitis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.aurobindo.com/",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-06-03T05:33:29.455Z"
     }
   ]
 }
