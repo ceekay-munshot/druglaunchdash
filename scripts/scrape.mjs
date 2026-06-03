@@ -53,6 +53,7 @@ const SOURCES = [
   { company: 'Abbott India',       url: 'https://www.abbott.in/media-center/press-releases.html' },
   { company: 'Aurobindo',          url: 'https://www.aurobindo.com/media/press-releases' },
   { company: 'Intas',              url: 'https://www.intaspharma.com/news-events/' },
+  { company: 'Wockhardt',          url: 'https://www.wockhardt.com/investor/' },
 ];
 
 // ── Schema Firecrawl is asked to populate per URL ───────────────────

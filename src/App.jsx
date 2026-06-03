@@ -64,6 +64,7 @@ const DEFAULT_ACTIVE_COMPANIES = [
   'Abbott India',
   'Aurobindo',
   'Intas',
+  'Wockhardt',
 ];
 
 const ARCHIVE_STORAGE_KEY = 'dlt.archivedCompanies.v1';

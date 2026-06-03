@@ -2349,6 +2349,73 @@ export const LAUNCH_TRACKER_ROWS = [
   // Dec-2024, closed 06-Aug-2025; UDENYCA had ~US$127M FY23 sales — makes Intas / Accord
   // one of the largest global pegfilgrastim suppliers (deal value not publicly disclosed)
   row(['UDENYCA (Pegfilgrastim-cbqv — US franchise)', 'Acquired', '2025-08-06', 'Coherus BioSciences', 'Intas', 'Brand Acquisition (US)', 'Pegfilgrastim-cbqv (biosimilar)', 'Oncology', 'Chemotherapy-Induced Neutropenia (long-acting)', null, null, 'Neulasta / Fulphila / Ziextenzo', null, 'Chronic']),
+
+  // ──────────────────────────────────────────────────────────────────────────
+  // Wockhardt — LIVE DATASET (deep-research edition)
+  // Sources: Wockhardt investor PRs, CDSCO announcements, PIB,
+  // BusinessToday / Business Standard / Outlook Business / Manufacturing
+  // Chemist / The Pharmaletter / BiospectrumIndia / Practo / Apollo
+  // Pharmacy. Wockhardt is a Mumbai-based pharma with two distinctive India
+  // franchises: (1) the WCK novel-antibiotics programme — one of the few
+  // indigenous NCE pipelines in Indian pharma, with five Phase-3-complete
+  // assets (Emrok, Emrok O, Miqnaf, Zaynich, Foviscu); and (2) a long-
+  // running recombinant-biologics franchise (Wosulin / Glaritus insulins,
+  // Wepox EPO). After divesting 62 acute brands to Dr. Reddy's in Jun-2020
+  // for Rs 1,850 Cr (already captured above as a sell-side row), Wockhardt
+  // repositioned around chronic + antibiotic NCEs. "[launch year est.]"
+  // flags heritage brands where the exact launch year isn't in primary
+  // sources.
+  // ──────────────────────────────────────────────────────────────────────────
+
+  // ── India novel antibiotics (Own Launched) — WCK NCE programme ──
+  // Miqnaf (Nafithromycin / WCK 4873) — Wockhardt investor PR / PIB /
+  // The Hindu — India's first indigenously discovered antibiotic in 30+
+  // years; CDSCO approval Nov-2024; full commercial launch 27-May-2025;
+  // 3-day once-daily oral for CABP; first-in-world commercial launch
+  // (Wockhardt-discovered NCE); BIRAC-funded Phase 3.
+  row(['Miqnaf', 'Own Launched', '2025-05-27', '—', 'Wockhardt', 'NCE Launch (first-in-world)', 'Nafithromycin', 'Anti-Infectives', 'Community-Acquired Bacterial Pneumonia (CABP)', null, null, 'Azithral / Azee / Augmentin (azithromycin & amox-clav class for CABP)', null, 'Acute']),
+  // Zaynich (Zidebactam + Cefepime / WCK 5222) — BusinessToday 29-May-2026
+  // / Business Standard 01-Jun-2026 — India CDSCO marketing approval
+  // 27-May-2026 for cUTI inc. pyelonephritis; first-ever Indian-discovered
+  // NCE to receive US FDA approval (Jun-2026); Phase 3 showed 89% efficacy
+  // vs meropenem 68%.
+  row(['Zaynich', 'Own Launched', '2026-05-27', '—', 'Wockhardt', 'NCE Launch (first-in-world)', 'Zidebactam + Cefepime', 'Anti-Infectives', 'Complicated UTI / MDR Gram-Negative Infections', null, null, 'Meronem / Zerbaxa / Avycaz (carbapenems & novel β-lactam combinations)', null, 'Acute']),
+  // Emrok (Levonadifloxacin IV / WCK 771) + Emrok O (Alalevonadifloxacin
+  // oral / WCK 2349) — Manufacturing Chemist / BusinessToday 16-Jan-2020 —
+  // DCGI approval 16-Jan-2020; India's first indigenously discovered novel
+  // antibiotics; ABSSSI inc. diabetic-foot + MRSA bacteraemia; >130,000
+  // patients treated to date.
+  row(['Emrok / Emrok O', 'Own Launched', '2020-01-16', '—', 'Wockhardt', 'NCE Launch (first-in-world)', 'Levonadifloxacin (IV) / Alalevonadifloxacin (oral)', 'Anti-Infectives', 'ABSSSI inc. Diabetic Foot Infections / MRSA Bacteraemia', null, null, 'Linospan / Zyvox / Vancocin (linezolid & vancomycin class for MRSA)', null, 'Acute']),
+
+  // ── India recombinant biologics (Own Launched) — chronic core ──
+  // Wosulin — Pharmaletter / BiospectrumIndia — India's first indigenous
+  // rDNA human insulin; launched Sep-2003 at Rs 129/10ml vial;
+  // formulations: 30/70, 50/50, N (NPH), R (Regular); among Wockhardt's
+  // top-3 India brands.
+  row(['Wosulin', 'Own Launched', '2003-09-01', '—', 'Wockhardt', 'Biosimilar Launch', 'Recombinant Human Insulin (Regular / NPH / Premix)', 'Anti-Diabetic', 'Type 1 & Type 2 Diabetes Mellitus', null, null, 'Humulin / Mixtard / Insugen', null, 'Chronic']),
+  // Glaritus — Wockhardt PR (file: glaritus-launch-10-02-09.pdf) —
+  // Wockhardt's biosimilar insulin glargine; launched 10-Feb-2009;
+  // reference Sanofi's Lantus; long-acting basal insulin.
+  row(['Glaritus', 'Own Launched', '2009-02-10', '—', 'Wockhardt', 'Biosimilar Launch', 'Insulin Glargine', 'Anti-Diabetic', 'Type 1 & Type 2 Diabetes (Basal Insulin)', null, null, 'Lantus / Basalog / Toujeo', null, 'Chronic']),
+  // Wepox — BiospectrumIndia — Wockhardt's recombinant Erythropoietin;
+  // launched 2001; India's leading nephrology EPO brand (claimed >5,000
+  // CKD patients, >1,500 nephrologists); 10 strengths.
+  row(['Wepox', 'Own Launched', '2001-01-01', '—', 'Wockhardt', 'Biosimilar Launch', 'Recombinant Erythropoietin (rHuEPO)', 'Nephrology', 'Anaemia in Chronic Kidney Disease / Dialysis', null, null, 'Eprex / Epofit / Vintor', null, 'Chronic']),
+
+  // ── India chronic + pain brands (Own Launched) — retained portfolio
+  //    post-2020 Dr. Reddy's divestment ──
+  // Glimaday — Wockhardt India business-vertical page — flagship oral
+  // antidiabetic FDC [launch year est.]
+  row(['Glimaday', 'Own Launched', '2005-01-01', '—', 'Wockhardt', 'Generic Launch', 'Glimepiride + Metformin', 'Anti-Diabetic', 'Type 2 Diabetes', null, null, 'Glycomet-GP / Amaryl-M / Glimisave-M (glimepiride-metformin class)', null, 'Chronic']),
+  // Methycobal — Wockhardt diabetes site — methylcobalamin for neuropathy;
+  // together with Wosulin + Spasmo Proxyvon Plus contributes >50% of
+  // Wockhardt's India revenue per company commentary [launch year est.]
+  row(['Methycobal', 'Own Launched', '2000-01-01', '—', 'Wockhardt', 'Generic Launch', 'Methylcobalamin', 'Pain Management', 'Diabetic & Peripheral Neuropathy / B12 Deficiency', null, null, 'Nervijen / Neurokind / Mecobal', null, 'Chronic']),
+  // Spasmo Proxyvon Plus — Practo / Apollo Pharmacy — Dicyclomine HCl +
+  // Paracetamol + Tramadol fixed-dose capsule for severe spasmodic pain;
+  // Wockhardt's biggest tier-2/3 town pain brand; current "Plus"
+  // composition post-2013 dextropropoxyphene ban [launch year est.]
+  row(['Spasmo Proxyvon Plus', 'Own Launched', '2014-01-01', '—', 'Wockhardt', 'Generic Launch', 'Dicyclomine HCl + Paracetamol + Tramadol', 'Pain Management', 'Severe Spasmodic Abdominal Pain', null, null, 'Cyclopam / Drotin DS / Meftal-Spas (antispasmodic-analgesic combos)', null, 'Acute']),
 ];
 
 // Derived list of unique Buyers — these are the selectable "companies"
