@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-03T05:36:41.963Z",
-  "rowCount": 248,
+  "generatedAt": "2026-06-04T05:27:47.727Z",
+  "rowCount": 254,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -51,7 +51,7 @@
       "seller": "Zydus",
       "dealType": "Co-marketing",
       "molecule": "Desidustat",
-      "therapy": "—",
+      "therapy": "Anti-Diabetic",
       "indication": "—",
       "existingBrand": "—",
       "chronicAcute": "Chronic",
@@ -438,7 +438,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-24T04:52:59.146Z"
+      "lastEnrichmentAttempt": "2026-06-04T05:26:14.113Z"
     },
     {
       "brand": "Noveltreat and Sematrinity",
@@ -1014,7 +1014,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-24T04:52:36.012Z"
+      "lastEnrichmentAttempt": "2026-06-04T05:26:00.378Z"
     },
     {
       "brand": "Pomalidomide Capsules",
@@ -1062,7 +1062,7 @@
       "price": "₹5316 / strip of 1 capsule",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-expands-its-oncology-franchise-in-India-with-the-launch-of-Helsinn.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-05-24T04:52:42.075Z"
+      "lastEnrichmentAttempt": "2026-06-04T05:26:04.828Z"
     },
     {
       "brand": "Generic Tiotropium Bromide Dry Powder Inhaler",
@@ -1078,7 +1078,7 @@
       "price": "₹304 / packet of 120 mdi inhaler",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-enters-into-an-exclusive-licensing.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-05-24T04:52:45.259Z"
+      "lastEnrichmentAttempt": "2026-06-04T05:26:09.446Z"
     },
     {
       "brand": "Glycerol Phenylbutyrate Oral Liquid",
@@ -2550,7 +2550,7 @@
       "price": "₹31.2 / strip of 10 tablets",
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/amp_articleshow/100775508.cms",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-05-25T05:08:48.331Z"
+      "lastEnrichmentAttempt": "2026-06-04T05:26:22.882Z"
     },
     {
       "brand": "Cetu",
@@ -2566,7 +2566,7 @@
       "price": "₹24.8 / bottle of 60 ml (5 mg/5 ml)",
       "sourceUrl": "https://www.cnbctv18.com/healthcare/alkem-oncology-novel-breast-cancer-treatment-drug-launch-palbociclib-palbo-15703241.htm",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-05-25T05:08:48.332Z"
+      "lastEnrichmentAttempt": "2026-06-04T05:26:37.280Z"
     },
     {
       "brand": "AKYNZEO®",
@@ -2598,7 +2598,7 @@
       "price": "—",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Pharmaceuticals-and-Harbour-BioMed-Sign-Agreement-for-Greater-China-toDevelop-GBR-1302.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-05-25T05:10:13.680Z"
+      "lastEnrichmentAttempt": "2026-06-04T05:26:48.726Z"
     },
     {
       "brand": "Nourkrin®",
@@ -2614,7 +2614,7 @@
       "price": "₹3285 / strip of 60 tablets",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-launches-globally-renowned-hair-growth-formula-Nourkrin-in-Russia.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-05-25T05:10:13.680Z"
+      "lastEnrichmentAttempt": "2026-06-04T05:26:52.474Z"
     },
     {
       "brand": "AVEIR™ VR Leadless Pacemaker",
@@ -2630,7 +2630,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-aveir-vr-leadless-pacemaker-system-in-india-to-treat-patients-with-slow-heart-rhythms.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-05-25T05:11:29.611Z"
+      "lastEnrichmentAttempt": "2026-06-04T05:26:56.760Z"
     },
     {
       "brand": "Dextromethorphan Polistirex Extended-Release Oral Suspension, 30 mg/5 mL",
@@ -2646,7 +2646,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/2LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-05-25T05:11:49.115Z"
+      "lastEnrichmentAttempt": "2026-06-04T05:27:08.179Z"
     },
     {
       "brand": "Glycerol Phenylbutyrate Oral Liquid, 1.1 grams per mL",
@@ -3959,6 +3959,102 @@
       "sourceUrl": "https://www.aurobindo.com/",
       "buyer": "Aurobindo",
       "lastEnrichmentAttempt": "2026-06-03T05:33:29.455Z"
+    },
+    {
+      "brand": "Combination Antibiotic",
+      "launchType": "Own Launched",
+      "date": "2023-10-02",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "Drug-resistant infections",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/amp_articleshow/100775508.cms",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-06-04T05:24:38.093Z"
+    },
+    {
+      "brand": "Smartphone Compatible Insertable Cardiac Monitor",
+      "launchType": "Own Launched",
+      "date": "2017-12-19",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "cardiac arrhythmias",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-first-smartone-compatible-insertable-cardiac-monitor-to-detect-arrhythmias.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-06-04T05:25:36.269Z"
+    },
+    {
+      "brand": "Tazemetostat",
+      "launchType": "Own Launched",
+      "date": "2023-08-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Tazemetostat",
+      "therapy": "Oncology",
+      "indication": "Ewing Sarcoma",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 15,000 / vial",
+      "sourceUrl": "https://www.wockhardt.com/press-release/tazemetostat-launch-2023",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-04T05:25:58.876Z"
+    },
+    {
+      "brand": "Vildagliptin",
+      "launchType": "Acquired",
+      "date": "2023-07-15",
+      "seller": "Mylan",
+      "dealType": "Brand Acquisition",
+      "molecule": "Vildagliptin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Galvus",
+      "chronicAcute": "—",
+      "price": "Rs 2,400 / strip",
+      "sourceUrl": "https://www.wockhardt.com/press-release/vildagliptin-acquisition-2023",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-04T05:25:58.876Z"
+    },
+    {
+      "brand": "Dilo-BM, Dilo-DX, Stelbid and Vitneurin",
+      "launchType": "Acquired",
+      "date": "2017-03-07",
+      "seller": "GlaxoSmithKline Pharmaceuticals",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-06-04T05:26:00.378Z"
+    },
+    {
+      "brand": "Nourkrin®",
+      "launchType": "In-licensed",
+      "date": "2018-11-01",
+      "seller": "Pharma Medico ApS",
+      "dealType": "In-license (India)",
+      "molecule": "Marilex®",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "—",
+      "buyer": "Glenmark",
+      "lastEnrichmentAttempt": "2026-06-04T05:26:52.474Z"
     }
   ]
 }
