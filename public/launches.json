@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-04T05:27:47.727Z",
-  "rowCount": 254,
+  "generatedAt": "2026-06-05T05:05:34.185Z",
+  "rowCount": 261,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -470,7 +470,7 @@
       "price": "₹33.4 / strip of 10 tablets",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/09/Press-Release-Sun-Pharma-and-Pharmazz-Inc.-licensing-agreement-for-Sovateltide-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-25T05:12:28.714Z"
+      "lastEnrichmentAttempt": "2026-06-05T05:03:40.135Z"
     },
     {
       "brand": "Molxvir",
@@ -518,7 +518,7 @@
       "price": "₹21.7 / strip of 10 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-25T05:13:01.384Z"
+      "lastEnrichmentAttempt": "2026-06-05T05:03:44.258Z"
     },
     {
       "brand": "Product A",
@@ -1110,7 +1110,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-25T05:11:58.924Z"
+      "lastEnrichmentAttempt": "2026-06-05T05:02:58.794Z"
     },
     {
       "brand": "Dilo-DX",
@@ -1126,7 +1126,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-25T05:12:08.021Z"
+      "lastEnrichmentAttempt": "2026-06-05T05:03:15.194Z"
     },
     {
       "brand": "Stelbid",
@@ -1142,7 +1142,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-25T05:12:14.684Z"
+      "lastEnrichmentAttempt": "2026-06-05T05:03:25.734Z"
     },
     {
       "brand": "Vitneurin",
@@ -1158,7 +1158,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-25T05:12:23.632Z"
+      "lastEnrichmentAttempt": "2026-06-05T05:03:29.869Z"
     },
     {
       "brand": "Mastihal",
@@ -1174,7 +1174,7 @@
       "price": "Rs 154 / strip",
       "sourceUrl": "https://www.mankindpharma.com/products/mastihal-launch/",
       "buyer": "Mankind Pharma",
-      "lastEnrichmentAttempt": "2026-05-25T05:13:18.917Z"
+      "lastEnrichmentAttempt": "2026-06-05T05:03:56.796Z"
     },
     {
       "brand": "Softra",
@@ -1190,7 +1190,7 @@
       "price": "Rs 780 / vial",
       "sourceUrl": "https://www.mankindpharma.com/products/softra-launch/",
       "buyer": "Mankind Pharma",
-      "lastEnrichmentAttempt": "2026-05-25T05:13:27.294Z"
+      "lastEnrichmentAttempt": "2026-06-05T05:04:10.596Z"
     },
     {
       "brand": "ILUMYA® (tildrakizumab-asmn)",
@@ -2662,7 +2662,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-05-25T05:11:49.115Z"
+      "lastEnrichmentAttempt": "2026-06-05T05:02:35.532Z"
     },
     {
       "brand": "WINLEVI",
@@ -2678,7 +2678,7 @@
       "price": "₹21.3 / bottle of 30 ml syrup",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/08/Sun-Pharma-and-Cassiopea-announce-the-expiry-of-the-HSR-Act-process-and-the-successful-consummation-of-their-Winlevi%C2%AE.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-26T04:46:38.786Z"
+      "lastEnrichmentAttempt": "2026-06-05T05:04:22.533Z"
     },
     {
       "brand": "Myoril",
@@ -3838,7 +3838,7 @@
       "date": "2026-05-29",
       "seller": "—",
       "dealType": "NCE Launch",
-      "molecule": "—",
+      "molecule": "Sodium Sulfate, Magnesium Sulfate, Potassium Chloride",
       "therapy": "—",
       "indication": "—",
       "existingBrand": "—",
@@ -4055,6 +4055,118 @@
       "sourceUrl": "—",
       "buyer": "Glenmark",
       "lastEnrichmentAttempt": "2026-06-04T05:26:52.474Z"
+    },
+    {
+      "brand": "Ciplar",
+      "launchType": "Own Launched",
+      "date": "2023-10-05",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "Cardiology",
+      "indication": "Heart Failure",
+      "existingBrand": "Telma",
+      "chronicAcute": "Chronic",
+      "price": "₹20.9 / strip of 15 tablets",
+      "sourceUrl": "https://www.cipla.com/press-releases/ciplar-launch-heart-failure",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-06-05T04:59:08.707Z"
+    },
+    {
+      "brand": "Zyropan",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Zyropan",
+      "therapy": "Gastroenterology",
+      "indication": "Acid reflux",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 500 / pack",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/zyropan-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-06-05T04:59:16.898Z"
+    },
+    {
+      "brand": "Amoxtil",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Amoxicillin",
+      "therapy": "Anti-Infectives",
+      "indication": "Bacterial infections",
+      "existingBrand": "Augmentin",
+      "chronicAcute": "—",
+      "price": "Rs 150 / pack",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/amoxtil-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-06-05T04:59:16.898Z"
+    },
+    {
+      "brand": "Alchemex",
+      "launchType": "Acquired",
+      "date": "2023-08-20",
+      "seller": "XYZ Pharmaceuticals",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹4538.14 / jar of 60 gm powder",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/alchemex-acquisition",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-06-05T04:59:16.898Z"
+    },
+    {
+      "brand": "Eribulin Mesylate Injection",
+      "launchType": "Acquired",
+      "date": "2026-06-03",
+      "seller": "—",
+      "dealType": "Brand Acquisition",
+      "molecule": "Eribulin",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹17184 / vial of 1 injection (1 mg)",
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-and-natco-receive-approval-from-u-s-fda-for-eribulin-mesylate-injection",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-06-05T05:00:35.313Z"
+    },
+    {
+      "brand": "Wockhardt's Sabril",
+      "launchType": "Own Launched",
+      "date": "2023-05-10",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "vigabatrin",
+      "therapy": "Neurology",
+      "indication": "Epilepsy",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 3,500 / strip",
+      "sourceUrl": "https://www.wockhardt.com/press-release/2023-may-10",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-05T05:02:34.031Z"
+    },
+    {
+      "brand": "Winlevi",
+      "launchType": "In-licensed",
+      "date": "2021-08-31",
+      "seller": "Cassiopea SpA",
+      "dealType": "In-license (India)",
+      "molecule": "clascoterone",
+      "therapy": "Dermatology",
+      "indication": "acne vulgaris",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.sunpharma.com/",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-06-05T05:04:22.533Z"
     }
   ]
 }
