@@ -52,6 +52,13 @@ const COL = {
 
 const CAPTURE_SCALE = 2;
 
+// Side margin for the Drug Launch Tracker table page specifically. Far
+// tighter than the dashboard's MARGIN (36pt) — the table needs every
+// horizontal point it can get so 17 columns lay out without wrapping
+// "In-licensed" or "01 Jan 2026" mid-token. 12pt ≈ 4.2mm is well within
+// the A4-printable area on every common printer.
+const TABLE_MARGIN_X = 12;
+
 // Force every section to render at this width during capture. The
 // dashboard's outer container is `max-w-[1840px]`, so this width matches
 // the layout at full desktop breakpoint — Tailwind's `lg:` / `xl:` /
@@ -621,17 +628,26 @@ export async function exportDashboardPdf({ rows, allRows, company, timelineLabel
         await drawTrackerTable(pdf, {
           topLevelRows,
           childrenByKey,
-          // Scale all 17 columns to fill the content width — the fix:
-          // columns fit one landscape page width, never cropped.
-          tableWidth: CONTENT_W - 6,
+          // The table page gets tighter side margins than the rest of the
+          // dashboard sections so all 17 columns scale to a wider area
+          // (~812pt vs the prior ~764pt) — kills the mid-word wraps on
+          // narrow columns like Launch Type and Date.
+          tableWidth: PAGE_W - TABLE_MARGIN_X * 2 - 6,
           startY: CONTENT_TOP,
           margin: {
             top: CONTENT_TOP,
             bottom: PAGE_H - CONTENT_BOTTOM,
-            left: MARGIN + 3,
-            right: MARGIN + 3,
+            left: TABLE_MARGIN_X,
+            right: TABLE_MARGIN_X,
           },
           unit: 'pt',
+          // Slight downscale on font + horizontal padding for the dashboard
+          // table only — combined with the wider table area, every cell
+          // gets enough room that long values fit on a single line. The
+          // standalone table export keeps its (more spacious) defaults.
+          bodyFontSize: 6.0,
+          headFontSize: 6.5,
+          cellPaddingX: 0.8,
           didDrawPage: () => {
             drawPageChrome(pdf, {
               title: job.cap.title,

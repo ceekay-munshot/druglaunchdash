@@ -193,6 +193,9 @@ export async function drawTrackerTable(doc, {
   margin,
   unit = 'mm',
   didDrawPage,
+  bodyFontSize = 6.5,
+  headFontSize = 7,
+  cellPaddingX = 1,
 }) {
   // jspdf-autotable v5: the default export is a function
   // `autoTable(doc, opts)` applied per-call, not attached to the jsPDF
@@ -257,8 +260,8 @@ export async function drawTrackerTable(doc, {
     showHead: 'everyPage',
     styles: {
       font: 'helvetica',
-      fontSize: 6.5,
-      cellPadding: { top: 1.5 * u, right: 1 * u, bottom: 1.5 * u, left: 1 * u },
+      fontSize: bodyFontSize,
+      cellPadding: { top: 1.5 * u, right: cellPaddingX * u, bottom: 1.5 * u, left: cellPaddingX * u },
       lineColor: C.ink100,
       lineWidth: 0.1 * u,
       textColor: C.ink700,
@@ -269,10 +272,10 @@ export async function drawTrackerTable(doc, {
       fillColor: C.ink900,
       textColor: C.white,
       fontStyle: 'bold',
-      fontSize: 7,
+      fontSize: headFontSize,
       halign: 'center',
       lineColor: C.ink900,
-      cellPadding: { top: 2 * u, right: 1 * u, bottom: 2 * u, left: 1 * u },
+      cellPadding: { top: 2 * u, right: cellPaddingX * u, bottom: 2 * u, left: cellPaddingX * u },
     },
     alternateRowStyles: { fillColor: C.bandRow },
     columnStyles,
