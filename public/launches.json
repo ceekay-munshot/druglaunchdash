@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-06T04:42:51.426Z",
-  "rowCount": 277,
+  "generatedAt": "2026-06-07T05:14:53.648Z",
+  "rowCount": 281,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -246,7 +246,7 @@
       "price": "₹104 / bottle of 60 ml oral suspension",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/09/Press-Release-Sun-Pharma-launches-Chericof-12.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-26T04:49:22.323Z"
+      "lastEnrichmentAttempt": "2026-06-07T05:13:35.619Z"
     },
     {
       "brand": "Organon",
@@ -262,7 +262,7 @@
       "price": null,
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/04/PR-Sun-Organon-announcement-Apr-26.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-26T04:49:37.217Z"
+      "lastEnrichmentAttempt": "2026-06-07T05:13:48.011Z"
     },
     {
       "brand": "EVERON",
@@ -278,7 +278,7 @@
       "price": "₹39.7 / strip of 10 tablet md",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2022/03/Press-Release-EVERON-Launch.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-27T05:02:51.591Z"
+      "lastEnrichmentAttempt": "2026-06-07T05:14:00.159Z"
     },
     {
       "brand": "Molxvir",
@@ -598,7 +598,7 @@
       "price": "₹232 / bottle of 100 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-26T04:49:16.054Z"
+      "lastEnrichmentAttempt": "2026-06-07T05:13:14.010Z"
     },
     {
       "brand": "Chericof ® 12",
@@ -614,7 +614,7 @@
       "price": "—",
       "sourceUrl": "http://www.sunpharma.com/press-release/press-release-chericof12-launch",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-26T04:49:27.567Z"
+      "lastEnrichmentAttempt": "2026-06-07T05:13:39.874Z"
     },
     {
       "brand": "Antibiotic Combination",
@@ -1279,7 +1279,7 @@
       "seller": "Abbott India Ltd",
       "dealType": "Brand Acquisition",
       "molecule": "—",
-      "therapy": "—",
+      "therapy": "Thyroid Management",
       "indication": "Hyperthyroidism",
       "existingBrand": "—",
       "chronicAcute": "—",
@@ -1302,7 +1302,7 @@
       "price": "₹1347 / bottle of 40 capsules",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/12/Press-Release-Sun-Pharma-receives-DCGI-approval-for-Molxvir-Molnupiravir-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-27T05:02:59.159Z"
+      "lastEnrichmentAttempt": "2026-06-07T05:14:06.706Z"
     },
     {
       "brand": "Ensure® Strength Pro",
@@ -1318,7 +1318,7 @@
       "price": "₹679 / box of 400 gm",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-ensure-strength-pro-in-india-to-support-healthy-ageing.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-05-27T05:03:06.014Z"
+      "lastEnrichmentAttempt": "2026-06-07T05:14:10.865Z"
     },
     {
       "brand": "TriClip™",
@@ -1334,7 +1334,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-introduces-triclip-in-india-a-first-of-its-kind-device-to-repair-a-leaky-tricuspid-valve.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-05-27T05:03:14.591Z"
+      "lastEnrichmentAttempt": "2026-06-07T05:14:21.327Z"
     },
     {
       "brand": "XIENCE Skypoint™",
@@ -2758,7 +2758,7 @@
       "price": "₹21.7 / strip of 10 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-27T04:59:08.010Z"
+      "lastEnrichmentAttempt": "2026-06-07T05:13:51.561Z"
     },
     {
       "brand": "Ryaltris",
@@ -2767,14 +2767,14 @@
       "seller": "—",
       "dealType": "In-license (India)",
       "molecule": "—",
-      "therapy": "—",
+      "therapy": "Respiratory",
       "indication": "seasonal allergic rhinitis",
       "existingBrand": "—",
       "chronicAcute": "—",
       "price": "₹232 / bottle of 17 gm (nasal spray)",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-Announces-Exclusive-Licensing-Agreement-with-Se.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-05-27T04:59:50.498Z"
+      "lastEnrichmentAttempt": "2026-06-07T05:13:56.000Z"
     },
     {
       "brand": "TriClip",
@@ -3358,7 +3358,7 @@
       "date": "2023-09-14",
       "seller": "Pharmazz Inc.",
       "dealType": "In-license (India)",
-      "molecule": "—",
+      "molecule": "Sovateltide",
       "therapy": "—",
       "indication": "—",
       "existingBrand": "—",
@@ -4423,6 +4423,70 @@
       "sourceUrl": "https://www.sunpharma.com/press-release-2026-04-27",
       "buyer": "Sun Pharma",
       "lastEnrichmentAttempt": "2026-06-06T04:41:57.253Z"
+    },
+    {
+      "brand": "Eribulin Mesylate",
+      "launchType": "Own Launched",
+      "date": "2026-06-03",
+      "seller": "Natco",
+      "dealType": "NCE Launch",
+      "molecule": "eribulin mesylate",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹17724 / vial of 2 ml solution for injection",
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-and-natco-receive-approval-from-u-s-fda-for-eribulin-mesylate-injection",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-06-07T05:11:51.453Z"
+    },
+    {
+      "brand": "Ensure® Cookies & Cream",
+      "launchType": "Own Launched",
+      "date": "2018-05-17",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹430 / box of 200 gm",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbotts-new-pediasure-cookies-and-cream-ensures-summer-break-is-a-good-timetogrow-for-children.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-06-07T05:12:36.474Z"
+    },
+    {
+      "brand": "TheraNym",
+      "launchType": "Own Launched",
+      "date": "2026-06-02",
+      "seller": "—",
+      "dealType": "—",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseTheranym03062026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-06-07T05:12:54.553Z"
+    },
+    {
+      "brand": "Wockhardt's New Drug",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "WCK 8872",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 2,500 / vial",
+      "sourceUrl": "https://www.wockhardt.com/press-2023-09-15",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-07T05:13:12.507Z"
     }
   ]
 }
