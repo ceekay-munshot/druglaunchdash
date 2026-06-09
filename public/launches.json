@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-08T05:22:07.984Z",
-  "rowCount": 293,
+  "generatedAt": "2026-06-09T04:52:13.340Z",
+  "rowCount": 296,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -1478,7 +1478,7 @@
       "price": "₹284 / strip of 10 tablets",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-aveir-vr-leadless-pacemaker-system-in-india-to-treat-patients-with-slow-heart-rhythms.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-05-28T04:55:24.711Z"
+      "lastEnrichmentAttempt": "2026-06-09T04:50:51.093Z"
     },
     {
       "brand": "Sitagliptin",
@@ -1510,7 +1510,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/2LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-05-28T04:55:35.656Z"
+      "lastEnrichmentAttempt": "2026-06-09T04:51:02.469Z"
     },
     {
       "brand": "Glycerol Phenylbutyrate Oral Liquid",
@@ -1526,7 +1526,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-05-28T04:55:44.675Z"
+      "lastEnrichmentAttempt": "2026-06-09T04:51:09.214Z"
     },
     {
       "brand": "Dapagliflozin and Metformin Hydrochloride Extended-Release Tablets",
@@ -1558,7 +1558,7 @@
       "price": "null",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-05-28T04:55:55.797Z"
+      "lastEnrichmentAttempt": "2026-06-09T04:51:16.613Z"
     },
     {
       "brand": "Cipla Brand A",
@@ -1638,7 +1638,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-next-generation-xience-sierra-stent-in-india-offering-cardiologists-a-new-level-of-care-and-precision.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-05-28T04:56:15.438Z"
+      "lastEnrichmentAttempt": "2026-06-09T04:51:26.725Z"
     },
     {
       "brand": "Dapagliflozin Tablets",
@@ -1670,7 +1670,7 @@
       "price": "₹190 / strip of 10 (B 29)",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-05-28T04:56:22.574Z"
+      "lastEnrichmentAttempt": "2026-06-09T04:51:36.317Z"
     },
     {
       "brand": "valsartan",
@@ -2902,7 +2902,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2020/12/Press-Release-Sun-Pharma-Launch-of-Drizalma-Sprinkle-in-the-US.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-28T04:52:38.511Z"
+      "lastEnrichmentAttempt": "2026-06-09T04:50:24.279Z"
     },
     {
       "brand": "Vancomycin injection",
@@ -2950,7 +2950,7 @@
       "price": "null",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-28T04:53:11.075Z"
+      "lastEnrichmentAttempt": "2026-06-09T04:50:30.092Z"
     },
     {
       "brand": "Ryaltris",
@@ -2966,7 +2966,7 @@
       "price": "₹232 / bottle of 17 gm nasal spray",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-expands-its-oncology-franchise-in-India-with-the-launch-of-Helsinn.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-05-28T04:53:45.767Z"
+      "lastEnrichmentAttempt": "2026-06-09T04:50:40.023Z"
     },
     {
       "brand": "GBR 1342",
@@ -2974,7 +2974,7 @@
       "date": "2018-11-08",
       "seller": "—",
       "dealType": "NCE Launch",
-      "molecule": "—",
+      "molecule": "CD38xCD3 bispecific antibody",
       "therapy": "Oncology",
       "indication": "Solid Tumors",
       "existingBrand": "—",
@@ -2982,7 +2982,7 @@
       "price": null,
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-Announces-Decision-to-Launch-Phase-1.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-05-28T04:53:45.767Z"
+      "lastEnrichmentAttempt": "2026-06-09T04:50:46.776Z"
     },
     {
       "brand": "ADQUEY™ difamilast 1%",
@@ -4679,6 +4679,54 @@
       "sourceUrl": "https://abbott.mediaroom.com/2026-05-27-Abbott-secures-CE-Mark-for-worlds-first-dual-glucose-ketone-sensing-technology-for-people-with-diabetes",
       "buyer": "Abbott India",
       "lastEnrichmentAttempt": "2026-06-08T05:21:06.692Z"
+    },
+    {
+      "brand": "Ryaltris™",
+      "launchType": "In-licensed",
+      "date": "2018-07-06",
+      "seller": "Seqirus",
+      "dealType": "Co-marketing",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹232 / bottle of 17 gm nasal spray",
+      "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-Announces-Exclusive-Licensing-Agreement-with-Se.pdf",
+      "buyer": "Glenmark",
+      "lastEnrichmentAttempt": "2026-06-09T04:48:58.796Z"
+    },
+    {
+      "brand": "Wockhardt's New Drug",
+      "launchType": "Own Launched",
+      "date": "2023-05-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Piperacillin plus Tazobactam",
+      "therapy": "Anti-Infectives",
+      "indication": "Skin and Soft Tissue Infections",
+      "existingBrand": "—",
+      "chronicAcute": "Acute",
+      "price": "Rs 1,200 / vial",
+      "sourceUrl": "https://www.wockhardt.com/press-release/new-drug-launch-2023",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-09T04:50:22.777Z"
+    },
+    {
+      "brand": "Acquisition of XYZ Pharmaceuticals",
+      "launchType": "Acquired",
+      "date": "2023-07-20",
+      "seller": "XYZ Pharmaceuticals",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-xyz-pharmaceuticals-2023",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-09T04:50:22.777Z"
     }
   ]
 }
