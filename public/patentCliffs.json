@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-07T06:22:50.464Z",
+  "generatedAt": "2026-06-09T06:08:23.687Z",
   "moleculeCount": 35,
   "molecules": {
     "Empagliflozin": {
-      "lastCheckedAt": "2026-06-07T06:21:01.323Z",
+      "lastCheckedAt": "2026-06-09T06:06:34.082Z",
       "events": [
         {
           "headline": "Mankind Pharma launches generic empagliflozin in India",
@@ -144,7 +144,7 @@
       ]
     },
     "Dapagliflozin": {
-      "lastCheckedAt": "2026-06-07T06:21:04.524Z",
+      "lastCheckedAt": "2026-06-09T06:06:37.225Z",
       "events": [
         {
           "headline": "The DAPA Saga in the Indian Courts",
@@ -277,7 +277,7 @@
       ]
     },
     "Linagliptin": {
-      "lastCheckedAt": "2026-06-07T06:21:07.921Z",
+      "lastCheckedAt": "2026-06-09T06:06:40.115Z",
       "events": [
         {
           "headline": "Understanding the Legal Battle Over LINAGLIPTIN: A Case Study on ...",
@@ -482,7 +482,7 @@
       ]
     },
     "Saxagliptin": {
-      "lastCheckedAt": "2026-06-07T06:21:10.845Z",
+      "lastCheckedAt": "2026-06-09T06:06:43.262Z",
       "events": [
         {
           "headline": "Indian Patent Office rejects compulsory license application for ...",
@@ -599,7 +599,7 @@
       ]
     },
     "Liraglutide": {
-      "lastCheckedAt": "2026-06-07T06:21:13.506Z",
+      "lastCheckedAt": "2026-06-09T06:06:46.243Z",
       "events": [
         {
           "headline": "Biocon obtains approval for weight management drug, Liraglutide, in ...",
@@ -760,15 +760,23 @@
           "publication": "Linkedin",
           "kind": "genericLaunch",
           "date": null
+        },
+        {
+          "headline": "With GLP-1 patent expiring in 2026, will weight loss drugs come to ...",
+          "summary": "... liraglutide, priced at around ₹100 a ... All of them are prepping to launch generic Semaglutide in India as the patent expires in 2026.",
+          "sourceUrl": "https://www.reddit.com/r/indianmedschool/comments/1jivh1o/with_glp1_patent_expiring_in_2026_will_weight/",
+          "publication": "Reddit",
+          "kind": "other",
+          "date": null
         }
       ]
     },
     "Semaglutide (oral)": {
-      "lastCheckedAt": "2026-06-07T06:21:17.026Z",
+      "lastCheckedAt": "2026-06-09T06:06:49.178Z",
       "events": []
     },
     "Apixaban": {
-      "lastCheckedAt": "2026-06-07T06:21:20.035Z",
+      "lastCheckedAt": "2026-06-09T06:06:52.144Z",
       "events": [
         {
           "headline": "India denies Bristol Myers' request for injunction regarding apixaban",
@@ -820,7 +828,7 @@
         },
         {
           "headline": "Apixaban Tablet at Best Price in India - IndiaMART",
-          "summary": "Find here online price details of companies selling Apixaban Tablet. Get info of suppliers, manufacturers, exporters, traders of Apixaban Tablet for buying ...",
+          "summary": "Apixaban 2.5 Mg Tablet · Dosage/Strength: 2.5 mg · Packaging Size: 10*10 Tablets · Packaging Type: Strip · Country of origin: Made in india ...",
           "sourceUrl": "https://dir.indiamart.com/impcat/apixaban-tablet.html",
           "publication": "Dir",
           "kind": "other",
@@ -853,7 +861,7 @@
       ]
     },
     "Ticagrelor": {
-      "lastCheckedAt": "2026-06-07T06:21:23.520Z",
+      "lastCheckedAt": "2026-06-09T06:06:55.041Z",
       "events": [
         {
           "headline": "[PDF] press-release-ticagrelor-tablets.pdf - Alembic Pharmaceutical",
@@ -994,7 +1002,7 @@
       ]
     },
     "Sacubitril/Valsartan": {
-      "lastCheckedAt": "2026-06-07T06:21:26.563Z",
+      "lastCheckedAt": "2026-06-09T06:06:58.139Z",
       "events": [
         {
           "headline": "Novartis v. Torrent: Consent Judgment in Heart Drug Patent Case",
@@ -1071,7 +1079,7 @@
       ]
     },
     "Edoxaban": {
-      "lastCheckedAt": "2026-06-07T06:21:29.905Z",
+      "lastCheckedAt": "2026-06-09T06:07:01.451Z",
       "events": [
         {
           "headline": "[PDF] List of New Drugs approved in the year 2025 till date - cdsco",
@@ -1091,10 +1099,10 @@
         },
         {
           "headline": "India's CDSCO Grants Conditional Approval to Zuventus ...",
-          "summary": "India's CDSCO Grants Conditional Approval to Zuventus' Anticoagulant Drug Edoxaban ... Torrent Takes Early Lead in India's Generic ...",
+          "summary": "India's CDSCO Grants Conditional Approval to Zuventus' Anticoagulant Drug Edoxaban ... India's NPPA Fixes Retail Prices of 42 Drug Formulations.",
           "sourceUrl": "https://www.navlindaily.com/article/22029/india-s-cdsco-grants-conditional-approval-to-zuventus-anticoagulant-drug-edoxaban",
           "publication": "Navlindaily",
-          "kind": "other",
+          "kind": "priceCut",
           "date": null
         },
         {
@@ -1140,7 +1148,7 @@
       ]
     },
     "Ibrutinib": {
-      "lastCheckedAt": "2026-06-07T06:21:33.488Z",
+      "lastCheckedAt": "2026-06-09T06:07:04.450Z",
       "events": [
         {
           "headline": "The Ibrutinib saga: Delhi High Court restrains generics ... - Lexology",
@@ -1224,7 +1232,7 @@
         },
         {
           "headline": "Calcutta High Court Upholds Pharmacyclics Patent for Ibrutinib",
-          "summary": "Calcutta High Court Upholds Pharmacyclics Patent for Ibrutinib. View ... It reinforces India's commitment to public health and the strict ...",
+          "summary": "... patent application for ibrutinib-anti-CD20 therapy, interpreting Section 16 of the Patents Act, 1970. https://lnkd.in/gETMuAmF.",
           "sourceUrl": "https://www.linkedin.com/posts/bananaip-counsels_pharmacyclics-divisional-patent-application-activity-7371372666684911616-S5-h",
           "publication": "Linkedin",
           "kind": "litigation",
@@ -1257,7 +1265,7 @@
       ]
     },
     "Palbociclib": {
-      "lastCheckedAt": "2026-06-07T06:21:36.237Z",
+      "lastCheckedAt": "2026-06-09T06:07:07.426Z",
       "events": [
         {
           "headline": "Buy Generic Ibrance (palbociclib) – FDA cGMP Manufacturer | FixRx...",
@@ -1277,7 +1285,7 @@
         },
         {
           "headline": "Palbociclib Patent Expiry: India's Chance to Lead in Complex Generics",
-          "summary": "Pfizer's blockbuster breast cancer drug Ibrance (Palbociclib) is heading toward patent expiry in 2027 in the U.S.—and that opens up a major ...",
+          "summary": "... Patent Cliff: Is India Ready to Lead the Next Wave of Complex Generic ... Palbociclib Patent Expiry: India's Chance to Lead in Complex Generics.",
           "sourceUrl": "https://www.linkedin.com/posts/ratnesh-jain-1b300b15_pcg2025-complexgenerics-ibrance-activity-7320281861442756609-SN2q",
           "publication": "Linkedin",
           "kind": "expiryUpdate",
@@ -1366,7 +1374,7 @@
       ]
     },
     "Pomalidomide": {
-      "lastCheckedAt": "2026-06-07T06:21:39.319Z",
+      "lastCheckedAt": "2026-06-09T06:07:10.302Z",
       "events": [
         {
           "headline": "[PDF] Press Release - Eugia Pharma announces launch of Pomalidomide ...",
@@ -1543,11 +1551,19 @@
           "publication": "Indiamart",
           "kind": "other",
           "date": null
+        },
+        {
+          "headline": "Pomalidomide Capsules 4 Mg, Cipla - IndiaMART",
+          "summary": "Ishaan Medis - Offering Pomalidomide Capsules 4 Mg, Cipla at ₹ 3000/bottle in Nagpur, Maharashtra. Get Pomalidomide at lowest price | ID: 25851616155.",
+          "sourceUrl": "https://www.indiamart.com/proddetail/pomalidomide-capsules-4-mg-25851616155.html?srsltid=AfmBOorzZvQu9U2cgw9X1nX0ZRW9hkMVvFnpWSUbLszHj6Ga88MoVav3",
+          "publication": "Indiamart",
+          "kind": "other",
+          "date": null
         }
       ]
     },
     "Olaparib": {
-      "lastCheckedAt": "2026-06-07T06:21:42.461Z",
+      "lastCheckedAt": "2026-06-09T06:07:13.150Z",
       "events": [
         {
           "headline": "AstraZeneca Receives Approval to Market Lynparza (Olaparib) in India",
@@ -1598,7 +1614,7 @@
           "date": null
         },
         {
-          "headline": "DCGI orders withdrawal of Olaparib for select cancer ...",
+          "headline": "DCGI orders withdrawal of Olaparib for select cancer patients ... - Mint",
           "summary": "AstraZeneca, which received approval for Olaparib in 2018, has submitted an application to withdraw the drug for patients with gBRCA mutations ( ...",
           "sourceUrl": "https://www.livemint.com/news/india/dcgi-orders-withdrawal-of-olaparib-for-select-cancer-patients-over-safety-concerns-11716373404649.html",
           "publication": "LiveMint",
@@ -1638,7 +1654,7 @@
           "date": "2085-99-49"
         },
         {
-          "headline": "Buy Generic Lynparza (olaparib) – FDA cGMP Manufacturer",
+          "headline": "Buy Generic Lynparza (olaparib) – FDA cGMP Manufacturer | FixRx...",
           "summary": "It's produced by a US FDA cGMP certified manufacturer, and approved for marketing in India. Bottle Size : 30 Tablets. Active Ingredient : Olaparib. Produced by ...",
           "sourceUrl": "https://fixrx.com/shop/cancer/buy-olaparib-generic-lynparza/",
           "publication": "Fixrx",
@@ -1646,7 +1662,7 @@
           "date": null
         },
         {
-          "headline": "Olaparib Bulk Supplier Price Delhi India",
+          "headline": "Olaparib Bulk Supplier Price Delhi India - Aark Pharmaceuticals",
           "summary": "Olaparib is used as maintenance treatment in patients with advanced ovarian cancer, fallopian tube cancer, or primary peritoneal cancer.",
           "sourceUrl": "https://aarkpharma.com/olaparib/",
           "publication": "Aarkpharma",
@@ -1686,7 +1702,7 @@
           "date": null
         },
         {
-          "headline": "The expiration of the patent for Olaparib tablets marks ...",
+          "headline": "The expiration of the patent for Olaparib tablets marks a significant ...",
           "summary": "The expiration of the patent for Olaparib tablets marks a significant development in the pharmaceutical industry, particularly for India.",
           "sourceUrl": "https://www.facebook.com/drvineetgovindagupta/videos/the-expiration-of-the-patent-for-olaparib-tablets-marks-a-significant-developmen/3758893614432993/",
           "publication": "Facebook",
@@ -1708,11 +1724,19 @@
           "publication": "1mg",
           "kind": "other",
           "date": null
+        },
+        {
+          "headline": "Buy Olaparib 150mg Tablet Online - 1mg",
+          "summary": "Olaparib 150mg Tablet is used in the treatment of Breast cancer, Ovarian cancer ... by Sun Pharmaceutical Industries Ltd. ₹320.35/tablet. 78% costlier. <h3 class ...",
+          "sourceUrl": "https://www.1mg.com/drugs/olaparib-150mg-tablet-983293?srsltid=AfmBOoqu2VHLQKgTisx8BRdN2EvaZj20JrQrc-kcB7FVai63xQrnoflO",
+          "publication": "1mg",
+          "kind": "other",
+          "date": null
         }
       ]
     },
     "Enzalutamide": {
-      "lastCheckedAt": "2026-06-07T06:21:45.485Z",
+      "lastCheckedAt": "2026-06-09T06:07:16.003Z",
       "events": [
         {
           "headline": "Xtandi versus Indian patent laws: A persepective - PMC - NIH",
@@ -1837,7 +1861,7 @@
       ]
     },
     "Cabozantinib": {
-      "lastCheckedAt": "2026-06-07T06:21:48.620Z",
+      "lastCheckedAt": "2026-06-09T06:07:18.721Z",
       "events": [
         {
           "headline": "[PDF] Beta Drugs Ltd. bags yet another DCGI approval for its new drug - NSE",
@@ -2022,15 +2046,23 @@
           "publication": "Patents",
           "kind": "other",
           "date": null
+        },
+        {
+          "headline": "Cabozantinib: View Uses, Side Effects and Medicines | 1mg",
+          "summary": "Cabozantinib. Written By Dr. Mayank · Reviewed By Dr. Rajeev Sharma ... Sun Pharmaceutical Industries Ltd. ₹4218 to ₹7968. 2 variant(s).",
+          "sourceUrl": "https://www.1mg.com/generics/cabozantinib-509788?srsltid=AfmBOor_sY62VDeETyBaizptgJ_ayqKUz1OZz32fmPbfBY6O57dxr787",
+          "publication": "1mg",
+          "kind": "other",
+          "date": null
         }
       ]
     },
     "Vilanterol/Fluticasone": {
-      "lastCheckedAt": "2026-06-07T06:21:51.906Z",
+      "lastCheckedAt": "2026-06-09T06:07:21.917Z",
       "events": []
     },
     "Umeclidinium/Vilanterol": {
-      "lastCheckedAt": "2026-06-07T06:21:54.866Z",
+      "lastCheckedAt": "2026-06-09T06:07:24.863Z",
       "events": [
         {
           "headline": "[PDF] Trelegy Ellipta - GSK India",
@@ -2083,7 +2115,7 @@
       ]
     },
     "Vortioxetine": {
-      "lastCheckedAt": "2026-06-07T06:21:58.095Z",
+      "lastCheckedAt": "2026-06-09T06:07:28.197Z",
       "events": [
         {
           "headline": "Sun Pharma to introduce its version of Vortioxetine in India",
@@ -2300,11 +2332,19 @@
           "publication": "Wiseguyreports",
           "kind": "other",
           "date": null
+        },
+        {
+          "headline": "Vortioxetine 20 Mg - Medkart",
+          "summary": "Vortioxetine 20 Mg ; default alt. VORTIDIF 20 TABLET 10'S. VORTIOXETINE 20 MG. by SUN PHARMACEUTICAL INDUSTRIES LTD. MRP ₹. 318.75 ; default alt. BRINTELLIX 20MG ...",
+          "sourceUrl": "https://www.medkart.in/composition/vortioxetine-20-mg?srsltid=AfmBOoqsKynd9dtRSuGMZF_ztxf53p7YPrpi2wlMX1qOyJc3egomi7rz",
+          "publication": "Medkart",
+          "kind": "other",
+          "date": null
         }
       ]
     },
     "Brivaracetam": {
-      "lastCheckedAt": "2026-06-07T06:22:01.026Z",
+      "lastCheckedAt": "2026-06-09T06:07:32.266Z",
       "events": [
         {
           "headline": "ALKEM launches Brivaracetam in India under the brand name ...",
@@ -2373,7 +2413,7 @@
       ]
     },
     "Fingolimod": {
-      "lastCheckedAt": "2026-06-07T06:22:04.677Z",
+      "lastCheckedAt": "2026-06-09T06:07:35.410Z",
       "events": [
         {
           "headline": "Alembic Secures USFDA Approval for Fingolimod capsules for MS",
@@ -2582,11 +2622,27 @@
           "publication": "1mg",
           "kind": "other",
           "date": null
+        },
+        {
+          "headline": "Fingomod Fingolimod 0.5 mg capsules, Sun ... - IndiaMART",
+          "summary": "Forveda Online Private Limited - Offering Fingomod Fingolimod 0.5mg capsules, Sun Pharmaceutical Industries Ltd, Treatment: Multiple Sclerosis at ₹ 2492/box ...",
+          "sourceUrl": "https://www.indiamart.com/proddetail/fingolimod-0-5mg-capsules-25963484762.html?srsltid=AfmBOorbMN_8hSj33MRUYViJmH5HG5mcUcS4rhPspLZnxEqwifB1gvU_",
+          "publication": "Indiamart",
+          "kind": "other",
+          "date": null
+        },
+        {
+          "headline": "Fingolimod: View Uses, Side Effects and Medicines - 1mg",
+          "summary": "Sun Pharmaceutical Industries Ltd. ₹584 to ₹584. 1 variant(s). Fingomod. Expert advice for Fingolimod. Fingolimod can be taken with or without ...",
+          "sourceUrl": "https://www.1mg.com/generics/fingolimod-509004?srsltid=AfmBOookr8bnTP_wVA8hAobGab6TrW03ALlVtwkLxiNlFurACRDgS362",
+          "publication": "1mg",
+          "kind": "other",
+          "date": null
         }
       ]
     },
     "Bedaquiline": {
-      "lastCheckedAt": "2026-06-07T06:22:07.531Z",
+      "lastCheckedAt": "2026-06-09T06:07:38.371Z",
       "events": [
         {
           "headline": "India Declines Patent Extension Application of Bedaquiline - PMC",
@@ -2655,7 +2711,7 @@
       ]
     },
     "Delamanid": {
-      "lastCheckedAt": "2026-06-07T06:22:10.536Z",
+      "lastCheckedAt": "2026-06-09T06:07:43.877Z",
       "events": [
         {
           "headline": "India Restricts Off-Patent TB Drugs to Government Supply 'Only'",
@@ -2724,7 +2780,7 @@
       ]
     },
     "Tofacitinib": {
-      "lastCheckedAt": "2026-06-07T06:22:15.038Z",
+      "lastCheckedAt": "2026-06-09T06:07:46.504Z",
       "events": [
         {
           "headline": "India denies patent on Pfizer's Xeljanz - PMLiVE",
@@ -2897,7 +2953,7 @@
       ]
     },
     "Baricitinib": {
-      "lastCheckedAt": "2026-06-07T06:22:18.181Z",
+      "lastCheckedAt": "2026-06-09T06:07:49.515Z",
       "events": [
         {
           "headline": "Lilly accelerating baricitinib's availability in India following receipt of ...",
@@ -3066,11 +3122,19 @@
           "publication": "1mg",
           "kind": "other",
           "date": null
+        },
+        {
+          "headline": "Baricitinib: View Uses, Side Effects and Medicines | 1mg",
+          "summary": "Medicine brands for Baricitinib ; Barikind. Mankind Pharma Ltd. ₹393 to ₹393 · Barikind ; Covnib. Torrent Pharmaceuticals Ltd. ₹115 to ₹115 · Covnib.",
+          "sourceUrl": "https://www.1mg.com/generics/baricitinib-508583?srsltid=AfmBOorSsKh5v8hgJQM_d1KfUZCbxkxykF7OWf5kHlidpTRXDu2iliP8",
+          "publication": "1mg",
+          "kind": "other",
+          "date": null
         }
       ]
     },
     "Apremilast": {
-      "lastCheckedAt": "2026-06-07T06:22:20.931Z",
+      "lastCheckedAt": "2026-06-09T06:07:52.671Z",
       "events": [
         {
           "headline": "otezla 30mg tablet 60 (generic apremilast from india)",
@@ -3159,11 +3223,27 @@
           "publication": "Canadianprescriptiondrugstore",
           "kind": "other",
           "date": null
+        },
+        {
+          "headline": "Apremilast Generic for the Treatment of Active Psoriatic Arthritis",
+          "summary": "Abstract. Introduction: Apremilast has been recently introduced in the treatment of adult psoriatic arthritis (PsA) patients in India.",
+          "sourceUrl": "https://journals.lww.com/ijru/_layouts/15/oaks.journals/downloadpdf.aspx?an=01337385-202015010-00010",
+          "publication": "Journals",
+          "kind": "other",
+          "date": "2020-15-01"
+        },
+        {
+          "headline": "Apremilast Tablets - Aprezo Tablet Latest Price, Manufacturers ...",
+          "summary": "Apremilast 30mg Tablet In All India · Strength: 30mg · Brand: APYST-30 · Usage: Psoriatic Arthritis · Packaging Type: Alu Alu ...",
+          "sourceUrl": "https://dir.indiamart.com/impcat/apremilast.html",
+          "publication": "Dir",
+          "kind": "other",
+          "date": null
         }
       ]
     },
     "Vonoprazan": {
-      "lastCheckedAt": "2026-06-07T06:22:24.131Z",
+      "lastCheckedAt": "2026-06-09T06:07:55.626Z",
       "events": [
         {
           "headline": "[PDF] Torrent Pharmaceuticals Enters into Non-Exclusive Patent Licensing ...",
@@ -3174,8 +3254,8 @@
           "date": null
         },
         {
-          "headline": "Lupin signs deal with Takeda to launch Vonoprazan in India",
-          "summary": "Lupin has announced a non-exclusive patent licence agreement with Takeda Pharmaceutical for the commercialisation of Vonoprazan tablets in India.",
+          "headline": "Lupin and Takeda to commercialise Vonoprazan in India",
+          "summary": "The Drug Controller General of India (DCGI) has approved Vonoprazan for the treatment of gastric ulcers, reflux esophagitis and duodenal ...",
           "sourceUrl": "https://www.pharmaceutical-technology.com/news/lupin-takeda-vonoprazan-india/",
           "publication": "Pharmaceutical-technology",
           "kind": "other",
@@ -3239,7 +3319,7 @@
         },
         {
           "headline": "Takeda licenses Vonoprazan to Indian pharma companies - LinkedIn",
-          "summary": "Vonoprazan, a next-generation acid blocker developed by Takeda (Japan), has transformed treatment for acid-related disorders worldwide.",
+          "summary": "Vonoprazan in India: How Patent Licensing Enables Access to a Global ... #SemaglutidePatent #Ozempic #PharmaPatent #PatentNews #IPRLaw #PatentLaw ...",
           "sourceUrl": "https://www.linkedin.com/posts/ghevmarketing_vonoprazan-in-india-how-patent-licensing-activity-7363784843446415361-SXKV",
           "publication": "Linkedin",
           "kind": "other",
@@ -3287,7 +3367,7 @@
         },
         {
           "headline": "Dr. Reddy's Signs Non-Exclusive Patent Licensing Agreement With ...",
-          "summary": "Dr. Reddy's Signs Non-Exclusive Patent Licensing Agreement With Takeda To Commercialise Vonoprazan, A Novel Gastrointestinal Drug, In India. Dr.",
+          "summary": "Lupin Enters Into A Non-Exclusive Patent Licensing Agreement With Takeda To Commercialize Vonoprazan, A Novel Gastrointestinal Drug In India.",
           "sourceUrl": "https://www.outsourcedpharma.com/doc/dr-reddy-s-signs-non-exclusive-takeda-vonoprazan-a-novel-gastrointestinal-drug-india-0001",
           "publication": "Outsourcedpharma",
           "kind": "other",
@@ -3296,7 +3376,7 @@
       ]
     },
     "Vedolizumab": {
-      "lastCheckedAt": "2026-06-07T06:22:27.271Z",
+      "lastCheckedAt": "2026-06-09T06:07:58.602Z",
       "events": [
         {
           "headline": "Takeda & Halozyme Partner on Drug-Delivery Technology for ...",
@@ -3315,7 +3395,7 @@
           "date": "2025-02-09"
         },
         {
-          "headline": "Intas Pharmaceuticals Receives CDSCO Panel Nod to Study ...",
+          "headline": "Intas Pharmaceuticals Receives CDSCO Panel Nod to ...",
           "summary": "Takeda obtained FDA approval of Entyvio® (vedolizumab) for ulcerative colitis in September 2023, and more recently (in April 2024) has ...",
           "sourceUrl": "https://www.pearceip.law/2024/08/13/intas-pharmaceuticals-gets-cdsco-panel-nod-to-study-vedolizumab-biosimilar/",
           "publication": "Pearceip",
@@ -3323,8 +3403,8 @@
           "date": "2024-08-13"
         },
         {
-          "headline": "Vedolizumab in Indian patients with inflammatory bowel disease",
-          "summary": "Recognizing this need, the Drugs Controller General of India (DCGI) mandated a Phase 4 study to evaluate the safety and effectiveness of vedolizumab in Indian ...",
+          "headline": "Vedolizumab in Indian patients with inflammatory bowel ...",
+          "summary": "by M Kabrawala · 2026 — Recognizing this need, the Drugs Controller General of India (DCGI) mandated a Phase 4 study to evaluate the safety and effectiveness of vedolizumab in Indian ...",
           "sourceUrl": "https://www.probiologists.com/article/vedolizumab-in-indian-patients-with-inflammatory-bowel-disease-final-results-from-a-prospective-multicenter-open-label-phase-4-study",
           "publication": "Probiologists",
           "kind": "other",
@@ -3371,7 +3451,7 @@
           "date": null
         },
         {
-          "headline": "WO2012151247A2 - FORMULATION FOR ANTI-α4β7 ANTIBODY",
+          "headline": "FORMULATION FOR ANTI-α4β7 ANTIBODY",
           "summary": "The anti-a4 7 antibody in the stable liquid pharmaceutical formulation of the invention can be vedolizumab. The formulation of the invention can be for ...",
           "sourceUrl": "https://patents.google.com/patent/WO2012151247A2/en",
           "publication": "Patents",
@@ -3403,7 +3483,7 @@
           "date": null
         },
         {
-          "headline": "[PDF] Government of India Central Drugs Standard Control ... - CDSCO",
+          "headline": "Government of India Central Drugs Standard Control ...",
           "summary": "approval of another Ethics Committee for the protocol for ... Vedolizumab (INTP 53.1) of Intas Pharmaceuticals Limited, India with ENTYVIO.",
           "sourceUrl": "https://cdsco.gov.in/opencms/resources/UploadCDSCOWeb/2018/UploadCTApprovals/10.Intas%20Pharmaceuticals%20Ltd_Vedolizumab.pdf",
           "publication": "Cdsco",
@@ -3413,7 +3493,7 @@
       ]
     },
     "Denosumab": {
-      "lastCheckedAt": "2026-06-07T06:22:30.465Z",
+      "lastCheckedAt": "2026-06-09T06:08:02.276Z",
       "events": [
         {
           "headline": "Zydus Launches Biosimilar Denosumab in India - Pearce IP",
@@ -3489,7 +3569,7 @@
         },
         {
           "headline": "Biosimilar Denosumab in Osteoporotic Patients Attending a Tertiary ...",
-          "summary": "Intas received approval for marketing authorization of biosimilar Denosumab from the Drug Controller General of India in 2017 [12]. In a phase ...",
+          "summary": "The objective of this study was to compare the in-clinic effectiveness and safety of DCGI-approved denosumab biosimilar developed by Intas ...",
           "sourceUrl": "https://openrheumatologyjournal.com/VOLUME/19/ELOCATOR/e18743129363221/FULLTEXT/",
           "publication": "Openrheumatologyjournal",
           "kind": "biosimilarLaunch",
@@ -3506,7 +3586,7 @@
       ]
     },
     "Tolvaptan": {
-      "lastCheckedAt": "2026-06-07T06:22:33.478Z",
+      "lastCheckedAt": "2026-06-09T06:08:05.231Z",
       "events": [
         {
           "headline": "FDA Approves Lupin's Generic Tolvaptan Tablets | Docwire News",
@@ -3606,7 +3686,7 @@
         },
         {
           "headline": "Tolvaptan Tablet - Tolvaheal Tablets Latest Price ... - IndiaMART",
-          "summary": "Tolvaptan 15mg Tablet (generic name of Natrise). ₹ 600/Strip. Lancer Therapeutics. Get Best Price.",
+          "summary": "Tolvaptan 15mg Tablet (generic name of Natrise) · Strength: 15 mg · Packaging Size: 1*4 Tablets · Manufacturer: Lancer Therapetuics · Brand: Tolvalan 15 ...",
           "sourceUrl": "https://dir.indiamart.com/impcat/tolvaptan-tablet.html",
           "publication": "Dir",
           "kind": "other",
@@ -3723,11 +3803,19 @@
           "publication": "Lupin",
           "kind": "other",
           "date": null
+        },
+        {
+          "headline": "Tolvaptan: View Uses, Side Effects and Medicines | 1mg",
+          "summary": "Tolvaptan. Written By Dr. Lipika Khurana · Reviewed By Dr. Rajeev Sharma ... Sun Pharmaceutical Industries Ltd. ₹586 to ₹1031. 2 variant(s).",
+          "sourceUrl": "https://www.1mg.com/generics/tolvaptan-211896?srsltid=AfmBOoovyO3ZBro3kFlHPjzaqOzHTVk1hobmNWQqQ_njx_zAh_cGJsLX",
+          "publication": "1mg",
+          "kind": "other",
+          "date": null
         }
       ]
     },
     "Eltrombopag": {
-      "lastCheckedAt": "2026-06-07T06:22:36.483Z",
+      "lastCheckedAt": "2026-06-09T06:08:08.326Z",
       "events": [
         {
           "headline": "Eltrombopag Synthetic Routes - MedKoo Biosciences",
@@ -3779,7 +3867,7 @@
         },
         {
           "headline": "Eltrombopag Tablet - Trombopag Latest Price, Manufacturers ...",
-          "summary": "Eltrombopag Olamine Tablets 50 Mg & 25 mg · Strength: 50 mg · Brand Name: Trombonat · Manufacturer: Natco · Country of Origin: Made in India ...",
+          "summary": "Eltrombopag Tablet 50 Mg · Strength: 50 mg · Brand Name: Eltromag · Manufacturer: Cipla · Country of Origin: Made in India ...",
           "sourceUrl": "https://dir.indiamart.com/impcat/eltrombopag-tablet.html",
           "publication": "Dir",
           "kind": "other",
@@ -3796,11 +3884,11 @@
       ]
     },
     "Brimonidine/Brinzolamide": {
-      "lastCheckedAt": "2026-06-07T06:22:39.142Z",
+      "lastCheckedAt": "2026-06-09T06:08:11.281Z",
       "events": []
     },
     "Tafluprost": {
-      "lastCheckedAt": "2026-06-07T06:22:41.962Z",
+      "lastCheckedAt": "2026-06-09T06:08:14.251Z",
       "events": [
         {
           "headline": "Efficacy of preserved Tafluprost 0.0015% in lowering intraocular ...",
@@ -3877,7 +3965,7 @@
       ]
     },
     "Tapentadol": {
-      "lastCheckedAt": "2026-06-07T06:22:44.823Z",
+      "lastCheckedAt": "2026-06-09T06:08:17.173Z",
       "events": [
         {
           "headline": "Indian pharma fuels Africa's 'zombie drug' and opioid crisis - France 24",
@@ -4134,11 +4222,19 @@
           "publication": "1mg",
           "kind": "other",
           "date": null
+        },
+        {
+          "headline": "Tapentadol: View Uses, Side Effects and Medicines | 1mg",
+          "summary": "Tapentadol. Written By Dr. Swati Mishra · Reviewed By Dr. Rajeev ... Sun Pharmaceutical Industries Ltd. ₹130 to ₹389. 3 variant(s). Tydol.",
+          "sourceUrl": "https://www.1mg.com/generics/tapentadol-210776?srsltid=AfmBOoptsaQzsDOD24er5k7qzr0Rww2Hxd4L2E0w46AkM4Q_QCvKChAO",
+          "publication": "1mg",
+          "kind": "other",
+          "date": null
         }
       ]
     },
     "Elagolix": {
-      "lastCheckedAt": "2026-06-07T06:22:47.497Z",
+      "lastCheckedAt": "2026-06-09T06:08:20.401Z",
       "events": [
         {
           "headline": "Single‐Dose Bioequivalence Study of Elagolix Tablets 200 mg (Test ...",
@@ -4283,6 +4379,14 @@
           "publication": "Dataintelo",
           "kind": "other",
           "date": null
+        },
+        {
+          "headline": "Elagolix: View Uses, Side Effects and Medicines - 1mg",
+          "summary": "Elagolix. Written By Dr. Sakshi Jain · Reviewed By Dr. Rajeev Sharma ... Torrent Pharmaceuticals Ltd. ₹424 to ₹843. 2 variant(s). Eladonna.",
+          "sourceUrl": "https://www.1mg.com/generics/elagolix-510805?srsltid=AfmBOorwkI6IUQ3l_ex5VymaN8FlpfN02KnsWE8BkS8pz22SQSXv3ifk",
+          "publication": "1mg",
+          "kind": "other",
+          "date": null
         }
       ]
     }
@@ -4291,24 +4395,24 @@
     {
       "name": "Ustekinumab",
       "firstSeenAt": "2026-05-11T05:57:37.502Z",
-      "mentionCount": 14,
+      "mentionCount": 15,
       "sampleHeadlines": [
         "Vedolizumab in Indian patients with inflammatory bowel disease",
         "Vedolizumab (Entyvio) Market: Facing the Patent Cliff And ...",
         "Vedolizumab in Indian patients with inflammatory bowel ..."
       ],
-      "lastSeenAt": "2026-06-07T06:22:27.271Z"
+      "lastSeenAt": "2026-06-09T06:07:58.602Z"
     },
     {
       "name": "April",
       "firstSeenAt": "2026-05-09T05:20:57.701Z",
-      "mentionCount": 11,
+      "mentionCount": 12,
       "sampleHeadlines": [
         "FDA Approves Lupin's Generic Tolvaptan Tablets | Docwire News",
         "Lupin Receives Approval from U.S. FDA for Tolvaptan Tablets",
         "Getting Tolvaptan from India : r/ADPKD - Reddit"
       ],
-      "lastSeenAt": "2026-06-07T06:22:33.478Z"
+      "lastSeenAt": "2026-06-09T06:08:05.231Z"
     },
     {
       "name": "Ianalumab",
