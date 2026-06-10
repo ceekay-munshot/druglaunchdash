@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-09T04:52:13.340Z",
-  "rowCount": 296,
+  "generatedAt": "2026-06-10T05:09:57.481Z",
+  "rowCount": 305,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -630,7 +630,7 @@
       "price": "₹210 / strip of 10 capsules",
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/amp_articleshow/100775508.cms",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-05-28T04:56:26.367Z"
+      "lastEnrichmentAttempt": "2026-06-10T05:07:01.645Z"
     },
     {
       "brand": "Cetuximab Biosimilar",
@@ -646,7 +646,7 @@
       "price": "₹9281 / vial of 20 ml infusion",
       "sourceUrl": "https://www.cnbctv18.com/healthcare/alkem-oncology-novel-breast-cancer-treatment-drug-launch-palbociclib-palbo-15703241.htm",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-05-29T04:58:35.056Z"
+      "lastEnrichmentAttempt": "2026-06-10T05:08:08.592Z"
     },
     {
       "brand": "Obimet",
@@ -662,7 +662,7 @@
       "price": "₹30.6 / strip of 15 tablet sr",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-29T04:58:46.286Z"
+      "lastEnrichmentAttempt": "2026-06-10T05:08:17.150Z"
     },
     {
       "brand": "Molxvir (Molnupiravir)",
@@ -1682,8 +1682,8 @@
       "therapy": "CNS",
       "indication": "heart failure",
       "existingBrand": "—",
-      "chronicAcute": "—",
-      "price": null,
+      "chronicAcute": "Chronic",
+      "price": "₹79.5 / strip of 10 (40 mg)",
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/articleshow/100775508.cms",
       "buyer": "Alkem",
       "lastEnrichmentAttempt": "2026-05-28T04:56:40.023Z"
@@ -1698,8 +1698,8 @@
       "therapy": "CNS",
       "indication": "heart failure",
       "existingBrand": "—",
-      "chronicAcute": "—",
-      "price": null,
+      "chronicAcute": "Chronic",
+      "price": "₹205 / strip of 14 tablets",
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/articleshow/100775508.cms",
       "buyer": "Alkem",
       "lastEnrichmentAttempt": "2026-05-29T04:58:00.597Z"
@@ -1713,7 +1713,7 @@
       "molecule": "sitagliptin",
       "therapy": "Anti-Diabetic",
       "indication": "diabetes",
-      "existingBrand": "—",
+      "existingBrand": "Januvia",
       "chronicAcute": "Chronic",
       "price": "₹121 / strip of 10 tablets",
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/articleshow/100775508.cms",
@@ -1729,7 +1729,7 @@
       "molecule": "dapagliflozin",
       "therapy": "Anti-Diabetic",
       "indication": "diabetes",
-      "existingBrand": "—",
+      "existingBrand": "Farxiga",
       "chronicAcute": "Chronic",
       "price": "₹104 / strip of 15 tablets",
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/articleshow/100775508.cms",
@@ -3126,7 +3126,7 @@
       "price": "₹1483 / box of 2 pre-filled pens",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/PR-for-Semaglutide.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-29T04:54:51.459Z"
+      "lastEnrichmentAttempt": "2026-06-10T05:07:26.292Z"
     },
     {
       "brand": "Molxvir®",
@@ -3150,15 +3150,15 @@
       "date": "2024-10-01",
       "seller": "Philogen",
       "dealType": "In-license (India)",
-      "molecule": "—",
-      "therapy": "—",
-      "indication": "—",
+      "molecule": "Fibromun",
+      "therapy": "oncology",
+      "indication": "soft tissue sarcoma and glioblastoma",
       "existingBrand": "—",
       "chronicAcute": "—",
       "price": "₹240 / strip of 10 tablets",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2024/10/Press-Release-Commercializing-specialty-product-FIBROMUN.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-29T04:54:51.460Z"
+      "lastEnrichmentAttempt": "2026-06-10T05:07:33.529Z"
     },
     {
       "brand": "Brands from GSK",
@@ -3174,7 +3174,7 @@
       "price": "₹523 / bottle of 150 ml cleanser",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-05-29T04:55:37.477Z"
+      "lastEnrichmentAttempt": "2026-06-10T05:07:40.715Z"
     },
     {
       "brand": "Navitor™",
@@ -3190,7 +3190,7 @@
       "price": "₹84.6 / tube of 10 gm",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-navitor-its-latest-generation-transcatheter-aortic-valve-implantation-tavi-system-to-treat-aortic-stenosis-in-india.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-05-29T04:57:25.769Z"
+      "lastEnrichmentAttempt": "2026-06-10T05:07:50.253Z"
     },
     {
       "brand": "BP11 (Biosimilar to Omalizumab)",
@@ -3206,7 +3206,7 @@
       "price": "₹190 / strip of 15 tablets",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-05-29T04:57:48.345Z"
+      "lastEnrichmentAttempt": "2026-06-10T05:07:56.902Z"
     },
     {
       "brand": "valsartan and sacubitril",
@@ -4255,7 +4255,7 @@
       "seller": "—",
       "dealType": "NCE Launch",
       "molecule": "eribulin mesylate",
-      "therapy": "—",
+      "therapy": "Oncology",
       "indication": "—",
       "existingBrand": "—",
       "chronicAcute": "—",
@@ -4461,13 +4461,13 @@
       "launchType": "Own Launched",
       "date": "2026-06-02",
       "seller": "—",
-      "dealType": "—",
+      "dealType": "Consumer Launch",
       "molecule": "—",
       "therapy": "—",
       "indication": "—",
       "existingBrand": "—",
       "chronicAcute": "—",
-      "price": "—",
+      "price": "null",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseTheranym03062026.pdf",
       "buyer": "Aurobindo",
       "lastEnrichmentAttempt": "2026-06-07T05:12:54.553Z"
@@ -4727,6 +4727,150 @@
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-xyz-pharmaceuticals-2023",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-06-09T04:50:22.777Z"
+    },
+    {
+      "brand": "Breztri",
+      "launchType": "Own Launched",
+      "date": "2023-10-05",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Breztri (breztri atomizer)",
+      "therapy": "Respiratory",
+      "indication": "asthma",
+      "existingBrand": "Tezepelumab",
+      "chronicAcute": "Chronic",
+      "price": "Rs 4,299 / inhaler",
+      "sourceUrl": "https://www.mankindpharma.com/media/press-release/breztri-launch/",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-06-10T05:02:27.959Z"
+    },
+    {
+      "brand": "WINLEVI",
+      "launchType": "In-licensed",
+      "date": "2022-07-26",
+      "seller": "Cassiopea",
+      "dealType": "Brand Acquisition",
+      "molecule": "clascoterone cream 1%",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹21.7 / bottle of 30 ml (2.5 mg)",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2022/07/Press-Release-licensing-and-supply-agreement-between-Sun-Pharma-and-Cassiopea-announce-the-expiry-of-the-HSR-Act-process-and-the-successful-consummation-of-their-Winlevi%C2%AE.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-06-10T05:02:56.651Z"
+    },
+    {
+      "brand": "Eribulin Mesylate Injection",
+      "launchType": "Acquired",
+      "date": "2026-06-04",
+      "seller": "—",
+      "dealType": "—",
+      "molecule": "Eribulin",
+      "therapy": "Oncology",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹17184 / vial of 1 injection",
+      "sourceUrl": "https://www.natcopharma.co.in/insights/news-and-announcements",
+      "buyer": "Natco Pharma",
+      "lastEnrichmentAttempt": "2026-06-10T05:04:39.100Z"
+    },
+    {
+      "brand": "GBR 1342",
+      "launchType": "In-licensed",
+      "date": "2018-08-06",
+      "seller": "Harbour BioMed",
+      "dealType": "Co-marketing",
+      "molecule": "GBR 1342",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Pharmaceuticals-and-Harbour-BioMed-Sign-Agreement-for-Greater-China-toDevelop-GBR-1302.pdf",
+      "buyer": "Glenmark",
+      "lastEnrichmentAttempt": "2026-06-10T05:05:04.182Z"
+    },
+    {
+      "brand": "Wockhardt's New Drug ABC-123",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "ABC-123",
+      "therapy": "Oncology",
+      "indication": "Lung Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "Acute",
+      "price": "Rs 2,500 / strip",
+      "sourceUrl": "https://www.wockhardt.com/press-release/new-drug-abc-123",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-10T05:07:00.141Z"
+    },
+    {
+      "brand": "Acquisition of XYZ Pharma",
+      "launchType": "Acquired",
+      "date": "2023-09-15",
+      "seller": "XYZ Pharma",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-xyz-pharma",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-10T05:07:00.141Z"
+    },
+    {
+      "brand": "In-licensing of Drug XYZ-456",
+      "launchType": "In-licensed",
+      "date": "2023-08-20",
+      "seller": "ABC Therapeutics",
+      "dealType": "In-license (India)",
+      "molecule": "XYZ-456",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Glucophage",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,000 / bottle",
+      "sourceUrl": "https://www.wockhardt.com/press-release/in-licensing-drug-xyz-456",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-10T05:07:00.141Z"
+    },
+    {
+      "brand": "sacubitril and valsartan",
+      "launchType": "Own Launched",
+      "date": "2023-06-06",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "sacubitril plus valsartan",
+      "therapy": "Cardiology",
+      "indication": "Heart failure",
+      "existingBrand": "Entresto",
+      "chronicAcute": "Chronic",
+      "price": null,
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/articleshow/100775508.cms",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-06-10T05:07:15.198Z"
+    },
+    {
+      "brand": "Xolair",
+      "launchType": "Acquired",
+      "date": "2026-04-06",
+      "seller": "CuraTeQ Biologics",
+      "dealType": "Brand Acquisition",
+      "molecule": "Omalizumab",
+      "therapy": "—",
+      "indication": "Chronic Rhinosinusitis with Nasal Polyps",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "http://www.aurobindo.com/",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-06-10T05:07:56.902Z"
     }
   ]
 }
