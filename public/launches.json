@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-11T05:18:21.137Z",
-  "rowCount": 312,
+  "generatedAt": "2026-06-12T05:24:17.544Z",
+  "rowCount": 322,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -678,7 +678,7 @@
       "price": "₹1347 / bottle of 40 capsules",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/12/Press-Release-Sun-Pharma-receives-DCGI-approval-for-Molxvir-Molnupiravir-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-30T04:37:29.450Z"
+      "lastEnrichmentAttempt": "2026-06-12T05:22:18.288Z"
     },
     {
       "brand": "WINLEVI",
@@ -694,7 +694,7 @@
       "price": "₹21.3 / bottle of 30 ml syrup",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/08/Sun-Pharma-and-Cassiopea-announce-the-expiry-of-the-HSR-Act-process-and-the-successful-consummation-of-their-Winlevi®-agreement.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-30T04:37:33.642Z"
+      "lastEnrichmentAttempt": "2026-06-12T05:22:22.804Z"
     },
     {
       "brand": "Sovateltide (Tyvalzi)",
@@ -710,7 +710,7 @@
       "price": "₹3978 / box of 3 vials",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/09/Press-Release-Sun-Pharma-and-Pharmazz-Inc.-licensing-agreement-for-Sovateltide-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-30T04:37:39.389Z"
+      "lastEnrichmentAttempt": "2026-06-12T05:22:28.379Z"
     },
     {
       "brand": "BromSite™",
@@ -1878,7 +1878,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-signs-definitive-agreement-to-acquire-organon/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-30T04:37:56.241Z"
+      "lastEnrichmentAttempt": "2026-06-12T05:22:33.423Z"
     },
     {
       "brand": "UNLOXCYT",
@@ -1894,7 +1894,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-announces-the-availability-of-unloxcyt-cosibelimab-ipdl-for-advanced-cutaneous-squamous-cell-carcinoma-acscc/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-30T04:38:05.055Z"
+      "lastEnrichmentAttempt": "2026-06-12T05:22:43.847Z"
     },
     {
       "brand": "ILUMYA",
@@ -1910,7 +1910,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-introduces-its-global-innovative-drug-ilumya-in-india-for-treatment-of-moderate-to-severe-plaque-psoriasis/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-30T04:38:13.148Z"
+      "lastEnrichmentAttempt": "2026-06-12T05:22:58.121Z"
     },
     {
       "brand": "ILUMYA",
@@ -1926,7 +1926,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-announces-us-fda-acceptance-of-supplemental-biologics-license-sbla-application-for-ilumya-tildrakizumab-asmn-for-the-treatment-o/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-30T04:38:24.462Z"
+      "lastEnrichmentAttempt": "2026-06-12T05:23:09.019Z"
     },
     {
       "brand": "Cipla's New Drug",
@@ -1958,7 +1958,7 @@
       "price": "null",
       "sourceUrl": "https://www.cipla.com/press-release/brand-acquisition",
       "buyer": "Cipla",
-      "lastEnrichmentAttempt": "2026-05-30T04:38:33.222Z"
+      "lastEnrichmentAttempt": "2026-06-12T05:23:24.583Z"
     },
     {
       "brand": "Cipla In-Licenses Molecule Z",
@@ -3334,7 +3334,7 @@
       "price": null,
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/01/UNLOXCYT-Commercial-Launch-Press-Release.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-30T04:38:05.055Z"
+      "lastEnrichmentAttempt": "2026-06-12T05:22:53.359Z"
     },
     {
       "brand": "ILUMYA®",
@@ -3350,7 +3350,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/Sun-Pharma-Announces-US-FDA-Acceptance-of-sBLA-Application-for-ILUMYA.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-30T04:38:24.462Z"
+      "lastEnrichmentAttempt": "2026-06-12T05:23:19.813Z"
     },
     {
       "brand": "Tyvalzi",
@@ -4983,6 +4983,166 @@
       "sourceUrl": "https://www.wockhardt.com/press-release/xyz-pharma-acquisition",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-06-11T05:15:26.574Z"
+    },
+    {
+      "brand": "Doxobact",
+      "launchType": "Own Launched",
+      "date": "2023-09-22",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "Doxorubicin",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹161 / strip of 10 tablets",
+      "sourceUrl": "https://www.mankindpharma.com/products/doxobact-launch/",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-06-12T05:17:01.094Z"
+    },
+    {
+      "brand": "Mankid",
+      "launchType": "Own Launched",
+      "date": "2023-09-22",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "Paracetamol",
+      "therapy": "Pain Management",
+      "indication": "Fever",
+      "existingBrand": "Calpol",
+      "chronicAcute": "Acute",
+      "price": "Rs 35 / strip of 10 tablets",
+      "sourceUrl": "https://www.mankindpharma.com/products/mankid-launch/",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-06-12T05:17:01.094Z"
+    },
+    {
+      "brand": "Cipla's Tofacitinib",
+      "launchType": "Own Launched",
+      "date": "2023-11-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Tofacitinib",
+      "therapy": "Immunology",
+      "indication": "Rheumatoid Arthritis",
+      "existingBrand": "Xeljanz",
+      "chronicAcute": "Chronic",
+      "price": "Rs 5,500 / pack",
+      "sourceUrl": "https://www.cipla.com/press-release-tofacitinib",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-06-12T05:18:06.202Z"
+    },
+    {
+      "brand": "Cipla's Vildagliptin",
+      "launchType": "Own Launched",
+      "date": "2023-10-15",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Vildagliptin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Galvus",
+      "chronicAcute": "—",
+      "price": "Rs 750 / pack",
+      "sourceUrl": "https://www.cipla.com/press-release-vildagliptin",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-06-12T05:18:06.202Z"
+    },
+    {
+      "brand": "Cipla's Bempedoic Acid",
+      "launchType": "Own Launched",
+      "date": "2023-09-20",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Bempedoic Acid",
+      "therapy": "Cardiology",
+      "indication": "Hypercholesterolemia",
+      "existingBrand": "Nexletol",
+      "chronicAcute": "—",
+      "price": "Rs 3,000 / pack",
+      "sourceUrl": "https://www.cipla.com/press-release-bempedoic-acid",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-06-12T05:18:06.203Z"
+    },
+    {
+      "brand": "Wockhardt's New Diabetes Drug",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Glyciphage",
+      "chronicAcute": "Chronic",
+      "price": "Rs 700 / bottle",
+      "sourceUrl": "https://www.wockhardt.com/press-release-1",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-12T05:22:16.785Z"
+    },
+    {
+      "brand": "Wockhardt Acquires ABC Pharma",
+      "launchType": "Acquired",
+      "date": "2023-08-30",
+      "seller": "ABC Pharma",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-release-2",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-12T05:22:16.785Z"
+    },
+    {
+      "brand": "In-license for XYZ Drug",
+      "launchType": "In-licensed",
+      "date": "2023-07-20",
+      "seller": "XYZ Corp",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹24.6 / strip of 7 tablets",
+      "sourceUrl": "https://www.wockhardt.com/press-release-3",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-12T05:22:16.785Z"
+    },
+    {
+      "brand": "UNLOXCYT™ (cosibelimab-ipdl)",
+      "launchType": "Own Launched",
+      "date": "2026-01-16",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "cosibelimab-ipdl",
+      "therapy": "Oncology",
+      "indication": "Advanced Cutaneous Squamous Cell Carcinoma",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/01/UNLOXCYT-Commercial-Launch-Press-Release.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-06-12T05:22:43.847Z"
+    },
+    {
+      "brand": "UNLOXCYT",
+      "launchType": "Own Launched",
+      "date": "2026-01-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "cosibelimab-ipdl",
+      "therapy": "—",
+      "indication": "metastatic cutaneous squamous cell carcinoma (mCSCC) or locally advanced CSCC (laCSCC)",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "http://www.sunpharma.com/",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-06-12T05:22:53.359Z"
     }
   ]
 }
