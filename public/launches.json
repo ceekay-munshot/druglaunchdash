@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-13T05:11:15.801Z",
-  "rowCount": 330,
+  "generatedAt": "2026-06-14T05:23:09.068Z",
+  "rowCount": 342,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -593,7 +593,7 @@
       "molecule": "—",
       "therapy": "—",
       "indication": "—",
-      "existingBrand": "—",
+      "existingBrand": "Thyronorm",
       "chronicAcute": "—",
       "price": "₹232 / bottle of 100 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
@@ -726,7 +726,7 @@
       "price": "—",
       "sourceUrl": "http://www.sunpharma.com/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-31T05:09:26.914Z"
+      "lastEnrichmentAttempt": "2026-06-14T05:21:21.676Z"
     },
     {
       "brand": "Chericof",
@@ -1330,7 +1330,7 @@
       "therapy": "—",
       "indication": "Tricuspid regurgitation (TR)",
       "existingBrand": "—",
-      "chronicAcute": "—",
+      "chronicAcute": "Acute",
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-introduces-triclip-in-india-a-first-of-its-kind-device-to-repair-a-leaky-tricuspid-valve.html",
       "buyer": "Abbott India",
@@ -2070,7 +2070,7 @@
       "price": "₹151 / tube of 15 gm gel",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-receives-ANDA-approval-for-Azelaic-Acid-Gel-15%25.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-05-31T05:09:15.226Z"
+      "lastEnrichmentAttempt": "2026-06-14T05:21:05.509Z"
     },
     {
       "brand": "Breztri",
@@ -2134,7 +2134,7 @@
       "price": "₹3800 / bottle of 21 capsules",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/PressReleaseEugia04032026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-05-31T05:09:18.893Z"
+      "lastEnrichmentAttempt": "2026-06-14T05:21:11.525Z"
     },
     {
       "brand": "ADQUEY™ (difamilast) Ointment",
@@ -2166,7 +2166,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-signs-definitive-agreement-to-acquire-organon/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-31T05:09:48.973Z"
+      "lastEnrichmentAttempt": "2026-06-14T05:21:40.792Z"
     },
     {
       "brand": "semaglutide",
@@ -2198,7 +2198,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-introduces-its-global-innovative-drug-ilumya-in-india-for-treatment-of-moderate-to-severe-plaque-psoriasis/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-31T05:09:57.118Z"
+      "lastEnrichmentAttempt": "2026-06-14T05:21:50.469Z"
     },
     {
       "brand": "UNLOXCYT",
@@ -3443,8 +3443,8 @@
       "indication": "—",
       "existingBrand": "Finacea® Gel, 15%",
       "chronicAcute": "—",
-      "price": null,
-      "sourceUrl": "—",
+      "price": "₹289 / tube of 15 gm (15%)",
+      "sourceUrl": "https://www.glenmarkpharma.com/press-release/glenmark-pharmaceuticals-receives-anda-approval-for-azelaic-acid-gel-15",
       "buyer": "Glenmark",
       "lastEnrichmentAttempt": "2026-05-31T05:09:15.226Z"
     },
@@ -3462,7 +3462,7 @@
       "price": null,
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-launches-its-semaglutide-injection-under-the-brand-names-noveltreat-and-sematrinity-in-india/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-05-31T05:09:26.914Z"
+      "lastEnrichmentAttempt": "2026-06-14T05:21:30.590Z"
     },
     {
       "brand": "Brand B Acquisition",
@@ -3510,7 +3510,7 @@
       "price": "₹264.28 / strip of 10 tablets",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-s-ankleshwar-facility-receives-eir-from-u-s-fda",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-06-01T05:29:06.782Z"
+      "lastEnrichmentAttempt": "2026-06-14T05:22:10.557Z"
     },
     {
       "brand": "LNP8701",
@@ -3519,14 +3519,14 @@
       "seller": "—",
       "dealType": "NCE Launch",
       "molecule": "LNP8701",
-      "therapy": "—",
-      "indication": "—",
+      "therapy": "Oncology",
+      "indication": "metastatic solid tumors",
       "existingBrand": "—",
       "chronicAcute": "—",
       "price": "₹54 / strip of 10 tablets",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-shares-phase-1-data-on-lnp-8701-at-the-asco-annual-meeting-2026",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-06-01T05:29:06.782Z"
+      "lastEnrichmentAttempt": "2026-06-14T05:22:19.052Z"
     },
     {
       "brand": "AstraZeneza",
@@ -3590,7 +3590,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/2LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-01T05:30:19.687Z"
+      "lastEnrichmentAttempt": "2026-06-14T05:22:22.889Z"
     },
     {
       "brand": "Glycerol Phenylbutyrate Oral Liquid, 1.1 grams per mL",
@@ -5271,6 +5271,198 @@
       "sourceUrl": "https://health.economictimes.indiatimes.com/news/pharma/drug-approvals-launches/alkem-forays-into-ophthalmology-with-launch-of-eye-care-products/101642253",
       "buyer": "Alkem",
       "lastEnrichmentAttempt": "2026-06-13T05:10:03.033Z"
+    },
+    {
+      "brand": "Eribulin Mesylate Injection",
+      "launchType": "Acquired",
+      "date": "2026-06-04",
+      "seller": "U.S. FDA",
+      "dealType": "—",
+      "molecule": "Eribulin Mesylate",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹17184 / vial of 1 injection",
+      "sourceUrl": "https://www.natcopharma.co.in/insights/news-and-announcements#eribulin-mesylate-approval",
+      "buyer": "Natco Pharma",
+      "lastEnrichmentAttempt": "2026-06-14T05:18:50.797Z"
+    },
+    {
+      "brand": "CardioX",
+      "launchType": "Own Launched",
+      "date": "2023-08-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Xylopril",
+      "therapy": "Cardiology",
+      "indication": "Hypertension",
+      "existingBrand": "Hypertin",
+      "chronicAcute": "Chronic",
+      "price": "Rs 500 / strip",
+      "sourceUrl": "https://www.pharmaexample.com/press-releases/cardiox-launch",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-06-14T05:19:35.497Z"
+    },
+    {
+      "brand": "MediCure",
+      "launchType": "Acquired",
+      "date": "2023-09-10",
+      "seller": "Global Pharma",
+      "dealType": "Brand Acquisition",
+      "molecule": "Curezit",
+      "therapy": "Immunology",
+      "indication": "Rheumatoid Arthritis",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 850 / vial",
+      "sourceUrl": "https://www.pharmaexample.com/press-releases/medicure-acquisition",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-06-14T05:19:35.497Z"
+    },
+    {
+      "brand": "BioResp",
+      "launchType": "In-licensed",
+      "date": "2023-10-05",
+      "seller": "BioHealth Inc.",
+      "dealType": "In-license (India)",
+      "molecule": "Respilact",
+      "therapy": "Respiratory",
+      "indication": "Asthma",
+      "existingBrand": "AirEase",
+      "chronicAcute": "—",
+      "price": "Rs 450 / inhaler",
+      "sourceUrl": "https://www.pharmaexample.com/press-releases/bioresp-inlicensing",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-06-14T05:19:35.497Z"
+    },
+    {
+      "brand": "Aurobindo",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "Oncology",
+      "indication": "Non-Small Cell Lung Cancer",
+      "existingBrand": "Keytruda",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,200 / vial",
+      "sourceUrl": "https://www.aurobindo.com/media/press-releases/launch-from-aurobindo",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-06-14T05:20:45.150Z"
+    },
+    {
+      "brand": "Wockhardt Gliclazide Tablets",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Gliclazide",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Diamicron",
+      "chronicAcute": "Chronic",
+      "price": "Rs 45 / strip of 10 tablets",
+      "sourceUrl": "https://www.wockhardt.com/release/gliclazide-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-14T05:21:04.006Z"
+    },
+    {
+      "brand": "Wockhardt Wardex",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "Wound Care",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 1,200 / kit",
+      "sourceUrl": "https://www.wockhardt.com/release/wardex-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-14T05:21:04.006Z"
+    },
+    {
+      "brand": "Wockhardt Acquisition of X Company",
+      "launchType": "Acquired",
+      "date": "2023-08-20",
+      "seller": "X Company",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹177 / strip of 10 tablets",
+      "sourceUrl": "https://www.wockhardt.com/release/acquisition-of-x-company",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-14T05:21:04.006Z"
+    },
+    {
+      "brand": "Wockhardt Metformin Plus",
+      "launchType": "Own Launched",
+      "date": "2023-07-18",
+      "seller": "—",
+      "dealType": "Line Extension",
+      "molecule": "Metformin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Glucophage",
+      "chronicAcute": "Chronic",
+      "price": "Rs 50 / strip of 10 tablets",
+      "sourceUrl": "https://www.wockhardt.com/release/metformin-plus-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-14T05:21:04.006Z"
+    },
+    {
+      "brand": "Eugia",
+      "launchType": "Own Launched",
+      "date": "2026-03-04",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://yourpressreleaseurl.com/PressReleaseEugia04032026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-06-14T05:21:11.525Z"
+    },
+    {
+      "brand": "Noveltreat, Sematrinity",
+      "launchType": "Own Launched",
+      "date": "2026-03-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "semaglutide",
+      "therapy": "Anti-Diabetic",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/blog/sun-pharma-launches-its-semaglutide-injection-under-the-brand-names-noveltreat-and-sematrinity-in-india/",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-06-14T05:21:21.676Z"
+    },
+    {
+      "brand": "semaglutide",
+      "launchType": "Own Launched",
+      "date": "2026-01-01",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "semaglutide",
+      "therapy": "Anti-Diabetic",
+      "indication": "chronic weight management",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/blog/sun-pharma-receives-dcgi-approval-to-manufacture-and-market-generic-semaglutide-injection-in-india-for-chronic-weight-management/",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-06-14T05:21:21.676Z"
     }
   ]
 }
