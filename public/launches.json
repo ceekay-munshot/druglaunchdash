@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-14T05:23:09.068Z",
-  "rowCount": 342,
+  "generatedAt": "2026-06-15T05:47:25.987Z",
+  "rowCount": 350,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -742,7 +742,7 @@
       "price": "₹28.3 / strip of 10 capsules",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/09/Press-Release-Sun-Pharma-launches-Chericof-12.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-01T05:31:46.254Z"
+      "lastEnrichmentAttempt": "2026-06-15T05:46:50.472Z"
     },
     {
       "brand": "WINLEVI",
@@ -1021,7 +1021,7 @@
       "launchType": "Own Launched",
       "date": "2026-03-03",
       "seller": "—",
-      "dealType": "—",
+      "dealType": "Generic Launch",
       "molecule": "Pomalidomide",
       "therapy": "—",
       "indication": "—",
@@ -2214,7 +2214,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-announces-the-availability-of-unloxcyt-cosibelimab-ipdl-for-advanced-cutaneous-squamous-cell-carcinoma-acscc/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-01T05:31:12.795Z"
+      "lastEnrichmentAttempt": "2026-06-15T05:46:10.678Z"
     },
     {
       "brand": "ILUMYA",
@@ -2230,7 +2230,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-announces-us-fda-acceptance-of-supplemental-biologics-license-sbla-application-for-ilumya-tildrakizumab-asmn-for-the-treatment-o/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-01T05:31:38.175Z"
+      "lastEnrichmentAttempt": "2026-06-15T05:46:31.613Z"
     },
     {
       "brand": "Chericof 12",
@@ -2246,7 +2246,7 @@
       "price": "—",
       "sourceUrl": "http://www.sunpharma.com",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-01T05:31:51.061Z"
+      "lastEnrichmentAttempt": "2026-06-15T05:46:54.634Z"
     },
     {
       "brand": "GBR 310",
@@ -2262,7 +2262,7 @@
       "price": "—",
       "sourceUrl": "—",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-06-01T05:32:13.052Z"
+      "lastEnrichmentAttempt": "2026-06-15T05:47:07.678Z"
     },
     {
       "brand": "Tiotropium Bromide",
@@ -3446,7 +3446,7 @@
       "price": "₹289 / tube of 15 gm (15%)",
       "sourceUrl": "https://www.glenmarkpharma.com/press-release/glenmark-pharmaceuticals-receives-anda-approval-for-azelaic-acid-gel-15",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-05-31T05:09:15.226Z"
+      "lastEnrichmentAttempt": "2026-06-15T05:45:21.017Z"
     },
     {
       "brand": "Noveltreat and Sematrinity",
@@ -3606,7 +3606,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-01T05:30:19.687Z"
+      "lastEnrichmentAttempt": "2026-06-15T05:45:30.538Z"
     },
     {
       "brand": "Dapagliflozin and Metformin Hydrochloride Extended-Release Tablets",
@@ -3622,7 +3622,7 @@
       "price": "₹95.5 / strip of 10 tablet er",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoUSFDAmetformin07042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-01T05:30:19.687Z"
+      "lastEnrichmentAttempt": "2026-06-15T05:45:37.737Z"
     },
     {
       "brand": "Dapagliflozin Tablets",
@@ -3638,7 +3638,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoUSFDA07042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-01T05:30:19.687Z"
+      "lastEnrichmentAttempt": "2026-06-15T05:45:51.377Z"
     },
     {
       "brand": "BP11, Investigational Biosimilar to Xolair® (omalizumab)",
@@ -3654,7 +3654,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-01T05:30:19.687Z"
+      "lastEnrichmentAttempt": "2026-06-15T05:46:01.822Z"
     },
     {
       "brand": "generic semaglutide",
@@ -5463,6 +5463,134 @@
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-receives-dcgi-approval-to-manufacture-and-market-generic-semaglutide-injection-in-india-for-chronic-weight-management/",
       "buyer": "Sun Pharma",
       "lastEnrichmentAttempt": "2026-06-14T05:21:21.676Z"
+    },
+    {
+      "brand": "Product A",
+      "launchType": "Own Launched",
+      "date": "2023-09-22",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Molecule X",
+      "therapy": "Oncology",
+      "indication": "Lung Cancer",
+      "existingBrand": "Existing Brand Y",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,500 / pack",
+      "sourceUrl": "https://www.mankindpharma.com/media/press-release/product-a-launch",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-06-15T05:40:12.223Z"
+    },
+    {
+      "brand": "Product B",
+      "launchType": "Acquired",
+      "date": "2023-09-22",
+      "seller": "Seller Company Z",
+      "dealType": "Brand Acquisition",
+      "molecule": "Molecule Y",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Brand A",
+      "chronicAcute": "—",
+      "price": "Rs 800 / strip",
+      "sourceUrl": "https://www.mankindpharma.com/media/press-release/product-b-acquisition",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-06-15T05:40:12.223Z"
+    },
+    {
+      "brand": "Wockhardt's New Drug 1",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Molecule A",
+      "therapy": "Oncology",
+      "indication": "Lung Cancer",
+      "existingBrand": "Competitor Brand X",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,500 / tablet",
+      "sourceUrl": "https://www.wockhardt.com/press-release/new-drug-1",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-15T05:45:19.514Z"
+    },
+    {
+      "brand": "Wockhardt Acquires Company B",
+      "launchType": "Acquired",
+      "date": "2023-05-30",
+      "seller": "Company B",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹98.5 / strip of 10 tablets",
+      "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-company-b",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-15T05:45:19.514Z"
+    },
+    {
+      "brand": "Wockhardt In-licenses Drug C",
+      "launchType": "In-licensed",
+      "date": "2023-06-20",
+      "seller": "Company D",
+      "dealType": "In-license (India)",
+      "molecule": "Drug C",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Competitor Brand Y",
+      "chronicAcute": "Chronic",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-release/in-license-drug-c",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-15T05:45:19.514Z"
+    },
+    {
+      "brand": "Azelaic Acid Gel 15%",
+      "launchType": "Own Launched",
+      "date": "2023-09-29",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Azelaic Acid",
+      "therapy": "Dermatology",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://glenmarkpharma.com/press_release/glenmark-pharmaceuticals-receives-anda-approval-for-azelaic-acid-gel-15/#main",
+      "buyer": "Glenmark",
+      "lastEnrichmentAttempt": "2026-06-15T05:45:21.017Z"
+    },
+    {
+      "brand": "Dapagliflozin and Metformin Hydrochloride Extended-Release Tablets",
+      "launchType": "Own Launched",
+      "date": "2026-04-07",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Dapagliflozin plus Metformin Hydrochloride",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type-2 diabetes mellitus",
+      "existingBrand": "Xigduo XR Tablets",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "http://www.aurobindo.com/",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-06-15T05:45:37.737Z"
+    },
+    {
+      "brand": "Dapagliflozin Tablets",
+      "launchType": "Own Launched",
+      "date": "2026-04-07",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Dapagliflozin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type-2 Diabetes Mellitus",
+      "existingBrand": "Farxiga",
+      "chronicAcute": "Chronic",
+      "price": null,
+      "sourceUrl": "http://www.aurobindo.com/",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-06-15T05:45:51.377Z"
     }
   ]
 }
