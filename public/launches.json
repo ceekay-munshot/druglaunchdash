@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-15T05:47:25.987Z",
-  "rowCount": 350,
+  "generatedAt": "2026-06-16T06:17:15.536Z",
+  "rowCount": 363,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -902,7 +902,7 @@
       "price": "null",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/10/Press-Release-Sun-Pharma-and-Zydus-sign-licensing-agreement-for-co-marketing-of-Desidustat-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-02T05:15:45.937Z"
+      "lastEnrichmentAttempt": "2026-06-16T06:16:10.351Z"
     },
     {
       "brand": "Cipla's New Biosimilar",
@@ -950,7 +950,7 @@
       "price": "₹5316 / strip of 1 capsule",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-expands-its-oncology-franchise-in-India-with-the-launch-of-Helsinn.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-06-02T05:15:51.973Z"
+      "lastEnrichmentAttempt": "2026-06-16T06:16:14.730Z"
     },
     {
       "brand": "Ryaltris",
@@ -2294,7 +2294,7 @@
       "price": null,
       "sourceUrl": "https://www.lupin.com/",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-06-01T05:32:23.171Z"
+      "lastEnrichmentAttempt": "2026-06-16T06:14:48.980Z"
     },
     {
       "brand": "Lupin",
@@ -2310,7 +2310,7 @@
       "price": null,
       "sourceUrl": "https://www.lupin.com/",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-06-01T05:32:48.947Z"
+      "lastEnrichmentAttempt": "2026-06-16T06:15:03.800Z"
     },
     {
       "brand": "Mankind Pharma Brand XYZ",
@@ -2390,7 +2390,7 @@
       "price": "null",
       "sourceUrl": "https://www.cipla.com/press-release/generic-pharma-acquisition",
       "buyer": "Cipla",
-      "lastEnrichmentAttempt": "2026-06-01T05:32:56.043Z"
+      "lastEnrichmentAttempt": "2026-06-16T06:15:24.701Z"
     },
     {
       "brand": "Antibacterial Combination",
@@ -2406,7 +2406,7 @@
       "price": "₹643 / pump bottle of 100 ml",
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/amp_articleshow/100775508.cms",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-06-02T05:15:19.822Z"
+      "lastEnrichmentAttempt": "2026-06-16T06:15:32.285Z"
     },
     {
       "brand": "GBR 1302",
@@ -2422,7 +2422,7 @@
       "price": "—",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Pharmaceuticals-and-Harbour-BioMed-Sign-Agreement-for-Greater-China-toDevelop-GBR-1302.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-06-02T05:15:34.036Z"
+      "lastEnrichmentAttempt": "2026-06-16T06:15:48.688Z"
     },
     {
       "brand": "BP11",
@@ -2438,7 +2438,7 @@
       "price": "₹61.2 / strip of 20 capsules",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-02T05:15:38.116Z"
+      "lastEnrichmentAttempt": "2026-06-16T06:15:52.967Z"
     },
     {
       "brand": "AKYNZEO",
@@ -3411,8 +3411,8 @@
       "indication": "—",
       "existingBrand": "Westcort®",
       "chronicAcute": "—",
-      "price": null,
-      "sourceUrl": "—",
+      "price": "null",
+      "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-receives-ANDA-approval-for-Hydrocortisone-Valerate-Ointment-USP-%200.2%25.pdf",
       "buyer": "Glenmark",
       "lastEnrichmentAttempt": "2026-06-13T05:10:23.772Z"
     },
@@ -3686,7 +3686,7 @@
       "price": null,
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-signs-exclusive-licensing-agreement-with-neopharmed-for-gastroenterology-brand-plasil-in-the-philippines-and-brazil",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-06-01T05:32:23.171Z"
+      "lastEnrichmentAttempt": "2026-06-16T06:14:54.727Z"
     },
     {
       "brand": "GLP-1 receptor agonist",
@@ -3702,7 +3702,7 @@
       "price": null,
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-signs-exclusive-licensing-agreement-with-gan-lee-pharmaceuticals-for-novel-glp-1-receptor-agonist",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-06-01T05:32:48.947Z"
+      "lastEnrichmentAttempt": "2026-06-16T06:15:14.404Z"
     },
     {
       "brand": "Vasonex",
@@ -5198,12 +5198,12 @@
       "date": "2026-05-29",
       "seller": "—",
       "dealType": "NCE Launch",
-      "molecule": "—",
+      "molecule": "sodium sulfate, magnesium sulfate, potassium chloride",
       "therapy": "—",
       "indication": "—",
       "existingBrand": "—",
       "chronicAcute": "—",
-      "price": null,
+      "price": "₹36.9 / bottle of 200 ml",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-approval-from-u-s-fda-for-sodium-sulfate-magnesium-sulfate-and-potassium-chloride-tablets",
       "buyer": "Lupin",
       "lastEnrichmentAttempt": "2026-06-13T05:07:57.310Z"
@@ -5591,6 +5591,214 @@
       "sourceUrl": "http://www.aurobindo.com/",
       "buyer": "Aurobindo",
       "lastEnrichmentAttempt": "2026-06-15T05:45:51.377Z"
+    },
+    {
+      "brand": "Cipla-Biosimilar",
+      "launchType": "Own Launched",
+      "date": "2023-01-15",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "Rituximab",
+      "therapy": "Oncology",
+      "indication": "Non-Hodgkin's Lymphoma",
+      "existingBrand": "MabThera",
+      "chronicAcute": "Chronic",
+      "price": "Rs 22,000 / vial",
+      "sourceUrl": "https://www.cipla.com/press-releases-statements/biosimilar-launch",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-06-16T06:11:34.544Z"
+    },
+    {
+      "brand": "Cipla-Asthma Device",
+      "launchType": "Own Launched",
+      "date": "2023-02-10",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "Salbutamol",
+      "therapy": "Respiratory",
+      "indication": "Asthma",
+      "existingBrand": "Ventolin",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,500 / device",
+      "sourceUrl": "https://www.cipla.com/press-releases-statements/asthma-device-launch",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-06-16T06:11:34.544Z"
+    },
+    {
+      "brand": "Cipla Diabetes Care",
+      "launchType": "In-licensed",
+      "date": "2023-03-05",
+      "seller": "Boehringer Ingelheim",
+      "dealType": "In-license (India)",
+      "molecule": "Dapagliflozin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Farxiga",
+      "chronicAcute": "Chronic",
+      "price": null,
+      "sourceUrl": "https://www.cipla.com/press-releases-statements/diabetes-in-license",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-06-16T06:11:34.544Z"
+    },
+    {
+      "brand": "Cipla HeartCare",
+      "launchType": "Acquired",
+      "date": "2023-04-12",
+      "seller": "Mylan",
+      "dealType": "Brand Acquisition",
+      "molecule": "Telmisartan",
+      "therapy": "Cardiology",
+      "indication": "High Blood Pressure",
+      "existingBrand": "Telma",
+      "chronicAcute": "Chronic",
+      "price": "Rs 800 / strip",
+      "sourceUrl": "https://www.cipla.com/press-releases-statements/heartcare-acquisition",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-06-16T06:11:34.544Z"
+    },
+    {
+      "brand": "Luforbec",
+      "launchType": "Own Launched",
+      "date": "2026-06-08",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "beclometasone/formoterol",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-collaborates-with-ern-for-luforbec-beclometasone-formoterol-p-mdi-launch-in-spain",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-06-16T06:12:57.060Z"
+    },
+    {
+      "brand": "Dapagliflozin and Metformin Hydrochloride Tablets",
+      "launchType": "Own Launched",
+      "date": "2026-04-06",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Dapagliflozin plus Metformin Hydrochloride",
+      "therapy": "Anti-Diabetic",
+      "indication": "—",
+      "existingBrand": "Farxiga",
+      "chronicAcute": "—",
+      "price": "₹95.4 / strip of 10 tablet er",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoUSFDAmetformin07042026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-06-16T06:14:25.369Z"
+    },
+    {
+      "brand": "Omalizumab BP11",
+      "launchType": "Own Launched",
+      "date": "2026-04-05",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "Omalizumab",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Xolair",
+      "chronicAcute": "—",
+      "price": "₹34491 / ampoule of 2 ml injection",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-06-16T06:14:25.369Z"
+    },
+    {
+      "brand": "Wockhardt's New Anti-Diabetic Drug",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "metformin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Glyciphage",
+      "chronicAcute": "Chronic",
+      "price": "Rs 300 / strip",
+      "sourceUrl": "https://www.wockhardt.com/press-release/new-antidiabetic-drug",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-16T06:14:47.477Z"
+    },
+    {
+      "brand": "Wockhardt's Acquisition of PharmaCorp",
+      "launchType": "Acquired",
+      "date": "2023-08-20",
+      "seller": "PharmaCorp",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹42.6 / packet of 50 ml scrub",
+      "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-of-pharmacorp",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-16T06:14:47.477Z"
+    },
+    {
+      "brand": "Wockhardt's New Line Extension for Pain Relief",
+      "launchType": "Own Launched",
+      "date": "2023-07-10",
+      "seller": "—",
+      "dealType": "Line Extension",
+      "molecule": "ibuprofen",
+      "therapy": "Pain Management",
+      "indication": "Pain relief",
+      "existingBrand": "Brufen",
+      "chronicAcute": "Acute",
+      "price": "Rs 150 / strip",
+      "sourceUrl": "https://www.wockhardt.com/press-release/new-line-extension-pain-relief",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-16T06:14:47.477Z"
+    },
+    {
+      "brand": "Novel GLP-1 receptor agonist",
+      "launchType": "In-licensed",
+      "date": "2025-12-29",
+      "seller": "Gan & Lee Pharmaceuticals",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://lupin.com/media/press-releases/lupin-signs-exclusive-licensing-agreement-with-gan-lee-pharmaceuticals-for-novel-glp-1-receptor-agonist",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-06-16T06:14:48.980Z"
+    },
+    {
+      "brand": "Plasil®",
+      "launchType": "In-licensed",
+      "date": "2025-12-18",
+      "seller": "Neopharmed Gentili S.p.A",
+      "dealType": "In-license (India)",
+      "molecule": "metoclopramide",
+      "therapy": "Gastroenterology",
+      "indication": "nausea, vomiting, and motility disorders",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.lupin.com/press-release/lupin-signs-exclusive-licensing-agreement-with-neopharmed-for-gastroenterology-brand-plasil-in-the-philippines-and-brazil",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-06-16T06:14:54.727Z"
+    },
+    {
+      "brand": "Bofanglutide",
+      "launchType": "In-licensed",
+      "date": "2025-12-29",
+      "seller": "Gan & Lee Pharmaceuticals",
+      "dealType": "In-license (India)",
+      "molecule": "Bofanglutide",
+      "therapy": "Anti-diabetic",
+      "indication": "Type 2 diabetes",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "—",
+      "sourceUrl": "https://www.lupin.com/press-releases/bofanglutide-launch",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-06-16T06:15:14.404Z"
     }
   ]
 }
