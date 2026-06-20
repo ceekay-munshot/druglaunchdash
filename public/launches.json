@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-19T05:40:04.820Z",
-  "rowCount": 382,
+  "generatedAt": "2026-06-20T04:57:10.947Z",
+  "rowCount": 393,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -438,7 +438,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-04T05:26:14.113Z"
+      "lastEnrichmentAttempt": "2026-06-20T04:55:20.547Z"
     },
     {
       "brand": "Noveltreat and Sematrinity",
@@ -1062,7 +1062,7 @@
       "price": "₹5316 / strip of 1 capsule",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-expands-its-oncology-franchise-in-India-with-the-launch-of-Helsinn.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-06-04T05:26:04.828Z"
+      "lastEnrichmentAttempt": "2026-06-20T04:55:13.949Z"
     },
     {
       "brand": "Generic Tiotropium Bromide Dry Powder Inhaler",
@@ -1078,7 +1078,7 @@
       "price": "₹304 / packet of 120 mdi inhaler",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-enters-into-an-exclusive-licensing.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-06-04T05:26:09.446Z"
+      "lastEnrichmentAttempt": "2026-06-20T04:55:18.062Z"
     },
     {
       "brand": "Glycerol Phenylbutyrate Oral Liquid",
@@ -2550,7 +2550,7 @@
       "price": "₹31.2 / strip of 10 tablets",
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/amp_articleshow/100775508.cms",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-06-04T05:26:22.882Z"
+      "lastEnrichmentAttempt": "2026-06-20T04:55:29.088Z"
     },
     {
       "brand": "Cetu",
@@ -2566,7 +2566,7 @@
       "price": "₹24.8 / bottle of 60 ml (5 mg/5 ml)",
       "sourceUrl": "https://www.cnbctv18.com/healthcare/alkem-oncology-novel-breast-cancer-treatment-drug-launch-palbociclib-palbo-15703241.htm",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-06-04T05:26:37.280Z"
+      "lastEnrichmentAttempt": "2026-06-20T04:55:37.454Z"
     },
     {
       "brand": "AKYNZEO®",
@@ -2598,7 +2598,7 @@
       "price": "—",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Pharmaceuticals-and-Harbour-BioMed-Sign-Agreement-for-Greater-China-toDevelop-GBR-1302.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-06-04T05:26:48.726Z"
+      "lastEnrichmentAttempt": "2026-06-20T04:55:45.588Z"
     },
     {
       "brand": "Nourkrin®",
@@ -2614,7 +2614,7 @@
       "price": "₹3285 / strip of 60 tablets",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-launches-globally-renowned-hair-growth-formula-Nourkrin-in-Russia.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-06-04T05:26:52.474Z"
+      "lastEnrichmentAttempt": "2026-06-20T04:55:50.149Z"
     },
     {
       "brand": "AVEIR™ VR Leadless Pacemaker",
@@ -2630,7 +2630,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-aveir-vr-leadless-pacemaker-system-in-india-to-treat-patients-with-slow-heart-rhythms.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-04T05:26:56.760Z"
+      "lastEnrichmentAttempt": "2026-06-20T04:55:54.850Z"
     },
     {
       "brand": "Dextromethorphan Polistirex Extended-Release Oral Suspension, 30 mg/5 mL",
@@ -2646,7 +2646,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/2LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-04T05:27:08.179Z"
+      "lastEnrichmentAttempt": "2026-06-20T04:56:02.438Z"
     },
     {
       "brand": "Glycerol Phenylbutyrate Oral Liquid, 1.1 grams per mL",
@@ -4054,7 +4054,7 @@
       "price": "—",
       "sourceUrl": "—",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-06-04T05:26:52.474Z"
+      "lastEnrichmentAttempt": "2026-06-20T04:55:53.393Z"
     },
     {
       "brand": "Ciplar",
@@ -6103,6 +6103,182 @@
       "sourceUrl": "http://www.abbott.com/press-release/insertable-cardiac-monitor-launch.html",
       "buyer": "Abbott India",
       "lastEnrichmentAttempt": "2026-06-19T05:39:44.527Z"
+    },
+    {
+      "brand": "Azilsartan Medoxomil Tablets",
+      "launchType": "Own Launched",
+      "date": "2026-06-17",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-launches-azilsartan-medoxomil-tablets-in-the-united-states",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-06-20T04:54:25.557Z"
+    },
+    {
+      "brand": "Luforbec (beclometasone/formoterol)",
+      "launchType": "Own Launched",
+      "date": "2026-06-08",
+      "seller": "ERN",
+      "dealType": "Co-marketing",
+      "molecule": "beclometasone/formoterol",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-collaborates-with-ern-for-luforbec-beclometasone-formoterol-p-mdi-launch-in-spain",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-06-20T04:54:25.557Z"
+    },
+    {
+      "brand": "Ranluspec (ranibizumab) Injection",
+      "launchType": "Own Launched",
+      "date": "2026-06-05",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "ranibizumab",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-approval-from-u-s-fda-for-ranluspec-tm-ranibizumab-injection",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-06-20T04:54:25.557Z"
+    },
+    {
+      "brand": "Eribulin Mesylate Injection",
+      "launchType": "Own Launched",
+      "date": "2026-06-03",
+      "seller": "Natco",
+      "dealType": "Co-marketing",
+      "molecule": "eribulin mesylate",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹17184 / vial of 1 injection",
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-and-natco-receive-approval-from-u-s-fda-for-eribulin-mesylate-injection",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-06-20T04:54:25.557Z"
+    },
+    {
+      "brand": "Cardilox",
+      "launchType": "Own Launched",
+      "date": "2023-09-05",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Metoprolol",
+      "therapy": "Cardiology",
+      "indication": "Hypertension",
+      "existingBrand": "Telma",
+      "chronicAcute": "Chronic",
+      "price": "Rs 500 / strip",
+      "sourceUrl": "https://pharmaexample.com/press-release-cardiolox",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-06-20T04:54:31.955Z"
+    },
+    {
+      "brand": "Glimpsa",
+      "launchType": "In-licensed",
+      "date": "2023-08-15",
+      "seller": "ABC Pharma",
+      "dealType": "In-license (India)",
+      "molecule": "Gliclazide",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Diamicron",
+      "chronicAcute": "Chronic",
+      "price": "Rs 250 / strip",
+      "sourceUrl": "https://pharmaexample.com/press-release-glimpsa",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-06-20T04:54:31.955Z"
+    },
+    {
+      "brand": "Biosimilar-X",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "Infliximab",
+      "therapy": "Oncology",
+      "indication": "Rheumatoid Arthritis",
+      "existingBrand": "Remicade",
+      "chronicAcute": "Chronic",
+      "price": "Rs 6,500 / injection",
+      "sourceUrl": "https://pharmaexample.com/press-release-biosimilar-x",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-06-20T04:54:31.955Z"
+    },
+    {
+      "brand": "Wockhardt's New Biosimilar",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Zaltrap",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.wockhardt.com/press-release/wockhardt-launches-new-biosimilar",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-20T04:55:12.446Z"
+    },
+    {
+      "brand": "Acquisition of XYZ Pharmaceuticals",
+      "launchType": "Acquired",
+      "date": "2023-08-29",
+      "seller": "XYZ Pharmaceuticals",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-of-xyz-pharmaceuticals",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-20T04:55:12.446Z"
+    },
+    {
+      "brand": "Collaboration with ABC Corp",
+      "launchType": "In-licensed",
+      "date": "2023-08-10",
+      "seller": "ABC Corp",
+      "dealType": "In-license (India)",
+      "molecule": "molecule Y",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "₹303 / strip of 10 tablets",
+      "sourceUrl": "https://www.wockhardt.com/press-release/collaboration-with-abc-corp",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-20T04:55:12.446Z"
+    },
+    {
+      "brand": "Nourkrin®",
+      "launchType": "In-licensed",
+      "date": "2018-11-01",
+      "seller": "Pharma Medico",
+      "dealType": "In-license (India)",
+      "molecule": "Marilex®",
+      "therapy": "Dermatology",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "—",
+      "buyer": "Glenmark",
+      "lastEnrichmentAttempt": "2026-06-20T04:55:50.149Z"
     }
   ]
 }
