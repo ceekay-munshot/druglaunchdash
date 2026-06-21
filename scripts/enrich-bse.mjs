@@ -247,118 +247,103 @@ async function chatJson({ endpoint, key, model, prompt }) {
 const UA =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36';
 
+// AnnGetData URL with individually-overridable params, so we can matrix-test
+// which combination actually returns records.
+function annUrlP({ scrip = '524715', cat = '-1', prev = '', to = '', search = 'P', type = 'C', extra = '' }) {
+  return (
+    `https://api.bseindia.com/BseIndiaAPI/api/AnnGetData/w?pageno=1&strCat=${cat}` +
+    `&strPrevDate=${prev}&strScrip=${scrip}&strSearch=${search}&strToDate=${to}&strType=${type}${extra}`
+  );
+}
+
 async function probe() {
   banner('KEY PRESENCE');
   for (const [k, v] of Object.entries({ SCRAPEDO_API_KEY, GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY })) {
     console.log(`  ${k.padEnd(18)} ${v ? `set (${v.length} chars)` : '✖ MISSING'}`);
   }
 
-  // ── Step A: crack AnnGetData — try proxy modes until one returns a Table ───
-  // getScripHeaderData works on no-geo but AnnGetData returns "No Record Found!".
-  // Likely an Akamai/geo soft-block on this endpoint, so vary the Scrape.do
-  // proxy (India geo / residential / JS render) on identical params.
-  banner('STEP A — AnnGetData proxy-mode matrix (Sun Pharma, 1y window)');
-  const to = new Date();
-  const from = new Date(Date.now() - 365 * 86400000);
-  const annUrl = bseAnnUrl('524715', yyyymmdd(from), yyyymmdd(to));
   const headers = { Referer: 'https://www.bseindia.com/', Origin: 'https://www.bseindia.com', 'User-Agent': UA };
-  const modes = [
-    { label: 'no-geo', opts: {} },
-    { label: 'geo=in', opts: { geoCode: 'in' } },
-    { label: 'super (residential)', opts: { superProxy: true } },
-    { label: 'super + geo=in', opts: { superProxy: true, geoCode: 'in' } },
-    { label: 'render=true', opts: { render: true } },
+  const now = new Date();
+  const ymd = (d) => yyyymmdd(d);
+  const dash = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+  const y1 = new Date(Date.now() - 365 * 86400000);
+  const d7 = new Date(Date.now() - 7 * 86400000);
+
+  // ── Step A: PARAM matrix — every proxy mode returned "No Record Found!", so
+  // it's the params. Vary strSearch / strType / dates / scope until rows appear.
+  banner('STEP A — AnnGetData PARAM matrix (find params that return rows)');
+  const variants = [
+    { label: 'baseline P/C', url: annUrlP({ prev: ymd(y1), to: ymd(now), search: 'P', type: 'C' }) },
+    { label: 'search=C', url: annUrlP({ prev: ymd(y1), to: ymd(now), search: 'C', type: 'C' }) },
+    { label: 'search=empty', url: annUrlP({ prev: ymd(y1), to: ymd(now), search: '', type: 'C' }) },
+    { label: 'type=empty', url: annUrlP({ prev: ymd(y1), to: ymd(now), search: 'P', type: '' }) },
+    { label: 'search+type empty', url: annUrlP({ prev: ymd(y1), to: ymd(now), search: '', type: '' }) },
+    { label: '+subcategory=-1', url: annUrlP({ prev: ymd(y1), to: ymd(now), search: 'P', type: 'C', extra: '&subcategory=-1' }) },
+    { label: 'dashed dates', url: annUrlP({ prev: dash(y1), to: dash(now), search: 'P', type: 'C' }) },
+    { label: 'GENERAL feed 7d (no scrip)', url: annUrlP({ scrip: '', prev: ymd(d7), to: ymd(now), search: 'P', type: 'C' }) },
   ];
-  let firstPdfAttachment = null;
-  let winningMode = null;
-  for (const m of modes) {
+  let winner = null;
+  for (const v of variants) {
     try {
-      const r = await scrapedo(annUrl, { ...m.opts, headers, timeoutMs: SCRAPEDO_TIMEOUT_MS });
-      let rows = 0;
-      let note = snippet(r.body, 120);
+      const r = await scrapedo(v.url, { headers, timeoutMs: SCRAPEDO_TIMEOUT_MS });
+      let info = snippet(r.body, 70);
       try {
         const j = JSON.parse(r.body);
-        if (Array.isArray(j?.Table)) {
-          rows = j.Table.length;
-          note = `Table rows=${rows}`;
-          if (rows && !winningMode) {
-            winningMode = m.label;
-            for (const a of j.Table.slice(0, 5)) {
-              const att = a.ATTACHMENTNAME || '—';
-              console.log(`        - [${a.CATEGORYNAME || '?'}] ${snippet(a.NEWSSUB || a.HEADLINE, 70)} (pdf: ${att})`);
-              if (!firstPdfAttachment && /\.pdf$/i.test(att)) firstPdfAttachment = att;
-            }
-          }
+        const rows = Array.isArray(j?.Table) ? j.Table : [];
+        info = `Table rows=${rows.length}`;
+        if (rows.length && !winner) {
+          winner = { ...v, rows };
+          info += ` · keys: ${Object.keys(rows[0]).join(',')}`;
         }
       } catch {}
-      console.log(`  • ${m.label.padEnd(20)} status ${r.status} · ${note}`);
+      console.log(`  • ${v.label.padEnd(26)} status ${r.status} · ${info}`);
     } catch (e) {
-      console.log(`  • ${m.label.padEnd(20)} ${e.name === 'AbortError' ? 'timed out' : 'threw ' + e.message}`);
+      console.log(`  • ${v.label.padEnd(26)} ${e.name === 'AbortError' ? 'timed out' : 'threw ' + e.message}`);
     }
-    await sleep(800);
+    await sleep(700);
   }
-  console.log(`\n  AnnGetData winning mode: ${winningMode || 'NONE — params likely wrong, will test param matrix next'}`);
 
-  // ── Step B: the real extraction path — PDF → unpdf text → Groq/Mistral ─────
-  // Gemini's free tier 429s instantly, so text-extract the PDF locally (unpdf,
-  // pure JS) and feed the FULL text to Groq (primary) then Mistral (fallback).
-  banner('STEP B — PDF → unpdf text → Groq/Mistral full extraction');
-  const KNOWN_PDF = 'https://sunpharma.com/wp-content/uploads/2026/01/UNLOXCYT-Commercial-Launch-Press-Release.pdf';
+  if (!winner) {
+    console.log('\n  ✖ no param variant returned rows — need a different endpoint/source.');
+    banner('PROBE COMPLETE');
+    return;
+  }
+
+  console.log(`\n  ✓ WINNER: "${winner.label}" → ${winner.rows.length} rows`);
+  let firstPdf = null;
+  for (const a of winner.rows.slice(0, 8)) {
+    const att = a.ATTACHMENTNAME || '—';
+    console.log(`    - ${a.NEWS_DT || '?'} [${a.CATEGORYNAME || '?'}] ${snippet(a.NEWSSUB || a.HEADLINE, 80)} (pdf: ${att})`);
+    if (!firstPdf && att && /\.pdf$/i.test(att)) firstPdf = att;
+  }
+
+  // ── Step B: REAL BSE filing → unpdf → Groq (closes the loop on live data) ──
+  banner('STEP B — real BSE filing → unpdf → Groq extraction');
+  if (!firstPdf) {
+    console.log('  (no PDF attachment among winner rows)');
+    banner('PROBE COMPLETE');
+    return;
+  }
   try {
-    // fetch a real BSE filing if Step A surfaced one, else the known PR PDF
-    let pdfBuf = null;
-    let srcLabel = '';
-    if (firstPdfAttachment) {
-      srcLabel = `BSE filing ${firstPdfAttachment}`;
-      const r = await scrapedo(bsePdfUrl(firstPdfAttachment), { binary: true, headers, geoCode: 'in', timeoutMs: SCRAPEDO_TIMEOUT_MS });
-      if (r?.buf?.length) pdfBuf = r.buf;
-    }
-    if (!pdfBuf) {
-      srcLabel = `known PR ${KNOWN_PDF.split('/').pop()}`;
-      const r = await scrapedo(KNOWN_PDF, { binary: true, timeoutMs: SCRAPEDO_TIMEOUT_MS });
-      if (r?.status === 200 && r?.buf?.length) pdfBuf = r.buf;
-    }
-    if (!pdfBuf) {
-      console.log('  ✖ could not fetch any PDF');
+    const r = await scrapedo(bsePdfUrl(firstPdf), { binary: true, headers, geoCode: 'in', timeoutMs: SCRAPEDO_TIMEOUT_MS });
+    if (!r?.buf?.length) {
+      console.log(`  ✖ PDF fetch: status ${r?.status}, ${r?.buf?.length || 0} bytes`);
     } else {
-      console.log(`  ✓ fetched ${pdfBuf.length} bytes (${srcLabel})`);
+      console.log(`  ✓ fetched ${r.buf.length} bytes (${firstPdf})`);
       const { extractText, getDocumentProxy } = await import('unpdf');
-      const doc = await getDocumentProxy(new Uint8Array(pdfBuf));
+      const doc = await getDocumentProxy(new Uint8Array(r.buf));
       const { text, totalPages } = await extractText(doc, { mergePages: true });
-      console.log(`  ✓ unpdf: ${totalPages} pages, ${text.length} chars · sample: ${snippet(text, 220)}`);
-
-      const exPrompt = `${EXTRACTION_PROMPT}\n\nDOCUMENT TEXT:\n${text.slice(0, 14000)}`;
-      try {
-        const g = await chatJson({ endpoint: 'https://api.groq.com/openai/v1/chat/completions', key: GROQ_API_KEY, model: GROQ_MODEL, prompt: exPrompt });
-        console.log(`  ✓ Groq extraction: ${snippet(g, 600)}`);
-      } catch (e) {
-        console.log(`  ✖ Groq extraction failed: ${e.message}`);
-      }
-      try {
-        const m = await chatJson({ endpoint: 'https://api.mistral.ai/v1/chat/completions', key: MISTRAL_API_KEY, model: MISTRAL_MODEL, prompt: exPrompt });
-        console.log(`  ✓ Mistral extraction: ${snippet(m, 600)}`);
-      } catch (e) {
-        console.log(`  ✖ Mistral extraction failed: ${e.message}`);
-      }
+      console.log(`  ✓ unpdf: ${totalPages} pages, ${text.length} chars · sample: ${snippet(text, 200)}`);
+      const g = await chatJson({
+        endpoint: 'https://api.groq.com/openai/v1/chat/completions',
+        key: GROQ_API_KEY,
+        model: GROQ_MODEL,
+        prompt: `${EXTRACTION_PROMPT}\n\nDOCUMENT TEXT:\n${text.slice(0, 14000)}`,
+      });
+      console.log(`  ✓ Groq extraction: ${snippet(g, 700)}`);
     }
   } catch (e) {
-    console.log(`  ✖ PDF→text→LLM failed: ${e.message}`);
-  }
-
-  // ── Step C: does ANY Gemini model have free quota? (optional vision fallback) ─
-  banner('STEP C — Gemini free-tier model check (optional scanned-PDF fallback)');
-  for (const model of ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-2.5-flash-lite', 'gemini-1.5-flash']) {
-    try {
-      const res = await fetchWithTimeout(
-        `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${GEMINI_API_KEY}`,
-        { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ contents: [{ parts: [{ text: 'reply with the word ok' }] }] }) },
-        20000
-      );
-      const t = await res.text();
-      console.log(`  • ${model.padEnd(22)} ${res.status === 200 ? '✓ free quota OK' : `status ${res.status}: ${snippet(t, 90)}`}`);
-    } catch (e) {
-      console.log(`  • ${model.padEnd(22)} ${e.name === 'AbortError' ? 'timed out' : 'threw ' + e.message}`);
-    }
+    console.log(`  ✖ end-to-end failed: ${e.message}`);
   }
 
   banner('PROBE COMPLETE');
