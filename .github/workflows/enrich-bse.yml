@@ -20,7 +20,9 @@ permissions:
 
 concurrency:
   group: enrich-bse
-  cancel-in-progress: false
+  # true so a fresh push supersedes a stuck/slow probe run (we can't cancel via
+  # the read-only MCP integration).
+  cancel-in-progress: true
 
 jobs:
   probe:

@@ -76,19 +76,33 @@ function looksLikeScrapedoError(text) {
   return false;
 }
 
+// fetch() has NO default timeout — a single non-returning proxy/PDF connection
+// would otherwise stall the whole job. Hard-abort every request.
+async function fetchWithTimeout(url, opts = {}, ms = 30000) {
+  const ctrl = new AbortController();
+  const t = setTimeout(() => ctrl.abort(), ms);
+  try {
+    return await fetch(url, { ...opts, signal: ctrl.signal });
+  } finally {
+    clearTimeout(t);
+  }
+}
+
 // Core Scrape.do call. render=false (1 credit, cheapest) by default; geoCode
 // routes through an India IP when BSE blocks foreign datacenters; customHeaders
 // forwards Referer/Origin so BSE's API accepts the request.
-async function scrapedo(targetUrl, { geoCode = null, headers = {}, binary = false } = {}) {
+async function scrapedo(targetUrl, { geoCode = null, headers = {}, binary = false, timeoutMs = 30000 } = {}) {
   if (!SCRAPEDO_API_KEY) throw new Error('SCRAPEDO_API_KEY missing');
   const params = new URLSearchParams({ token: SCRAPEDO_API_KEY, url: targetUrl });
   if (geoCode) params.set('geoCode', geoCode);
   const fwd = Object.keys(headers).length > 0;
   if (fwd) params.set('customHeaders', 'true');
 
-  const res = await fetch(`https://api.scrape.do/?${params.toString()}`, {
-    headers: fwd ? headers : undefined,
-  });
+  const res = await fetchWithTimeout(
+    `https://api.scrape.do/?${params.toString()}`,
+    { headers: fwd ? headers : undefined },
+    timeoutMs
+  );
   if (binary) {
     const buf = Buffer.from(await res.arrayBuffer());
     return { status: res.status, buf };
@@ -97,8 +111,13 @@ async function scrapedo(targetUrl, { geoCode = null, headers = {}, binary = fals
   return { status: res.status, body };
 }
 
-// BSE fetch that auto-adapts: try no-geo first (cheapest), fall back to India
-// geo-routing on failure, and report which mode worked so we can lock it in.
+// Once we learn which Scrape.do mode reaches BSE, lock it so every later call
+// makes ONE request instead of retrying no-geo→geo (halves credits + time).
+let LOCKED_GEO; // undefined = not yet determined
+
+// BSE fetch that auto-adapts then locks: try the locked mode if known; else try
+// no-geo first (cheapest), fall back to India geo-routing, and remember whichever
+// worked. Per-call timeouts mean a dead endpoint fails fast instead of hanging.
 async function bseGet(url, { binary = false } = {}) {
   const headers = {
     Referer: 'https://www.bseindia.com/',
@@ -106,17 +125,21 @@ async function bseGet(url, { binary = false } = {}) {
     'User-Agent':
       'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36',
   };
-  for (const geo of [null, 'in']) {
+  const modes = LOCKED_GEO !== undefined ? [LOCKED_GEO] : [null, 'in'];
+  for (const geo of modes) {
     try {
-      const r = await scrapedo(url, { geoCode: geo, headers, binary });
+      const r = await scrapedo(url, { geoCode: geo, headers, binary, timeoutMs: binary ? 45000 : 30000 });
       const ok = r.status === 200 && (binary ? r.buf?.length > 0 : r.body && !looksLikeScrapedoError(r.body));
-      if (ok) return { ...r, geo };
+      if (ok) {
+        if (LOCKED_GEO === undefined) LOCKED_GEO = geo; // lock on first success
+        return { ...r, geo };
+      }
       console.log(
         `    ↳ ${geo || 'no-geo'}: status ${r.status}` +
           (binary ? `, ${r.buf?.length || 0} bytes` : `, body=${snippet(r.body, 160)}`)
       );
     } catch (e) {
-      console.log(`    ↳ ${geo || 'no-geo'}: threw ${e.message}`);
+      console.log(`    ↳ ${geo || 'no-geo'}: ${e.name === 'AbortError' ? 'timed out' : 'threw ' + e.message}`);
     }
   }
   return null;
@@ -176,11 +199,11 @@ async function geminiExtractFromPdf(base64pdf) {
     ],
     generationConfig: { temperature: 0, responseMimeType: 'application/json' },
   };
-  const res = await fetch(url, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(body),
-  });
+  const res = await fetchWithTimeout(
+    url,
+    { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) },
+    60000
+  );
   const text = await res.text();
   if (!res.ok) throw new Error(`Gemini ${res.status}: ${snippet(text, 240)}`);
   const json = JSON.parse(text);
@@ -190,16 +213,20 @@ async function geminiExtractFromPdf(base64pdf) {
 
 // ── Groq / Mistral JSON-mode sanity pings (OpenAI-compatible) ───────────────
 async function chatJson({ endpoint, key, model, prompt }) {
-  const res = await fetch(endpoint, {
-    method: 'POST',
-    headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      model,
-      temperature: 0,
-      response_format: { type: 'json_object' },
-      messages: [{ role: 'user', content: prompt }],
-    }),
-  });
+  const res = await fetchWithTimeout(
+    endpoint,
+    {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        model,
+        temperature: 0,
+        response_format: { type: 'json_object' },
+        messages: [{ role: 'user', content: prompt }],
+      }),
+    },
+    45000
+  );
   const text = await res.text();
   if (!res.ok) throw new Error(`${res.status}: ${snippet(text, 240)}`);
   const json = JSON.parse(text);
