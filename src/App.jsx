@@ -15,6 +15,7 @@ import {
   UNIQUE_BUYERS,
   COLUMN_KEYS,
   mergeLaunchRows,
+  overlayEnrichment,
   enrichRowsWithPrices,
   enrichRowsWithTAM,
   enrichRowsWithPreExistingBrand,
@@ -29,6 +30,7 @@ import TherapyComparison from './components/TherapyComparison';
 
 const LAUNCHES_ENDPOINT = '/launches.json';
 const PATENT_CLIFFS_ENDPOINT = '/patentCliffs.json';
+const ENRICHMENT_ENDPOINT = '/enrichment.json';
 
 // Returns the earliest date (start of quarter) that should be included for a
 // preset of "N calendar quarters inclusive of the current quarter". 3Q is the
@@ -123,6 +125,7 @@ export default function App() {
   // bundle because React evaluates the deps array at render time but the
   // const binding hasn't been initialised yet in the function-body scope.
   const [scrapedRows, setScrapedRows] = useState([]);
+  const [enrichmentRows, setEnrichmentRows] = useState([]);
   const [scrapeGeneratedAt, setScrapeGeneratedAt] = useState(null);
   const [isRefreshing, setIsRefreshing] = useState(false);
   const [lastRefreshAt, setLastRefreshAt] = useState(() => new Date());
@@ -134,9 +137,11 @@ export default function App() {
   const fetchScraped = async () => {
     setIsRefreshing(true);
     try {
-      const [launchRes, cliffRes] = await Promise.all([
+      const [launchRes, cliffRes, enrichRes] = await Promise.all([
         fetch(`${LAUNCHES_ENDPOINT}?t=${Date.now()}`, { cache: 'no-store' }),
         fetch(`${PATENT_CLIFFS_ENDPOINT}?t=${Date.now()}`, { cache: 'no-store' }),
+        // Sidecar — may not exist yet; never let it fail the whole refresh.
+        fetch(`${ENRICHMENT_ENDPOINT}?t=${Date.now()}`, { cache: 'no-store' }).catch(() => null),
       ]);
       if (launchRes.ok) {
         const data = await launchRes.json();
@@ -146,6 +151,10 @@ export default function App() {
       if (cliffRes.ok) {
         const data = await cliffRes.json();
         setLivePatentCliffs(data && typeof data === 'object' ? data : null);
+      }
+      if (enrichRes && enrichRes.ok) {
+        const data = await enrichRes.json();
+        setEnrichmentRows(Array.isArray(data.rows) ? data.rows : []);
       }
     } catch {
       /* swallow; we fall back to bundled baseline silently */
@@ -167,14 +176,17 @@ export default function App() {
             enrichRowsWithPreExistingBrand(
               enrichRowsWithTAM(
                 enrichRowsWithPrices(
-                  mergeLaunchRows(LAUNCH_TRACKER_ROWS, scrapedRows)
+                  overlayEnrichment(
+                    mergeLaunchRows(LAUNCH_TRACKER_ROWS, scrapedRows),
+                    enrichmentRows
+                  )
                 )
               )
             )
           )
         )
       ),
-    [scrapedRows]
+    [scrapedRows, enrichmentRows]
   );
 
   const filteredRows = useMemo(() => {

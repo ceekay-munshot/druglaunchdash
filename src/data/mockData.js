@@ -279,6 +279,67 @@ export function mergeLaunchRows(baseline, scrapedRaw) {
 }
 
 // ──────────────────────────────────────────────────────────────────────────
+// Enrichment overlay — public/enrichment.json, produced by the Screener/BSE
+// harvester (scripts/enrich-bse.mjs). Two NON-destructive behaviours:
+//   1) FILL  — an enrichment row whose (brand + buyer) matches an existing row
+//      fills ONLY that row's blank descriptive fields. Never overwrites a value
+//      that's already present (curated + scraped data always win).
+//   2) APPEND — an enrichment row matching no existing (brand + buyer) is a
+//      launch the Firecrawl scraper missed; append it as a new row.
+// Runs AFTER mergeLaunchRows (so it can also fill scraped rows). Same junk
+// filter as everywhere else; enrichment rows share the scraped camelCase shape.
+// ──────────────────────────────────────────────────────────────────────────
+const ENRICH_FILLABLE_FIELDS = [
+  COLUMN_KEYS.MOLECULE,
+  COLUMN_KEYS.THERAPY,
+  COLUMN_KEYS.INDICATION,
+  COLUMN_KEYS.CHRONIC_ACUTE,
+  COLUMN_KEYS.COMPETITOR_BRANDS,
+  COLUMN_KEYS.DEAL_TYPE,
+  COLUMN_KEYS.SELLER,
+  COLUMN_KEYS.LAUNCH_TYPE,
+];
+
+const normEnrichKey = (s) =>
+  String(s ?? '').toLowerCase().replace(/[®™]/g, '').replace(/\s+/g, ' ').trim();
+const enrichValueBlank = (v) => {
+  if (v == null) return true;
+  if (typeof v === 'number') return false;
+  const s = String(v).trim().toLowerCase();
+  return s === '' || s === '-' || s === '—' || s === 'n/a' || s === 'null';
+};
+
+export function overlayEnrichment(rows, enrichmentRaw) {
+  if (!Array.isArray(enrichmentRaw) || enrichmentRaw.length === 0) return rows;
+  const mapped = enrichmentRaw.filter((r) => !isJunkScrapedRow(r)).map(fromScrapedRow);
+
+  const out = rows.map((r) => ({ ...r })); // clone so FILL can mutate safely
+  const indexByBrandBuyer = new Map();
+  out.forEach((r, i) => {
+    const k = `${normEnrichKey(r[COLUMN_KEYS.BRAND])}|${normEnrichKey(r[COLUMN_KEYS.BUYER])}`;
+    if (!indexByBrandBuyer.has(k)) indexByBrandBuyer.set(k, i);
+  });
+
+  const appends = [];
+  const appendedKeys = new Set();
+  for (const e of mapped) {
+    const brand = normEnrichKey(e[COLUMN_KEYS.BRAND]);
+    if (!brand) continue;
+    const k = `${brand}|${normEnrichKey(e[COLUMN_KEYS.BUYER])}`;
+    if (indexByBrandBuyer.has(k)) {
+      const tgt = out[indexByBrandBuyer.get(k)];
+      for (const f of ENRICH_FILLABLE_FIELDS) {
+        if (enrichValueBlank(tgt[f]) && !enrichValueBlank(e[f])) tgt[f] = e[f];
+      }
+    } else if (!appendedKeys.has(k)) {
+      appendedKeys.add(k);
+      appends.push(e);
+    }
+  }
+  return [...out, ...appends];
+}
+
+// ──────────────────────────────────────────────────────────────────────────
 // Acquisition parent/child grouping
 //
 // Some acquisitions are stored as a parent row + per-brand child rows
