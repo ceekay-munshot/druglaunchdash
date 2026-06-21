@@ -91,10 +91,12 @@ async function fetchWithTimeout(url, opts = {}, ms = 30000) {
 // Core Scrape.do call. render=false (1 credit, cheapest) by default; geoCode
 // routes through an India IP when BSE blocks foreign datacenters; customHeaders
 // forwards Referer/Origin so BSE's API accepts the request.
-async function scrapedo(targetUrl, { geoCode = null, headers = {}, binary = false, timeoutMs = 30000 } = {}) {
+async function scrapedo(targetUrl, { geoCode = null, headers = {}, binary = false, timeoutMs = 30000, render = false, superProxy = false } = {}) {
   if (!SCRAPEDO_API_KEY) throw new Error('SCRAPEDO_API_KEY missing');
   const params = new URLSearchParams({ token: SCRAPEDO_API_KEY, url: targetUrl });
   if (geoCode) params.set('geoCode', geoCode);
+  if (render) params.set('render', 'true');
+  if (superProxy) params.set('super', 'true'); // residential proxy (more credits, passes Akamai)
   const fwd = Object.keys(headers).length > 0;
   if (fwd) params.set('customHeaders', 'true');
 
@@ -242,131 +244,124 @@ async function chatJson({ endpoint, key, model, prompt }) {
 // ════════════════════════════════════════════════════════════════════════════
 // PROBE
 // ════════════════════════════════════════════════════════════════════════════
+const UA =
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36';
+
 async function probe() {
   banner('KEY PRESENCE');
-  for (const [k, v] of Object.entries({
-    SCRAPEDO_API_KEY,
-    GEMINI_API_KEY,
-    GROQ_API_KEY,
-    MISTRAL_API_KEY,
-  })) {
+  for (const [k, v] of Object.entries({ SCRAPEDO_API_KEY, GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY })) {
     console.log(`  ${k.padEnd(18)} ${v ? `set (${v.length} chars)` : '✖ MISSING'}`);
   }
 
-  // ── Step 1: reachability spot-check (all 14 codes already verified 14/14) ──
-  banner('STEP 1 — Scrape.do → BSE reachability (spot-check 3 scrips)');
-  let okCodes = 0;
-  for (const c of COMPANIES.slice(0, 3)) {
-    const r = await bseGet(bseHeaderUrl(c.scrip));
-    if (!r) {
-      console.log(`  ✖ ${c.name.padEnd(20)} ${c.scrip} → no response`);
-      continue;
-    }
-    let ltp = '?';
-    try { ltp = JSON.parse(r.body)?.CurrRate?.LTP ?? '?'; } catch { ltp = snippet(r.body, 60); }
-    okCodes += 1;
-    console.log(`  ✓ ${c.name.padEnd(20)} ${c.scrip} → LTP ${ltp}  [${r.geo || 'no-geo'}]`);
-    await sleep(400);
-  }
-  console.log(`\n  reachable: ${okCodes}/3 · locked geo: ${LOCKED_GEO === undefined ? '(none)' : LOCKED_GEO || 'no-geo'}`);
-
-  // ── Step 2: BSE announcements API — RAW diagnosis of the empty result ──────
-  banner('STEP 2 — BSE announcements (AnnGetData) — RAW diagnosis for Sun Pharma');
+  // ── Step A: crack AnnGetData — try proxy modes until one returns a Table ───
+  // getScripHeaderData works on no-geo but AnnGetData returns "No Record Found!".
+  // Likely an Akamai/geo soft-block on this endpoint, so vary the Scrape.do
+  // proxy (India geo / residential / JS render) on identical params.
+  banner('STEP A — AnnGetData proxy-mode matrix (Sun Pharma, 1y window)');
   const to = new Date();
-  const from = new Date(Date.now() - 180 * 86400000);
-  let firstPdfAttachment = null;
-  const annVariants = [
-    { label: 'with dates (YYYYMMDD)', url: bseAnnUrl('524715', yyyymmdd(from), yyyymmdd(to)) },
-    {
-      label: 'empty dates',
-      url: 'https://api.bseindia.com/BseIndiaAPI/api/AnnGetData/w?pageno=1&strCat=-1&strPrevDate=&strScrip=524715&strSearch=P&strToDate=&strType=C',
-    },
+  const from = new Date(Date.now() - 365 * 86400000);
+  const annUrl = bseAnnUrl('524715', yyyymmdd(from), yyyymmdd(to));
+  const headers = { Referer: 'https://www.bseindia.com/', Origin: 'https://www.bseindia.com', 'User-Agent': UA };
+  const modes = [
+    { label: 'no-geo', opts: {} },
+    { label: 'geo=in', opts: { geoCode: 'in' } },
+    { label: 'super (residential)', opts: { superProxy: true } },
+    { label: 'super + geo=in', opts: { superProxy: true, geoCode: 'in' } },
+    { label: 'render=true', opts: { render: true } },
   ];
-  for (const v of annVariants) {
-    console.log(`  • variant: ${v.label}`);
-    const r = await bseGet(v.url);
-    if (!r) {
-      console.log('    ✖ no response');
-      continue;
-    }
-    console.log(`    raw[0..500]: ${snippet(r.body, 500)}`);
+  let firstPdfAttachment = null;
+  let winningMode = null;
+  for (const m of modes) {
     try {
-      const j = JSON.parse(r.body);
-      const rows = Array.isArray(j?.Table) ? j.Table : [];
-      console.log(`    parsed Table rows: ${rows.length} · top-level keys: ${Object.keys(j).join(', ')}`);
-      for (const a of rows.slice(0, 6)) {
-        const att = a.ATTACHMENTNAME || '—';
-        console.log(`      - [${a.CATEGORYNAME || a.NEWS_DT || '?'}] ${snippet(a.HEADLINE || a.NEWSSUB, 80)} (pdf: ${att})`);
-        if (!firstPdfAttachment && /\.pdf$/i.test(att)) firstPdfAttachment = att;
-      }
+      const r = await scrapedo(annUrl, { ...m.opts, headers, timeoutMs: SCRAPEDO_TIMEOUT_MS });
+      let rows = 0;
+      let note = snippet(r.body, 120);
+      try {
+        const j = JSON.parse(r.body);
+        if (Array.isArray(j?.Table)) {
+          rows = j.Table.length;
+          note = `Table rows=${rows}`;
+          if (rows && !winningMode) {
+            winningMode = m.label;
+            for (const a of j.Table.slice(0, 5)) {
+              const att = a.ATTACHMENTNAME || '—';
+              console.log(`        - [${a.CATEGORYNAME || '?'}] ${snippet(a.NEWSSUB || a.HEADLINE, 70)} (pdf: ${att})`);
+              if (!firstPdfAttachment && /\.pdf$/i.test(att)) firstPdfAttachment = att;
+            }
+          }
+        }
+      } catch {}
+      console.log(`  • ${m.label.padEnd(20)} status ${r.status} · ${note}`);
     } catch (e) {
-      console.log(`    (not JSON: ${e.message})`);
+      console.log(`  • ${m.label.padEnd(20)} ${e.name === 'AbortError' ? 'timed out' : 'threw ' + e.message}`);
     }
-    await sleep(500);
+    await sleep(800);
   }
+  console.log(`\n  AnnGetData winning mode: ${winningMode || 'NONE — params likely wrong, will test param matrix next'}`);
 
-  // ── Step 3: Gemini PDF extraction ─────────────────────────────────────────
-  // Decoupled from Step 2: prefer a real BSE filing if one surfaced, else fall
-  // back to a KNOWN Sun Pharma press-release PDF so PDF-extraction is validated
-  // even while AnnGetData is being fixed.
-  banner('STEP 3 — Gemini PDF extraction (BSE filing if found, else known PR)');
+  // ── Step B: the real extraction path — PDF → unpdf text → Groq/Mistral ─────
+  // Gemini's free tier 429s instantly, so text-extract the PDF locally (unpdf,
+  // pure JS) and feed the FULL text to Groq (primary) then Mistral (fallback).
+  banner('STEP B — PDF → unpdf text → Groq/Mistral full extraction');
   const KNOWN_PDF = 'https://sunpharma.com/wp-content/uploads/2026/01/UNLOXCYT-Commercial-Launch-Press-Release.pdf';
   try {
+    // fetch a real BSE filing if Step A surfaced one, else the known PR PDF
     let pdfBuf = null;
     let srcLabel = '';
     if (firstPdfAttachment) {
-      srcLabel = `BSE: ${firstPdfAttachment}`;
-      const r = await bseGet(bsePdfUrl(firstPdfAttachment), { binary: true });
+      srcLabel = `BSE filing ${firstPdfAttachment}`;
+      const r = await scrapedo(bsePdfUrl(firstPdfAttachment), { binary: true, headers, geoCode: 'in', timeoutMs: SCRAPEDO_TIMEOUT_MS });
       if (r?.buf?.length) pdfBuf = r.buf;
     }
     if (!pdfBuf) {
-      srcLabel = `known PR: ${KNOWN_PDF.split('/').pop()}`;
+      srcLabel = `known PR ${KNOWN_PDF.split('/').pop()}`;
       const r = await scrapedo(KNOWN_PDF, { binary: true, timeoutMs: SCRAPEDO_TIMEOUT_MS });
       if (r?.status === 200 && r?.buf?.length) pdfBuf = r.buf;
-      else console.log(`    scrape.do status ${r?.status}, ${r?.buf?.length || 0} bytes`);
     }
     if (!pdfBuf) {
       console.log('  ✖ could not fetch any PDF');
     } else {
       console.log(`  ✓ fetched ${pdfBuf.length} bytes (${srcLabel})`);
-      const out = await geminiExtractFromPdf(pdfBuf.toString('base64'));
-      console.log(`  ✓ Gemini (${GEMINI_MODEL}) extracted:`);
-      console.log('    ' + snippet(out, 700));
+      const { extractText, getDocumentProxy } = await import('unpdf');
+      const doc = await getDocumentProxy(new Uint8Array(pdfBuf));
+      const { text, totalPages } = await extractText(doc, { mergePages: true });
+      console.log(`  ✓ unpdf: ${totalPages} pages, ${text.length} chars · sample: ${snippet(text, 220)}`);
+
+      const exPrompt = `${EXTRACTION_PROMPT}\n\nDOCUMENT TEXT:\n${text.slice(0, 14000)}`;
+      try {
+        const g = await chatJson({ endpoint: 'https://api.groq.com/openai/v1/chat/completions', key: GROQ_API_KEY, model: GROQ_MODEL, prompt: exPrompt });
+        console.log(`  ✓ Groq extraction: ${snippet(g, 600)}`);
+      } catch (e) {
+        console.log(`  ✖ Groq extraction failed: ${e.message}`);
+      }
+      try {
+        const m = await chatJson({ endpoint: 'https://api.mistral.ai/v1/chat/completions', key: MISTRAL_API_KEY, model: MISTRAL_MODEL, prompt: exPrompt });
+        console.log(`  ✓ Mistral extraction: ${snippet(m, 600)}`);
+      } catch (e) {
+        console.log(`  ✖ Mistral extraction failed: ${e.message}`);
+      }
     }
   } catch (e) {
-    console.log(`  ✖ PDF→Gemini failed: ${e.message}`);
+    console.log(`  ✖ PDF→text→LLM failed: ${e.message}`);
   }
 
-  // ── Step 4: Groq + Mistral pings ──────────────────────────────────────────
-  banner('STEP 4 — Groq + Mistral JSON-mode pings (fallback extractors)');
-  const pingPrompt =
-    'From this text return JSON {"brand":..,"molecule":..,"therapy":..}: ' +
-    '"Acme Pharma launched Glycomet-GP, a metformin + glimepiride combination for type 2 diabetes."';
-  try {
-    const g = await chatJson({
-      endpoint: 'https://api.groq.com/openai/v1/chat/completions',
-      key: GROQ_API_KEY,
-      model: GROQ_MODEL,
-      prompt: pingPrompt,
-    });
-    console.log(`  ✓ Groq (${GROQ_MODEL}): ${snippet(g, 200)}`);
-  } catch (e) {
-    console.log(`  ✖ Groq failed: ${e.message}`);
-  }
-  try {
-    const m = await chatJson({
-      endpoint: 'https://api.mistral.ai/v1/chat/completions',
-      key: MISTRAL_API_KEY,
-      model: MISTRAL_MODEL,
-      prompt: pingPrompt,
-    });
-    console.log(`  ✓ Mistral (${MISTRAL_MODEL}): ${snippet(m, 200)}`);
-  } catch (e) {
-    console.log(`  ✖ Mistral failed: ${e.message}`);
+  // ── Step C: does ANY Gemini model have free quota? (optional vision fallback) ─
+  banner('STEP C — Gemini free-tier model check (optional scanned-PDF fallback)');
+  for (const model of ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-2.5-flash-lite', 'gemini-1.5-flash']) {
+    try {
+      const res = await fetchWithTimeout(
+        `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${GEMINI_API_KEY}`,
+        { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ contents: [{ parts: [{ text: 'reply with the word ok' }] }] }) },
+        20000
+      );
+      const t = await res.text();
+      console.log(`  • ${model.padEnd(22)} ${res.status === 200 ? '✓ free quota OK' : `status ${res.status}: ${snippet(t, 90)}`}`);
+    } catch (e) {
+      console.log(`  • ${model.padEnd(22)} ${e.name === 'AbortError' ? 'timed out' : 'threw ' + e.message}`);
+    }
   }
 
   banner('PROBE COMPLETE');
-  console.log('  Review each step above. ✓ across all four services = ready for Phase 2.\n');
 }
 
 // ── entry ───────────────────────────────────────────────────────────────────

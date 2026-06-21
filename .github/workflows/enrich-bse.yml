@@ -36,6 +36,9 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Install unpdf (PDF text extraction)
+        run: npm install unpdf --no-save --no-audit --no-fund
+
       - name: Run enrichment probe
         env:
           SCRAPEDO_API_KEY: ${{ secrets.SCRAPEDO_API_KEY }}
