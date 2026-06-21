@@ -91,12 +91,13 @@ async function fetchWithTimeout(url, opts = {}, ms = 30000) {
 // Core Scrape.do call. render=false (1 credit, cheapest) by default; geoCode
 // routes through an India IP when BSE blocks foreign datacenters; customHeaders
 // forwards Referer/Origin so BSE's API accepts the request.
-async function scrapedo(targetUrl, { geoCode = null, headers = {}, binary = false, timeoutMs = 30000, render = false, superProxy = false } = {}) {
+async function scrapedo(targetUrl, { geoCode = null, headers = {}, binary = false, timeoutMs = 30000, render = false, superProxy = false, session = null } = {}) {
   if (!SCRAPEDO_API_KEY) throw new Error('SCRAPEDO_API_KEY missing');
   const params = new URLSearchParams({ token: SCRAPEDO_API_KEY, url: targetUrl });
   if (geoCode) params.set('geoCode', geoCode);
   if (render) params.set('render', 'true');
   if (superProxy) params.set('super', 'true'); // residential proxy (more credits, passes Akamai)
+  if (session) params.set('sessionId', session); // sticky IP+cookies for priming flows
   const fwd = Object.keys(headers).length > 0;
   if (fwd) params.set('customHeaders', 'true');
 
@@ -265,78 +266,73 @@ async function probe() {
   const headers = { Referer: 'https://www.bseindia.com/', Origin: 'https://www.bseindia.com', 'User-Agent': UA };
   const now = new Date();
   const ymd = (d) => yyyymmdd(d);
-  const dash = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
   const y1 = new Date(Date.now() - 365 * 86400000);
-  const d7 = new Date(Date.now() - 7 * 86400000);
+  let candidatePdf = null; // full URL of a PDF to end-to-end test in Step C
 
-  // ── Step A: PARAM matrix — every proxy mode returned "No Record Found!", so
-  // it's the params. Vary strSearch / strType / dates / scope until rows appear.
-  banner('STEP A — AnnGetData PARAM matrix (find params that return rows)');
-  // Prior runs all returned zero rows but logging masked empty-Table vs the
-  // "No Record Found!" string. Print the RAW body, and test DATE-ORDER swaps:
-  // if BSE does BETWEEN strToDate AND strPrevDate, then prev=old/to=new yields
-  // an empty range and every query comes back empty.
-  const today = ymd(now);
-  const d3 = ymd(new Date(Date.now() - 3 * 86400000));
-  const variants = [
-    { label: 'prev=old,to=new (ctrl)', url: annUrlP({ prev: ymd(y1), to: today }) },
-    { label: 'prev=new,to=old (SWAP)', url: annUrlP({ prev: today, to: ymd(y1) }) },
-    { label: 'SWAP search=empty', url: annUrlP({ prev: today, to: ymd(y1), search: '' }) },
-    { label: 'SWAP dashed', url: annUrlP({ prev: dash(now), to: dash(y1) }) },
-    { label: 'single-day d-3', url: annUrlP({ prev: d3, to: d3 }) },
-    { label: 'SWAP general noscrip', url: annUrlP({ scrip: '', prev: today, to: ymd(d7) }) },
-  ];
-  let winner = null;
-  for (const v of variants) {
-    try {
-      const r = await scrapedo(v.url, { headers, timeoutMs: SCRAPEDO_TIMEOUT_MS });
-      let rows = [];
-      try {
-        const j = JSON.parse(r.body);
-        if (Array.isArray(j?.Table)) rows = j.Table;
-      } catch {}
-      console.log(`  • ${v.label.padEnd(24)} status ${r.status} · rows=${rows.length} · raw: ${snippet(r.body, 130)}`);
-      if (rows.length && !winner) {
-        winner = { ...v, rows };
-        console.log(`      keys: ${Object.keys(rows[0]).join(',')}`);
+  // ── Step A: BSE cookie-priming — render the site on a sticky session to bank
+  // an Akamai cookie, then hit AnnGetData on the SAME session. This is the usual
+  // way past the "No Record Found!" decoy that BSE serves cold/proxy callers.
+  banner('STEP A — BSE cookie-prime (sticky session) then AnnGetData');
+  try {
+    const sid = String(Math.floor(Math.random() * 1e6));
+    const prime = await scrapedo('https://www.bseindia.com/corporates/ann.html', { render: true, session: sid, geoCode: 'in', timeoutMs: SCRAPEDO_TIMEOUT_MS });
+    console.log(`  prime: status ${prime.status}, ${prime.body?.length || 0} bytes`);
+    const annUrl = annUrlP({ prev: ymd(y1), to: ymd(now) });
+    const r = await scrapedo(annUrl, { headers, session: sid, geoCode: 'in', timeoutMs: SCRAPEDO_TIMEOUT_MS });
+    let rows = [];
+    try { const j = JSON.parse(r.body); if (Array.isArray(j?.Table)) rows = j.Table; } catch {}
+    console.log(`  AnnGetData: status ${r.status} · rows=${rows.length} · raw: ${snippet(r.body, 130)}`);
+    if (rows.length) {
+      console.log(`  ✓ keys: ${Object.keys(rows[0]).join(',')}`);
+      for (const a of rows.slice(0, 5)) {
+        const att = a.ATTACHMENTNAME || '—';
+        console.log(`    - ${a.NEWS_DT || '?'} [${a.CATEGORYNAME || '?'}] ${snippet(a.NEWSSUB || a.HEADLINE, 70)} (pdf: ${att})`);
+        if (!candidatePdf && /\.pdf$/i.test(att)) candidatePdf = bsePdfUrl(att);
       }
+    }
+  } catch (e) {
+    console.log(`  ✖ BSE prime flow failed: ${e.name === 'AbortError' ? 'timed out' : e.message}`);
+  }
+
+  // ── Step B: Screener.in — aggregates BSE/NSE filings, scraper-friendly. Grep
+  // the company page for announcement PDF links (BSE AttachLive / NSE archives).
+  banner('STEP B — Screener.in company page (announcement links)');
+  for (const url of ['https://www.screener.in/company/524715/', 'https://www.screener.in/company/SUNPHARMA/']) {
+    try {
+      const r = await scrapedo(url, { timeoutMs: SCRAPEDO_TIMEOUT_MS });
+      const body = r.body || '';
+      const pdfs = [...body.matchAll(/https?:\/\/[^"'\s)]+?\.pdf/gi)].map((m) => m[0]);
+      const attach = pdfs.filter((u) => /AttachLive|nsearchives|archives\.nse/i.test(u));
+      const hasAnn = /announcement/i.test(body);
+      console.log(`  • ${url}`);
+      console.log(`      status ${r.status}, ${body.length} bytes · "announcement" present: ${hasAnn} · pdf links: ${pdfs.length} (filing-like: ${attach.length})`);
+      for (const u of [...new Set(attach.length ? attach : pdfs)].slice(0, 4)) console.log(`        ${u}`);
+      if (!candidatePdf && (attach[0] || pdfs[0])) candidatePdf = attach[0] || pdfs[0];
+      if (r.status === 200) break;
     } catch (e) {
-      console.log(`  • ${v.label.padEnd(24)} ${e.name === 'AbortError' ? 'timed out' : 'threw ' + e.message}`);
+      console.log(`  • ${url} → ${e.name === 'AbortError' ? 'timed out' : 'threw ' + e.message}`);
     }
     await sleep(700);
   }
 
-  if (!winner) {
-    console.log('\n  ✖ no param variant returned rows — need a different endpoint/source.');
-    banner('PROBE COMPLETE');
-    return;
-  }
-
-  console.log(`\n  ✓ WINNER: "${winner.label}" → ${winner.rows.length} rows`);
-  let firstPdf = null;
-  for (const a of winner.rows.slice(0, 8)) {
-    const att = a.ATTACHMENTNAME || '—';
-    console.log(`    - ${a.NEWS_DT || '?'} [${a.CATEGORYNAME || '?'}] ${snippet(a.NEWSSUB || a.HEADLINE, 80)} (pdf: ${att})`);
-    if (!firstPdf && att && /\.pdf$/i.test(att)) firstPdf = att;
-  }
-
-  // ── Step B: REAL BSE filing → unpdf → Groq (closes the loop on live data) ──
-  banner('STEP B — real BSE filing → unpdf → Groq extraction');
-  if (!firstPdf) {
-    console.log('  (no PDF attachment among winner rows)');
+  // ── Step C: end-to-end on whichever source yielded a PDF → unpdf → Groq ─────
+  banner('STEP C — end-to-end: fetch PDF → unpdf → Groq');
+  if (!candidatePdf) {
+    console.log('  (no candidate PDF from Step A or B)');
     banner('PROBE COMPLETE');
     return;
   }
   try {
-    const r = await scrapedo(bsePdfUrl(firstPdf), { binary: true, headers, geoCode: 'in', timeoutMs: SCRAPEDO_TIMEOUT_MS });
+    console.log(`  candidate: ${candidatePdf}`);
+    const r = await scrapedo(candidatePdf, { binary: true, headers, geoCode: 'in', timeoutMs: SCRAPEDO_TIMEOUT_MS });
     if (!r?.buf?.length) {
       console.log(`  ✖ PDF fetch: status ${r?.status}, ${r?.buf?.length || 0} bytes`);
     } else {
-      console.log(`  ✓ fetched ${r.buf.length} bytes (${firstPdf})`);
+      console.log(`  ✓ fetched ${r.buf.length} bytes`);
       const { extractText, getDocumentProxy } = await import('unpdf');
       const doc = await getDocumentProxy(new Uint8Array(r.buf));
       const { text, totalPages } = await extractText(doc, { mergePages: true });
-      console.log(`  ✓ unpdf: ${totalPages} pages, ${text.length} chars · sample: ${snippet(text, 200)}`);
+      console.log(`  ✓ unpdf: ${totalPages} pages, ${text.length} chars · sample: ${snippet(text, 180)}`);
       const g = await chatJson({
         endpoint: 'https://api.groq.com/openai/v1/chat/completions',
         key: GROQ_API_KEY,
