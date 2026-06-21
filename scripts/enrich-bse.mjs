@@ -115,9 +115,11 @@ async function scrapedo(targetUrl, { geoCode = null, headers = {}, binary = fals
 // makes ONE request instead of retrying no-geo→geo (halves credits + time).
 let LOCKED_GEO; // undefined = not yet determined
 
-// BSE fetch that auto-adapts then locks: try the locked mode if known; else try
-// no-geo first (cheapest), fall back to India geo-routing, and remember whichever
-// worked. Per-call timeouts mean a dead endpoint fails fast instead of hanging.
+// Scrape.do against BSE runs 30-60s/call and throws the odd 502, so use a
+// generous timeout and retry transient failures twice per mode. Auto-adapts
+// then locks the working geo mode: try the locked mode if known, else no-geo
+// first (cheapest) then India geo-routing, remembering whichever worked.
+const SCRAPEDO_TIMEOUT_MS = 90000;
 async function bseGet(url, { binary = false } = {}) {
   const headers = {
     Referer: 'https://www.bseindia.com/',
@@ -127,19 +129,23 @@ async function bseGet(url, { binary = false } = {}) {
   };
   const modes = LOCKED_GEO !== undefined ? [LOCKED_GEO] : [null, 'in'];
   for (const geo of modes) {
-    try {
-      const r = await scrapedo(url, { geoCode: geo, headers, binary, timeoutMs: binary ? 45000 : 30000 });
-      const ok = r.status === 200 && (binary ? r.buf?.length > 0 : r.body && !looksLikeScrapedoError(r.body));
-      if (ok) {
-        if (LOCKED_GEO === undefined) LOCKED_GEO = geo; // lock on first success
-        return { ...r, geo };
+    for (let attempt = 1; attempt <= 2; attempt++) {
+      try {
+        const r = await scrapedo(url, { geoCode: geo, headers, binary, timeoutMs: SCRAPEDO_TIMEOUT_MS });
+        const ok = r.status === 200 && (binary ? r.buf?.length > 0 : r.body && !looksLikeScrapedoError(r.body));
+        if (ok) {
+          if (LOCKED_GEO === undefined) LOCKED_GEO = geo; // lock on first success
+          return { ...r, geo };
+        }
+        console.log(
+          `    ↳ ${geo || 'no-geo'} a${attempt}: status ${r.status}` +
+            (binary ? `, ${r.buf?.length || 0} bytes` : `, body=${snippet(r.body, 140)}`)
+        );
+        if (![429, 500, 502, 503, 504].includes(r.status)) break; // non-transient → next mode
+      } catch (e) {
+        console.log(`    ↳ ${geo || 'no-geo'} a${attempt}: ${e.name === 'AbortError' ? 'timed out' : 'threw ' + e.message}`);
       }
-      console.log(
-        `    ↳ ${geo || 'no-geo'}: status ${r.status}` +
-          (binary ? `, ${r.buf?.length || 0} bytes` : `, body=${snippet(r.body, 160)}`)
-      );
-    } catch (e) {
-      console.log(`    ↳ ${geo || 'no-geo'}: ${e.name === 'AbortError' ? 'timed out' : 'threw ' + e.message}`);
+      await sleep(1500 * attempt);
     }
   }
   return null;
@@ -247,73 +253,88 @@ async function probe() {
     console.log(`  ${k.padEnd(18)} ${v ? `set (${v.length} chars)` : '✖ MISSING'}`);
   }
 
-  // ── Step 1: Scrape.do → BSE scrip-code sanity ─────────────────────────────
-  banner('STEP 1 — Scrape.do reachability + BSE scrip codes (getScripHeaderData)');
-  let workingGeo = null;
+  // ── Step 1: reachability spot-check (all 14 codes already verified 14/14) ──
+  banner('STEP 1 — Scrape.do → BSE reachability (spot-check 3 scrips)');
   let okCodes = 0;
-  for (const c of COMPANIES) {
+  for (const c of COMPANIES.slice(0, 3)) {
     const r = await bseGet(bseHeaderUrl(c.scrip));
     if (!r) {
       console.log(`  ✖ ${c.name.padEnd(20)} ${c.scrip} → no response`);
       continue;
     }
-    workingGeo = r.geo;
-    let issuer = '?';
-    try {
-      const j = JSON.parse(r.body);
-      issuer = j?.Header?.[0]?.Scrip_Name || j?.Header?.[0]?.FullN || j?.Header?.[0]?.ISIN_NUMBER || JSON.stringify(j).slice(0, 80);
-    } catch {
-      issuer = snippet(r.body, 80);
-    }
+    let ltp = '?';
+    try { ltp = JSON.parse(r.body)?.CurrRate?.LTP ?? '?'; } catch { ltp = snippet(r.body, 60); }
     okCodes += 1;
-    console.log(`  ✓ ${c.name.padEnd(20)} ${c.scrip} → ${issuer}  [${r.geo || 'no-geo'}]`);
+    console.log(`  ✓ ${c.name.padEnd(20)} ${c.scrip} → LTP ${ltp}  [${r.geo || 'no-geo'}]`);
     await sleep(400);
   }
-  console.log(`\n  scrip codes resolved: ${okCodes}/${COMPANIES.length} · working mode: ${workingGeo || 'no-geo'}`);
+  console.log(`\n  reachable: ${okCodes}/3 · locked geo: ${LOCKED_GEO === undefined ? '(none)' : LOCKED_GEO || 'no-geo'}`);
 
-  // ── Step 2: BSE announcements API ─────────────────────────────────────────
-  banner('STEP 2 — BSE announcements (AnnGetData) for Sun Pharma, last 180 days');
+  // ── Step 2: BSE announcements API — RAW diagnosis of the empty result ──────
+  banner('STEP 2 — BSE announcements (AnnGetData) — RAW diagnosis for Sun Pharma');
   const to = new Date();
   const from = new Date(Date.now() - 180 * 86400000);
   let firstPdfAttachment = null;
-  try {
-    const r = await bseGet(bseAnnUrl('524715', yyyymmdd(from), yyyymmdd(to)));
+  const annVariants = [
+    { label: 'with dates (YYYYMMDD)', url: bseAnnUrl('524715', yyyymmdd(from), yyyymmdd(to)) },
+    {
+      label: 'empty dates',
+      url: 'https://api.bseindia.com/BseIndiaAPI/api/AnnGetData/w?pageno=1&strCat=-1&strPrevDate=&strScrip=524715&strSearch=P&strToDate=&strType=C',
+    },
+  ];
+  for (const v of annVariants) {
+    console.log(`  • variant: ${v.label}`);
+    const r = await bseGet(v.url);
     if (!r) {
-      console.log('  ✖ no response from AnnGetData');
-    } else {
+      console.log('    ✖ no response');
+      continue;
+    }
+    console.log(`    raw[0..500]: ${snippet(r.body, 500)}`);
+    try {
       const j = JSON.parse(r.body);
       const rows = Array.isArray(j?.Table) ? j.Table : [];
-      console.log(`  ✓ ${rows.length} announcements  [${r.geo || 'no-geo'}]`);
-      for (const a of rows.slice(0, 8)) {
+      console.log(`    parsed Table rows: ${rows.length} · top-level keys: ${Object.keys(j).join(', ')}`);
+      for (const a of rows.slice(0, 6)) {
         const att = a.ATTACHMENTNAME || '—';
-        console.log(`    • [${a.CATEGORYNAME || '?'}] ${snippet(a.HEADLINE || a.NEWSSUB, 90)}  (pdf: ${att})`);
-        if (!firstPdfAttachment && att && att !== '—' && /\.pdf$/i.test(att)) firstPdfAttachment = att;
-      }
-    }
-  } catch (e) {
-    console.log(`  ✖ AnnGetData failed: ${e.message}`);
-  }
-
-  // ── Step 3: PDF → Gemini extraction ───────────────────────────────────────
-  banner('STEP 3 — fetch one filing PDF + Gemini extraction');
-  if (!firstPdfAttachment) {
-    console.log('  (skipped — no PDF attachment found in Step 2)');
-  } else {
-    try {
-      console.log(`  fetching PDF: ${firstPdfAttachment}`);
-      const pdf = await bseGet(bsePdfUrl(firstPdfAttachment), { binary: true });
-      if (!pdf || !pdf.buf?.length) {
-        console.log('  ✖ PDF fetch returned no bytes');
-      } else {
-        console.log(`  ✓ PDF ${pdf.buf.length} bytes [${pdf.geo || 'no-geo'}]`);
-        const b64 = pdf.buf.toString('base64');
-        const out = await geminiExtractFromPdf(b64);
-        console.log(`  ✓ Gemini (${GEMINI_MODEL}) returned:`);
-        console.log('    ' + snippet(out, 600));
+        console.log(`      - [${a.CATEGORYNAME || a.NEWS_DT || '?'}] ${snippet(a.HEADLINE || a.NEWSSUB, 80)} (pdf: ${att})`);
+        if (!firstPdfAttachment && /\.pdf$/i.test(att)) firstPdfAttachment = att;
       }
     } catch (e) {
-      console.log(`  ✖ PDF→Gemini failed: ${e.message}`);
+      console.log(`    (not JSON: ${e.message})`);
     }
+    await sleep(500);
+  }
+
+  // ── Step 3: Gemini PDF extraction ─────────────────────────────────────────
+  // Decoupled from Step 2: prefer a real BSE filing if one surfaced, else fall
+  // back to a KNOWN Sun Pharma press-release PDF so PDF-extraction is validated
+  // even while AnnGetData is being fixed.
+  banner('STEP 3 — Gemini PDF extraction (BSE filing if found, else known PR)');
+  const KNOWN_PDF = 'https://sunpharma.com/wp-content/uploads/2026/01/UNLOXCYT-Commercial-Launch-Press-Release.pdf';
+  try {
+    let pdfBuf = null;
+    let srcLabel = '';
+    if (firstPdfAttachment) {
+      srcLabel = `BSE: ${firstPdfAttachment}`;
+      const r = await bseGet(bsePdfUrl(firstPdfAttachment), { binary: true });
+      if (r?.buf?.length) pdfBuf = r.buf;
+    }
+    if (!pdfBuf) {
+      srcLabel = `known PR: ${KNOWN_PDF.split('/').pop()}`;
+      const r = await scrapedo(KNOWN_PDF, { binary: true, timeoutMs: SCRAPEDO_TIMEOUT_MS });
+      if (r?.status === 200 && r?.buf?.length) pdfBuf = r.buf;
+      else console.log(`    scrape.do status ${r?.status}, ${r?.buf?.length || 0} bytes`);
+    }
+    if (!pdfBuf) {
+      console.log('  ✖ could not fetch any PDF');
+    } else {
+      console.log(`  ✓ fetched ${pdfBuf.length} bytes (${srcLabel})`);
+      const out = await geminiExtractFromPdf(pdfBuf.toString('base64'));
+      console.log(`  ✓ Gemini (${GEMINI_MODEL}) extracted:`);
+      console.log('    ' + snippet(out, 700));
+    }
+  } catch (e) {
+    console.log(`  ✖ PDF→Gemini failed: ${e.message}`);
   }
 
   // ── Step 4: Groq + Mistral pings ──────────────────────────────────────────
