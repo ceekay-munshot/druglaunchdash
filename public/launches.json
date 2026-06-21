@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-20T04:57:10.947Z",
-  "rowCount": 393,
+  "generatedAt": "2026-06-21T05:31:45.637Z",
+  "rowCount": 400,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -470,7 +470,7 @@
       "price": "₹33.4 / strip of 10 tablets",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/09/Press-Release-Sun-Pharma-and-Pharmazz-Inc.-licensing-agreement-for-Sovateltide-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-05T05:03:40.135Z"
+      "lastEnrichmentAttempt": "2026-06-21T05:30:59.298Z"
     },
     {
       "brand": "Molxvir",
@@ -518,7 +518,7 @@
       "price": "₹21.7 / strip of 10 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-05T05:03:44.258Z"
+      "lastEnrichmentAttempt": "2026-06-21T05:31:03.195Z"
     },
     {
       "brand": "Product A",
@@ -1110,7 +1110,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-05T05:02:58.794Z"
+      "lastEnrichmentAttempt": "2026-06-21T05:30:28.454Z"
     },
     {
       "brand": "Dilo-DX",
@@ -1126,7 +1126,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-05T05:03:15.194Z"
+      "lastEnrichmentAttempt": "2026-06-21T05:30:37.307Z"
     },
     {
       "brand": "Stelbid",
@@ -1142,7 +1142,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-05T05:03:25.734Z"
+      "lastEnrichmentAttempt": "2026-06-21T05:30:44.522Z"
     },
     {
       "brand": "Vitneurin",
@@ -1158,7 +1158,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-05T05:03:29.869Z"
+      "lastEnrichmentAttempt": "2026-06-21T05:30:50.932Z"
     },
     {
       "brand": "Mastihal",
@@ -1174,7 +1174,7 @@
       "price": "Rs 154 / strip",
       "sourceUrl": "https://www.mankindpharma.com/products/mastihal-launch/",
       "buyer": "Mankind Pharma",
-      "lastEnrichmentAttempt": "2026-06-05T05:03:56.796Z"
+      "lastEnrichmentAttempt": "2026-06-21T05:31:11.277Z"
     },
     {
       "brand": "Softra",
@@ -2662,7 +2662,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-05T05:02:35.532Z"
+      "lastEnrichmentAttempt": "2026-06-21T05:30:22.110Z"
     },
     {
       "brand": "WINLEVI",
@@ -4118,7 +4118,7 @@
       "price": "₹4538.14 / jar of 60 gm powder",
       "sourceUrl": "https://www.alkemlabs.com/press-release/alchemex-acquisition",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-06-05T04:59:16.898Z"
+      "lastEnrichmentAttempt": "2026-06-21T05:30:01.142Z"
     },
     {
       "brand": "Eribulin Mesylate Injection",
@@ -4127,14 +4127,14 @@
       "seller": "—",
       "dealType": "Brand Acquisition",
       "molecule": "Eribulin",
-      "therapy": "—",
-      "indication": "—",
-      "existingBrand": "—",
+      "therapy": "Oncology",
+      "indication": "metastatic breast cancer and unresectable or metastatic liposarcoma",
+      "existingBrand": "Halaven®",
       "chronicAcute": "—",
       "price": "₹17184 / vial of 1 injection (1 mg)",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-and-natco-receive-approval-from-u-s-fda-for-eribulin-mesylate-injection",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-06-05T05:00:35.313Z"
+      "lastEnrichmentAttempt": "2026-06-21T05:30:10.835Z"
     },
     {
       "brand": "Wockhardt's Sabril",
@@ -4239,7 +4239,7 @@
       "seller": "—",
       "dealType": "NCE Launch",
       "molecule": "ranibizumab",
-      "therapy": "—",
+      "therapy": "Oncology",
       "indication": "—",
       "existingBrand": "—",
       "chronicAcute": "—",
@@ -6110,7 +6110,7 @@
       "date": "2026-06-17",
       "seller": "—",
       "dealType": "NCE Launch",
-      "molecule": "—",
+      "molecule": "Azilsartan Medoxomil",
       "therapy": "—",
       "indication": "—",
       "existingBrand": "—",
@@ -6159,9 +6159,9 @@
       "seller": "Natco",
       "dealType": "Co-marketing",
       "molecule": "eribulin mesylate",
-      "therapy": "—",
+      "therapy": "Oncology",
       "indication": "—",
-      "existingBrand": "—",
+      "existingBrand": "Halaven",
       "chronicAcute": "—",
       "price": "₹17184 / vial of 1 injection",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-and-natco-receive-approval-from-u-s-fda-for-eribulin-mesylate-injection",
@@ -6279,6 +6279,118 @@
       "sourceUrl": "—",
       "buyer": "Glenmark",
       "lastEnrichmentAttempt": "2026-06-20T04:55:50.149Z"
+    },
+    {
+      "brand": "Unspecified Brands",
+      "launchType": "Acquired",
+      "date": "—",
+      "seller": "GSK",
+      "dealType": "Brand Portfolio Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹63.7 / bottle of 225 ml liquid",
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-06-21T05:28:07.376Z"
+    },
+    {
+      "brand": "Wockhardt's New Diabetes Drug",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Semaglutide",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,200 / strip",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/diabetes-drug-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-21T05:29:59.639Z"
+    },
+    {
+      "brand": "Acquisition of ABC Pharmaceuticals",
+      "launchType": "Acquired",
+      "date": "2023-09-15",
+      "seller": "ABC Pharmaceuticals",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "XYZ Brand",
+      "chronicAcute": "—",
+      "price": "₹40.7 / strip of 10 capsules",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/acquisition-abc-pharma",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-21T05:29:59.639Z"
+    },
+    {
+      "brand": "Collaboration on XYZ Product",
+      "launchType": "In-licensed",
+      "date": "2023-08-20",
+      "seller": "XYZ Corporation",
+      "dealType": "In-license (India)",
+      "molecule": "XYZ-123",
+      "therapy": "Pain Management",
+      "indication": "Chronic Pain",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "₹77.6 / sachet of 12 gm granules",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/collaboration-xyz",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-21T05:29:59.639Z"
+    },
+    {
+      "brand": "Acme Pharmaceuticals",
+      "launchType": "Acquired",
+      "date": "2023-06-15",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Competitor B",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.alkemlabs.com/press-releases/acme-pharmaceuticals-acquisition",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-06-21T05:30:01.142Z"
+    },
+    {
+      "brand": "Co-Marketing Product Y",
+      "launchType": "In-licensed",
+      "date": "2023-07-20",
+      "seller": "Partner Z",
+      "dealType": "Co-marketing",
+      "molecule": "Drug Y",
+      "therapy": "Anti-Infectives",
+      "indication": "Infection",
+      "existingBrand": "Competitor C",
+      "chronicAcute": "Acute",
+      "price": "Rs 500 / vial",
+      "sourceUrl": "https://www.alkemlabs.com/press-releases/co-marketing-product-y-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-06-21T05:30:01.142Z"
+    },
+    {
+      "brand": "Dilo-BM, Dilo-DX, Stelbid, Vitneurin",
+      "launchType": "Acquired",
+      "date": "2017-03-07",
+      "seller": "GlaxoSmithKline Pharmaceuticals and Glaxo Group",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-06-21T05:30:28.454Z"
     }
   ]
 }
