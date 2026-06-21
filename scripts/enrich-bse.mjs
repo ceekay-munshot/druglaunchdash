@@ -1,84 +1,94 @@
 #!/usr/bin/env node
 /**
- * scripts/enrich-bse.mjs  —  BSE-based field enrichment (FREE-TIER ONLY)
+ * scripts/enrich-bse.mjs — free-tier launch-enrichment harvester
  *
- * GOAL: fill the blank fields (molecule / therapy / indication / chronic-acute /
- * competitor brand / dealType / seller) on the dashboard's rows by harvesting the
- * full press-release / filing PDFs from BSE corporate announcements and reading
- * them with an LLM. Output lands in a SIDECAR file (public/enrichment.json) that
- * the dashboard overlays — the existing scrapers and public/launches.json are
- * NEVER touched.
+ * GOAL: fill the blank fields on the dashboard's rows (and surface launches the
+ * daily Firecrawl scraper missed) by harvesting the FULL filing PDFs behind each
+ * company's corporate announcements and reading them with an LLM. Output lands in
+ * a SIDECAR file (public/enrichment.json) that the dashboard overlays — the
+ * existing scrapers and public/launches.json are NEVER touched.
  *
- * Services (ALL free tier):
- *   • Scrape.do  — fetch BSE API JSON + filing PDFs (gets past BSE anti-bot)
- *   • Gemini     — primary extractor (reads PDF natively, JSON output)
- *   • Groq       — fast classifier + fallback extractor (text)
- *   • Mistral    — second fallback extractor (text)
+ * PIPELINE (all free-tier services):
+ *   1) discover  — Screener.in company page → BSE/NSE announcement filing links
+ *                  (BSE's own announcements API serves a "No Record Found!" decoy
+ *                   to automated callers, so we discover via Screener but still
+ *                   pull the underlying BSE filing PDFs).        [Scrape.do]
+ *   2) filter    — keep only launch / acquisition / in-license / approval titles,
+ *                  drop results/AGM/dividend/rating noise (saves tokens).
+ *   3) fetch     — download each relevant filing PDF.            [Scrape.do]
+ *   4) text      — extract text locally.                         [unpdf, pure JS]
+ *   5) extract   — structured rows via a provider rotation that survives any one
+ *                  provider's daily cap.       [Groq → Mistral → Gemini-2.5-flash]
+ *   6) write     — public/enrichment.json (cached by filing URL so re-runs only
+ *                  process NEW announcements; bounded by MAX_DOCS_PER_RUN).
+ *
  * NEVER calls Firecrawl (paid) or OpenAI (no free tier).
  *
- * ── PROBE MODE (current) ────────────────────────────────────────────────────
- *   node scripts/enrich-bse.mjs --probe
- * Read-only end-to-end plumbing check. Writes NO files. Validates:
- *   1) Scrape.do reachability + BSE scrip-code sanity (getScripHeaderData)
- *   2) BSE announcements API (AnnGetData) for one company
- *   3) one filing PDF → Gemini structured extraction
- *   4) Groq + Mistral JSON-mode sanity pings (fallback providers)
- * Every step is wrapped so one failure still lets the others report — the goal
- * is to learn about ALL four services in a single Actions run.
+ * Usage:
+ *   node scripts/enrich-bse.mjs --dry-run            # discover+filter, 1 extraction, write nothing
+ *   node scripts/enrich-bse.mjs --limit=24           # full run, cap docs this run
+ *   node scripts/enrich-bse.mjs --company=Sun        # restrict to matching companies
  */
 
-// ── Keys (from GitHub Actions secrets; never printed) ───────────────────────
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const ROOT = path.resolve(__dirname, '..');
+const OUT_PATH = path.join(ROOT, 'public', 'enrichment.json');
+
+// ── keys (GitHub Actions secrets; never printed) ────────────────────────────
 const SCRAPEDO_API_KEY = process.env.SCRAPEDO_API_KEY;
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const GROQ_API_KEY = process.env.GROQ_API_KEY;
 const MISTRAL_API_KEY = process.env.MISTRAL_API_KEY;
 
-const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-2.0-flash';
 const GROQ_MODEL = process.env.GROQ_MODEL || 'llama-3.3-70b-versatile';
 const MISTRAL_MODEL = process.env.MISTRAL_MODEL || 'mistral-small-latest';
+const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
 
-// ── The 14 BSE-listed companies (Corona Remedies + Intas are private). ──────
-// Codes verified against getScripHeaderData in Step 1 of the probe.
+// ── CLI ─────────────────────────────────────────────────────────────────────
+const ARGS = process.argv.slice(2);
+const DRY_RUN = ARGS.includes('--dry-run');
+const LIMIT_ARG = ARGS.find((a) => a.startsWith('--limit='));
+const MAX_DOCS_PER_RUN = LIMIT_ARG ? parseInt(LIMIT_ARG.split('=')[1], 10) : DRY_RUN ? 3 : 24;
+const COMPANY_ARG = (ARGS.find((a) => a.startsWith('--company=')) || '').split('=')[1] || '';
+// Cap announcements inspected per company so one busy filer can't eat the run.
+const MAX_ANN_PER_COMPANY = 60;
+
+// ── companies (Screener accepts the BSE scrip code as the slug) ──────────────
+// Corona Remedies + Intas are privately held → no exchange filings; they stay
+// on the existing website scraper.
 const COMPANIES = [
-  { name: 'Sun Pharma',         scrip: '524715' },
-  { name: 'Cipla',              scrip: '500087' },
-  { name: "Dr. Reddy's",        scrip: '500124' },
-  { name: 'Lupin',              scrip: '500257' },
-  { name: 'Glenmark',           scrip: '532296' },
-  { name: 'Aurobindo',          scrip: '524804' },
-  { name: 'Torrent Pharma',     scrip: '500420' },
-  { name: 'Natco Pharma',       scrip: '524816' },
+  { name: 'Sun Pharma', scrip: '524715' },
+  { name: 'Cipla', scrip: '500087' },
+  { name: "Dr. Reddy's", scrip: '500124' },
+  { name: 'Lupin', scrip: '500257' },
+  { name: 'Glenmark', scrip: '532296' },
+  { name: 'Aurobindo', scrip: '524804' },
+  { name: 'Torrent Pharma', scrip: '500420' },
+  { name: 'Natco Pharma', scrip: '524816' },
   { name: 'Zydus Lifesciences', scrip: '532321' },
-  { name: 'Abbott India',       scrip: '500488' },
-  { name: 'Alkem',              scrip: '539523' },
-  { name: 'Eris Lifesciences',  scrip: '540596' },
-  { name: 'Mankind Pharma',     scrip: '543904' },
-  { name: 'Wockhardt',          scrip: '532300' },
+  { name: 'Abbott India', scrip: '500488' },
+  { name: 'Alkem', scrip: '539523' },
+  { name: 'Eris Lifesciences', scrip: '540596' },
+  { name: 'Mankind Pharma', scrip: '543904' },
+  { name: 'Wockhardt', scrip: '532300' },
 ];
 
 // ── tiny helpers ────────────────────────────────────────────────────────────
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-const snippet = (s, n = 300) => String(s ?? '').replace(/\s+/g, ' ').slice(0, n);
-const yyyymmdd = (d) => `${d.getFullYear()}${String(d.getMonth() + 1).padStart(2, '0')}${String(d.getDate()).padStart(2, '0')}`;
-
+const snippet = (s, n = 200) => String(s ?? '').replace(/\s+/g, ' ').slice(0, n);
+const UA =
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36';
+const BSE_HEADERS = { Referer: 'https://www.bseindia.com/', 'User-Agent': UA };
 function banner(title) {
-  console.log('\n' + '═'.repeat(74));
-  console.log('  ' + title);
-  console.log('═'.repeat(74));
+  console.log('\n' + '═'.repeat(74) + `\n  ${title}\n` + '═'.repeat(74));
 }
 
-// Scrape.do returns its own JSON error envelope on failure; detect it so we
-// don't treat an error page as a successful BSE payload.
-function looksLikeScrapedoError(text) {
-  if (!text) return true;
-  const t = text.trim();
-  if (/"Message"\s*:/.test(t) && /scrape\.do|token|target|credit/i.test(t)) return true;
-  return false;
-}
-
-// fetch() has NO default timeout — a single non-returning proxy/PDF connection
-// would otherwise stall the whole job. Hard-abort every request.
-async function fetchWithTimeout(url, opts = {}, ms = 30000) {
+// fetch() has no default timeout — abort so one dead connection can't hang CI.
+async function fetchWithTimeout(url, opts = {}, ms = 45000) {
   const ctrl = new AbortController();
   const t = setTimeout(() => ctrl.abort(), ms);
   try {
@@ -88,271 +98,292 @@ async function fetchWithTimeout(url, opts = {}, ms = 30000) {
   }
 }
 
-// Core Scrape.do call. render=false (1 credit, cheapest) by default; geoCode
-// routes through an India IP when BSE blocks foreign datacenters; customHeaders
-// forwards Referer/Origin so BSE's API accepts the request.
-async function scrapedo(targetUrl, { geoCode = null, headers = {}, binary = false, timeoutMs = 30000, render = false, superProxy = false, session = null } = {}) {
+const SCRAPEDO_TIMEOUT_MS = 90000;
+// Scrape.do fetch. render/super(residential)/geoCode/session are available but
+// Screener + BSE PDFs work on the cheapest default (no-geo, no render).
+async function scrapedo(targetUrl, { geoCode = null, headers = {}, binary = false, timeoutMs = SCRAPEDO_TIMEOUT_MS, render = false, superProxy = false } = {}) {
   if (!SCRAPEDO_API_KEY) throw new Error('SCRAPEDO_API_KEY missing');
   const params = new URLSearchParams({ token: SCRAPEDO_API_KEY, url: targetUrl });
   if (geoCode) params.set('geoCode', geoCode);
   if (render) params.set('render', 'true');
-  if (superProxy) params.set('super', 'true'); // residential proxy (more credits, passes Akamai)
-  if (session) params.set('sessionId', session); // sticky IP+cookies for priming flows
+  if (superProxy) params.set('super', 'true');
   const fwd = Object.keys(headers).length > 0;
   if (fwd) params.set('customHeaders', 'true');
-
-  const res = await fetchWithTimeout(
-    `https://api.scrape.do/?${params.toString()}`,
-    { headers: fwd ? headers : undefined },
-    timeoutMs
-  );
-  if (binary) {
-    const buf = Buffer.from(await res.arrayBuffer());
-    return { status: res.status, buf };
-  }
-  const body = await res.text();
-  return { status: res.status, body };
+  const res = await fetchWithTimeout(`https://api.scrape.do/?${params.toString()}`, { headers: fwd ? headers : undefined }, timeoutMs);
+  if (binary) return { status: res.status, buf: Buffer.from(await res.arrayBuffer()) };
+  return { status: res.status, body: await res.text() };
 }
 
-// Once we learn which Scrape.do mode reaches BSE, lock it so every later call
-// makes ONE request instead of retrying no-geo→geo (halves credits + time).
-let LOCKED_GEO; // undefined = not yet determined
-
-// Scrape.do against BSE runs 30-60s/call and throws the odd 502, so use a
-// generous timeout and retry transient failures twice per mode. Auto-adapts
-// then locks the working geo mode: try the locked mode if known, else no-geo
-// first (cheapest) then India geo-routing, remembering whichever worked.
-const SCRAPEDO_TIMEOUT_MS = 90000;
-async function bseGet(url, { binary = false } = {}) {
-  const headers = {
-    Referer: 'https://www.bseindia.com/',
-    Origin: 'https://www.bseindia.com',
-    'User-Agent':
-      'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36',
-  };
-  const modes = LOCKED_GEO !== undefined ? [LOCKED_GEO] : [null, 'in'];
-  for (const geo of modes) {
-    for (let attempt = 1; attempt <= 2; attempt++) {
-      try {
-        const r = await scrapedo(url, { geoCode: geo, headers, binary, timeoutMs: SCRAPEDO_TIMEOUT_MS });
-        const ok = r.status === 200 && (binary ? r.buf?.length > 0 : r.body && !looksLikeScrapedoError(r.body));
-        if (ok) {
-          if (LOCKED_GEO === undefined) LOCKED_GEO = geo; // lock on first success
-          return { ...r, geo };
-        }
-        console.log(
-          `    ↳ ${geo || 'no-geo'} a${attempt}: status ${r.status}` +
-            (binary ? `, ${r.buf?.length || 0} bytes` : `, body=${snippet(r.body, 140)}`)
-        );
-        if (![429, 500, 502, 503, 504].includes(r.status)) break; // non-transient → next mode
-      } catch (e) {
-        console.log(`    ↳ ${geo || 'no-geo'} a${attempt}: ${e.name === 'AbortError' ? 'timed out' : 'threw ' + e.message}`);
-      }
-      await sleep(1500 * attempt);
+// Scrape.do + one transient retry (Scrape.do/BSE throw the odd 502).
+async function scrapedoRetry(url, opts = {}) {
+  for (let attempt = 1; attempt <= 2; attempt++) {
+    try {
+      const r = await scrapedo(url, opts);
+      const ok = r.status === 200 && (opts.binary ? r.buf?.length > 0 : r.body?.length > 0);
+      if (ok) return r;
+      if (![429, 500, 502, 503, 504].includes(r.status)) return r;
+    } catch (e) {
+      if (attempt === 2) throw e;
     }
+    await sleep(1500 * attempt);
   }
   return null;
 }
 
-// ── BSE endpoints ───────────────────────────────────────────────────────────
-const bseHeaderUrl = (scrip) =>
-  `https://api.bseindia.com/BseIndiaAPI/api/getScripHeaderData/w?Debtflag=&scripcode=${scrip}&seriesid=`;
+// ── discovery: Screener.in company page → BSE/NSE filing PDF links ──────────
+async function fetchScreener(scrip) {
+  return scrapedoRetry(`https://www.screener.in/company/${scrip}/`, { timeoutMs: SCRAPEDO_TIMEOUT_MS });
+}
 
-const bseAnnUrl = (scrip, fromD, toD) =>
-  `https://api.bseindia.com/BseIndiaAPI/api/AnnGetData/w?pageno=1&strCat=-1&strPrevDate=${fromD}` +
-  `&strScrip=${scrip}&strSearch=P&strToDate=${toD}&strType=C`;
+// BSE filing PDFs surface as AnnPdfOpen.aspx?Pname=<id>.pdf (live) or
+// corpfiling/Attach(His|Live)/<id>.pdf; NSE as nsearchives/archives links.
+// Annual reports (/AnnualReport/) and IR decks are intentionally NOT matched.
+const ANN_LINK_RE =
+  /<a[^>]+href="(https?:\/\/[^"]*?(?:AnnPdfOpen\.aspx\?Pname=[^"]+\.pdf|corpfiling\/Attach(?:His|Live)\/[^"]+\.pdf|nsearchives\.nseindia\.com\/[^"]+\.pdf|archives\.nseindia\.com\/[^"]+\.pdf))"[^>]*>([\s\S]*?)<\/a>/gi;
 
-const bsePdfUrl = (attachName) =>
-  `https://www.bseindia.com/xml-data/corpfiling/AttachLive/${attachName}`;
+function discoverFromHtml(html) {
+  const seen = new Set();
+  const out = [];
+  let m;
+  while ((m = ANN_LINK_RE.exec(html)) !== null) {
+    const url = m[1].replace(/&amp;/g, '&');
+    if (seen.has(url)) continue;
+    seen.add(url);
+    const title = m[2].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+    out.push({ url, title });
+  }
+  return out;
+}
 
-// ── Gemini: extract structured rows from a filing PDF ───────────────────────
-const EXTRACTION_PROMPT = `You are reading an Indian pharmaceutical company's BSE corporate-filing PDF.
+// ── title filter — keep product events, drop corporate/financial noise ──────
+const KEEP_RE =
+  /(launch|launches|launched|launching|introduc|unveil|roll[- ]?out|acquir|acquisition|in[- ]licens|licens|licence|co[- ]?market|distribution agreement|biosimilar|generic|new drug|nce|line extension|receives? (?:approval|nod)|approval (?:for|of|from)|us ?fda|usfda|cdsco|dcgi|marketing authoriz|commercial(?:is|iz)ation|enters? into (?:an? )?(?:agreement|licens|partnership))/i;
+const DROP_RE =
+  /(financial result|quarterly result|audited|un-?audited|investor (?:presentation|meet|call)|earnings|analyst|conference call|concall|transcript|annual report|integrated report|\bagm\b|\begm\b|postal ballot|voting result|trading window|dividend|interest payment|board meeting|outcome of board|credit rating|newspaper (?:publication|advertisement)|compliance certificate|regulation 74|reg(?:ulation)? 30 .*(?:loss|duplicate)|loss of (?:share|certificate)|duplicate share|sub-?division|split of|scrutinizer|record date|book closure|appointment of|resignation of|cessation|change in (?:director|kmp|management)|certificate under)/i;
+
+function isRelevantTitle(t) {
+  if (!t) return false;
+  if (DROP_RE.test(t)) return false;
+  return KEEP_RE.test(t);
+}
+
+// ── PDF → text (pure-JS, no native deps; installed in CI via `npm i unpdf`) ──
+async function pdfToText(buf) {
+  const { extractText, getDocumentProxy } = await import('unpdf');
+  const doc = await getDocumentProxy(new Uint8Array(buf));
+  const { text } = await extractText(doc, { mergePages: true });
+  return text || '';
+}
+
+// ── extraction prompt (careful-inference mode ON, per product spec) ─────────
+const EXTRACTION_PROMPT = `You are reading an Indian pharmaceutical company's corporate-filing / press-release PDF.
 
 Extract every announcement in this document that is ONE of:
   • a new drug / brand launch (own NCE, generic, biosimilar, line extension, device)
   • a brand or company acquisition (India market)
-  • an in-licensing or co-marketing deal (India market)
+  • an in-licensing / co-marketing / distribution deal (India market)
 
 SKIP pure corporate/financial news (results, board meetings, dividends, voting
-results, appointments, credit ratings, facility/CSR/award news).
+results, appointments, credit ratings, facility/CSR/award news). If the document
+has no such product event, return {"rows": []}.
 
-Return STRICT JSON: { "rows": [ { ...fields } ] }. If the document has no such
-product event, return { "rows": [] }.
-
-Fields per row:
+Return STRICT JSON: {"rows":[{...}]}. Fields per row:
   brand, launchType ("Own Launched"|"Acquired"|"In-licensed"),
   date (ISO YYYY-MM-DD), seller (counterparty; "—" if own launch),
   dealType, molecule, therapy, indication,
   existingBrand (a COMPETITOR market-leading brand for the same molecule, from a
     company OTHER than the filer; "—" if none), chronicAcute ("Chronic"|"Acute"|"—").
 
-CAREFUL-INFERENCE MODE (this is allowed and wanted):
-  • Prefer values stated in the document. When the document does not state
-    therapy / indication / chronicAcute / molecule explicitly, you MAY infer
-    them from well-established medical knowledge of the named molecule or brand
-    (e.g. semaglutide → Anti-Diabetic, Chronic). Only infer when you are highly
-    confident; otherwise use "—". Never invent a brand, date, or counterparty.`;
+CAREFUL-INFERENCE MODE (allowed and wanted): prefer values stated in the
+document; when therapy / indication / chronicAcute / molecule / existingBrand are
+not stated, you MAY infer them from well-established medical knowledge of the
+named molecule or brand (e.g. semaglutide → Anti-Diabetic, Chronic; for a
+well-known molecule you may name the established market-leading competitor brand
+in India). Only infer when highly confident; otherwise use "—". NEVER invent a
+brand, date, or counterparty that the document does not support.`;
 
-async function geminiExtractFromPdf(base64pdf) {
-  if (!GEMINI_API_KEY) throw new Error('GEMINI_API_KEY missing');
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`;
-  const body = {
-    contents: [
-      {
-        role: 'user',
-        parts: [
-          { text: EXTRACTION_PROMPT },
-          { inlineData: { mimeType: 'application/pdf', data: base64pdf } },
-        ],
-      },
-    ],
-    generationConfig: { temperature: 0, responseMimeType: 'application/json' },
-  };
-  const res = await fetchWithTimeout(
-    url,
-    { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) },
-    60000
-  );
-  const text = await res.text();
-  if (!res.ok) throw new Error(`Gemini ${res.status}: ${snippet(text, 240)}`);
-  const json = JSON.parse(text);
-  const out = json?.candidates?.[0]?.content?.parts?.[0]?.text ?? '';
-  return out;
-}
-
-// ── Groq / Mistral JSON-mode sanity pings (OpenAI-compatible) ───────────────
-async function chatJson({ endpoint, key, model, prompt }) {
+// ── LLM providers (OpenAI-compatible chat for Groq/Mistral; REST for Gemini) ─
+async function chatJson(endpoint, key, model, prompt) {
   const res = await fetchWithTimeout(
     endpoint,
     {
       method: 'POST',
       headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        model,
-        temperature: 0,
-        response_format: { type: 'json_object' },
-        messages: [{ role: 'user', content: prompt }],
-      }),
+      body: JSON.stringify({ model, temperature: 0, response_format: { type: 'json_object' }, messages: [{ role: 'user', content: prompt }] }),
     },
-    45000
+    60000
   );
-  const text = await res.text();
-  if (!res.ok) throw new Error(`${res.status}: ${snippet(text, 240)}`);
-  const json = JSON.parse(text);
-  return json?.choices?.[0]?.message?.content ?? '';
+  const t = await res.text();
+  if (!res.ok) throw new Error(`${res.status}: ${snippet(t, 160)}`);
+  return JSON.parse(t)?.choices?.[0]?.message?.content ?? '';
 }
 
-// ════════════════════════════════════════════════════════════════════════════
-// PROBE
-// ════════════════════════════════════════════════════════════════════════════
-const UA =
-  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36';
-
-// AnnGetData URL with individually-overridable params, so we can matrix-test
-// which combination actually returns records.
-function annUrlP({ scrip = '524715', cat = '-1', prev = '', to = '', search = 'P', type = 'C', extra = '' }) {
-  return (
-    `https://api.bseindia.com/BseIndiaAPI/api/AnnGetData/w?pageno=1&strCat=${cat}` +
-    `&strPrevDate=${prev}&strScrip=${scrip}&strSearch=${search}&strToDate=${to}&strType=${type}${extra}`
+async function geminiJson(model, prompt) {
+  const res = await fetchWithTimeout(
+    `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${GEMINI_API_KEY}`,
+    { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }], generationConfig: { temperature: 0, responseMimeType: 'application/json' } }) },
+    60000
   );
+  const t = await res.text();
+  if (!res.ok) throw new Error(`${res.status}: ${snippet(t, 160)}`);
+  return JSON.parse(t)?.candidates?.[0]?.content?.parts?.[0]?.text ?? '';
 }
 
-async function probe() {
-  banner('KEY PRESENCE');
-  for (const [k, v] of Object.entries({ SCRAPEDO_API_KEY, GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY })) {
-    console.log(`  ${k.padEnd(18)} ${v ? `set (${v.length} chars)` : '✖ MISSING'}`);
+const PROVIDERS = [
+  { name: 'groq', run: (p) => chatJson('https://api.groq.com/openai/v1/chat/completions', GROQ_API_KEY, GROQ_MODEL, p), ok: () => !!GROQ_API_KEY },
+  { name: 'mistral', run: (p) => chatJson('https://api.mistral.ai/v1/chat/completions', MISTRAL_API_KEY, MISTRAL_MODEL, p), ok: () => !!MISTRAL_API_KEY },
+  { name: 'gemini', run: (p) => geminiJson(GEMINI_MODEL, p), ok: () => !!GEMINI_API_KEY },
+];
+let rrStart = 0; // round-robin cursor so load spreads across daily caps
+async function llmExtract(prompt) {
+  const usable = PROVIDERS.filter((p) => p.ok());
+  for (let i = 0; i < usable.length; i++) {
+    const prov = usable[(rrStart + i) % usable.length];
+    try {
+      const out = await prov.run(prompt);
+      rrStart = (rrStart + i + 1) % usable.length;
+      return { out, provider: prov.name };
+    } catch (e) {
+      console.log(`      (${prov.name} unavailable: ${snippet(e.message, 70)})`);
+    }
+  }
+  return { out: null, provider: null };
+}
+
+// ── row hygiene ─────────────────────────────────────────────────────────────
+const blank = (v) => v == null || ['', '-', '—', 'n/a', 'null'].includes(String(v).trim().toLowerCase());
+const JUNK_BRAND = [/^—+$|^-+$|^n\/a$/i, /^\[.*\]$/, /^(brandx|brandy|acmebio|novelgen)\b/i, /^new (drug|brand)\b/i];
+function isJunkBrand(b) {
+  const s = String(b ?? '').trim();
+  return !s || JUNK_BRAND.some((re) => re.test(s));
+}
+function parseRows(out) {
+  if (!out) return [];
+  try {
+    const j = JSON.parse(out);
+    const rows = Array.isArray(j?.rows) ? j.rows : Array.isArray(j) ? j : [];
+    return rows.filter((r) => r && !isJunkBrand(r.brand));
+  } catch {
+    return [];
+  }
+}
+function dedupeRows(rows) {
+  const seen = new Set();
+  const out = [];
+  for (const r of rows) {
+    const k = `${String(r.brand).trim().toLowerCase()}|${r.date || ''}|${String(r.buyer || '').toLowerCase()}`;
+    if (seen.has(k)) continue;
+    seen.add(k);
+    out.push(r);
+  }
+  return out;
+}
+
+async function loadEnrichment() {
+  try {
+    const j = JSON.parse(await fs.readFile(OUT_PATH, 'utf8'));
+    return { rows: Array.isArray(j.rows) ? j.rows : [], processedUrls: Array.isArray(j.processedUrls) ? j.processedUrls : [] };
+  } catch {
+    return { rows: [], processedUrls: [] };
+  }
+}
+
+// ── main ────────────────────────────────────────────────────────────────────
+async function main() {
+  console.log(`▶ enrich-bse ${DRY_RUN ? '(DRY RUN)' : ''} · cap ${MAX_DOCS_PER_RUN} docs/run · providers: ${PROVIDERS.filter((p) => p.ok()).map((p) => p.name).join(', ')}`);
+  for (const k of ['SCRAPEDO_API_KEY', 'GROQ_API_KEY', 'MISTRAL_API_KEY', 'GEMINI_API_KEY']) {
+    if (!process.env[k]) console.log(`  ⚠ ${k} not set`);
   }
 
-  const headers = { Referer: 'https://www.bseindia.com/', Origin: 'https://www.bseindia.com', 'User-Agent': UA };
-  const now = new Date();
-  const ymd = (d) => yyyymmdd(d);
-  const y1 = new Date(Date.now() - 365 * 86400000);
-  let candidatePdf = null; // full URL of a PDF to end-to-end test in Step C
+  const cache = await loadEnrichment();
+  const processed = new Set(cache.processedUrls);
+  const rows = DRY_RUN ? [] : [...cache.rows];
+  console.log(`  cache: ${cache.rows.length} rows, ${processed.size} processed URLs`);
 
-  // ── Step A: BSE cookie-priming — render the site on a sticky session to bank
-  // an Akamai cookie, then hit AnnGetData on the SAME session. This is the usual
-  // way past the "No Record Found!" decoy that BSE serves cold/proxy callers.
-  banner('STEP A — BSE cookie-prime (sticky session) then AnnGetData');
-  try {
-    const sid = String(Math.floor(Math.random() * 1e6));
-    const prime = await scrapedo('https://www.bseindia.com/corporates/ann.html', { render: true, session: sid, geoCode: 'in', timeoutMs: SCRAPEDO_TIMEOUT_MS });
-    console.log(`  prime: status ${prime.status}, ${prime.body?.length || 0} bytes`);
-    const annUrl = annUrlP({ prev: ymd(y1), to: ymd(now) });
-    const r = await scrapedo(annUrl, { headers, session: sid, geoCode: 'in', timeoutMs: SCRAPEDO_TIMEOUT_MS });
-    let rows = [];
-    try { const j = JSON.parse(r.body); if (Array.isArray(j?.Table)) rows = j.Table; } catch {}
-    console.log(`  AnnGetData: status ${r.status} · rows=${rows.length} · raw: ${snippet(r.body, 130)}`);
-    if (rows.length) {
-      console.log(`  ✓ keys: ${Object.keys(rows[0]).join(',')}`);
-      for (const a of rows.slice(0, 5)) {
-        const att = a.ATTACHMENTNAME || '—';
-        console.log(`    - ${a.NEWS_DT || '?'} [${a.CATEGORYNAME || '?'}] ${snippet(a.NEWSSUB || a.HEADLINE, 70)} (pdf: ${att})`);
-        if (!candidatePdf && /\.pdf$/i.test(att)) candidatePdf = bsePdfUrl(att);
+  const companies = COMPANY_ARG
+    ? COMPANIES.filter((c) => c.name.toLowerCase().includes(COMPANY_ARG.toLowerCase()))
+    : COMPANIES;
+
+  let docsDone = 0;
+  let newRows = 0;
+  for (const c of companies) {
+    if (docsDone >= MAX_DOCS_PER_RUN) break;
+    banner(`${c.name} (${c.scrip})`);
+
+    let html = '';
+    try {
+      const r = await fetchScreener(c.scrip);
+      html = r?.body || '';
+      console.log(`  screener: status ${r?.status} · ${html.length} bytes`);
+    } catch (e) {
+      console.log(`  ✖ screener failed: ${e.message}`);
+      continue;
+    }
+    const anns = discoverFromHtml(html).slice(0, MAX_ANN_PER_COMPANY);
+    const kept = anns.filter((a) => isRelevantTitle(a.title));
+    console.log(`  announcements: ${anns.length} found · ${kept.length} relevant`);
+    if (DRY_RUN) {
+      for (const a of anns.slice(0, 16)) {
+        console.log(`    ${isRelevantTitle(a.title) ? '✓' : '·'} ${snippet(a.title, 78)}`);
       }
     }
-  } catch (e) {
-    console.log(`  ✖ BSE prime flow failed: ${e.name === 'AbortError' ? 'timed out' : e.message}`);
-  }
 
-  // ── Step B: Screener.in — aggregates BSE/NSE filings, scraper-friendly. Grep
-  // the company page for announcement PDF links (BSE AttachLive / NSE archives).
-  banner('STEP B — Screener.in company page (announcement links)');
-  for (const url of ['https://www.screener.in/company/524715/', 'https://www.screener.in/company/SUNPHARMA/']) {
-    try {
-      const r = await scrapedo(url, { timeoutMs: SCRAPEDO_TIMEOUT_MS });
-      const body = r.body || '';
-      const pdfs = [...body.matchAll(/https?:\/\/[^"'\s)]+?\.pdf/gi)].map((m) => m[0]);
-      const attach = pdfs.filter((u) => /AttachLive|nsearchives|archives\.nse/i.test(u));
-      const hasAnn = /announcement/i.test(body);
-      console.log(`  • ${url}`);
-      console.log(`      status ${r.status}, ${body.length} bytes · "announcement" present: ${hasAnn} · pdf links: ${pdfs.length} (filing-like: ${attach.length})`);
-      for (const u of [...new Set(attach.length ? attach : pdfs)].slice(0, 4)) console.log(`        ${u}`);
-      if (!candidatePdf && (attach[0] || pdfs[0])) candidatePdf = attach[0] || pdfs[0];
-      if (r.status === 200) break;
-    } catch (e) {
-      console.log(`  • ${url} → ${e.name === 'AbortError' ? 'timed out' : 'threw ' + e.message}`);
+    for (const a of kept) {
+      if (docsDone >= MAX_DOCS_PER_RUN) break;
+      if (processed.has(a.url)) continue;
+      processed.add(a.url);
+      docsDone += 1;
+      try {
+        const pr = await scrapedoRetry(a.url, { binary: true, headers: BSE_HEADERS, geoCode: 'in', timeoutMs: SCRAPEDO_TIMEOUT_MS });
+        if (!pr?.buf?.length) {
+          console.log(`    ✖ [${snippet(a.title, 46)}] pdf status ${pr?.status}`);
+          continue;
+        }
+        const text = await pdfToText(pr.buf);
+        if (!text || text.replace(/\s/g, '').length < 120) {
+          console.log(`    ⚠ [${snippet(a.title, 46)}] little text (${text.length} chars; scanned?) — skipping`);
+          continue;
+        }
+        const prompt = `${EXTRACTION_PROMPT}\n\nFILER (likely buyer): ${c.name}\nANNOUNCEMENT TITLE: ${a.title}\n\nDOCUMENT TEXT:\n${text.slice(0, 14000)}`;
+        const { out, provider } = await llmExtract(prompt);
+        const extracted = parseRows(out).map((r) => ({
+          brand: r.brand, launchType: r.launchType, date: r.date, seller: r.seller,
+          dealType: r.dealType, molecule: r.molecule, therapy: r.therapy, indication: r.indication,
+          existingBrand: r.existingBrand, chronicAcute: r.chronicAcute,
+          buyer: blank(r.buyer) ? c.name : r.buyer, sourceUrl: a.url,
+          _title: a.title, _provider: provider, _harvestedAt: new Date().toISOString(),
+        }));
+        rows.push(...extracted);
+        newRows += extracted.length;
+        console.log(`    [${provider || 'none'}] ${extracted.length} row(s) ← ${snippet(a.title, 46)}`);
+        for (const r of extracted) console.log(`        • ${r.brand} | ${r.molecule || '—'} | ${r.therapy || '—'} | ${r.dealType || '—'} | ${r.chronicAcute || '—'}`);
+      } catch (e) {
+        console.log(`    ✖ [${snippet(a.title, 46)}] ${e.message}`);
+      }
+      await sleep(700);
     }
-    await sleep(700);
+    await sleep(600);
   }
 
-  // ── Step C: end-to-end on whichever source yielded a PDF → unpdf → Groq ─────
-  banner('STEP C — end-to-end: fetch PDF → unpdf → Groq');
-  if (!candidatePdf) {
-    console.log('  (no candidate PDF from Step A or B)');
-    banner('PROBE COMPLETE');
+  const deduped = dedupeRows(rows);
+  console.log(`\n▶ processed ${docsDone} new docs · +${newRows} rows · ${deduped.length} total after dedupe`);
+
+  if (DRY_RUN) {
+    console.log('DRY RUN — wrote nothing.');
     return;
   }
-  try {
-    console.log(`  candidate: ${candidatePdf}`);
-    const r = await scrapedo(candidatePdf, { binary: true, headers, geoCode: 'in', timeoutMs: SCRAPEDO_TIMEOUT_MS });
-    if (!r?.buf?.length) {
-      console.log(`  ✖ PDF fetch: status ${r?.status}, ${r?.buf?.length || 0} bytes`);
-    } else {
-      console.log(`  ✓ fetched ${r.buf.length} bytes`);
-      const { extractText, getDocumentProxy } = await import('unpdf');
-      const doc = await getDocumentProxy(new Uint8Array(r.buf));
-      const { text, totalPages } = await extractText(doc, { mergePages: true });
-      console.log(`  ✓ unpdf: ${totalPages} pages, ${text.length} chars · sample: ${snippet(text, 180)}`);
-      const g = await chatJson({
-        endpoint: 'https://api.groq.com/openai/v1/chat/completions',
-        key: GROQ_API_KEY,
-        model: GROQ_MODEL,
-        prompt: `${EXTRACTION_PROMPT}\n\nDOCUMENT TEXT:\n${text.slice(0, 14000)}`,
-      });
-      console.log(`  ✓ Groq extraction: ${snippet(g, 700)}`);
-    }
-  } catch (e) {
-    console.log(`  ✖ end-to-end failed: ${e.message}`);
-  }
-
-  banner('PROBE COMPLETE');
+  const payload = {
+    generatedAt: new Date().toISOString(),
+    rowCount: deduped.length,
+    rows: deduped,
+    processedUrls: [...processed],
+  };
+  await fs.mkdir(path.dirname(OUT_PATH), { recursive: true });
+  await fs.writeFile(OUT_PATH, JSON.stringify(payload, null, 2) + '\n');
+  console.log(`✔ wrote ${OUT_PATH} · ${deduped.length} rows · ${processed.size} processed URLs`);
 }
 
-// ── entry ───────────────────────────────────────────────────────────────────
-const mode = process.argv.includes('--probe') ? 'probe' : 'probe'; // only probe implemented in Phase 1
-if (mode === 'probe') {
-  probe().catch((err) => {
-    console.error('FATAL', err);
-    process.exit(1);
-  });
-}
+main().catch((err) => {
+  console.error('FATAL', err);
+  process.exit(1);
+});

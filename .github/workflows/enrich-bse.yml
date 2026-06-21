@@ -39,10 +39,10 @@ jobs:
       - name: Install unpdf (PDF text extraction)
         run: npm install unpdf --no-save --no-audit --no-fund
 
-      - name: Run enrichment probe
+      - name: Run enrichment harvester (dry-run validation)
         env:
           SCRAPEDO_API_KEY: ${{ secrets.SCRAPEDO_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
-        run: node scripts/enrich-bse.mjs --probe
+        run: node scripts/enrich-bse.mjs --dry-run
