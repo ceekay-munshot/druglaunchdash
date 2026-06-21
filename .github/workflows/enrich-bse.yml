@@ -46,7 +46,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
-        run: node scripts/enrich-bse.mjs
+        run: node scripts/enrich-bse.mjs --backfill
 
       - name: Commit enrichment.json
         run: |

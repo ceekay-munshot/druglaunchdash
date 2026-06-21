@@ -56,6 +56,12 @@ const MAX_DOCS_PER_RUN = LIMIT_ARG ? parseInt(LIMIT_ARG.split('=')[1], 10) : DRY
 const COMPANY_ARG = (ARGS.find((a) => a.startsWith('--company=')) || '').split('=')[1] || '';
 // Cap announcements inspected per company so one busy filer can't eat the run.
 const MAX_ANN_PER_COMPANY = 60;
+// Backfill phase: re-read existing stub rows' own sourceUrl to fill old launches.
+const RUN_BACKFILL = ARGS.includes('--backfill') || ARGS.includes('--backfill-only');
+const BACKFILL_ONLY = ARGS.includes('--backfill-only');
+const BACKFILL_CAP_ARG = ARGS.find((a) => a.startsWith('--backfill-cap='));
+const BACKFILL_CAP = BACKFILL_CAP_ARG ? parseInt(BACKFILL_CAP_ARG.split('=')[1], 10) : 10;
+const LAUNCHES_PATH = path.join(ROOT, 'public', 'launches.json');
 
 // ── companies (Screener accepts the BSE scrip code as the slug) ──────────────
 // Corona Remedies + Intas are privately held → no exchange filings; they stay
@@ -178,6 +184,36 @@ async function pdfToText(buf) {
   return text || '';
 }
 
+// Crude HTML → text for backfill source pages (company PR pages / news articles).
+function htmlToText(html) {
+  return String(html || '')
+    .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+    .replace(/<style[\s\S]*?<\/style>/gi, ' ')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&nbsp;/gi, ' ')
+    .replace(/&amp;/gi, '&')
+    .replace(/&#x27;|&#39;/g, "'")
+    .replace(/&quot;/gi, '"')
+    .replace(/&lt;/gi, '<')
+    .replace(/&gt;/gi, '>')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+// Fetch a source document (PDF or HTML) and return its text. Sniffs %PDF magic
+// bytes so it works regardless of the URL extension.
+async function fetchDocText(url) {
+  const r = await scrapedoRetry(url, { binary: true, headers: { 'User-Agent': UA }, timeoutMs: SCRAPEDO_TIMEOUT_MS });
+  if (!r?.buf?.length) return { ok: false, status: r?.status };
+  const isPdf = r.buf.slice(0, 5).toString('latin1').startsWith('%PDF') || /\.pdf(\?|$)/i.test(url);
+  try {
+    const text = isPdf ? await pdfToText(r.buf) : htmlToText(r.buf.toString('utf8'));
+    return { ok: true, text, kind: isPdf ? 'pdf' : 'html' };
+  } catch (e) {
+    return { ok: false, err: e.message };
+  }
+}
+
 // ── extraction prompt (careful-inference mode ON, per product spec) ─────────
 const EXTRACTION_PROMPT = `You are reading an Indian pharmaceutical company's corporate-filing / press-release PDF.
 
@@ -291,6 +327,85 @@ async function loadEnrichment() {
   }
 }
 
+// ── backfill: re-read existing stub rows' own source documents ──────────────
+// 206/210 launches.json stubs already carry their sourceUrl (PDFs, company PR
+// pages, news articles). Re-read each, extract, and lock identity to the stub
+// (brand+buyer+date) so the dashboard overlay fills that exact row. Other rows
+// the doc reveals (e.g. siblings of a multi-brand acquisition) are emitted too.
+const STUB_FIELDS_BF = ['molecule', 'therapy', 'indication', 'chronicAcute', 'existingBrand'];
+const isStubRow = (r) => STUB_FIELDS_BF.filter((f) => blank(r[f])).length >= 3;
+const brandToken = (s) =>
+  String(s ?? '').toLowerCase().replace(/[®™]/g, '').replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
+
+async function backfillStubs(processed, rows, cap) {
+  let launches = [];
+  try {
+    launches = JSON.parse(await fs.readFile(LAUNCHES_PATH, 'utf8')).rows || [];
+  } catch (e) {
+    console.log(`  ✖ cannot read launches.json: ${e.message}`);
+    return 0;
+  }
+  const stubs = launches.filter(
+    (r) => isStubRow(r) && r.sourceUrl && /^https?:/i.test(r.sourceUrl) && !processed.has(r.sourceUrl)
+  );
+  banner(`BACKFILL — ${stubs.length} stub rows with unprocessed source URLs (cap ${cap})`);
+
+  let done = 0;
+  let produced = 0;
+  for (const s of stubs) {
+    if (done >= cap) break;
+    processed.add(s.sourceUrl); // one shot per URL — bounds cost even on failure
+    done += 1;
+    try {
+      const d = await fetchDocText(s.sourceUrl);
+      if (!d.ok || !d.text || d.text.replace(/\s/g, '').length < 120) {
+        console.log(`    ⚠ ${snippet(s.brand, 30)} → little/no text (${d.status || d.err || d.kind || 'n/a'})`);
+        continue;
+      }
+      const prompt = `${EXTRACTION_PROMPT}\n\nThis document concerns the launch/deal of brand "${s.brand}" by ${s.buyer}. Extract that event (and any other product events present).\n\nDOCUMENT TEXT:\n${d.text.slice(0, 14000)}`;
+      const { out, provider } = await llmExtract(prompt);
+      const ex = parseRows(out);
+      if (!ex.length) {
+        console.log(`    · ${snippet(s.brand, 30)} → 0 rows [${provider || 'none'}]`);
+        continue;
+      }
+      const tok = brandToken(s.brand);
+      const matched = ex.find((r) => {
+        const b = brandToken(r.brand);
+        return b && tok && (b.includes(tok) || tok.includes(b));
+      });
+      for (const r of ex) {
+        const lock = r === (matched || ex[0]); // lock the stub's own row to its identity
+        rows.push({
+          brand: lock ? s.brand : r.brand,
+          launchType: r.launchType || (lock ? s.launchType : undefined),
+          date: lock ? s.date || r.date : r.date,
+          seller: r.seller,
+          dealType: r.dealType,
+          molecule: r.molecule,
+          therapy: r.therapy,
+          indication: r.indication,
+          existingBrand: r.existingBrand,
+          chronicAcute: r.chronicAcute,
+          buyer: blank(r.buyer) ? s.buyer : r.buyer,
+          sourceUrl: s.sourceUrl,
+          _title: `backfill:${s.brand}`,
+          _provider: provider,
+          _harvestedAt: new Date().toISOString(),
+        });
+      }
+      produced += ex.length;
+      const m = matched || ex[0];
+      console.log(`    [${provider}] ${snippet(s.brand, 30)} ← ${d.kind} · mol=${m.molecule || '—'} ther=${m.therapy || '—'} ca=${m.chronicAcute || '—'} (${ex.length} row${ex.length === 1 ? '' : 's'})`);
+    } catch (e) {
+      console.log(`    ✖ ${snippet(s.brand, 30)}: ${e.message}`);
+    }
+    await sleep(700);
+  }
+  console.log(`  backfill: ${done} docs processed · ${produced} rows produced`);
+  return produced;
+}
+
 // ── main ────────────────────────────────────────────────────────────────────
 async function main() {
   console.log(`▶ enrich-bse ${DRY_RUN ? '(DRY RUN)' : ''} · cap ${MAX_DOCS_PER_RUN} docs/run · providers: ${PROVIDERS.filter((p) => p.ok()).map((p) => p.name).join(', ')}`);
@@ -309,7 +424,7 @@ async function main() {
 
   let docsDone = 0;
   let newRows = 0;
-  for (const c of companies) {
+  for (const c of BACKFILL_ONLY ? [] : companies) {
     if (docsDone >= MAX_DOCS_PER_RUN) break;
     banner(`${c.name} (${c.scrip})`);
 
@@ -368,8 +483,10 @@ async function main() {
     await sleep(600);
   }
 
+  if (RUN_BACKFILL) await backfillStubs(processed, rows, BACKFILL_CAP);
+
   const deduped = dedupeRows(rows);
-  console.log(`\n▶ processed ${docsDone} new docs · +${newRows} rows · ${deduped.length} total after dedupe`);
+  console.log(`\n▶ Screener: ${docsDone} new docs, +${newRows} rows · ${deduped.length} total after dedupe`);
 
   if (DRY_RUN) {
     console.log('DRY RUN — wrote nothing.');
