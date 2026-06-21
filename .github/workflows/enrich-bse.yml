@@ -6,6 +6,14 @@ name: Enrich (BSE) — probe
 # once the full harvester is proven.
 on:
   workflow_dispatch: {}
+  # Until the MCP integration has actions:write, run the probe automatically
+  # whenever its own files change on main. Scoped by path so unrelated pushes
+  # don't trigger it. Removed once the full harvester moves to a schedule.
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/enrich-bse.mjs'
+      - '.github/workflows/enrich-bse.yml'
 
 permissions:
   contents: read
