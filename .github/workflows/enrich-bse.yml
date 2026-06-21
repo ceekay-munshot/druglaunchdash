@@ -1,0 +1,35 @@
+name: Enrich (BSE) — probe
+
+# Phase 1: manual-only plumbing probe. Read-only — writes no files, never
+# commits. Validates Scrape.do + BSE + Gemini/Groq/Mistral on free tiers.
+# Does NOT call Firecrawl (paid) or OpenAI. A cron schedule is added later,
+# once the full harvester is proven.
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: enrich-bse
+  cancel-in-progress: false
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run enrichment probe
+        env:
+          SCRAPEDO_API_KEY: ${{ secrets.SCRAPEDO_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+        run: node scripts/enrich-bse.mjs --probe
