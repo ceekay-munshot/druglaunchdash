@@ -156,10 +156,13 @@ function discoverFromHtml(html) {
 }
 
 // ── title filter — keep product events, drop corporate/financial noise ──────
-const KEEP_RE =
-  /(launch|launches|launched|launching|introduc|unveil|roll[- ]?out|acquir|acquisition|in[- ]licens|licens|licence|co[- ]?market|distribution agreement|biosimilar|generic|new drug|nce|line extension|receives? (?:approval|nod)|approval (?:for|of|from)|us ?fda|usfda|cdsco|dcgi|marketing authoriz|commercial(?:is|iz)ation|enters? into (?:an? )?(?:agreement|licens|partnership))/i;
+// Screener titles look like "<SEBI Reg-30 category> <date> - <headline>", so we
+// match on BOTH the category label and the headline. DROP is checked first.
+// (Note: \bnce\b must be bounded — unbounded "nce" matches inside "announcement".)
 const DROP_RE =
-  /(financial result|quarterly result|audited|un-?audited|investor (?:presentation|meet|call)|earnings|analyst|conference call|concall|transcript|annual report|integrated report|\bagm\b|\begm\b|postal ballot|voting result|trading window|dividend|interest payment|board meeting|outcome of board|credit rating|newspaper (?:publication|advertisement)|compliance certificate|regulation 74|reg(?:ulation)? 30 .*(?:loss|duplicate)|loss of (?:share|certificate)|duplicate share|sub-?division|split of|scrutinizer|record date|book closure|appointment of|resignation of|cessation|change in (?:director|kmp|management)|certificate under)/i;
+  /(newspaper (?:publication|advert)|allotment of (?:esop|equity|share)|\besop\b|\besps\b|stock option|stock appreciation|sweat equity|financial result|quarterly result|un-?audited|audited (?:financial|result)|annual report|integrated report|from bse|transcript|earnings|\bppt\b|investor (?:presentation|meet|call|day)|analyst meet|conference call|concall|\bagm\b|\begm\b|postal ballot|voting result|scrut[ie]niz|trading window|dividend|record date|book closure|interest payment|board meeting|outcome of (?:the )?board|corporate action|credit rating|change in (?:management|director|kmp|auditor|cfo|company secretary|registrar)|resignation|re-?appointment|appointment of|cessation|corrigendum|compliance certificate|certificate under|regulation 7[34]|duplicate|loss of (?:share|certificate)|sub-?division|inspection|intimation of|fund ?rais|\bqip\b|rights issue|debenture|\bncd\b)/i;
+const KEEP_RE =
+  /(launch|introduc|unveil|roll[- ]?out|acquir|acquisition|amalgamat|\bmerger\b|scheme of arrangement|in[- ]?licens|\blicens|licence|co[- ]?market|distribution (?:agreement|arrangement|pact|rights)|definitive agreement|enters? into|signs? (?:an? )?(?:agreement|pact|deal|mou)|joint venture|\bjv\b|biosimilar|\bgeneric|new drug|\bnce\b|line extension|receives? (?:approval|nod)|approval (?:for|of|from|to)|us ?fda approval|usfda approval|marketing authoriz|commercial(?:is|iz)|press release|media release|\bproduct\b|stake in|investment in)/i;
 
 function isRelevantTitle(t) {
   if (!t) return false;

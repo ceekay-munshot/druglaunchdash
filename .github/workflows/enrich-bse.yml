@@ -1,31 +1,32 @@
-name: Enrich (BSE) — probe
+name: Enrich launches (Screener + BSE filings)
 
-# Phase 1: manual-only plumbing probe. Read-only — writes no files, never
-# commits. Validates Scrape.do + BSE + Gemini/Groq/Mistral on free tiers.
-# Does NOT call Firecrawl (paid) or OpenAI. A cron schedule is added later,
-# once the full harvester is proven.
+# Harvests corporate-announcement filing PDFs (discovered via Screener.in,
+# extracted with free-tier LLMs) into public/enrichment.json — a SIDECAR the
+# dashboard overlays. Never touches the existing scrapers or public/launches.json.
+# Never calls Firecrawl (paid) or OpenAI.
 on:
   workflow_dispatch: {}
-  # Until the MCP integration has actions:write, run the probe automatically
-  # whenever its own files change on main. Scoped by path so unrelated pushes
-  # don't trigger it. Removed once the full harvester moves to a schedule.
+  # Run when the harvester's own code changes (the MCP integration lacks
+  # actions:write, so we can't dispatch). The bot's data commit doesn't touch
+  # these paths, so it won't re-trigger.
   push:
     branches: [main]
     paths:
       - 'scripts/enrich-bse.mjs'
       - '.github/workflows/enrich-bse.yml'
+  schedule:
+    # 01:30 UTC daily = 07:00 IST — an hour after the Firecrawl scrape.
+    - cron: '30 1 * * *'
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: enrich-bse
-  # true so a fresh push supersedes a stuck/slow probe run (we can't cancel via
-  # the read-only MCP integration).
   cancel-in-progress: true
 
 jobs:
-  probe:
+  harvest:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repo
@@ -39,10 +40,23 @@ jobs:
       - name: Install unpdf (PDF text extraction)
         run: npm install unpdf --no-save --no-audit --no-fund
 
-      - name: Run enrichment harvester (dry-run validation)
+      - name: Run enrichment harvester
         env:
           SCRAPEDO_API_KEY: ${{ secrets.SCRAPEDO_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
-        run: node scripts/enrich-bse.mjs --dry-run
+        run: node scripts/enrich-bse.mjs
+
+      - name: Commit enrichment.json
+        run: |
+          git add public/enrichment.json
+          if git diff --cached --quiet; then
+            echo "No changes to enrichment.json"
+          else
+            git config user.name 'github-actions[bot]'
+            git config user.email 'github-actions[bot]@users.noreply.github.com'
+            ROWS=$(node -e "console.log(JSON.parse(require('fs').readFileSync('public/enrichment.json','utf8')).rowCount)")
+            git commit -m "chore(data): Screener/BSE enrichment — ${ROWS} rows"
+            git push
+          fi
