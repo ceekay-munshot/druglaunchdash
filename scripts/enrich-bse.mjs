@@ -272,33 +272,36 @@ async function probe() {
   // ── Step A: PARAM matrix — every proxy mode returned "No Record Found!", so
   // it's the params. Vary strSearch / strType / dates / scope until rows appear.
   banner('STEP A — AnnGetData PARAM matrix (find params that return rows)');
+  // Prior runs all returned zero rows but logging masked empty-Table vs the
+  // "No Record Found!" string. Print the RAW body, and test DATE-ORDER swaps:
+  // if BSE does BETWEEN strToDate AND strPrevDate, then prev=old/to=new yields
+  // an empty range and every query comes back empty.
+  const today = ymd(now);
+  const d3 = ymd(new Date(Date.now() - 3 * 86400000));
   const variants = [
-    { label: 'baseline P/C', url: annUrlP({ prev: ymd(y1), to: ymd(now), search: 'P', type: 'C' }) },
-    { label: 'search=C', url: annUrlP({ prev: ymd(y1), to: ymd(now), search: 'C', type: 'C' }) },
-    { label: 'search=empty', url: annUrlP({ prev: ymd(y1), to: ymd(now), search: '', type: 'C' }) },
-    { label: 'type=empty', url: annUrlP({ prev: ymd(y1), to: ymd(now), search: 'P', type: '' }) },
-    { label: 'search+type empty', url: annUrlP({ prev: ymd(y1), to: ymd(now), search: '', type: '' }) },
-    { label: '+subcategory=-1', url: annUrlP({ prev: ymd(y1), to: ymd(now), search: 'P', type: 'C', extra: '&subcategory=-1' }) },
-    { label: 'dashed dates', url: annUrlP({ prev: dash(y1), to: dash(now), search: 'P', type: 'C' }) },
-    { label: 'GENERAL feed 7d (no scrip)', url: annUrlP({ scrip: '', prev: ymd(d7), to: ymd(now), search: 'P', type: 'C' }) },
+    { label: 'prev=old,to=new (ctrl)', url: annUrlP({ prev: ymd(y1), to: today }) },
+    { label: 'prev=new,to=old (SWAP)', url: annUrlP({ prev: today, to: ymd(y1) }) },
+    { label: 'SWAP search=empty', url: annUrlP({ prev: today, to: ymd(y1), search: '' }) },
+    { label: 'SWAP dashed', url: annUrlP({ prev: dash(now), to: dash(y1) }) },
+    { label: 'single-day d-3', url: annUrlP({ prev: d3, to: d3 }) },
+    { label: 'SWAP general noscrip', url: annUrlP({ scrip: '', prev: today, to: ymd(d7) }) },
   ];
   let winner = null;
   for (const v of variants) {
     try {
       const r = await scrapedo(v.url, { headers, timeoutMs: SCRAPEDO_TIMEOUT_MS });
-      let info = snippet(r.body, 70);
+      let rows = [];
       try {
         const j = JSON.parse(r.body);
-        const rows = Array.isArray(j?.Table) ? j.Table : [];
-        info = `Table rows=${rows.length}`;
-        if (rows.length && !winner) {
-          winner = { ...v, rows };
-          info += ` · keys: ${Object.keys(rows[0]).join(',')}`;
-        }
+        if (Array.isArray(j?.Table)) rows = j.Table;
       } catch {}
-      console.log(`  • ${v.label.padEnd(26)} status ${r.status} · ${info}`);
+      console.log(`  • ${v.label.padEnd(24)} status ${r.status} · rows=${rows.length} · raw: ${snippet(r.body, 130)}`);
+      if (rows.length && !winner) {
+        winner = { ...v, rows };
+        console.log(`      keys: ${Object.keys(rows[0]).join(',')}`);
+      }
     } catch (e) {
-      console.log(`  • ${v.label.padEnd(26)} ${e.name === 'AbortError' ? 'timed out' : 'threw ' + e.message}`);
+      console.log(`  • ${v.label.padEnd(24)} ${e.name === 'AbortError' ? 'timed out' : 'threw ' + e.message}`);
     }
     await sleep(700);
   }
