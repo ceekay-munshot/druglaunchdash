@@ -60,7 +60,7 @@ const MAX_ANN_PER_COMPANY = 60;
 const RUN_BACKFILL = ARGS.includes('--backfill') || ARGS.includes('--backfill-only');
 const BACKFILL_ONLY = ARGS.includes('--backfill-only');
 const BACKFILL_CAP_ARG = ARGS.find((a) => a.startsWith('--backfill-cap='));
-const BACKFILL_CAP = BACKFILL_CAP_ARG ? parseInt(BACKFILL_CAP_ARG.split('=')[1], 10) : 120;
+const BACKFILL_CAP = BACKFILL_CAP_ARG ? parseInt(BACKFILL_CAP_ARG.split('=')[1], 10) : 50;
 const LAUNCHES_PATH = path.join(ROOT, 'public', 'launches.json');
 
 // ── companies (Screener accepts the BSE scrip code as the slug) ──────────────
