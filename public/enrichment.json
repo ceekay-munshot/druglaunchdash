@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-22T04:32:42.499Z",
-  "rowCount": 134,
+  "generatedAt": "2026-06-22T06:59:45.849Z",
+  "rowCount": 135,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -2279,6 +2279,23 @@
       "_title": "backfill:Acquisition of ABC Pharmaceuticals",
       "_provider": "mistral",
       "_harvestedAt": "2026-06-22T04:32:39.469Z"
+    },
+    {
+      "brand": "Lannett Company",
+      "launchType": "Acquired",
+      "date": "2023-06-21",
+      "seller": "Lannett Company LLC",
+      "dealType": "Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "buyer": "Aurobindo",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsLnnettPR22062026.pdf",
+      "_title": "backfill:Lannett Company",
+      "_provider": "groq",
+      "_harvestedAt": "2026-06-22T06:59:24.620Z"
     }
   ],
   "processedUrls": [
@@ -2422,6 +2439,8 @@
     "https://www.wockhardt.com/press-release/wockhardt-launches-new-biosimilar",
     "https://www.wockhardt.com/press-release/acquisition-of-xyz-pharmaceuticals",
     "https://www.wockhardt.com/press-releases/acquisition-abc-pharma",
-    "https://www.alkemlabs.com/press-releases/acme-pharmaceuticals-acquisition"
+    "https://www.alkemlabs.com/press-releases/acme-pharmaceuticals-acquisition",
+    "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsLnnettPR22062026.pdf",
+    "https://www.wockhardt.com/press-release/biologics-portfolio-launch"
   ]
 }
