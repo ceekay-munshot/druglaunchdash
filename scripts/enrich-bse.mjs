@@ -60,7 +60,7 @@ const MAX_ANN_PER_COMPANY = 60;
 const RUN_BACKFILL = ARGS.includes('--backfill') || ARGS.includes('--backfill-only');
 const BACKFILL_ONLY = ARGS.includes('--backfill-only');
 const BACKFILL_CAP_ARG = ARGS.find((a) => a.startsWith('--backfill-cap='));
-const BACKFILL_CAP = BACKFILL_CAP_ARG ? parseInt(BACKFILL_CAP_ARG.split('=')[1], 10) : 10;
+const BACKFILL_CAP = BACKFILL_CAP_ARG ? parseInt(BACKFILL_CAP_ARG.split('=')[1], 10) : 120;
 const LAUNCHES_PATH = path.join(ROOT, 'public', 'launches.json');
 
 // ── companies (Screener accepts the BSE scrip code as the slug) ──────────────
@@ -350,56 +350,79 @@ async function backfillStubs(processed, rows, cap) {
   );
   banner(`BACKFILL — ${stubs.length} stub rows with unprocessed source URLs (cap ${cap})`);
 
+  // FILL-ONLY: only emit rows that map to an existing launches row (the target
+  // stub locked to its identity + any sibling the doc reveals that ALREADY
+  // exists). Never append unknown brands here — that's the harvester's job — so
+  // portfolio/news docs can't bloat the dashboard with empty sibling rows.
+  const normK = (x) => String(x ?? '').toLowerCase().replace(/[®™]/g, '').replace(/\s+/g, ' ').trim();
+  const launchKeys = new Set(launches.map((L) => `${normK(L.brand)}|${normK(L.buyer)}`));
+
   let done = 0;
   let produced = 0;
+  let consecutiveBusy = 0;
   for (const s of stubs) {
     if (done >= cap) break;
-    processed.add(s.sourceUrl); // one shot per URL — bounds cost even on failure
-    done += 1;
+    let d;
     try {
-      const d = await fetchDocText(s.sourceUrl);
-      if (!d.ok || !d.text || d.text.replace(/\s/g, '').length < 120) {
-        console.log(`    ⚠ ${snippet(s.brand, 30)} → little/no text (${d.status || d.err || d.kind || 'n/a'})`);
-        continue;
-      }
-      const prompt = `${EXTRACTION_PROMPT}\n\nThis document concerns the launch/deal of brand "${s.brand}" by ${s.buyer}. Extract that event (and any other product events present).\n\nDOCUMENT TEXT:\n${d.text.slice(0, 14000)}`;
-      const { out, provider } = await llmExtract(prompt);
-      const ex = parseRows(out);
-      if (!ex.length) {
-        console.log(`    · ${snippet(s.brand, 30)} → 0 rows [${provider || 'none'}]`);
-        continue;
-      }
-      const tok = brandToken(s.brand);
-      const matched = ex.find((r) => {
-        const b = brandToken(r.brand);
-        return b && tok && (b.includes(tok) || tok.includes(b));
-      });
-      for (const r of ex) {
-        const lock = r === (matched || ex[0]); // lock the stub's own row to its identity
-        rows.push({
-          brand: lock ? s.brand : r.brand,
-          launchType: r.launchType || (lock ? s.launchType : undefined),
-          date: lock ? s.date || r.date : r.date,
-          seller: r.seller,
-          dealType: r.dealType,
-          molecule: r.molecule,
-          therapy: r.therapy,
-          indication: r.indication,
-          existingBrand: r.existingBrand,
-          chronicAcute: r.chronicAcute,
-          buyer: blank(r.buyer) ? s.buyer : r.buyer,
-          sourceUrl: s.sourceUrl,
-          _title: `backfill:${s.brand}`,
-          _provider: provider,
-          _harvestedAt: new Date().toISOString(),
-        });
-      }
-      produced += ex.length;
-      const m = matched || ex[0];
-      console.log(`    [${provider}] ${snippet(s.brand, 30)} ← ${d.kind} · mol=${m.molecule || '—'} ther=${m.therapy || '—'} ca=${m.chronicAcute || '—'} (${ex.length} row${ex.length === 1 ? '' : 's'})`);
+      d = await fetchDocText(s.sourceUrl);
     } catch (e) {
+      processed.add(s.sourceUrl);
+      done += 1;
       console.log(`    ✖ ${snippet(s.brand, 30)}: ${e.message}`);
+      continue;
     }
+    if (!d.ok || !d.text || d.text.replace(/\s/g, '').length < 120) {
+      processed.add(s.sourceUrl); // doc unusable (dead link / scanned) — don't retry
+      done += 1;
+      console.log(`    ⚠ ${snippet(s.brand, 30)} → little/no text (${d.status || d.err || d.kind || 'n/a'})`);
+      continue;
+    }
+    const prompt = `${EXTRACTION_PROMPT}\n\nThis document concerns the launch/deal of brand "${s.brand}" by ${s.buyer}. Extract that event (and any other product events present).\n\nDOCUMENT TEXT:\n${d.text.slice(0, 14000)}`;
+    const { out, provider } = await llmExtract(prompt);
+    if (out === null) {
+      // every provider is rate-limited — leave this stub UNcached so a later run
+      // retries it, and stop early so we don't burn fetches we can't extract.
+      consecutiveBusy += 1;
+      console.log(`    … ${snippet(s.brand, 30)} → all providers busy`);
+      if (consecutiveBusy >= 3) {
+        console.log('  ⏸ providers rate-limited — stopping backfill (resumes next run)');
+        break;
+      }
+      continue;
+    }
+    consecutiveBusy = 0;
+    processed.add(s.sourceUrl); // real attempt completed → don't reprocess
+    done += 1;
+    const ex = parseRows(out);
+    const tok = brandToken(s.brand);
+    const target = ex.find((r) => { const b = brandToken(r.brand); return b && tok && (b.includes(tok) || tok.includes(b)); }) || ex[0];
+    let emitted = 0;
+    for (const r of ex) {
+      const isTarget = r === target;
+      const buyer = blank(r.buyer) ? s.buyer : r.buyer;
+      if (!isTarget && !launchKeys.has(`${normK(r.brand)}|${normK(buyer)}`)) continue; // fill-only
+      rows.push({
+        brand: isTarget ? s.brand : r.brand,
+        launchType: r.launchType || (isTarget ? s.launchType : undefined),
+        date: isTarget ? s.date || r.date : r.date,
+        seller: r.seller,
+        dealType: r.dealType,
+        molecule: r.molecule,
+        therapy: r.therapy,
+        indication: r.indication,
+        existingBrand: r.existingBrand,
+        chronicAcute: r.chronicAcute,
+        buyer,
+        sourceUrl: s.sourceUrl,
+        _title: `backfill:${s.brand}`,
+        _provider: provider,
+        _harvestedAt: new Date().toISOString(),
+      });
+      emitted += 1;
+    }
+    produced += emitted;
+    const m = target || {};
+    console.log(`    [${provider}] ${snippet(s.brand, 30)} ← ${d.kind} · mol=${m.molecule || '—'} ther=${m.therapy || '—'} ca=${m.chronicAcute || '—'} (${emitted}/${ex.length} kept)`);
     await sleep(700);
   }
   console.log(`  backfill: ${done} docs processed · ${produced} rows produced`);
