@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-21T05:31:45.637Z",
-  "rowCount": 400,
+  "generatedAt": "2026-06-22T06:14:32.651Z",
+  "rowCount": 412,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -1190,7 +1190,7 @@
       "price": "Rs 780 / vial",
       "sourceUrl": "https://www.mankindpharma.com/products/softra-launch/",
       "buyer": "Mankind Pharma",
-      "lastEnrichmentAttempt": "2026-06-05T05:04:10.596Z"
+      "lastEnrichmentAttempt": "2026-06-22T06:10:24.847Z"
     },
     {
       "brand": "ILUMYA® (tildrakizumab-asmn)",
@@ -2678,7 +2678,7 @@
       "price": "₹21.3 / bottle of 30 ml syrup",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/08/Sun-Pharma-and-Cassiopea-announce-the-expiry-of-the-HSR-Act-process-and-the-successful-consummation-of-their-Winlevi%C2%AE.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-05T05:04:22.533Z"
+      "lastEnrichmentAttempt": "2026-06-22T06:10:32.717Z"
     },
     {
       "brand": "Myoril",
@@ -2694,7 +2694,7 @@
       "price": "₹308 / strip of 10 capsules",
       "sourceUrl": "https://www.coronaremedies.com/wp-content/uploads/2024/11/myoril-news-2024.png",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-06T04:41:19.184Z"
+      "lastEnrichmentAttempt": "2026-06-22T06:12:57.907Z"
     },
     {
       "brand": "Generic version of Seretide® Accuhaler®",
@@ -3617,7 +3617,7 @@
       "molecule": "Dapagliflozin plus Metformin Hydrochloride",
       "therapy": "—",
       "indication": "—",
-      "existingBrand": "—",
+      "existingBrand": "Farxiga",
       "chronicAcute": "—",
       "price": "₹95.5 / strip of 10 tablet er",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoUSFDAmetformin07042026.pdf",
@@ -4166,7 +4166,7 @@
       "price": "—",
       "sourceUrl": "https://www.sunpharma.com/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-05T05:04:22.533Z"
+      "lastEnrichmentAttempt": "2026-06-22T06:10:37.569Z"
     },
     {
       "brand": "Alkem's New NCE",
@@ -4182,7 +4182,7 @@
       "price": "Rs 2,500 / strip",
       "sourceUrl": "https://www.alkemlabs.com/press-release/2023-08-15/alkem-launch-new-nce",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-06-06T04:39:15.772Z"
+      "lastEnrichmentAttempt": "2026-06-22T06:10:53.167Z"
     },
     {
       "brand": "Acquisition of Generic Brands",
@@ -4198,7 +4198,7 @@
       "price": "Rs 1,200 / bottle",
       "sourceUrl": "https://www.alkemlabs.com/press-release/2023-07-30/acquisition-generic-brands",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-06-06T04:39:15.772Z"
+      "lastEnrichmentAttempt": "2026-06-22T06:11:11.753Z"
     },
     {
       "brand": "Licensing Agreement for Drug XYZ",
@@ -4230,7 +4230,7 @@
       "price": "₹17724 / vial of 2 ml solution for injection",
       "sourceUrl": "https://www.natcopharma.co.in/insights/news-and-announcements/eribulin-mesylate-injection",
       "buyer": "Natco Pharma",
-      "lastEnrichmentAttempt": "2026-06-06T04:39:34.117Z"
+      "lastEnrichmentAttempt": "2026-06-22T06:11:24.717Z"
     },
     {
       "brand": "RanluspecTM",
@@ -4246,7 +4246,7 @@
       "price": "—",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-approval-from-u-s-fda-for-ranluspec-tm-ranibizumab-injection",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-06-06T04:40:02.402Z"
+      "lastEnrichmentAttempt": "2026-06-22T06:11:35.633Z"
     },
     {
       "brand": "Eribulin Mesylate",
@@ -4262,7 +4262,7 @@
       "price": "₹17184 / vial of 1 injection",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-and-natco-receive-approval-from-u-s-fda-for-eribulin-mesylate-injection",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-06-06T04:40:02.402Z"
+      "lastEnrichmentAttempt": "2026-06-22T06:11:46.867Z"
     },
     {
       "brand": "Acilimab",
@@ -4374,7 +4374,7 @@
       "price": "₹42.6 / packet of 50 ml scrub",
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-of-firm-x",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-06-06T04:41:17.681Z"
+      "lastEnrichmentAttempt": "2026-06-22T06:11:56.527Z"
     },
     {
       "brand": "SALFLUTIN",
@@ -6391,6 +6391,198 @@
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
       "lastEnrichmentAttempt": "2026-06-21T05:30:28.454Z"
+    },
+    {
+      "brand": "Lannett Company",
+      "launchType": "Acquired",
+      "date": "2023-06-21",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsLnnettPR22062026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-06-22T06:09:58.862Z"
+    },
+    {
+      "brand": "TheraNym",
+      "launchType": "Own Launched",
+      "date": "2023-06-02",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseTheranym03062026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-06-22T06:09:58.862Z"
+    },
+    {
+      "brand": "Dextromethorphan Polistirex Extended-Release Oral Suspension",
+      "launchType": "Own Launched",
+      "date": "2023-04-16",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Dextromethorphan",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Delsym",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/2LtrToSEsAurobindoPRUSFDA17042026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-06-22T06:09:58.862Z"
+    },
+    {
+      "brand": "Glycerol Phenylbutyrate Oral Liquid",
+      "launchType": "Own Launched",
+      "date": "2023-04-16",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Glycerol Phenylbutyrate",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Ravicti",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoPRUSFDA17042026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-06-22T06:09:58.862Z"
+    },
+    {
+      "brand": "Omalizumab Biosimilar BP11",
+      "launchType": "Own Launched",
+      "date": "2023-04-05",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "Omalizumab",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Xolair",
+      "chronicAcute": "—",
+      "price": "₹34491 / ampoule of 2 ml injection",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-06-22T06:09:58.863Z"
+    },
+    {
+      "brand": "Wockhardt's Biologics Portfolio",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹69 / strip of 10 tablets",
+      "sourceUrl": "https://www.wockhardt.com/press-release/biologics-portfolio-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-22T06:10:23.344Z"
+    },
+    {
+      "brand": "Wockhardt Pharma's New Anti-Diabetic Drug",
+      "launchType": "Own Launched",
+      "date": "2023-08-30",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Liraglutide",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 2,200 / strip of 10 tablets",
+      "sourceUrl": "https://www.wockhardt.com/press-release/new-diabetic-drug-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-22T06:10:23.344Z"
+    },
+    {
+      "brand": "Semaglutide Injection",
+      "launchType": "Own Launched",
+      "date": "2026-03-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Semaglutide",
+      "therapy": "Anti-Diabetic",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/blog/sun-pharma-launches-its-semaglutide-injection-under-the-brand-names-noveltreat-and-sematrinity-in-india/",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-06-22T06:10:37.569Z"
+    },
+    {
+      "brand": "UNLOXCYT™ (Cosibelimab)",
+      "launchType": "Own Launched",
+      "date": "2026-01-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Cosibelimab",
+      "therapy": "Oncology",
+      "indication": "Advanced Cutaneous Squamous Cell Carcinoma (aCSCC)",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/blog/sun-pharma-announces-the-availability-of-unloxcyt-cosibelimab-ipdl-for-advanced-cutaneous-squamous-cell-carcinoma-acscc/",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-06-22T06:10:37.569Z"
+    },
+    {
+      "brand": "New Antibiotic Combination",
+      "launchType": "Own Launched",
+      "date": "2023-10-02",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "Drug-Resistant Infections",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/amp_articleshow/100775508.cms",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-06-22T06:10:53.167Z"
+    },
+    {
+      "brand": "Ranluspec™ (ranibizumab)",
+      "launchType": "Own Launched",
+      "date": "2026-06-05",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "ranibizumab-hkdz",
+      "therapy": "—",
+      "indication": "neovascular (wet) age-related macular degeneration, macular edema following retinal vein occlusion, diabetic macular edema, diabetic retinopathy, myopic choroidal neovascularization",
+      "existingBrand": "Lucentis®",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.lupin.com/press-releases/lupin-receives-approval-from-us-fda-for-ranluspectm-ranibizumab-injection",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-06-22T06:11:35.633Z"
+    },
+    {
+      "brand": "Eribulin Mesylate Injection",
+      "launchType": "In-licensed",
+      "date": "2026-06-03",
+      "seller": "Natco Pharma Limited",
+      "dealType": "In-license (India)",
+      "molecule": "Eribulin Mesylate",
+      "therapy": "—",
+      "indication": "metastatic breast cancer, unresectable or metastatic liposarcoma",
+      "existingBrand": "Halaven®",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.lupin.com/press-release-u-s-fda-approval-eribulin-mesylate-injection/",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-06-22T06:11:46.867Z"
     }
   ]
 }
