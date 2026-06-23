@@ -137,6 +137,37 @@ const headerJustify = (col) => {
   return 'justify-start';
 };
 
+// An empty cell carries two very different meanings, and showing both as the
+// same grey "—" is what makes the table read as uniformly missing/broken.
+//   • structurally NOT APPLICABLE — an "Own Launched" row has no Seller and no
+//     deal consideration (nobody sold it; no money changed hands). That blank
+//     is intentional, so we render a muted "NA".
+//   • simply UNKNOWN / undisclosed — applies, but we don't have it yet. Stays
+//     as the "—" dash (the enricher may fill it on a later run).
+const cellIsBlank = (v) => {
+  if (v == null) return true;
+  if (typeof v === 'number') return false;
+  const s = String(v).trim();
+  return s === '' || s === '—' || s === '-';
+};
+
+// (col, launchType) pairs that are genuinely Not Applicable for own launches.
+const NA_WHEN_OWN_LAUNCHED = new Set([COLUMN_KEYS.SELLER, COLUMN_KEYS.DEAL_VALUE]);
+const isNotApplicable = (row, col) =>
+  row[COLUMN_KEYS.LAUNCH_TYPE] === 'Own Launched' && NA_WHEN_OWN_LAUNCHED.has(col);
+
+const renderEmptyCell = (row, col) =>
+  isNotApplicable(row, col) ? (
+    <span
+      className="text-ink-300 text-[11px] font-medium tracking-wide"
+      title="Not applicable — own launch (no counterparty, no deal consideration)"
+    >
+      NA
+    </span>
+  ) : (
+    <span className="text-ink-300">—</span>
+  );
+
 export default function MainTable({ rows, allRows, selectedCompany }) {
   const [tableQuery, setTableQuery] = useState('');
   const [sortKey, setSortKey] = useState(COLUMN_KEYS.DATE);
@@ -356,9 +387,7 @@ export default function MainTable({ rows, allRows, selectedCompany }) {
       return <span className="tabular-nums font-medium text-ink-900">{fmtINRPlain(v)}</span>;
     }
     if (col === COLUMN_KEYS.DEAL_VALUE) {
-      if (v === null || v === undefined || v === '') {
-        return <span className="text-ink-300">—</span>;
-      }
+      if (cellIsBlank(v)) return renderEmptyCell(row, col);
       const n = Number(v);
       if (!Number.isFinite(n)) return <span className="text-ink-700">{v}</span>;
       return (
@@ -419,7 +448,7 @@ export default function MainTable({ rows, allRows, selectedCompany }) {
       if (!v) return <span className="text-ink-300">—</span>;
       return <CompanyTag name={v} size="sm" textClass="text-ink-700" />;
     }
-    if (v === null || v === undefined || v === '') return <span className="text-ink-300">—</span>;
+    if (cellIsBlank(v)) return renderEmptyCell(row, col);
     return <span className="text-ink-700">{v}</span>;
   };
 

@@ -230,6 +230,13 @@ Return STRICT JSON: {"rows":[{...}]}. Fields per row:
   brand, launchType ("Own Launched"|"Acquired"|"In-licensed"),
   date (ISO YYYY-MM-DD), seller (counterparty; "—" if own launch),
   dealType, molecule, therapy, indication,
+  price (the launch price / MRP EXACTLY as written, e.g. "₹84,375 per vial" or
+    "₹190 / strip of 10"; "—" if the document states no price),
+  dealValue (the TOTAL deal consideration as a NUMBER in ₹ crore — the
+    whole-deal figure for an acquisition / in-licensing; convert a foreign-
+    currency amount to ₹ crore using an INR equivalent given in the document,
+    else approximate at ₹83 per US$1; null for an own launch or if the
+    document states no monetary figure),
   existingBrand (a COMPETITOR market-leading brand for the same molecule, from a
     company OTHER than the filer; "—" if none), chronicAcute ("Chronic"|"Acute"|"—").
 
@@ -239,7 +246,9 @@ not stated, you MAY infer them from well-established medical knowledge of the
 named molecule or brand (e.g. semaglutide → Anti-Diabetic, Chronic; for a
 well-known molecule you may name the established market-leading competitor brand
 in India). Only infer when highly confident; otherwise use "—". NEVER invent a
-brand, date, or counterparty that the document does not support.`;
+brand, date, or counterparty that the document does not support.
+STRICT — NEVER INFER price OR dealValue: these are financial facts. Use them
+ONLY when the document explicitly states the figure; otherwise "—" / null.`;
 
 // ── LLM providers (OpenAI-compatible chat for Groq/Mistral; REST for Gemini) ─
 async function chatJson(endpoint, key, model, prompt) {
@@ -291,6 +300,21 @@ async function llmExtract(prompt) {
 
 // ── row hygiene ─────────────────────────────────────────────────────────────
 const blank = (v) => v == null || ['', '-', '—', 'n/a', 'null'].includes(String(v).trim().toLowerCase());
+
+// Coerce an LLM-supplied deal consideration to a clean integer ₹ crore, or null.
+// Accepts a number or strings like "₹2,498 crore" / "2498" / "Rs. 5,250 Cr".
+// Bounds-checked so a stray figure (a date, a phone number, an MRP in rupees)
+// can't masquerade as a multi-thousand-crore deal — a financial fact we won't
+// guess, so anything outside a sane deal range is dropped rather than shown.
+const toCrore = (v) => {
+  if (v == null) return null;
+  if (typeof v === 'number') return Number.isFinite(v) && v >= 1 && v <= 1_000_000 ? Math.round(v) : null;
+  const s = String(v).toLowerCase().replace(/[₹,]/g, ' ').replace(/crores?|cr\b|inr|rs\.?/g, ' ').trim();
+  const m = s.match(/-?\d+(?:\.\d+)?/);
+  if (!m) return null;
+  const n = parseFloat(m[0]);
+  return Number.isFinite(n) && n >= 1 && n <= 1_000_000 ? Math.round(n) : null;
+};
 const JUNK_BRAND = [/^—+$|^-+$|^n\/a$/i, /^\[.*\]$/, /^(brandx|brandy|acmebio|novelgen)\b/i, /^new (drug|brand)\b/i];
 function isJunkBrand(b) {
   const s = String(b ?? '').trim();
@@ -407,6 +431,8 @@ async function backfillStubs(processed, rows, cap) {
         date: isTarget ? s.date || r.date : r.date,
         seller: r.seller,
         dealType: r.dealType,
+        price: r.price,
+        dealValue: toCrore(r.dealValue),
         molecule: r.molecule,
         therapy: r.therapy,
         indication: r.indication,
@@ -490,6 +516,7 @@ async function main() {
         const extracted = parseRows(out).map((r) => ({
           brand: r.brand, launchType: r.launchType, date: r.date, seller: r.seller,
           dealType: r.dealType, molecule: r.molecule, therapy: r.therapy, indication: r.indication,
+          price: r.price, dealValue: toCrore(r.dealValue),
           existingBrand: r.existingBrand, chronicAcute: r.chronicAcute,
           buyer: blank(r.buyer) ? c.name : r.buyer, sourceUrl: a.url,
           _title: a.title, _provider: provider, _harvestedAt: new Date().toISOString(),

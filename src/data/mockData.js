@@ -298,6 +298,12 @@ const ENRICH_FILLABLE_FIELDS = [
   COLUMN_KEYS.DEAL_TYPE,
   COLUMN_KEYS.SELLER,
   COLUMN_KEYS.LAUNCH_TYPE,
+  // Filing PDFs the enricher reads usually state the launch price and the
+  // deal consideration — overlay them so the two sparsest columns fill from
+  // the source. Curated maps still win (see enrichRowsWithPrices /
+  // enrichRowsWithDealValue, which run AFTER the overlay).
+  COLUMN_KEYS.PRICING,
+  COLUMN_KEYS.DEAL_VALUE,
 ];
 
 const normEnrichKey = (s) =>
@@ -1151,14 +1157,23 @@ export const DEAL_VALUES = {
 // row-detail drawer of any child).
 export function enrichRowsWithDealValue(rows, dealValues = DEAL_VALUES) {
   const parents = parentDealKeys(rows);
+  // Drop a deal value an enrichment overlay may have attached to a row where
+  // one doesn't belong (own launch, or a child of a multi-brand portfolio
+  // deal). Keeps the column honest now that the enricher can supply figures.
+  const clearIfPresent = (r) =>
+    r[COLUMN_KEYS.DEAL_VALUE] != null ? { ...r, [COLUMN_KEYS.DEAL_VALUE]: null } : r;
   return rows.map((r) => {
-    if (r[COLUMN_KEYS.DEAL_VALUE] != null) return r;
+    // Own launches have no counterparty and no consideration — never show one.
+    if (r[COLUMN_KEYS.LAUNCH_TYPE] === 'Own Launched') return clearIfPresent(r);
     const key = acquisitionDealKey(r);
+    // Children of a multi-brand deal never carry a per-brand consideration
+    // (the whole-deal figure lives on the parent row + each child's drawer).
+    if (parents.has(key) && !isAcquisitionParent(r)) return clearIfPresent(r);
+    // Curated, hand-verified consideration wins over any enrichment estimate.
     const v = dealValues[key];
-    if (v == null) return r;
-    // If this dealKey has a parent row, only fill on the parent itself.
-    if (parents.has(key) && !isAcquisitionParent(r)) return r;
-    return { ...r, [COLUMN_KEYS.DEAL_VALUE]: v };
+    if (v != null) return { ...r, [COLUMN_KEYS.DEAL_VALUE]: v };
+    // Otherwise keep whatever's there — an enrichment-supplied figure, or null.
+    return r;
   });
 }
 
