@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-22T06:14:32.651Z",
-  "rowCount": 412,
+  "generatedAt": "2026-06-23T04:47:41.384Z",
+  "rowCount": 426,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -287,7 +287,7 @@
       "seller": "MSD and Ridgeback",
       "dealType": "NCE Launch",
       "molecule": "molnupiravir",
-      "therapy": "—",
+      "therapy": "Antiviral",
       "indication": "COVID-19",
       "existingBrand": "—",
       "chronicAcute": "Acute",
@@ -566,7 +566,7 @@
       "price": "₹41 / bottle of 10 ml dilution",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/04/PR-Sun-Organon-announcement-Apr-26.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-06T04:41:57.253Z"
+      "lastEnrichmentAttempt": "2026-06-23T04:46:02.572Z"
     },
     {
       "brand": "Obimet",
@@ -1206,7 +1206,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/Sun-Pharma-Announces-US-FDA-Acceptance-of-sBLA-Application-for-ILUMYA.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-06T04:41:27.110Z"
+      "lastEnrichmentAttempt": "2026-06-23T04:45:29.135Z"
     },
     {
       "brand": "generic semaglutide injection",
@@ -1238,7 +1238,7 @@
       "price": "₹1347 / bottle of 40 capsules",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/11/Press-Release-Sun-Pharma-gearing-up-to-introduce-molnupiravir-under-the-brand-name-Molxvir%C2%AE-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-06T04:41:40.696Z"
+      "lastEnrichmentAttempt": "2026-06-23T04:45:42.729Z"
     },
     {
       "brand": "Tiohromium Bromide",
@@ -1254,7 +1254,7 @@
       "price": "—",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-enters-into-an-exclusive-licensing.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-06-06T04:41:53.248Z"
+      "lastEnrichmentAttempt": "2026-06-23T04:45:57.776Z"
     },
     {
       "brand": "Obimet",
@@ -1270,7 +1270,7 @@
       "price": "₹21.7 / strip of 10 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-06T04:42:01.097Z"
+      "lastEnrichmentAttempt": "2026-06-23T04:46:14.435Z"
     },
     {
       "brand": "Thyrocab",
@@ -1286,7 +1286,7 @@
       "price": "₹232 / bottle of 100 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-06T04:42:07.317Z"
+      "lastEnrichmentAttempt": "2026-06-23T04:46:24.769Z"
     },
     {
       "brand": "Molxvir®",
@@ -2710,7 +2710,7 @@
       "price": "₹836 / box of 60 (50 mcg / 250 mcg)",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-secures-marketing-authorization-in-Germany_0.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-06-06T04:41:22.826Z"
+      "lastEnrichmentAttempt": "2026-06-23T04:45:23.283Z"
     },
     {
       "brand": "ILUMYA",
@@ -2726,7 +2726,7 @@
       "price": null,
       "sourceUrl": "https://www.sunpharma.com/press-release/2026-03-16-us-fda-acceptance-sbla-ilumya",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-06T04:41:31.572Z"
+      "lastEnrichmentAttempt": "2026-06-23T04:45:34.237Z"
     },
     {
       "brand": "Molxvir",
@@ -2742,7 +2742,7 @@
       "price": "—",
       "sourceUrl": "http://www.sunpharma.com/press-release/mumbai-november-11-2021-sun-pharmaceutical-industries-limited-reuters-sun-bo-bloomberg-sunp-in-nse-sunpharma-bse-524715-sun-pharma-includes-its-subsidiaries-andor-associate-companies-today-said-that-it-is-gearing-up-to-introduce-merck-sharpe-dohme-msd-and-ridgebacks-molnupiravir-under-the-brand-name-molxvir-in-india.",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-06T04:41:44.537Z"
+      "lastEnrichmentAttempt": "2026-06-23T04:45:48.734Z"
     },
     {
       "brand": "Obimet & Thyrocab",
@@ -4422,7 +4422,7 @@
       "price": null,
       "sourceUrl": "https://www.sunpharma.com/press-release-2026-04-27",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-06T04:41:57.253Z"
+      "lastEnrichmentAttempt": "2026-06-23T04:46:06.891Z"
     },
     {
       "brand": "Eribulin Mesylate",
@@ -6583,6 +6583,230 @@
       "sourceUrl": "https://www.lupin.com/press-release-u-s-fda-approval-eribulin-mesylate-injection/",
       "buyer": "Lupin",
       "lastEnrichmentAttempt": "2026-06-22T06:11:46.867Z"
+    },
+    {
+      "brand": "Medicover",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "——",
+      "indication": "Dental health",
+      "existingBrand": "Colgate",
+      "chronicAcute": "—",
+      "price": "Rs 299 / pack",
+      "sourceUrl": "https://www.medicover.com/press-release/medicover-launches-new-teeth-whitening-product",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-06-23T04:44:15.247Z"
+    },
+    {
+      "brand": "ZyCoV-D",
+      "launchType": "Own Launched",
+      "date": "2023-08-12",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "ZyCoV-D",
+      "therapy": "Immunology",
+      "indication": "COVID-19",
+      "existingBrand": "Covaxin",
+      "chronicAcute": "Acute",
+      "price": "Rs 1,150 / dosage",
+      "sourceUrl": "https://www.biocon.com/press-release/zycov-d-launch-india",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-06-23T04:44:15.247Z"
+    },
+    {
+      "brand": "Xento",
+      "launchType": "In-licensed",
+      "date": "2023-07-22",
+      "seller": "Pharma Inc.",
+      "dealType": "In-license (India)",
+      "molecule": "X-123",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "₹38.1 / strip of 10 tablets",
+      "sourceUrl": "https://www.pharmacloud.com/press-release/xento-in-licensing",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-06-23T04:44:15.247Z"
+    },
+    {
+      "brand": "HeartAid",
+      "launchType": "Acquired",
+      "date": "2023-05-30",
+      "seller": "HeartMed",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "Cardiology",
+      "indication": "Heart Disease",
+      "existingBrand": "Atenolol",
+      "chronicAcute": "—",
+      "price": "Rs 450 / bottle",
+      "sourceUrl": "https://www.heartmed.com/press-release/heartaid-acquisition",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-06-23T04:44:15.247Z"
+    },
+    {
+      "brand": "New PediaSure",
+      "launchType": "Own Launched",
+      "date": "2023-11-17",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹316 / box of 200 gm powder",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-new-pediaSure-with-nutri-pull-system-to-help-support-catch-up-growth-and-overall-health-in-children.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-06-23T04:44:53.254Z"
+    },
+    {
+      "brand": "Dextromethorphan Polistirex",
+      "launchType": "Own Launched",
+      "date": "2023-04-16",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Dextromethorphan",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Delsym",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/2LtrToSEsAurobindoPRUSFDA17042026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-06-23T04:45:11.705Z"
+    },
+    {
+      "brand": "Glycerol Phenylbutyrate",
+      "launchType": "Own Launched",
+      "date": "2023-04-16",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Glycerol Phenylbutyrate",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Ravicti",
+      "chronicAcute": "—",
+      "price": "₹84.53 / bottle of 250 ml liquid",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoPRUSFDA17042026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-06-23T04:45:11.705Z"
+    },
+    {
+      "brand": "Dapagliflozin and Metformin Hydrochloride",
+      "launchType": "Own Launched",
+      "date": "2023-04-06",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Dapagliflozin plus Metformin Hydrochloride",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹95.4 / strip of 10 tablet er",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoUSFDAmetformin07042026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-06-23T04:45:11.705Z"
+    },
+    {
+      "brand": "Pomalidomide Capsules",
+      "launchType": "Own Launched",
+      "date": "2023-03-03",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Pomalidomide",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹3840 / bottle of 21 capsules",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/PressReleaseEugia04032026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-06-23T04:45:11.705Z"
+    },
+    {
+      "brand": "Everolimus Tablets",
+      "launchType": "Own Launched",
+      "date": "2023-02-25",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Everolimus",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹666.78 / strip of 10 tablets",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtsToSEsPREugiaUSFDA26022026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-06-23T04:45:11.705Z"
+    },
+    {
+      "brand": "ADQUEY™ (difamilast 1%) Ointment",
+      "launchType": "Acquired",
+      "date": "2023-02-16",
+      "seller": "Otsuka Pharmaceutical Co., Ltd.",
+      "dealType": "Co-marketing",
+      "molecule": "difamilast",
+      "therapy": "—",
+      "indication": "Mild-to-Moderate Atopic Dermatitis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹75.2 / strip of 10 tablets",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/Adquey-(Difamilast)_NDA%20Approval_PressRelease_13-Feb-26.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-06-23T04:45:11.705Z"
+    },
+    {
+      "brand": "Wockhardt",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "Respiratory",
+      "indication": "Asthma",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,500 / inhaler",
+      "sourceUrl": "https://www.wockhardt.com/press-release/wockhardt-launches-new-asthma-inhaler",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-23T04:45:21.779Z"
+    },
+    {
+      "brand": "Glenmark",
+      "launchType": "Acquired",
+      "date": "2023-08-10",
+      "seller": "Mankind Pharma",
+      "dealType": "Brand Acquisition",
+      "molecule": "Telmisartan",
+      "therapy": "Cardiology",
+      "indication": "Hypertension",
+      "existingBrand": "Telma",
+      "chronicAcute": "Chronic",
+      "price": "Rs 250 / strip",
+      "sourceUrl": "https://www.wockhardt.com/press-release/glenmark-acquires-telmisartan-from-mankind",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-23T04:45:21.779Z"
+    },
+    {
+      "brand": "Wockhardt",
+      "launchType": "In-licensed",
+      "date": "2023-07-20",
+      "seller": "Mylan",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "Immunology",
+      "indication": "Psoriasis",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 4,100 / vial",
+      "sourceUrl": "https://www.wockhardt.com/press-release/wockhardt-in-licenses-psoriasis-drug-from-mylan",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-23T04:45:21.779Z"
     }
   ]
 }
