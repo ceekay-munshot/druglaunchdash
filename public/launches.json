@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-24T04:54:45.368Z",
-  "rowCount": 432,
+  "generatedAt": "2026-06-25T04:51:26.153Z",
+  "rowCount": 443,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -1302,7 +1302,7 @@
       "price": "₹1347 / bottle of 40 capsules",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/12/Press-Release-Sun-Pharma-receives-DCGI-approval-for-Molxvir-Molnupiravir-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-07T05:14:06.706Z"
+      "lastEnrichmentAttempt": "2026-06-25T04:48:59.651Z"
     },
     {
       "brand": "Ensure® Strength Pro",
@@ -1318,7 +1318,7 @@
       "price": "₹679 / box of 400 gm",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-ensure-strength-pro-in-india-to-support-healthy-ageing.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-07T05:14:10.865Z"
+      "lastEnrichmentAttempt": "2026-06-25T04:49:06.177Z"
     },
     {
       "brand": "TriClip™",
@@ -1334,7 +1334,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-introduces-triclip-in-india-a-first-of-its-kind-device-to-repair-a-leaky-tricuspid-valve.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-07T05:14:21.327Z"
+      "lastEnrichmentAttempt": "2026-06-25T04:49:15.425Z"
     },
     {
       "brand": "XIENCE Skypoint™",
@@ -4518,7 +4518,7 @@
       "price": "₹27.7 / vial of 1 injection",
       "sourceUrl": "https://www.cnbctv18.com/healthcare/alkem-oncology-novel-breast-cancer-treatment-drug-launch-palbociclib-palbo-15703241.htm",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-06-08T05:17:04.239Z"
+      "lastEnrichmentAttempt": "2026-06-25T04:49:23.226Z"
     },
     {
       "brand": "Navitor™",
@@ -4534,7 +4534,7 @@
       "price": "₹84.6 / tube of 10 gm",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-introduces-navitor-vision-in-india-the-next-generation-of-heart-valve-technology-designed-to-treat-aortic-stenosis.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-08T05:19:03.561Z"
+      "lastEnrichmentAttempt": "2026-06-25T04:49:31.944Z"
     },
     {
       "brand": "Navitor™",
@@ -4550,7 +4550,7 @@
       "price": "₹84.6 / tube of 10 gm cream",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-navitor-its-latest-generation-transcatheter-aortic-valve-implantation-tavi-system-to-treat-aortic-stenosis-in-india.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-08T05:19:03.561Z"
+      "lastEnrichmentAttempt": "2026-06-25T04:49:39.813Z"
     },
     {
       "brand": "Brufen® Power Spray",
@@ -4566,7 +4566,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbotts-new-brufen-power-spray-film-highlights-the-power-of-targeted-pain-relief.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-08T05:19:03.561Z"
+      "lastEnrichmentAttempt": "2026-06-25T04:49:47.095Z"
     },
     {
       "brand": "Panbio™ COVID-19 Antigen Self-Test",
@@ -4582,7 +4582,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-panbio-covid-19-antigen-self-test-in-india.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-08T05:19:03.561Z"
+      "lastEnrichmentAttempt": "2026-06-25T04:49:54.636Z"
     },
     {
       "brand": "Carbetocin",
@@ -4598,7 +4598,7 @@
       "price": "₹360 / vial of 1 ml (100 mcg)",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-introduces-room-temperature-stable.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-08T05:19:03.561Z"
+      "lastEnrichmentAttempt": "2026-06-25T04:50:02.803Z"
     },
     {
       "brand": "Flash Glucose Monitoring System",
@@ -4614,7 +4614,7 @@
       "price": "₹4984 / box of 1 unit",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/first-flash-glucose-monitoring-system.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-08T05:19:03.561Z"
+      "lastEnrichmentAttempt": "2026-06-25T04:50:10.562Z"
     },
     {
       "brand": "Vazquez",
@@ -6903,6 +6903,182 @@
       "sourceUrl": "http://www.aurobindo.com/press-release/therynym-inauguration",
       "buyer": "Aurobindo",
       "lastEnrichmentAttempt": "2026-06-24T04:52:17.217Z"
+    },
+    {
+      "brand": "Invista",
+      "launchType": "Own Launched",
+      "date": "2023-05-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Amlodipine + Atorvastatin",
+      "therapy": "Cardiology",
+      "indication": "Hypertension and Hyperlipidemia",
+      "existingBrand": "Telma",
+      "chronicAcute": "Chronic",
+      "price": "Rs 84.00 / strip of 10 tablets",
+      "sourceUrl": "https://www.mankindpharma.com/press-release/invista-launch/",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-06-25T04:47:08.670Z"
+    },
+    {
+      "brand": "GlaxoSmithKline",
+      "launchType": "Acquired",
+      "date": "—",
+      "seller": "GSK",
+      "dealType": "Brand Portfolio Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-06-25T04:47:53.478Z"
+    },
+    {
+      "brand": "Lannett Company LLC",
+      "launchType": "Acquired",
+      "date": "2022-06-21",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsLnnettPR22062026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-06-25T04:48:50.176Z"
+    },
+    {
+      "brand": "TheraNym",
+      "launchType": "Own Launched",
+      "date": "2022-06-02",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseTheranym03062026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-06-25T04:48:50.176Z"
+    },
+    {
+      "brand": "Dextromethorphan Polistirex",
+      "launchType": "Own Launched",
+      "date": "2022-04-16",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Dextromethorphan Polistirex",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Delsym",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/2LtrToSEsAurobindoPRUSFDA17042026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-06-25T04:48:50.176Z"
+    },
+    {
+      "brand": "Glycerol Phenylbutyrate",
+      "launchType": "Own Launched",
+      "date": "2022-04-16",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Glycerol Phenylbutyrate",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Ravicti",
+      "chronicAcute": "—",
+      "price": "₹84.53 / bottle of 250 ml liquid",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoPRUSFDA17042026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-06-25T04:48:50.176Z"
+    },
+    {
+      "brand": "Dapagliflozin and Metformin Hydrochloride",
+      "launchType": "Own Launched",
+      "date": "2022-04-06",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Dapagliflozin and Metformin Hydrochloride",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Farxiga",
+      "chronicAcute": "—",
+      "price": "₹110 / strip of 15 tablet er",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoUSFDAmetformin07042026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-06-25T04:48:50.176Z"
+    },
+    {
+      "brand": "Omalizumab",
+      "launchType": "Own Launched",
+      "date": "2022-04-05",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "Omalizumab",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Xolair",
+      "chronicAcute": "—",
+      "price": "₹34491 / ampoule of 2 ml injection",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-06-25T04:48:50.176Z"
+    },
+    {
+      "brand": "Wockhardt's Generic Insulin",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Insulin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Diabetes",
+      "existingBrand": "Lantus",
+      "chronicAcute": "Chronic",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/news/generic-insulin-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-25T04:48:58.148Z"
+    },
+    {
+      "brand": "Cardiovascular Drug X",
+      "launchType": "Acquired",
+      "date": "2022-08-20",
+      "seller": "Pharma Inc.",
+      "dealType": "Brand Acquisition",
+      "molecule": "Amlodipine",
+      "therapy": "Cardiology",
+      "indication": "Hypertension",
+      "existingBrand": "Amlong",
+      "chronicAcute": "Chronic",
+      "price": "Rs 650 / pack",
+      "sourceUrl": "https://www.wockhardt.com/news/cardiovascular-drug-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-25T04:48:58.148Z"
+    },
+    {
+      "brand": "Brufen Power Spray",
+      "launchType": "Own Launched",
+      "date": "2021-03-23",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "diclofenac",
+      "therapy": "Pain Management",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.youtube.com/watch?v=1Ov1zzgOpNU",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-06-25T04:49:47.095Z"
     }
   ]
 }
