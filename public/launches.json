@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-25T04:51:26.153Z",
-  "rowCount": 443,
+  "generatedAt": "2026-06-26T04:58:01.673Z",
+  "rowCount": 448,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -1350,7 +1350,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-introduces-its-most-advanced-drug-eluting-stent-xience-skypoint-in-india.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-08T05:20:02.839Z"
+      "lastEnrichmentAttempt": "2026-06-26T04:56:22.442Z"
     },
     {
       "brand": "Extensior®",
@@ -1382,7 +1382,7 @@
       "price": "₹432 / box of 200 gm powder",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-new-and-advanced-ensure-diabetes-care-a-clinically-proven-formula-to-help-manage-blood-sugar.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-08T05:20:19.876Z"
+      "lastEnrichmentAttempt": "2026-06-26T04:56:56.089Z"
     },
     {
       "brand": "AVEIR™ DR",
@@ -1398,7 +1398,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-aveir-dr-the-worlds-first-dual-chamber-leadless-pacemaker-in-india.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-08T05:20:27.503Z"
+      "lastEnrichmentAttempt": "2026-06-26T04:57:04.373Z"
     },
     {
       "brand": "FreeStyle Libre 2 Plus",
@@ -1414,7 +1414,7 @@
       "price": "₹4881 / box of 1 unit",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-next-gen-freestyle-libre2-plus-with-continuous-glucose-readings-every-minute-and-optional-alarms.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-08T05:20:34.823Z"
+      "lastEnrichmentAttempt": "2026-06-26T04:57:12.539Z"
     },
     {
       "brand": "TactiFlex™ Sensor Enabled™ Ablation Catheter",
@@ -2790,7 +2790,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.com/press-release-triclip-launch-india.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-08T05:19:51.872Z"
+      "lastEnrichmentAttempt": "2026-06-26T04:56:10.729Z"
     },
     {
       "brand": "XIENCE Skypoint",
@@ -2806,7 +2806,7 @@
       "price": null,
       "sourceUrl": "https://www.cardiovascular.abbott/us/en/hcp/products/percutaneous-coronary-intervention/xience-family/xience-skypoint.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-08T05:20:11.901Z"
+      "lastEnrichmentAttempt": "2026-06-26T04:56:30.541Z"
     },
     {
       "brand": "FreeStyle Libre 2 Plus",
@@ -2822,7 +2822,7 @@
       "price": null,
       "sourceUrl": "https://urldefense.proofpoint.com/v2/url?u=http-3A__www.abbott.com&d=DwMFAg&c=Y79EjzVEpgcQoCenoFaxQY8xoeA9rIAVbAq2xFBK1Ao&r=oV_taibTU6WWDgin4kkMwAPaPchfuS76BHUO_UHNvwM&m=pecJl28dBLDpg01U6nZUOeoCNZaH3mwecFOiJZmvoXw&s=nus6YMlzeVdc6eWUDel2l3mVJxV0P5ABFc1GEZxS8eQ&e=",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-08T05:20:42.796Z"
+      "lastEnrichmentAttempt": "2026-06-26T04:57:20.019Z"
     },
     {
       "brand": "Navitor Vision",
@@ -4630,7 +4630,7 @@
       "price": "Rs 1,200 / strip",
       "sourceUrl": "https://www.wockhardt.com/press-release/vazquez-launch",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-06-08T05:19:50.369Z"
+      "lastEnrichmentAttempt": "2026-06-26T04:56:04.180Z"
     },
     {
       "brand": "XIENCE Skypoint Stent",
@@ -4646,7 +4646,7 @@
       "price": null,
       "sourceUrl": "https://www.cardiovascular.abbott/us/en/hcp/products/percutaneous-coronary-intervention/xience-family/xience-skypoint.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-08T05:20:11.901Z"
+      "lastEnrichmentAttempt": "2026-06-26T04:56:50.371Z"
     },
     {
       "brand": "Lingo",
@@ -4662,7 +4662,7 @@
       "price": "—",
       "sourceUrl": "https://abbott.mediaroom.com/2026-05-27-Abbott-secures-CE-Mark-for-worlds-first-dual-glucose-ketone-sensing-technology-for-people-with-diabetes",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-08T05:20:42.796Z"
+      "lastEnrichmentAttempt": "2026-06-26T04:57:26.525Z"
     },
     {
       "brand": "Lingo Glucose System",
@@ -6705,7 +6705,7 @@
       "molecule": "Dapagliflozin plus Metformin Hydrochloride",
       "therapy": "—",
       "indication": "—",
-      "existingBrand": "—",
+      "existingBrand": "Farxiga",
       "chronicAcute": "—",
       "price": "₹95.4 / strip of 10 tablet er",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoUSFDAmetformin07042026.pdf",
@@ -7079,6 +7079,86 @@
       "sourceUrl": "https://www.youtube.com/watch?v=1Ov1zzgOpNU",
       "buyer": "Abbott India",
       "lastEnrichmentAttempt": "2026-06-25T04:49:47.095Z"
+    },
+    {
+      "brand": "Ranluspec™",
+      "launchType": "Own Launched",
+      "date": "2026-06-05",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Ranibizumab",
+      "therapy": "Oncology",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-approval-from-u-s-fda-for-ranluspec-tm-ranibizumab-injection",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-06-26T04:53:40.260Z"
+    },
+    {
+      "brand": "Wockhardt's New Injectable Insulin",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "Insulin Aspart",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 1 and Type 2 Diabetes",
+      "existingBrand": "Novolog",
+      "chronicAcute": "Chronic",
+      "price": "Rs 550 / vial",
+      "sourceUrl": "https://www.wockhardt.com/press-release/wockhardt-launches-new-injectable-insulin",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-26T04:56:02.677Z"
+    },
+    {
+      "brand": "Wockhardt Acquires Generic Drug Portfolio",
+      "launchType": "Acquired",
+      "date": "2023-09-15",
+      "seller": "PharmaCo",
+      "dealType": "Brand Portfolio Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Metformin",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.wockhardt.com/press-release/wockhardt-acquires-generic-drug-portfolio",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-26T04:56:02.677Z"
+    },
+    {
+      "brand": "XIENCE Skypoint™ Stent",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "Everolimus",
+      "therapy": "—",
+      "indication": "Improving coronary artery luminal diameter",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.cardiovascular.abbott/us/en/hcp/products/percutaneous-coronary-intervention/xience-family/xience-skypoint.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-06-26T04:56:30.541Z"
+    },
+    {
+      "brand": "Libre Duo and Libre Duo 10 Day",
+      "launchType": "Own Launched",
+      "date": "2026-05-27",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://abbott.mediaroom.com/2026-05-27-Abbott-secures-CE-Mark-for-worlds-first-dual-glucose-ketone-sensing-technology-for-people-with-diabetes",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-06-26T04:57:26.525Z"
     }
   ]
 }
