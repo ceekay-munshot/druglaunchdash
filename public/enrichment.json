@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-25T05:45:24.227Z",
-  "rowCount": 144,
+  "generatedAt": "2026-06-26T05:49:20.436Z",
+  "rowCount": 145,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -2467,6 +2467,25 @@
       "_title": "Corporate Presentation 11h - Eris Lifesciences filed its June 2026 corporate presentation on business, acquisitions, and operational performance.",
       "_provider": "groq",
       "_harvestedAt": "2026-06-24T05:40:26.639Z"
+    },
+    {
+      "brand": "Enzalutamide Tablets",
+      "launchType": "Own Launched",
+      "date": "2026-06-26",
+      "seller": "—",
+      "dealType": "—",
+      "molecule": "Enzalutamide",
+      "therapy": "—",
+      "indication": "—",
+      "price": "—",
+      "dealValue": null,
+      "existingBrand": "Xtandi",
+      "chronicAcute": "—",
+      "buyer": "Lupin",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=d9c9d52f-0af5-4534-9fcc-ad881bd6dbc1.pdf",
+      "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 32m - Lupin received tentative USFDA approval for Enzalutamide Tablets, 40/80/120/160 mg, on June 26, 2026.",
+      "_provider": "groq",
+      "_harvestedAt": "2026-06-26T05:48:36.811Z"
     }
   ],
   "processedUrls": [
@@ -2616,6 +2635,10 @@
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=76255530-c154-47d4-8f41-9524fbd21458.pdf",
     "https://www.wockhardt.com/press-release/generic-drug-launch",
     "http://www.aurobindo.com/press-release/therynym-inauguration",
-    "https://www.youtube.com/watch?v=1Ov1zzgOpNU"
+    "https://www.youtube.com/watch?v=1Ov1zzgOpNU",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=d9c9d52f-0af5-4534-9fcc-ad881bd6dbc1.pdf",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=1f886c23-cd1f-481c-bfd1-6e61eb14c6ab.pdf",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=a203f173-5006-4866-9a36-2f87c33d33c2.pdf",
+    "https://www.wockhardt.com/press-release/wockhardt-acquires-generic-drug-portfolio"
   ]
 }
