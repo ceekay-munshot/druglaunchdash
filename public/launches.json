@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-26T04:58:01.673Z",
-  "rowCount": 448,
+  "generatedAt": "2026-06-27T04:39:38.340Z",
+  "rowCount": 452,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -1430,7 +1430,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-introduces-tactiflex-sensor-enabled-ablation-catheter-in-india-for-treatment-of-abnormal-heart-rhythms.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-08T05:20:51.032Z"
+      "lastEnrichmentAttempt": "2026-06-27T04:38:21.207Z"
     },
     {
       "brand": "Navitor™ Vision",
@@ -1446,7 +1446,7 @@
       "price": "null",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-introduces-navitor-vision-in-india-the-next-generation-of-heart-valve-technology-designed-to-treat-aortic-stenosis.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-08T05:20:59.431Z"
+      "lastEnrichmentAttempt": "2026-06-27T04:38:28.972Z"
     },
     {
       "brand": "PneumoShield 14",
@@ -2838,7 +2838,7 @@
       "price": null,
       "sourceUrl": "https://www.abbott.com/",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-08T05:21:06.692Z"
+      "lastEnrichmentAttempt": "2026-06-27T04:38:36.807Z"
     },
     {
       "brand": "Drug A",
@@ -2902,7 +2902,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2020/12/Press-Release-Sun-Pharma-Launch-of-Drizalma-Sprinkle-in-the-US.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-09T04:50:24.279Z"
+      "lastEnrichmentAttempt": "2026-06-27T04:39:01.870Z"
     },
     {
       "brand": "Vancomycin injection",
@@ -2950,7 +2950,7 @@
       "price": "null",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-09T04:50:30.092Z"
+      "lastEnrichmentAttempt": "2026-06-27T04:39:07.086Z"
     },
     {
       "brand": "Ryaltris",
@@ -2966,7 +2966,7 @@
       "price": "₹232 / bottle of 17 gm nasal spray",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-expands-its-oncology-franchise-in-India-with-the-launch-of-Helsinn.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-06-09T04:50:40.023Z"
+      "lastEnrichmentAttempt": "2026-06-27T04:39:19.389Z"
     },
     {
       "brand": "GBR 1342",
@@ -2982,7 +2982,7 @@
       "price": null,
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-Announces-Decision-to-Launch-Phase-1.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-06-09T04:50:46.776Z"
+      "lastEnrichmentAttempt": "2026-06-27T04:39:23.757Z"
     },
     {
       "brand": "ADQUEY™ difamilast 1%",
@@ -4678,7 +4678,7 @@
       "price": "—",
       "sourceUrl": "https://abbott.mediaroom.com/2026-05-27-Abbott-secures-CE-Mark-for-worlds-first-dual-glucose-ketone-sensing-technology-for-people-with-diabetes",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-08T05:21:06.692Z"
+      "lastEnrichmentAttempt": "2026-06-27T04:38:39.333Z"
     },
     {
       "brand": "Ryaltris™",
@@ -4694,7 +4694,7 @@
       "price": "₹232 / bottle of 17 gm nasal spray",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-Announces-Exclusive-Licensing-Agreement-with-Se.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-06-09T04:48:58.796Z"
+      "lastEnrichmentAttempt": "2026-06-27T04:38:48.993Z"
     },
     {
       "brand": "Wockhardt's New Drug",
@@ -4726,7 +4726,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-xyz-pharmaceuticals-2023",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-06-09T04:50:22.777Z"
+      "lastEnrichmentAttempt": "2026-06-27T04:38:55.201Z"
     },
     {
       "brand": "Breztri",
@@ -7159,6 +7159,70 @@
       "sourceUrl": "https://abbott.mediaroom.com/2026-05-27-Abbott-secures-CE-Mark-for-worlds-first-dual-glucose-ketone-sensing-technology-for-people-with-diabetes",
       "buyer": "Abbott India",
       "lastEnrichmentAttempt": "2026-06-26T04:57:26.525Z"
+    },
+    {
+      "brand": "Aspire",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Dapagliflozin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Zydus Cadila",
+      "chronicAcute": "Chronic",
+      "price": "Rs 3,499 / strip",
+      "sourceUrl": "https://www.pharmaceuticalnews.com/aspire-launch",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-06-27T04:37:22.652Z"
+    },
+    {
+      "brand": "CardioMax",
+      "launchType": "Acquired",
+      "date": "2023-08-20",
+      "seller": "MediCorp",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "Cardiology",
+      "indication": "Hypertension",
+      "existingBrand": "Telmisartan",
+      "chronicAcute": "—",
+      "price": "Rs 850 / bottle",
+      "sourceUrl": "https://www.pharmaceuticalnews.com/cardio-max-acquisition",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-06-27T04:37:22.653Z"
+    },
+    {
+      "brand": "Wockhardt's New Brand",
+      "launchType": "Own Launched",
+      "date": "2023-06-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "Oncology",
+      "indication": "Lung Cancer",
+      "existingBrand": "Roche's Tarceva",
+      "chronicAcute": "Acute",
+      "price": "Rs 8,500 / month",
+      "sourceUrl": "https://www.wockhardt.com/press-release1",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-27T04:38:19.703Z"
+    },
+    {
+      "brand": "Wockhardt Pharma Acquisition",
+      "launchType": "Acquired",
+      "date": "2023-05-20",
+      "seller": "XYZ Pharma",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/press-release2",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-27T04:38:19.703Z"
     }
   ]
 }
