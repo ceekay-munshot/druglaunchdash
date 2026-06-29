@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-28T05:56:01.324Z",
-  "rowCount": 145,
+  "generatedAt": "2026-06-29T06:17:25.302Z",
+  "rowCount": 146,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -2486,6 +2486,25 @@
       "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 32m - Lupin received tentative USFDA approval for Enzalutamide Tablets, 40/80/120/160 mg, on June 26, 2026.",
       "_provider": "groq",
       "_harvestedAt": "2026-06-26T05:48:36.811Z"
+    },
+    {
+      "brand": "Occlutech",
+      "launchType": "Acquired",
+      "date": "2026-06-26",
+      "seller": "—",
+      "dealType": "Acquisition of 51%-55% equity share capital",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "price": "—",
+      "dealValue": null,
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "buyer": "Alkem",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=21a7b242-c738-4786-a650-d577adc186bc.pdf",
+      "_title": "Announcement under Regulation 30 (LODR)-Updates on Acquisition 34m - Alkem Medtech executed supplementary agreement for 51%-55% Occlutech acquisition on 26 June 2026.",
+      "_provider": "groq",
+      "_harvestedAt": "2026-06-29T06:17:12.122Z"
     }
   ],
   "processedUrls": [
@@ -2645,6 +2664,7 @@
     "https://www.lupin.com/media/press-releases/lupin-receives-tentative-approval-from-u-s-fda-for-enzalutamide-tablets",
     "https://www.wockhardt.com/news/acquisition",
     "https://www.abbott.com/press-releases/xiience-sierra-launch-india.html",
-    "https://www.wockhardt.com/press-release/acquisition-xyz-pharma#content"
+    "https://www.wockhardt.com/press-release/acquisition-xyz-pharma#content",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=21a7b242-c738-4786-a650-d577adc186bc.pdf"
   ]
 }
