@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-28T05:10:58.181Z",
-  "rowCount": 465,
+  "generatedAt": "2026-06-29T05:20:21.598Z",
+  "rowCount": 472,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -646,7 +646,7 @@
       "price": "₹9281 / vial of 20 ml infusion",
       "sourceUrl": "https://www.cnbctv18.com/healthcare/alkem-oncology-novel-breast-cancer-treatment-drug-launch-palbociclib-palbo-15703241.htm",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-06-10T05:08:08.592Z"
+      "lastEnrichmentAttempt": "2026-06-29T05:18:53.950Z"
     },
     {
       "brand": "Obimet",
@@ -662,7 +662,7 @@
       "price": "₹30.6 / strip of 15 tablet sr",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-10T05:08:17.150Z"
+      "lastEnrichmentAttempt": "2026-06-29T05:19:07.194Z"
     },
     {
       "brand": "Molxvir (Molnupiravir)",
@@ -1750,7 +1750,7 @@
       "price": "₹69.3 / strip of 10 capsules",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-enters-into-an-exclusive-licensing.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-06-11T05:15:28.076Z"
+      "lastEnrichmentAttempt": "2026-06-29T05:19:32.416Z"
     },
     {
       "brand": "Revefenacin",
@@ -3126,7 +3126,7 @@
       "price": "₹1483 / box of 2 pre-filled pens",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/PR-for-Semaglutide.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-10T05:07:26.292Z"
+      "lastEnrichmentAttempt": "2026-06-29T05:17:43.845Z"
     },
     {
       "brand": "Molxvir®",
@@ -3174,7 +3174,7 @@
       "price": "₹523 / bottle of 150 ml cleanser",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-10T05:07:40.715Z"
+      "lastEnrichmentAttempt": "2026-06-29T05:17:48.989Z"
     },
     {
       "brand": "Navitor™",
@@ -3190,7 +3190,7 @@
       "price": "₹84.6 / tube of 10 gm",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-navitor-its-latest-generation-transcatheter-aortic-valve-implantation-tavi-system-to-treat-aortic-stenosis-in-india.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-10T05:07:50.253Z"
+      "lastEnrichmentAttempt": "2026-06-29T05:18:01.888Z"
     },
     {
       "brand": "BP11 (Biosimilar to Omalizumab)",
@@ -3206,7 +3206,7 @@
       "price": "₹190 / strip of 15 tablets",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-10T05:07:56.902Z"
+      "lastEnrichmentAttempt": "2026-06-29T05:18:13.365Z"
     },
     {
       "brand": "valsartan and sacubitril",
@@ -4431,8 +4431,8 @@
       "seller": "Natco",
       "dealType": "NCE Launch",
       "molecule": "eribulin mesylate",
-      "therapy": "—",
-      "indication": "—",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
       "existingBrand": "—",
       "chronicAcute": "—",
       "price": "₹17724 / vial of 2 ml solution for injection",
@@ -4870,7 +4870,7 @@
       "price": null,
       "sourceUrl": "http://www.aurobindo.com/",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-10T05:07:56.902Z"
+      "lastEnrichmentAttempt": "2026-06-29T05:18:34.698Z"
     },
     {
       "brand": "Drug A",
@@ -4902,7 +4902,7 @@
       "price": "null",
       "sourceUrl": "https://www.cipla.com/press-releases/2023/acquisition-of-company-b",
       "buyer": "Cipla",
-      "lastEnrichmentAttempt": "2026-06-11T05:12:18.198Z"
+      "lastEnrichmentAttempt": "2026-06-29T05:19:18.455Z"
     },
     {
       "brand": "Drug C",
@@ -4982,7 +4982,7 @@
       "price": "null",
       "sourceUrl": "https://www.wockhardt.com/press-release/xyz-pharma-acquisition",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-06-11T05:15:26.574Z"
+      "lastEnrichmentAttempt": "2026-06-29T05:19:26.170Z"
     },
     {
       "brand": "Doxobact",
@@ -7431,6 +7431,118 @@
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-xyz-pharma#content",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-06-28T05:09:21.248Z"
+    },
+    {
+      "brand": "Molxvir® (Molnupiravir)",
+      "launchType": "Own Launched",
+      "date": "2021-11-11",
+      "seller": "MSD and Ridgeback",
+      "dealType": "In-license (India)",
+      "molecule": "Molnupiravir",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹1285 / bottle of 40 capsules",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/11/Press-Release-Sun-Pharma-gearing-up-to-introduce-molnupiravir-under-the-brand-name-Molxvir%C2%AE-in-India.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-06-29T05:14:45.196Z"
+    },
+    {
+      "brand": "Enzalutamide",
+      "launchType": "Acquired",
+      "date": "2026-06-26",
+      "seller": "—",
+      "dealType": "—",
+      "molecule": "Enzalutamide",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹37538 / bottle of 112 capsules",
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-tentative-approval-from-u-s-fda-for-enzalutamide-tablets",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-06-29T05:16:19.573Z"
+    },
+    {
+      "brand": "PediaSure with Nutri-Pull System",
+      "launchType": "Own Launched",
+      "date": "2023-11-17",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹328 / box of 200 gm powder",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-new-pediaSure-with-nutri-pull-system-to-help-support-catch-up-growth-and-overall-health-in-children.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-06-29T05:17:01.297Z"
+    },
+    {
+      "brand": "Vertigo Coach App",
+      "launchType": "Own Launched",
+      "date": "2023-08-24",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹196 / bottle of 30 ml drop",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/Abbott-Helps-People-with-Vertigo-Take-Control-of-Their-Health-with-the-Launch-of-an-Easy-to-Use-Vertigo-Coach-App-in-India.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-06-29T05:17:01.297Z"
+    },
+    {
+      "brand": "Lannett Company LLC",
+      "launchType": "Acquired",
+      "date": "2026-06-21",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsLnnettPR22062026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-06-29T05:17:21.133Z"
+    },
+    {
+      "brand": "Vaccine X",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Vaccine X",
+      "therapy": "Immunology",
+      "indication": "Preventive Vaccine",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 3,500 / vial",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/vaccine-x-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-29T05:17:42.341Z"
+    },
+    {
+      "brand": "Drug Y",
+      "launchType": "In-licensed",
+      "date": "2023-08-22",
+      "seller": "Company Z",
+      "dealType": "In-license (India)",
+      "molecule": "Drug Y",
+      "therapy": "Oncology",
+      "indication": "Cancer Treatment",
+      "existingBrand": "Brand A",
+      "chronicAcute": "Chronic",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-releases/drug-y-in-licensing",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-06-29T05:17:42.341Z"
     }
   ]
 }
