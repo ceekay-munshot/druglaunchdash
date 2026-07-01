@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-30T04:51:55.701Z",
-  "rowCount": 478,
+  "generatedAt": "2026-07-01T05:15:10.706Z",
+  "rowCount": 488,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -678,7 +678,7 @@
       "price": "₹1347 / bottle of 40 capsules",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/12/Press-Release-Sun-Pharma-receives-DCGI-approval-for-Molxvir-Molnupiravir-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-12T05:22:18.288Z"
+      "lastEnrichmentAttempt": "2026-07-01T05:11:36.138Z"
     },
     {
       "brand": "WINLEVI",
@@ -694,7 +694,7 @@
       "price": "₹21.3 / bottle of 30 ml syrup",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/08/Sun-Pharma-and-Cassiopea-announce-the-expiry-of-the-HSR-Act-process-and-the-successful-consummation-of-their-Winlevi®-agreement.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-12T05:22:22.804Z"
+      "lastEnrichmentAttempt": "2026-07-01T05:11:37.356Z"
     },
     {
       "brand": "Sovateltide (Tyvalzi)",
@@ -710,7 +710,7 @@
       "price": "₹3978 / box of 3 vials",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/09/Press-Release-Sun-Pharma-and-Pharmazz-Inc.-licensing-agreement-for-Sovateltide-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-12T05:22:28.379Z"
+      "lastEnrichmentAttempt": "2026-07-01T05:11:43.282Z"
     },
     {
       "brand": "BromSite™",
@@ -1878,7 +1878,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-signs-definitive-agreement-to-acquire-organon/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-12T05:22:33.423Z"
+      "lastEnrichmentAttempt": "2026-07-01T05:11:47.584Z"
     },
     {
       "brand": "UNLOXCYT",
@@ -1894,7 +1894,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-announces-the-availability-of-unloxcyt-cosibelimab-ipdl-for-advanced-cutaneous-squamous-cell-carcinoma-acscc/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-12T05:22:43.847Z"
+      "lastEnrichmentAttempt": "2026-07-01T05:11:56.953Z"
     },
     {
       "brand": "ILUMYA",
@@ -1910,7 +1910,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-introduces-its-global-innovative-drug-ilumya-in-india-for-treatment-of-moderate-to-severe-plaque-psoriasis/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-12T05:22:58.121Z"
+      "lastEnrichmentAttempt": "2026-07-01T05:13:18.742Z"
     },
     {
       "brand": "ILUMYA",
@@ -1926,7 +1926,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-announces-us-fda-acceptance-of-supplemental-biologics-license-sbla-application-for-ilumya-tildrakizumab-asmn-for-the-treatment-o/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-12T05:23:09.019Z"
+      "lastEnrichmentAttempt": "2026-07-01T05:13:28.081Z"
     },
     {
       "brand": "Cipla's New Drug",
@@ -3334,7 +3334,7 @@
       "price": null,
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/01/UNLOXCYT-Commercial-Launch-Press-Release.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-12T05:22:53.359Z"
+      "lastEnrichmentAttempt": "2026-07-01T05:12:12.528Z"
     },
     {
       "brand": "ILUMYA®",
@@ -5126,7 +5126,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/01/UNLOXCYT-Commercial-Launch-Press-Release.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-12T05:22:43.847Z"
+      "lastEnrichmentAttempt": "2026-07-01T05:12:08.141Z"
     },
     {
       "brand": "UNLOXCYT",
@@ -5135,7 +5135,7 @@
       "seller": "—",
       "dealType": "NCE Launch",
       "molecule": "cosibelimab-ipdl",
-      "therapy": "—",
+      "therapy": "Oncology",
       "indication": "metastatic cutaneous squamous cell carcinoma (mCSCC) or locally advanced CSCC (laCSCC)",
       "existingBrand": "—",
       "chronicAcute": "—",
@@ -7639,6 +7639,166 @@
       "sourceUrl": "https://www.wockhardt.com/press-release/biosimilar-launch",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-06-30T04:49:09.985Z"
+    },
+    {
+      "brand": "Acquisition B",
+      "launchType": "Acquired",
+      "date": "2023-09-21",
+      "seller": "Seller Company",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹175 / bottle of 25 gm trituration tablet",
+      "sourceUrl": "https://www.mankindpharma.com/press-release-acquisition-b",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-07-01T05:08:07.953Z"
+    },
+    {
+      "brand": "Wokadine",
+      "launchType": "Acquired",
+      "date": "2026-06-01",
+      "seller": "DRL",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹37.6 / bottle of 50 ml solution",
+      "sourceUrl": "https://www.business-standard.com/industry/news/corona-remedies-acquires-wokadine-drl-povidone-iodine-market-126033001282_1.html",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-07-01T05:09:09.029Z"
+    },
+    {
+      "brand": "7 brands in cardiology & women’s healthcare",
+      "launchType": "Acquired",
+      "date": "2026-06-01",
+      "seller": "Bayer",
+      "dealType": "Brand Portfolio Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹189 / bottle of 30 ml drop",
+      "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-07-01T05:09:09.029Z"
+    },
+    {
+      "brand": "Myoril",
+      "launchType": "Acquired",
+      "date": "2026-06-01",
+      "seller": "Sanofi India",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹285 / strip of 10 capsules",
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/corona-remedies-buys-sanofi-indias-ortho-brand-myoril/articleshow/101344189.cms?from=mdr",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-07-01T05:09:09.029Z"
+    },
+    {
+      "brand": "Maternal Health & Urology products",
+      "launchType": "In-licensed",
+      "date": "2026-06-01",
+      "seller": "Ferring Pharmaceuticals",
+      "dealType": "Co-marketing",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹171 / strip of 10 tablets",
+      "sourceUrl": "https://www.business-standard.com/content/press-releases-ani/corona-remedies-joins-hands-with-ferring-pharmaceuticals-to-commercialize-maternal-health-urology-products-in-india-123050900586_1.html",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-07-01T05:09:09.029Z"
+    },
+    {
+      "brand": "Obimet, Thyrocab",
+      "launchType": "Acquired",
+      "date": "2026-06-01",
+      "seller": "Abbott India",
+      "dealType": "Brand Portfolio Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹213 / bottle of 100 tablets",
+      "sourceUrl": "https://www.expresspharma.in/corona-acquires-obimet-thyrocab-brands-from-abbott-india",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-07-01T05:09:09.029Z"
+    },
+    {
+      "brand": "four drug brands from GlaxoSmithkline Pharmaceuticals",
+      "launchType": "Acquired",
+      "date": "2026-06-01",
+      "seller": "GlaxoSmithkline Pharmaceuticals",
+      "dealType": "Brand Portfolio Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹96.8 / strip of 15 tablets",
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-07-01T05:09:09.029Z"
+    },
+    {
+      "brand": "Wockhardt's New Drug",
+      "launchType": "Own Launched",
+      "date": "2023-09-20",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 500 / strip",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/new-drug-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-01T05:11:34.636Z"
+    },
+    {
+      "brand": "Company XYZ Acquisition",
+      "launchType": "Acquired",
+      "date": "2023-08-15",
+      "seller": "XYZ Pharma",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Competitor Brand A",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-releases/company-acquisition",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-01T05:11:34.636Z"
+    },
+    {
+      "brand": "Drug ABC",
+      "launchType": "In-licensed",
+      "date": "2023-07-10",
+      "seller": "ABC Pharma",
+      "dealType": "In-license (India)",
+      "molecule": "Active Ingredient 1",
+      "therapy": "anti-diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "₹39.7 / strip of 10 tablets",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/in-license-deal",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-01T05:11:34.636Z"
     }
   ]
 }
