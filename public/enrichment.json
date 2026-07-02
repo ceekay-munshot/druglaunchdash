@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-01T06:07:28.029Z",
-  "rowCount": 158,
+  "generatedAt": "2026-07-02T05:34:06.303Z",
+  "rowCount": 161,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -2733,6 +2733,63 @@
       "_title": "backfill:Obimet, Thyrocab",
       "_provider": "mistral",
       "_harvestedAt": "2026-07-01T06:07:19.515Z"
+    },
+    {
+      "brand": "Trastuzumab rezetecan (SHR-A1811)",
+      "launchType": "In-licensed",
+      "date": "2025-09-01",
+      "seller": "Jiangsu Hengrui Pharmaceuticals Co., Ltd.",
+      "dealType": "Exclusive collaboration and license agreement",
+      "molecule": "Trastuzumab rezetecan",
+      "therapy": "Oncology",
+      "indication": "HER2-overexpressing tumors",
+      "price": "—",
+      "dealValue": null,
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "buyer": "Glenmark",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=04d38d29-682e-4902-a276-49bfcb3740c3.pdf",
+      "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 50m - Glenmark advances Multi-Country Phase 3 Clinical Trial of Trastuzmab rezetecan in Platinum-Resistant Ovarian Cancer",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-07-02T05:33:13.827Z"
+    },
+    {
+      "brand": "La Chandra Pharmalab stake",
+      "launchType": "Acquired",
+      "date": "2026-06-01",
+      "seller": "La Chandra Pharmalab Pvt Ltd",
+      "dealType": "Minority stake acquisition",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "Progesterone",
+      "therapy": "Hormone therapeutics",
+      "indication": "Pregnancy care",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "buyer": "Corona Remedies",
+      "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-picks-up-stake-in-api-maker-la-chandra-pharmalab/article32543933.ece",
+      "_title": "backfill:La Chandra Pharmalab stake",
+      "_provider": "mistral",
+      "_harvestedAt": "2026-07-02T05:33:48.815Z"
+    },
+    {
+      "brand": "Pomalidomide Capsules",
+      "launchType": "Own Launched",
+      "date": "2023-04-03",
+      "seller": "—",
+      "dealType": "Launch",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "Pomalidomide",
+      "therapy": "Oncology",
+      "indication": "relapsed or refractory multiple myeloma and AIDS-related Kaposi sarcoma",
+      "existingBrand": "Pomalyst",
+      "chronicAcute": "Chronic",
+      "buyer": "Aurobindo",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseEugia04032026.pdf",
+      "_title": "backfill:Pomalidomide Capsules",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-07-02T05:34:05.602Z"
     }
   ],
   "processedUrls": [
@@ -2905,6 +2962,12 @@
     "https://www.business-standard.com/content/press-releases-ani/corona-remedies-joins-hands-with-ferring-pharmaceuticals-to-commercialize-maternal-health-urology-products-in-india-123050900586_1.html",
     "https://www.expresspharma.in/corona-acquires-obimet-thyrocab-brands-from-abbott-india",
     "https://www.wockhardt.com/press-releases/new-drug-launch",
-    "https://www.wockhardt.com/press-releases/company-acquisition"
+    "https://www.wockhardt.com/press-releases/company-acquisition",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=d6b6a7a5-bbbb-4c97-9ab7-5cd7122b2371.pdf",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ea434f1e-88a0-4ff3-b048-04502387a696.pdf",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=04d38d29-682e-4902-a276-49bfcb3740c3.pdf",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2c7a00d3-639c-464f-a6ac-b1ca60805f3f.pdf",
+    "https://www.thehindubusinessline.com/companies/corona-remedies-picks-up-stake-in-api-maker-la-chandra-pharmalab/article32543933.ece",
+    "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseEugia04032026.pdf"
   ]
 }
