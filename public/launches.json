@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-03T04:32:30.272Z",
-  "rowCount": 501,
+  "generatedAt": "2026-07-04T04:25:22.954Z",
+  "rowCount": 506,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -726,7 +726,7 @@
       "price": "—",
       "sourceUrl": "http://www.sunpharma.com/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-14T05:21:21.676Z"
+      "lastEnrichmentAttempt": "2026-07-04T04:23:16.162Z"
     },
     {
       "brand": "Chericof",
@@ -2061,16 +2061,16 @@
       "launchType": "Own Launched",
       "date": "2018-11-20",
       "seller": "—",
-      "dealType": "—",
+      "dealType": "Generic Launch",
       "molecule": "Azelaic Acid",
       "therapy": "Dermatology",
       "indication": "—",
-      "existingBrand": "—",
+      "existingBrand": "Finacea®",
       "chronicAcute": "—",
       "price": "₹151 / tube of 15 gm gel",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-receives-ANDA-approval-for-Azelaic-Acid-Gel-15%25.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-06-14T05:21:05.509Z"
+      "lastEnrichmentAttempt": "2026-07-04T04:23:01.647Z"
     },
     {
       "brand": "Breztri",
@@ -2134,7 +2134,7 @@
       "price": "₹3800 / bottle of 21 capsules",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/PressReleaseEugia04032026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-14T05:21:11.525Z"
+      "lastEnrichmentAttempt": "2026-07-04T04:23:06.503Z"
     },
     {
       "brand": "ADQUEY™ (difamilast) Ointment",
@@ -2166,7 +2166,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-signs-definitive-agreement-to-acquire-organon/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-14T05:21:40.792Z"
+      "lastEnrichmentAttempt": "2026-07-04T04:24:31.561Z"
     },
     {
       "brand": "semaglutide",
@@ -2198,7 +2198,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-introduces-its-global-innovative-drug-ilumya-in-india-for-treatment-of-moderate-to-severe-plaque-psoriasis/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-14T05:21:50.469Z"
+      "lastEnrichmentAttempt": "2026-07-04T04:24:39.526Z"
     },
     {
       "brand": "UNLOXCYT",
@@ -3462,7 +3462,7 @@
       "price": null,
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-launches-its-semaglutide-injection-under-the-brand-names-noveltreat-and-sematrinity-in-india/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-14T05:21:30.590Z"
+      "lastEnrichmentAttempt": "2026-07-04T04:24:26.908Z"
     },
     {
       "brand": "Brand B Acquisition",
@@ -5382,7 +5382,7 @@
       "price": "Rs 1,200 / kit",
       "sourceUrl": "https://www.wockhardt.com/release/wardex-launch",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-06-14T05:21:04.006Z"
+      "lastEnrichmentAttempt": "2026-07-04T04:22:47.667Z"
     },
     {
       "brand": "Wockhardt Acquisition of X Company",
@@ -5398,7 +5398,7 @@
       "price": "₹177 / strip of 10 tablets",
       "sourceUrl": "https://www.wockhardt.com/release/acquisition-of-x-company",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-06-14T05:21:04.006Z"
+      "lastEnrichmentAttempt": "2026-07-04T04:22:54.808Z"
     },
     {
       "brand": "Wockhardt Metformin Plus",
@@ -5430,7 +5430,7 @@
       "price": "—",
       "sourceUrl": "https://yourpressreleaseurl.com/PressReleaseEugia04032026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-14T05:21:11.525Z"
+      "lastEnrichmentAttempt": "2026-07-04T04:23:14.673Z"
     },
     {
       "brand": "Noveltreat, Sematrinity",
@@ -5446,7 +5446,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-launches-its-semaglutide-injection-under-the-brand-names-noveltreat-and-sematrinity-in-india/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-14T05:21:21.676Z"
+      "lastEnrichmentAttempt": "2026-07-04T04:24:17.661Z"
     },
     {
       "brand": "semaglutide",
@@ -8007,6 +8007,86 @@
       "sourceUrl": "—",
       "buyer": "Glenmark",
       "lastEnrichmentAttempt": "2026-07-03T04:31:25.478Z"
+    },
+    {
+      "brand": "Seven Brands",
+      "launchType": "Acquired",
+      "date": "2026-06-01",
+      "seller": "Bayer",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹396 / bottle of 30 (1,000 mg)",
+      "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-07-04T04:21:36.262Z"
+    },
+    {
+      "brand": "Maternal Health & Urology",
+      "launchType": "In-licensed",
+      "date": "2026-06-01",
+      "seller": "Ferring Pharmaceuticals",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹299 / jar of 200 gm",
+      "sourceUrl": "https://www.business-standard.com/content/press-releases-ani/corona-remedies-joins-hands-with-ferring-pharmaceuticals-to-commercialize-maternal-health-urology-products-in-india-123050900586_1.html",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-07-04T04:21:36.262Z"
+    },
+    {
+      "brand": "NaMuscla",
+      "launchType": "Own Launched",
+      "date": "2026-07-01",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "Pediatric indication",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹29.8 / strip of 10 tablets",
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-announces-ema-approval-for-na-muscla-expansion-for-pediatric-indication-with-new-strengths",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-07-04T04:22:00.050Z"
+    },
+    {
+      "brand": "Tazret Forte",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "Tazarotene",
+      "therapy": "Dermatology",
+      "indication": "Psoriasis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹524 / tube of 20 gm cream",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/tazret-forte-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-04T04:22:46.163Z"
+    },
+    {
+      "brand": "Wockhardt Insulin",
+      "launchType": "Own Launched",
+      "date": "2023-08-10",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Insulin Glargine",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 1 Diabetes",
+      "existingBrand": "Lantus",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,500 / vial",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/wockhardt-insulin-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-04T04:22:46.163Z"
     }
   ]
 }
