@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-03T05:29:08.325Z",
-  "rowCount": 166,
+  "generatedAt": "2026-07-04T05:12:01.367Z",
+  "rowCount": 168,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -2885,6 +2885,44 @@
       "_title": "backfill:Blood Donation Camp",
       "_provider": "groq",
       "_harvestedAt": "2026-07-03T05:29:07.624Z"
+    },
+    {
+      "brand": "Shield MCD",
+      "launchType": "In-licensed",
+      "date": "2026-07-03",
+      "seller": "Guardant Health, Inc.",
+      "dealType": "Distribution deal",
+      "molecule": "—",
+      "therapy": "Oncology",
+      "indication": "Multi-cancer detection",
+      "price": "—",
+      "dealValue": null,
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "buyer": "Zydus Lifesciences",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=87cba9a2-ef65-4a4d-b666-6ca7fa6f8ae4.pdf",
+      "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 15h - Zydus signs MoU with Apollo Hospitals to expand Shield™ MCD cancer test access in India.",
+      "_provider": "groq",
+      "_harvestedAt": "2026-07-04T05:11:33.271Z"
+    },
+    {
+      "brand": "NaMuscla",
+      "launchType": "Own Launched",
+      "date": "2026-07-01",
+      "seller": "—",
+      "dealType": "—",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "mexiletine",
+      "therapy": "Antimyotonic",
+      "indication": "Symptomatic treatment of myotonia in non-dystrophic myotonic disorders (children aged 6–11 years weighing ≥20 kg, adolescents 12–17 years, and adults ≥18 years)",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "buyer": "Lupin",
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-announces-ema-approval-for-na-muscla-expansion-for-pediatric-indication-with-new-strengths",
+      "_title": "backfill:NaMuscla",
+      "_provider": "mistral",
+      "_harvestedAt": "2026-07-04T05:12:00.667Z"
     }
   ],
   "processedUrls": [
@@ -3064,6 +3102,8 @@
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2c7a00d3-639c-464f-a6ac-b1ca60805f3f.pdf",
     "https://www.thehindubusinessline.com/companies/corona-remedies-picks-up-stake-in-api-maker-la-chandra-pharmalab/article32543933.ece",
     "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseEugia04032026.pdf",
-    "https://www.coronaremedies.com/media-center/#site-content"
+    "https://www.coronaremedies.com/media-center/#site-content",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=87cba9a2-ef65-4a4d-b666-6ca7fa6f8ae4.pdf",
+    "https://www.lupin.com/media/press-releases/lupin-announces-ema-approval-for-na-muscla-expansion-for-pediatric-indication-with-new-strengths"
   ]
 }
