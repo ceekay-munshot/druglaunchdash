@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-05T05:40:29.406Z",
-  "rowCount": 168,
+  "generatedAt": "2026-07-06T05:59:36.378Z",
+  "rowCount": 169,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -2923,6 +2923,25 @@
       "_title": "backfill:NaMuscla",
       "_provider": "mistral",
       "_harvestedAt": "2026-07-04T05:12:00.667Z"
+    },
+    {
+      "brand": "Olanzapine for Injection",
+      "launchType": "Own Launched",
+      "date": "2026-07-06",
+      "seller": "—",
+      "dealType": "—",
+      "molecule": "Olanzapine",
+      "therapy": "Antipsychotic",
+      "indication": "—",
+      "price": "—",
+      "dealValue": null,
+      "existingBrand": "Zyprexa® IntraMuscular Injection",
+      "chronicAcute": "Chronic",
+      "buyer": "Glenmark",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f9a840ac-68e5-4492-890b-10bd32302ebe.pdf",
+      "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 39m - Glenmark Pharmaceuticals Inc., USA launches Olanzapine for Injection, 10 mg/vial, Single - Dose Vial",
+      "_provider": "mistral",
+      "_harvestedAt": "2026-07-06T05:59:02.336Z"
     }
   ],
   "processedUrls": [
@@ -3105,6 +3124,9 @@
     "https://www.coronaremedies.com/media-center/#site-content",
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=87cba9a2-ef65-4a4d-b666-6ca7fa6f8ae4.pdf",
     "https://www.lupin.com/media/press-releases/lupin-announces-ema-approval-for-na-muscla-expansion-for-pediatric-indication-with-new-strengths",
-    "https://www.pharmaexample.com/pressrelease1"
+    "https://www.pharmaexample.com/pressrelease1",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=80336607-2a5c-4ce3-88a5-de96a10297d9.pdf",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f9a840ac-68e5-4492-890b-10bd32302ebe.pdf",
+    "https://www.wockhardt.com/press-release-details?id=456"
   ]
 }
