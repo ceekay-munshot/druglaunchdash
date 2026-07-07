@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-06T05:59:36.378Z",
-  "rowCount": 169,
+  "generatedAt": "2026-07-07T05:41:35.571Z",
+  "rowCount": 170,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -2942,6 +2942,25 @@
       "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 39m - Glenmark Pharmaceuticals Inc., USA launches Olanzapine for Injection, 10 mg/vial, Single - Dose Vial",
       "_provider": "mistral",
       "_harvestedAt": "2026-07-06T05:59:02.336Z"
+    },
+    {
+      "brand": "J. B. Chemicals & Pharmaceuticals Limited",
+      "launchType": "Acquired",
+      "date": "2026-07-06",
+      "seller": "J. B. Chemicals & Pharmaceuticals Limited",
+      "dealType": "Amalgamation",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "price": "—",
+      "dealValue": null,
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "buyer": "Torrent Pharma",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=bd9e5406-ecbf-40a6-866f-e0329a8b0f48.pdf",
+      "_title": "Pronouncement Of Final Order By The Hon&#x27;Ble National Company Law Tribunal, Ahmedabad Bench Sanctioning The Scheme Of Amalgamation Of J. B. Chemicals &amp; Pharmaceuticals Limited With Torrent Pharmaceuticals Limited And Their Respective Shareholders 8h - NCLT sanctioned amalgamation of J.B. Chemicals &amp; Pharmaceuticals with Torrent Pharmaceuticals on 6 July 2026.",
+      "_provider": "groq",
+      "_harvestedAt": "2026-07-07T05:41:11.517Z"
     }
   ],
   "processedUrls": [
@@ -3127,6 +3146,8 @@
     "https://www.pharmaexample.com/pressrelease1",
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=80336607-2a5c-4ce3-88a5-de96a10297d9.pdf",
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f9a840ac-68e5-4492-890b-10bd32302ebe.pdf",
-    "https://www.wockhardt.com/press-release-details?id=456"
+    "https://www.wockhardt.com/press-release-details?id=456",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=bd9e5406-ecbf-40a6-866f-e0329a8b0f48.pdf",
+    "https://www.wockhardt.com/press-release/nce-launch-wockhardt/"
   ]
 }
