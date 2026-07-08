@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-07T04:38:08.543Z",
-  "rowCount": 531,
+  "generatedAt": "2026-07-08T04:01:16.108Z",
+  "rowCount": 536,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -87,7 +87,7 @@
       "chronicAcute": "Chronic",
       "sourceUrl": "https://www.coronaremedies.com/wp-content/uploads/2024/11/myoril-news-2024.png",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-17T05:29:25.062Z"
+      "lastEnrichmentAttempt": "2026-07-08T03:59:59.874Z"
     },
     {
       "brand": "Sematreat",
@@ -342,7 +342,7 @@
       "price": "—",
       "sourceUrl": "https://www.pharmazz.com/launch-tyvalzi-sovateltide-india",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-17T05:29:19.444Z"
+      "lastEnrichmentAttempt": "2026-07-08T03:59:50.573Z"
     },
     {
       "brand": "Palbo",
@@ -374,7 +374,7 @@
       "price": "₹21.7 / strip of 10 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-17T05:29:28.832Z"
+      "lastEnrichmentAttempt": "2026-07-08T04:00:04.778Z"
     },
     {
       "brand": "Dilo-BM",
@@ -3615,10 +3615,10 @@
       "seller": "—",
       "dealType": "NCE Launch",
       "molecule": "Dapagliflozin plus Metformin Hydrochloride",
-      "therapy": "—",
+      "therapy": "Anti-Diabetic",
       "indication": "—",
       "existingBrand": "Farxiga",
-      "chronicAcute": "—",
+      "chronicAcute": "Chronic",
       "price": "₹95.5 / strip of 10 tablet er",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoUSFDAmetformin07042026.pdf",
       "buyer": "Aurobindo",
@@ -3798,7 +3798,7 @@
       "price": "₹1361 / bottle of 40 capsules",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/11/Press-Release-Sun-Pharma-gearing-up-to-introduce-molnupiravir-under-the-brand-name-Molxvir%C2%AE-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-17T05:29:45.473Z"
+      "lastEnrichmentAttempt": "2026-07-08T04:00:14.186Z"
     },
     {
       "brand": "Obimet & Thyrocab",
@@ -3814,7 +3814,7 @@
       "price": "₹31.6 / strip of 15 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-17T05:29:50.266Z"
+      "lastEnrichmentAttempt": "2026-07-08T04:00:18.280Z"
     },
     {
       "brand": "Pomalidomide",
@@ -3830,7 +3830,7 @@
       "price": "₹3840 / bottle of 21 capsules",
       "sourceUrl": "—",
       "buyer": "Natco Pharma",
-      "lastEnrichmentAttempt": "2026-06-17T05:29:55.128Z"
+      "lastEnrichmentAttempt": "2026-07-08T04:00:34.884Z"
     },
     {
       "brand": "Sodium Sulfate, Magnesium Sulfate, and Potassium Chloride Tablets",
@@ -3862,7 +3862,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/Abbotts-New-Coronary-Imaging-Software-Powered-by-Artificial-Intelligence-Launched-in-India.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-17T05:30:16.991Z"
+      "lastEnrichmentAttempt": "2026-07-08T04:00:36.180Z"
     },
     {
       "brand": "PediaSure",
@@ -5846,7 +5846,7 @@
       "price": "₹95.4 / strip of 10 tablet er",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoUSFDAmetformin07042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-17T05:29:05.594Z"
+      "lastEnrichmentAttempt": "2026-07-08T03:59:38.823Z"
     },
     {
       "brand": "Wockhardt's New Drug",
@@ -5878,7 +5878,7 @@
       "price": "₹254.85 / tin of 200 gm powder",
       "sourceUrl": "https://www.wockhardt.com/press-releases/acquisition-pharmax",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-06-17T05:29:17.941Z"
+      "lastEnrichmentAttempt": "2026-07-08T03:59:44.330Z"
     },
     {
       "brand": "Ultreon™ 1.0 Software",
@@ -5894,7 +5894,7 @@
       "price": null,
       "sourceUrl": "https://abbott.mediaroom.com/2023-10-16-Abbott-New-Coronary-Imaging-Software-Powered-by-Artificial-Intelligence",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-17T05:30:16.991Z"
+      "lastEnrichmentAttempt": "2026-07-08T04:00:48.906Z"
     },
     {
       "brand": "Breztri",
@@ -8487,6 +8487,86 @@
       "sourceUrl": "https://www.wockhardt.com/press-release/nce-launch-wockhardt/",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-07-07T04:36:32.843Z"
+    },
+    {
+      "brand": "Cipla's Xylofast",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Xylometazoline",
+      "therapy": "—",
+      "indication": "Nasal congestion",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 150 / pack",
+      "sourceUrl": "https://www.cipla.com/press-releases-statements/xylofast-launch",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-07-08T03:56:37.570Z"
+    },
+    {
+      "brand": "Cipla's Telsartan",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Telmisartan",
+      "therapy": "Cardiology",
+      "indication": "Hypertension",
+      "existingBrand": "Telma",
+      "chronicAcute": "—",
+      "price": "Rs 177 / strip",
+      "sourceUrl": "https://www.cipla.com/press-releases-statements/telsartan-launch",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-07-08T03:56:37.571Z"
+    },
+    {
+      "brand": "Cipla acquires ABC Pharma",
+      "launchType": "Acquired",
+      "date": "2023-08-20",
+      "seller": "ABC Pharma",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹141 / strip of 6 tablets",
+      "sourceUrl": "https://www.cipla.com/press-releases-statements/abc-pharma-acquisition",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-07-08T03:56:37.571Z"
+    },
+    {
+      "brand": "Wockhardt's Curcumin Gel",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "Curcumin",
+      "therapy": "—",
+      "indication": "Musculoskeletal Pain",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 299 / 50 g",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/curcumin-gel-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-08T03:59:37.319Z"
+    },
+    {
+      "brand": "Wockhardt's Amoxicillin Susp",
+      "launchType": "Own Launched",
+      "date": "2023-08-30",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Amoxicillin",
+      "therapy": "Anti-Infectives",
+      "indication": "Bacterial Infections",
+      "existingBrand": "Augmentin",
+      "chronicAcute": "Acute",
+      "price": "Rs 80 / 50 ml",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/amoxicillin-suspension-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-08T03:59:37.319Z"
     }
   ]
 }
