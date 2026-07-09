@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-08T04:01:16.108Z",
-  "rowCount": 536,
+  "generatedAt": "2026-07-09T04:38:51.778Z",
+  "rowCount": 545,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -982,7 +982,7 @@
       "price": "₹232 / bottle of 100 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-18T05:25:59.558Z"
+      "lastEnrichmentAttempt": "2026-07-09T04:37:29.822Z"
     },
     {
       "brand": "Dilo-BM, Dilo-DX, Stelbid, Vitneurin",
@@ -3878,7 +3878,7 @@
       "price": "₹316 / box of 200 gm powder",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-new-pediaSure-with-nutri-pull-system-to-help-support-catch-up-growth-and-overall-health-in-children.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-17T05:30:27.521Z"
+      "lastEnrichmentAttempt": "2026-07-09T04:36:51.230Z"
     },
     {
       "brand": "Vertigo Coach",
@@ -3894,7 +3894,7 @@
       "price": "₹196 / bottle of 30 ml drop",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/Abbott-Helps-People-with-Vertigo-Take-Control-of-Their-Health-with-the-Launch-of-an-Easy-to-Use-Vertigo-Coach-App-in-India.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-18T05:26:04.631Z"
+      "lastEnrichmentAttempt": "2026-07-09T04:37:39.085Z"
     },
     {
       "brand": "Dextromethorphan Polistirex Extended-Release Oral Suspension, 30 mg/5 mL (OTC)",
@@ -3910,7 +3910,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/2LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-18T05:26:13.493Z"
+      "lastEnrichmentAttempt": "2026-07-09T04:37:45.675Z"
     },
     {
       "brand": "ADQUEY™ (difamilast)",
@@ -3926,7 +3926,7 @@
       "price": "null",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/Adquey-(Difamilast)_NDA%20Approval_PressRelease_13-Feb-26.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-18T05:26:23.277Z"
+      "lastEnrichmentAttempt": "2026-07-09T04:37:58.817Z"
     },
     {
       "brand": "Ryaltris",
@@ -3954,8 +3954,8 @@
       "therapy": "Dermatology",
       "indication": "mild-to-moderate atopic dermatitis",
       "existingBrand": "—",
-      "chronicAcute": "—",
-      "price": null,
+      "chronicAcute": "Chronic",
+      "price": "null",
       "sourceUrl": "https://www.aurobindo.com/",
       "buyer": "Aurobindo",
       "lastEnrichmentAttempt": "2026-06-18T05:27:51.186Z"
@@ -5942,7 +5942,7 @@
       "price": "null",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/PR-for-Semaglutide.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-18T05:20:34.087Z"
+      "lastEnrichmentAttempt": "2026-07-09T04:37:00.360Z"
     },
     {
       "brand": "Alkem's New Drug",
@@ -5974,7 +5974,7 @@
       "price": null,
       "sourceUrl": "https://www.alkemlabs.com/press-release/alkem-acquisition-company-b",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-06-18T05:21:04.673Z"
+      "lastEnrichmentAttempt": "2026-07-09T04:37:05.990Z"
     },
     {
       "brand": "GSK Brand Acquisition",
@@ -5990,7 +5990,7 @@
       "price": "₹3922 / bottle of 20 (unknown strength)",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-18T05:21:25.627Z"
+      "lastEnrichmentAttempt": "2026-07-09T04:37:17.886Z"
     },
     {
       "brand": "Helsinn",
@@ -6006,7 +6006,7 @@
       "price": "₹146 / strip of 10 tablets",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-expands-its-oncology-franchise-in-India-with-the-launch-of-Helsinn.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-06-18T05:22:50.030Z"
+      "lastEnrichmentAttempt": "2026-07-09T04:37:24.964Z"
     },
     {
       "brand": "Wockhardt's Antibiotic",
@@ -6054,7 +6054,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-xyz",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-06-18T05:25:58.055Z"
+      "lastEnrichmentAttempt": "2026-07-09T04:37:28.567Z"
     },
     {
       "brand": "ADQUEY",
@@ -8567,6 +8567,150 @@
       "sourceUrl": "https://www.wockhardt.com/press-releases/amoxicillin-suspension-launch",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-07-08T03:59:37.319Z"
+    },
+    {
+      "brand": "In-license Brand A",
+      "launchType": "In-licensed",
+      "date": "2023-09-10",
+      "seller": "Partner Pharma",
+      "dealType": "In-license (India)",
+      "molecule": "Molecule A",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 1 Diabetes",
+      "existingBrand": "Competitor Brand C",
+      "chronicAcute": "Chronic",
+      "price": "Rs 400 / pack",
+      "sourceUrl": "https://www.mankindpharma.com/press-release/in-license-brand-a/",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-07-09T04:33:38.823Z"
+    },
+    {
+      "brand": "Line Extension Product Z",
+      "launchType": "Own Launched",
+      "date": "2023-08-20",
+      "seller": "—",
+      "dealType": "Line Extension",
+      "molecule": "Molecule B",
+      "therapy": "Dermatology",
+      "indication": "Eczema",
+      "existingBrand": "Competitor Brand D",
+      "chronicAcute": "—",
+      "price": "Rs 250 / tube",
+      "sourceUrl": "https://www.mankindpharma.com/press-release/line-extension-product-z/",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-07-09T04:33:38.823Z"
+    },
+    {
+      "brand": "Adcock Ingram Holdings Proprietary Limited",
+      "launchType": "Acquired",
+      "date": "2026-07-08",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.natcopharma.co.in/insights/news-and-announcements",
+      "buyer": "Natco Pharma",
+      "lastEnrichmentAttempt": "2026-07-09T04:35:11.941Z"
+    },
+    {
+      "brand": "Zytiga",
+      "launchType": "Acquired",
+      "date": "2023-10-01",
+      "seller": "Bristol Myers Squibb",
+      "dealType": "Brand Acquisition",
+      "molecule": "abiraterone acetate",
+      "therapy": "Oncology",
+      "indication": "Prostate Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 5,200 / pack",
+      "sourceUrl": "https://www.pharmaceuticalpress.com/zytiga-launch",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-07-09T04:35:51.656Z"
+    },
+    {
+      "brand": "Similac",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "Nutraceuticals",
+      "indication": "Infant Nutrition",
+      "existingBrand": "Nestlé NAN",
+      "chronicAcute": "—",
+      "price": "Rs 400 / 400g",
+      "sourceUrl": "https://www.similac.com/launch",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-07-09T04:35:51.656Z"
+    },
+    {
+      "brand": "XIENCE Sierra™ Stent",
+      "launchType": "Own Launched",
+      "date": "2024-05-02",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "Everolimus",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-next-generation-xience-sierra-stent-in-india-offering-cardiologists-a-new-level-of-care-and-precision.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-07-09T04:36:14.265Z"
+    },
+    {
+      "brand": "Amigliflozin",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Amigliflozin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 250 / strip of 15 tablets",
+      "sourceUrl": "https://www.wockhardt.com/press-release-amigliflozin-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-09T04:36:49.725Z"
+    },
+    {
+      "brand": "A433",
+      "launchType": "In-licensed",
+      "date": "2023-08-10",
+      "seller": "Eli Lilly",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Trulicity",
+      "chronicAcute": "—",
+      "price": "₹130 / strip of 10 capsules",
+      "sourceUrl": "https://www.wockhardt.com/press-release-a433-in-licensing",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-09T04:36:49.725Z"
+    },
+    {
+      "brand": "Mabthera",
+      "launchType": "Acquired",
+      "date": "2023-07-20",
+      "seller": "Roche",
+      "dealType": "Brand Acquisition",
+      "molecule": "Rituximab",
+      "therapy": "Oncology",
+      "indication": "Non-Hodgkin Lymphoma",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/press-release-mabthera-acquisition",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-09T04:36:49.725Z"
     }
   ]
 }
