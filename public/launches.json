@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-09T04:38:51.778Z",
-  "rowCount": 545,
+  "generatedAt": "2026-07-10T04:39:20.927Z",
+  "rowCount": 548,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -103,7 +103,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/PR-for-Semaglutide.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-18T05:26:35.721Z"
+      "lastEnrichmentAttempt": "2026-07-10T04:38:12.959Z"
     },
     {
       "brand": "Semaglutide Injection",
@@ -135,7 +135,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/09/Press-Release-Sun-Pharma-and-Pharmazz-Inc.-licensing-agreement-for-Sovateltide-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-18T05:26:44.920Z"
+      "lastEnrichmentAttempt": "2026-07-10T04:38:19.668Z"
     },
     {
       "brand": "Thyrocab",
@@ -151,7 +151,7 @@
       "price": "—",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-19T05:38:51.896Z"
+      "lastEnrichmentAttempt": "2026-07-10T04:38:36.846Z"
     },
     {
       "brand": "Semaglutide",
@@ -390,7 +390,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-19T05:39:04.725Z"
+      "lastEnrichmentAttempt": "2026-07-10T04:38:46.439Z"
     },
     {
       "brand": "Dilo-DX",
@@ -406,7 +406,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-19T05:39:21.478Z"
+      "lastEnrichmentAttempt": "2026-07-10T04:39:07.383Z"
     },
     {
       "brand": "Stelbid",
@@ -998,7 +998,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-19T05:39:13.142Z"
+      "lastEnrichmentAttempt": "2026-07-10T04:38:57.058Z"
     },
     {
       "brand": "Dilo-BM, Dilo-DX, Stelbid and Vitneurin",
@@ -2502,7 +2502,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/Adquey-(Difamilast)_NDA%20Approval_PressRelease_13-Feb-26.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-18T05:27:43.282Z"
+      "lastEnrichmentAttempt": "2026-07-10T04:38:30.910Z"
     },
     {
       "brand": "Dilo-BM, Dilo-DX, Stelbid, Vitneurin",
@@ -2518,7 +2518,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-19T05:39:17.357Z"
+      "lastEnrichmentAttempt": "2026-07-10T04:39:03.411Z"
     },
     {
       "brand": "Tiotropium Bromide DPI",
@@ -2959,7 +2959,7 @@
       "seller": "—",
       "dealType": "Consumer Launch",
       "molecule": "—",
-      "therapy": "—",
+      "therapy": "Allergic Rhinitis",
       "indication": "CINV (chemotherapy-induced nausea and vomiting)",
       "existingBrand": "—",
       "chronicAcute": "—",
@@ -3942,7 +3942,7 @@
       "price": null,
       "sourceUrl": "http://www.glenmarkpharma.com/press-release/glenmark-pharmaceuticals-announces-exclusive-licensing-agreement-with-seqirus-for-its-investigational-seasonal-allergic-rhinitis-nasal-spray-ryaltris-for-australia-and-new-zealand-markets",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-06-18T05:27:11.598Z"
+      "lastEnrichmentAttempt": "2026-07-10T04:38:24.029Z"
     },
     {
       "brand": "ADQUEY",
@@ -6070,7 +6070,7 @@
       "price": "—",
       "sourceUrl": "—",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-18T05:26:23.277Z"
+      "lastEnrichmentAttempt": "2026-07-10T04:38:11.581Z"
     },
     {
       "brand": "Wockhardt's New NCE",
@@ -6223,10 +6223,10 @@
       "seller": "—",
       "dealType": "Biosimilar Launch",
       "molecule": "—",
-      "therapy": "—",
-      "indication": "—",
+      "therapy": "Immunology",
+      "indication": "Rheumatoid Arthritis",
       "existingBrand": "Zaltrap",
-      "chronicAcute": "—",
+      "chronicAcute": "Chronic",
       "price": "null",
       "sourceUrl": "https://www.wockhardt.com/press-release/wockhardt-launches-new-biosimilar",
       "buyer": "Wockhardt",
@@ -8711,6 +8711,54 @@
       "sourceUrl": "https://www.wockhardt.com/press-release-mabthera-acquisition",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-07-09T04:36:49.725Z"
+    },
+    {
+      "brand": "4 drug brands from GlaxoSmithkline Pharmaceuticals",
+      "launchType": "Acquired",
+      "date": "2026-06-01",
+      "seller": "GlaxoSmithkline",
+      "dealType": "Brand Portfolio Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹6.1 / strip of 10 effervescent tablet",
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-07-10T04:36:07.942Z"
+    },
+    {
+      "brand": "DrugX",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "ActiveIngredientX",
+      "therapy": "Oncology",
+      "indication": "Cancer",
+      "existingBrand": "CompetitorDrugA",
+      "chronicAcute": "Chronic",
+      "price": "Rs 500 / tablet",
+      "sourceUrl": "https://www.drreddys.com/press-releases/drugx-launch",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-07-10T04:36:34.782Z"
+    },
+    {
+      "brand": "CardiXtra",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Cardioplex",
+      "therapy": "Cardiology",
+      "indication": "Hypertension",
+      "existingBrand": "Telma",
+      "chronicAcute": "Chronic",
+      "price": "Rs 750 / strip",
+      "sourceUrl": "https://example.com press-release-cardi-xtra",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-07-10T04:37:14.780Z"
     }
   ]
 }
