@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-11T03:58:54.087Z",
-  "rowCount": 560,
+  "generatedAt": "2026-07-12T04:12:28.127Z",
+  "rowCount": 567,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -438,7 +438,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-20T04:55:20.547Z"
+      "lastEnrichmentAttempt": "2026-07-12T04:10:55.196Z"
     },
     {
       "brand": "Noveltreat and Sematrinity",
@@ -1078,7 +1078,7 @@
       "price": "₹304 / packet of 120 mdi inhaler",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-enters-into-an-exclusive-licensing.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-06-20T04:55:18.062Z"
+      "lastEnrichmentAttempt": "2026-07-12T04:10:51.572Z"
     },
     {
       "brand": "Glycerol Phenylbutyrate Oral Liquid",
@@ -2550,7 +2550,7 @@
       "price": "₹31.2 / strip of 10 tablets",
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/amp_articleshow/100775508.cms",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-06-20T04:55:29.088Z"
+      "lastEnrichmentAttempt": "2026-07-12T04:11:08.293Z"
     },
     {
       "brand": "Cetu",
@@ -2566,7 +2566,7 @@
       "price": "₹24.8 / bottle of 60 ml (5 mg/5 ml)",
       "sourceUrl": "https://www.cnbctv18.com/healthcare/alkem-oncology-novel-breast-cancer-treatment-drug-launch-palbociclib-palbo-15703241.htm",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-06-20T04:55:37.454Z"
+      "lastEnrichmentAttempt": "2026-07-12T04:11:20.038Z"
     },
     {
       "brand": "AKYNZEO®",
@@ -2598,7 +2598,7 @@
       "price": "—",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Pharmaceuticals-and-Harbour-BioMed-Sign-Agreement-for-Greater-China-toDevelop-GBR-1302.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-06-20T04:55:45.588Z"
+      "lastEnrichmentAttempt": "2026-07-12T04:11:33.463Z"
     },
     {
       "brand": "Nourkrin®",
@@ -2614,7 +2614,7 @@
       "price": "₹3285 / strip of 60 tablets",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-launches-globally-renowned-hair-growth-formula-Nourkrin-in-Russia.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-06-20T04:55:50.149Z"
+      "lastEnrichmentAttempt": "2026-07-12T04:11:37.354Z"
     },
     {
       "brand": "AVEIR™ VR Leadless Pacemaker",
@@ -2630,7 +2630,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-aveir-vr-leadless-pacemaker-system-in-india-to-treat-patients-with-slow-heart-rhythms.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-20T04:55:54.850Z"
+      "lastEnrichmentAttempt": "2026-07-12T04:11:43.720Z"
     },
     {
       "brand": "Dextromethorphan Polistirex Extended-Release Oral Suspension, 30 mg/5 mL",
@@ -2646,7 +2646,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/2LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-20T04:56:02.438Z"
+      "lastEnrichmentAttempt": "2026-07-12T04:11:51.960Z"
     },
     {
       "brand": "Glycerol Phenylbutyrate Oral Liquid, 1.1 grams per mL",
@@ -2961,7 +2961,7 @@
       "molecule": "—",
       "therapy": "Allergic Rhinitis",
       "indication": "CINV (chemotherapy-induced nausea and vomiting)",
-      "existingBrand": "—",
+      "existingBrand": "CINV",
       "chronicAcute": "—",
       "price": "₹232 / bottle of 17 gm nasal spray",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-expands-its-oncology-franchise-in-India-with-the-launch-of-Helsinn.pdf",
@@ -4048,10 +4048,10 @@
       "dealType": "In-license (India)",
       "molecule": "Marilex®",
       "therapy": "—",
-      "indication": "—",
+      "indication": "hair loss",
       "existingBrand": "—",
       "chronicAcute": "—",
-      "price": "—",
+      "price": "₹3360 / strip of 60 tablets",
       "sourceUrl": "—",
       "buyer": "Glenmark",
       "lastEnrichmentAttempt": "2026-06-20T04:55:53.393Z"
@@ -6278,7 +6278,7 @@
       "price": "—",
       "sourceUrl": "—",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-06-20T04:55:50.149Z"
+      "lastEnrichmentAttempt": "2026-07-12T04:11:41.072Z"
     },
     {
       "brand": "Unspecified Brands",
@@ -8303,7 +8303,7 @@
       "seller": "—",
       "dealType": "Biosimilar Launch",
       "molecule": "Omalizumab",
-      "therapy": "—",
+      "therapy": "Immunology",
       "indication": "—",
       "existingBrand": "Xolair",
       "chronicAcute": "—",
@@ -8951,6 +8951,118 @@
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/articleshow/100775508.cms",
       "buyer": "Alkem",
       "lastEnrichmentAttempt": "2026-07-11T03:55:55.049Z"
+    },
+    {
+      "brand": "Biosimilar D",
+      "launchType": "Own Launched",
+      "date": "2023-09-18",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "Active Ingredient D",
+      "therapy": "Immunology",
+      "indication": "Rheumatoid Arthritis",
+      "existingBrand": "Competitor Brand D",
+      "chronicAcute": "Chronic",
+      "price": "Rs 5,500 / vial",
+      "sourceUrl": "https://www.mankindpharma.com/press-release/biosimilar-d-launch/",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-07-12T04:07:39.494Z"
+    },
+    {
+      "brand": "Device E",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹197 / box of 1 device",
+      "sourceUrl": "https://www.mankindpharma.com/press-release/device-e-launch/",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-07-12T04:07:39.494Z"
+    },
+    {
+      "brand": "Darunavir",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Darunavir",
+      "therapy": "Anti-Infectives",
+      "indication": "HIV",
+      "existingBrand": "Prezista",
+      "chronicAcute": "Chronic",
+      "price": "Rs 5,400 / strip",
+      "sourceUrl": "https://www.wockhardt.com/press-release-darunavir-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-12T04:10:50.066Z"
+    },
+    {
+      "brand": "Emtricitabine",
+      "launchType": "Own Launched",
+      "date": "2023-08-01",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Emtricitabine",
+      "therapy": "Anti-Infectives",
+      "indication": "HIV",
+      "existingBrand": "Emtriva",
+      "chronicAcute": "Chronic",
+      "price": "₹1612 / bottle of 30 tablets",
+      "sourceUrl": "https://www.wockhardt.com/press-release-emtricitabine-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-12T04:10:50.066Z"
+    },
+    {
+      "brand": "Sunitinib",
+      "launchType": "In-licensed",
+      "date": "2023-07-20",
+      "seller": "Pfizer",
+      "dealType": "In-license (India)",
+      "molecule": "Sunitinib",
+      "therapy": "Oncology",
+      "indication": "Renal Cell Carcinoma",
+      "existingBrand": "Sutent",
+      "chronicAcute": "—",
+      "price": "₹4460 / bottle of 28 capsules",
+      "sourceUrl": "https://www.wockhardt.com/press-release-sunitinib-inlicense",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-12T04:10:50.066Z"
+    },
+    {
+      "brand": "Dexamethasone",
+      "launchType": "Own Launched",
+      "date": "2023-06-12",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Dexamethasone",
+      "therapy": "Anti-Inflammatory",
+      "indication": "Inflammation",
+      "existingBrand": "Decadron",
+      "chronicAcute": "Acute",
+      "price": "Rs 1,250 / vial",
+      "sourceUrl": "https://www.wockhardt.com/press-release-dexamethasone-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-12T04:10:50.066Z"
+    },
+    {
+      "brand": "sitagliptin and dapagliflozin",
+      "launchType": "Own Launched",
+      "date": "2023-06-06",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "sitagliptin plus dapagliflozin",
+      "therapy": "Anti-Diabetic",
+      "indication": "anti-diabetes",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/articleshow/100775508.cms",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-07-12T04:11:08.293Z"
     }
   ]
 }
