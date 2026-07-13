@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-12T04:12:28.127Z",
-  "rowCount": 567,
+  "generatedAt": "2026-07-13T04:17:53.783Z",
+  "rowCount": 575,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -1110,7 +1110,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-21T05:30:28.454Z"
+      "lastEnrichmentAttempt": "2026-07-13T04:16:49.963Z"
     },
     {
       "brand": "Dilo-DX",
@@ -1126,7 +1126,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-21T05:30:37.307Z"
+      "lastEnrichmentAttempt": "2026-07-13T04:17:05.695Z"
     },
     {
       "brand": "Stelbid",
@@ -1142,7 +1142,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-21T05:30:44.522Z"
+      "lastEnrichmentAttempt": "2026-07-13T04:17:11.027Z"
     },
     {
       "brand": "Vitneurin",
@@ -2662,7 +2662,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-21T05:30:22.110Z"
+      "lastEnrichmentAttempt": "2026-07-13T04:15:48.690Z"
     },
     {
       "brand": "WINLEVI",
@@ -4054,7 +4054,7 @@
       "price": "₹3360 / strip of 60 tablets",
       "sourceUrl": "—",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-06-20T04:55:53.393Z"
+      "lastEnrichmentAttempt": "2026-07-13T04:14:35.717Z"
     },
     {
       "brand": "Ciplar",
@@ -4118,7 +4118,7 @@
       "price": "₹4538.14 / jar of 60 gm powder",
       "sourceUrl": "https://www.alkemlabs.com/press-release/alchemex-acquisition",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-06-21T05:30:01.142Z"
+      "lastEnrichmentAttempt": "2026-07-13T04:14:55.487Z"
     },
     {
       "brand": "Eribulin Mesylate Injection",
@@ -6294,7 +6294,7 @@
       "price": "₹63.7 / bottle of 225 ml liquid",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-21T05:28:07.376Z"
+      "lastEnrichmentAttempt": "2026-07-13T04:14:36.964Z"
     },
     {
       "brand": "Wockhardt's New Diabetes Drug",
@@ -6326,7 +6326,7 @@
       "price": "₹40.7 / strip of 10 capsules",
       "sourceUrl": "https://www.wockhardt.com/press-releases/acquisition-abc-pharma",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-06-21T05:29:59.639Z"
+      "lastEnrichmentAttempt": "2026-07-13T04:14:48.944Z"
     },
     {
       "brand": "Collaboration on XYZ Product",
@@ -6358,7 +6358,7 @@
       "price": "—",
       "sourceUrl": "https://www.alkemlabs.com/press-releases/acme-pharmaceuticals-acquisition",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-06-21T05:30:01.142Z"
+      "lastEnrichmentAttempt": "2026-07-13T04:15:26.854Z"
     },
     {
       "brand": "Co-Marketing Product Y",
@@ -6390,7 +6390,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-21T05:30:28.454Z"
+      "lastEnrichmentAttempt": "2026-07-13T04:16:59.244Z"
     },
     {
       "brand": "Lannett Company",
@@ -9063,6 +9063,134 @@
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/articleshow/100775508.cms",
       "buyer": "Alkem",
       "lastEnrichmentAttempt": "2026-07-12T04:11:08.293Z"
+    },
+    {
+      "brand": "Xyzomab",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Xyzomab",
+      "therapy": "Oncology",
+      "indication": "Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 2,500 / vial",
+      "sourceUrl": "https://www.mankindpharma.com/press-release/xyzomab-launch",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-07-13T04:10:19.734Z"
+    },
+    {
+      "brand": "Biosimilax",
+      "launchType": "In-licensed",
+      "date": "2023-09-15",
+      "seller": "ABC Biotech",
+      "dealType": "In-license (India)",
+      "molecule": "Biosimilax",
+      "therapy": "Immunology",
+      "indication": "Rheumatoid Arthritis",
+      "existingBrand": "Humira",
+      "chronicAcute": "Chronic",
+      "price": "Rs 4,000 / injection",
+      "sourceUrl": "https://www.mankindpharma.com/press-release/biosimilax-in-license",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-07-13T04:10:19.734Z"
+    },
+    {
+      "brand": "Cipralex",
+      "launchType": "Own Launched",
+      "date": "2023-05-10",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Escitalopram",
+      "therapy": "—",
+      "indication": "Depression",
+      "existingBrand": "Lustral",
+      "chronicAcute": "Chronic",
+      "price": "Rs 950 / strip of 10 tablets",
+      "sourceUrl": "https://www.cipla.com/press-releases-statements/cipralex-launch-2023",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-07-13T04:11:17.560Z"
+    },
+    {
+      "brand": "Cipla's New Biologics Drug",
+      "launchType": "Acquired",
+      "date": "2023-06-01",
+      "seller": "Biologics Inc.",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "Herceptin",
+      "chronicAcute": "—",
+      "price": "Rs 150,000 / injection",
+      "sourceUrl": "https://www.cipla.com/press-releases-statements/biologics-drug-acquisition-2023",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-07-13T04:11:17.560Z"
+    },
+    {
+      "brand": "Seven brands in cardiology & women’s healthcare",
+      "launchType": "Acquired",
+      "date": "2026-06-01",
+      "seller": "Bayer",
+      "dealType": "Brand Portfolio Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹191 / bottle of 30 ml drop",
+      "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-07-13T04:12:11.384Z"
+    },
+    {
+      "brand": "Acquisition of Generic Portfolio",
+      "launchType": "Acquired",
+      "date": "2023-08-30",
+      "seller": "Mankind Pharma",
+      "dealType": "Brand Portfolio Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Telma",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/press-release2",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-13T04:14:34.213Z"
+    },
+    {
+      "brand": "New Drug Launch in Diabetes Care",
+      "launchType": "Own Launched",
+      "date": "2023-07-20",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "semaglutide",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,200 / vial",
+      "sourceUrl": "https://www.wockhardt.com/press-release3",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-13T04:14:34.213Z"
+    },
+    {
+      "brand": "Dilo-BM,BM,Dilo-DX,Stelbid,Vitneurin",
+      "launchType": "Acquired",
+      "date": "2017-03-07",
+      "seller": "GlaxoSmithKline",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-07-13T04:17:05.695Z"
     }
   ]
 }
