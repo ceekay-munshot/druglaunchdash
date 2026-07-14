@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-13T05:01:49.707Z",
-  "rowCount": 171,
+  "generatedAt": "2026-07-14T04:28:53.883Z",
+  "rowCount": 172,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -2980,6 +2980,25 @@
       "_title": "Announcement under Regulation 30 (LODR)-Amendments to Memorandum &amp; Articles of Association 17h - JB Chemicals amalgamated into Torrent Pharma effective 8 July 2026; company capital clause amended.",
       "_provider": "groq",
       "_harvestedAt": "2026-07-09T05:41:38.032Z"
+    },
+    {
+      "brand": "PCV-14 (PneumoShield 14)",
+      "launchType": "Own Launched",
+      "date": "2024-11-27",
+      "seller": "—",
+      "dealType": "—",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "Pneumococcal Conjugate Vaccine (PCV-14)",
+      "therapy": "Vaccine",
+      "indication": "Pneumococcal bacterial infections (pneumonia, meningitis, invasive pneumococcal disease)",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "buyer": "Abbott India",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-14-valent-pneumococcal-conjugate-vaccine-pcv-14-that-offers-broadest-protection-for-children-against-pneumococcal-bacterial-infections.html",
+      "_title": "backfill:PCV-14 (PneumoShield 14)",
+      "_provider": "mistral",
+      "_harvestedAt": "2026-07-14T04:28:44.873Z"
     }
   ],
   "processedUrls": [
@@ -3175,6 +3194,10 @@
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=c0627737-829b-485d-ac36-02171cedf825.pdf",
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=474c9cf3-2fc1-4454-b6d6-8c997d149eab.pdf",
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=76027623-1f45-460c-baa8-3320f9a6bf04.pdf",
-    "https://www.mankindpharma.com/press-release/device-e-launch/"
+    "https://www.mankindpharma.com/press-release/device-e-launch/",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f3ed7b47-7ce6-4812-9e0d-50531da53f0c.pdf",
+    "https://www.abbott.in/media-center/press-releases/abbott-launches-14-valent-pneumococcal-conjugate-vaccine-pcv-14-that-offers-broadest-protection-for-children-against-pneumococcal-bacterial-infections.html",
+    "https://www.wockhardt.com/press-releases/acquisition-of-xyz-pharma",
+    "https://www.aurobindo.com/press-release/2026/06/22/aurobindo-pharma-usa-receives-ftc-approval-to-acquire-lannett-company"
   ]
 }
