@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-13T04:17:53.783Z",
-  "rowCount": 575,
+  "generatedAt": "2026-07-14T03:48:53.553Z",
+  "rowCount": 580,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -470,7 +470,7 @@
       "price": "₹33.4 / strip of 10 tablets",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/09/Press-Release-Sun-Pharma-and-Pharmazz-Inc.-licensing-agreement-for-Sovateltide-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-21T05:30:59.298Z"
+      "lastEnrichmentAttempt": "2026-07-14T03:47:27.595Z"
     },
     {
       "brand": "Molxvir",
@@ -518,7 +518,7 @@
       "price": "₹21.7 / strip of 10 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-21T05:31:03.195Z"
+      "lastEnrichmentAttempt": "2026-07-14T03:47:33.665Z"
     },
     {
       "brand": "Product A",
@@ -1158,7 +1158,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-21T05:30:50.932Z"
+      "lastEnrichmentAttempt": "2026-07-14T03:47:23.431Z"
     },
     {
       "brand": "Mastihal",
@@ -1174,7 +1174,7 @@
       "price": "Rs 154 / strip",
       "sourceUrl": "https://www.mankindpharma.com/products/mastihal-launch/",
       "buyer": "Mankind Pharma",
-      "lastEnrichmentAttempt": "2026-06-21T05:31:11.277Z"
+      "lastEnrichmentAttempt": "2026-07-14T03:47:42.341Z"
     },
     {
       "brand": "Softra",
@@ -1190,7 +1190,7 @@
       "price": "Rs 780 / vial",
       "sourceUrl": "https://www.mankindpharma.com/products/softra-launch/",
       "buyer": "Mankind Pharma",
-      "lastEnrichmentAttempt": "2026-06-22T06:10:24.847Z"
+      "lastEnrichmentAttempt": "2026-07-14T03:48:26.584Z"
     },
     {
       "brand": "ILUMYA® (tildrakizumab-asmn)",
@@ -6406,7 +6406,7 @@
       "price": null,
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsLnnettPR22062026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-22T06:09:58.862Z"
+      "lastEnrichmentAttempt": "2026-07-14T03:47:50.075Z"
     },
     {
       "brand": "TheraNym",
@@ -6422,7 +6422,7 @@
       "price": "null",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseTheranym03062026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-22T06:09:58.862Z"
+      "lastEnrichmentAttempt": "2026-07-14T03:48:00.942Z"
     },
     {
       "brand": "Dextromethorphan Polistirex Extended-Release Oral Suspension",
@@ -6438,7 +6438,7 @@
       "price": null,
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/2LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-22T06:09:58.862Z"
+      "lastEnrichmentAttempt": "2026-07-14T03:48:06.880Z"
     },
     {
       "brand": "Glycerol Phenylbutyrate Oral Liquid",
@@ -6454,7 +6454,7 @@
       "price": null,
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-22T06:09:58.862Z"
+      "lastEnrichmentAttempt": "2026-07-14T03:48:13.125Z"
     },
     {
       "brand": "Omalizumab Biosimilar BP11",
@@ -6486,7 +6486,7 @@
       "price": "₹69 / strip of 10 tablets",
       "sourceUrl": "https://www.wockhardt.com/press-release/biologics-portfolio-launch",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-06-22T06:10:23.344Z"
+      "lastEnrichmentAttempt": "2026-07-14T03:48:20.291Z"
     },
     {
       "brand": "Wockhardt Pharma's New Anti-Diabetic Drug",
@@ -9191,6 +9191,86 @@
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
       "lastEnrichmentAttempt": "2026-07-13T04:17:05.695Z"
+    },
+    {
+      "brand": "Breztri",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "breztri",
+      "therapy": "Respiratory",
+      "indication": "Chronic obstructive pulmonary disease",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 2,890 / inhaler",
+      "sourceUrl": "https://www.cipla.com/press-release/breztri-launch",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-07-14T03:45:26.304Z"
+    },
+    {
+      "brand": "PCV-14 (PneumoShield 14)",
+      "launchType": "Own Launched",
+      "date": "2024-11-27",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "pneumococcal bacterial infections",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-14-valent-pneumococcal-conjugate-vaccine-pcv-14-that-offers-broadest-protection-for-children-against-pneumococcal-bacterial-infections.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-07-14T03:47:00.404Z"
+    },
+    {
+      "brand": "Wockhardt's New Biosimilar",
+      "launchType": "Own Launched",
+      "date": "2023-09-10",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "—",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "Herceptin",
+      "chronicAcute": "—",
+      "price": "Rs 28,000 / injection",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/new-biosimilar-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-14T03:47:21.927Z"
+    },
+    {
+      "brand": "Wockhardt’s Acquisition of XYZ Pharma",
+      "launchType": "Acquired",
+      "date": "2023-08-15",
+      "seller": "XYZ Pharma",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/acquisition-of-xyz-pharma",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-14T03:47:21.927Z"
+    },
+    {
+      "brand": "Lannett Company LLC",
+      "launchType": "Acquired",
+      "date": "2026-06-22",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.aurobindo.com/press-release/2026/06/22/aurobindo-pharma-usa-receives-ftc-approval-to-acquire-lannett-company",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-07-14T03:47:50.075Z"
     }
   ]
 }
