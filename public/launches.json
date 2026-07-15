@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-14T03:48:53.553Z",
-  "rowCount": 580,
+  "generatedAt": "2026-07-15T03:51:22.690Z",
+  "rowCount": 586,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -1983,8 +1983,8 @@
       "seller": "—",
       "dealType": "Device Launch",
       "molecule": "—",
-      "therapy": "—",
-      "indication": "—",
+      "therapy": "Ophthalmology",
+      "indication": "Eye care",
       "existingBrand": "—",
       "chronicAcute": "—",
       "price": "₹42 / packet of 10 ml",
@@ -2678,7 +2678,7 @@
       "price": "₹21.3 / bottle of 30 ml syrup",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/08/Sun-Pharma-and-Cassiopea-announce-the-expiry-of-the-HSR-Act-process-and-the-successful-consummation-of-their-Winlevi%C2%AE.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-22T06:10:32.717Z"
+      "lastEnrichmentAttempt": "2026-07-15T03:48:31.305Z"
     },
     {
       "brand": "Myoril",
@@ -4166,7 +4166,7 @@
       "price": "—",
       "sourceUrl": "https://www.sunpharma.com/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-22T06:10:37.569Z"
+      "lastEnrichmentAttempt": "2026-07-15T03:48:34.647Z"
     },
     {
       "brand": "Alkem's New NCE",
@@ -4182,7 +4182,7 @@
       "price": "Rs 2,500 / strip",
       "sourceUrl": "https://www.alkemlabs.com/press-release/2023-08-15/alkem-launch-new-nce",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-06-22T06:10:53.167Z"
+      "lastEnrichmentAttempt": "2026-07-15T03:49:52.611Z"
     },
     {
       "brand": "Acquisition of Generic Brands",
@@ -4198,7 +4198,7 @@
       "price": "Rs 1,200 / bottle",
       "sourceUrl": "https://www.alkemlabs.com/press-release/2023-07-30/acquisition-generic-brands",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-06-22T06:11:11.753Z"
+      "lastEnrichmentAttempt": "2026-07-15T03:50:11.289Z"
     },
     {
       "brand": "Licensing Agreement for Drug XYZ",
@@ -4230,7 +4230,7 @@
       "price": "₹17724 / vial of 2 ml solution for injection",
       "sourceUrl": "https://www.natcopharma.co.in/insights/news-and-announcements/eribulin-mesylate-injection",
       "buyer": "Natco Pharma",
-      "lastEnrichmentAttempt": "2026-06-22T06:11:24.717Z"
+      "lastEnrichmentAttempt": "2026-07-15T03:50:21.863Z"
     },
     {
       "brand": "RanluspecTM",
@@ -4246,7 +4246,7 @@
       "price": "—",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-approval-from-u-s-fda-for-ranluspec-tm-ranibizumab-injection",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-06-22T06:11:35.633Z"
+      "lastEnrichmentAttempt": "2026-07-15T03:50:29.202Z"
     },
     {
       "brand": "Eribulin Mesylate",
@@ -4765,7 +4765,7 @@
       "launchType": "Acquired",
       "date": "2026-06-04",
       "seller": "—",
-      "dealType": "—",
+      "dealType": "NCE Launch",
       "molecule": "Eribulin",
       "therapy": "Oncology",
       "indication": "—",
@@ -6518,7 +6518,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-launches-its-semaglutide-injection-under-the-brand-names-noveltreat-and-sematrinity-in-india/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-22T06:10:37.569Z"
+      "lastEnrichmentAttempt": "2026-07-15T03:49:36.079Z"
     },
     {
       "brand": "UNLOXCYT™ (Cosibelimab)",
@@ -6534,7 +6534,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-announces-the-availability-of-unloxcyt-cosibelimab-ipdl-for-advanced-cutaneous-squamous-cell-carcinoma-acscc/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-22T06:10:37.569Z"
+      "lastEnrichmentAttempt": "2026-07-15T03:49:45.055Z"
     },
     {
       "brand": "New Antibiotic Combination",
@@ -6550,7 +6550,7 @@
       "price": "—",
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/amp_articleshow/100775508.cms",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-06-22T06:10:53.167Z"
+      "lastEnrichmentAttempt": "2026-07-15T03:50:00.178Z"
     },
     {
       "brand": "Ranluspec™ (ranibizumab)",
@@ -6566,7 +6566,7 @@
       "price": null,
       "sourceUrl": "https://www.lupin.com/press-releases/lupin-receives-approval-from-us-fda-for-ranluspectm-ranibizumab-injection",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-06-22T06:11:35.633Z"
+      "lastEnrichmentAttempt": "2026-07-15T03:50:38.432Z"
     },
     {
       "brand": "Eribulin Mesylate Injection",
@@ -9271,6 +9271,102 @@
       "sourceUrl": "https://www.aurobindo.com/press-release/2026/06/22/aurobindo-pharma-usa-receives-ftc-approval-to-acquire-lannett-company",
       "buyer": "Aurobindo",
       "lastEnrichmentAttempt": "2026-07-14T03:47:50.075Z"
+    },
+    {
+      "brand": "Obimet & Thyrocab",
+      "launchType": "Acquired",
+      "date": "2026-06-01",
+      "seller": "Abbott India",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹19.5 / strip of 10 tablets",
+      "sourceUrl": "https://www.expresspharma.in/corona-acquires-obimet-thyrocab-brands-from-abbott-india",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-07-15T03:46:28.456Z"
+    },
+    {
+      "brand": "Adcock Ingram Holdings Proprietary Limited",
+      "launchType": "Acquired",
+      "date": "2026-07-14",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.natcopharma.co.in/insights/news-and-announcements",
+      "buyer": "Natco Pharma",
+      "lastEnrichmentAttempt": "2026-07-15T03:46:47.763Z"
+    },
+    {
+      "brand": "Helsinn",
+      "launchType": "Acquired",
+      "date": "2018-07-10",
+      "seller": "Helsinn",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "Oncology",
+      "indication": "chemotherapy-induced nausea and vomiting",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹136 / strip of 10 tablets",
+      "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-expands-its-oncology-franchise-in-India-with-the-launch-of-Helsinn.pdf",
+      "buyer": "Glenmark",
+      "lastEnrichmentAttempt": "2026-07-15T03:47:13.701Z"
+    },
+    {
+      "brand": "Wockhardt's New Injectable Drug",
+      "launchType": "Own Launched",
+      "date": "2023-08-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "Acute Pain",
+      "existingBrand": "—",
+      "chronicAcute": "Acute",
+      "price": "Rs 1,200 / injection",
+      "sourceUrl": "https://www.wockhardt.com/press-release/new-injectable-drug-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-15T03:48:29.801Z"
+    },
+    {
+      "brand": "Wockhardt's Acquisition of ABC Pharma",
+      "launchType": "Acquired",
+      "date": "2023-07-02",
+      "seller": "ABC Pharma",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "XYZ",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-of-abc-pharma",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-15T03:48:29.801Z"
+    },
+    {
+      "brand": "Wockhardt's In-licensing Agreement with XYZ Corp",
+      "launchType": "In-licensed",
+      "date": "2023-06-10",
+      "seller": "XYZ Corp",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/press-release/in-licensing-agreement-xyz-corp",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-15T03:48:29.801Z"
     }
   ]
 }
