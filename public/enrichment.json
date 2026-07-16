@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-15T04:29:12.787Z",
-  "rowCount": 172,
+  "generatedAt": "2026-07-16T04:41:00.973Z",
+  "rowCount": 173,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -2999,6 +2999,25 @@
       "_title": "backfill:PCV-14 (PneumoShield 14)",
       "_provider": "mistral",
       "_harvestedAt": "2026-07-14T04:28:44.873Z"
+    },
+    {
+      "brand": "Indicating their commitment to diabetes care",
+      "launchType": "In-licensed",
+      "date": "2025-06-18",
+      "seller": "MSD Pharmaceuticals",
+      "dealType": "Distribution Agreement",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "Sitagliptin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 diabetes",
+      "existingBrand": "Zita (Glenmark)",
+      "chronicAcute": "Chronic",
+      "buyer": "Abbott India",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-and-msd-announce-strategic-partnership-to-distribute-innovative-oral-anti-diabetic-medicines-in-india.html",
+      "_title": "backfill:Indicating their commitment to diabetes care",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-07-16T04:40:54.958Z"
     }
   ],
   "processedUrls": [
@@ -3203,6 +3222,12 @@
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=114a29d8-9da3-4645-9469-d26cc8ff4a39.pdf",
     "https://www.wockhardt.com/press-release/new-injectable-drug-launch",
     "https://www.wockhardt.com/press-release/acquisition-of-abc-pharma",
-    "https://www.wockhardt.com/press-release/in-licensing-agreement-xyz-corp"
+    "https://www.wockhardt.com/press-release/in-licensing-agreement-xyz-corp",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=804d8576-6f0f-4b70-8639-df4b9878785c.pdf",
+    "https://helloentrepreneurs.com/lifestyle/health/corona-remedies-brothers-of-humanity-campaign-breaks-asia-book-of-records-with-tribute-to-16161-healthcare-workers-48875/",
+    "https://www.natcopharma.co.in/insights/news-and-announcements/2026/july/adcock-ingram-acquisition",
+    "https://www.natcopharma.co.in/insights/news-and-announcements/2026/july/adcock-ingram-stake-increase",
+    "https://www.abbott.in/media-center/press-releases/abbott-and-msd-announce-strategic-partnership-to-distribute-innovative-oral-anti-diabetic-medicines-in-india.html",
+    "https://www.abbott.in/media-center/press-releases/abbott-launches-new-ensure-with-hmb-to-help-protect-and-strengthen-indian-adults-muscles.html"
   ]
 }
