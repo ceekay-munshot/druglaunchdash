@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-15T03:51:22.690Z",
-  "rowCount": 586,
+  "generatedAt": "2026-07-16T03:54:26.701Z",
+  "rowCount": 602,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -2694,7 +2694,7 @@
       "price": "₹308 / strip of 10 capsules",
       "sourceUrl": "https://www.coronaremedies.com/wp-content/uploads/2024/11/myoril-news-2024.png",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-22T06:12:57.907Z"
+      "lastEnrichmentAttempt": "2026-07-16T03:52:02.726Z"
     },
     {
       "brand": "Generic version of Seretide® Accuhaler®",
@@ -4262,7 +4262,7 @@
       "price": "₹17184 / vial of 1 injection",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-and-natco-receive-approval-from-u-s-fda-for-eribulin-mesylate-injection",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-06-22T06:11:46.867Z"
+      "lastEnrichmentAttempt": "2026-07-16T03:51:41.770Z"
     },
     {
       "brand": "Acilimab",
@@ -4374,7 +4374,7 @@
       "price": "₹42.6 / packet of 50 ml scrub",
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-of-firm-x",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-06-22T06:11:56.527Z"
+      "lastEnrichmentAttempt": "2026-07-16T03:51:56.429Z"
     },
     {
       "brand": "SALFLUTIN",
@@ -6582,7 +6582,7 @@
       "price": null,
       "sourceUrl": "https://www.lupin.com/press-release-u-s-fda-approval-eribulin-mesylate-injection/",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-06-22T06:11:46.867Z"
+      "lastEnrichmentAttempt": "2026-07-16T03:51:48.447Z"
     },
     {
       "brand": "Medicover",
@@ -6662,7 +6662,7 @@
       "price": "₹316 / box of 200 gm powder",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-new-pediaSure-with-nutri-pull-system-to-help-support-catch-up-growth-and-overall-health-in-children.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-23T04:44:53.254Z"
+      "lastEnrichmentAttempt": "2026-07-16T03:52:06.511Z"
     },
     {
       "brand": "Dextromethorphan Polistirex",
@@ -6678,7 +6678,7 @@
       "price": "null",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/2LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-23T04:45:11.705Z"
+      "lastEnrichmentAttempt": "2026-07-16T03:52:14.480Z"
     },
     {
       "brand": "Glycerol Phenylbutyrate",
@@ -6694,7 +6694,7 @@
       "price": "₹84.53 / bottle of 250 ml liquid",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-23T04:45:11.705Z"
+      "lastEnrichmentAttempt": "2026-07-16T03:52:38.622Z"
     },
     {
       "brand": "Dapagliflozin and Metformin Hydrochloride",
@@ -6710,7 +6710,7 @@
       "price": "₹95.4 / strip of 10 tablet er",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoUSFDAmetformin07042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-23T04:45:11.705Z"
+      "lastEnrichmentAttempt": "2026-07-16T03:53:13.043Z"
     },
     {
       "brand": "Pomalidomide Capsules",
@@ -6726,7 +6726,7 @@
       "price": "₹3840 / bottle of 21 capsules",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/PressReleaseEugia04032026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-23T04:45:11.705Z"
+      "lastEnrichmentAttempt": "2026-07-16T03:53:18.429Z"
     },
     {
       "brand": "Everolimus Tablets",
@@ -6742,7 +6742,7 @@
       "price": "₹666.78 / strip of 10 tablets",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtsToSEsPREugiaUSFDA26022026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-23T04:45:11.705Z"
+      "lastEnrichmentAttempt": "2026-07-16T03:53:28.858Z"
     },
     {
       "brand": "ADQUEY™ (difamilast 1%) Ointment",
@@ -9367,6 +9367,262 @@
       "sourceUrl": "https://www.wockhardt.com/press-release/in-licensing-agreement-xyz-corp",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-07-15T03:48:29.801Z"
+    },
+    {
+      "brand": "LIRAA",
+      "launchType": "Own Launched",
+      "date": "2023-09-22",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Liraglutide",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Zomacton",
+      "chronicAcute": "Chronic",
+      "price": "Rs 2,500 / month",
+      "sourceUrl": "https://www.mankindpharma.com/products/liraa-launch/",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-07-16T03:48:08.194Z"
+    },
+    {
+      "brand": "MANAGLIP",
+      "launchType": "Own Launched",
+      "date": "2023-09-22",
+      "seller": "—",
+      "dealType": "Own Launched",
+      "molecule": "Managlipid",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Glycomet",
+      "chronicAcute": "Chronic",
+      "price": "Rs 550 / month",
+      "sourceUrl": "https://www.mankindpharma.com/products/managlip-launch/",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-07-16T03:48:08.194Z"
+    },
+    {
+      "brand": "Brothers of Humanity Campaign",
+      "launchType": "Own Launched",
+      "date": "2026-06-01",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://helloentrepreneurs.com/lifestyle/health/corona-remedies-brothers-of-humanity-campaign-breaks-asia-book-of-records-with-tribute-to-16161-healthcare-workers-48875/",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-07-16T03:49:13.941Z"
+    },
+    {
+      "brand": "Hormonal Manufacturing Facility",
+      "launchType": "Own Launched",
+      "date": "2026-06-01",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹180 / bottle of 30 ml drops",
+      "sourceUrl": "https://www.coronaremedies.com/media-center/#site-content",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-07-16T03:49:13.941Z"
+    },
+    {
+      "brand": "Adcock Ingram Holdings Proprietary Limited",
+      "launchType": "Acquired",
+      "date": "2026-07-14",
+      "seller": "Adcock Ingram",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.natcopharma.co.in/insights/news-and-announcements/2026/july/adcock-ingram-acquisition",
+      "buyer": "Natco Pharma",
+      "lastEnrichmentAttempt": "2026-07-16T03:49:36.636Z"
+    },
+    {
+      "brand": "Adcock Ingram Holdings Proprietary Limited",
+      "launchType": "Acquired",
+      "date": "2026-07-08",
+      "seller": "Adcock Ingram",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.natcopharma.co.in/insights/news-and-announcements/2026/july/adcock-ingram-stake-increase",
+      "buyer": "Natco Pharma",
+      "lastEnrichmentAttempt": "2026-07-16T03:49:36.636Z"
+    },
+    {
+      "brand": "CardioHeal",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Cardiostatin",
+      "therapy": "Cardiology",
+      "indication": "Heart Disease",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,200 / strip",
+      "sourceUrl": "https://www.pharmaannouncements.com/cardioheal-launch",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-07-16T03:50:24.809Z"
+    },
+    {
+      "brand": "GlucoMax",
+      "launchType": "Acquired",
+      "date": "2023-09-15",
+      "seller": "Medsco Pharma",
+      "dealType": "Brand Acquisition",
+      "molecule": "Glycophase",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Glyconorm",
+      "chronicAcute": "—",
+      "price": "Rs 650 / bottle",
+      "sourceUrl": "https://www.pharmaannouncements.com/glucomax-acquisition",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-07-16T03:50:24.809Z"
+    },
+    {
+      "brand": "SampleBiosim",
+      "launchType": "Own Launched",
+      "date": "2023-08-25",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "Samplemab",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "Roche's Herceptin",
+      "chronicAcute": "—",
+      "price": "Rs 25,000 / vial",
+      "sourceUrl": "https://www.pharmaannouncements.com/samplebiosim-launch",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-07-16T03:50:24.809Z"
+    },
+    {
+      "brand": "Indicating their commitment to diabetes care",
+      "launchType": "In-licensed",
+      "date": "2025-06-18",
+      "seller": "MSD Pharmaceuticals",
+      "dealType": "In-license (India)",
+      "molecule": "Sitagliptin",
+      "therapy": "anti-diabetic",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹110 / packet of 60 capsules",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-and-msd-announce-strategic-partnership-to-distribute-innovative-oral-anti-diabetic-medicines-in-india.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-07-16T03:50:53.123Z"
+    },
+    {
+      "brand": "HMB Ensure",
+      "launchType": "Own Launched",
+      "date": "2022-12-05",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹880 / jar of 400 gm powder",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-new-ensure-with-hmb-to-help-protect-and-strengthen-indian-adults-muscles.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-07-16T03:50:53.123Z"
+    },
+    {
+      "brand": "ADQUEY™ (difamilast 1%) Ointment",
+      "launchType": "Own Launched",
+      "date": "2026-02-16",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "difamilast",
+      "therapy": "—",
+      "indication": "Atopic Dermatitis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/Adquey-(Difamilast)_NDA%20Approval_PressRelease_13-Feb-26.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-07-16T03:51:21.035Z"
+    },
+    {
+      "brand": "Wockhardt Pharma",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "Herceptin",
+      "chronicAcute": "—",
+      "price": "Rs 25,000 / injection",
+      "sourceUrl": "https://www.wockhardt.com/release/launch-breast-cancer-drug",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-16T03:51:40.266Z"
+    },
+    {
+      "brand": "Wockhardt",
+      "launchType": "Acquired",
+      "date": "2023-08-10",
+      "seller": "Mylan",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Glycomet",
+      "chronicAcute": "Chronic",
+      "price": "Rs 750 / strip",
+      "sourceUrl": "https://www.wockhardt.com/release/acquisition-of-glycomet",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-16T03:51:40.266Z"
+    },
+    {
+      "brand": "Wockhardt",
+      "launchType": "In-licensed",
+      "date": "2023-07-20",
+      "seller": "Merck",
+      "dealType": "In-license (India)",
+      "molecule": "Sitagliptin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Januvia",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,500 / strip",
+      "sourceUrl": "https://www.wockhardt.com/release/in-license-sitagliptin",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-16T03:51:40.266Z"
+    },
+    {
+      "brand": "Halaven® Injection",
+      "launchType": "Acquired",
+      "date": "2026-06-03",
+      "seller": "Eisai, Inc.",
+      "dealType": "Brand Acquisition",
+      "molecule": "Eribulin",
+      "therapy": "Oncology",
+      "indication": "Metastatic breast cancer, liposarcoma",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.lupin.com/",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-07-16T03:51:41.770Z"
     }
   ]
 }
