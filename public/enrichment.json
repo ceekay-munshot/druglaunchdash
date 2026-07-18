@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-17T04:43:11.297Z",
-  "rowCount": 173,
+  "generatedAt": "2026-07-18T04:27:33.653Z",
+  "rowCount": 174,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -3018,6 +3018,25 @@
       "_title": "backfill:Indicating their commitment to diabetes care",
       "_provider": "gemini",
       "_harvestedAt": "2026-07-16T04:40:54.958Z"
+    },
+    {
+      "brand": "Occlutech",
+      "launchType": "Acquired",
+      "date": "2026-07-17",
+      "seller": "Occlutech Holding AG",
+      "dealType": "Acquisition of 51%-55% stake",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "price": "—",
+      "dealValue": null,
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "buyer": "Alkem",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6901aa63-4be5-436c-8ccd-8ca206d1c584.pdf",
+      "_title": "Announcement under Regulation 30 (LODR)-Updates on Acquisition 9h - Alkem Medtech completed acquisition of 51%-55% stake in Occlutech, making it a step-down subsidiary.",
+      "_provider": "groq",
+      "_harvestedAt": "2026-07-18T04:27:06.013Z"
     }
   ],
   "processedUrls": [
@@ -3234,6 +3253,10 @@
     "https://www.wockhardt.com/new-drug-launch",
     "https://www.wockhardt.com/acquisition-xyz",
     "https://www.wockhardt.com/in-licensing-abc",
-    "https://sunpharma.com/press-release-linalk-launch-2023-09-01"
+    "https://sunpharma.com/press-release-linalk-launch-2023-09-01",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6901aa63-4be5-436c-8ccd-8ca206d1c584.pdf",
+    "https://www.wockhardt.com/press-release-url-2",
+    "https://www.wockhardt.com/press-release-url-3",
+    "https://www.abbott.com/media"
   ]
 }
