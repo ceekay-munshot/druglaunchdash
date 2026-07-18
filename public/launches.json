@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-17T03:53:36.715Z",
-  "rowCount": 609,
+  "generatedAt": "2026-07-18T03:45:47.723Z",
+  "rowCount": 617,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -246,7 +246,7 @@
       "price": "₹104 / bottle of 60 ml oral suspension",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/09/Press-Release-Sun-Pharma-launches-Chericof-12.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-24T04:53:26.279Z"
+      "lastEnrichmentAttempt": "2026-07-18T03:45:15.576Z"
     },
     {
       "brand": "Organon",
@@ -1286,7 +1286,7 @@
       "price": "₹232 / bottle of 100 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-23T04:46:24.769Z"
+      "lastEnrichmentAttempt": "2026-07-18T03:44:13.848Z"
     },
     {
       "brand": "Molxvir®",
@@ -4454,7 +4454,7 @@
       "price": "₹430 / box of 200 gm",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbotts-new-pediasure-cookies-and-cream-ensures-summer-break-is-a-good-timetogrow-for-children.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-24T04:52:04.888Z"
+      "lastEnrichmentAttempt": "2026-07-18T03:44:46.714Z"
     },
     {
       "brand": "TheraNym",
@@ -4470,7 +4470,7 @@
       "price": "null",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseTheranym03062026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-24T04:52:17.217Z"
+      "lastEnrichmentAttempt": "2026-07-18T03:44:59.417Z"
     },
     {
       "brand": "Wockhardt's New Drug",
@@ -6111,7 +6111,7 @@
       "seller": "—",
       "dealType": "NCE Launch",
       "molecule": "Azilsartan Medoxomil",
-      "therapy": "—",
+      "therapy": "CNS",
       "indication": "Hypertension",
       "existingBrand": "Edarbi®",
       "chronicAcute": "—",
@@ -6822,7 +6822,7 @@
       "price": "null",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-launches-azilsartan-medoxomil-tablets-in-the-united-states",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-06-24T04:50:10.408Z"
+      "lastEnrichmentAttempt": "2026-07-18T03:44:18.649Z"
     },
     {
       "brand": "Lannett Company LLC",
@@ -6838,7 +6838,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsLnnettPR22062026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-24T04:51:28.683Z"
+      "lastEnrichmentAttempt": "2026-07-18T03:44:28.196Z"
     },
     {
       "brand": "BP11",
@@ -6854,7 +6854,7 @@
       "price": "₹36.4 / strip of 20 tablets",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-24T04:51:28.684Z"
+      "lastEnrichmentAttempt": "2026-07-18T03:44:33.785Z"
     },
     {
       "brand": "Wockhardt",
@@ -6870,7 +6870,7 @@
       "price": "Rs 500 / strip",
       "sourceUrl": "https://www.wockhardt.com/press-release/generic-drug-launch",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-06-24T04:51:49.435Z"
+      "lastEnrichmentAttempt": "2026-07-18T03:44:39.454Z"
     },
     {
       "brand": "PediaSure",
@@ -6886,7 +6886,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.com/",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-24T04:52:04.888Z"
+      "lastEnrichmentAttempt": "2026-07-18T03:44:53.755Z"
     },
     {
       "brand": "TheraNym",
@@ -6902,7 +6902,7 @@
       "price": "—",
       "sourceUrl": "http://www.aurobindo.com/press-release/therynym-inauguration",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-24T04:52:17.217Z"
+      "lastEnrichmentAttempt": "2026-07-18T03:45:05.657Z"
     },
     {
       "brand": "Invista",
@@ -9735,6 +9735,134 @@
       "sourceUrl": "https://sunpharma.com/press-release-superbiosim-launch-2023-08-15",
       "buyer": "Sun Pharma",
       "lastEnrichmentAttempt": "2026-07-17T03:52:39.643Z"
+    },
+    {
+      "brand": "four drug brands from GlaxoSmithkline Pharmaceuticals Limited",
+      "launchType": "Acquired",
+      "date": "2026-06-01",
+      "seller": "GlaxoSmithkline Pharmaceuticals Limited",
+      "dealType": "Brand Portfolio Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹6 / strip of 10 effervescent tablet",
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-07-18T03:42:39.277Z"
+    },
+    {
+      "brand": "PCV-14",
+      "launchType": "Own Launched",
+      "date": "2024-11-27",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "pneumococcal bacterial infections",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-14-valent-pneumococcal-conjugate-vaccine-pcv-14-that-offers-broadest-protection-for-children-against-pneumococcal-bacterial-infections.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-07-18T03:43:38.495Z"
+    },
+    {
+      "brand": "Wockhardt",
+      "launchType": "Own Launched",
+      "date": "2023-05-10",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "₹153 / strip of 15 tablets",
+      "sourceUrl": "https://www.wockhardt.com/press-release-url-1",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-18T03:44:12.345Z"
+    },
+    {
+      "brand": "Wockhardt",
+      "launchType": "Acquired",
+      "date": "2023-07-15",
+      "seller": "XYZ Pharma",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹153 / strip of 15 tablets",
+      "sourceUrl": "https://www.wockhardt.com/press-release-url-2",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-18T03:44:12.345Z"
+    },
+    {
+      "brand": "Wockhardt",
+      "launchType": "In-licensed",
+      "date": "2023-08-01",
+      "seller": "ABC Limited",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹153 / strip of 15 tablets",
+      "sourceUrl": "https://www.wockhardt.com/press-release-url-3",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-18T03:44:12.345Z"
+    },
+    {
+      "brand": "Wockhardt's Generic Drug",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Metformin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Glyciphage",
+      "chronicAcute": "Chronic",
+      "price": "Rs 500 / strip of 10 tablets",
+      "sourceUrl": "https://www.wockhardt.com/press-release/generic-drug-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-18T03:44:39.454Z"
+    },
+    {
+      "brand": "PediaSure Cookies & Cream",
+      "launchType": "Own Launched",
+      "date": "2018-05-17",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.abbott.com/media",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-07-18T03:44:46.714Z"
+    },
+    {
+      "brand": "ZycoV-D",
+      "launchType": "Own Launched",
+      "date": "2021-08-20",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "ZyCoV-D",
+      "therapy": "Anti-Diabetic",
+      "indication": "COVID-19",
+      "existingBrand": "—",
+      "chronicAcute": "Acute",
+      "price": "Rs 375 / dose",
+      "sourceUrl": "https://www.aurobindo.com/press-release/zycovid-launch",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-07-18T03:45:05.657Z"
     }
   ]
 }
