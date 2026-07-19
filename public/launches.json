@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-18T03:45:47.723Z",
-  "rowCount": 617,
+  "generatedAt": "2026-07-19T04:09:35.983Z",
+  "rowCount": 621,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -262,7 +262,7 @@
       "price": null,
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/04/PR-Sun-Organon-announcement-Apr-26.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-24T04:53:38.785Z"
+      "lastEnrichmentAttempt": "2026-07-19T04:07:40.669Z"
     },
     {
       "brand": "EVERON",
@@ -278,7 +278,7 @@
       "price": "₹39.7 / strip of 10 tablet md",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2022/03/Press-Release-EVERON-Launch.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-24T04:54:00.218Z"
+      "lastEnrichmentAttempt": "2026-07-19T04:07:57.905Z"
     },
     {
       "brand": "Molxvir",
@@ -614,7 +614,7 @@
       "price": "—",
       "sourceUrl": "http://www.sunpharma.com/press-release/press-release-chericof12-launch",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-24T04:53:30.730Z"
+      "lastEnrichmentAttempt": "2026-07-19T04:07:33.035Z"
     },
     {
       "brand": "Antibiotic Combination",
@@ -2758,7 +2758,7 @@
       "price": "₹21.7 / strip of 10 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-24T04:53:42.803Z"
+      "lastEnrichmentAttempt": "2026-07-19T04:07:44.772Z"
     },
     {
       "brand": "Ryaltris",
@@ -2774,7 +2774,7 @@
       "price": "₹232 / bottle of 17 gm (nasal spray)",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-Announces-Exclusive-Licensing-Agreement-with-Se.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-06-24T04:53:55.511Z"
+      "lastEnrichmentAttempt": "2026-07-19T04:07:53.076Z"
     },
     {
       "brand": "TriClip",
@@ -4481,8 +4481,8 @@
       "molecule": "WCK 8872",
       "therapy": "Oncology",
       "indication": "Breast Cancer",
-      "existingBrand": "—",
-      "chronicAcute": "—",
+      "existingBrand": "Herceptin",
+      "chronicAcute": "Chronic",
       "price": "Rs 2,500 / vial",
       "sourceUrl": "https://www.wockhardt.com/press-2023-09-15",
       "buyer": "Wockhardt",
@@ -6934,7 +6934,7 @@
       "price": "null",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-25T04:47:53.478Z"
+      "lastEnrichmentAttempt": "2026-07-19T04:08:03.177Z"
     },
     {
       "brand": "Lannett Company LLC",
@@ -6950,7 +6950,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsLnnettPR22062026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-25T04:48:50.176Z"
+      "lastEnrichmentAttempt": "2026-07-19T04:08:09.903Z"
     },
     {
       "brand": "TheraNym",
@@ -6966,7 +6966,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseTheranym03062026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-25T04:48:50.176Z"
+      "lastEnrichmentAttempt": "2026-07-19T04:08:41.877Z"
     },
     {
       "brand": "Dextromethorphan Polistirex",
@@ -6982,7 +6982,7 @@
       "price": "null",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/2LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-25T04:48:50.176Z"
+      "lastEnrichmentAttempt": "2026-07-19T04:09:03.093Z"
     },
     {
       "brand": "Glycerol Phenylbutyrate",
@@ -6998,7 +6998,7 @@
       "price": "₹84.53 / bottle of 250 ml liquid",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-25T04:48:50.176Z"
+      "lastEnrichmentAttempt": "2026-07-19T04:09:23.606Z"
     },
     {
       "brand": "Dapagliflozin and Metformin Hydrochloride",
@@ -9863,6 +9863,70 @@
       "sourceUrl": "https://www.aurobindo.com/press-release/zycovid-launch",
       "buyer": "Aurobindo",
       "lastEnrichmentAttempt": "2026-07-18T03:45:05.657Z"
+    },
+    {
+      "brand": "Kleanex",
+      "launchType": "Acquired",
+      "date": "2023-08-30",
+      "seller": "ABC Pharma",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 150 / strip",
+      "sourceUrl": "https://www.wockhardt.com/press-release/brand-acquisition-kleanex",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-19T04:07:31.530Z"
+    },
+    {
+      "brand": "Temporax",
+      "launchType": "In-licensed",
+      "date": "2023-07-25",
+      "seller": "XYZ Ltd.",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Glyxper",
+      "chronicAcute": "Chronic",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/press-release/in-licensing-deal-temporax",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-19T04:07:31.530Z"
+    },
+    {
+      "brand": "Organon",
+      "launchType": "Acquired",
+      "date": "2026-04-26",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.sunpharma.com/press-release/sun-pharma-signs-definitive-agreement-acquire-organon",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-07-19T04:07:40.669Z"
+    },
+    {
+      "brand": "Dextromethorphan Polistirex",
+      "launchType": "Own Launched",
+      "date": "2026-04-17",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Dextromethorphan Polistirex",
+      "therapy": "—",
+      "indication": "cough due to minor throat and bronchial irritation",
+      "existingBrand": "Delsym",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.aurobindo.com/press-release",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-07-19T04:09:03.093Z"
     }
   ]
 }
