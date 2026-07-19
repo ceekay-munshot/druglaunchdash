@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-18T04:27:33.653Z",
-  "rowCount": 174,
+  "generatedAt": "2026-07-19T04:50:27.888Z",
+  "rowCount": 175,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -3037,6 +3037,25 @@
       "_title": "Announcement under Regulation 30 (LODR)-Updates on Acquisition 9h - Alkem Medtech completed acquisition of 51%-55% stake in Occlutech, making it a step-down subsidiary.",
       "_provider": "groq",
       "_harvestedAt": "2026-07-18T04:27:06.013Z"
+    },
+    {
+      "brand": "Olaparib",
+      "launchType": "Own Launched",
+      "date": "2026-07-18",
+      "seller": "—",
+      "dealType": "—",
+      "molecule": "Olaparib",
+      "therapy": "Oncology",
+      "indication": "—",
+      "price": "—",
+      "dealValue": null,
+      "existingBrand": "Lynparza",
+      "chronicAcute": "Chronic",
+      "buyer": "Natco Pharma",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=48b7b13f-1688-4186-95ec-bcf53bb85015.pdf",
+      "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 10h - NATCO received tentative FDA approval for Olaparib tablets on July 18, 2026; litigation remains ongoing.",
+      "_provider": "groq",
+      "_harvestedAt": "2026-07-19T04:49:46.423Z"
     }
   ],
   "processedUrls": [
@@ -3257,6 +3276,9 @@
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6901aa63-4be5-436c-8ccd-8ca206d1c584.pdf",
     "https://www.wockhardt.com/press-release-url-2",
     "https://www.wockhardt.com/press-release-url-3",
-    "https://www.abbott.com/media"
+    "https://www.abbott.com/media",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=48b7b13f-1688-4186-95ec-bcf53bb85015.pdf",
+    "https://www.wockhardt.com/press-release/brand-acquisition-kleanex",
+    "https://www.sunpharma.com/press-release/sun-pharma-signs-definitive-agreement-acquire-organon"
   ]
 }
