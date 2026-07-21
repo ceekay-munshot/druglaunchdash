@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-20T05:07:47.604Z",
-  "rowCount": 175,
+  "generatedAt": "2026-07-21T04:48:38.790Z",
+  "rowCount": 177,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -3056,6 +3056,44 @@
       "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 10h - NATCO received tentative FDA approval for Olaparib tablets on July 18, 2026; litigation remains ongoing.",
       "_provider": "groq",
       "_harvestedAt": "2026-07-19T04:49:46.423Z"
+    },
+    {
+      "brand": "LNP7457",
+      "launchType": "In-licensed",
+      "date": "2026-07-20",
+      "seller": "—",
+      "dealType": "Licensing agreement",
+      "molecule": "PRMT5",
+      "therapy": "Oncology",
+      "indication": "Solid tumors, including lung, pancreatic, ovarian, and CNS-related cancers",
+      "price": "—",
+      "dealValue": 13,
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "buyer": "Lupin",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=4c20a57a-cce2-42b5-89f5-e792ec521226.pdf",
+      "_title": "Announcement under Regulation 30 (LODR)-Acquisition 8m - Lupin Inc. U.S.A., wholly owned subsidiary of the Company has entered into a licensing agreement in exchange of 332,000 Common Shares of Kaveri Therapeutics, Inc. …",
+      "_provider": "groq",
+      "_harvestedAt": "2026-07-21T04:47:52.846Z"
+    },
+    {
+      "brand": "LNP8701",
+      "launchType": "In-licensed",
+      "date": "2026-07-20",
+      "seller": "—",
+      "dealType": "Licensing agreement",
+      "molecule": "SOS1",
+      "therapy": "Oncology",
+      "indication": "Solid tumors, including lung, pancreatic, ovarian, and CNS-related cancers",
+      "price": "—",
+      "dealValue": 13,
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "buyer": "Lupin",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=4c20a57a-cce2-42b5-89f5-e792ec521226.pdf",
+      "_title": "Announcement under Regulation 30 (LODR)-Acquisition 8m - Lupin Inc. U.S.A., wholly owned subsidiary of the Company has entered into a licensing agreement in exchange of 332,000 Common Shares of Kaveri Therapeutics, Inc. …",
+      "_provider": "groq",
+      "_harvestedAt": "2026-07-21T04:47:52.846Z"
     }
   ],
   "processedUrls": [
@@ -3280,6 +3318,10 @@
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=48b7b13f-1688-4186-95ec-bcf53bb85015.pdf",
     "https://www.wockhardt.com/press-release/brand-acquisition-kleanex",
     "https://www.sunpharma.com/press-release/sun-pharma-signs-definitive-agreement-acquire-organon",
-    "https://www.wockhardt.com/press-releases/wockhardt-in-licenses-product-from-pfizer"
+    "https://www.wockhardt.com/press-releases/wockhardt-in-licenses-product-from-pfizer",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=4c20a57a-cce2-42b5-89f5-e792ec521226.pdf",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2ae12886-f17a-4ece-a99c-839e337d41c2.pdf",
+    "https://www.abbott.in/media-center/press-releases-old/abbott-sugar-survey.html",
+    "https://www.wockhardt.com/press-release/wockhardt-acquires-generic-drug-portfolio#content"
   ]
 }
