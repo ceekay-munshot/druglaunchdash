@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-20T04:28:13.419Z",
-  "rowCount": 625,
+  "generatedAt": "2026-07-21T04:00:34.302Z",
+  "rowCount": 632,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -1350,7 +1350,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-introduces-its-most-advanced-drug-eluting-stent-xience-skypoint-in-india.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-26T04:56:22.442Z"
+      "lastEnrichmentAttempt": "2026-07-21T03:59:26.076Z"
     },
     {
       "brand": "Extensior®",
@@ -2790,7 +2790,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.com/press-release-triclip-launch-india.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-26T04:56:10.729Z"
+      "lastEnrichmentAttempt": "2026-07-21T03:59:15.276Z"
     },
     {
       "brand": "XIENCE Skypoint",
@@ -2806,7 +2806,7 @@
       "price": null,
       "sourceUrl": "https://www.cardiovascular.abbott/us/en/hcp/products/percutaneous-coronary-intervention/xience-family/xience-skypoint.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-26T04:56:30.541Z"
+      "lastEnrichmentAttempt": "2026-07-21T03:59:34.093Z"
     },
     {
       "brand": "FreeStyle Libre 2 Plus",
@@ -4582,7 +4582,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-panbio-covid-19-antigen-self-test-in-india.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-25T04:49:54.636Z"
+      "lastEnrichmentAttempt": "2026-07-21T03:58:40.556Z"
     },
     {
       "brand": "Carbetocin",
@@ -4598,7 +4598,7 @@
       "price": "₹360 / vial of 1 ml (100 mcg)",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-introduces-room-temperature-stable.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-25T04:50:02.803Z"
+      "lastEnrichmentAttempt": "2026-07-21T03:58:47.264Z"
     },
     {
       "brand": "Flash Glucose Monitoring System",
@@ -4614,7 +4614,7 @@
       "price": "₹4984 / box of 1 unit",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/first-flash-glucose-monitoring-system.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-25T04:50:10.562Z"
+      "lastEnrichmentAttempt": "2026-07-21T03:58:54.712Z"
     },
     {
       "brand": "Vazquez",
@@ -4630,7 +4630,7 @@
       "price": "Rs 1,200 / strip",
       "sourceUrl": "https://www.wockhardt.com/press-release/vazquez-launch",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-06-26T04:56:04.180Z"
+      "lastEnrichmentAttempt": "2026-07-21T03:59:08.271Z"
     },
     {
       "brand": "XIENCE Skypoint Stent",
@@ -4646,7 +4646,7 @@
       "price": null,
       "sourceUrl": "https://www.cardiovascular.abbott/us/en/hcp/products/percutaneous-coronary-intervention/xience-family/xience-skypoint.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-26T04:56:50.371Z"
+      "lastEnrichmentAttempt": "2026-07-21T03:59:48.254Z"
     },
     {
       "brand": "Lingo",
@@ -5070,7 +5070,7 @@
       "date": "2023-09-15",
       "seller": "—",
       "dealType": "NCE Launch",
-      "molecule": "—",
+      "molecule": "semaglutide",
       "therapy": "Anti-Diabetic",
       "indication": "Type 2 Diabetes",
       "existingBrand": "Glyciphage",
@@ -7126,7 +7126,7 @@
       "price": "null",
       "sourceUrl": "https://www.wockhardt.com/press-release/wockhardt-acquires-generic-drug-portfolio",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-06-26T04:56:02.677Z"
+      "lastEnrichmentAttempt": "2026-07-21T03:59:00.973Z"
     },
     {
       "brand": "XIENCE Skypoint™ Stent",
@@ -7135,14 +7135,14 @@
       "seller": "—",
       "dealType": "Device Launch",
       "molecule": "Everolimus",
-      "therapy": "—",
+      "therapy": "Cardiology",
       "indication": "Improving coronary artery luminal diameter",
       "existingBrand": "—",
       "chronicAcute": "—",
       "price": null,
       "sourceUrl": "https://www.cardiovascular.abbott/us/en/hcp/products/percutaneous-coronary-intervention/xience-family/xience-skypoint.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-26T04:56:30.541Z"
+      "lastEnrichmentAttempt": "2026-07-21T03:59:41.692Z"
     },
     {
       "brand": "Libre Duo and Libre Duo 10 Day",
@@ -9991,6 +9991,118 @@
       "sourceUrl": "https://www.wockhardt.com/press-releases/wockhardt-in-licenses-product-from-pfizer",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-07-20T04:26:27.193Z"
+    },
+    {
+      "brand": "WINLEVI®",
+      "launchType": "Acquired",
+      "date": "2021-09-28",
+      "seller": "Cassiopea",
+      "dealType": "Brand Acquisition",
+      "molecule": "clascoterone",
+      "therapy": "CNS",
+      "indication": "Acne Vulgaris",
+      "existingBrand": "Aczone",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/09/Press-Release-Sun-Pharma-launches-Chericof-12.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-07-21T03:57:14.886Z"
+    },
+    {
+      "brand": "Adcock Ingram Holdings Limited",
+      "launchType": "Acquired",
+      "date": "2026-07-14",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.natcopharma.co.in/insights/news-and-announcements",
+      "buyer": "Natco Pharma",
+      "lastEnrichmentAttempt": "2026-07-21T03:57:41.263Z"
+    },
+    {
+      "brand": "ADQUEY™ (difamilast) Ointment",
+      "launchType": "Acquired",
+      "date": "2026-02-16",
+      "seller": "Otsuka Pharmaceutical Co., Ltd.",
+      "dealType": "Brand Acquisition",
+      "molecule": "Difamilast",
+      "therapy": "—",
+      "indication": "Mild-to-Moderate Atopic Dermatitis",
+      "existingBrand": "—",
+      "chronicAcute": "Acute",
+      "price": "null",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/Adquey-(Difamilast)_NDA%20Approval_PressRelease_13-Feb-26.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-07-21T03:58:32.338Z"
+    },
+    {
+      "brand": "Abbott Flash Glucose Monitoring System",
+      "launchType": "Own Launched",
+      "date": "2015-06-16",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases-old/abbott-sugar-survey.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-07-21T03:58:54.712Z"
+    },
+    {
+      "brand": "Generic Drug Portfolio",
+      "launchType": "Acquired",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "Brand Portfolio Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/press-release/wockhardt-acquires-generic-drug-portfolio#content",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-21T03:59:00.973Z"
+    },
+    {
+      "brand": "Vazquez",
+      "launchType": "Own Launched",
+      "date": "2023-09-25",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 1,200 / injection",
+      "sourceUrl": "https://www.wockhardt.com/press-release/vazquez-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-21T03:59:08.271Z"
+    },
+    {
+      "brand": "XIENCE Skypoint™ Stent",
+      "launchType": "Own Launched",
+      "date": "2023-10-05",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "Everolimus",
+      "therapy": "—",
+      "indication": "Improving coronary artery luminal diameter in patients with symptomatic heart disease due to de novo native coronary artery lesions ≤ 44 mm",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "—",
+      "sourceUrl": "https://www.cardiovascular.abbott/us/en/hcp/products/percutaneous-coronary-intervention/xience-family/xience-skypoint.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-07-21T03:59:48.254Z"
     }
   ]
 }
