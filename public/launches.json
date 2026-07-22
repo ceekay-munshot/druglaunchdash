@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T04:00:34.302Z",
-  "rowCount": 632,
+  "generatedAt": "2026-07-22T04:04:51.455Z",
+  "rowCount": 640,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -1382,7 +1382,7 @@
       "price": "₹432 / box of 200 gm powder",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-new-and-advanced-ensure-diabetes-care-a-clinically-proven-formula-to-help-manage-blood-sugar.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-26T04:56:56.089Z"
+      "lastEnrichmentAttempt": "2026-07-22T04:02:44.312Z"
     },
     {
       "brand": "AVEIR™ DR",
@@ -1398,7 +1398,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-aveir-dr-the-worlds-first-dual-chamber-leadless-pacemaker-in-india.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-26T04:57:04.373Z"
+      "lastEnrichmentAttempt": "2026-07-22T04:02:51.814Z"
     },
     {
       "brand": "FreeStyle Libre 2 Plus",
@@ -1414,7 +1414,7 @@
       "price": "₹4881 / box of 1 unit",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-next-gen-freestyle-libre2-plus-with-continuous-glucose-readings-every-minute-and-optional-alarms.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-26T04:57:12.539Z"
+      "lastEnrichmentAttempt": "2026-07-22T04:02:59.886Z"
     },
     {
       "brand": "TactiFlex™ Sensor Enabled™ Ablation Catheter",
@@ -1430,7 +1430,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-introduces-tactiflex-sensor-enabled-ablation-catheter-in-india-for-treatment-of-abnormal-heart-rhythms.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-27T04:38:21.207Z"
+      "lastEnrichmentAttempt": "2026-07-22T04:03:43.117Z"
     },
     {
       "brand": "Navitor™ Vision",
@@ -1446,7 +1446,7 @@
       "price": "null",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-introduces-navitor-vision-in-india-the-next-generation-of-heart-valve-technology-designed-to-treat-aortic-stenosis.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-27T04:38:28.972Z"
+      "lastEnrichmentAttempt": "2026-07-22T04:03:49.735Z"
     },
     {
       "brand": "PneumoShield 14",
@@ -2822,7 +2822,7 @@
       "price": null,
       "sourceUrl": "https://urldefense.proofpoint.com/v2/url?u=http-3A__www.abbott.com&d=DwMFAg&c=Y79EjzVEpgcQoCenoFaxQY8xoeA9rIAVbAq2xFBK1Ao&r=oV_taibTU6WWDgin4kkMwAPaPchfuS76BHUO_UHNvwM&m=pecJl28dBLDpg01U6nZUOeoCNZaH3mwecFOiJZmvoXw&s=nus6YMlzeVdc6eWUDel2l3mVJxV0P5ABFc1GEZxS8eQ&e=",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-26T04:57:20.019Z"
+      "lastEnrichmentAttempt": "2026-07-22T04:03:07.897Z"
     },
     {
       "brand": "Navitor Vision",
@@ -2838,7 +2838,7 @@
       "price": null,
       "sourceUrl": "https://www.abbott.com/",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-27T04:38:36.807Z"
+      "lastEnrichmentAttempt": "2026-07-22T04:03:56.535Z"
     },
     {
       "brand": "Drug A",
@@ -4662,7 +4662,7 @@
       "price": "—",
       "sourceUrl": "https://abbott.mediaroom.com/2026-05-27-Abbott-secures-CE-Mark-for-worlds-first-dual-glucose-ketone-sensing-technology-for-people-with-diabetes",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-26T04:57:26.525Z"
+      "lastEnrichmentAttempt": "2026-07-22T04:03:14.524Z"
     },
     {
       "brand": "Lingo Glucose System",
@@ -4705,7 +4705,7 @@
       "molecule": "Piperacillin plus Tazobactam",
       "therapy": "Anti-Infectives",
       "indication": "Skin and Soft Tissue Infections",
-      "existingBrand": "—",
+      "existingBrand": "Competitor Brand X",
       "chronicAcute": "Acute",
       "price": "Rs 1,200 / vial",
       "sourceUrl": "https://www.wockhardt.com/press-release/new-drug-launch-2023",
@@ -7158,7 +7158,7 @@
       "price": "—",
       "sourceUrl": "https://abbott.mediaroom.com/2026-05-27-Abbott-secures-CE-Mark-for-worlds-first-dual-glucose-ketone-sensing-technology-for-people-with-diabetes",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-26T04:57:26.525Z"
+      "lastEnrichmentAttempt": "2026-07-22T04:03:22.840Z"
     },
     {
       "brand": "Aspire",
@@ -7222,7 +7222,7 @@
       "price": "—",
       "sourceUrl": "https://www.wockhardt.com/press-release2",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-06-27T04:38:19.703Z"
+      "lastEnrichmentAttempt": "2026-07-22T04:03:34.442Z"
     },
     {
       "brand": "Mylab Discovery Solutions",
@@ -10103,6 +10103,134 @@
       "sourceUrl": "https://www.cardiovascular.abbott/us/en/hcp/products/percutaneous-coronary-intervention/xience-family/xience-skypoint.html",
       "buyer": "Abbott India",
       "lastEnrichmentAttempt": "2026-07-21T03:59:48.254Z"
+    },
+    {
+      "brand": "Olaparib Tablets",
+      "launchType": "Own Launched",
+      "date": "2026-07-20",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Olaparib",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹8307 / bottle of 60 tablets",
+      "sourceUrl": "https://www.natcopharma.co.in/insights/news-and-announcements",
+      "buyer": "Natco Pharma",
+      "lastEnrichmentAttempt": "2026-07-22T03:59:44.454Z"
+    },
+    {
+      "brand": "Adcock Ingram Holdings Proprietary Limited",
+      "launchType": "Acquired",
+      "date": "2026-07-14",
+      "seller": "Adcock Ingram Holdings Proprietary Limited",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.natcopharma.co.in/insights/news-and-announcements",
+      "buyer": "Natco Pharma",
+      "lastEnrichmentAttempt": "2026-07-22T03:59:44.454Z"
+    },
+    {
+      "brand": "Omalizumab",
+      "launchType": "Own Launched",
+      "date": "2026-04-05",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "Omalizumab",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Xolair",
+      "chronicAcute": "—",
+      "price": "₹33309 / ampoule of 2 ml injection",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-07-22T04:02:23.304Z"
+    },
+    {
+      "brand": "Wockhardt Acquisition",
+      "launchType": "Acquired",
+      "date": "2023-06-10",
+      "seller": "Company Z",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Competitor Brand Y",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.wockhardt.com/press-release-2",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-22T04:02:42.807Z"
+    },
+    {
+      "brand": "Wockhardt In-License",
+      "launchType": "In-licensed",
+      "date": "2023-07-20",
+      "seller": "Company A",
+      "dealType": "In-license (India)",
+      "molecule": "Molecule B",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Competitor Brand Z",
+      "chronicAcute": "—",
+      "price": "₹254.85 / tin of 200 gm powder",
+      "sourceUrl": "https://www.wockhardt.com/press-release-3",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-22T04:02:42.807Z"
+    },
+    {
+      "brand": "Lingo Glucose System",
+      "launchType": "Own Launched",
+      "date": "2026-01-01",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.abbott.com/lifesolutions/lingo-glucose-system.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-07-22T04:03:07.897Z"
+    },
+    {
+      "brand": "Libre Duo",
+      "launchType": "Own Launched",
+      "date": "2026-05-27",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://abbott.mediaroom.com/2026-05-27-Abbott-secures-CE-Mark-for-worlds-first-dual-glucose-ketone-sensing-technology-for-people-with-diabetes",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-07-22T04:03:14.524Z"
+    },
+    {
+      "brand": "Lingo Glucose System",
+      "launchType": "Own Launched",
+      "date": "2026-04-01",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.abbott.com/content/dam/corp/abbottglobal/en-us/global/Generic-PR-Lingo-Glucose-System-2026.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-07-22T04:03:56.535Z"
     }
   ]
 }
