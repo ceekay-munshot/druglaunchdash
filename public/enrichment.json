@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-22T04:48:24.677Z",
-  "rowCount": 177,
+  "generatedAt": "2026-07-23T04:53:16.397Z",
+  "rowCount": 178,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -3094,6 +3094,25 @@
       "_title": "Announcement under Regulation 30 (LODR)-Acquisition 8m - Lupin Inc. U.S.A., wholly owned subsidiary of the Company has entered into a licensing agreement in exchange of 332,000 Common Shares of Kaveri Therapeutics, Inc. …",
       "_provider": "groq",
       "_harvestedAt": "2026-07-21T04:47:52.846Z"
+    },
+    {
+      "brand": "Desidustat",
+      "launchType": "Own Launched",
+      "date": "2026-07-23",
+      "seller": "—",
+      "dealType": "—",
+      "molecule": "Desidustat",
+      "therapy": "Hypoxia-inducible factor (HIF) prolyl hydroxylase inhibitor (PHI)",
+      "indication": "Sickle Cell Disease",
+      "price": "—",
+      "dealValue": null,
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "buyer": "Zydus Lifesciences",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=4bfccd99-1957-4a3b-a473-ddde9b5bf1d1.pdf",
+      "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 4m - Zydus received approval for Phase III Desidustat trial in sickle cell disease with ICMR.",
+      "_provider": "groq",
+      "_harvestedAt": "2026-07-23T04:53:00.613Z"
     }
   ],
   "processedUrls": [
@@ -3325,6 +3344,8 @@
     "https://www.wockhardt.com/press-release/wockhardt-acquires-generic-drug-portfolio#content",
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=8d892748-47a1-48b5-b1ab-d08af5d389f6.pdf",
     "https://www.abbott.com/lifesolutions/lingo-glucose-system.html",
-    "https://www.abbott.com/content/dam/corp/abbottglobal/en-us/global/Generic-PR-Lingo-Glucose-System-2026.html"
+    "https://www.abbott.com/content/dam/corp/abbottglobal/en-us/global/Generic-PR-Lingo-Glucose-System-2026.html",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=4bfccd99-1957-4a3b-a473-ddde9b5bf1d1.pdf",
+    "https://www.wockhardt.com/press-release-1"
   ]
 }
