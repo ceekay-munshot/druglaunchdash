@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-22T04:04:51.455Z",
-  "rowCount": 640,
+  "generatedAt": "2026-07-23T03:59:49.512Z",
+  "rowCount": 646,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -1631,7 +1631,7 @@
       "seller": "—",
       "dealType": "Device Launch",
       "molecule": "Everolimus",
-      "therapy": "—",
+      "therapy": "Cardiology",
       "indication": "—",
       "existingBrand": "—",
       "chronicAcute": "—",
@@ -2902,7 +2902,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2020/12/Press-Release-Sun-Pharma-Launch-of-Drizalma-Sprinkle-in-the-US.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-27T04:39:01.870Z"
+      "lastEnrichmentAttempt": "2026-07-23T03:57:46.371Z"
     },
     {
       "brand": "Vancomycin injection",
@@ -2950,7 +2950,7 @@
       "price": "null",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-27T04:39:07.086Z"
+      "lastEnrichmentAttempt": "2026-07-23T03:57:50.356Z"
     },
     {
       "brand": "Ryaltris",
@@ -2982,7 +2982,7 @@
       "price": null,
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-Announces-Decision-to-Launch-Phase-1.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-06-27T04:39:23.757Z"
+      "lastEnrichmentAttempt": "2026-07-23T03:58:01.882Z"
     },
     {
       "brand": "ADQUEY™ difamilast 1%",
@@ -4240,8 +4240,8 @@
       "dealType": "NCE Launch",
       "molecule": "ranibizumab",
       "therapy": "Oncology",
-      "indication": "—",
-      "existingBrand": "—",
+      "indication": "neovascular (wet) age-related macular degeneration, macular edema following retinal vein occlusion, diabetic macular edema, diabetic retinopathy, and myopic choroidal neovascularization",
+      "existingBrand": "Lucentis®",
       "chronicAcute": "—",
       "price": "—",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-approval-from-u-s-fda-for-ranluspec-tm-ranibizumab-injection",
@@ -4678,7 +4678,7 @@
       "price": "—",
       "sourceUrl": "https://abbott.mediaroom.com/2026-05-27-Abbott-secures-CE-Mark-for-worlds-first-dual-glucose-ketone-sensing-technology-for-people-with-diabetes",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-27T04:38:39.333Z"
+      "lastEnrichmentAttempt": "2026-07-23T03:57:32.567Z"
     },
     {
       "brand": "Ryaltris™",
@@ -4694,7 +4694,7 @@
       "price": "₹232 / bottle of 17 gm nasal spray",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-Announces-Exclusive-Licensing-Agreement-with-Se.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-06-27T04:38:48.993Z"
+      "lastEnrichmentAttempt": "2026-07-23T03:57:36.080Z"
     },
     {
       "brand": "Wockhardt's New Drug",
@@ -4726,7 +4726,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-xyz-pharmaceuticals-2023",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-06-27T04:38:55.201Z"
+      "lastEnrichmentAttempt": "2026-07-23T03:57:40.016Z"
     },
     {
       "brand": "Breztri",
@@ -7238,7 +7238,7 @@
       "price": "₹51.56 / packet of 1 self test kit",
       "sourceUrl": "https://www.mankindpharma.com/products/mylab-discovery",
       "buyer": "Mankind Pharma",
-      "lastEnrichmentAttempt": "2026-06-28T05:04:29.546Z"
+      "lastEnrichmentAttempt": "2026-07-23T03:58:05.270Z"
     },
     {
       "brand": "world’s 1st biosimilar for Cetuximab",
@@ -7254,7 +7254,7 @@
       "price": "₹60.5 / vial of 1 ml injection",
       "sourceUrl": "https://www.cnbctv18.com/healthcare/alkem-oncology-novel-breast-cancer-treatment-drug-launch-palbociclib-palbo-15703241.htm",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-06-28T05:05:36.539Z"
+      "lastEnrichmentAttempt": "2026-07-23T03:58:13.183Z"
     },
     {
       "brand": "Enzalutamide Tablets",
@@ -7265,12 +7265,12 @@
       "molecule": "Enzalutamide",
       "therapy": "—",
       "indication": "—",
-      "existingBrand": "—",
+      "existingBrand": "Xtandi",
       "chronicAcute": "—",
-      "price": "—",
+      "price": "₹3935 / strip of 10 tablets",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-tentative-approval-from-u-s-fda-for-enzalutamide-tablets",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-06-28T05:06:55.745Z"
+      "lastEnrichmentAttempt": "2026-07-23T03:58:20.833Z"
     },
     {
       "brand": "RanluspecTM Injection",
@@ -7286,7 +7286,7 @@
       "price": "—",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-approval-from-u-s-fda-for-ranluspec-tm-ranibizumab-injection",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-06-28T05:06:55.745Z"
+      "lastEnrichmentAttempt": "2026-07-23T03:58:30.080Z"
     },
     {
       "brand": "PediaSure® with Nutri-Pull System",
@@ -10231,6 +10231,102 @@
       "sourceUrl": "https://www.abbott.com/content/dam/corp/abbottglobal/en-us/global/Generic-PR-Lingo-Glucose-System-2026.html",
       "buyer": "Abbott India",
       "lastEnrichmentAttempt": "2026-07-22T04:03:56.535Z"
+    },
+    {
+      "brand": "Alkem's novel antibiotic",
+      "launchType": "Own Launched",
+      "date": "2023-10-02",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "drug-resistant infections",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/amp_articleshow/100775508.cms",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-07-23T03:56:10.301Z"
+    },
+    {
+      "brand": "Alkem eye care products",
+      "launchType": "Own Launched",
+      "date": "2023-10-22",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "Ophthalmology",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹283 / packet of 5 ml",
+      "sourceUrl": "https://health.economictimes.indiatimes.com/news/pharma/drug-approvals-launches/alkem-forays-into-ophthalmology-with-launch-of-eye-care-products/101642253",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-07-23T03:56:10.301Z"
+    },
+    {
+      "brand": "Wokadine",
+      "launchType": "Acquired",
+      "date": "2026-06-01",
+      "seller": "Dr. Reddy's Laboratories (DRL)",
+      "dealType": "Brand Acquisition",
+      "molecule": "povidone-iodine",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹44.8 / packet of 50 ml (7.5%)",
+      "sourceUrl": "https://www.business-standard.com/industry/news/corona-remedies-acquires-wokadine-drl-povidone-iodine-market-126033001282_1.html",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-07-23T03:56:20.448Z"
+    },
+    {
+      "brand": "4 drug brands",
+      "launchType": "Acquired",
+      "date": "2026-06-01",
+      "seller": "GlaxoSmithKline Pharmaceuticals Limited",
+      "dealType": "Brand Portfolio Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹34.9 / strip of 10 tablets",
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-07-23T03:56:20.448Z"
+    },
+    {
+      "brand": "Brufen® Power Spray",
+      "launchType": "Own Launched",
+      "date": "2019-03-23",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbotts-new-brufen-power-spray-film-highlights-the-power-of-targeted-pain-relief.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-07-23T03:57:12.866Z"
+    },
+    {
+      "brand": "Formycon's FYB201",
+      "launchType": "In-licensed",
+      "date": "2023-09-15",
+      "seller": "Formycon",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/press-release-1",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-23T03:57:31.063Z"
     }
   ]
 }
