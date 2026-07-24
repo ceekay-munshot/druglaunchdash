@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-23T04:53:16.397Z",
-  "rowCount": 178,
+  "generatedAt": "2026-07-24T04:50:05.104Z",
+  "rowCount": 180,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -3113,6 +3113,44 @@
       "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 4m - Zydus received approval for Phase III Desidustat trial in sickle cell disease with ICMR.",
       "_provider": "groq",
       "_harvestedAt": "2026-07-23T04:53:00.613Z"
+    },
+    {
+      "brand": "Organon",
+      "launchType": "Acquired",
+      "date": "2026-07-24",
+      "seller": "Organon & Co.",
+      "dealType": "Merger",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "buyer": "Sun Pharma",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/07/PRforOrganonShareholderapproval.pdf",
+      "_title": "backfill:Organon",
+      "_provider": "groq",
+      "_harvestedAt": "2026-07-24T04:49:49.880Z"
+    },
+    {
+      "brand": "FluGuard®",
+      "launchType": "Own Launched",
+      "date": "2020-08-04",
+      "seller": "—",
+      "dealType": "Launch",
+      "price": "Rs. 35 per tablet",
+      "dealValue": null,
+      "molecule": "Favipiravir",
+      "therapy": "Antiviral",
+      "indication": "mild to moderate cases of Covid-19",
+      "existingBrand": "—",
+      "chronicAcute": "Acute",
+      "buyer": "Sun Pharma",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2020/12/Press-Release-Sun-Pharma-launches-FluGuard-Favipiravir-at-Rs.-35-per-tablet.pdf",
+      "_title": "backfill:FluGuard®",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-07-24T04:49:57.185Z"
     }
   ],
   "processedUrls": [
@@ -3346,6 +3384,13 @@
     "https://www.abbott.com/lifesolutions/lingo-glucose-system.html",
     "https://www.abbott.com/content/dam/corp/abbottglobal/en-us/global/Generic-PR-Lingo-Glucose-System-2026.html",
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=4bfccd99-1957-4a3b-a473-ddde9b5bf1d1.pdf",
-    "https://www.wockhardt.com/press-release-1"
+    "https://www.wockhardt.com/press-release-1",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=38a6ecc5-f63e-4ab7-9edf-3acb6333ee53.pdf",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=b5246c91-b4ae-439f-9923-d5bc13ea0cf6.pdf",
+    "https://sunpharma.com/wp-content/uploads/2026/07/PRforOrganonShareholderapproval.pdf",
+    "https://sunpharma.com/wp-content/uploads/2020/12/Press-Release-Sun-Pharma-launches-FluGuard-Favipiravir-at-Rs.-35-per-tablet.pdf",
+    "https://www.companyxyz.com/press-release-hyperdilute",
+    "https://www.companyxyz.com/press-release-astrazeneca",
+    "https://www.wockhardt.com/press-release/wockhardt-launches-new-nce"
   ]
 }
