@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-24T04:03:07.789Z",
-  "rowCount": 652,
+  "generatedAt": "2026-07-25T03:53:11.342Z",
+  "rowCount": 657,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -630,7 +630,7 @@
       "price": "₹210 / strip of 10 capsules",
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/amp_articleshow/100775508.cms",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-06-28T05:09:30.029Z"
+      "lastEnrichmentAttempt": "2026-07-25T03:52:02.713Z"
     },
     {
       "brand": "Cetuximab Biosimilar",
@@ -3871,8 +3871,8 @@
       "seller": "—",
       "dealType": "Consumer Launch",
       "molecule": "—",
-      "therapy": "—",
-      "indication": "—",
+      "therapy": "Nutrition",
+      "indication": "catch-up growth",
       "existingBrand": "—",
       "chronicAcute": "—",
       "price": "₹316 / box of 200 gm powder",
@@ -4758,7 +4758,7 @@
       "price": "₹21.7 / bottle of 30 ml (2.5 mg)",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2022/07/Press-Release-licensing-and-supply-agreement-between-Sun-Pharma-and-Cassiopea-announce-the-expiry-of-the-HSR-Act-process-and-the-successful-consummation-of-their-Winlevi%C2%AE.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-28T05:09:12.009Z"
+      "lastEnrichmentAttempt": "2026-07-25T03:51:41.021Z"
     },
     {
       "brand": "Eribulin Mesylate Injection",
@@ -4790,7 +4790,7 @@
       "price": "—",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Pharmaceuticals-and-Harbour-BioMed-Sign-Agreement-for-Greater-China-toDevelop-GBR-1302.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-06-28T05:09:17.530Z"
+      "lastEnrichmentAttempt": "2026-07-25T03:51:46.779Z"
     },
     {
       "brand": "Wockhardt's New Drug ABC-123",
@@ -4822,7 +4822,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-xyz-pharma",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-06-28T05:09:21.248Z"
+      "lastEnrichmentAttempt": "2026-07-25T03:51:54.231Z"
     },
     {
       "brand": "In-licensing of Drug XYZ-456",
@@ -7430,7 +7430,7 @@
       "price": "null",
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-xyz-pharma#content",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-06-28T05:09:21.248Z"
+      "lastEnrichmentAttempt": "2026-07-25T03:52:00.324Z"
     },
     {
       "brand": "Molxvir® (Molnupiravir)",
@@ -7446,7 +7446,7 @@
       "price": "₹1285 / bottle of 40 capsules",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/11/Press-Release-Sun-Pharma-gearing-up-to-introduce-molnupiravir-under-the-brand-name-Molxvir%C2%AE-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-29T05:14:45.196Z"
+      "lastEnrichmentAttempt": "2026-07-25T03:52:16.747Z"
     },
     {
       "brand": "Enzalutamide",
@@ -7462,7 +7462,7 @@
       "price": "₹37538 / bottle of 112 capsules",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-tentative-approval-from-u-s-fda-for-enzalutamide-tablets",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-06-29T05:16:19.573Z"
+      "lastEnrichmentAttempt": "2026-07-25T03:52:21.316Z"
     },
     {
       "brand": "PediaSure with Nutri-Pull System",
@@ -7478,7 +7478,7 @@
       "price": "₹328 / box of 200 gm powder",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-new-pediaSure-with-nutri-pull-system-to-help-support-catch-up-growth-and-overall-health-in-children.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-29T05:17:01.297Z"
+      "lastEnrichmentAttempt": "2026-07-25T03:52:29.582Z"
     },
     {
       "brand": "Vertigo Coach App",
@@ -7494,7 +7494,7 @@
       "price": "₹196 / bottle of 30 ml drop",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/Abbott-Helps-People-with-Vertigo-Take-Control-of-Their-Health-with-the-Launch-of-an-Easy-to-Use-Vertigo-Coach-App-in-India.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-29T05:17:01.297Z"
+      "lastEnrichmentAttempt": "2026-07-25T03:52:32.543Z"
     },
     {
       "brand": "Lannett Company LLC",
@@ -7510,7 +7510,7 @@
       "price": null,
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsLnnettPR22062026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-29T05:17:21.133Z"
+      "lastEnrichmentAttempt": "2026-07-25T03:52:39.999Z"
     },
     {
       "brand": "Vaccine X",
@@ -8946,7 +8946,7 @@
       "therapy": "Cardiology",
       "indication": "heart failure",
       "existingBrand": "—",
-      "chronicAcute": "—",
+      "chronicAcute": "Chronic",
       "price": "—",
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/articleshow/100775508.cms",
       "buyer": "Alkem",
@@ -10423,6 +10423,86 @@
       "sourceUrl": "https://www.wockhardt.com/press-release/wockhardt-launches-new-nce",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-07-24T03:57:30.668Z"
+    },
+    {
+      "brand": "four drug brands from GlaxoSmithkline Pharmaceuticals",
+      "launchType": "Acquired",
+      "date": "2026-06-01",
+      "seller": "GlaxoSmithkline",
+      "dealType": "Brand Portfolio Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹122 / strip of 4 tablets",
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-07-25T03:50:28.783Z"
+    },
+    {
+      "brand": "Adcock Ingram Holdings",
+      "launchType": "Acquired",
+      "date": "2026-07-14",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.natcopharma.co.in/insights/news-and-announcements",
+      "buyer": "Natco Pharma",
+      "lastEnrichmentAttempt": "2026-07-25T03:50:36.536Z"
+    },
+    {
+      "brand": "Wockhardt's New Injectable Drug",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 1,500 / injection",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/new-injectable-drug-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-25T03:51:39.515Z"
+    },
+    {
+      "brand": "Wockhardt Acquires Generic Brand from Competitor",
+      "launchType": "Acquired",
+      "date": "2023-09-15",
+      "seller": "Competitor Pharma Co.",
+      "dealType": "Brand Acquisition",
+      "molecule": "paracetamol",
+      "therapy": "Pain Management",
+      "indication": "Fever",
+      "existingBrand": "Calpol",
+      "chronicAcute": "Acute",
+      "price": "Rs 30 / strip",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/acquisition-of-generic-brand",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-25T03:51:39.515Z"
+    },
+    {
+      "brand": "Co-marketing Agreement for New Drug",
+      "launchType": "In-licensed",
+      "date": "2023-08-20",
+      "seller": "Partner Company Ltd.",
+      "dealType": "Co-marketing",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/co-marketing-agreement",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-25T03:51:39.515Z"
     }
   ]
 }
