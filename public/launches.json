@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-25T03:53:11.342Z",
-  "rowCount": 657,
+  "generatedAt": "2026-07-26T04:13:08.357Z",
+  "rowCount": 669,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -52,7 +52,7 @@
       "dealType": "Co-marketing",
       "molecule": "Desidustat",
       "therapy": "Anti-Diabetic",
-      "indication": "—",
+      "indication": "Anemia associated with chronic kidney disease",
       "existingBrand": "—",
       "chronicAcute": "Chronic",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/10/Press-Release-Sun-Pharma-and-Zydus-sign-licensing-agreement-for-co-marketing-of-Desidustat-in-India.pdf",
@@ -646,7 +646,7 @@
       "price": "₹9281 / vial of 20 ml infusion",
       "sourceUrl": "https://www.cnbctv18.com/healthcare/alkem-oncology-novel-breast-cancer-treatment-drug-launch-palbociclib-palbo-15703241.htm",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-06-29T05:18:53.950Z"
+      "lastEnrichmentAttempt": "2026-07-26T04:11:44.514Z"
     },
     {
       "brand": "Obimet",
@@ -662,7 +662,7 @@
       "price": "₹30.6 / strip of 15 tablet sr",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-29T05:19:07.194Z"
+      "lastEnrichmentAttempt": "2026-07-26T04:11:54.583Z"
     },
     {
       "brand": "Molxvir (Molnupiravir)",
@@ -1750,7 +1750,7 @@
       "price": "₹69.3 / strip of 10 capsules",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-enters-into-an-exclusive-licensing.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-06-29T05:19:32.416Z"
+      "lastEnrichmentAttempt": "2026-07-26T04:12:21.058Z"
     },
     {
       "brand": "Revefenacin",
@@ -3126,7 +3126,7 @@
       "price": "₹1483 / box of 2 pre-filled pens",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/PR-for-Semaglutide.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-06-29T05:17:43.845Z"
+      "lastEnrichmentAttempt": "2026-07-26T04:10:32.207Z"
     },
     {
       "brand": "Molxvir®",
@@ -3174,7 +3174,7 @@
       "price": "₹523 / bottle of 150 ml cleanser",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-29T05:17:48.989Z"
+      "lastEnrichmentAttempt": "2026-07-26T04:10:36.379Z"
     },
     {
       "brand": "Navitor™",
@@ -3190,7 +3190,7 @@
       "price": "₹84.6 / tube of 10 gm",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-navitor-its-latest-generation-transcatheter-aortic-valve-implantation-tavi-system-to-treat-aortic-stenosis-in-india.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-29T05:18:01.888Z"
+      "lastEnrichmentAttempt": "2026-07-26T04:10:44.546Z"
     },
     {
       "brand": "BP11 (Biosimilar to Omalizumab)",
@@ -3206,7 +3206,7 @@
       "price": "₹190 / strip of 15 tablets",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-29T05:18:13.365Z"
+      "lastEnrichmentAttempt": "2026-07-26T04:10:51.132Z"
     },
     {
       "brand": "valsartan and sacubitril",
@@ -4870,7 +4870,7 @@
       "price": null,
       "sourceUrl": "http://www.aurobindo.com/",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-29T05:18:34.698Z"
+      "lastEnrichmentAttempt": "2026-07-26T04:11:23.201Z"
     },
     {
       "brand": "Drug A",
@@ -4902,7 +4902,7 @@
       "price": "null",
       "sourceUrl": "https://www.cipla.com/press-releases/2023/acquisition-of-company-b",
       "buyer": "Cipla",
-      "lastEnrichmentAttempt": "2026-06-29T05:19:18.455Z"
+      "lastEnrichmentAttempt": "2026-07-26T04:12:02.288Z"
     },
     {
       "brand": "Drug C",
@@ -4982,7 +4982,7 @@
       "price": "null",
       "sourceUrl": "https://www.wockhardt.com/press-release/xyz-pharma-acquisition",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-06-29T05:19:26.170Z"
+      "lastEnrichmentAttempt": "2026-07-26T04:12:12.788Z"
     },
     {
       "brand": "Doxobact",
@@ -7679,7 +7679,7 @@
       "seller": "Bayer",
       "dealType": "Brand Portfolio Acquisition",
       "molecule": "—",
-      "therapy": "—",
+      "therapy": "Cardiology, Women's Health",
       "indication": "—",
       "existingBrand": "—",
       "chronicAcute": "—",
@@ -7694,8 +7694,8 @@
       "date": "2026-06-01",
       "seller": "Sanofi India",
       "dealType": "Brand Acquisition",
-      "molecule": "—",
-      "therapy": "—",
+      "molecule": "Thiocolchicoside",
+      "therapy": "Muscle Relaxant",
       "indication": "—",
       "existingBrand": "—",
       "chronicAcute": "—",
@@ -7726,8 +7726,8 @@
       "date": "2026-06-01",
       "seller": "Abbott India",
       "dealType": "Brand Portfolio Acquisition",
-      "molecule": "—",
-      "therapy": "—",
+      "molecule": "Metformin, Levothyroxine",
+      "therapy": "Diabetes, Thyroid",
       "indication": "—",
       "existingBrand": "—",
       "chronicAcute": "—",
@@ -8447,7 +8447,7 @@
       "seller": "Dr. Reddy's Laboratories",
       "dealType": "Brand Acquisition",
       "molecule": "Povidone-iodine",
-      "therapy": "—",
+      "therapy": "Antiseptic",
       "indication": "—",
       "existingBrand": "—",
       "chronicAcute": "—",
@@ -10503,6 +10503,198 @@
       "sourceUrl": "https://www.wockhardt.com/press-releases/co-marketing-agreement",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-07-25T03:51:39.515Z"
+    },
+    {
+      "brand": "Cipla's New Diabetes Drug Comet",
+      "launchType": "Own Launched",
+      "date": "2023-05-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "semaglutide",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Trulicity",
+      "chronicAcute": "Chronic",
+      "price": "Rs 2,500 / pack",
+      "sourceUrl": "https://www.cipla.com/press-release/cipla-new-diabetes-drug-comet",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-07-26T04:08:09.760Z"
+    },
+    {
+      "brand": "Cipla Acquires Generic Portfolio from XYZ Pharma",
+      "launchType": "Acquired",
+      "date": "2023-06-15",
+      "seller": "XYZ Pharma",
+      "dealType": "Brand Portfolio Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.cipla.com/press-release/cipla-acquires-generic-portfolio",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-07-26T04:08:09.760Z"
+    },
+    {
+      "brand": "4 drug brands from GlaxoSmithkline",
+      "launchType": "Acquired",
+      "date": "2026-06-01",
+      "seller": "GlaxoSmithkline Pharmaceuticals Limited",
+      "dealType": "Brand Portfolio Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹34.5 / strip of 10 tablets",
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-07-26T04:08:40.207Z"
+    },
+    {
+      "brand": "Adcock Ingram Holdings",
+      "launchType": "Acquired",
+      "date": "2026-07-08",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.natcopharma.co.in/insights/news-and-announcements",
+      "buyer": "Natco Pharma",
+      "lastEnrichmentAttempt": "2026-07-26T04:08:56.728Z"
+    },
+    {
+      "brand": "Wockhardt",
+      "launchType": "Own Launched",
+      "date": "2023-05-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "Trastuzumab",
+      "chronicAcute": "Acute",
+      "price": "Rs 25,000 / injection",
+      "sourceUrl": "https://www.wockhardt.com/releases/breast-cancer-drug-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-26T04:10:30.702Z"
+    },
+    {
+      "brand": "Wockhardt Bio",
+      "launchType": "Acquired",
+      "date": "2022-11-15",
+      "seller": "Medigen Biotech Corp.",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "Immunology",
+      "indication": "COVID-19",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹757.51 / tube of 6 gm gel",
+      "sourceUrl": "https://www.wockhardt.com/releases/covid-vaccine-acquisition",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-26T04:10:30.702Z"
+    },
+    {
+      "brand": "Wockhardt",
+      "launchType": "In-licensed",
+      "date": "2023-03-20",
+      "seller": "GSK",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "Respiratory",
+      "indication": "Asthma",
+      "existingBrand": "Seretide",
+      "chronicAcute": "Chronic",
+      "price": "₹159 / strip of 10 tablets",
+      "sourceUrl": "https://www.wockhardt.com/releases/asthma-in-licensing",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-26T04:10:30.702Z"
+    },
+    {
+      "brand": "Dilo-BM, Dilo-DX, Stelbid, Vitneurin",
+      "launchType": "Acquired",
+      "date": "2017-03-07",
+      "seller": "GlaxoSmithKline Pharma",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-07-26T04:10:36.379Z"
+    },
+    {
+      "brand": "Genricine",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Diclofenac Sodium",
+      "therapy": "Pain Management",
+      "indication": "Pain relief",
+      "existingBrand": "Cataflam",
+      "chronicAcute": "Acute",
+      "price": "Rs 89 / strip of 10 tablets",
+      "sourceUrl": "https://www.aurobindo.com/media/press-releases/genricine-launch",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-07-26T04:11:23.201Z"
+    },
+    {
+      "brand": "Acme Drug",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Acmephine",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "Palbociclib",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,500 / bottle",
+      "sourceUrl": "https://www.acmedrug.com/press-release/acme-drug-launch#content",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-26T04:12:12.788Z"
+    },
+    {
+      "brand": "Beta Corp",
+      "launchType": "Acquired",
+      "date": "2023-10-01",
+      "seller": "Gamma Holdings",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.betacorp.com/press-release/beta-acquisition#content",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-26T04:12:12.788Z"
+    },
+    {
+      "brand": "Zeta Biosimilars",
+      "launchType": "In-licensed",
+      "date": "2023-08-20",
+      "seller": "Delta Pharma",
+      "dealType": "In-license (India)",
+      "molecule": "Zetaprin",
+      "therapy": "Immunology",
+      "indication": "Rheumatoid Arthritis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.zetabiosimilars.com/press-release/zeta-inlicense#content",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-26T04:12:12.788Z"
     }
   ]
 }
