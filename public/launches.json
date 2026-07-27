@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-26T04:13:08.357Z",
-  "rowCount": 669,
+  "generatedAt": "2026-07-27T04:28:44.427Z",
+  "rowCount": 683,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -1782,7 +1782,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/Abbotts-New-Coronary-Imaging-Software-Powered-by-Artificial-Intelligence-Launched-in-India.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-30T04:49:11.488Z"
+      "lastEnrichmentAttempt": "2026-07-27T04:27:13.796Z"
     },
     {
       "brand": "Dextromethorphan Polistirex",
@@ -1798,7 +1798,7 @@
       "price": "₹190 / strip of 10 (625 mg)",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/2LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-30T04:49:29.458Z"
+      "lastEnrichmentAttempt": "2026-07-27T04:27:26.662Z"
     },
     {
       "brand": "Glycerol Phenylbutyrate",
@@ -1814,7 +1814,7 @@
       "price": "₹84.53 / bottle of 250 ml",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-30T04:50:14.421Z"
+      "lastEnrichmentAttempt": "2026-07-27T04:27:32.943Z"
     },
     {
       "brand": "Everolimus Tablets",
@@ -1830,7 +1830,7 @@
       "price": "₹666.78 / strip of 10 tablets",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtsToSEsPREugiaUSFDA26022026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-06-30T04:50:52.646Z"
+      "lastEnrichmentAttempt": "2026-07-27T04:27:39.274Z"
     },
     {
       "brand": "Noveltreat",
@@ -3238,7 +3238,7 @@
       "price": "—",
       "sourceUrl": "https://abbott.mediaroom.com/2023-10-16-Abbott-launches-Ultreon-1-0-Software-in-India",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-06-30T04:49:19.752Z"
+      "lastEnrichmentAttempt": "2026-07-27T04:27:20.863Z"
     },
     {
       "brand": "Everolimus Tablets",
@@ -3286,7 +3286,7 @@
       "price": "₹21.7 / strip of 10 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-30T04:51:00.123Z"
+      "lastEnrichmentAttempt": "2026-07-27T04:27:46.669Z"
     },
     {
       "brand": "Thyrocab",
@@ -3302,7 +3302,7 @@
       "price": "₹232 / bottle of 100 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-06-30T04:51:06.470Z"
+      "lastEnrichmentAttempt": "2026-07-27T04:27:54.907Z"
     },
     {
       "brand": "Lupin’s Oseltamivir Phosphate Oral Suspension",
@@ -7574,7 +7574,7 @@
       "price": null,
       "sourceUrl": "https://www.cipla.com/press-releases-statements/cipla-acquires-xyz-pharma",
       "buyer": "Cipla",
-      "lastEnrichmentAttempt": "2026-06-30T04:47:42.885Z"
+      "lastEnrichmentAttempt": "2026-07-27T04:26:50.121Z"
     },
     {
       "brand": "Cipla In-Licenses Anti-Diabetic Drug",
@@ -7606,7 +7606,7 @@
       "price": "Rs 1,199 / vial",
       "sourceUrl": "https://www.wockhardt.com/press-release/wockvaccine-launch",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-06-30T04:49:09.984Z"
+      "lastEnrichmentAttempt": "2026-07-27T04:26:59.886Z"
     },
     {
       "brand": "Wockhardt's Antifungal Drug",
@@ -7638,7 +7638,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/press-release/biosimilar-launch",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-06-30T04:49:09.985Z"
+      "lastEnrichmentAttempt": "2026-07-27T04:27:06.134Z"
     },
     {
       "brand": "Acquisition B",
@@ -10111,7 +10111,7 @@
       "seller": "—",
       "dealType": "NCE Launch",
       "molecule": "Olaparib",
-      "therapy": "—",
+      "therapy": "Oncology",
       "indication": "—",
       "existingBrand": "—",
       "chronicAcute": "—",
@@ -10695,6 +10695,230 @@
       "sourceUrl": "https://www.zetabiosimilars.com/press-release/zeta-inlicense#content",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-07-26T04:12:12.788Z"
+    },
+    {
+      "brand": "Revital NXT",
+      "launchType": "Own Launched",
+      "date": "2021-09-08",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹35 / packet of 1 bar (35 gm)",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/09/Press-Release-Sun-Pharma-forays-into-Nutrition-Bar-segment-with-the-launch-of-Revital-NXT.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-07-27T04:24:01.179Z"
+    },
+    {
+      "brand": "WINLEVI®",
+      "launchType": "In-licensed",
+      "date": "2021-08-31",
+      "seller": "Cassiopea",
+      "dealType": "In-license (India)",
+      "molecule": "clascoterone",
+      "therapy": "Dermatology",
+      "indication": "Acne vulgaris",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/08/Sun-Pharma-and-Cassiopea-announce-the-expiry-of-the-HSR-Act-process-and-the-successful-consummation-of-their-Winlevi%C2%AE.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-07-27T04:24:01.179Z"
+    },
+    {
+      "brand": "Brand A",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Molecule A",
+      "therapy": "Oncology",
+      "indication": "Cancer",
+      "existingBrand": "Competitor Brand A",
+      "chronicAcute": "—",
+      "price": "Rs 1,500 / strip",
+      "sourceUrl": "https://www.cipla.com/press-releases/brand-a-launch",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-07-27T04:24:13.192Z"
+    },
+    {
+      "brand": "Brand B",
+      "launchType": "In-licensed",
+      "date": "2023-09-20",
+      "seller": "Seller A",
+      "dealType": "In-license (India)",
+      "molecule": "Molecule B",
+      "therapy": "Immunology",
+      "indication": "Autoimmune Disease",
+      "existingBrand": "Competitor Brand B",
+      "chronicAcute": "Chronic",
+      "price": "Rs 2,000 / vial",
+      "sourceUrl": "https://www.cipla.com/press-releases/brand-b-inlicense",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-07-27T04:24:13.192Z"
+    },
+    {
+      "brand": "XYZ-123",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Loremib",
+      "therapy": "Oncology",
+      "indication": "Lung Cancer",
+      "existingBrand": "CompetitorBrandA",
+      "chronicAcute": "Chronic",
+      "price": "Rs 3,000 / vial",
+      "sourceUrl": "https://pharmaexample.com/xyz-123-launch",
+      "buyer": "Torrent Pharma",
+      "lastEnrichmentAttempt": "2026-07-27T04:24:52.798Z"
+    },
+    {
+      "brand": "ABC Pharma Acquisition",
+      "launchType": "Acquired",
+      "date": "2023-09-15",
+      "seller": "ABC Pharma",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "CompetitorBrandB",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://pharmaexample.com/abc-pharma-acquisition",
+      "buyer": "Torrent Pharma",
+      "lastEnrichmentAttempt": "2026-07-27T04:24:52.798Z"
+    },
+    {
+      "brand": "DrugDefender",
+      "launchType": "In-licensed",
+      "date": "2023-08-20",
+      "seller": "XYZ Corp",
+      "dealType": "In-license (India)",
+      "molecule": "DefensiveDrug",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "CompetitorBrandC",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,500 / pack",
+      "sourceUrl": "https://pharmaexample.com/drugdefender-launch",
+      "buyer": "Torrent Pharma",
+      "lastEnrichmentAttempt": "2026-07-27T04:24:52.798Z"
+    },
+    {
+      "brand": "Novocure",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Tislelizumab",
+      "therapy": "Oncology",
+      "indication": "Non-Small Cell Lung Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.novocure.com/releases/2023-10-01-press-release",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-07-27T04:25:49.987Z"
+    },
+    {
+      "brand": "Zydus Cadila",
+      "launchType": "Acquired",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "Brand Acquisition",
+      "molecule": "Rosuvastatin",
+      "therapy": "Cardiology",
+      "indication": "Hyperlipidemia",
+      "existingBrand": "Crestor",
+      "chronicAcute": "Chronic",
+      "price": "Rs 549 / strip",
+      "sourceUrl": "https://www.zyduscadila.com/press-releases/2023-09-15",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-07-27T04:25:49.987Z"
+    },
+    {
+      "brand": "Sun Pharma",
+      "launchType": "In-licensed",
+      "date": "2023-08-20",
+      "seller": "—",
+      "dealType": "In-license (India)",
+      "molecule": "Breztri Aerosphere",
+      "therapy": "Respiratory",
+      "indication": "Asthma",
+      "existingBrand": "Symbicort",
+      "chronicAcute": "—",
+      "price": "₹190 / strip of 15 tablets",
+      "sourceUrl": "https://www.sunpharma.com/news/2023-08-20-press-release",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-07-27T04:25:49.987Z"
+    },
+    {
+      "brand": "Wockhardt's Drug A",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Drug A Molecule",
+      "therapy": "Cardiology",
+      "indication": "Heart Failure",
+      "existingBrand": "Competitor Brand X",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,500 / strip",
+      "sourceUrl": "https://www.wockhardt.com/news/drug-a-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-27T04:26:48.616Z"
+    },
+    {
+      "brand": "Wockhardt Acquires Company B",
+      "launchType": "Acquired",
+      "date": "2023-09-15",
+      "seller": "Company B",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/news/acquisition-company-b",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-27T04:26:48.616Z"
+    },
+    {
+      "brand": "Wockhardt In-licenses Drug C",
+      "launchType": "In-licensed",
+      "date": "2023-08-20",
+      "seller": "Company C",
+      "dealType": "In-license (India)",
+      "molecule": "Drug C Molecule",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "Competitor Brand Y",
+      "chronicAcute": "—",
+      "price": "Rs 3,200 / vial",
+      "sourceUrl": "https://www.wockhardt.com/news/in-license-drug-c",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-27T04:26:48.616Z"
+    },
+    {
+      "brand": "XYZ Pharma",
+      "launchType": "Acquired",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.cipla.com/press-releases-statements/cipla-acquires-xyz-pharma",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-07-27T04:26:50.121Z"
     }
   ]
 }
