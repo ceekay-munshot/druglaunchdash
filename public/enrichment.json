@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-26T04:59:52.860Z",
-  "rowCount": 180,
+  "generatedAt": "2026-07-27T05:13:29.619Z",
+  "rowCount": 181,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -3151,6 +3151,25 @@
       "_title": "backfill:FluGuard®",
       "_provider": "gemini",
       "_harvestedAt": "2026-07-24T04:49:57.185Z"
+    },
+    {
+      "brand": "Revital NXT",
+      "launchType": "Own Launched",
+      "date": "2021-09-08",
+      "seller": "—",
+      "dealType": "—",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "—",
+      "therapy": "Nutrition Supplement",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "buyer": "Sun Pharma",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/09/Press-Release-Sun-Pharma-forays-into-Nutrition-Bar-segment-with-the-launch-of-Revital-NXT.pdf",
+      "_title": "backfill:Revital NXT",
+      "_provider": "groq",
+      "_harvestedAt": "2026-07-27T05:13:18.974Z"
     }
   ],
   "processedUrls": [
@@ -3397,6 +3416,9 @@
     "https://www.wockhardt.com/press-releases/co-marketing-agreement",
     "https://www.cipla.com/press-release/cipla-acquires-generic-portfolio",
     "https://www.wockhardt.com/releases/covid-vaccine-acquisition",
-    "https://www.betacorp.com/press-release/beta-acquisition#content"
+    "https://www.betacorp.com/press-release/beta-acquisition#content",
+    "https://sunpharma.com/wp-content/uploads/2021/09/Press-Release-Sun-Pharma-forays-into-Nutrition-Bar-segment-with-the-launch-of-Revital-NXT.pdf",
+    "https://pharmaexample.com/abc-pharma-acquisition",
+    "https://www.wockhardt.com/news/acquisition-company-b"
   ]
 }
