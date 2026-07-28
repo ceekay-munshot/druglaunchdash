@@ -12,3 +12,10 @@ dist-ssr
 # is extracted into src/data/ipmReport.js; the source PDFs themselves
 # should not live in the repo.
 *.pdf
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
