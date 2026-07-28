@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-27T04:28:44.427Z",
-  "rowCount": 683,
+  "generatedAt": "2026-07-28T03:52:33.450Z",
+  "rowCount": 702,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -3318,7 +3318,7 @@
       "price": "null",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-china-approval-for-oseltamivir-phosphate-oral-suspension",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-06-30T04:51:13.079Z"
+      "lastEnrichmentAttempt": "2026-07-28T03:49:57.645Z"
     },
     {
       "brand": "UNLOXCYT™",
@@ -5094,7 +5094,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/press-release-2",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-06-30T04:51:24.686Z"
+      "lastEnrichmentAttempt": "2026-07-28T03:50:06.644Z"
     },
     {
       "brand": "In-license for XYZ Drug",
@@ -5110,7 +5110,7 @@
       "price": "₹24.6 / strip of 7 tablets",
       "sourceUrl": "https://www.wockhardt.com/press-release-3",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-06-30T04:51:30.926Z"
+      "lastEnrichmentAttempt": "2026-07-28T03:50:13.400Z"
     },
     {
       "brand": "UNLOXCYT™ (cosibelimab-ipdl)",
@@ -7453,7 +7453,7 @@
       "launchType": "Acquired",
       "date": "2026-06-26",
       "seller": "—",
-      "dealType": "—",
+      "dealType": "Generic Launch",
       "molecule": "Enzalutamide",
       "therapy": "—",
       "indication": "—",
@@ -7654,7 +7654,7 @@
       "price": "₹175 / bottle of 25 gm trituration tablet",
       "sourceUrl": "https://www.mankindpharma.com/press-release-acquisition-b",
       "buyer": "Mankind Pharma",
-      "lastEnrichmentAttempt": "2026-07-01T05:08:07.953Z"
+      "lastEnrichmentAttempt": "2026-07-28T03:50:21.251Z"
     },
     {
       "brand": "Wokadine",
@@ -7670,7 +7670,7 @@
       "price": "₹37.6 / bottle of 50 ml solution",
       "sourceUrl": "https://www.business-standard.com/industry/news/corona-remedies-acquires-wokadine-drl-povidone-iodine-market-126033001282_1.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-01T05:09:09.029Z"
+      "lastEnrichmentAttempt": "2026-07-28T03:50:30.213Z"
     },
     {
       "brand": "7 brands in cardiology & women’s healthcare",
@@ -7686,7 +7686,7 @@
       "price": "₹189 / bottle of 30 ml drop",
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-01T05:09:09.029Z"
+      "lastEnrichmentAttempt": "2026-07-28T03:50:41.126Z"
     },
     {
       "brand": "Myoril",
@@ -7702,7 +7702,7 @@
       "price": "₹285 / strip of 10 capsules",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/corona-remedies-buys-sanofi-indias-ortho-brand-myoril/articleshow/101344189.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-01T05:09:09.029Z"
+      "lastEnrichmentAttempt": "2026-07-28T03:51:03.520Z"
     },
     {
       "brand": "Maternal Health & Urology products",
@@ -7718,7 +7718,7 @@
       "price": "₹171 / strip of 10 tablets",
       "sourceUrl": "https://www.business-standard.com/content/press-releases-ani/corona-remedies-joins-hands-with-ferring-pharmaceuticals-to-commercialize-maternal-health-urology-products-in-india-123050900586_1.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-01T05:09:09.029Z"
+      "lastEnrichmentAttempt": "2026-07-28T03:51:12.415Z"
     },
     {
       "brand": "Obimet, Thyrocab",
@@ -7734,7 +7734,7 @@
       "price": "₹213 / bottle of 100 tablets",
       "sourceUrl": "https://www.expresspharma.in/corona-acquires-obimet-thyrocab-brands-from-abbott-india",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-01T05:09:09.029Z"
+      "lastEnrichmentAttempt": "2026-07-28T03:51:19.813Z"
     },
     {
       "brand": "four drug brands from GlaxoSmithkline Pharmaceuticals",
@@ -7750,7 +7750,7 @@
       "price": "₹96.8 / strip of 15 tablets",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-01T05:09:09.029Z"
+      "lastEnrichmentAttempt": "2026-07-28T03:51:30.443Z"
     },
     {
       "brand": "Wockhardt's New Drug",
@@ -10919,6 +10919,310 @@
       "sourceUrl": "https://www.cipla.com/press-releases-statements/cipla-acquires-xyz-pharma",
       "buyer": "Cipla",
       "lastEnrichmentAttempt": "2026-07-27T04:26:50.121Z"
+    },
+    {
+      "brand": "Bolus device",
+      "launchType": "Own Launched",
+      "date": "2026-07-15",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹1176 / box of 1 unit",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/07/Sun-Pharma-Bolus-Device.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-07-28T03:48:01.509Z"
+    },
+    {
+      "brand": "WINLEVI®",
+      "launchType": "Own Launched",
+      "date": "2022-07-26",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Clascoterone",
+      "therapy": "Dermatology",
+      "indication": "Acne Vulgaris",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 84,375 / injection",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2022/07/Press-Release-licensing-and-supply-agreement-between-Sun-Pharma-and-Cosmo-for-WINLEVI%C2%AE.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-07-28T03:48:01.509Z"
+    },
+    {
+      "brand": "Dual Antibiotic Combination",
+      "launchType": "Own Launched",
+      "date": "2023-10-02",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "drug-resistant infections",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹166 / strip of 10 tablets",
+      "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/amp_articleshow/100775508.cms",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-07-28T03:48:14.693Z"
+    },
+    {
+      "brand": "corona remedies",
+      "launchType": "Acquired",
+      "date": "2026-06-01",
+      "seller": "Bayer",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "Cardiology / Women's Health",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-07-28T03:48:45.883Z"
+    },
+    {
+      "brand": "Maternal and Urology products",
+      "launchType": "In-licensed",
+      "date": "2026-06-01",
+      "seller": "Ferring Pharmaceuticals",
+      "dealType": "Co-marketing",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹186 / strip of 10 tablets",
+      "sourceUrl": "https://www.business-standard.com/content/press-releases-ani/corona-remedies-joins-hands-with-ferring-pharmaceuticals-to-commercialize-maternal-health-urology-products-in-india-123050900586_1.html",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-07-28T03:48:45.883Z"
+    },
+    {
+      "brand": "Acquisition of generic portfolio from ABC Pharma",
+      "launchType": "Acquired",
+      "date": "2023-08-20",
+      "seller": "ABC Pharma",
+      "dealType": "Brand Portfolio Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/acquisition-of-abc-pharma",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-28T03:49:56.140Z"
+    },
+    {
+      "brand": "In-licensing deal for XYZ cancer drug",
+      "launchType": "In-licensed",
+      "date": "2023-07-05",
+      "seller": "XYZ Pharmaceuticals",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/in-licensing-deal-xyz-cancer-drug",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-28T03:49:56.140Z"
+    },
+    {
+      "brand": "Oseltamivir Phosphate",
+      "launchType": "Own Launched",
+      "date": "2026-05-22",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Oseltamivir Phosphate",
+      "therapy": "Anti-infectives",
+      "indication": "Treatment and prevention of influenza A and B in patients 2 weeks of age and older",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.lupin.com/press-releases/lupin-receives-china-approval-for-oseltamivir-phosphate-oral-suspension",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-07-28T03:49:57.645Z"
+    },
+    {
+      "brand": "Wokadine",
+      "launchType": "Acquired",
+      "date": "2026-03-30",
+      "seller": "Dr Reddy's Laboratories (DRL)",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.business-standard.com/industry/news/corona-remedies-acquires-wokadine-from-drl-enters-iodine-market-126033001717_1.html",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-07-28T03:50:30.213Z"
+    },
+    {
+      "brand": "NOKLOT",
+      "launchType": "Acquired",
+      "date": "2025-07-16",
+      "seller": "Bayer",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "Cardiology",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-07-28T03:50:41.126Z"
+    },
+    {
+      "brand": "FOSTINE",
+      "launchType": "Acquired",
+      "date": "2025-07-16",
+      "seller": "Bayer",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "Women’s Health",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-07-28T03:50:41.126Z"
+    },
+    {
+      "brand": "LUPROFACT",
+      "launchType": "Acquired",
+      "date": "2025-07-16",
+      "seller": "Bayer",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "Women’s Health",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-07-28T03:50:41.126Z"
+    },
+    {
+      "brand": "MENODAC",
+      "launchType": "Acquired",
+      "date": "2025-07-16",
+      "seller": "Bayer",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "Women’s Health",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-07-28T03:50:41.126Z"
+    },
+    {
+      "brand": "OVIDAC",
+      "launchType": "Acquired",
+      "date": "2025-07-16",
+      "seller": "Bayer",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "Women’s Health",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-07-28T03:50:41.126Z"
+    },
+    {
+      "brand": "SPYE",
+      "launchType": "Acquired",
+      "date": "2025-07-16",
+      "seller": "Bayer",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "Women’s Health",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-07-28T03:50:41.126Z"
+    },
+    {
+      "brand": "VAGESTON",
+      "launchType": "Acquired",
+      "date": "2025-07-16",
+      "seller": "Bayer",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "Women’s Health",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-07-28T03:50:41.126Z"
+    },
+    {
+      "brand": "Myoril",
+      "launchType": "Acquired",
+      "date": "2023-06-28",
+      "seller": "Sanofi India",
+      "dealType": "Brand Acquisition",
+      "molecule": "Thiocolchicoside",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": 234000000,
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/corona-remedies-buys-sanofi-indias-ortho-brand-myoril/articleshow/101344189.cms",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-07-28T03:51:03.520Z"
+    },
+    {
+      "brand": "Maternal Health & Urology products",
+      "launchType": "In-licensed",
+      "date": "2023-05-09",
+      "seller": "Ferring Pharmaceuticals Pvt. Ltd.",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.business-standard.com/content/press-releases-ani/corona-remedies-joins-hands-with-ferring-pharmaceuticals-to-commercialize-maternal-health-urology-products-in-india-123050901730_1.html",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-07-28T03:51:12.415Z"
+    },
+    {
+      "brand": "Obimet and Thyrocab",
+      "launchType": "Acquired",
+      "date": "2018-04-03",
+      "seller": "Abbott India",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.expresspharma.in/corona-acquires-obimet-thyrocab-brands-from-abbott-india/",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-07-28T03:51:19.813Z"
     }
   ]
 }
