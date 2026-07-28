@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-27T05:13:29.619Z",
-  "rowCount": 181,
+  "generatedAt": "2026-07-28T04:44:46.014Z",
+  "rowCount": 184,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -3170,6 +3170,63 @@
       "_title": "backfill:Revital NXT",
       "_provider": "groq",
       "_harvestedAt": "2026-07-27T05:13:18.974Z"
+    },
+    {
+      "brand": "Generic Advair Diskus",
+      "launchType": "Own Launched",
+      "date": "2026-07-27",
+      "seller": "—",
+      "dealType": "—",
+      "molecule": "fluticasone propionate and salmeterol",
+      "therapy": "respiratory",
+      "indication": "asthma and chronic obstructive pulmonary disease (COPD)",
+      "price": "—",
+      "dealValue": null,
+      "existingBrand": "Advair Diskus",
+      "chronicAcute": "Chronic",
+      "buyer": "Cipla",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f7b428c5-3ec2-4b60-929c-c7c42bda31f6.pdf",
+      "_title": "Cipla Receives U.S. FDA Approval For Generic Advair Diskus® 4h - Cipla wins USFDA approval for generic Advair Diskus in three strengths; launch expected in Q2 FY27.",
+      "_provider": "groq",
+      "_harvestedAt": "2026-07-28T04:43:12.147Z"
+    },
+    {
+      "brand": "Myoril",
+      "launchType": "Acquired",
+      "date": "2023-06-28",
+      "seller": "Sanofi India",
+      "dealType": "Acquisition",
+      "price": "—",
+      "dealValue": 234,
+      "molecule": "Thiocolchicoside",
+      "therapy": "Muscle Relaxant",
+      "indication": "Muscle Spasm, Orthopedic Conditions",
+      "existingBrand": "Thioquest (Cipla)",
+      "chronicAcute": "Acute",
+      "buyer": "Corona Remedies",
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/corona-remedies-buys-sanofi-indias-ortho-brand-myoril/articleshow/101344189.cms",
+      "_title": "backfill:Myoril",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-07-28T04:44:31.851Z"
+    },
+    {
+      "brand": "Obimet and Thyrocab",
+      "launchType": "Acquired",
+      "date": "2018-04-03",
+      "seller": "Abbott India",
+      "dealType": "Brand Acquisition",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "Metformin, Carbimazole",
+      "therapy": "Anti-Diabetic, Thyroid Management",
+      "indication": "Diabetes Mellitus Type 2, Hyperthyroidism",
+      "existingBrand": "Glycomet (USV), Neo-Mercazole (Merck)",
+      "chronicAcute": "Chronic",
+      "buyer": "Corona Remedies",
+      "sourceUrl": "https://www.expresspharma.in/corona-acquires-obimet-thyrocab-brands-from-abbott-india/",
+      "_title": "backfill:Obimet and Thyrocab",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-07-28T04:44:45.314Z"
     }
   ],
   "processedUrls": [
@@ -3419,6 +3476,15 @@
     "https://www.betacorp.com/press-release/beta-acquisition#content",
     "https://sunpharma.com/wp-content/uploads/2021/09/Press-Release-Sun-Pharma-forays-into-Nutrition-Bar-segment-with-the-launch-of-Revital-NXT.pdf",
     "https://pharmaexample.com/abc-pharma-acquisition",
-    "https://www.wockhardt.com/news/acquisition-company-b"
+    "https://www.wockhardt.com/news/acquisition-company-b",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f7b428c5-3ec2-4b60-929c-c7c42bda31f6.pdf",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=3894732c-7041-44f1-a884-be2a2a7754e4.pdf",
+    "https://sunpharma.com/wp-content/uploads/2026/07/Sun-Pharma-Bolus-Device.pdf",
+    "https://www.wockhardt.com/press-releases/acquisition-of-abc-pharma",
+    "https://www.wockhardt.com/press-releases/in-licensing-deal-xyz-cancer-drug",
+    "https://www.business-standard.com/industry/news/corona-remedies-acquires-wokadine-from-drl-enters-iodine-market-126033001717_1.html",
+    "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/corona-remedies-buys-sanofi-indias-ortho-brand-myoril/articleshow/101344189.cms",
+    "https://www.business-standard.com/content/press-releases-ani/corona-remedies-joins-hands-with-ferring-pharmaceuticals-to-commercialize-maternal-health-urology-products-in-india-123050901730_1.html",
+    "https://www.expresspharma.in/corona-acquires-obimet-thyrocab-brands-from-abbott-india/"
   ]
 }
