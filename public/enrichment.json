@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-28T04:44:46.014Z",
-  "rowCount": 184,
+  "generatedAt": "2026-07-29T04:48:39.151Z",
+  "rowCount": 186,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -3227,6 +3227,44 @@
       "_title": "backfill:Obimet and Thyrocab",
       "_provider": "gemini",
       "_harvestedAt": "2026-07-28T04:44:45.314Z"
+    },
+    {
+      "brand": "Sugammadex Injection",
+      "launchType": "Own Launched",
+      "date": "2026-07-28",
+      "seller": "—",
+      "dealType": "—",
+      "molecule": "Sugammadex",
+      "therapy": "Muscle Relaxant Reversal",
+      "indication": "Reversal of neuromuscular blockade",
+      "price": "—",
+      "dealValue": null,
+      "existingBrand": "BRIDION",
+      "chronicAcute": "Acute",
+      "buyer": "Glenmark",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=402b5a71-de78-4137-a7a0-003df6f06883.pdf",
+      "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 4h - Glenmark USA launched Sugammadex Injection vials in the U.S. on July 28, 2026.",
+      "_provider": "groq",
+      "_harvestedAt": "2026-07-29T04:47:57.654Z"
+    },
+    {
+      "brand": "Tildrakizumab",
+      "launchType": "Own Launched",
+      "date": "2021-11-01",
+      "seller": "—",
+      "dealType": "—",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "clascoterone",
+      "therapy": "Dermatology",
+      "indication": "Topical treatment of acne vulgaris in patients 12 years of age and older",
+      "existingBrand": "Differin (Adapalene)",
+      "chronicAcute": "Chronic",
+      "buyer": "Sun Pharma",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/11/Press-Release-Winlevi-availability-in-US.pdf",
+      "_title": "backfill:Tildrakizumab",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-07-29T04:48:35.241Z"
     }
   ],
   "processedUrls": [
@@ -3485,6 +3523,9 @@
     "https://www.business-standard.com/industry/news/corona-remedies-acquires-wokadine-from-drl-enters-iodine-market-126033001717_1.html",
     "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/corona-remedies-buys-sanofi-indias-ortho-brand-myoril/articleshow/101344189.cms",
     "https://www.business-standard.com/content/press-releases-ani/corona-remedies-joins-hands-with-ferring-pharmaceuticals-to-commercialize-maternal-health-urology-products-in-india-123050901730_1.html",
-    "https://www.expresspharma.in/corona-acquires-obimet-thyrocab-brands-from-abbott-india/"
+    "https://www.expresspharma.in/corona-acquires-obimet-thyrocab-brands-from-abbott-india/",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=402b5a71-de78-4137-a7a0-003df6f06883.pdf",
+    "https://sunpharma.com/wp-content/uploads/2021/11/Press-Release-Winlevi-availability-in-US.pdf",
+    "https://www.wockhardt.com/news/acquisition-xyz-pharmaceuticals"
   ]
 }
