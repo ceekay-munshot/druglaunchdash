@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-29T04:48:39.151Z",
-  "rowCount": 186,
+  "generatedAt": "2026-07-30T04:36:25.117Z",
+  "rowCount": 187,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -3265,6 +3265,25 @@
       "_title": "backfill:Tildrakizumab",
       "_provider": "gemini",
       "_harvestedAt": "2026-07-29T04:48:35.241Z"
+    },
+    {
+      "brand": "semaglutide",
+      "launchType": "Own Launched",
+      "date": "—",
+      "seller": "—",
+      "dealType": "—",
+      "molecule": "semaglutide",
+      "therapy": "Anti-Diabetic",
+      "indication": "type 2 diabetes mellitus",
+      "price": "—",
+      "dealValue": null,
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "buyer": "Sun Pharma",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=4a406753-a267-4a7b-9023-042bd9bacccb.pdf",
+      "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 5h - Sun Pharma received ANVISA approval for semaglutide in Brazil; launch planned within days.",
+      "_provider": "groq",
+      "_harvestedAt": "2026-07-30T04:35:35.551Z"
     }
   ],
   "processedUrls": [
@@ -3526,6 +3545,8 @@
     "https://www.expresspharma.in/corona-acquires-obimet-thyrocab-brands-from-abbott-india/",
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=402b5a71-de78-4137-a7a0-003df6f06883.pdf",
     "https://sunpharma.com/wp-content/uploads/2021/11/Press-Release-Winlevi-availability-in-US.pdf",
-    "https://www.wockhardt.com/news/acquisition-xyz-pharmaceuticals"
+    "https://www.wockhardt.com/news/acquisition-xyz-pharmaceuticals",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=4a406753-a267-4a7b-9023-042bd9bacccb.pdf",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=43a14d2f-508f-4578-a655-1c7ec96b4f15.pdf"
   ]
 }
