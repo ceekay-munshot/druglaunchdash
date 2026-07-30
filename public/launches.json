@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-29T03:59:30.048Z",
-  "rowCount": 712,
+  "generatedAt": "2026-07-30T03:48:08.168Z",
+  "rowCount": 723,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -1926,7 +1926,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-announces-us-fda-acceptance-of-supplemental-biologics-license-sbla-application-for-ilumya-tildrakizumab-asmn-for-the-treatment-o/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-01T05:13:28.081Z"
+      "lastEnrichmentAttempt": "2026-07-30T03:44:02.440Z"
     },
     {
       "brand": "Cipla's New Drug",
@@ -1958,7 +1958,7 @@
       "price": "null",
       "sourceUrl": "https://www.cipla.com/press-release/brand-acquisition",
       "buyer": "Cipla",
-      "lastEnrichmentAttempt": "2026-07-02T04:45:42.326Z"
+      "lastEnrichmentAttempt": "2026-07-30T03:46:30.939Z"
     },
     {
       "brand": "Cipla In-Licenses Molecule Z",
@@ -3350,7 +3350,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/Sun-Pharma-Announces-US-FDA-Acceptance-of-sBLA-Application-for-ILUMYA.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-02T04:45:36.152Z"
+      "lastEnrichmentAttempt": "2026-07-30T03:46:21.290Z"
     },
     {
       "brand": "Tyvalzi",
@@ -5142,7 +5142,7 @@
       "price": "—",
       "sourceUrl": "http://www.sunpharma.com/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-02T04:44:51.315Z"
+      "lastEnrichmentAttempt": "2026-07-30T03:45:19.862Z"
     },
     {
       "brand": "Cipla's New Drug",
@@ -5174,7 +5174,7 @@
       "price": "₹8.5 / packet of 1 sachet",
       "sourceUrl": "https://www.cipla.com/press-releases-statements/cipla-acquisition",
       "buyer": "Cipla",
-      "lastEnrichmentAttempt": "2026-07-02T04:45:50.944Z"
+      "lastEnrichmentAttempt": "2026-07-30T03:46:39.324Z"
     },
     {
       "brand": "Ranluspec",
@@ -5190,7 +5190,7 @@
       "price": null,
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-approval-from-u-s-fda-for-ranluspec-tm-ranibizumab-injection",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-07-02T04:45:58.663Z"
+      "lastEnrichmentAttempt": "2026-07-30T03:46:47.620Z"
     },
     {
       "brand": "Sodium Sulfate, Magnesium Sulfate, and Potassium Chloride",
@@ -5206,7 +5206,7 @@
       "price": "₹36.9 / bottle of 200 ml",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-approval-from-u-s-fda-for-sodium-sulfate-magnesium-sulfate-and-potassium-chloride-tablets",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-07-02T04:46:10.072Z"
+      "lastEnrichmentAttempt": "2026-07-30T03:46:57.633Z"
     },
     {
       "brand": "Biosimilar to Xolair® (omalizumab)",
@@ -7264,7 +7264,7 @@
       "dealType": "NCE Launch",
       "molecule": "Enzalutamide",
       "therapy": "Oncology",
-      "indication": "—",
+      "indication": "Prostate cancer",
       "existingBrand": "Xtandi",
       "chronicAcute": "—",
       "price": "₹3935 / strip of 10 tablets",
@@ -7663,7 +7663,7 @@
       "seller": "DRL",
       "dealType": "Brand Acquisition",
       "molecule": "Povidone Iodine",
-      "therapy": "—",
+      "therapy": "Anti-Infectives",
       "indication": "—",
       "existingBrand": "—",
       "chronicAcute": "—",
@@ -7814,7 +7814,7 @@
       "price": "₹190 / strip of 10 capsules",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-02T04:43:17.529Z"
+      "lastEnrichmentAttempt": "2026-07-30T03:44:17.520Z"
     },
     {
       "brand": "Empagliflozin",
@@ -7846,7 +7846,7 @@
       "price": null,
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-picks-up-stake-in-api-maker-la-chandra-pharmalab/article32543933.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-02T04:43:17.529Z"
+      "lastEnrichmentAttempt": "2026-07-30T03:44:26.128Z"
     },
     {
       "brand": "Pomalidomide Capsules",
@@ -7862,7 +7862,7 @@
       "price": "₹3488 / bottle of 21 capsules",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseEugia04032026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-02T04:44:40.497Z"
+      "lastEnrichmentAttempt": "2026-07-30T03:44:34.962Z"
     },
     {
       "brand": "Efinaconazole",
@@ -11383,6 +11383,182 @@
       "sourceUrl": "https://www.wockhardt.com/news/generic-drug-partnership",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-07-29T03:56:16.094Z"
+    },
+    {
+      "brand": "Lannett Company",
+      "launchType": "Acquired",
+      "date": "2022-06-21",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsLnnettPR22062026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-07-30T03:43:50.271Z"
+    },
+    {
+      "brand": "Dextromethorphan Polistirex Extended-Release Oral Suspension",
+      "launchType": "Own Launched",
+      "date": "2022-04-16",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Dextromethorphan",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Delsym",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/2LtrToSEsAurobindoPRUSFDA17042026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-07-30T03:43:50.272Z"
+    },
+    {
+      "brand": "Glycerol Phenylbutyrate Oral Liquid",
+      "launchType": "Own Launched",
+      "date": "2022-04-16",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Glycerol Phenylbutyrate",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Ravicti",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoPRUSFDA17042026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-07-30T03:43:50.272Z"
+    },
+    {
+      "brand": "Dapagliflozin and Metformin Hydrochloride Extended-Release Tablets",
+      "launchType": "Own Launched",
+      "date": "2022-04-06",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Dapagliflozin plus Metformin Hydrochloride",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹110 / strip of 15 tablet er",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoUSFDAmetformin07042026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-07-30T03:43:50.272Z"
+    },
+    {
+      "brand": "Medifine",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "metformin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Glycomet",
+      "chronicAcute": "Chronic",
+      "price": "Rs 250 / strip of 10 tablets",
+      "sourceUrl": "https://pharmaexample.com/press-release/medifine-launch",
+      "buyer": "Intas",
+      "lastEnrichmentAttempt": "2026-07-30T03:43:55.447Z"
+    },
+    {
+      "brand": "CardioPlus",
+      "launchType": "Acquired",
+      "date": "2023-09-15",
+      "seller": "HeartMed Inc.",
+      "dealType": "Brand Acquisition",
+      "molecule": "amlodipine plus atorvastatin",
+      "therapy": "Cardiology",
+      "indication": "Hypertension",
+      "existingBrand": "Cardace",
+      "chronicAcute": "Chronic",
+      "price": "Rs 150 / strip of 10 tablets",
+      "sourceUrl": "https://pharmaexample.com/press-release/cardio-plus-acquisition",
+      "buyer": "Intas",
+      "lastEnrichmentAttempt": "2026-07-30T03:43:55.447Z"
+    },
+    {
+      "brand": "BiosimilMax",
+      "launchType": "In-licensed",
+      "date": "2023-08-20",
+      "seller": "Biogen",
+      "dealType": "In-license (India)",
+      "molecule": "adalimumab",
+      "therapy": "Immunology",
+      "indication": "Rheumatoid Arthritis",
+      "existingBrand": "Humira",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,500 / injection",
+      "sourceUrl": "https://pharmaexample.com/press-release/biosimilmax-in-licensing",
+      "buyer": "Intas",
+      "lastEnrichmentAttempt": "2026-07-30T03:43:55.447Z"
+    },
+    {
+      "brand": "Wockhardt's Acquisition of BioTech Labs",
+      "launchType": "Acquired",
+      "date": "2023-08-22",
+      "seller": "BioTech Labs",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/press-release-2",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-30T03:44:00.935Z"
+    },
+    {
+      "brand": "New Product Launch in Cardiology",
+      "launchType": "Own Launched",
+      "date": "2023-07-10",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Nedaplatin",
+      "therapy": "Oncology",
+      "indication": "Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "₹97.97 / strip of 10 capsules",
+      "sourceUrl": "https://www.wockhardt.com/press-release-3",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-30T03:44:00.935Z"
+    },
+    {
+      "brand": "La Chandra Pharmalab",
+      "launchType": "Acquired",
+      "date": "2020-09-07",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-picks-up-stake-in-api-maker-la-chandra-pharmalab/article32543933.ece",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-07-30T03:44:26.128Z"
+    },
+    {
+      "brand": "Pomalidomide Capsules",
+      "launchType": "Own Launched",
+      "date": "2026-03-04",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Pomalidomide",
+      "therapy": "—",
+      "indication": "relapsed or refractory multiple myeloma and AIDS-related Kaposi sarcoma",
+      "existingBrand": "Pomalyst®",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "—",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-07-30T03:44:34.962Z"
     }
   ]
 }
