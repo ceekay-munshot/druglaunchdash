@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-30T04:36:25.117Z",
-  "rowCount": 187,
+  "generatedAt": "2026-07-31T05:02:42.965Z",
+  "rowCount": 189,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -3284,6 +3284,44 @@
       "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 5h - Sun Pharma received ANVISA approval for semaglutide in Brazil; launch planned within days.",
       "_provider": "groq",
       "_harvestedAt": "2026-07-30T04:35:35.551Z"
+    },
+    {
+      "brand": "J.B. Chemicals & Pharmaceuticals Limited",
+      "launchType": "Acquired",
+      "date": "2026-07-08",
+      "seller": "J.B. Chemicals & Pharmaceuticals Limited",
+      "dealType": "Amalgamation",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "price": "—",
+      "dealValue": null,
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "buyer": "Torrent Pharma",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=db7e5e01-7e8b-4e02-99b5-76d6a2b8ec1e.pdf",
+      "_title": "Results For Quarter Ended 30-Jun-26 10h - Q1 FY27 results approved; J.B. Chemicals amalgamation effective July 8, 2026, with 4.19 crore shares allotted.",
+      "_provider": "groq",
+      "_harvestedAt": "2026-07-31T05:01:38.096Z"
+    },
+    {
+      "brand": "Clip Delivery System",
+      "launchType": "Own Launched",
+      "date": "2020-11-18",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "—",
+      "therapy": "Cardiology",
+      "indication": "Mitral Regurgitation",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "buyer": "Abbott India",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-strengthens-structural-heart-portfolio-with-new-clip-delivery-system.html",
+      "_title": "backfill:Clip Delivery System",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-07-31T05:02:36.669Z"
     }
   ],
   "processedUrls": [
@@ -3547,6 +3585,12 @@
     "https://sunpharma.com/wp-content/uploads/2021/11/Press-Release-Winlevi-availability-in-US.pdf",
     "https://www.wockhardt.com/news/acquisition-xyz-pharmaceuticals",
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=4a406753-a267-4a7b-9023-042bd9bacccb.pdf",
-    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=43a14d2f-508f-4578-a655-1c7ec96b4f15.pdf"
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=43a14d2f-508f-4578-a655-1c7ec96b4f15.pdf",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=db7e5e01-7e8b-4e02-99b5-76d6a2b8ec1e.pdf",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=e8618e16-963f-4cfa-9cc8-82532b4d8ef1.pdf",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6a17c5f9-f8db-46d9-a002-106e602aed15.pdf",
+    "https://www.mankindpharma.com/press-releases/pfizer-acquisition/",
+    "https://www.abbott.in/media-center/press-releases/abbott-strengthens-structural-heart-portfolio-with-new-clip-delivery-system.html",
+    "https://www.wockhardt.com/pressrelease/2023-08-01-acquisition"
   ]
 }
