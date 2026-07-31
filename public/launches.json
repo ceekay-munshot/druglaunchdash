@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-30T03:48:08.168Z",
-  "rowCount": 723,
+  "generatedAt": "2026-07-31T04:09:36.173Z",
+  "rowCount": 742,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -1070,7 +1070,7 @@
       "date": "2018-08-29",
       "seller": "—",
       "dealType": "In-license (India)",
-      "molecule": "—",
+      "molecule": "Tiotropium Bromide",
       "therapy": "—",
       "indication": "—",
       "existingBrand": "—",
@@ -1990,7 +1990,7 @@
       "price": "₹42 / packet of 10 ml",
       "sourceUrl": "https://health.economictimes.indiatimes.com/news/pharma/drug-approvals-launches/alkem-forays-into-ophthalmology-with-launch-of-eye-care-products/101642253",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-07-03T04:31:01.239Z"
+      "lastEnrichmentAttempt": "2026-07-31T04:07:42.835Z"
     },
     {
       "brand": "Ryaltris™",
@@ -3366,7 +3366,7 @@
       "price": "₹33.7 / strip of 10 tablets",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/09/Press-Release-Sun-Pharma-and-Pharmazz-Inc.-licensing-agreement-for-Sovateltide-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-02T04:47:32.010Z"
+      "lastEnrichmentAttempt": "2026-07-31T04:06:55.608Z"
     },
     {
       "brand": "Various Brands",
@@ -3382,7 +3382,7 @@
       "price": "₹421 / tube of 40 gm cream",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-02T04:47:35.850Z"
+      "lastEnrichmentAttempt": "2026-07-31T04:07:00.019Z"
     },
     {
       "brand": "Alkem's Ophthalmology Products",
@@ -3398,7 +3398,7 @@
       "price": "—",
       "sourceUrl": "https://health.economictimes.indiatimes.com/news/pharma/drug-approvals-launches/alkem-forays-into-ophthalmology-with-launch-of-eye-care-products/101642253",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-07-03T04:31:12.450Z"
+      "lastEnrichmentAttempt": "2026-07-31T04:07:52.083Z"
     },
     {
       "brand": "Hydrocortisone Valerate Ointment USP, 0.2%",
@@ -5222,7 +5222,7 @@
       "price": "₹45 / strip of 10 tablets",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-02T04:46:20.688Z"
+      "lastEnrichmentAttempt": "2026-07-31T04:06:08.004Z"
     },
     {
       "brand": "Wockhardt's Biosimilar",
@@ -5238,7 +5238,7 @@
       "price": "Rs 5,000 / vial",
       "sourceUrl": "https://www.wockhardt.com/press-release-biosimilar-launch-july-2023",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-02T04:47:21.997Z"
+      "lastEnrichmentAttempt": "2026-07-31T04:06:46.696Z"
     },
     {
       "brand": "New Diabetes Medication",
@@ -7665,7 +7665,7 @@
       "molecule": "Povidone Iodine",
       "therapy": "Anti-Infectives",
       "indication": "—",
-      "existingBrand": "—",
+      "existingBrand": "Betadine",
       "chronicAcute": "—",
       "price": "₹37.6 / bottle of 50 ml solution",
       "sourceUrl": "https://www.business-standard.com/industry/news/corona-remedies-acquires-wokadine-drl-povidone-iodine-market-126033001282_1.html",
@@ -7926,7 +7926,7 @@
       "price": null,
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2020/12/Press-Release-Licensing-Agreement-for-Tildrakizumab.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-03T04:28:04.156Z"
+      "lastEnrichmentAttempt": "2026-07-31T04:07:08.821Z"
     },
     {
       "brand": "four drug brands from GlaxoSmithkline",
@@ -7942,7 +7942,7 @@
       "price": "₹96.7 / strip of 15 tablets",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-03T04:28:55.134Z"
+      "lastEnrichmentAttempt": "2026-07-31T04:07:14.222Z"
     },
     {
       "brand": "Blood Donation Camp",
@@ -7958,7 +7958,7 @@
       "price": "₹72.8 / strip of 10 tablets",
       "sourceUrl": "https://www.coronaremedies.com/media-center/#site-content",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-03T04:28:55.134Z"
+      "lastEnrichmentAttempt": "2026-07-31T04:07:18.241Z"
     },
     {
       "brand": "Wockhardt",
@@ -7990,7 +7990,7 @@
       "price": "₹2.1 / strip of 10 tablets",
       "sourceUrl": "https://www.wockhardt.com/press-release-3",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-03T04:30:59.736Z"
+      "lastEnrichmentAttempt": "2026-07-31T04:07:36.813Z"
     },
     {
       "brand": "Fluocinolone Acetonide Oil, 0.01%",
@@ -11559,6 +11559,310 @@
       "sourceUrl": "—",
       "buyer": "Aurobindo",
       "lastEnrichmentAttempt": "2026-07-30T03:44:34.962Z"
+    },
+    {
+      "brand": "Semaglutide",
+      "launchType": "Own Launched",
+      "date": "2023-09-22",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Semaglutide",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Ozempic",
+      "chronicAcute": "Chronic",
+      "price": "Rs 8,999 / injection",
+      "sourceUrl": "https://www.mankindpharma.com/press-releases/semaglutide-launch/",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-07-31T04:02:22.006Z"
+    },
+    {
+      "brand": "Liraglutide",
+      "launchType": "Own Launched",
+      "date": "2023-09-22",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Liraglutide",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Victoza",
+      "chronicAcute": "Chronic",
+      "price": "Rs 4,500 / injection",
+      "sourceUrl": "https://www.mankindpharma.com/press-releases/liraglutide-launch/",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-07-31T04:02:22.006Z"
+    },
+    {
+      "brand": "Amlodipine",
+      "launchType": "Own Launched",
+      "date": "2023-09-22",
+      "seller": "—",
+      "dealType": "Line Extension",
+      "molecule": "Amlodipine",
+      "therapy": "Cardiology",
+      "indication": "Hypertension",
+      "existingBrand": "Amlogard",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,200 / strip",
+      "sourceUrl": "https://www.mankindpharma.com/press-releases/amlodipine-launch/",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-07-31T04:02:22.006Z"
+    },
+    {
+      "brand": "Pfizer",
+      "launchType": "Acquired",
+      "date": "2023-09-22",
+      "seller": "Pfizer",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹12.4 / strip of 10 tablets",
+      "sourceUrl": "https://www.mankindpharma.com/press-releases/pfizer-acquisition/",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-07-31T04:02:22.006Z"
+    },
+    {
+      "brand": "Desidustat",
+      "launchType": "In-licensed",
+      "date": "2023-10-30",
+      "seller": "—",
+      "dealType": "In-license (India)",
+      "molecule": "Desidustat",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/10/Press-Release-Sun-Pharma-and-Zydus-sign-licensing-agreement-for-co-marketing-of-Desidustat-in-India.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-07-31T04:02:44.066Z"
+    },
+    {
+      "brand": "STARIZO (Tedizolid Phosphate)",
+      "launchType": "Own Launched",
+      "date": "2024-08-23",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Tedizolid Phosphate",
+      "therapy": "—",
+      "indication": "acute bacterial skin and skin structure infections",
+      "existingBrand": "—",
+      "chronicAcute": "Acute",
+      "price": "₹863 / strip of 6 tablets",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2024/08/Press-Release-Sun-Pharma-introduces-a-novel-treatment-STARIZO-Tedizolid-Phosphate-in-India.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-07-31T04:02:44.066Z"
+    },
+    {
+      "brand": "Molxvir® (Molnupiravir)",
+      "launchType": "Own Launched",
+      "date": "2021-12-28",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Molnupiravir",
+      "therapy": "—",
+      "indication": "COVID-19",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹1325 / bottle of 40 capsules",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/12/Press-Release-Sun-Pharma-receives-DCGI-approval-for-Molxvir-Molnupiravir-in-India.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-07-31T04:02:44.066Z"
+    },
+    {
+      "brand": "Cipla",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "dolutegravir",
+      "therapy": "Anti-Retroviral",
+      "indication": "HIV",
+      "existingBrand": "Tinuvin",
+      "chronicAcute": "—",
+      "price": "Rs 1,250 / strip of 30 tablets",
+      "sourceUrl": "https://www.cipla.com/media/press-release-2023-10-01",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-07-31T04:04:54.305Z"
+    },
+    {
+      "brand": "Sun Pharma",
+      "launchType": "Own Launched",
+      "date": "2023-09-25",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "atorvastatin",
+      "therapy": "Cardiology",
+      "indication": "High Cholesterol",
+      "existingBrand": "Lipitor",
+      "chronicAcute": "—",
+      "price": "Rs 480 / strip of 10 tablets",
+      "sourceUrl": "https://www.sunpharma.com/media/press-release-2023-09-25",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-07-31T04:04:54.305Z"
+    },
+    {
+      "brand": "Clip Delivery System",
+      "launchType": "Own Launched",
+      "date": "2020-11-18",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "mitral regurgitation",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹47.4 / strip of 10 tablets",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-strengthens-structural-heart-portfolio-with-new-clip-delivery-system.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-07-31T04:05:26.682Z"
+    },
+    {
+      "brand": "Room-Temperature-Stable Carbetocin",
+      "launchType": "Own Launched",
+      "date": "2021-08-31",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "carbetocin",
+      "therapy": "—",
+      "indication": "prevent postpartum hemorrhage",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-introduces-room-temperature-stable.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-07-31T04:05:26.682Z"
+    },
+    {
+      "brand": "Dextromethorphan",
+      "launchType": "Own Launched",
+      "date": "2026-04-16",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Dextromethorphan Polistirex",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Delsym",
+      "chronicAcute": "—",
+      "price": "₹85.6 / bottle of 100 ml syrup",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/2LtrToSEsAurobindoPRUSFDA17042026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-07-31T04:05:49.162Z"
+    },
+    {
+      "brand": "Dapagliflozin",
+      "launchType": "Own Launched",
+      "date": "2026-04-06",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Dapagliflozin",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Farxiga",
+      "chronicAcute": "—",
+      "price": "₹74.9 / strip of 15 tablets",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoUSFDA07042026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-07-31T04:05:49.162Z"
+    },
+    {
+      "brand": "Pomalidomide",
+      "launchType": "Own Launched",
+      "date": "2026-03-03",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Pomalidomide",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹3955 / bottle of 21 capsules (1 mg)",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/PressReleaseEugia04032026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-07-31T04:05:49.162Z"
+    },
+    {
+      "brand": "Everolimus",
+      "launchType": "Own Launched",
+      "date": "2026-02-25",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Everolimus",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹627 / strip of 10 (250 mg)",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtsToSEsPREugiaUSFDA26022026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-07-31T04:05:49.162Z"
+    },
+    {
+      "brand": "Wockhardt Acquires XYZ Pharma",
+      "launchType": "Acquired",
+      "date": "2023-08-01",
+      "seller": "XYZ Pharma",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Telma",
+      "chronicAcute": "—",
+      "price": "₹60.4 / strip of 10 tablets",
+      "sourceUrl": "https://www.wockhardt.com/pressrelease/2023-08-01-acquisition",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-31T04:06:06.498Z"
+    },
+    {
+      "brand": "Wockhardt In-licenses ABC Drug",
+      "launchType": "In-licensed",
+      "date": "2023-07-20",
+      "seller": "ABC Pharma",
+      "dealType": "In-license (India)",
+      "molecule": "Azithromycin",
+      "therapy": "Anti-Infectives",
+      "indication": "Bacterial Infections",
+      "existingBrand": "Zithromax",
+      "chronicAcute": "Acute",
+      "price": "Rs 105 / strip",
+      "sourceUrl": "https://www.wockhardt.com/pressrelease/2023-07-20-in-license",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-07-31T04:06:06.498Z"
+    },
+    {
+      "brand": "Tildrakizumab",
+      "launchType": "In-licensed",
+      "date": "2014-09-17",
+      "seller": "Merck & Co., Inc.",
+      "dealType": "In-license (India)",
+      "molecule": "Tildrakizumab",
+      "therapy": "Dermatology",
+      "indication": "chronic plaque psoriasis",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": null,
+      "sourceUrl": "http://clinicaltrials.gov",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-07-31T04:07:08.821Z"
+    },
+    {
+      "brand": "Alkem's Ophthalmology Segment",
+      "launchType": "Own Launched",
+      "date": "2023-07-10",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "Eye diseases",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://health.economictimes.indiatimes.com/news/pharma/drug-approvals-launches/alkem-forays-into-ophthalmology-with-launch-of-eye-care-products/101642253",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-07-31T04:07:42.835Z"
     }
   ]
 }
