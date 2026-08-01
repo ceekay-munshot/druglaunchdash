@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-31T05:02:42.965Z",
-  "rowCount": 189,
+  "generatedAt": "2026-08-01T04:54:15.120Z",
+  "rowCount": 193,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -3322,6 +3322,82 @@
       "_title": "backfill:Clip Delivery System",
       "_provider": "gemini",
       "_harvestedAt": "2026-07-31T05:02:36.669Z"
+    },
+    {
+      "brand": "Rituximab biosimilar",
+      "launchType": "Own Launched",
+      "date": "2026-08-01",
+      "seller": "—",
+      "dealType": "Biosimilar",
+      "molecule": "Rituximab",
+      "therapy": "Oncology",
+      "indication": "Non-Hodgkin lymphoma, chronic lymphocytic leukemia, rheumatoid arthritis, granulomatosis with polyangiitis (GPA), and microscopic polyangiitis (MPA)",
+      "price": "—",
+      "dealValue": null,
+      "existingBrand": "Rituxan",
+      "chronicAcute": "Chronic",
+      "buyer": "Dr. Reddy's",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6688196c-d08c-4a60-90c4-dfdff7988e9e.pdf",
+      "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 18m - Dr. Reddy’s received U.S. FDA approval for rituximab biosimilar; Fresenius Kabi will commercialize it in the U.S.",
+      "_provider": "groq",
+      "_harvestedAt": "2026-08-01T04:52:43.037Z"
+    },
+    {
+      "brand": "Diazepam Injection USP",
+      "launchType": "Own Launched",
+      "date": "2026-07-31",
+      "seller": "—",
+      "dealType": "Generic",
+      "molecule": "Diazepam",
+      "therapy": "Anxiolytic",
+      "indication": "Management of anxiety disorders or short-term relief of symptoms of anxiety",
+      "price": "—",
+      "dealValue": null,
+      "existingBrand": "Valium (Hoffman-LaRoche, Inc.)",
+      "chronicAcute": "Acute",
+      "buyer": "Lupin",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=795af0b1-b16c-4f0e-a973-85f8b290f62c.pdf",
+      "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 10h - Lupin gets U.S. FDA approval for Diazepam Injection USP; estimated U.S. annual sales USD 77.9 million.",
+      "_provider": "mistral",
+      "_harvestedAt": "2026-08-01T04:53:02.389Z"
+    },
+    {
+      "brand": "Sugammadex Injection",
+      "launchType": "Own Launched",
+      "date": "2026-07-31",
+      "seller": "—",
+      "dealType": "—",
+      "molecule": "Sugammadex",
+      "therapy": "Anesthesia / Neuromuscular Reversal",
+      "indication": "reversal of neuromuscular blockade induced by rocuronium bromide and vecuronium bromide in adults and pediatric patients aged 2 years and older undergoing surgery",
+      "price": "—",
+      "dealValue": null,
+      "existingBrand": "Bridion®",
+      "chronicAcute": "Acute",
+      "buyer": "Lupin",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=22b3bffd-5fb2-408d-a945-3a5cf50765a0.pdf",
+      "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 16h - Lupin received U.S. FDA approval and launched Sugammadex Injection in the United States on July 31, 2026.",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-08-01T04:53:10.980Z"
+    },
+    {
+      "brand": "Fluocinolone Acetonide Oil, 0.01% (Ear Drops)",
+      "launchType": "Own Launched",
+      "date": "2018-12-18",
+      "seller": "—",
+      "dealType": "—",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "Fluocinolone Acetonide",
+      "therapy": "Dermatological (Topical Corticosteroid)",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "buyer": "Glenmark",
+      "sourceUrl": "https://www.glenmarkpharma.com/press-releases/fluocinolone-acetonide-oil-0-01-ear-drops-launch",
+      "_title": "backfill:Fluocinolone Acetonide Oil, 0.01% (Ear Drops)",
+      "_provider": "mistral",
+      "_harvestedAt": "2026-08-01T04:54:14.419Z"
     }
   ],
   "processedUrls": [
@@ -3591,6 +3667,12 @@
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6a17c5f9-f8db-46d9-a002-106e602aed15.pdf",
     "https://www.mankindpharma.com/press-releases/pfizer-acquisition/",
     "https://www.abbott.in/media-center/press-releases/abbott-strengthens-structural-heart-portfolio-with-new-clip-delivery-system.html",
-    "https://www.wockhardt.com/pressrelease/2023-08-01-acquisition"
+    "https://www.wockhardt.com/pressrelease/2023-08-01-acquisition",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6688196c-d08c-4a60-90c4-dfdff7988e9e.pdf",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=795af0b1-b16c-4f0e-a973-85f8b290f62c.pdf",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=22b3bffd-5fb2-408d-a945-3a5cf50765a0.pdf",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=4b3d35d6-88cb-4594-af65-1e5b7055e714.pdf",
+    "https://www.wockhardt.com/press-release/biovac-d-launch",
+    "https://www.glenmarkpharma.com/press-releases/fluocinolone-acetonide-oil-0-01-ear-drops-launch"
   ]
 }
