@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-01T04:54:15.120Z",
-  "rowCount": 193,
+  "generatedAt": "2026-08-02T04:56:04.887Z",
+  "rowCount": 194,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -3398,6 +3398,25 @@
       "_title": "backfill:Fluocinolone Acetonide Oil, 0.01% (Ear Drops)",
       "_provider": "mistral",
       "_harvestedAt": "2026-08-01T04:54:14.419Z"
+    },
+    {
+      "brand": "Diazepam Injection, USP",
+      "launchType": "Own Launched",
+      "date": "2026-07-31",
+      "seller": "—",
+      "dealType": "Generic",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "Diazepam",
+      "therapy": "Central Nervous System",
+      "indication": "Anxiety disorders",
+      "existingBrand": "Valium",
+      "chronicAcute": "Acute",
+      "buyer": "Lupin",
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-announces-the-approval-of-diazepam-injection-usp-in-the-united-states",
+      "_title": "backfill:Diazepam Injection, USP",
+      "_provider": "groq",
+      "_harvestedAt": "2026-08-02T04:55:54.041Z"
     }
   ],
   "processedUrls": [
@@ -3673,6 +3692,10 @@
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=22b3bffd-5fb2-408d-a945-3a5cf50765a0.pdf",
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=4b3d35d6-88cb-4594-af65-1e5b7055e714.pdf",
     "https://www.wockhardt.com/press-release/biovac-d-launch",
-    "https://www.glenmarkpharma.com/press-releases/fluocinolone-acetonide-oil-0-01-ear-drops-launch"
+    "https://www.glenmarkpharma.com/press-releases/fluocinolone-acetonide-oil-0-01-ear-drops-launch",
+    "https://www.lupin.com/media/press-releases/lupin-announces-the-approval-of-diazepam-injection-usp-in-the-united-states",
+    "https://www.lupin.com/media/press-releases/lupin-announces-u-s-fda-approval-and-launch-of-sugammadex-injection",
+    "https://www.wockhardt.com/press-release/glycyrrhizic-acid-launch",
+    "https://www.wockhardt.com/release/acquisition-of-x-company#content"
   ]
 }
