@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-02T04:11:09.711Z",
-  "rowCount": 759,
+  "generatedAt": "2026-08-03T04:13:00.153Z",
+  "rowCount": 762,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -2198,7 +2198,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-introduces-its-global-innovative-drug-ilumya-in-india-for-treatment-of-moderate-to-severe-plaque-psoriasis/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-04T04:24:39.526Z"
+      "lastEnrichmentAttempt": "2026-08-03T04:11:10.907Z"
     },
     {
       "brand": "UNLOXCYT",
@@ -3446,7 +3446,7 @@
       "price": "₹289 / tube of 15 gm (15%)",
       "sourceUrl": "https://www.glenmarkpharma.com/press-release/glenmark-pharmaceuticals-receives-anda-approval-for-azelaic-acid-gel-15",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-07-05T04:46:01.651Z"
+      "lastEnrichmentAttempt": "2026-08-03T04:12:44.415Z"
     },
     {
       "brand": "Noveltreat and Sematrinity",
@@ -3510,7 +3510,7 @@
       "price": "₹264.28 / strip of 10 tablets",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-s-ankleshwar-facility-receives-eir-from-u-s-fda",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-07-05T04:45:07.477Z"
+      "lastEnrichmentAttempt": "2026-08-03T04:11:50.237Z"
     },
     {
       "brand": "LNP8701",
@@ -3590,7 +3590,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/2LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-05T04:45:17.438Z"
+      "lastEnrichmentAttempt": "2026-08-03T04:11:59.149Z"
     },
     {
       "brand": "Glycerol Phenylbutyrate Oral Liquid, 1.1 grams per mL",
@@ -4751,8 +4751,8 @@
       "seller": "Cassiopea",
       "dealType": "Brand Acquisition",
       "molecule": "clascoterone cream 1%",
-      "therapy": "—",
-      "indication": "—",
+      "therapy": "Dermatology",
+      "indication": "Acne",
       "existingBrand": "—",
       "chronicAcute": "—",
       "price": "₹21.7 / bottle of 30 ml (2.5 mg)",
@@ -5430,7 +5430,7 @@
       "price": "Rs 84,375 / injection",
       "sourceUrl": "https://yourpressreleaseurl.com/PressReleaseEugia04032026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-04T04:23:14.673Z"
+      "lastEnrichmentAttempt": "2026-08-03T04:11:09.481Z"
     },
     {
       "brand": "Noveltreat, Sematrinity",
@@ -5526,7 +5526,7 @@
       "price": "₹98.5 / strip of 10 tablets",
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-company-b",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-05T04:45:51.465Z"
+      "lastEnrichmentAttempt": "2026-08-03T04:12:36.757Z"
     },
     {
       "brand": "Wockhardt In-licenses Drug C",
@@ -8102,7 +8102,7 @@
       "price": "₹211 / bottle of 9.5 gm nasal spray",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-Announces-Exclusive-Licensing-Agreement-with-Se.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-07-05T04:43:40.538Z"
+      "lastEnrichmentAttempt": "2026-08-03T04:11:18.592Z"
     },
     {
       "brand": "NaMuscla®",
@@ -8118,7 +8118,7 @@
       "price": "₹29.8 / strip of 10 tablets",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-announces-ema-approval-for-na-muscla-expansion-for-pediatric-indication-with-new-strengths",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-07-05T04:43:50.173Z"
+      "lastEnrichmentAttempt": "2026-08-03T04:11:32.262Z"
     },
     {
       "brand": "Medispray",
@@ -8134,7 +8134,7 @@
       "price": "Rs 1,200 / spray",
       "sourceUrl": "https://www.pharmaexample.com/pressrelease1",
       "buyer": "Zydus Lifesciences",
-      "lastEnrichmentAttempt": "2026-07-05T04:44:02.289Z"
+      "lastEnrichmentAttempt": "2026-08-03T04:11:42.163Z"
     },
     {
       "brand": "Cardiologix",
@@ -8198,7 +8198,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-xyz-pharma",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-05T04:45:05.972Z"
+      "lastEnrichmentAttempt": "2026-08-03T04:11:43.587Z"
     },
     {
       "brand": "ABC Drug In-License",
@@ -8227,7 +8227,7 @@
       "indication": "Acne",
       "existingBrand": "—",
       "chronicAcute": "—",
-      "price": null,
+      "price": "Rs 150 / tube",
       "sourceUrl": "https://glenmarkpharma.com/press_release/glenmark-pharmaceuticals-receives-anda-approval-for-azelaic-acid-gel-15/#main",
       "buyer": "Glenmark",
       "lastEnrichmentAttempt": "2026-07-05T04:46:01.651Z"
@@ -12135,6 +12135,54 @@
       "sourceUrl": "https://www.wockhardt.com/release/acquisition-of-x-company#content",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-08-02T04:08:47.057Z"
+    },
+    {
+      "brand": "Sitagliptin in collaboration with MSD",
+      "launchType": "In-licensed",
+      "date": "2025-06-18",
+      "seller": "MSD Pharmaceuticals",
+      "dealType": "In-license (India)",
+      "molecule": "sitagliptin",
+      "therapy": "anti-diabetic",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹106 / strip of 10 tablet er",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-and-msd-announce-strategic-partnership-to-distribute-innovative-oral-anti-diabetic-medicines-in-india.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-08-03T04:10:30.811Z"
+    },
+    {
+      "brand": "Aurobindo’s New Injection",
+      "launchType": "Own Launched",
+      "date": "2023-04-15",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "Molecule A",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 3,500 / injection",
+      "sourceUrl": "https://www.aurobindo.com/media/press-release-url",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-08-03T04:10:50.594Z"
+    },
+    {
+      "brand": "Wockhardt's New Anti-Diabetic Drug",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Metformin",
+      "chronicAcute": "Chronic",
+      "price": "Rs 500 / strip",
+      "sourceUrl": "https://www.wockhardt.com/press-release/nce-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-03T04:11:07.973Z"
     }
   ]
 }
