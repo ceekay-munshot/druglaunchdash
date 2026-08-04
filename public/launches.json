@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-03T04:13:00.153Z",
-  "rowCount": 762,
+  "generatedAt": "2026-08-04T03:55:52.563Z",
+  "rowCount": 768,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -2214,7 +2214,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-announces-the-availability-of-unloxcyt-cosibelimab-ipdl-for-advanced-cutaneous-squamous-cell-carcinoma-acscc/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-05T04:47:46.809Z"
+      "lastEnrichmentAttempt": "2026-08-04T03:53:38.499Z"
     },
     {
       "brand": "ILUMYA",
@@ -3606,7 +3606,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-05T04:46:22.774Z"
+      "lastEnrichmentAttempt": "2026-08-04T03:51:34.441Z"
     },
     {
       "brand": "Dapagliflozin and Metformin Hydrochloride Extended-Release Tablets",
@@ -3638,7 +3638,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoUSFDA07042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-05T04:47:22.990Z"
+      "lastEnrichmentAttempt": "2026-08-04T03:52:25.885Z"
     },
     {
       "brand": "BP11, Investigational Biosimilar to Xolair® (omalizumab)",
@@ -3654,7 +3654,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-05T04:47:38.195Z"
+      "lastEnrichmentAttempt": "2026-08-04T03:53:04.899Z"
     },
     {
       "brand": "generic semaglutide",
@@ -5558,7 +5558,7 @@
       "price": "—",
       "sourceUrl": "https://glenmarkpharma.com/press_release/glenmark-pharmaceuticals-receives-anda-approval-for-azelaic-acid-gel-15/#main",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-07-05T04:46:12.685Z"
+      "lastEnrichmentAttempt": "2026-08-04T03:51:23.314Z"
     },
     {
       "brand": "Dapagliflozin and Metformin Hydrochloride Extended-Release Tablets",
@@ -6066,7 +6066,7 @@
       "therapy": "Dermatology",
       "indication": "mild-to-moderate atopic dermatitis",
       "existingBrand": "—",
-      "chronicAcute": "—",
+      "chronicAcute": "Chronic",
       "price": "null",
       "sourceUrl": "https://www.aurobindo.com/press-release/adquey-fda-approval",
       "buyer": "Aurobindo",
@@ -8278,7 +8278,7 @@
       "price": "₹4984 / box of 1 unit",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-next-gen-freestyle-libre2-plus-with-continuous-glucose-readings-every-minute-and-optional-alarms.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-07-06T04:57:29.289Z"
+      "lastEnrichmentAttempt": "2026-08-04T03:53:46.485Z"
     },
     {
       "brand": "Dapagliflozin",
@@ -8294,7 +8294,7 @@
       "price": "₹190 / strip of 15 tablets",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoUSFDA07042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-06T04:57:59.582Z"
+      "lastEnrichmentAttempt": "2026-08-04T03:53:57.896Z"
     },
     {
       "brand": "BP11 (Omalizumab Biosimilar)",
@@ -8326,7 +8326,7 @@
       "price": "₹607 / strip of 10 (0.25 mg)",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtsToSEsPREugiaUSFDA26022026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-06T04:57:59.582Z"
+      "lastEnrichmentAttempt": "2026-08-04T03:54:01.323Z"
     },
     {
       "brand": "ADQUEY™ (Difamilast)",
@@ -8342,7 +8342,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/Adquey-(Difamilast)_NDA%20Approval_PressRelease_13-Feb-26.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-06T04:57:59.582Z"
+      "lastEnrichmentAttempt": "2026-08-04T03:54:46.313Z"
     },
     {
       "brand": "Wockhardt's New Drug",
@@ -8374,7 +8374,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/press-release-details?id=456",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-06T04:58:18.005Z"
+      "lastEnrichmentAttempt": "2026-08-04T03:55:20.652Z"
     },
     {
       "brand": "In-license Agreement with ABC Corp",
@@ -9950,7 +9950,7 @@
       "date": "2023-09-15",
       "seller": "—",
       "dealType": "NCE Launch",
-      "molecule": "—",
+      "molecule": "N-acetylcysteine",
       "therapy": "Oncology",
       "indication": "Breast Cancer",
       "existingBrand": "Herceptin",
@@ -12183,6 +12183,102 @@
       "sourceUrl": "https://www.wockhardt.com/press-release/nce-launch",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-08-03T04:11:07.973Z"
+    },
+    {
+      "brand": "TactiFlex™",
+      "launchType": "Own Launched",
+      "date": "2025-05-14",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹36.5 / strip of 10 tablets",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-introduces-tactiflex-sensor-enabled-ablation-catheter-in-india-for-treatment-of-abnormal-heart-rhythms.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-08-04T03:51:06.256Z"
+    },
+    {
+      "brand": "Growth Right 2.0",
+      "launchType": "Own Launched",
+      "date": "2023-08-24",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/Abbott-Helps-People-with-Vertigo-Take-Control-of-Their-Health-with-the-Launch-of-an-Easy-to-Use-Vertigo-Coach-App-in-India.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-08-04T03:51:06.256Z"
+    },
+    {
+      "brand": "Wockhardt",
+      "launchType": "Acquired",
+      "date": "2023-08-05",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Zydus Cadila",
+      "chronicAcute": "—",
+      "price": "₹2.1 / strip of 10 tablets",
+      "sourceUrl": "https://www.wockhardt.com/press-release/company-acquisition",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-04T03:51:21.808Z"
+    },
+    {
+      "brand": "Wockhardt",
+      "launchType": "In-licensed",
+      "date": "2023-07-10",
+      "seller": "—",
+      "dealType": "In-license (India)",
+      "molecule": "Secukinumab",
+      "therapy": "Immunology",
+      "indication": "Psoriasis",
+      "existingBrand": "Cosentyx",
+      "chronicAcute": "Chronic",
+      "price": "₹93.6 / bottle of 10 gm dusting powder",
+      "sourceUrl": "https://www.wockhardt.com/press-release/in-licensing-secukinumab",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-04T03:51:21.808Z"
+    },
+    {
+      "brand": "Azelaic Acid Gel 15%",
+      "launchType": "Own Launched",
+      "date": "2023-10-12",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Azelaic Acid",
+      "therapy": "Dermatology",
+      "indication": "—",
+      "existingBrand": "Finacea",
+      "chronicAcute": "—",
+      "price": "Rs 420 / pack of 15g",
+      "sourceUrl": "https://glenmarkpharma.com/press_release/glenmark-pharmaceuticals-receives-anda-approval-for-azelaic-acid-gel-15/#main",
+      "buyer": "Glenmark",
+      "lastEnrichmentAttempt": "2026-08-04T03:51:23.314Z"
+    },
+    {
+      "brand": "UNLOXCYT",
+      "launchType": "Own Launched",
+      "date": "2026-01-16",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "cosibelimab-ipdl",
+      "therapy": "—",
+      "indication": "Advanced Cutaneous Squamous Cell Carcinoma (aCSCC)",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/01/UNLOXCYT-Commercial-Launch-Press-Release.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-08-04T03:53:38.499Z"
     }
   ]
 }
