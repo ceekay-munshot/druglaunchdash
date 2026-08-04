@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-03T05:05:43.025Z",
-  "rowCount": 194,
+  "generatedAt": "2026-08-04T04:44:47.239Z",
+  "rowCount": 195,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -3417,6 +3417,25 @@
       "_title": "backfill:Diazepam Injection, USP",
       "_provider": "groq",
       "_harvestedAt": "2026-08-02T04:55:54.041Z"
+    },
+    {
+      "brand": "UNLOXCYT",
+      "launchType": "Own Launched",
+      "date": "2026-01-16",
+      "seller": "—",
+      "dealType": "—",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "cosibelimab",
+      "therapy": "Anti-PD-L1 monoclonal antibody",
+      "indication": "Advanced Cutaneous Squamous Cell Carcinoma (aCSCC)",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "buyer": "Sun Pharma",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/01/UNLOXCYT-Commercial-Launch-Press-Release.pdf",
+      "_title": "backfill:UNLOXCYT",
+      "_provider": "mistral",
+      "_harvestedAt": "2026-08-04T04:44:46.538Z"
     }
   ],
   "processedUrls": [
@@ -3696,6 +3715,8 @@
     "https://www.lupin.com/media/press-releases/lupin-announces-the-approval-of-diazepam-injection-usp-in-the-united-states",
     "https://www.lupin.com/media/press-releases/lupin-announces-u-s-fda-approval-and-launch-of-sugammadex-injection",
     "https://www.wockhardt.com/press-release/glycyrrhizic-acid-launch",
-    "https://www.wockhardt.com/release/acquisition-of-x-company#content"
+    "https://www.wockhardt.com/release/acquisition-of-x-company#content",
+    "https://www.wockhardt.com/press-release/company-acquisition",
+    "https://sunpharma.com/wp-content/uploads/2026/01/UNLOXCYT-Commercial-Launch-Press-Release.pdf"
   ]
 }
