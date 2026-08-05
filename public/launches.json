@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-04T03:55:52.563Z",
-  "rowCount": 768,
+  "generatedAt": "2026-08-05T03:52:02.554Z",
+  "rowCount": 774,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -742,7 +742,7 @@
       "price": "₹28.3 / strip of 10 capsules",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/09/Press-Release-Sun-Pharma-launches-Chericof-12.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-06T04:58:29.251Z"
+      "lastEnrichmentAttempt": "2026-08-05T03:49:33.266Z"
     },
     {
       "brand": "WINLEVI",
@@ -2230,7 +2230,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-announces-us-fda-acceptance-of-supplemental-biologics-license-sbla-application-for-ilumya-tildrakizumab-asmn-for-the-treatment-o/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-06T04:58:19.510Z"
+      "lastEnrichmentAttempt": "2026-08-05T03:49:26.101Z"
     },
     {
       "brand": "Chericof 12",
@@ -2246,7 +2246,7 @@
       "price": "—",
       "sourceUrl": "http://www.sunpharma.com",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-06T04:58:34.200Z"
+      "lastEnrichmentAttempt": "2026-08-05T03:49:38.813Z"
     },
     {
       "brand": "GBR 310",
@@ -2262,7 +2262,7 @@
       "price": "—",
       "sourceUrl": "—",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-07-06T04:59:35.725Z"
+      "lastEnrichmentAttempt": "2026-08-05T03:50:40.223Z"
     },
     {
       "brand": "Tiotropium Bromide",
@@ -2294,7 +2294,7 @@
       "price": null,
       "sourceUrl": "https://www.lupin.com/",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-07-06T05:01:16.913Z"
+      "lastEnrichmentAttempt": "2026-08-05T03:51:22.361Z"
     },
     {
       "brand": "Lupin",
@@ -5670,7 +5670,7 @@
       "price": "—",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-collaborates-with-ern-for-luforbec-beclometasone-formoterol-p-mdi-launch-in-spain",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-07-06T04:59:37.205Z"
+      "lastEnrichmentAttempt": "2026-08-05T03:50:41.556Z"
     },
     {
       "brand": "Dapagliflozin and Metformin Hydrochloride Tablets",
@@ -5702,7 +5702,7 @@
       "price": "₹34491 / ampoule of 2 ml injection",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-06T04:59:46.754Z"
+      "lastEnrichmentAttempt": "2026-08-05T03:51:08.683Z"
     },
     {
       "brand": "Wockhardt's New Anti-Diabetic Drug",
@@ -5734,7 +5734,7 @@
       "price": "₹42.6 / packet of 50 ml scrub",
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-of-pharmacorp",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-06T05:00:34.486Z"
+      "lastEnrichmentAttempt": "2026-08-05T03:51:14.216Z"
     },
     {
       "brand": "Wockhardt's New Line Extension for Pain Relief",
@@ -5766,7 +5766,7 @@
       "price": null,
       "sourceUrl": "https://lupin.com/media/press-releases/lupin-signs-exclusive-licensing-agreement-with-gan-lee-pharmaceuticals-for-novel-glp-1-receptor-agonist",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-07-06T05:01:49.154Z"
+      "lastEnrichmentAttempt": "2026-08-05T03:51:31.232Z"
     },
     {
       "brand": "Plasil®",
@@ -8406,7 +8406,7 @@
       "price": "—",
       "sourceUrl": "https://www.lupin.com/press-release/luforbec-launch-spain",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-07-06T04:59:37.205Z"
+      "lastEnrichmentAttempt": "2026-08-05T03:50:52.353Z"
     },
     {
       "brand": "Dapasco",
@@ -12279,6 +12279,102 @@
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/01/UNLOXCYT-Commercial-Launch-Press-Release.pdf",
       "buyer": "Sun Pharma",
       "lastEnrichmentAttempt": "2026-08-04T03:53:38.499Z"
+    },
+    {
+      "brand": "Lannett Company",
+      "launchType": "Acquired",
+      "date": "2026-06-21",
+      "seller": "U.S. Federal Trade Commission",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsLnnettPR22062026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-08-05T03:48:59.202Z"
+    },
+    {
+      "brand": "ADQUEY™ difamilast",
+      "launchType": "Own Launched",
+      "date": "2026-02-16",
+      "seller": "—",
+      "dealType": "—",
+      "molecule": "difamilast",
+      "therapy": "—",
+      "indication": "Mild-to-Moderate Atopic Dermatitis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/Adquey-(Difamilast)_NDA%20Approval_PressRelease_13-Feb-26.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-08-05T03:48:59.203Z"
+    },
+    {
+      "brand": "Wockhardt's New Biosimilar",
+      "launchType": "Own Launched",
+      "date": "2023-06-15",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "Adalimumab",
+      "therapy": "Immunology",
+      "indication": "Rheumatoid Arthritis",
+      "existingBrand": "Humira",
+      "chronicAcute": "Chronic",
+      "price": "Rs 18,000 / injection",
+      "sourceUrl": "https://www.wockhardt.com/press-release/biosimilar-adalimumab-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-05T03:49:24.594Z"
+    },
+    {
+      "brand": "Acquisition of XYZ Pharma",
+      "launchType": "Acquired",
+      "date": "2023-05-10",
+      "seller": "XYZ Pharma",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-xyz-pharma",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-05T03:49:24.594Z"
+    },
+    {
+      "brand": "Luforbec®",
+      "launchType": "Own Launched",
+      "date": "2026-06-08",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "beclometasone/formoterol",
+      "therapy": "Respiratory",
+      "indication": "asthma and chronic obstructive pulmonary disease",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.lupin.com/press-releases/luforbec-launch-spain",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-08-05T03:50:41.556Z"
+    },
+    {
+      "brand": "Pharmacorp",
+      "launchType": "Acquired",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-of-pharmacorp#content",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-05T03:51:14.216Z"
     }
   ]
 }
