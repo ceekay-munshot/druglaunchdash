@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-04T04:44:47.239Z",
-  "rowCount": 195,
+  "generatedAt": "2026-08-05T04:44:24.865Z",
+  "rowCount": 196,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -3436,6 +3436,25 @@
       "_title": "backfill:UNLOXCYT",
       "_provider": "mistral",
       "_harvestedAt": "2026-08-04T04:44:46.538Z"
+    },
+    {
+      "brand": "Indocyanine Green for Injection",
+      "launchType": "Own Launched",
+      "date": "2026-08-04",
+      "seller": "—",
+      "dealType": "—",
+      "molecule": "Indocyanine Green",
+      "therapy": "Optical Imaging",
+      "indication": "Fluorescence imaging of vessels, blood flow and tissue perfusion",
+      "price": "—",
+      "dealValue": null,
+      "existingBrand": "IC-Green",
+      "chronicAcute": "—",
+      "buyer": "Zydus Lifesciences",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=1294fdee-b965-4894-be76-6c8a5a2b9a7e.pdf",
+      "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 18h - Zydus gets USFDA final approval for Indocyanine Green Injection; launch planned soon with 180-day CGT exclusivity.",
+      "_provider": "groq",
+      "_harvestedAt": "2026-08-05T04:44:06.554Z"
     }
   ],
   "processedUrls": [
@@ -3717,6 +3736,8 @@
     "https://www.wockhardt.com/press-release/glycyrrhizic-acid-launch",
     "https://www.wockhardt.com/release/acquisition-of-x-company#content",
     "https://www.wockhardt.com/press-release/company-acquisition",
-    "https://sunpharma.com/wp-content/uploads/2026/01/UNLOXCYT-Commercial-Launch-Press-Release.pdf"
+    "https://sunpharma.com/wp-content/uploads/2026/01/UNLOXCYT-Commercial-Launch-Press-Release.pdf",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=1294fdee-b965-4894-be76-6c8a5a2b9a7e.pdf",
+    "https://www.wockhardt.com/press-release/acquisition-of-pharmacorp#content"
   ]
 }
