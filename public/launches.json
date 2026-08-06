@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-05T03:52:02.554Z",
-  "rowCount": 774,
+  "generatedAt": "2026-08-06T03:56:33.719Z",
+  "rowCount": 781,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -687,8 +687,8 @@
       "seller": "Cassiopea",
       "dealType": "Brand Acquisition",
       "molecule": "clascoterone",
-      "therapy": "—",
-      "indication": "—",
+      "therapy": "Dermatology",
+      "indication": "Acne Vulgaris",
       "existingBrand": "—",
       "chronicAcute": "—",
       "price": "₹21.3 / bottle of 30 ml syrup",
@@ -2310,7 +2310,7 @@
       "price": null,
       "sourceUrl": "https://www.lupin.com/",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-07-07T04:36:48.466Z"
+      "lastEnrichmentAttempt": "2026-08-06T03:55:16.536Z"
     },
     {
       "brand": "Mankind Pharma Brand XYZ",
@@ -2390,7 +2390,7 @@
       "price": "null",
       "sourceUrl": "https://www.cipla.com/press-release/generic-pharma-acquisition",
       "buyer": "Cipla",
-      "lastEnrichmentAttempt": "2026-07-07T04:36:58.595Z"
+      "lastEnrichmentAttempt": "2026-08-06T03:55:35.524Z"
     },
     {
       "brand": "Antibacterial Combination",
@@ -2406,7 +2406,7 @@
       "price": "₹643 / pump bottle of 100 ml",
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/amp_articleshow/100775508.cms",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-07-07T04:37:07.593Z"
+      "lastEnrichmentAttempt": "2026-08-06T03:55:43.836Z"
     },
     {
       "brand": "GBR 1302",
@@ -2422,7 +2422,7 @@
       "price": "—",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Pharmaceuticals-and-Harbour-BioMed-Sign-Agreement-for-Greater-China-toDevelop-GBR-1302.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-07-07T04:37:24.094Z"
+      "lastEnrichmentAttempt": "2026-08-06T03:55:58.670Z"
     },
     {
       "brand": "BP11",
@@ -3686,7 +3686,7 @@
       "price": null,
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-signs-exclusive-licensing-agreement-with-neopharmed-for-gastroenterology-brand-plasil-in-the-philippines-and-brazil",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-07-06T05:02:11.084Z"
+      "lastEnrichmentAttempt": "2026-08-06T03:54:37.689Z"
     },
     {
       "brand": "GLP-1 receptor agonist",
@@ -3702,7 +3702,7 @@
       "price": null,
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-signs-exclusive-licensing-agreement-with-gan-lee-pharmaceuticals-for-novel-glp-1-receptor-agonist",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-07-07T04:36:54.343Z"
+      "lastEnrichmentAttempt": "2026-08-06T03:55:25.237Z"
     },
     {
       "brand": "Vasonex",
@@ -5782,7 +5782,7 @@
       "price": null,
       "sourceUrl": "https://www.lupin.com/press-release/lupin-signs-exclusive-licensing-agreement-with-neopharmed-for-gastroenterology-brand-plasil-in-the-philippines-and-brazil",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-07-07T04:36:34.346Z"
+      "lastEnrichmentAttempt": "2026-08-06T03:55:09.309Z"
     },
     {
       "brand": "Bofanglutide",
@@ -8438,7 +8438,7 @@
       "price": "₹2605 / pre-filled pen of 1.5 ml solution for injection",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/PR-for-Semaglutide.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-07T04:34:16.463Z"
+      "lastEnrichmentAttempt": "2026-08-06T03:54:46.491Z"
     },
     {
       "brand": "Wokadine",
@@ -8454,7 +8454,7 @@
       "price": "₹20.1 / tube of 10 gm",
       "sourceUrl": "https://www.business-standard.com/industry/news/corona-remedies-acquires-wokadine-drl-povidone-iodine-market-126033001282_1.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-07T04:35:03.526Z"
+      "lastEnrichmentAttempt": "2026-08-06T03:54:53.465Z"
     },
     {
       "brand": "DrugX",
@@ -8486,7 +8486,7 @@
       "price": "₹500 / vial",
       "sourceUrl": "https://www.wockhardt.com/press-release/nce-launch-wockhardt/",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-07T04:36:32.843Z"
+      "lastEnrichmentAttempt": "2026-08-06T03:55:01.666Z"
     },
     {
       "brand": "Cipla's Xylofast",
@@ -11054,12 +11054,12 @@
       "date": "2026-03-30",
       "seller": "Dr Reddy's Laboratories (DRL)",
       "dealType": "Brand Acquisition",
-      "molecule": "—",
-      "therapy": "—",
-      "indication": "—",
+      "molecule": "Povidone iodine",
+      "therapy": "Antiseptic",
+      "indication": "Used to treat and prevent infections in minor cuts, burns, wounds, and for pre-operative skin preparation",
       "existingBrand": "—",
       "chronicAcute": "—",
-      "price": null,
+      "price": "₹190 / bottle of 100 ml gargle",
       "sourceUrl": "https://www.business-standard.com/industry/news/corona-remedies-acquires-wokadine-from-drl-enters-iodine-market-126033001717_1.html",
       "buyer": "Corona Remedies",
       "lastEnrichmentAttempt": "2026-07-28T03:50:30.213Z"
@@ -12375,6 +12375,118 @@
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-of-pharmacorp#content",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-08-05T03:51:14.216Z"
+    },
+    {
+      "brand": "OLMESARTAN",
+      "launchType": "Acquired",
+      "date": "2016-10-27",
+      "seller": "—",
+      "dealType": "Brand Acquisition",
+      "molecule": "Olmesartan",
+      "therapy": "Cardiology",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹202 / strip of 15 tablets",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2020/12/Press-Release-Sun-Pharma-announces-US-launch-of-Generics-for-Olmesartan.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-08-06T03:51:12.477Z"
+    },
+    {
+      "brand": "Adcock Ingram Holdings Pty Ltd",
+      "launchType": "Acquired",
+      "date": "2026-07-14",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.natcopharma.co.in/insights/news-and-announcements",
+      "buyer": "Natco Pharma",
+      "lastEnrichmentAttempt": "2026-08-06T03:52:35.855Z"
+    },
+    {
+      "brand": "Fluocinolone Acetonide Topical Oil",
+      "launchType": "Own Launched",
+      "date": "2018-10-30",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "Fluocinolone Acetonide",
+      "therapy": "Dermatology",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹430 / bottle of 30 ml solution",
+      "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-receives-ANDA-approval-for-Fluocinolone-Acetonide-Topical-Oil-Scalp-Oil.pdf",
+      "buyer": "Glenmark",
+      "lastEnrichmentAttempt": "2026-08-06T03:52:59.225Z"
+    },
+    {
+      "brand": "Navitor™",
+      "launchType": "Own Launched",
+      "date": "2022-06-13",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "Aortic Stenosis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹88.6 / strip of 10 (20 mg)",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/Abbott-launches-navitor-its-latest-generation-transcatheter-aortic-valve-implantation-TAVI-system-to-treat-aortic-stenosis-in-India.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-08-06T03:54:03.506Z"
+    },
+    {
+      "brand": "Wockhardt's New Drug",
+      "launchType": "Own Launched",
+      "date": "2023-08-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Molecule X",
+      "therapy": "Oncology",
+      "indication": "Lung Cancer",
+      "existingBrand": "Brand Y",
+      "chronicAcute": "Chronic",
+      "price": "Rs 2,500 / tablet",
+      "sourceUrl": "https://www.wockhardt.com/press-release/nce-launch-wockhardt/",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-06T03:55:01.666Z"
+    },
+    {
+      "brand": "Kaveri Therapeutics",
+      "launchType": "Acquired",
+      "date": "2026-07-21",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-spins-out-two-oncology-programs-to-kaveri-therapeutics-to-advance-its-oncology-strategy",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-08-06T03:55:16.536Z"
+    },
+    {
+      "brand": "Bofanglutide",
+      "launchType": "Own Launched",
+      "date": "2025-12-29",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "GLP-1 receptor agonist",
+      "therapy": "Obesity",
+      "indication": "Obesity",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": null,
+      "sourceUrl": "https://www.lupin.com/",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-08-06T03:55:25.237Z"
     }
   ]
 }
