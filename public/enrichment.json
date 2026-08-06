@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-05T04:44:24.865Z",
-  "rowCount": 196,
+  "generatedAt": "2026-08-06T04:45:38.858Z",
+  "rowCount": 200,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -3455,6 +3455,82 @@
       "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 18h - Zydus gets USFDA final approval for Indocyanine Green Injection; launch planned soon with 180-day CGT exclusivity.",
       "_provider": "groq",
       "_harvestedAt": "2026-08-05T04:44:06.554Z"
+    },
+    {
+      "brand": "OLMESARTAN",
+      "launchType": "Own Launched",
+      "date": "2016-10-27",
+      "seller": "Daiichi Sankyo Inc.",
+      "dealType": "distribution and supply agreement",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "Olmesartan Medoxomil",
+      "therapy": "Anti-hypertensive",
+      "indication": "Hypertension",
+      "existingBrand": "Benicar (Daiichi Sankyo Inc.)",
+      "chronicAcute": "Chronic",
+      "buyer": "Sun Pharma",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2020/12/Press-Release-Sun-Pharma-announces-US-launch-of-Generics-for-Olmesartan.pdf",
+      "_title": "backfill:OLMESARTAN",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-08-06T04:45:16.168Z"
+    },
+    {
+      "brand": "Fluocinolone Acetonide Topical Oil",
+      "launchType": "Own Launched",
+      "date": "2018-10-30",
+      "seller": "—",
+      "dealType": "Generic",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "Fluocinolone Acetonide",
+      "therapy": "Dermatology",
+      "indication": "—",
+      "existingBrand": "Derma-Smoothe/FS",
+      "chronicAcute": "Chronic",
+      "buyer": "Glenmark",
+      "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-receives-ANDA-approval-for-Fluocinolone-Acetonide-Topical-Oil-Scalp-Oil.pdf",
+      "_title": "backfill:Fluocinolone Acetonide Topical Oil",
+      "_provider": "groq",
+      "_harvestedAt": "2026-08-06T04:45:19.197Z"
+    },
+    {
+      "brand": "Navitor™",
+      "launchType": "Own Launched",
+      "date": "2022-06-13",
+      "seller": "—",
+      "dealType": "—",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "—",
+      "therapy": "Cardiovascular",
+      "indication": "Severe aortic stenosis",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "buyer": "Abbott India",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/Abbott-launches-navitor-its-latest-generation-transcatheter-aortic-valve-implantation-TAVI-system-to-treat-aortic-stenosis-in-India.html",
+      "_title": "backfill:Navitor™",
+      "_provider": "mistral",
+      "_harvestedAt": "2026-08-06T04:45:23.554Z"
+    },
+    {
+      "brand": "Kaveri Therapeutics",
+      "launchType": "Own Launched",
+      "date": "2026-07-21",
+      "seller": "—",
+      "dealType": "—",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "Sugammadex",
+      "therapy": "Neuromuscular Blocker Reversal Agent",
+      "indication": "reversal of neuromuscular blockade induced by rocuronium bromide and vecuronium bromide in adults and pediatric patients aged 2 years and older undergoing surgery",
+      "existingBrand": "Bridion® Injection",
+      "chronicAcute": "Acute",
+      "buyer": "Lupin",
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-spins-out-two-oncology-programs-to-kaveri-therapeutics-to-advance-its-oncology-strategy",
+      "_title": "backfill:Kaveri Therapeutics",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-08-06T04:45:38.158Z"
     }
   ],
   "processedUrls": [
@@ -3738,6 +3814,12 @@
     "https://www.wockhardt.com/press-release/company-acquisition",
     "https://sunpharma.com/wp-content/uploads/2026/01/UNLOXCYT-Commercial-Launch-Press-Release.pdf",
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=1294fdee-b965-4894-be76-6c8a5a2b9a7e.pdf",
-    "https://www.wockhardt.com/press-release/acquisition-of-pharmacorp#content"
+    "https://www.wockhardt.com/press-release/acquisition-of-pharmacorp#content",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=66513a0f-4f15-4221-bcaa-6309b2d0ff27.pdf",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=cd864150-4c06-486c-b082-99b81d485f86.pdf",
+    "https://sunpharma.com/wp-content/uploads/2020/12/Press-Release-Sun-Pharma-announces-US-launch-of-Generics-for-Olmesartan.pdf",
+    "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-receives-ANDA-approval-for-Fluocinolone-Acetonide-Topical-Oil-Scalp-Oil.pdf",
+    "https://www.abbott.in/media-center/press-releases/Abbott-launches-navitor-its-latest-generation-transcatheter-aortic-valve-implantation-TAVI-system-to-treat-aortic-stenosis-in-India.html",
+    "https://www.lupin.com/media/press-releases/lupin-spins-out-two-oncology-programs-to-kaveri-therapeutics-to-advance-its-oncology-strategy"
   ]
 }
