@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-06T04:45:38.858Z",
-  "rowCount": 200,
+  "generatedAt": "2026-08-07T04:12:39.979Z",
+  "rowCount": 202,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -3531,6 +3531,44 @@
       "_title": "backfill:Kaveri Therapeutics",
       "_provider": "gemini",
       "_harvestedAt": "2026-08-06T04:45:38.158Z"
+    },
+    {
+      "brand": "Nidlegy™",
+      "launchType": "In-licensed",
+      "date": "2023-10-16",
+      "seller": "Philogen S.p.A.",
+      "dealType": "Distribution, License and Supply Agreement",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "Daromun (L19IL2 + L19TNF)",
+      "therapy": "Immunocytokine therapy",
+      "indication": "Locally advanced fully resectable melanoma and high-risk locally advanced basal cell carcinoma",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "buyer": "Sun Pharma",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/10/Press-Release-Nidlegy-Phase-III-PIVOTAL-trial-meets-primary-endpoint-of-Recurrence-Free-Survival-in-locally-advanced-fully-resectable-melanoma.pdf",
+      "_title": "backfill:Nidlegy™",
+      "_provider": "mistral",
+      "_harvestedAt": "2026-08-07T04:12:24.368Z"
+    },
+    {
+      "brand": "Smoquit",
+      "launchType": "Own Launched",
+      "date": "2001-08-10",
+      "seller": "—",
+      "dealType": "—",
+      "price": "Rs.13.50 per tablet",
+      "dealValue": null,
+      "molecule": "Bupropion",
+      "therapy": "Antismoking",
+      "indication": "Smoking cessation",
+      "existingBrand": "Zyban (GlaxoSmithKline)",
+      "chronicAcute": "Chronic",
+      "buyer": "Sun Pharma",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2020/12/Sun-Pharma-launches-Smoquit-August-10-2001.pdf",
+      "_title": "backfill:Smoquit",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-08-07T04:12:30.477Z"
     }
   ],
   "processedUrls": [
@@ -3820,6 +3858,11 @@
     "https://sunpharma.com/wp-content/uploads/2020/12/Press-Release-Sun-Pharma-announces-US-launch-of-Generics-for-Olmesartan.pdf",
     "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-receives-ANDA-approval-for-Fluocinolone-Acetonide-Topical-Oil-Scalp-Oil.pdf",
     "https://www.abbott.in/media-center/press-releases/Abbott-launches-navitor-its-latest-generation-transcatheter-aortic-valve-implantation-TAVI-system-to-treat-aortic-stenosis-in-India.html",
-    "https://www.lupin.com/media/press-releases/lupin-spins-out-two-oncology-programs-to-kaveri-therapeutics-to-advance-its-oncology-strategy"
+    "https://www.lupin.com/media/press-releases/lupin-spins-out-two-oncology-programs-to-kaveri-therapeutics-to-advance-its-oncology-strategy",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ef7fe35b-2699-457b-9e79-cd2e4148b10d.pdf",
+    "https://sunpharma.com/wp-content/uploads/2023/10/Press-Release-Nidlegy-Phase-III-PIVOTAL-trial-meets-primary-endpoint-of-Recurrence-Free-Survival-in-locally-advanced-fully-resectable-melanoma.pdf",
+    "https://sunpharma.com/wp-content/uploads/2020/12/Sun-Pharma-launches-Smoquit-August-10-2001.pdf",
+    "https://www.wockhardt.com/press-release/acquisition-of-xyz-pharma",
+    "https://www.wockhardt.com/press-release/in-licensing-abc-drug"
   ]
 }
