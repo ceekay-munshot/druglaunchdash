@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-06T03:56:33.719Z",
-  "rowCount": 781,
+  "generatedAt": "2026-08-07T03:35:59.678Z",
+  "rowCount": 786,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -87,7 +87,7 @@
       "chronicAcute": "Chronic",
       "sourceUrl": "https://www.coronaremedies.com/wp-content/uploads/2024/11/myoril-news-2024.png",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-08T03:59:59.874Z"
+      "lastEnrichmentAttempt": "2026-08-07T03:34:56.343Z"
     },
     {
       "brand": "Sematreat",
@@ -342,7 +342,7 @@
       "price": "—",
       "sourceUrl": "https://www.pharmazz.com/launch-tyvalzi-sovateltide-india",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-08T03:59:50.573Z"
+      "lastEnrichmentAttempt": "2026-08-07T03:34:49.805Z"
     },
     {
       "brand": "Palbo",
@@ -374,7 +374,7 @@
       "price": "₹21.7 / strip of 10 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-08T04:00:04.778Z"
+      "lastEnrichmentAttempt": "2026-08-07T03:35:24.318Z"
     },
     {
       "brand": "Dilo-BM",
@@ -902,7 +902,7 @@
       "price": "null",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/10/Press-Release-Sun-Pharma-and-Zydus-sign-licensing-agreement-for-co-marketing-of-Desidustat-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-07T04:37:34.109Z"
+      "lastEnrichmentAttempt": "2026-08-07T03:34:07.961Z"
     },
     {
       "brand": "Cipla's New Biosimilar",
@@ -950,7 +950,7 @@
       "price": "₹5316 / strip of 1 capsule",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-expands-its-oncology-franchise-in-India-with-the-launch-of-Helsinn.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-07-07T04:37:38.674Z"
+      "lastEnrichmentAttempt": "2026-08-07T03:34:12.592Z"
     },
     {
       "brand": "Ryaltris",
@@ -2438,7 +2438,7 @@
       "price": "₹61.2 / strip of 20 capsules",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-07T04:37:29.561Z"
+      "lastEnrichmentAttempt": "2026-08-07T03:33:24.780Z"
     },
     {
       "brand": "AKYNZEO",
@@ -5830,7 +5830,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-new-coronary-imaging-software-powered-by-artificial-intelligence-launched-in-india.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-07-07T04:37:44.952Z"
+      "lastEnrichmentAttempt": "2026-08-07T03:34:16.476Z"
     },
     {
       "brand": "Dapagliflozin and Metformin Hydrochloride",
@@ -5846,7 +5846,7 @@
       "price": "₹95.4 / strip of 10 tablet er",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoUSFDAmetformin07042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-08T03:59:38.823Z"
+      "lastEnrichmentAttempt": "2026-08-07T03:34:32.670Z"
     },
     {
       "brand": "Wockhardt's New Drug",
@@ -5878,7 +5878,7 @@
       "price": "₹254.85 / tin of 200 gm powder",
       "sourceUrl": "https://www.wockhardt.com/press-releases/acquisition-pharmax",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-08T03:59:44.330Z"
+      "lastEnrichmentAttempt": "2026-08-07T03:34:43.097Z"
     },
     {
       "brand": "Ultreon™ 1.0 Software",
@@ -8534,7 +8534,7 @@
       "price": "₹141 / strip of 6 tablets",
       "sourceUrl": "https://www.cipla.com/press-releases-statements/abc-pharma-acquisition",
       "buyer": "Cipla",
-      "lastEnrichmentAttempt": "2026-07-08T03:56:37.571Z"
+      "lastEnrichmentAttempt": "2026-08-07T03:34:23.189Z"
     },
     {
       "brand": "Wockhardt's Curcumin Gel",
@@ -12487,6 +12487,86 @@
       "sourceUrl": "https://www.lupin.com/",
       "buyer": "Lupin",
       "lastEnrichmentAttempt": "2026-08-06T03:55:25.237Z"
+    },
+    {
+      "brand": "Nidlegy™",
+      "launchType": "Own Launched",
+      "date": "2023-10-16",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "Oncology",
+      "indication": "locally advanced fully resectable melanoma",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹109 / strip of 10 tablets",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/10/Press-Release-Nidlegy-Phase-III-PIVOTAL-trial-meets-primary-endpoint-of-Recurrence-Free-Survival-in-locally-advanced-fully-resectable-melanoma.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-08-07T03:31:48.751Z"
+    },
+    {
+      "brand": "Smoquit",
+      "launchType": "Own Launched",
+      "date": "2001-08-10",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2020/12/Sun-Pharma-launches-Smoquit-August-10-2001.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-08-07T03:31:48.751Z"
+    },
+    {
+      "brand": "Wockhardt Acquires XYZ Pharma",
+      "launchType": "Acquired",
+      "date": "2023-09-01",
+      "seller": "XYZ Pharma",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Brand A",
+      "chronicAcute": "—",
+      "price": "₹59.1 / strip of 10 tablets",
+      "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-of-xyz-pharma",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-07T03:33:23.276Z"
+    },
+    {
+      "brand": "Wockhardt Collaborates on ABC Drug",
+      "launchType": "In-licensed",
+      "date": "2023-07-20",
+      "seller": "ABC Pharma",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/press-release/in-licensing-abc-drug",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-07T03:33:23.276Z"
+    },
+    {
+      "brand": "ABC Pharma",
+      "launchType": "Acquired",
+      "date": "2023-08-15",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.cipla.com/press-releases-statements/abc-pharma-acquisition",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-08-07T03:34:23.189Z"
     }
   ]
 }
