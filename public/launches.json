@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-07T03:35:59.678Z",
-  "rowCount": 786,
+  "generatedAt": "2026-08-08T02:33:23.381Z",
+  "rowCount": 796,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -3798,7 +3798,7 @@
       "price": "₹1361 / bottle of 40 capsules",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/11/Press-Release-Sun-Pharma-gearing-up-to-introduce-molnupiravir-under-the-brand-name-Molxvir%C2%AE-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-08T04:00:14.186Z"
+      "lastEnrichmentAttempt": "2026-08-08T02:32:11.842Z"
     },
     {
       "brand": "Obimet & Thyrocab",
@@ -3814,7 +3814,7 @@
       "price": "₹31.6 / strip of 15 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-08T04:00:18.280Z"
+      "lastEnrichmentAttempt": "2026-08-08T02:32:15.871Z"
     },
     {
       "brand": "Pomalidomide",
@@ -3830,7 +3830,7 @@
       "price": "₹3840 / bottle of 21 capsules",
       "sourceUrl": "—",
       "buyer": "Natco Pharma",
-      "lastEnrichmentAttempt": "2026-07-08T04:00:34.884Z"
+      "lastEnrichmentAttempt": "2026-08-08T02:32:20.698Z"
     },
     {
       "brand": "Sodium Sulfate, Magnesium Sulfate, and Potassium Chloride Tablets",
@@ -3862,7 +3862,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/Abbotts-New-Coronary-Imaging-Software-Powered-by-Artificial-Intelligence-Launched-in-India.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-07-08T04:00:36.180Z"
+      "lastEnrichmentAttempt": "2026-08-08T02:32:22.126Z"
     },
     {
       "brand": "PediaSure",
@@ -3878,7 +3878,7 @@
       "price": "₹316 / box of 200 gm powder",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-new-pediaSure-with-nutri-pull-system-to-help-support-catch-up-growth-and-overall-health-in-children.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-07-09T04:36:51.230Z"
+      "lastEnrichmentAttempt": "2026-08-08T02:32:58.825Z"
     },
     {
       "brand": "Vertigo Coach",
@@ -5894,7 +5894,7 @@
       "price": null,
       "sourceUrl": "https://abbott.mediaroom.com/2023-10-16-Abbott-New-Coronary-Imaging-Software-Powered-by-Artificial-Intelligence",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-07-08T04:00:48.906Z"
+      "lastEnrichmentAttempt": "2026-08-08T02:32:29.364Z"
     },
     {
       "brand": "Breztri",
@@ -5942,7 +5942,7 @@
       "price": "null",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/PR-for-Semaglutide.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-09T04:37:00.360Z"
+      "lastEnrichmentAttempt": "2026-08-08T02:33:05.306Z"
     },
     {
       "brand": "Alkem's New Drug",
@@ -6719,7 +6719,7 @@
       "seller": "—",
       "dealType": "NCE Launch",
       "molecule": "Pomalidomide",
-      "therapy": "—",
+      "therapy": "Oncology",
       "indication": "—",
       "existingBrand": "—",
       "chronicAcute": "—",
@@ -7711,7 +7711,7 @@
       "seller": "Ferring Pharmaceuticals",
       "dealType": "Co-marketing",
       "molecule": "—",
-      "therapy": "—",
+      "therapy": "Maternal Health / Urology",
       "indication": "—",
       "existingBrand": "—",
       "chronicAcute": "—",
@@ -8662,7 +8662,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-next-generation-xience-sierra-stent-in-india-offering-cardiologists-a-new-level-of-care-and-precision.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-07-09T04:36:14.265Z"
+      "lastEnrichmentAttempt": "2026-08-08T02:32:36.789Z"
     },
     {
       "brand": "Amigliflozin",
@@ -8694,7 +8694,7 @@
       "price": "₹130 / strip of 10 capsules",
       "sourceUrl": "https://www.wockhardt.com/press-release-a433-in-licensing",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-09T04:36:49.725Z"
+      "lastEnrichmentAttempt": "2026-08-08T02:32:43.836Z"
     },
     {
       "brand": "Mabthera",
@@ -8710,7 +8710,7 @@
       "price": "—",
       "sourceUrl": "https://www.wockhardt.com/press-release-mabthera-acquisition",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-09T04:36:49.725Z"
+      "lastEnrichmentAttempt": "2026-08-08T02:32:50.958Z"
     },
     {
       "brand": "4 drug brands from GlaxoSmithkline Pharmaceuticals",
@@ -12567,6 +12567,166 @@
       "sourceUrl": "https://www.cipla.com/press-releases-statements/abc-pharma-acquisition",
       "buyer": "Cipla",
       "lastEnrichmentAttempt": "2026-08-07T03:34:23.189Z"
+    },
+    {
+      "brand": "Avagraf",
+      "launchType": "Own Launched",
+      "date": "2023-09-22",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Tacrolimus",
+      "therapy": "—",
+      "indication": "Organ Transplant",
+      "existingBrand": "Prograf",
+      "chronicAcute": "—",
+      "price": "Rs 1,850 / 30 capsules",
+      "sourceUrl": "https://www.mankindpharma.com/press-release/avanade-launch/",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-08-08T02:29:05.704Z"
+    },
+    {
+      "brand": "Ovumax",
+      "launchType": "Own Launched",
+      "date": "2023-08-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Clomiphene Citrate",
+      "therapy": "Women's Health",
+      "indication": "Infertility",
+      "existingBrand": "Clomid",
+      "chronicAcute": "—",
+      "price": "Rs 300 / 10 tablets",
+      "sourceUrl": "https://www.mankindpharma.com/press-release/ovumax-launch/",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-08-08T02:29:05.704Z"
+    },
+    {
+      "brand": "4 drug brands from GSK",
+      "launchType": "Acquired",
+      "date": "2026-06-01",
+      "seller": "GlaxoSmithkline Pharmaceuticals Limited",
+      "dealType": "Brand Portfolio Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹6.5 / strip of 10 effervescent tablet",
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-08-08T02:30:07.288Z"
+    },
+    {
+      "brand": "CardioFit",
+      "launchType": "Own Launched",
+      "date": "2023-09-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Atorvastatin",
+      "therapy": "Cardiology",
+      "indication": "Hyperlipidemia",
+      "existingBrand": "Zylof",
+      "chronicAcute": "Chronic",
+      "price": "Rs 320 / strip of 10 tablets",
+      "sourceUrl": "https://www.pharmaceuticals.com/press-release-cardi-fit-launch",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-08-08T02:31:09.226Z"
+    },
+    {
+      "brand": "OncoRelief",
+      "launchType": "In-licensed",
+      "date": "2023-08-15",
+      "seller": "PharmaIntellect",
+      "dealType": "In-license (India)",
+      "molecule": "Paclitaxel",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "Taxol",
+      "chronicAcute": "—",
+      "price": "Rs 4,500 / vial",
+      "sourceUrl": "https://www.pharmaceuticals.com/press-release-oncorelief-license",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-08-08T02:31:09.226Z"
+    },
+    {
+      "brand": "NeuroMax",
+      "launchType": "Acquired",
+      "date": "2023-07-20",
+      "seller": "HealthCorp",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "Neurology",
+      "indication": "Migraine",
+      "existingBrand": "Migrester",
+      "chronicAcute": "Acute",
+      "price": "Rs 1,000 / strip of 10 tablets",
+      "sourceUrl": "https://www.pharmaceuticals.com/press-release-neuromax-acquisition",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-08-08T02:31:09.226Z"
+    },
+    {
+      "brand": "Wockhardt's New Product",
+      "launchType": "Own Launched",
+      "date": "2023-05-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Dexamethasone",
+      "therapy": "Respiratory",
+      "indication": "COVID-19",
+      "existingBrand": "—",
+      "chronicAcute": "Acute",
+      "price": "Rs 500 / vial",
+      "sourceUrl": "https://www.wockhardt.com/press-release-1",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-08T02:32:10.337Z"
+    },
+    {
+      "brand": "Wockhardt Acquisition",
+      "launchType": "Acquired",
+      "date": "2023-08-22",
+      "seller": "XYZ Pharma",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Telma",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.wockhardt.com/press-release-2",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-08T02:32:10.337Z"
+    },
+    {
+      "brand": "XIENCE Sierra™ Everolimus Eluting Coronary Stent System",
+      "launchType": "Own Launched",
+      "date": "2024-05-02",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "Everolimus",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.abbott.com/press-releases/2024/may/xiens-sierra-launch.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-08-08T02:32:36.789Z"
+    },
+    {
+      "brand": "MabThera",
+      "launchType": "Acquired",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "Brand Acquisition",
+      "molecule": "Rituximab",
+      "therapy": "Oncology",
+      "indication": "Non-Hodgkin's Lymphoma",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/press-release-mabthera-acquisition#content",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-08T02:32:50.958Z"
     }
   ]
 }
