@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-08T02:33:23.381Z",
-  "rowCount": 796,
+  "generatedAt": "2026-08-09T02:41:55.103Z",
+  "rowCount": 805,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -103,7 +103,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/PR-for-Semaglutide.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-10T04:38:12.959Z"
+      "lastEnrichmentAttempt": "2026-08-09T02:41:18.713Z"
     },
     {
       "brand": "Semaglutide Injection",
@@ -982,7 +982,7 @@
       "price": "₹232 / bottle of 100 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-09T04:37:29.822Z"
+      "lastEnrichmentAttempt": "2026-08-09T02:39:44.644Z"
     },
     {
       "brand": "Dilo-BM, Dilo-DX, Stelbid, Vitneurin",
@@ -3894,7 +3894,7 @@
       "price": "₹196 / bottle of 30 ml drop",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/Abbott-Helps-People-with-Vertigo-Take-Control-of-Their-Health-with-the-Launch-of-an-Easy-to-Use-Vertigo-Coach-App-in-India.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-07-09T04:37:39.085Z"
+      "lastEnrichmentAttempt": "2026-08-09T02:39:52.633Z"
     },
     {
       "brand": "Dextromethorphan Polistirex Extended-Release Oral Suspension, 30 mg/5 mL (OTC)",
@@ -3910,7 +3910,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/2LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-09T04:37:45.675Z"
+      "lastEnrichmentAttempt": "2026-08-09T02:40:01.697Z"
     },
     {
       "brand": "ADQUEY™ (difamilast)",
@@ -3926,7 +3926,7 @@
       "price": "null",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/Adquey-(Difamilast)_NDA%20Approval_PressRelease_13-Feb-26.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-09T04:37:58.817Z"
+      "lastEnrichmentAttempt": "2026-08-09T02:40:42.586Z"
     },
     {
       "brand": "Ryaltris",
@@ -5974,7 +5974,7 @@
       "price": null,
       "sourceUrl": "https://www.alkemlabs.com/press-release/alkem-acquisition-company-b",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-07-09T04:37:05.990Z"
+      "lastEnrichmentAttempt": "2026-08-09T02:39:14.011Z"
     },
     {
       "brand": "GSK Brand Acquisition",
@@ -5990,7 +5990,7 @@
       "price": "₹3922 / bottle of 20 (unknown strength)",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-09T04:37:17.886Z"
+      "lastEnrichmentAttempt": "2026-08-09T02:39:24.707Z"
     },
     {
       "brand": "Helsinn",
@@ -6006,7 +6006,7 @@
       "price": "₹146 / strip of 10 tablets",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-expands-its-oncology-franchise-in-India-with-the-launch-of-Helsinn.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-07-09T04:37:24.964Z"
+      "lastEnrichmentAttempt": "2026-08-09T02:39:32.797Z"
     },
     {
       "brand": "Wockhardt's Antibiotic",
@@ -6054,7 +6054,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-xyz",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-09T04:37:28.567Z"
+      "lastEnrichmentAttempt": "2026-08-09T02:39:36.386Z"
     },
     {
       "brand": "ADQUEY",
@@ -8726,7 +8726,7 @@
       "price": "₹6.1 / strip of 10 effervescent tablet",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-10T04:36:07.942Z"
+      "lastEnrichmentAttempt": "2026-08-09T02:41:09.420Z"
     },
     {
       "brand": "DrugX",
@@ -12727,6 +12727,150 @@
       "sourceUrl": "https://www.wockhardt.com/press-release-mabthera-acquisition#content",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-08-08T02:32:50.958Z"
+    },
+    {
+      "brand": "Semaglutide",
+      "launchType": "Own Launched",
+      "date": "2026-07-24",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Semaglutide",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "\u001a3523 / strip of 10 tablets",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/07/PR_Sun-Pharma-launches-generic-semaglutide-in-South-Africa.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-08-09T02:36:12.543Z"
+    },
+    {
+      "brand": "Cipla's New Drug",
+      "launchType": "Own Launched",
+      "date": "2023-08-10",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Darunavir",
+      "therapy": "Anti-Viral",
+      "indication": "HIV",
+      "existingBrand": "Prezista",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,500 / pack of 30 tablets",
+      "sourceUrl": "https://www.cipla.com/press-release/new-drug-launch",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-08-09T02:36:27.616Z"
+    },
+    {
+      "brand": "Acquisition of ABC Pharma",
+      "launchType": "Acquired",
+      "date": "2023-07-15",
+      "seller": "ABC Pharma",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹36.3 / strip of 10 tablets",
+      "sourceUrl": "https://www.cipla.com/press-release/acquisition-abc-pharma",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-08-09T02:36:27.616Z"
+    },
+    {
+      "brand": "XYZ Biosimilar",
+      "launchType": "Own Launched",
+      "date": "2023-05-20",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "Rituximab",
+      "therapy": "Oncology",
+      "indication": "Non-Hodgkin's Lymphoma",
+      "existingBrand": "Rituxan",
+      "chronicAcute": "Chronic",
+      "price": "Rs 5,000 / injection",
+      "sourceUrl": "https://www.cipla.com/press-release/biosimilar-launch",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-08-09T02:36:27.616Z"
+    },
+    {
+      "brand": "Alkem's New Drug",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "Oncology",
+      "indication": "Lung Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 2,500 / vial",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/new-drug-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-08-09T02:36:37.068Z"
+    },
+    {
+      "brand": "MSD (Merck & Co.)",
+      "launchType": "In-licensed",
+      "date": "2026-07-23",
+      "seller": "—",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹97.9 / strip of 10 tablets",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseBrazilMSD24072026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-08-09T02:38:55.933Z"
+    },
+    {
+      "brand": "Wockhardt's New Antidiabetic Drug",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Dapagliflozin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Glucophage",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,200 / strip",
+      "sourceUrl": "https://www.wockhardt.com/press-release/new-antidiabetic-drug",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-09T02:39:12.507Z"
+    },
+    {
+      "brand": "Acquisition of Biotech Company",
+      "launchType": "Acquired",
+      "date": "2023-09-15",
+      "seller": "Biotech Innovations",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-biotech-company",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-09T02:39:12.507Z"
+    },
+    {
+      "brand": "New Gastroenterology Product",
+      "launchType": "Own Launched",
+      "date": "2023-08-25",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Esomeprazole",
+      "therapy": "Gastroenterology",
+      "indication": "Acid Reflux",
+      "existingBrand": "Nexium",
+      "chronicAcute": "Chronic",
+      "price": "Rs 800 / strip",
+      "sourceUrl": "https://www.wockhardt.com/press-release/new-gastroenterology-product",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-09T02:39:12.507Z"
     }
   ]
 }
