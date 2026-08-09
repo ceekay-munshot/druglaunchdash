@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-08T03:10:54.279Z",
-  "rowCount": 202,
+  "generatedAt": "2026-08-09T03:18:01.455Z",
+  "rowCount": 204,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -3569,6 +3569,44 @@
       "_title": "backfill:Smoquit",
       "_provider": "gemini",
       "_harvestedAt": "2026-08-07T04:12:30.477Z"
+    },
+    {
+      "brand": "Semaglutide",
+      "launchType": "Own Launched",
+      "date": "2026-07-24",
+      "seller": "—",
+      "dealType": "—",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "Semaglutide",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "buyer": "Sun Pharma",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/07/PR_Sun-Pharma-launches-generic-semaglutide-in-South-Africa.pdf",
+      "_title": "backfill:Semaglutide",
+      "_provider": "groq",
+      "_harvestedAt": "2026-08-09T03:17:44.138Z"
+    },
+    {
+      "brand": "MSD (Merck & Co.)",
+      "launchType": "In-licensed",
+      "date": "2026-07-23",
+      "seller": "MSD (Merck & Co.)",
+      "dealType": "Voluntary License Agreement",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "alimatravir",
+      "therapy": "Anti-Retroviral",
+      "indication": "HIV prevention",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "buyer": "Aurobindo",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseBrazilMSD24072026.pdf",
+      "_title": "backfill:MSD (Merck & Co.)",
+      "_provider": "mistral",
+      "_harvestedAt": "2026-08-09T03:17:54.718Z"
     }
   ],
   "processedUrls": [
@@ -3867,6 +3905,11 @@
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=fd8b05ff-1914-45fc-ba31-9278c00292bb.pdf",
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=42b06390-4ed1-4e79-81a3-8274d665c73f.pdf",
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=aba1e242-a7a7-48ea-bf1a-5c3984361d20.pdf",
-    "https://www.abbott.com/press-releases/2024/may/xiens-sierra-launch.html"
+    "https://www.abbott.com/press-releases/2024/may/xiens-sierra-launch.html",
+    "https://sunpharma.com/wp-content/uploads/2026/07/PR_Sun-Pharma-launches-generic-semaglutide-in-South-Africa.pdf",
+    "https://www.cipla.com/press-release/acquisition-abc-pharma",
+    "https://www.alkemlabs.com/press-release/new-drug-launch",
+    "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseBrazilMSD24072026.pdf",
+    "https://www.wockhardt.com/press-release/acquisition-biotech-company"
   ]
 }
