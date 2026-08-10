@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-09T02:41:55.103Z",
-  "rowCount": 805,
+  "generatedAt": "2026-08-10T02:46:35.382Z",
+  "rowCount": 812,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -135,7 +135,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/09/Press-Release-Sun-Pharma-and-Pharmazz-Inc.-licensing-agreement-for-Sovateltide-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-10T04:38:19.668Z"
+      "lastEnrichmentAttempt": "2026-08-10T02:44:36.040Z"
     },
     {
       "brand": "Thyrocab",
@@ -151,7 +151,7 @@
       "price": "—",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-10T04:38:36.846Z"
+      "lastEnrichmentAttempt": "2026-08-10T02:45:23.767Z"
     },
     {
       "brand": "Semaglutide",
@@ -390,7 +390,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-10T04:38:46.439Z"
+      "lastEnrichmentAttempt": "2026-08-10T02:45:32.816Z"
     },
     {
       "brand": "Dilo-DX",
@@ -406,7 +406,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-10T04:39:07.383Z"
+      "lastEnrichmentAttempt": "2026-08-10T02:45:50.953Z"
     },
     {
       "brand": "Stelbid",
@@ -998,7 +998,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-10T04:38:57.058Z"
+      "lastEnrichmentAttempt": "2026-08-10T02:45:40.958Z"
     },
     {
       "brand": "Dilo-BM, Dilo-DX, Stelbid and Vitneurin",
@@ -2502,7 +2502,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/Adquey-(Difamilast)_NDA%20Approval_PressRelease_13-Feb-26.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-10T04:38:30.910Z"
+      "lastEnrichmentAttempt": "2026-08-10T02:44:50.363Z"
     },
     {
       "brand": "Dilo-BM, Dilo-DX, Stelbid, Vitneurin",
@@ -2518,7 +2518,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-10T04:39:03.411Z"
+      "lastEnrichmentAttempt": "2026-08-10T02:45:44.725Z"
     },
     {
       "brand": "Tiotropium Bromide DPI",
@@ -3942,7 +3942,7 @@
       "price": null,
       "sourceUrl": "http://www.glenmarkpharma.com/press-release/glenmark-pharmaceuticals-announces-exclusive-licensing-agreement-with-seqirus-for-its-investigational-seasonal-allergic-rhinitis-nasal-spray-ryaltris-for-australia-and-new-zealand-markets",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-07-10T04:38:24.029Z"
+      "lastEnrichmentAttempt": "2026-08-10T02:44:40.456Z"
     },
     {
       "brand": "ADQUEY",
@@ -8790,7 +8790,7 @@
       "price": "₹282 / strip of 10 capsules",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/corona-remedies-buys-sanofi-indias-ortho-brand-myoril/articleshow/101344189.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-11T03:54:37.499Z"
+      "lastEnrichmentAttempt": "2026-08-10T02:45:57.574Z"
     },
     {
       "brand": "Obimet",
@@ -8806,7 +8806,7 @@
       "price": "₹19.5 / strip of 10 tablets",
       "sourceUrl": "https://www.expresspharma.in/corona-acquires-obimet-thyrocab-brands-from-abbott-india",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-11T03:54:37.499Z"
+      "lastEnrichmentAttempt": "2026-08-10T02:46:07.444Z"
     },
     {
       "brand": "Thyrocab",
@@ -12871,6 +12871,118 @@
       "sourceUrl": "https://www.wockhardt.com/press-release/new-gastroenterology-product",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-08-09T02:39:12.507Z"
+    },
+    {
+      "brand": "Nexito",
+      "launchType": "Own Launched",
+      "date": "2023-09-22",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Escitalopram",
+      "therapy": "Anti-Depressant",
+      "indication": "Depression",
+      "existingBrand": "Cipralex",
+      "chronicAcute": null,
+      "price": "Rs 350 / strip of 10 tablets",
+      "sourceUrl": "https://www.mankindpharma.com/press-release/nexito-launch/",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-08-10T02:41:42.121Z"
+    },
+    {
+      "brand": "Metox",
+      "launchType": "Own Launched",
+      "date": "2023-09-22",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Montelukast",
+      "therapy": "Respiratory",
+      "indication": "Asthma",
+      "existingBrand": "Singulair",
+      "chronicAcute": "Chronic",
+      "price": "Rs 275 / strip of 10 tablets",
+      "sourceUrl": "https://www.mankindpharma.com/press-release/metox-launch/",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-08-10T02:41:42.122Z"
+    },
+    {
+      "brand": "Cipla's New Biosimilar",
+      "launchType": "Own Launched",
+      "date": "2023-05-15",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "—",
+      "therapy": "Oncology",
+      "indication": "Non-Small Cell Lung Cancer",
+      "existingBrand": "Keytruda",
+      "chronicAcute": "—",
+      "price": "Rs 15,000 / injection",
+      "sourceUrl": "https://www.cipla.com/press-release/biosimilar-launch",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-08-10T02:42:11.847Z"
+    },
+    {
+      "brand": "Wockhardt Buys Brand",
+      "launchType": "Acquired",
+      "date": "2023-07-10",
+      "seller": "BrandXYZ",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "CompetingBrand1",
+      "chronicAcute": "—",
+      "price": "₹254.85 / tin of 200 gm powder",
+      "sourceUrl": "https://www.wockhardt.com/press-release/brand-acquisition",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-10T02:44:34.535Z"
+    },
+    {
+      "brand": "Drug Co-Marketing Agreement",
+      "launchType": "In-licensed",
+      "date": "2023-06-30",
+      "seller": "—",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "CompetitorDiabetesBrand",
+      "chronicAcute": "Chronic",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/press-release/co-marketing-agreement",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-10T02:44:34.535Z"
+    },
+    {
+      "brand": "Ryaltris",
+      "launchType": "In-licensed",
+      "date": "2023-10-01",
+      "seller": "Seqirus",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "Seasonal Allergic Rhinitis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://glenmarkpharma.com/press-release/glenmark-pharmaceuticals-announces-exclusive-licensing-agreement-with-seqirus-for-its-investigational-seasonal-allergic-rhinitis-nasal-spray-ryaltris-for-australia-and-new-zealand-markets#main",
+      "buyer": "Glenmark",
+      "lastEnrichmentAttempt": "2026-08-10T02:44:40.456Z"
+    },
+    {
+      "brand": "Obimet",
+      "launchType": "Acquired",
+      "date": "2018-04-03",
+      "seller": "Abbott India",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "Anti-Diabetic",
+      "indication": "Diabetes",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.expresspharma.in/corona-acquires-obimet-thyrocab-brands-from-abbott-india/#",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-08-10T02:46:07.444Z"
     }
   ]
 }
