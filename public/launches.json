@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-10T02:46:35.382Z",
-  "rowCount": 812,
+  "generatedAt": "2026-08-11T02:38:35.066Z",
+  "rowCount": 816,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -422,7 +422,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-11T03:55:46.924Z"
+      "lastEnrichmentAttempt": "2026-08-11T02:37:53.915Z"
     },
     {
       "brand": "Vitneurin",
@@ -3974,7 +3974,7 @@
       "price": "null",
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/amp_articleshow/100775508.cms",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-07-11T03:55:55.049Z"
+      "lastEnrichmentAttempt": "2026-08-11T02:37:57.877Z"
     },
     {
       "brand": "Smartphone Compatible Insertable Cardiac Monitor",
@@ -3990,7 +3990,7 @@
       "price": "null",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-first-smartone-compatible-insertable-cardiac-monitor-to-detect-arrhythmias.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-07-11T03:56:11.574Z"
+      "lastEnrichmentAttempt": "2026-08-11T02:38:09.959Z"
     },
     {
       "brand": "Tazemetostat",
@@ -6102,7 +6102,7 @@
       "price": "—",
       "sourceUrl": "http://www.abbott.com/press-release/insertable-cardiac-monitor-launch.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-07-11T03:56:20.189Z"
+      "lastEnrichmentAttempt": "2026-08-11T02:38:17.941Z"
     },
     {
       "brand": "Azilsartan Medoxomil Tablets",
@@ -8822,7 +8822,7 @@
       "price": "₹213 / bottle of 100 tablets",
       "sourceUrl": "https://www.expresspharma.in/corona-acquires-obimet-thyrocab-brands-from-abbott-india",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-11T03:54:37.499Z"
+      "lastEnrichmentAttempt": "2026-08-11T02:37:12.726Z"
     },
     {
       "brand": "AKYNZEO",
@@ -8838,7 +8838,7 @@
       "price": "₹4961 / strip of 1 capsule",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-expands-its-oncology-franchise-in-India-with-the-launch-of-Helsinn.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-07-11T03:54:55.672Z"
+      "lastEnrichmentAttempt": "2026-08-11T02:37:16.608Z"
     },
     {
       "brand": "Ensure Strength Pro",
@@ -8854,7 +8854,7 @@
       "price": "₹639 / box of 400 gm powder",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-ensure-strength-pro-in-india-to-support-healthy-ageing.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-07-11T03:55:27.657Z"
+      "lastEnrichmentAttempt": "2026-08-11T02:37:21.941Z"
     },
     {
       "brand": "Extensior",
@@ -8886,7 +8886,7 @@
       "price": null,
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-aveir-dr-the-worlds-first-dual-chamber-leadless-pacemaker-in-india.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-07-11T03:55:27.657Z"
+      "lastEnrichmentAttempt": "2026-08-11T02:37:29.053Z"
     },
     {
       "brand": "TactiFlex Sensor Enabled Ablation Catheter",
@@ -8902,7 +8902,7 @@
       "price": null,
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-introduces-tactiflex-sensor-enabled-ablation-catheter-in-india-for-treatment-of-abnormal-heart-rhythms.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-07-11T03:55:27.657Z"
+      "lastEnrichmentAttempt": "2026-08-11T02:37:37.643Z"
     },
     {
       "brand": "AVEIR VR",
@@ -8918,7 +8918,7 @@
       "price": "₹190 / box of 1 bottle (100 ml)",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-aveir-vr-leadless-pacemaker-system-in-india-to-treat-patients-with-slow-heart-rhythms.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-07-11T03:55:27.657Z"
+      "lastEnrichmentAttempt": "2026-08-11T02:37:44.792Z"
     },
     {
       "brand": "Wockhardt Inhaler",
@@ -12983,6 +12983,70 @@
       "sourceUrl": "https://www.expresspharma.in/corona-acquires-obimet-thyrocab-brands-from-abbott-india/#",
       "buyer": "Corona Remedies",
       "lastEnrichmentAttempt": "2026-08-10T02:46:07.444Z"
+    },
+    {
+      "brand": "Cipla",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Tafamidis",
+      "therapy": "Cardiology",
+      "indication": "cardiomyopathy",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,200 / strip",
+      "sourceUrl": "https://www.cipla.com/press-release/tafamidis-launch",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-08-11T02:35:50.930Z"
+    },
+    {
+      "brand": "Cipla",
+      "launchType": "Acquired",
+      "date": "2023-08-01",
+      "seller": "Intas Pharmaceuticals",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Telefact",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.cipla.com/press-release/brand-acquisition-telefact",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-08-11T02:35:50.931Z"
+    },
+    {
+      "brand": "Adcock Ingram Holdings Proprietary Limited",
+      "launchType": "Acquired",
+      "date": "2026-07-08",
+      "seller": "Adcock Ingram Holdings Proprietary Limited",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.natcopharma.co.in/insights/news-and-announcements",
+      "buyer": "Natco Pharma",
+      "lastEnrichmentAttempt": "2026-08-11T02:36:17.873Z"
+    },
+    {
+      "brand": "Lupiz",
+      "launchType": "Own Launched",
+      "date": "2023-07-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "Oncology",
+      "indication": "Non-Small Cell Lung Cancer",
+      "existingBrand": "Erlotinib (Tarceva)",
+      "chronicAcute": "Chronic",
+      "price": "Rs 12,000 / pack",
+      "sourceUrl": "https://www.wockhardt.com/press-release/lupiz-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-11T02:37:11.220Z"
     }
   ]
 }
