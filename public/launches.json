@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-11T02:38:35.066Z",
-  "rowCount": 816,
+  "generatedAt": "2026-08-12T03:10:29.866Z",
+  "rowCount": 822,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -438,7 +438,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-12T04:10:55.196Z"
+      "lastEnrichmentAttempt": "2026-08-12T03:09:47.444Z"
     },
     {
       "brand": "Noveltreat and Sematrinity",
@@ -1014,7 +1014,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-11T03:56:30.663Z"
+      "lastEnrichmentAttempt": "2026-08-12T03:08:34.994Z"
     },
     {
       "brand": "Pomalidomide Capsules",
@@ -1078,7 +1078,7 @@
       "price": "₹304 / packet of 120 mdi inhaler",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-enters-into-an-exclusive-licensing.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-07-12T04:10:51.572Z"
+      "lastEnrichmentAttempt": "2026-08-12T03:09:37.834Z"
     },
     {
       "brand": "Glycerol Phenylbutyrate Oral Liquid",
@@ -2550,7 +2550,7 @@
       "price": "₹31.2 / strip of 10 tablets",
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/amp_articleshow/100775508.cms",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-07-12T04:11:08.293Z"
+      "lastEnrichmentAttempt": "2026-08-12T03:09:51.234Z"
     },
     {
       "brand": "Cetu",
@@ -4038,7 +4038,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-11T03:56:41.964Z"
+      "lastEnrichmentAttempt": "2026-08-12T03:08:43.401Z"
     },
     {
       "brand": "Nourkrin®",
@@ -6134,7 +6134,7 @@
       "price": "—",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-collaborates-with-ern-for-luforbec-beclometasone-formoterol-p-mdi-launch-in-spain",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-07-11T03:57:00.235Z"
+      "lastEnrichmentAttempt": "2026-08-12T03:08:49.895Z"
     },
     {
       "brand": "Ranluspec (ranibizumab) Injection",
@@ -6150,7 +6150,7 @@
       "price": "—",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-approval-from-u-s-fda-for-ranluspec-tm-ranibizumab-injection",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-07-11T03:57:12.469Z"
+      "lastEnrichmentAttempt": "2026-08-12T03:09:03.231Z"
     },
     {
       "brand": "Eribulin Mesylate Injection",
@@ -6246,7 +6246,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-of-xyz-pharmaceuticals",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-11T03:57:26.006Z"
+      "lastEnrichmentAttempt": "2026-08-12T03:09:22.314Z"
     },
     {
       "brand": "Collaboration with ABC Corp",
@@ -8982,7 +8982,7 @@
       "price": "₹197 / box of 1 device",
       "sourceUrl": "https://www.mankindpharma.com/press-release/device-e-launch/",
       "buyer": "Mankind Pharma",
-      "lastEnrichmentAttempt": "2026-07-12T04:07:39.494Z"
+      "lastEnrichmentAttempt": "2026-08-12T03:09:28.793Z"
     },
     {
       "brand": "Darunavir",
@@ -9062,7 +9062,7 @@
       "price": "—",
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/articleshow/100775508.cms",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-07-12T04:11:08.293Z"
+      "lastEnrichmentAttempt": "2026-08-12T03:10:03.198Z"
     },
     {
       "brand": "Xyzomab",
@@ -13047,6 +13047,102 @@
       "sourceUrl": "https://www.wockhardt.com/press-release/lupiz-launch",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-08-11T02:37:11.220Z"
+    },
+    {
+      "brand": "Dexamethasone",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Dexamethasone",
+      "therapy": "Immunology",
+      "indication": "COVID-19",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 32 / strip",
+      "sourceUrl": "https://www.example-pharmapressrelease.com/dexamethasone-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-08-12T03:05:57.135Z"
+    },
+    {
+      "brand": "ZyCoV-D",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "ZyCoV-D",
+      "therapy": "Immunology",
+      "indication": "COVID-19",
+      "existingBrand": "—",
+      "chronicAcute": "Acute",
+      "price": "Rs 300 / dose",
+      "sourceUrl": "https://www.example-pharmapressrelease.com/zycov-d-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-08-12T03:05:57.135Z"
+    },
+    {
+      "brand": "Metformin XR",
+      "launchType": "Own Launched",
+      "date": "2023-08-20",
+      "seller": "—",
+      "dealType": "Line Extension",
+      "molecule": "Metformin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Glycomet",
+      "chronicAcute": "Chronic",
+      "price": "Rs 150 / strip",
+      "sourceUrl": "https://www.example-pharmapressrelease.com/metformin-xr-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-08-12T03:05:57.135Z"
+    },
+    {
+      "brand": "Teraprofen",
+      "launchType": "Acquired",
+      "date": "2023-07-05",
+      "seller": "MediCorp",
+      "dealType": "Brand Acquisition",
+      "molecule": "Teraprofen",
+      "therapy": "Pain Management",
+      "indication": "Chronic Pain",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 95 / vial",
+      "sourceUrl": "https://www.example-pharmapressrelease.com/teraprofen-acquisition",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-08-12T03:05:57.135Z"
+    },
+    {
+      "brand": "Sodium Zirconium Cyclosilicate",
+      "launchType": "Own Launched",
+      "date": "2026-08-10",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Sodium Zirconium Cyclosilicate",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹619 / sachet of 5 gm powder",
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-announces-the-approval-of-sodium-zirconium-cyclosilicate-for-oral-suspension-in-the-united-states",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-08-12T03:06:58.194Z"
+    },
+    {
+      "brand": "Diazepam Injection",
+      "launchType": "Own Launched",
+      "date": "2026-07-31",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Diazepam",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹10.4 / ampoule of 2 ml injection",
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-announces-the-approval-of-diazepam-injection-usp-in-the-united-states",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-08-12T03:06:58.194Z"
     }
   ]
 }
