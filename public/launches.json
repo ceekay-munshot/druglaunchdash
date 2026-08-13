@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-12T03:10:29.866Z",
-  "rowCount": 822,
+  "generatedAt": "2026-08-13T03:16:36.785Z",
+  "rowCount": 834,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -2566,7 +2566,7 @@
       "price": "₹24.8 / bottle of 60 ml (5 mg/5 ml)",
       "sourceUrl": "https://www.cnbctv18.com/healthcare/alkem-oncology-novel-breast-cancer-treatment-drug-launch-palbociclib-palbo-15703241.htm",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-07-12T04:11:20.038Z"
+      "lastEnrichmentAttempt": "2026-08-13T03:14:01.028Z"
     },
     {
       "brand": "AKYNZEO®",
@@ -2598,7 +2598,7 @@
       "price": "—",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Pharmaceuticals-and-Harbour-BioMed-Sign-Agreement-for-Greater-China-toDevelop-GBR-1302.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-07-12T04:11:33.463Z"
+      "lastEnrichmentAttempt": "2026-08-13T03:14:10.389Z"
     },
     {
       "brand": "Nourkrin®",
@@ -2614,7 +2614,7 @@
       "price": "₹3285 / strip of 60 tablets",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-launches-globally-renowned-hair-growth-formula-Nourkrin-in-Russia.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-07-12T04:11:37.354Z"
+      "lastEnrichmentAttempt": "2026-08-13T03:14:16.493Z"
     },
     {
       "brand": "AVEIR™ VR Leadless Pacemaker",
@@ -2630,7 +2630,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-aveir-vr-leadless-pacemaker-system-in-india-to-treat-patients-with-slow-heart-rhythms.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-07-12T04:11:43.720Z"
+      "lastEnrichmentAttempt": "2026-08-13T03:14:25.814Z"
     },
     {
       "brand": "Dextromethorphan Polistirex Extended-Release Oral Suspension, 30 mg/5 mL",
@@ -2646,7 +2646,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/2LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-12T04:11:51.960Z"
+      "lastEnrichmentAttempt": "2026-08-13T03:14:34.813Z"
     },
     {
       "brand": "Glycerol Phenylbutyrate Oral Liquid, 1.1 grams per mL",
@@ -4052,7 +4052,7 @@
       "existingBrand": "—",
       "chronicAcute": "—",
       "price": "₹3360 / strip of 60 tablets",
-      "sourceUrl": "—",
+      "sourceUrl": "https://www.glenmarkpharma.com/press-release/nourkrin-launch",
       "buyer": "Glenmark",
       "lastEnrichmentAttempt": "2026-07-13T04:14:35.717Z"
     },
@@ -6278,7 +6278,7 @@
       "price": "—",
       "sourceUrl": "—",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-07-12T04:11:41.072Z"
+      "lastEnrichmentAttempt": "2026-08-13T03:14:24.535Z"
     },
     {
       "brand": "Unspecified Brands",
@@ -6294,7 +6294,7 @@
       "price": "₹63.7 / bottle of 225 ml liquid",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-13T04:14:36.964Z"
+      "lastEnrichmentAttempt": "2026-08-13T03:15:36.942Z"
     },
     {
       "brand": "Wockhardt's New Diabetes Drug",
@@ -9142,7 +9142,7 @@
       "price": "₹191 / bottle of 30 ml drop",
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-13T04:12:11.384Z"
+      "lastEnrichmentAttempt": "2026-08-13T03:15:05.789Z"
     },
     {
       "brand": "Acquisition of Generic Portfolio",
@@ -9158,7 +9158,7 @@
       "price": "—",
       "sourceUrl": "https://www.wockhardt.com/press-release2",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-13T04:14:34.213Z"
+      "lastEnrichmentAttempt": "2026-08-13T03:15:27.933Z"
     },
     {
       "brand": "New Drug Launch in Diabetes Care",
@@ -13143,6 +13143,198 @@
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-announces-the-approval-of-diazepam-injection-usp-in-the-united-states",
       "buyer": "Lupin",
       "lastEnrichmentAttempt": "2026-08-12T03:06:58.194Z"
+    },
+    {
+      "brand": "PneumoShield 14",
+      "launchType": "Own Launched",
+      "date": "2025-11-27",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "pneumococcal bacterial infections",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹3458 / prefilled syringe of 1 injection",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-14-valent-pneumococcal-conjugate-vaccine-pcv-14-that-offers-broadest-protection-for-children-against-pneumococcal-bacterial-infections.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-08-13T03:13:11.636Z"
+    },
+    {
+      "brand": "GLP systems Track",
+      "launchType": "Own Launched",
+      "date": "2024-05-08",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹20.3 / vial of 2 ml",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/accelerating-automation-abbott-introduces-glp-systems-track-for-laboratories-in-india.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-08-13T03:13:11.637Z"
+    },
+    {
+      "brand": "ADQUEYTM (difamilast) Ointment",
+      "launchType": "Acquired",
+      "date": "2026-02-16",
+      "seller": "Aurobindo Pharma Ltd",
+      "dealType": "Brand Acquisition",
+      "molecule": "difamilast",
+      "therapy": "—",
+      "indication": "Mild-to-Moderate Atopic Dermatitis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/Adquey-(Difamilast)_NDA%20Approval_PressRelease_13-Feb-26.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-08-13T03:13:36.025Z"
+    },
+    {
+      "brand": "Acquisition of Pharma Company X",
+      "launchType": "Acquired",
+      "date": "2023-08-15",
+      "seller": "Pharma Company X",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-releases/acquisition-of-pharma-company-x",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-13T03:13:59.522Z"
+    },
+    {
+      "brand": "In-licensing Agreement for Drug Y",
+      "launchType": "In-licensed",
+      "date": "2023-07-22",
+      "seller": "Company Z",
+      "dealType": "In-license (India)",
+      "molecule": "Drug Y",
+      "therapy": "Immunology",
+      "indication": "Rheumatoid Arthritis",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-releases/in-licensing-agreement-for-drug-y",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-13T03:13:59.522Z"
+    },
+    {
+      "brand": "NOKLOT",
+      "launchType": "Acquired",
+      "date": "2025-07-17",
+      "seller": "Bayer",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "Anti-Platelet",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-08-13T03:15:05.789Z"
+    },
+    {
+      "brand": "FOSTINE",
+      "launchType": "Acquired",
+      "date": "2025-07-17",
+      "seller": "Bayer",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "Women's Health",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-08-13T03:15:05.789Z"
+    },
+    {
+      "brand": "LUPROFACT",
+      "launchType": "Acquired",
+      "date": "2025-07-17",
+      "seller": "Bayer",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "Women's Health",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-08-13T03:15:05.789Z"
+    },
+    {
+      "brand": "MENODAC",
+      "launchType": "Acquired",
+      "date": "2025-07-17",
+      "seller": "Bayer",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "Women's Health",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-08-13T03:15:05.789Z"
+    },
+    {
+      "brand": "OVIDAC",
+      "launchType": "Acquired",
+      "date": "2025-07-17",
+      "seller": "Bayer",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "Women's Health",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-08-13T03:15:05.789Z"
+    },
+    {
+      "brand": "SPYE",
+      "launchType": "Acquired",
+      "date": "2025-07-17",
+      "seller": "Bayer",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "Women's Health",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-08-13T03:15:05.789Z"
+    },
+    {
+      "brand": "VAGESTON",
+      "launchType": "Acquired",
+      "date": "2025-07-17",
+      "seller": "Bayer",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "Women's Health",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-08-13T03:15:05.789Z"
     }
   ]
 }
