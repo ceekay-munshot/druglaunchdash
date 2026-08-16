@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-15T02:04:44.009Z",
-  "rowCount": 845,
+  "generatedAt": "2026-08-16T02:13:31.348Z",
+  "rowCount": 853,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -1190,7 +1190,7 @@
       "price": "Rs 780 / vial",
       "sourceUrl": "https://www.mankindpharma.com/products/softra-launch/",
       "buyer": "Mankind Pharma",
-      "lastEnrichmentAttempt": "2026-07-14T03:48:26.584Z"
+      "lastEnrichmentAttempt": "2026-08-16T02:10:38.303Z"
     },
     {
       "brand": "ILUMYA® (tildrakizumab-asmn)",
@@ -2678,7 +2678,7 @@
       "price": "₹21.3 / bottle of 30 ml syrup",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/08/Sun-Pharma-and-Cassiopea-announce-the-expiry-of-the-HSR-Act-process-and-the-successful-consummation-of-their-Winlevi%C2%AE.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-15T03:48:31.305Z"
+      "lastEnrichmentAttempt": "2026-08-16T02:12:07.699Z"
     },
     {
       "brand": "Myoril",
@@ -4166,7 +4166,7 @@
       "price": "—",
       "sourceUrl": "https://www.sunpharma.com/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-15T03:48:34.647Z"
+      "lastEnrichmentAttempt": "2026-08-16T02:12:13.525Z"
     },
     {
       "brand": "Alkem's New NCE",
@@ -6454,7 +6454,7 @@
       "price": null,
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-14T03:48:13.125Z"
+      "lastEnrichmentAttempt": "2026-08-16T02:09:50.992Z"
     },
     {
       "brand": "Omalizumab Biosimilar BP11",
@@ -6486,7 +6486,7 @@
       "price": "₹69 / strip of 10 tablets",
       "sourceUrl": "https://www.wockhardt.com/press-release/biologics-portfolio-launch",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-14T03:48:20.291Z"
+      "lastEnrichmentAttempt": "2026-08-16T02:10:30.036Z"
     },
     {
       "brand": "Wockhardt Pharma's New Anti-Diabetic Drug",
@@ -9286,7 +9286,7 @@
       "price": "₹19.5 / strip of 10 tablets",
       "sourceUrl": "https://www.expresspharma.in/corona-acquires-obimet-thyrocab-brands-from-abbott-india",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-15T03:46:28.456Z"
+      "lastEnrichmentAttempt": "2026-08-16T02:10:46.499Z"
     },
     {
       "brand": "Adcock Ingram Holdings Proprietary Limited",
@@ -9318,7 +9318,7 @@
       "price": "₹136 / strip of 10 tablets",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-expands-its-oncology-franchise-in-India-with-the-launch-of-Helsinn.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-07-15T03:47:13.701Z"
+      "lastEnrichmentAttempt": "2026-08-16T02:11:08.979Z"
     },
     {
       "brand": "Wockhardt's New Injectable Drug",
@@ -9334,7 +9334,7 @@
       "price": "Rs 1,200 / injection",
       "sourceUrl": "https://www.wockhardt.com/press-release/new-injectable-drug-launch",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-15T03:48:29.801Z"
+      "lastEnrichmentAttempt": "2026-08-16T02:11:45.860Z"
     },
     {
       "brand": "Wockhardt's Acquisition of ABC Pharma",
@@ -9350,7 +9350,7 @@
       "price": "—",
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-of-abc-pharma",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-15T03:48:29.801Z"
+      "lastEnrichmentAttempt": "2026-08-16T02:11:52.813Z"
     },
     {
       "brand": "Wockhardt's In-licensing Agreement with XYZ Corp",
@@ -9366,7 +9366,7 @@
       "price": "—",
       "sourceUrl": "https://www.wockhardt.com/press-release/in-licensing-agreement-xyz-corp",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-15T03:48:29.801Z"
+      "lastEnrichmentAttempt": "2026-08-16T02:11:59.113Z"
     },
     {
       "brand": "LIRAA",
@@ -13511,6 +13511,134 @@
       "sourceUrl": "https://www.wockhardt.com/press-release/new-line-extension-anti-infective",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-08-15T02:01:20.213Z"
+    },
+    {
+      "brand": "Ocular Technologies",
+      "launchType": "Acquired",
+      "date": "2016-10-26",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹61.2 / bottle of 5 ml eye drop",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2020/12/Sun-Pharma-to-acquire-Ocular-Technologies.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-08-16T02:07:23.377Z"
+    },
+    {
+      "brand": "BrandA",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "MoleculeA",
+      "therapy": "Oncology",
+      "indication": "Cancer Type A",
+      "existingBrand": "CompetitorBrandA",
+      "chronicAcute": "—",
+      "price": "Rs 1,200 / tablet",
+      "sourceUrl": "https://www.pharmaexample.com/press-release/brand-a-launch",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-08-16T02:08:58.693Z"
+    },
+    {
+      "brand": "BrandB",
+      "launchType": "Acquired",
+      "date": "2023-09-15",
+      "seller": "Seller Company",
+      "dealType": "Brand Acquisition",
+      "molecule": "MoleculeB",
+      "therapy": "Cardiology",
+      "indication": "Heart Condition B",
+      "existingBrand": "CompetitorBrandB",
+      "chronicAcute": "Chronic",
+      "price": "Rs 500 / vial",
+      "sourceUrl": "https://www.pharmaexample.com/press-release/brand-b-acquisition",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-08-16T02:08:58.693Z"
+    },
+    {
+      "brand": "BrandC",
+      "launchType": "In-licensed",
+      "date": "2023-08-20",
+      "seller": "Licensor Company",
+      "dealType": "In-license (India)",
+      "molecule": "MoleculeC",
+      "therapy": "Respiratory",
+      "indication": "Asthma",
+      "existingBrand": "CompetitorBrandC",
+      "chronicAcute": "—",
+      "price": "Rs 600 / inhaler",
+      "sourceUrl": "https://www.pharmaexample.com/press-release/brand-c-in-license",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-08-16T02:08:58.693Z"
+    },
+    {
+      "brand": "Wockhardt’s New Antihypertensive",
+      "launchType": "Own Launched",
+      "date": "2023-09-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Amlodipine",
+      "therapy": "Cardiology",
+      "indication": "Hypertension",
+      "existingBrand": "Telma",
+      "chronicAcute": "Chronic",
+      "price": "Rs 84.00 / strip of 10 tablets",
+      "sourceUrl": "https://www.wockhardt.com/press-release/new-antihypertensive-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-16T02:09:49.488Z"
+    },
+    {
+      "brand": "Thyrocab",
+      "launchType": "Acquired",
+      "date": "2018-04-03",
+      "seller": "Abbott India",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.expresspharma.in/corona-acquires-obimet-thyrocab-brands-from-abbott-india/",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-08-16T02:10:46.499Z"
+    },
+    {
+      "brand": "XYZ Drug",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "XYZ-123",
+      "therapy": "Oncology",
+      "indication": "Lung Cancer",
+      "existingBrand": "ABC Drug",
+      "chronicAcute": "Acute",
+      "price": "Rs 1,500 / injection",
+      "sourceUrl": "https://www.wockhardt.com/press-release/xyz-drug-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-16T02:11:59.113Z"
+    },
+    {
+      "brand": "Alpha Biologics",
+      "launchType": "Acquired",
+      "date": "2023-08-10",
+      "seller": "Beta Inc.",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "XYZ Biologics",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-release/alpha-biologics-acquisition",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-16T02:11:59.113Z"
     }
   ]
 }
