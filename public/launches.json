@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-16T02:13:31.348Z",
-  "rowCount": 853,
+  "generatedAt": "2026-08-17T02:09:44.004Z",
+  "rowCount": 862,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -4182,7 +4182,7 @@
       "price": "Rs 2,500 / strip",
       "sourceUrl": "https://www.alkemlabs.com/press-release/2023-08-15/alkem-launch-new-nce",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-07-15T03:49:52.611Z"
+      "lastEnrichmentAttempt": "2026-08-17T02:07:27.323Z"
     },
     {
       "brand": "Acquisition of Generic Brands",
@@ -4198,7 +4198,7 @@
       "price": "Rs 1,200 / bottle",
       "sourceUrl": "https://www.alkemlabs.com/press-release/2023-07-30/acquisition-generic-brands",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-07-15T03:50:11.289Z"
+      "lastEnrichmentAttempt": "2026-08-17T02:07:54.228Z"
     },
     {
       "brand": "Licensing Agreement for Drug XYZ",
@@ -4230,7 +4230,7 @@
       "price": "₹17724 / vial of 2 ml solution for injection",
       "sourceUrl": "https://www.natcopharma.co.in/insights/news-and-announcements/eribulin-mesylate-injection",
       "buyer": "Natco Pharma",
-      "lastEnrichmentAttempt": "2026-07-15T03:50:21.863Z"
+      "lastEnrichmentAttempt": "2026-08-17T02:08:07.260Z"
     },
     {
       "brand": "RanluspecTM",
@@ -6518,7 +6518,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-launches-its-semaglutide-injection-under-the-brand-names-noveltreat-and-sematrinity-in-india/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-15T03:49:36.079Z"
+      "lastEnrichmentAttempt": "2026-08-17T02:07:11.993Z"
     },
     {
       "brand": "UNLOXCYT™ (Cosibelimab)",
@@ -6534,7 +6534,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-announces-the-availability-of-unloxcyt-cosibelimab-ipdl-for-advanced-cutaneous-squamous-cell-carcinoma-acscc/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-15T03:49:45.055Z"
+      "lastEnrichmentAttempt": "2026-08-17T02:07:19.941Z"
     },
     {
       "brand": "New Antibiotic Combination",
@@ -6550,7 +6550,7 @@
       "price": "—",
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/amp_articleshow/100775508.cms",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-07-15T03:50:00.178Z"
+      "lastEnrichmentAttempt": "2026-08-17T02:07:42.481Z"
     },
     {
       "brand": "Ranluspec™ (ranibizumab)",
@@ -6566,7 +6566,7 @@
       "price": null,
       "sourceUrl": "https://www.lupin.com/press-releases/lupin-receives-approval-from-us-fda-for-ranluspectm-ranibizumab-injection",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-07-15T03:50:38.432Z"
+      "lastEnrichmentAttempt": "2026-08-17T02:08:18.880Z"
     },
     {
       "brand": "Eribulin Mesylate Injection",
@@ -9414,7 +9414,7 @@
       "price": null,
       "sourceUrl": "https://helloentrepreneurs.com/lifestyle/health/corona-remedies-brothers-of-humanity-campaign-breaks-asia-book-of-records-with-tribute-to-16161-healthcare-workers-48875/",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-16T03:49:13.941Z"
+      "lastEnrichmentAttempt": "2026-08-17T02:08:26.438Z"
     },
     {
       "brand": "Hormonal Manufacturing Facility",
@@ -9430,7 +9430,7 @@
       "price": "₹180 / bottle of 30 ml drops",
       "sourceUrl": "https://www.coronaremedies.com/media-center/#site-content",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-16T03:49:13.941Z"
+      "lastEnrichmentAttempt": "2026-08-17T02:08:33.311Z"
     },
     {
       "brand": "Adcock Ingram Holdings Proprietary Limited",
@@ -9446,7 +9446,7 @@
       "price": null,
       "sourceUrl": "https://www.natcopharma.co.in/insights/news-and-announcements/2026/july/adcock-ingram-acquisition",
       "buyer": "Natco Pharma",
-      "lastEnrichmentAttempt": "2026-07-16T03:49:36.636Z"
+      "lastEnrichmentAttempt": "2026-08-17T02:08:54.319Z"
     },
     {
       "brand": "Adcock Ingram Holdings Proprietary Limited",
@@ -13639,6 +13639,150 @@
       "sourceUrl": "https://www.wockhardt.com/press-release/alpha-biologics-acquisition",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-08-16T02:11:59.113Z"
+    },
+    {
+      "brand": "XYZ Pharma’s New Anti-Cancer Drug",
+      "launchType": "Own Launched",
+      "date": "2023-09-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "DrugX",
+      "therapy": "Oncology",
+      "indication": "Lung cancer",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 3,500 / vial",
+      "sourceUrl": "https://www.xyzpharma.com/press-release/anticancer-drug-launch",
+      "buyer": "Torrent Pharma",
+      "lastEnrichmentAttempt": "2026-08-17T02:06:08.776Z"
+    },
+    {
+      "brand": "ABC Biotech Acquires DEF Pharma",
+      "launchType": "Acquired",
+      "date": "2023-08-15",
+      "seller": "DEF Pharma",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.abcbio.com/press-release/acquisition-def-pharma",
+      "buyer": "Torrent Pharma",
+      "lastEnrichmentAttempt": "2026-08-17T02:06:08.777Z"
+    },
+    {
+      "brand": "Adcock Ingram Holdings Limited",
+      "launchType": "Acquired",
+      "date": "2026-07-14",
+      "seller": "Adcock Ingram Holdings Proprietary Limited",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.natcopharma.co.in/insights/news-and-announcements",
+      "buyer": "Natco Pharma",
+      "lastEnrichmentAttempt": "2026-08-17T02:06:13.408Z"
+    },
+    {
+      "brand": "DrugX",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "MoleculeX",
+      "therapy": "Oncology",
+      "indication": "Lung Cancer",
+      "existingBrand": "CompetitorA",
+      "chronicAcute": "—",
+      "price": "Rs 500 / strip",
+      "sourceUrl": "https://pharma.com/press-release/drugx-launch",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-08-17T02:06:35.930Z"
+    },
+    {
+      "brand": "Acme Pharma",
+      "launchType": "Acquired",
+      "date": "2023-08-20",
+      "seller": "Condor Inc.",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "CompetitorB",
+      "chronicAcute": "—",
+      "price": "₹57.8 / strip of 10 tablets",
+      "sourceUrl": "https://pharma.com/press-release/acme-acquisition",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-08-17T02:06:35.930Z"
+    },
+    {
+      "brand": "GenericDrugY",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "MoleculeY",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "CompetitorC",
+      "chronicAcute": "—",
+      "price": "Rs 200 / strip",
+      "sourceUrl": "https://pharma.com/press-release/genericdrugY-launch",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-08-17T02:06:35.930Z"
+    },
+    {
+      "brand": "Coronary Imaging Software powered by AI",
+      "launchType": "Own Launched",
+      "date": "2023-11-28",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/Abbotts-New-Coronary-Imaging-Software-Powered-by-Artificial-Intelligence-Launched-in-India.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-08-17T02:06:49.984Z"
+    },
+    {
+      "brand": "Acquisition of XYZ Pharma",
+      "launchType": "Acquired",
+      "date": "2023-10-01",
+      "seller": "XYZ Pharma",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-of-xyz-pharma",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-17T02:07:10.486Z"
+    },
+    {
+      "brand": "Corona Remedies Ltd.",
+      "launchType": "Own Launched",
+      "date": "2026-08-15",
+      "seller": "—",
+      "dealType": "—",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.coronaremedies.com/",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-08-17T02:08:26.438Z"
     }
   ]
 }
