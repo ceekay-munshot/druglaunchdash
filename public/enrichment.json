@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-16T02:43:20.961Z",
-  "rowCount": 211,
+  "generatedAt": "2026-08-17T02:47:19.192Z",
+  "rowCount": 212,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -3740,6 +3740,25 @@
       "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 10 Aug - Wockhardt reported Q1 FY27 revenue of Rs929 crore and PAT of Rs107 crore.",
       "_provider": "groq",
       "_harvestedAt": "2026-08-11T03:20:44.178Z"
+    },
+    {
+      "brand": "Corona Remedies Ltd.",
+      "launchType": "Acquired",
+      "date": "2026-08-15",
+      "seller": "DRL",
+      "dealType": "Acquisition",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "Povidone-iodine",
+      "therapy": "Antiseptic",
+      "indication": "Wound care, skin disinfection",
+      "existingBrand": "Betadine",
+      "chronicAcute": "Acute",
+      "buyer": "Corona Remedies",
+      "sourceUrl": "https://www.coronaremedies.com/",
+      "_title": "backfill:Corona Remedies Ltd.",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-08-17T02:47:18.491Z"
     }
   ],
   "processedUrls": [
@@ -4057,6 +4076,12 @@
     "https://www.abbott.in/media-center/press-releases/accelerating-automation-abbott-introduces-glp-systems-track-for-laboratories-in-india.html",
     "https://www.wockhardt.com/press-releases/acquisition-of-pharma-company-x",
     "https://sunpharma.com/wp-content/uploads/2020/12/Sun-Pharma-to-acquire-Ocular-Technologies.pdf",
-    "https://www.wockhardt.com/press-release/alpha-biologics-acquisition"
+    "https://www.wockhardt.com/press-release/alpha-biologics-acquisition",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=aac97e05-5b6d-4184-9f07-98b25953ea71.pdf",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=8f6d297e-a418-44ea-8a8f-a1749060c625.pdf",
+    "https://www.abcbio.com/press-release/acquisition-def-pharma",
+    "https://pharma.com/press-release/acme-acquisition",
+    "https://pharma.com/press-release/genericdrugY-launch",
+    "https://www.coronaremedies.com/"
   ]
 }
