@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-17T02:47:19.192Z",
-  "rowCount": 212,
+  "generatedAt": "2026-08-18T02:39:08.924Z",
+  "rowCount": 213,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -3759,6 +3759,25 @@
       "_title": "backfill:Corona Remedies Ltd.",
       "_provider": "gemini",
       "_harvestedAt": "2026-08-17T02:47:18.491Z"
+    },
+    {
+      "brand": "Pitolisant Tablets",
+      "launchType": "Own Launched",
+      "date": "2026-08-17",
+      "seller": "—",
+      "dealType": "Generic",
+      "molecule": "Pitolisant",
+      "therapy": "Central Nervous System",
+      "indication": "Narcolepsy with or without cataplexy",
+      "price": "—",
+      "dealValue": null,
+      "existingBrand": "Wakix®",
+      "chronicAcute": "Chronic",
+      "buyer": "Lupin",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=3c6a8964-00b0-4330-8deb-8e02eceb55d4.pdf",
+      "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 17 Aug - Lupin received U.S. FDA approval for Pitolisant Tablets, 4.45 mg and 17.8 mg, on August 17, 2026.",
+      "_provider": "mistral",
+      "_harvestedAt": "2026-08-18T02:37:33.006Z"
     }
   ],
   "processedUrls": [
@@ -4082,6 +4101,9 @@
     "https://www.abcbio.com/press-release/acquisition-def-pharma",
     "https://pharma.com/press-release/acme-acquisition",
     "https://pharma.com/press-release/genericdrugY-launch",
-    "https://www.coronaremedies.com/"
+    "https://www.coronaremedies.com/",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=3c6a8964-00b0-4330-8deb-8e02eceb55d4.pdf",
+    "https://www.lupin.com/media/press-releases/lupin-announces-approval-from-u-s-fda-for-pitolisant-tablets",
+    "https://www.wockhardt.com/press-release-glenmark-acquisition"
   ]
 }
