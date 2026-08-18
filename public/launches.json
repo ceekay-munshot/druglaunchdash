@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-17T02:09:44.004Z",
-  "rowCount": 862,
+  "generatedAt": "2026-08-18T02:06:16.718Z",
+  "rowCount": 867,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -1488,7 +1488,7 @@
       "dealType": "In-license (India)",
       "molecule": "Sitagliptin and its combination",
       "therapy": "Anti-Diabetic",
-      "indication": "—",
+      "indication": "Type 2 diabetes",
       "existingBrand": "Januvia",
       "chronicAcute": "Chronic",
       "price": "₹121 / strip of 10 (100 mg)",
@@ -2694,7 +2694,7 @@
       "price": "₹308 / strip of 10 capsules",
       "sourceUrl": "https://www.coronaremedies.com/wp-content/uploads/2024/11/myoril-news-2024.png",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-16T03:52:02.726Z"
+      "lastEnrichmentAttempt": "2026-08-18T02:05:14.846Z"
     },
     {
       "brand": "Generic version of Seretide® Accuhaler®",
@@ -4262,7 +4262,7 @@
       "price": "₹17184 / vial of 1 injection",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-and-natco-receive-approval-from-u-s-fda-for-eribulin-mesylate-injection",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-07-16T03:51:41.770Z"
+      "lastEnrichmentAttempt": "2026-08-18T02:04:40.900Z"
     },
     {
       "brand": "Acilimab",
@@ -4374,7 +4374,7 @@
       "price": "₹42.6 / packet of 50 ml scrub",
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-of-firm-x",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-16T03:51:56.429Z"
+      "lastEnrichmentAttempt": "2026-08-18T02:05:07.694Z"
     },
     {
       "brand": "SALFLUTIN",
@@ -6582,7 +6582,7 @@
       "price": null,
       "sourceUrl": "https://www.lupin.com/press-release-u-s-fda-approval-eribulin-mesylate-injection/",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-07-16T03:51:48.447Z"
+      "lastEnrichmentAttempt": "2026-08-18T02:05:00.126Z"
     },
     {
       "brand": "Medicover",
@@ -6662,7 +6662,7 @@
       "price": "₹316 / box of 200 gm powder",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-new-pediaSure-with-nutri-pull-system-to-help-support-catch-up-growth-and-overall-health-in-children.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-07-16T03:52:06.511Z"
+      "lastEnrichmentAttempt": "2026-08-18T02:05:18.672Z"
     },
     {
       "brand": "Dextromethorphan Polistirex",
@@ -9462,7 +9462,7 @@
       "price": null,
       "sourceUrl": "https://www.natcopharma.co.in/insights/news-and-announcements/2026/july/adcock-ingram-stake-increase",
       "buyer": "Natco Pharma",
-      "lastEnrichmentAttempt": "2026-07-16T03:49:36.636Z"
+      "lastEnrichmentAttempt": "2026-08-18T02:03:45.704Z"
     },
     {
       "brand": "CardioHeal",
@@ -9526,7 +9526,7 @@
       "price": "₹110 / packet of 60 capsules",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-and-msd-announce-strategic-partnership-to-distribute-innovative-oral-anti-diabetic-medicines-in-india.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-07-16T03:50:53.123Z"
+      "lastEnrichmentAttempt": "2026-08-18T02:03:53.102Z"
     },
     {
       "brand": "HMB Ensure",
@@ -9542,7 +9542,7 @@
       "price": "₹880 / jar of 400 gm powder",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-new-ensure-with-hmb-to-help-protect-and-strengthen-indian-adults-muscles.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-07-16T03:50:53.123Z"
+      "lastEnrichmentAttempt": "2026-08-18T02:04:00.816Z"
     },
     {
       "brand": "ADQUEY™ (difamilast 1%) Ointment",
@@ -9558,7 +9558,7 @@
       "price": null,
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/Adquey-(Difamilast)_NDA%20Approval_PressRelease_13-Feb-26.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-16T03:51:21.035Z"
+      "lastEnrichmentAttempt": "2026-08-18T02:04:07.335Z"
     },
     {
       "brand": "Wockhardt Pharma",
@@ -9622,7 +9622,7 @@
       "price": null,
       "sourceUrl": "https://www.lupin.com/",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-07-16T03:51:41.770Z"
+      "lastEnrichmentAttempt": "2026-08-18T02:04:50.330Z"
     },
     {
       "brand": "7 brands from Bayer",
@@ -13783,6 +13783,86 @@
       "sourceUrl": "https://www.coronaremedies.com/",
       "buyer": "Corona Remedies",
       "lastEnrichmentAttempt": "2026-08-17T02:08:26.438Z"
+    },
+    {
+      "brand": "four drug brands from GSK",
+      "launchType": "Acquired",
+      "date": "2026-06-01",
+      "seller": "GlaxoSmithkline Pharmaceuticals Limited",
+      "dealType": "Brand Portfolio Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹100 / strip of 15 tablets",
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-08-18T02:01:39.128Z"
+    },
+    {
+      "brand": "Pitolisant Tablets",
+      "launchType": "Own Launched",
+      "date": "2026-08-17",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Pitolisant",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-announces-approval-from-u-s-fda-for-pitolisant-tablets",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-08-18T02:02:37.755Z"
+    },
+    {
+      "brand": "Aurobindo Pharma",
+      "launchType": "In-licensed",
+      "date": "2026-07-23",
+      "seller": "—",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹81 / strip of 10 tablet pr",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseBrazilMSD24072026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-08-18T02:03:26.677Z"
+    },
+    {
+      "brand": "Voglibose",
+      "launchType": "Own Launched",
+      "date": "2023-09-10",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Voglibose",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Galvus",
+      "chronicAcute": "—",
+      "price": "Rs 120 / strip",
+      "sourceUrl": "https://www.wockhardt.com/press-release-voglibose-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-18T02:03:44.200Z"
+    },
+    {
+      "brand": "Glenmark's Acquistion",
+      "launchType": "Acquired",
+      "date": "2023-07-15",
+      "seller": "Glenmark Pharmaceuticals",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-release-glenmark-acquisition",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-18T02:03:44.200Z"
     }
   ]
 }
