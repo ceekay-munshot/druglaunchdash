@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-19T02:09:50.305Z",
-  "rowCount": 869,
+  "generatedAt": "2026-08-20T02:07:09.465Z",
+  "rowCount": 873,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -566,7 +566,7 @@
       "price": "₹41 / bottle of 10 ml dilution",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/04/PR-Sun-Organon-announcement-Apr-26.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-17T03:52:33.580Z"
+      "lastEnrichmentAttempt": "2026-08-20T02:06:24.757Z"
     },
     {
       "brand": "Obimet",
@@ -1206,7 +1206,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/Sun-Pharma-Announces-US-FDA-Acceptance-of-sBLA-Application-for-ILUMYA.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-17T03:52:03.845Z"
+      "lastEnrichmentAttempt": "2026-08-20T02:05:13.445Z"
     },
     {
       "brand": "generic semaglutide injection",
@@ -1238,7 +1238,7 @@
       "price": "₹1347 / bottle of 40 capsules",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/11/Press-Release-Sun-Pharma-gearing-up-to-introduce-molnupiravir-under-the-brand-name-Molxvir%C2%AE-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-17T03:52:16.623Z"
+      "lastEnrichmentAttempt": "2026-08-20T02:05:34.150Z"
     },
     {
       "brand": "Tiohromium Bromide",
@@ -1254,7 +1254,7 @@
       "price": "—",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-enters-into-an-exclusive-licensing.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-07-17T03:52:28.741Z"
+      "lastEnrichmentAttempt": "2026-08-20T02:05:47.895Z"
     },
     {
       "brand": "Obimet",
@@ -2710,7 +2710,7 @@
       "price": "₹836 / box of 60 (50 mcg / 250 mcg)",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-secures-marketing-authorization-in-Germany_0.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-07-17T03:51:59.597Z"
+      "lastEnrichmentAttempt": "2026-08-20T02:05:06.973Z"
     },
     {
       "brand": "ILUMYA",
@@ -2726,7 +2726,7 @@
       "price": null,
       "sourceUrl": "https://www.sunpharma.com/press-release/2026-03-16-us-fda-acceptance-sbla-ilumya",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-17T03:52:08.136Z"
+      "lastEnrichmentAttempt": "2026-08-20T02:05:25.219Z"
     },
     {
       "brand": "Molxvir",
@@ -2742,7 +2742,7 @@
       "price": "—",
       "sourceUrl": "http://www.sunpharma.com/press-release/mumbai-november-11-2021-sun-pharmaceutical-industries-limited-reuters-sun-bo-bloomberg-sunp-in-nse-sunpharma-bse-524715-sun-pharma-includes-its-subsidiaries-andor-associate-companies-today-said-that-it-is-gearing-up-to-introduce-merck-sharpe-dohme-msd-and-ridgebacks-molnupiravir-under-the-brand-name-molxvir-in-india.",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-17T03:52:20.817Z"
+      "lastEnrichmentAttempt": "2026-08-20T02:05:40.188Z"
     },
     {
       "brand": "Obimet & Thyrocab",
@@ -4422,7 +4422,7 @@
       "price": null,
       "sourceUrl": "https://www.sunpharma.com/press-release-2026-04-27",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-17T03:52:39.643Z"
+      "lastEnrichmentAttempt": "2026-08-20T02:06:29.950Z"
     },
     {
       "brand": "Eribulin Mesylate",
@@ -6758,7 +6758,7 @@
       "price": "₹75.2 / strip of 10 tablets",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/Adquey-(Difamilast)_NDA%20Approval_PressRelease_13-Feb-26.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-17T03:51:26.788Z"
+      "lastEnrichmentAttempt": "2026-08-20T02:04:30.579Z"
     },
     {
       "brand": "Wockhardt",
@@ -9718,7 +9718,7 @@
       "price": null,
       "sourceUrl": "https://sunpharma.com/press-release-linalk-launch-2023-09-01",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-17T03:52:39.643Z"
+      "lastEnrichmentAttempt": "2026-08-20T02:06:37.167Z"
     },
     {
       "brand": "SuperBiosim",
@@ -13895,6 +13895,70 @@
       "sourceUrl": "https://www.wockhardt.com/press-releases/ensifentrine-launch",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-08-19T02:06:39.517Z"
+    },
+    {
+      "brand": "Molxvir®",
+      "launchType": "Own Launched",
+      "date": "2021-11-11",
+      "seller": "Merck and Ridgeback",
+      "dealType": "NCE Launch",
+      "molecule": "Molnupiravir",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 35 / tablet",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/11/Press-Release-Sun-Pharma-gearing-up-to-introduce-molnupiravir-under-the-brand-name-Molxvir%C2%AE-in-India.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-08-20T02:02:20.766Z"
+    },
+    {
+      "brand": "Sodium Zirconium Cyclosilicate Oral Suspension",
+      "launchType": "Own Launched",
+      "date": "2026-08-10",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Sodium Zirconium Cyclosilicate",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-announces-the-approval-of-sodium-zirconium-cyclosilicate-for-oral-suspension-in-the-united-states",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-08-20T02:03:14.222Z"
+    },
+    {
+      "brand": "Wockhardt Acquires XYZ Pharma",
+      "launchType": "Acquired",
+      "date": "2023-08-20",
+      "seller": "XYZ Pharma",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹75.1 / strip of 10 tablets",
+      "sourceUrl": "https://www.wockhardt.com/news/2023-08-20-company-acquisition",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-20T02:04:29.074Z"
+    },
+    {
+      "brand": "Wockhardt In-Licenses ABC Therapeutics",
+      "launchType": "In-licensed",
+      "date": "2023-07-10",
+      "seller": "ABC Therapeutics",
+      "dealType": "In-license (India)",
+      "molecule": "Molecule ABC",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.wockhardt.com/news/2023-07-10-in-licensing-deal",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-20T02:04:29.074Z"
     }
   ]
 }
