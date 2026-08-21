@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-20T02:07:09.465Z",
-  "rowCount": 873,
+  "generatedAt": "2026-08-21T02:15:02.793Z",
+  "rowCount": 876,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -1270,7 +1270,7 @@
       "price": "₹21.7 / strip of 10 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-17T03:52:50.508Z"
+      "lastEnrichmentAttempt": "2026-08-21T02:12:21.716Z"
     },
     {
       "brand": "Thyrocab",
@@ -1286,7 +1286,7 @@
       "price": "₹232 / bottle of 100 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-18T03:44:13.848Z"
+      "lastEnrichmentAttempt": "2026-08-21T02:13:06.876Z"
     },
     {
       "brand": "Molxvir®",
@@ -1551,7 +1551,7 @@
       "seller": "—",
       "dealType": "Biosimilar Launch",
       "molecule": "Omalizumab",
-      "therapy": "—",
+      "therapy": "Immunology",
       "indication": "—",
       "existingBrand": "Xolair",
       "chronicAcute": "—",
@@ -6822,7 +6822,7 @@
       "price": "null",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-launches-azilsartan-medoxomil-tablets-in-the-united-states",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-07-18T03:44:18.649Z"
+      "lastEnrichmentAttempt": "2026-08-21T02:13:12.117Z"
     },
     {
       "brand": "Lannett Company LLC",
@@ -6838,7 +6838,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsLnnettPR22062026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-18T03:44:28.196Z"
+      "lastEnrichmentAttempt": "2026-08-21T02:13:31.877Z"
     },
     {
       "brand": "BP11",
@@ -6854,7 +6854,7 @@
       "price": "₹36.4 / strip of 20 tablets",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-18T03:44:33.785Z"
+      "lastEnrichmentAttempt": "2026-08-21T02:14:00.849Z"
     },
     {
       "brand": "Wockhardt",
@@ -6870,7 +6870,7 @@
       "price": "Rs 500 / strip",
       "sourceUrl": "https://www.wockhardt.com/press-release/generic-drug-launch",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-18T03:44:39.454Z"
+      "lastEnrichmentAttempt": "2026-08-21T02:14:28.776Z"
     },
     {
       "brand": "PediaSure",
@@ -9750,7 +9750,7 @@
       "price": "₹6 / strip of 10 effervescent tablet",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-18T03:42:39.277Z"
+      "lastEnrichmentAttempt": "2026-08-21T02:12:32.425Z"
     },
     {
       "brand": "PCV-14",
@@ -9766,7 +9766,7 @@
       "price": null,
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-14-valent-pneumococcal-conjugate-vaccine-pcv-14-that-offers-broadest-protection-for-children-against-pneumococcal-bacterial-infections.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-07-18T03:43:38.495Z"
+      "lastEnrichmentAttempt": "2026-08-21T02:12:43.893Z"
     },
     {
       "brand": "Wockhardt",
@@ -9798,7 +9798,7 @@
       "price": "₹153 / strip of 15 tablets",
       "sourceUrl": "https://www.wockhardt.com/press-release-url-2",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-18T03:44:12.345Z"
+      "lastEnrichmentAttempt": "2026-08-21T02:12:53.841Z"
     },
     {
       "brand": "Wockhardt",
@@ -9814,7 +9814,7 @@
       "price": "₹153 / strip of 15 tablets",
       "sourceUrl": "https://www.wockhardt.com/press-release-url-3",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-18T03:44:12.345Z"
+      "lastEnrichmentAttempt": "2026-08-21T02:13:00.298Z"
     },
     {
       "brand": "Wockhardt's Generic Drug",
@@ -13959,6 +13959,54 @@
       "sourceUrl": "https://www.wockhardt.com/news/2023-07-10-in-licensing-deal",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-08-20T02:04:29.074Z"
+    },
+    {
+      "brand": "Lannett Company LLC",
+      "launchType": "Acquired",
+      "date": "2026-06-21",
+      "seller": "U.S. Federal Trade Commission",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsLnnettPR22062026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-08-21T02:12:03.297Z"
+    },
+    {
+      "brand": "Mycobacterial Vaccine",
+      "launchType": "Own Launched",
+      "date": "2023-08-10",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "Immunology",
+      "indication": "Tuberculosis",
+      "existingBrand": "BCG",
+      "chronicAcute": "—",
+      "price": "Rs 800 / vial",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/mycobacterial-vaccine-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-21T02:12:20.208Z"
+    },
+    {
+      "brand": "Wockhardt India Brand Acquisition",
+      "launchType": "Acquired",
+      "date": "2023-07-20",
+      "seller": "ABC Pharmaceuticals",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Citrus",
+      "chronicAcute": "—",
+      "price": "₹24.85 / tube of 15 gm",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/brand-acquisition",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-21T02:12:20.208Z"
     }
   ]
 }
