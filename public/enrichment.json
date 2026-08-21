@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-20T02:39:35.704Z",
-  "rowCount": 213,
+  "generatedAt": "2026-08-21T02:46:55.883Z",
+  "rowCount": 217,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -3778,6 +3778,82 @@
       "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 17 Aug - Lupin received U.S. FDA approval for Pitolisant Tablets, 4.45 mg and 17.8 mg, on August 17, 2026.",
       "_provider": "mistral",
       "_harvestedAt": "2026-08-18T02:37:33.006Z"
+    },
+    {
+      "brand": "YUVEZZI",
+      "launchType": "In-licensed",
+      "date": "2026-08-20",
+      "seller": "Visus Therapeutics, Inc.",
+      "dealType": "Exclusive License Agreement",
+      "molecule": "Carbachol + Brimonidine tartrate",
+      "therapy": "Ophthalmic (Eye Drops)",
+      "indication": "Presbyopia",
+      "price": "—",
+      "dealValue": 6225,
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "buyer": "Lupin",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=9fa3e33d-6277-467a-a23d-8b2d029a088a.pdf",
+      "_title": "Exclusive License Agreement With Visus Therapeutics, Inc. U.S.A. 20 Aug - VISUfarma secures European commercialization rights for YUVEZZI™; deal includes €20 million investment and up to €75 million consideration.",
+      "_provider": "mistral",
+      "_harvestedAt": "2026-08-21T02:46:06.066Z"
+    },
+    {
+      "brand": "Fluticasone Propionate Nasal Spray USP",
+      "launchType": "Own Launched",
+      "date": "2026-08-20",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Fluticasone Propionate",
+      "therapy": "Respiratory / Allergy",
+      "indication": "Allergic Rhinitis",
+      "price": "—",
+      "dealValue": null,
+      "existingBrand": "Flonase",
+      "chronicAcute": "Chronic",
+      "buyer": "Glenmark",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6f33378b-b3c4-4216-8be1-16bcad15693d.pdf",
+      "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 20 Aug - Glenmark received U.S. FDA approval for Fluticasone Propionate Nasal Spray USP 0.05 mg/spray.",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-08-21T02:46:18.912Z"
+    },
+    {
+      "brand": "Insulin Degludec",
+      "launchType": "In-licensed",
+      "date": "2026-08-20",
+      "seller": "Chongqing Chenan Biopharmaceutical Co., Ltd.",
+      "dealType": "Exclusive in-licensing and marketing agreement",
+      "molecule": "Insulin Degludec",
+      "therapy": "Anti-diabetic",
+      "indication": "Diabetes mellitus",
+      "price": "—",
+      "dealValue": null,
+      "existingBrand": "Tresiba (Novo Nordisk)",
+      "chronicAcute": "Chronic",
+      "buyer": "Mankind Pharma",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=c2ae0831-36f6-4c43-8649-d41a8e22bcb9.pdf",
+      "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 20 Aug - Mankind Pharma signed exclusive India in-licensing for Insulin Degludec and Insulin Degludec+Aspart on August 20, 2026.",
+      "_provider": "mistral",
+      "_harvestedAt": "2026-08-21T02:46:45.977Z"
+    },
+    {
+      "brand": "Insulin Degludec + Aspart Combination",
+      "launchType": "In-licensed",
+      "date": "2026-08-20",
+      "seller": "Chongqing Chenan Biopharmaceutical Co., Ltd.",
+      "dealType": "Exclusive in-licensing and marketing agreement",
+      "molecule": "Insulin Degludec + Aspart",
+      "therapy": "Anti-diabetic",
+      "indication": "Diabetes mellitus",
+      "price": "—",
+      "dealValue": null,
+      "existingBrand": "Ryzodeg (Novo Nordisk)",
+      "chronicAcute": "Chronic",
+      "buyer": "Mankind Pharma",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=c2ae0831-36f6-4c43-8649-d41a8e22bcb9.pdf",
+      "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 20 Aug - Mankind Pharma signed exclusive India in-licensing for Insulin Degludec and Insulin Degludec+Aspart on August 20, 2026.",
+      "_provider": "mistral",
+      "_harvestedAt": "2026-08-21T02:46:45.977Z"
     }
   ],
   "processedUrls": [
@@ -4106,6 +4182,10 @@
     "https://www.lupin.com/media/press-releases/lupin-announces-approval-from-u-s-fda-for-pitolisant-tablets",
     "https://www.wockhardt.com/press-release-glenmark-acquisition",
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=dc6caf49-01c4-4548-9381-a58f393a98e6.pdf",
-    "https://www.wockhardt.com/news/2023-08-20-company-acquisition"
+    "https://www.wockhardt.com/news/2023-08-20-company-acquisition",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=9fa3e33d-6277-467a-a23d-8b2d029a088a.pdf",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6f33378b-b3c4-4216-8be1-16bcad15693d.pdf",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=c2ae0831-36f6-4c43-8649-d41a8e22bcb9.pdf",
+    "https://www.wockhardt.com/press-releases/brand-acquisition"
   ]
 }
