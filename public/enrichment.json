@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-21T02:46:55.883Z",
-  "rowCount": 217,
+  "generatedAt": "2026-08-22T02:39:23.713Z",
+  "rowCount": 220,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -3854,6 +3854,63 @@
       "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 20 Aug - Mankind Pharma signed exclusive India in-licensing for Insulin Degludec and Insulin Degludec+Aspart on August 20, 2026.",
       "_provider": "mistral",
       "_harvestedAt": "2026-08-21T02:46:45.977Z"
+    },
+    {
+      "brand": "Calcium Gluconate Injection USP",
+      "launchType": "Own Launched",
+      "date": "2026-08-21",
+      "seller": "—",
+      "dealType": "—",
+      "molecule": "Calcium Gluconate",
+      "therapy": "Electrolyte Supplement",
+      "indication": "—",
+      "price": "—",
+      "dealValue": null,
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "buyer": "Glenmark",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=538561c0-9f8c-4222-9166-6eca04d49f70.pdf",
+      "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 21 Aug - Glenmark USA launched Calcium Gluconate Injection USP on August 21, 2026.",
+      "_provider": "mistral",
+      "_harvestedAt": "2026-08-22T02:36:15.200Z"
+    },
+    {
+      "brand": "Ascorbic Acid Injection USP",
+      "launchType": "Own Launched",
+      "date": "2026-08-21",
+      "seller": "—",
+      "dealType": "—",
+      "molecule": "Ascorbic Acid",
+      "therapy": "Vitamin deficiency, Scurvy treatment",
+      "indication": "short-term treatment of scurvy in adult and paediatric patients age 5 months and older for whom oral administration is not possible, insufficient or contraindicated",
+      "price": "—",
+      "dealValue": null,
+      "existingBrand": "Ascor® Injection",
+      "chronicAcute": "Acute",
+      "buyer": "Zydus Lifesciences",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=0cbc142d-0944-4d69-ace8-21894a41b479.pdf",
+      "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 21 Aug - Zydus gets USFDA final approval for Ascorbic Acid Injection with 180-day CGT exclusivity; US sales $11.6 mn.",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-08-22T02:36:38.372Z"
+    },
+    {
+      "brand": "YUVEZZI™",
+      "launchType": "In-licensed",
+      "date": "2026-08-20",
+      "seller": "Tenpoint Therapeutics Inc.",
+      "dealType": "Exclusive licensing agreement",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "Carbachol and brimonidine tartrate",
+      "therapy": "Ophthalmic solution for presbyopia",
+      "indication": "Treatment of presbyopia in adults",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "buyer": "Lupin",
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-and-tenpoint-therapeutics-announce-strategic-partnership-to-commercialize-yuvezzi-in-the-european-union-the-united-kingdom-switzerland-norway-and-iceland",
+      "_title": "backfill:YUVEZZI™",
+      "_provider": "mistral",
+      "_harvestedAt": "2026-08-22T02:36:57.269Z"
     }
   ],
   "processedUrls": [
@@ -4186,6 +4243,13 @@
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=9fa3e33d-6277-467a-a23d-8b2d029a088a.pdf",
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6f33378b-b3c4-4216-8be1-16bcad15693d.pdf",
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=c2ae0831-36f6-4c43-8649-d41a8e22bcb9.pdf",
-    "https://www.wockhardt.com/press-releases/brand-acquisition"
+    "https://www.wockhardt.com/press-releases/brand-acquisition",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=538561c0-9f8c-4222-9166-6eca04d49f70.pdf",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=0cbc142d-0944-4d69-ace8-21894a41b479.pdf",
+    "https://www.lupin.com/media/press-releases/lupin-and-tenpoint-therapeutics-announce-strategic-partnership-to-commercialize-yuvezzi-in-the-european-union-the-united-kingdom-switzerland-norway-and-iceland",
+    "https://www.wockhardt.com/press-releases/in-license-abc",
+    "https://www.abbott.com/press-releases/2023/coaguchek-launch-india.html",
+    "https://www.abbott.com/content/2023-09-01/heartmate-launch.html",
+    "https://www.wockhardt.com/press-release/brand-acquisition-kleanex#content"
   ]
 }
