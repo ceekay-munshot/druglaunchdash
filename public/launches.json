@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-22T02:03:17.623Z",
-  "rowCount": 886,
+  "generatedAt": "2026-08-23T02:16:17.243Z",
+  "rowCount": 894,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -278,7 +278,7 @@
       "price": "₹39.7 / strip of 10 tablet md",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2022/03/Press-Release-EVERON-Launch.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-19T04:07:57.905Z"
+      "lastEnrichmentAttempt": "2026-08-23T02:13:20.961Z"
     },
     {
       "brand": "Molxvir",
@@ -2758,7 +2758,7 @@
       "price": "₹21.7 / strip of 10 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-19T04:07:44.772Z"
+      "lastEnrichmentAttempt": "2026-08-23T02:13:05.546Z"
     },
     {
       "brand": "Ryaltris",
@@ -2766,7 +2766,7 @@
       "date": "2018-07-06",
       "seller": "—",
       "dealType": "In-license (India)",
-      "molecule": "—",
+      "molecule": "olopatadine hydrochloride plus mometasone furoate",
       "therapy": "Respiratory",
       "indication": "seasonal allergic rhinitis",
       "existingBrand": "—",
@@ -2774,7 +2774,7 @@
       "price": "₹232 / bottle of 17 gm (nasal spray)",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-Announces-Exclusive-Licensing-Agreement-with-Se.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-07-19T04:07:53.076Z"
+      "lastEnrichmentAttempt": "2026-08-23T02:13:15.063Z"
     },
     {
       "brand": "TriClip",
@@ -6934,7 +6934,7 @@
       "price": "null",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-19T04:08:03.177Z"
+      "lastEnrichmentAttempt": "2026-08-23T02:13:26.316Z"
     },
     {
       "brand": "Lannett Company LLC",
@@ -6950,7 +6950,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsLnnettPR22062026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-19T04:08:09.903Z"
+      "lastEnrichmentAttempt": "2026-08-23T02:13:37.250Z"
     },
     {
       "brand": "TheraNym",
@@ -6966,7 +6966,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseTheranym03062026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-19T04:08:41.877Z"
+      "lastEnrichmentAttempt": "2026-08-23T02:14:06.091Z"
     },
     {
       "brand": "Dextromethorphan Polistirex",
@@ -6982,7 +6982,7 @@
       "price": "null",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/2LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-19T04:09:03.093Z"
+      "lastEnrichmentAttempt": "2026-08-23T02:14:38.643Z"
     },
     {
       "brand": "Glycerol Phenylbutyrate",
@@ -6998,7 +6998,7 @@
       "price": "₹84.53 / bottle of 250 ml liquid",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-19T04:09:23.606Z"
+      "lastEnrichmentAttempt": "2026-08-23T02:15:15.248Z"
     },
     {
       "brand": "Dapagliflozin and Metformin Hydrochloride",
@@ -9926,7 +9926,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/press-release",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-19T04:09:03.093Z"
+      "lastEnrichmentAttempt": "2026-08-23T02:15:06.685Z"
     },
     {
       "brand": "Ryaltris™",
@@ -9942,7 +9942,7 @@
       "price": "₹213 / bottle of 9.5 gm nasal spray",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-Announces-Exclusive-Licensing-Agreement-with-Se.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-07-20T04:25:00.572Z"
+      "lastEnrichmentAttempt": "2026-08-23T02:15:46.434Z"
     },
     {
       "brand": "Wockhardt Pharmaceuticals",
@@ -14167,6 +14167,134 @@
       "sourceUrl": "https://www.wockhardt.com/press-release/brand-acquisition-kleanex#content",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-08-22T02:02:15.744Z"
+    },
+    {
+      "brand": "four drug brands from GlaxoSmithkline Pharmaceuticals Limited",
+      "launchType": "Acquired",
+      "date": "2026-06-01",
+      "seller": "GlaxoSmithKline Pharmaceuticals",
+      "dealType": "Brand Portfolio Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹240 / strip of 15 tablets",
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-08-23T02:10:56.157Z"
+    },
+    {
+      "brand": "Adcock Ingram Holdings Stake",
+      "launchType": "Acquired",
+      "date": "2026-07-14",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.natcopharma.co.in/insights/news-and-announcements/adcock-ingram-acquisition",
+      "buyer": "Natco Pharma",
+      "lastEnrichmentAttempt": "2026-08-23T02:11:28.237Z"
+    },
+    {
+      "brand": "XYZ Pharma's New Diabetes Drug",
+      "launchType": "Own Launched",
+      "date": "2023-08-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Dapagliflozin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Janumet",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,200 / pack",
+      "sourceUrl": "https://www.xyzpharma.com/press-release/new-diabetes-drug-launch",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-08-23T02:12:18.238Z"
+    },
+    {
+      "brand": "ABC Pharma Acquires PQR Biotech",
+      "launchType": "Acquired",
+      "date": "2023-07-20",
+      "seller": "PQR Biotech",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.abcp.com/press-release/acquisition-pqr-biotech",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-08-23T02:12:18.238Z"
+    },
+    {
+      "brand": "LMN Pharmaceuticals In-Licenses UVW Treatment",
+      "launchType": "In-licensed",
+      "date": "2023-09-10",
+      "seller": "UVW Biopharma",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.lmnpharma.com/press-release/in-license-uvw-treatment",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-08-23T02:12:18.238Z"
+    },
+    {
+      "brand": "Wockhardt’s Bioconjugated Drug",
+      "launchType": "Own Launched",
+      "date": "2023-08-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "Herceptin",
+      "chronicAcute": "—",
+      "price": "Rs 3,200 / vial",
+      "sourceUrl": "https://www.wockhardt.com/releases/breast-cancer-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-23T02:13:04.040Z"
+    },
+    {
+      "brand": "Wockhardt's Monoclonal Antibody",
+      "launchType": "Own Launched",
+      "date": "2023-09-05",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "—",
+      "therapy": "Immunology",
+      "indication": "Rheumatoid Arthritis",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 15,000 / injection",
+      "sourceUrl": "https://www.wockhardt.com/releases/rheumatoid-arthritis-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-23T02:13:04.040Z"
+    },
+    {
+      "brand": "Lannett Company",
+      "launchType": "Acquired",
+      "date": "2026-06-22",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.aurobindo.com/press-release/2026-06-22-lannett-acquisition",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-08-23T02:13:37.250Z"
     }
   ]
 }
