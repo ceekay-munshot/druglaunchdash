@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-23T02:16:17.243Z",
-  "rowCount": 894,
+  "generatedAt": "2026-08-24T02:13:30.699Z",
+  "rowCount": 899,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -1302,7 +1302,7 @@
       "price": "₹1347 / bottle of 40 capsules",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/12/Press-Release-Sun-Pharma-receives-DCGI-approval-for-Molxvir-Molnupiravir-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-20T04:26:57.361Z"
+      "lastEnrichmentAttempt": "2026-08-24T02:12:15.029Z"
     },
     {
       "brand": "Ensure® Strength Pro",
@@ -1318,7 +1318,7 @@
       "price": "₹679 / box of 400 gm",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-ensure-strength-pro-in-india-to-support-healthy-ageing.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-07-20T04:27:01.437Z"
+      "lastEnrichmentAttempt": "2026-08-24T02:12:19.891Z"
     },
     {
       "brand": "TriClip™",
@@ -1334,7 +1334,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-introduces-triclip-in-india-a-first-of-its-kind-device-to-repair-a-leaky-tricuspid-valve.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-07-20T04:27:09.620Z"
+      "lastEnrichmentAttempt": "2026-08-24T02:12:26.913Z"
     },
     {
       "brand": "XIENCE Skypoint™",
@@ -4518,7 +4518,7 @@
       "price": "₹27.7 / vial of 1 injection",
       "sourceUrl": "https://www.cnbctv18.com/healthcare/alkem-oncology-novel-breast-cancer-treatment-drug-launch-palbociclib-palbo-15703241.htm",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-07-20T04:27:17.582Z"
+      "lastEnrichmentAttempt": "2026-08-24T02:12:33.518Z"
     },
     {
       "brand": "Navitor™",
@@ -4534,7 +4534,7 @@
       "price": "₹84.6 / tube of 10 gm",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-introduces-navitor-vision-in-india-the-next-generation-of-heart-valve-technology-designed-to-treat-aortic-stenosis.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-07-20T04:27:27.161Z"
+      "lastEnrichmentAttempt": "2026-08-24T02:12:42.231Z"
     },
     {
       "brand": "Navitor™",
@@ -4550,7 +4550,7 @@
       "price": "₹84.6 / tube of 10 gm cream",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-navitor-its-latest-generation-transcatheter-aortic-valve-implantation-tavi-system-to-treat-aortic-stenosis-in-india.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-07-20T04:27:33.915Z"
+      "lastEnrichmentAttempt": "2026-08-24T02:12:49.799Z"
     },
     {
       "brand": "Brufen® Power Spray",
@@ -4566,7 +4566,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbotts-new-brufen-power-spray-film-highlights-the-power-of-targeted-pain-relief.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-07-20T04:27:40.178Z"
+      "lastEnrichmentAttempt": "2026-08-24T02:12:57.977Z"
     },
     {
       "brand": "Panbio™ COVID-19 Antigen Self-Test",
@@ -7014,7 +7014,7 @@
       "price": "₹110 / strip of 15 tablet er",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoUSFDAmetformin07042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-20T04:26:28.699Z"
+      "lastEnrichmentAttempt": "2026-08-24T02:10:52.759Z"
     },
     {
       "brand": "Omalizumab",
@@ -7030,7 +7030,7 @@
       "price": "₹34491 / ampoule of 2 ml injection",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-20T04:26:51.630Z"
+      "lastEnrichmentAttempt": "2026-08-24T02:11:35.107Z"
     },
     {
       "brand": "Wockhardt's Generic Insulin",
@@ -8830,7 +8830,7 @@
       "date": "2018-07-10",
       "seller": "—",
       "dealType": "NCE Launch",
-      "molecule": "—",
+      "molecule": "combination drug",
       "therapy": "Oncology",
       "indication": "Chemotherapy-induced nausea and vomiting",
       "existingBrand": "—",
@@ -9990,7 +9990,7 @@
       "price": "₹2.1 / strip of 10 tablets",
       "sourceUrl": "https://www.wockhardt.com/press-releases/wockhardt-in-licenses-product-from-pfizer",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-20T04:26:27.193Z"
+      "lastEnrichmentAttempt": "2026-08-24T02:10:44.778Z"
     },
     {
       "brand": "WINLEVI®",
@@ -14295,6 +14295,86 @@
       "sourceUrl": "https://www.aurobindo.com/press-release/2026-06-22-lannett-acquisition",
       "buyer": "Aurobindo",
       "lastEnrichmentAttempt": "2026-08-23T02:13:37.250Z"
+    },
+    {
+      "brand": "Tricium",
+      "launchType": "Own Launched",
+      "date": "2026-06-01",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹165 / strip of 10 tablets",
+      "sourceUrl": "—",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-08-24T02:09:03.457Z"
+    },
+    {
+      "brand": "Wockhardt's Biosimilar",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "—",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "Rituxan",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/press-release/biosimilar-launch-2023",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-24T02:10:43.271Z"
+    },
+    {
+      "brand": "Wockhardt Acquisition",
+      "launchType": "Acquired",
+      "date": "2023-09-15",
+      "seller": "XYZ Pharmaceuticals",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹254.85 / tin of 200 gm powder",
+      "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-2023",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-24T02:10:43.271Z"
+    },
+    {
+      "brand": "Wockhardt Diabetes Treatment",
+      "launchType": "Own Launched",
+      "date": "2023-08-20",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Semaglutide",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Ozempic",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,200 / pack",
+      "sourceUrl": "https://www.wockhardt.com/press-release/diabetes-launch-2023",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-24T02:10:43.271Z"
+    },
+    {
+      "brand": "Wockhardt",
+      "launchType": "In-licensed",
+      "date": "2023-09-10",
+      "seller": "Pfizer",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-releases/wockhardt-in-licenses-product-from-pfizer#content",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-24T02:10:44.778Z"
     }
   ]
 }
