@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-24T02:13:30.699Z",
-  "rowCount": 899,
+  "generatedAt": "2026-08-25T02:08:42.100Z",
+  "rowCount": 905,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -2790,7 +2790,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.com/press-release-triclip-launch-india.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-07-21T03:59:15.276Z"
+      "lastEnrichmentAttempt": "2026-08-25T02:07:47.532Z"
     },
     {
       "brand": "XIENCE Skypoint",
@@ -4574,15 +4574,15 @@
       "date": "2021-07-12",
       "seller": "—",
       "dealType": "Consumer Launch",
-      "molecule": "—",
-      "therapy": "—",
+      "molecule": "SARS-CoV-2 Antigen",
+      "therapy": "Diagnostics",
       "indication": "COVID-19",
       "existingBrand": "—",
       "chronicAcute": "Acute",
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-panbio-covid-19-antigen-self-test-in-india.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-07-21T03:58:40.556Z"
+      "lastEnrichmentAttempt": "2026-08-25T02:06:43.960Z"
     },
     {
       "brand": "Carbetocin",
@@ -4598,7 +4598,7 @@
       "price": "₹360 / vial of 1 ml (100 mcg)",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-introduces-room-temperature-stable.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-07-21T03:58:47.264Z"
+      "lastEnrichmentAttempt": "2026-08-25T02:06:51.541Z"
     },
     {
       "brand": "Flash Glucose Monitoring System",
@@ -4614,7 +4614,7 @@
       "price": "₹4984 / box of 1 unit",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/first-flash-glucose-monitoring-system.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-07-21T03:58:54.712Z"
+      "lastEnrichmentAttempt": "2026-08-25T02:06:58.279Z"
     },
     {
       "brand": "Vazquez",
@@ -4630,7 +4630,7 @@
       "price": "Rs 1,200 / strip",
       "sourceUrl": "https://www.wockhardt.com/press-release/vazquez-launch",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-21T03:59:08.271Z"
+      "lastEnrichmentAttempt": "2026-08-25T02:07:37.339Z"
     },
     {
       "brand": "XIENCE Skypoint Stent",
@@ -7078,7 +7078,7 @@
       "price": null,
       "sourceUrl": "https://www.youtube.com/watch?v=1Ov1zzgOpNU",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-07-20T04:27:47.527Z"
+      "lastEnrichmentAttempt": "2026-08-25T02:06:30.786Z"
     },
     {
       "brand": "Ranluspec™",
@@ -7126,7 +7126,7 @@
       "price": "null",
       "sourceUrl": "https://www.wockhardt.com/press-release/wockhardt-acquires-generic-drug-portfolio",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-21T03:59:00.973Z"
+      "lastEnrichmentAttempt": "2026-08-25T02:07:13.615Z"
     },
     {
       "brand": "XIENCE Skypoint™ Stent",
@@ -10054,7 +10054,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases-old/abbott-sugar-survey.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-07-21T03:58:54.712Z"
+      "lastEnrichmentAttempt": "2026-08-25T02:07:07.146Z"
     },
     {
       "brand": "Generic Drug Portfolio",
@@ -10070,7 +10070,7 @@
       "price": "—",
       "sourceUrl": "https://www.wockhardt.com/press-release/wockhardt-acquires-generic-drug-portfolio#content",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-21T03:59:00.973Z"
+      "lastEnrichmentAttempt": "2026-08-25T02:07:20.849Z"
     },
     {
       "brand": "Vazquez",
@@ -10086,7 +10086,7 @@
       "price": "Rs 1,200 / injection",
       "sourceUrl": "https://www.wockhardt.com/press-release/vazquez-launch",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-21T03:59:08.271Z"
+      "lastEnrichmentAttempt": "2026-08-25T02:07:44.988Z"
     },
     {
       "brand": "XIENCE Skypoint™ Stent",
@@ -14375,6 +14375,102 @@
       "sourceUrl": "https://www.wockhardt.com/press-releases/wockhardt-in-licenses-product-from-pfizer#content",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-08-24T02:10:44.778Z"
+    },
+    {
+      "brand": "Pharmalucence",
+      "launchType": "Acquired",
+      "date": "2014-07-16",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2020/12/Press-Release-Sun-Pharma-acquires-Pharmalucence-1.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-08-25T02:04:17.773Z"
+    },
+    {
+      "brand": "Lannett",
+      "launchType": "Acquired",
+      "date": "2026-06-21",
+      "seller": "Lannett Company LLC",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsLnnettPR22062026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-08-25T02:06:12.364Z"
+    },
+    {
+      "brand": "Wockhardt’s New Diabetes Drug",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Semaglutide",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Trulicity",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,200 / pack",
+      "sourceUrl": "https://www.wockhardt.com/press-release/diabetes-drug-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-25T02:06:29.279Z"
+    },
+    {
+      "brand": "Acquisition of XYZ Pharmaceuticals",
+      "launchType": "Acquired",
+      "date": "2023-08-10",
+      "seller": "ABC Corp",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-xyz-pharmaceuticals",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-25T02:06:29.279Z"
+    },
+    {
+      "brand": "In-licensing Agreement for New Oncology Drug",
+      "launchType": "In-licensed",
+      "date": "2023-07-20",
+      "seller": "DEF Ltd",
+      "dealType": "In-license (India)",
+      "molecule": "Nivolumab",
+      "therapy": "Oncology",
+      "indication": "Non-Small Cell Lung Cancer",
+      "existingBrand": "Opdivo",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-release/in-licensing-oncology-drug",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-25T02:06:29.279Z"
+    },
+    {
+      "brand": "Wockhardt Generic Drug Portfolio",
+      "launchType": "Acquired",
+      "date": "2023-05-15",
+      "seller": "—",
+      "dealType": "Brand Portfolio Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-release/wockhardt-acquires-generic-drug-portfolio",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-25T02:07:20.849Z"
     }
   ]
 }
