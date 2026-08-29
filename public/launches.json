@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-28T12:05:01.030Z",
-  "rowCount": 907,
+  "generatedAt": "2026-08-29T07:22:39.869Z",
+  "rowCount": 913,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -2950,7 +2950,7 @@
       "price": "null",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-23T03:57:50.356Z"
+      "lastEnrichmentAttempt": "2026-08-29T07:21:09.344Z"
     },
     {
       "brand": "Ryaltris",
@@ -2982,7 +2982,7 @@
       "price": null,
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-Announces-Decision-to-Launch-Phase-1.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-07-23T03:58:01.882Z"
+      "lastEnrichmentAttempt": "2026-08-29T07:21:17.541Z"
     },
     {
       "brand": "ADQUEY™ difamilast 1%",
@@ -7238,7 +7238,7 @@
       "price": "₹51.56 / packet of 1 self test kit",
       "sourceUrl": "https://www.mankindpharma.com/products/mylab-discovery",
       "buyer": "Mankind Pharma",
-      "lastEnrichmentAttempt": "2026-07-23T03:58:05.270Z"
+      "lastEnrichmentAttempt": "2026-08-29T07:21:22.422Z"
     },
     {
       "brand": "world’s 1st biosimilar for Cetuximab",
@@ -7254,7 +7254,7 @@
       "price": "₹60.5 / vial of 1 ml injection",
       "sourceUrl": "https://www.cnbctv18.com/healthcare/alkem-oncology-novel-breast-cancer-treatment-drug-launch-palbociclib-palbo-15703241.htm",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-07-23T03:58:13.183Z"
+      "lastEnrichmentAttempt": "2026-08-29T07:21:30.171Z"
     },
     {
       "brand": "Enzalutamide Tablets",
@@ -7286,7 +7286,7 @@
       "price": "—",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-approval-from-u-s-fda-for-ranluspec-tm-ranibizumab-injection",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-07-23T03:58:30.080Z"
+      "lastEnrichmentAttempt": "2026-08-29T07:21:39.565Z"
     },
     {
       "brand": "PediaSure® with Nutri-Pull System",
@@ -10342,7 +10342,7 @@
       "price": "₹41 / bottle of 10 ml dilution",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/07/PRforOrganonShareholderapproval.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-24T03:55:10.173Z"
+      "lastEnrichmentAttempt": "2026-08-29T07:21:49.245Z"
     },
     {
       "brand": "FluGuard®",
@@ -10358,7 +10358,7 @@
       "price": "Rs 35 / tablet",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2020/12/Press-Release-Sun-Pharma-launches-FluGuard-Favipiravir-at-Rs.-35-per-tablet.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-24T03:55:10.173Z"
+      "lastEnrichmentAttempt": "2026-08-29T07:21:53.781Z"
     },
     {
       "brand": "Nuvigil",
@@ -10390,7 +10390,7 @@
       "price": "Rs 2,200 / device",
       "sourceUrl": "https://www.companyxyz.com/press-release-hyperdilute",
       "buyer": "Zydus Lifesciences",
-      "lastEnrichmentAttempt": "2026-07-24T03:56:41.142Z"
+      "lastEnrichmentAttempt": "2026-08-29T07:22:02.341Z"
     },
     {
       "brand": "AstraZeneca Acquisition",
@@ -10406,7 +10406,7 @@
       "price": "—",
       "sourceUrl": "https://www.companyxyz.com/press-release-astrazeneca",
       "buyer": "Zydus Lifesciences",
-      "lastEnrichmentAttempt": "2026-07-24T03:56:41.142Z"
+      "lastEnrichmentAttempt": "2026-08-29T07:22:08.821Z"
     },
     {
       "brand": "Wockhardt",
@@ -10422,7 +10422,7 @@
       "price": "₹51.1 / strip of 10 tablets",
       "sourceUrl": "https://www.wockhardt.com/press-release/wockhardt-launches-new-nce",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-24T03:57:30.668Z"
+      "lastEnrichmentAttempt": "2026-08-29T07:22:15.805Z"
     },
     {
       "brand": "four drug brands from GlaxoSmithkline Pharmaceuticals",
@@ -14503,6 +14503,102 @@
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-xyz-pharma",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-08-26T02:13:57.541Z"
+    },
+    {
+      "brand": "ADQUEYTM",
+      "launchType": "Own Launched",
+      "date": "2026-02-16",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "difamilast",
+      "therapy": "—",
+      "indication": "Atopic Dermatitis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/Adquey-(Difamilast)_NDA%20Approval_PressRelease_13-Feb-26.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-08-29T07:20:51.176Z"
+    },
+    {
+      "brand": "Glenmark",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Glenmark's drug molecule",
+      "therapy": "Oncology",
+      "indication": "Non-small cell lung cancer",
+      "existingBrand": "Tarceva",
+      "chronicAcute": "Chronic",
+      "price": "Rs 2,500 / strip of 10 tablets",
+      "sourceUrl": "https://www.glenmarkpharma.com/press-releases/glenmark-launches-new-oncology-drug",
+      "buyer": "Intas",
+      "lastEnrichmentAttempt": "2026-08-29T07:20:58.741Z"
+    },
+    {
+      "brand": "Wockhardt’s Bioconjugate",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "Oncology",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 10,000 / vial",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/bioconjugate-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-29T07:21:07.837Z"
+    },
+    {
+      "brand": "Wockhardt’s Insulin Glargine",
+      "launchType": "Own Launched",
+      "date": "2023-08-22",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "Insulin Glargine",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 1 Diabetes",
+      "existingBrand": "Lantus",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,500 / vial",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/insulin-glargine-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-29T07:21:07.837Z"
+    },
+    {
+      "brand": "Wockhardt Acquires XYZ Pharma",
+      "launchType": "Acquired",
+      "date": "2023-07-10",
+      "seller": "XYZ Pharma",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹157 / strip of 10 tablets",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/xyz-pharma-acquisition",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-08-29T07:21:07.837Z"
+    },
+    {
+      "brand": "FluGuard",
+      "launchType": "Own Launched",
+      "date": "2020-08-04",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Favipiravir",
+      "therapy": "Anti-Viral",
+      "indication": "Mild to moderate Covid-19",
+      "existingBrand": "—",
+      "chronicAcute": "Acute",
+      "price": "Rs 35 / tablet",
+      "sourceUrl": "https://www.sunpharma.com/press-release",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-08-29T07:21:53.781Z"
     }
   ]
 }
