@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-30T07:10:22.451Z",
-  "rowCount": 220,
+  "generatedAt": "2026-08-31T07:24:11.337Z",
+  "rowCount": 221,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -3911,6 +3911,25 @@
       "_title": "backfill:YUVEZZI™",
       "_provider": "mistral",
       "_harvestedAt": "2026-08-22T02:36:57.269Z"
+    },
+    {
+      "brand": "Generic Advair Diskus",
+      "launchType": "Own Launched",
+      "date": "2026-08-31",
+      "seller": "—",
+      "dealType": "—",
+      "molecule": "fluticasone propionate and salmeterol",
+      "therapy": "Respiratory",
+      "indication": "Asthma and Chronic Obstructive Pulmonary Disease (COPD)",
+      "price": "—",
+      "dealValue": null,
+      "existingBrand": "Advair Diskus",
+      "chronicAcute": "Chronic",
+      "buyer": "Aurobindo",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=c564ad63-5765-4226-966f-2a26a9dffb90.pdf",
+      "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release (Revised) 31 Aug - Lannett launches generic Advair Diskus in the US, first inhalation product commercialized.",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-08-31T07:24:01.269Z"
     }
   ],
   "processedUrls": [
@@ -4263,6 +4282,9 @@
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=e81e5c7e-abdf-459c-b05b-dbc33ee51660.pdf",
     "https://www.wockhardt.com/press-releases/xyz-pharma-acquisition",
     "https://www.wockhardt.com/press-releases/bioconjugate-launch",
-    "https://www.mankindpharma.com/JC5uRjkQPLpYgcSRVxlpDYLge1_NGUlJYfa08twU1cc=.html"
+    "https://www.mankindpharma.com/JC5uRjkQPLpYgcSRVxlpDYLge1_NGUlJYfa08twU1cc=.html",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=c564ad63-5765-4226-966f-2a26a9dffb90.pdf",
+    "https://www.sunpharma.com/press-release/sun-pharma-acquisition-mankind",
+    "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrtoSEsLannetPR31082026.pdf"
   ]
 }
