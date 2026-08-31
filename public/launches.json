@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-30T05:46:20.522Z",
-  "rowCount": 917,
+  "generatedAt": "2026-08-31T06:09:57.927Z",
+  "rowCount": 923,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -630,7 +630,7 @@
       "price": "₹210 / strip of 10 capsules",
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/amp_articleshow/100775508.cms",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-07-25T03:52:02.713Z"
+      "lastEnrichmentAttempt": "2026-08-31T06:07:07.183Z"
     },
     {
       "brand": "Cetuximab Biosimilar",
@@ -4790,7 +4790,7 @@
       "price": "—",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Pharmaceuticals-and-Harbour-BioMed-Sign-Agreement-for-Greater-China-toDevelop-GBR-1302.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-07-25T03:51:46.779Z"
+      "lastEnrichmentAttempt": "2026-08-31T06:06:19.576Z"
     },
     {
       "brand": "Wockhardt's New Drug ABC-123",
@@ -4822,7 +4822,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-xyz-pharma",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-25T03:51:54.231Z"
+      "lastEnrichmentAttempt": "2026-08-31T06:06:40.208Z"
     },
     {
       "brand": "In-licensing of Drug XYZ-456",
@@ -7430,7 +7430,7 @@
       "price": "null",
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-xyz-pharma#content",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-25T03:52:00.324Z"
+      "lastEnrichmentAttempt": "2026-08-31T06:06:54.026Z"
     },
     {
       "brand": "Molxvir® (Molnupiravir)",
@@ -7446,7 +7446,7 @@
       "price": "₹1285 / bottle of 40 capsules",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/11/Press-Release-Sun-Pharma-gearing-up-to-introduce-molnupiravir-under-the-brand-name-Molxvir%C2%AE-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-25T03:52:16.747Z"
+      "lastEnrichmentAttempt": "2026-08-31T06:07:22.716Z"
     },
     {
       "brand": "Enzalutamide",
@@ -7478,7 +7478,7 @@
       "price": "₹328 / box of 200 gm powder",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-new-pediaSure-with-nutri-pull-system-to-help-support-catch-up-growth-and-overall-health-in-children.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-07-25T03:52:29.582Z"
+      "lastEnrichmentAttempt": "2026-08-31T06:07:36.271Z"
     },
     {
       "brand": "Vertigo Coach App",
@@ -7494,7 +7494,7 @@
       "price": "₹196 / bottle of 30 ml drop",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/Abbott-Helps-People-with-Vertigo-Take-Control-of-Their-Health-with-the-Launch-of-an-Easy-to-Use-Vertigo-Coach-App-in-India.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-07-25T03:52:32.543Z"
+      "lastEnrichmentAttempt": "2026-08-31T06:07:46.234Z"
     },
     {
       "brand": "Lannett Company LLC",
@@ -7510,7 +7510,7 @@
       "price": null,
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsLnnettPR22062026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-25T03:52:39.999Z"
+      "lastEnrichmentAttempt": "2026-08-31T06:07:53.997Z"
     },
     {
       "brand": "Vaccine X",
@@ -10534,7 +10534,7 @@
       "price": "—",
       "sourceUrl": "https://www.cipla.com/press-release/cipla-acquires-generic-portfolio",
       "buyer": "Cipla",
-      "lastEnrichmentAttempt": "2026-07-26T04:08:09.760Z"
+      "lastEnrichmentAttempt": "2026-08-31T06:08:44.061Z"
     },
     {
       "brand": "4 drug brands from GlaxoSmithkline",
@@ -10550,7 +10550,7 @@
       "price": "₹34.5 / strip of 10 tablets",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-26T04:08:40.207Z"
+      "lastEnrichmentAttempt": "2026-08-31T06:08:55.938Z"
     },
     {
       "brand": "Adcock Ingram Holdings",
@@ -14663,6 +14663,102 @@
       "sourceUrl": "https://www.wockhardt.com/press-release/simlac-launch",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-08-30T05:43:27.874Z"
+    },
+    {
+      "brand": "Telma",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Telmisartan",
+      "therapy": "Anti-Hypertensive",
+      "indication": "Hypertension",
+      "existingBrand": "Cozart",
+      "chronicAcute": "Chronic",
+      "price": "₹200 / strip of 30 tablets",
+      "sourceUrl": "https://www.mankindpharma.com/0xjQ9GCEQttxBM_S6CceKjZ0gipxqyDtLySeQIY4hDk=.html",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-08-31T05:58:51.245Z"
+    },
+    {
+      "brand": "GBR 1342",
+      "launchType": "In-licensed",
+      "date": "2018-08-06",
+      "seller": "—",
+      "dealType": "Co-marketing",
+      "molecule": "GBR 1342",
+      "therapy": "—",
+      "indication": "HER2-Positive Cancers",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Pharmaceuticals-and-Harbour-BioMed-Sign-Agreement-for-Greater-China-toDevelop-GBR-1302.pdf",
+      "buyer": "Glenmark",
+      "lastEnrichmentAttempt": "2026-08-31T06:01:23.442Z"
+    },
+    {
+      "brand": "Medifast",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "semaglutide",
+      "therapy": "Anti-diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Wegovy",
+      "chronicAcute": "Chronic",
+      "price": "Rs 3,500 / vial",
+      "sourceUrl": "https://www.medifast.com/press-release/new-launch-semglutide",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-08-31T06:02:24.110Z"
+    },
+    {
+      "brand": "Sun Pharma",
+      "launchType": "Acquired",
+      "date": "2023-09-10",
+      "seller": "Mankind Pharma",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Telma",
+      "chronicAcute": "—",
+      "price": "₹178 / strip of 15 tablets",
+      "sourceUrl": "https://www.sunpharma.com/press-release/sun-pharma-acquisition-mankind",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-08-31T06:02:24.110Z"
+    },
+    {
+      "brand": "14 valent Pneumococcal Conjugate Vaccine (PCV-14)",
+      "launchType": "Own Launched",
+      "date": "2024-11-27",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "Pneumococcal Bacterial Infections",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-14-valent-pneumococcal-conjugate-vaccine-pcv-14-that-offers-broadest-protection-for-children-against-pneumococcal-bacterial-infections.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-08-31T06:02:43.129Z"
+    },
+    {
+      "brand": "Advair Diskus",
+      "launchType": "Acquired",
+      "date": "2026-08-30",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "fluticasone propionate plus salmeterol",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrtoSEsLannetPR31082026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-08-31T06:03:16.411Z"
     }
   ]
 }
