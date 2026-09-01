@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-31T06:09:57.927Z",
-  "rowCount": 923,
+  "generatedAt": "2026-09-01T05:35:31.262Z",
+  "rowCount": 932,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -646,7 +646,7 @@
       "price": "₹9281 / vial of 20 ml infusion",
       "sourceUrl": "https://www.cnbctv18.com/healthcare/alkem-oncology-novel-breast-cancer-treatment-drug-launch-palbociclib-palbo-15703241.htm",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-07-26T04:11:44.514Z"
+      "lastEnrichmentAttempt": "2026-09-01T05:34:19.235Z"
     },
     {
       "brand": "Obimet",
@@ -662,7 +662,7 @@
       "price": "₹30.6 / strip of 15 tablet sr",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-26T04:11:54.583Z"
+      "lastEnrichmentAttempt": "2026-09-01T05:34:29.060Z"
     },
     {
       "brand": "Molxvir (Molnupiravir)",
@@ -3126,7 +3126,7 @@
       "price": "₹1483 / box of 2 pre-filled pens",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/PR-for-Semaglutide.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-26T04:10:32.207Z"
+      "lastEnrichmentAttempt": "2026-09-01T05:33:06.246Z"
     },
     {
       "brand": "Molxvir®",
@@ -3174,7 +3174,7 @@
       "price": "₹523 / bottle of 150 ml cleanser",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-26T04:10:36.379Z"
+      "lastEnrichmentAttempt": "2026-09-01T05:33:12.646Z"
     },
     {
       "brand": "Navitor™",
@@ -3190,7 +3190,7 @@
       "price": "₹84.6 / tube of 10 gm",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-navitor-its-latest-generation-transcatheter-aortic-valve-implantation-tavi-system-to-treat-aortic-stenosis-in-india.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-07-26T04:10:44.546Z"
+      "lastEnrichmentAttempt": "2026-09-01T05:33:28.295Z"
     },
     {
       "brand": "BP11 (Biosimilar to Omalizumab)",
@@ -3206,7 +3206,7 @@
       "price": "₹190 / strip of 15 tablets",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-26T04:10:51.132Z"
+      "lastEnrichmentAttempt": "2026-09-01T05:33:36.641Z"
     },
     {
       "brand": "valsartan and sacubitril",
@@ -4870,7 +4870,7 @@
       "price": null,
       "sourceUrl": "http://www.aurobindo.com/",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-26T04:11:23.201Z"
+      "lastEnrichmentAttempt": "2026-09-01T05:34:06.341Z"
     },
     {
       "brand": "Drug A",
@@ -4902,7 +4902,7 @@
       "price": "null",
       "sourceUrl": "https://www.cipla.com/press-releases/2023/acquisition-of-company-b",
       "buyer": "Cipla",
-      "lastEnrichmentAttempt": "2026-07-26T04:12:02.288Z"
+      "lastEnrichmentAttempt": "2026-09-01T05:34:39.026Z"
     },
     {
       "brand": "Drug C",
@@ -10598,7 +10598,7 @@
       "price": "₹757.51 / tube of 6 gm gel",
       "sourceUrl": "https://www.wockhardt.com/releases/covid-vaccine-acquisition",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-26T04:10:30.702Z"
+      "lastEnrichmentAttempt": "2026-09-01T05:32:59.631Z"
     },
     {
       "brand": "Wockhardt",
@@ -10630,7 +10630,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-26T04:10:36.379Z"
+      "lastEnrichmentAttempt": "2026-09-01T05:33:16.350Z"
     },
     {
       "brand": "Genricine",
@@ -14759,6 +14759,150 @@
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrtoSEsLannetPR31082026.pdf",
       "buyer": "Aurobindo",
       "lastEnrichmentAttempt": "2026-08-31T06:03:16.411Z"
+    },
+    {
+      "brand": "Paxlovid",
+      "launchType": "Own Launched",
+      "date": "2023-09-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Nirmatrelvir plus Ritonavir",
+      "therapy": "Antiviral",
+      "indication": "COVID-19",
+      "existingBrand": "—",
+      "chronicAcute": "Acute",
+      "price": "Rs 1,350 / pack",
+      "sourceUrl": "https://www.mankindpharma.com/0xjQ9GCEQttxBM_S6CceKjZ0gipxqyDtLySeQIY4hDk=.html",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-09-01T05:31:24.008Z"
+    },
+    {
+      "brand": "Molxvir",
+      "launchType": "Own Launched",
+      "date": "2021-11-11",
+      "seller": "MSD",
+      "dealType": "NCE Launch",
+      "molecule": "Molnupiravir",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹1283 / bottle of 40 capsules",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/11/Press-Release-Sun-Pharma-gearing-up-to-introduce-molnupiravir-under-the-brand-name-Molxvir%C2%AE-in-India.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-09-01T05:31:32.818Z"
+    },
+    {
+      "brand": "Alkem Antibiotic",
+      "launchType": "Own Launched",
+      "date": "2023-10-02",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "Novel antibiotic combination",
+      "therapy": "—",
+      "indication": "Drug-resistant infections",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹12.14 / vial of 1 injection",
+      "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/amp_articleshow/100775508.cms",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-09-01T05:31:45.248Z"
+    },
+    {
+      "brand": "Alkem Eye Care",
+      "launchType": "Own Launched",
+      "date": "2023-10-22",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "Ophthalmology",
+      "indication": "Eye care",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://health.economictimes.indiatimes.com/news/pharma/drug-approvals-launches/alkem-forays-into-ophthalmology-with-launch-of-eye-care-products/101642253",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-09-01T05:31:45.248Z"
+    },
+    {
+      "brand": "Olaparib",
+      "launchType": "Acquired",
+      "date": "2026-07-20",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Olaparib",
+      "therapy": "Oncology",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹9702 / bottle of 30 tablets",
+      "sourceUrl": "https://www.natcopharma.co.in/insights/news-and-announcements/2026/07/20/natco-receives-tentative-approval-for-olaparib-tablets",
+      "buyer": "Natco Pharma",
+      "lastEnrichmentAttempt": "2026-09-01T05:32:04.032Z"
+    },
+    {
+      "brand": "Daptomycin",
+      "launchType": "Own Launched",
+      "date": "2026-04-06",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Daptomycin",
+      "therapy": "Anti-Infectives",
+      "indication": "—",
+      "existingBrand": "Cubicin",
+      "chronicAcute": "—",
+      "price": "₹4119 / vial of 1 injection (350 mg)",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsDaptomycinLaunch06042026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-09-01T05:32:50.976Z"
+    },
+    {
+      "brand": "Wockhardt's New Drug",
+      "launchType": "Own Launched",
+      "date": "2023-09-05",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "WCK 5222",
+      "therapy": "Anti-diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,200 / strip",
+      "sourceUrl": "https://www.wockhardt.com/pressrelease/wockhardt-new-drug-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-09-01T05:32:58.126Z"
+    },
+    {
+      "brand": "Acquisition of Generic Portfolio",
+      "launchType": "Acquired",
+      "date": "2023-08-15",
+      "seller": "XYZ Pharmaceuticals",
+      "dealType": "Brand Portfolio Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Generic Pharma Brand A",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/pressrelease/acquisition-generic-portfolio",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-09-01T05:32:58.126Z"
+    },
+    {
+      "brand": "MSD",
+      "launchType": "In-licensed",
+      "date": "2026-07-23",
+      "seller": "—",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseBrazilMSD24072026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-09-01T05:34:06.341Z"
     }
   ]
 }
