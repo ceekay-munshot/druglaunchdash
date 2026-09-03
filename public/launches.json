@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-02T05:01:32.590Z",
-  "rowCount": 936,
+  "generatedAt": "2026-09-03T04:57:45.222Z",
+  "rowCount": 942,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -1782,7 +1782,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/Abbotts-New-Coronary-Imaging-Software-Powered-by-Artificial-Intelligence-Launched-in-India.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-07-27T04:27:13.796Z"
+      "lastEnrichmentAttempt": "2026-09-03T04:56:24.490Z"
     },
     {
       "brand": "Dextromethorphan Polistirex",
@@ -1798,7 +1798,7 @@
       "price": "₹190 / strip of 10 (625 mg)",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/2LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-27T04:27:26.662Z"
+      "lastEnrichmentAttempt": "2026-09-03T04:56:42.964Z"
     },
     {
       "brand": "Glycerol Phenylbutyrate",
@@ -1814,7 +1814,7 @@
       "price": "₹84.53 / bottle of 250 ml",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-27T04:27:32.943Z"
+      "lastEnrichmentAttempt": "2026-09-03T04:56:55.480Z"
     },
     {
       "brand": "Everolimus Tablets",
@@ -1830,7 +1830,7 @@
       "price": "₹666.78 / strip of 10 tablets",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtsToSEsPREugiaUSFDA26022026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-27T04:27:39.274Z"
+      "lastEnrichmentAttempt": "2026-09-03T04:57:01.861Z"
     },
     {
       "brand": "Noveltreat",
@@ -3238,7 +3238,7 @@
       "price": "—",
       "sourceUrl": "https://abbott.mediaroom.com/2023-10-16-Abbott-launches-Ultreon-1-0-Software-in-India",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-07-27T04:27:20.863Z"
+      "lastEnrichmentAttempt": "2026-09-03T04:56:35.290Z"
     },
     {
       "brand": "Everolimus Tablets",
@@ -3286,7 +3286,7 @@
       "price": "₹21.7 / strip of 10 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-27T04:27:46.669Z"
+      "lastEnrichmentAttempt": "2026-09-03T04:57:07.696Z"
     },
     {
       "brand": "Thyrocab",
@@ -3302,7 +3302,7 @@
       "price": "₹232 / bottle of 100 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-27T04:27:54.907Z"
+      "lastEnrichmentAttempt": "2026-09-03T04:57:15.680Z"
     },
     {
       "brand": "Lupin’s Oseltamivir Phosphate Oral Suspension",
@@ -7606,7 +7606,7 @@
       "price": "Rs 1,199 / vial",
       "sourceUrl": "https://www.wockhardt.com/press-release/wockvaccine-launch",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-27T04:26:59.886Z"
+      "lastEnrichmentAttempt": "2026-09-03T04:56:11.435Z"
     },
     {
       "brand": "Wockhardt's Antifungal Drug",
@@ -7638,7 +7638,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/press-release/biosimilar-launch",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-27T04:27:06.134Z"
+      "lastEnrichmentAttempt": "2026-09-03T04:56:17.852Z"
     },
     {
       "brand": "Acquisition B",
@@ -10934,7 +10934,7 @@
       "price": "₹1176 / box of 1 unit",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/07/Sun-Pharma-Bolus-Device.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-28T03:48:01.509Z"
+      "lastEnrichmentAttempt": "2026-09-03T04:57:20.006Z"
     },
     {
       "brand": "WINLEVI®",
@@ -14967,6 +14967,102 @@
       "sourceUrl": "https://www.wockhardt.com/press-releases/new-drug-launch-breast-cancer",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-09-02T05:00:09.455Z"
+    },
+    {
+      "brand": "FLUOGARD®",
+      "launchType": "Own Launched",
+      "date": "2020-08-04",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "favipiravir",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs. 35 / tablet",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2020/12/Press-Release-Sun-Pharma-launches-FluGuard-Favipiravir-at-Rs.-35-per-tablet.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-09-03T04:55:07.085Z"
+    },
+    {
+      "brand": "Zydus tie-up",
+      "launchType": "In-licensed",
+      "date": "2024-09-01",
+      "seller": "Zydus",
+      "dealType": "Co-marketing",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2024/08/Press-Release-Sun-Pharma-and-Zydus-sign-licensing-agreement-for-co-marketing-of-Desidustat-in-India.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-09-03T04:55:07.085Z"
+    },
+    {
+      "brand": "Ryaltris™",
+      "launchType": "In-licensed",
+      "date": "2018-08-08",
+      "seller": "Seqirus",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "Seasonal Allergic Rhinitis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹211 / bottle of 9.5 gm nasal spray",
+      "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-Announces-FDA-Acceptance-of-the-Companys-First.pdf",
+      "buyer": "Glenmark",
+      "lastEnrichmentAttempt": "2026-09-03T04:55:36.703Z"
+    },
+    {
+      "brand": "Wockhardt's New Oral Antidiabetic",
+      "launchType": "Own Launched",
+      "date": "2023-08-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Metformin",
+      "chronicAcute": "Chronic",
+      "price": "Rs 750 / pack",
+      "sourceUrl": "https://www.wockhardt.com/press-release/new-oral-antidiabetic-2023",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-09-03T04:56:09.929Z"
+    },
+    {
+      "brand": "Wockhardt's Acquisition of XYZ Pharma",
+      "launchType": "Acquired",
+      "date": "2023-07-10",
+      "seller": "XYZ Pharma",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹57.8 / strip of 10 tablets",
+      "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-xyz-pharma-2023",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-09-03T04:56:09.929Z"
+    },
+    {
+      "brand": "Aurobindo Pharma",
+      "launchType": "Acquired",
+      "date": "2026-04-17",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.aurobindo.com/press-release-acquisition",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-09-03T04:56:42.964Z"
     }
   ]
 }
