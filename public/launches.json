@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T04:57:45.222Z",
+  "generatedAt": "2026-09-04T04:59:43.980Z",
   "rowCount": 942,
   "rows": [
     {
@@ -3318,7 +3318,7 @@
       "price": "null",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-china-approval-for-oseltamivir-phosphate-oral-suspension",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-07-28T03:49:57.645Z"
+      "lastEnrichmentAttempt": "2026-09-04T04:59:36.811Z"
     },
     {
       "brand": "UNLOXCYT™",
@@ -5094,7 +5094,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/press-release-2",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-28T03:50:06.644Z"
+      "lastEnrichmentAttempt": "2026-09-04T04:59:39.732Z"
     },
     {
       "brand": "In-license for XYZ Drug",
@@ -5110,7 +5110,7 @@
       "price": "₹24.6 / strip of 7 tablets",
       "sourceUrl": "https://www.wockhardt.com/press-release-3",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-28T03:50:13.400Z"
+      "lastEnrichmentAttempt": "2026-09-04T04:59:41.149Z"
     },
     {
       "brand": "UNLOXCYT™ (cosibelimab-ipdl)",
@@ -7654,7 +7654,7 @@
       "price": "₹175 / bottle of 25 gm trituration tablet",
       "sourceUrl": "https://www.mankindpharma.com/press-release-acquisition-b",
       "buyer": "Mankind Pharma",
-      "lastEnrichmentAttempt": "2026-07-28T03:50:21.251Z"
+      "lastEnrichmentAttempt": "2026-09-04T04:59:42.502Z"
     },
     {
       "brand": "Wokadine",
@@ -10966,7 +10966,7 @@
       "price": "₹166 / strip of 10 tablets",
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/amp_articleshow/100775508.cms",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-07-28T03:48:14.693Z"
+      "lastEnrichmentAttempt": "2026-09-04T04:59:29.741Z"
     },
     {
       "brand": "corona remedies",
@@ -10982,7 +10982,7 @@
       "price": "null",
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-28T03:48:45.883Z"
+      "lastEnrichmentAttempt": "2026-09-04T04:59:31.056Z"
     },
     {
       "brand": "Maternal and Urology products",
@@ -10998,7 +10998,7 @@
       "price": "₹186 / strip of 10 tablets",
       "sourceUrl": "https://www.business-standard.com/content/press-releases-ani/corona-remedies-joins-hands-with-ferring-pharmaceuticals-to-commercialize-maternal-health-urology-products-in-india-123050900586_1.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-28T03:48:45.883Z"
+      "lastEnrichmentAttempt": "2026-09-04T04:59:32.505Z"
     },
     {
       "brand": "Acquisition of generic portfolio from ABC Pharma",
@@ -11014,7 +11014,7 @@
       "price": "null",
       "sourceUrl": "https://www.wockhardt.com/press-releases/acquisition-of-abc-pharma",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-28T03:49:56.140Z"
+      "lastEnrichmentAttempt": "2026-09-04T04:59:33.884Z"
     },
     {
       "brand": "In-licensing deal for XYZ cancer drug",
@@ -11030,7 +11030,7 @@
       "price": "null",
       "sourceUrl": "https://www.wockhardt.com/press-releases/in-licensing-deal-xyz-cancer-drug",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-28T03:49:56.140Z"
+      "lastEnrichmentAttempt": "2026-09-04T04:59:35.281Z"
     },
     {
       "brand": "Oseltamivir Phosphate",
@@ -11046,7 +11046,7 @@
       "price": "—",
       "sourceUrl": "https://www.lupin.com/press-releases/lupin-receives-china-approval-for-oseltamivir-phosphate-oral-suspension",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-07-28T03:49:57.645Z"
+      "lastEnrichmentAttempt": "2026-09-04T04:59:38.201Z"
     },
     {
       "brand": "Wokadine",
