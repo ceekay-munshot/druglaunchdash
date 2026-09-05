@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-03T06:49:30.224Z",
+  "generatedAt": "2026-09-05T06:39:04.670Z",
   "moleculeCount": 35,
   "molecules": {
     "Empagliflozin": {
-      "lastCheckedAt": "2026-09-03T06:48:10.687Z",
+      "lastCheckedAt": "2026-09-05T06:38:00.918Z",
       "events": [
         {
           "headline": "Mankind Pharma launches generic empagliflozin in India",
@@ -277,10 +277,11 @@
           "kind": "expiryUpdate",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 402 for \"Empagliflozin\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing "
     },
     "Dapagliflozin": {
-      "lastCheckedAt": "2026-09-03T06:48:13.054Z",
+      "lastCheckedAt": "2026-09-05T06:38:02.856Z",
       "events": [
         {
           "headline": "The DAPA Saga in the Indian Courts",
@@ -490,10 +491,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 402 for \"Dapagliflozin\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing "
     },
     "Linagliptin": {
-      "lastCheckedAt": "2026-09-03T06:48:15.584Z",
+      "lastCheckedAt": "2026-09-05T06:38:04.549Z",
       "events": [
         {
           "headline": "Understanding the Legal Battle Over LINAGLIPTIN: A Case Study on ...",
@@ -727,10 +729,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 402 for \"Linagliptin\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing th"
     },
     "Saxagliptin": {
-      "lastCheckedAt": "2026-09-03T06:48:17.952Z",
+      "lastCheckedAt": "2026-09-05T06:38:06.222Z",
       "events": [
         {
           "headline": "Indian Patent Office rejects compulsory license application for ...",
@@ -908,10 +911,11 @@
           "kind": "compulsoryLicence",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 402 for \"Saxagliptin\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing th"
     },
     "Liraglutide": {
-      "lastCheckedAt": "2026-09-03T06:48:20.144Z",
+      "lastCheckedAt": "2026-09-05T06:38:07.923Z",
       "events": [
         {
           "headline": "CDSCO approval granted for Liraglutide drug",
@@ -1185,14 +1189,16 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 402 for \"Liraglutide\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing th"
     },
     "Semaglutide (oral)": {
-      "lastCheckedAt": "2026-09-03T06:48:22.976Z",
-      "events": []
+      "lastCheckedAt": "2026-09-05T06:38:09.726Z",
+      "events": [],
+      "lastError": "Firecrawl 402 for \"Semaglutide (oral)\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try chan"
     },
     "Apixaban": {
-      "lastCheckedAt": "2026-09-03T06:48:25.190Z",
+      "lastCheckedAt": "2026-09-05T06:38:11.349Z",
       "events": [
         {
           "headline": "India denies Bristol Myers' request for injunction regarding apixaban patent",
@@ -1394,10 +1400,11 @@
           "kind": "expiryUpdate",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 402 for \"Apixaban\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the r"
     },
     "Ticagrelor": {
-      "lastCheckedAt": "2026-09-03T06:48:27.315Z",
+      "lastCheckedAt": "2026-09-05T06:38:13.063Z",
       "events": [
         {
           "headline": "[PDF] press-release-ticagrelor-tablets.pdf - Alembic Pharmaceutical",
@@ -1647,10 +1654,11 @@
           "kind": "genericLaunch",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 402 for \"Ticagrelor\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the"
     },
     "Sacubitril/Valsartan": {
-      "lastCheckedAt": "2026-09-03T06:48:29.376Z",
+      "lastCheckedAt": "2026-09-05T06:38:14.799Z",
       "events": [
         {
           "headline": "Novartis v. Torrent: Consent Judgment in Heart Drug Patent Case",
@@ -1828,10 +1836,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 402 for \"Sacubitril/Valsartan\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try ch"
     },
     "Edoxaban": {
-      "lastCheckedAt": "2026-09-03T06:48:31.650Z",
+      "lastCheckedAt": "2026-09-05T06:38:16.581Z",
       "events": [
         {
           "headline": "[PDF] List of New Drugs approved in the year 2025 till date - CDSCO",
@@ -1953,10 +1962,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 402 for \"Edoxaban\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the r"
     },
     "Ibrutinib": {
-      "lastCheckedAt": "2026-09-03T06:48:33.869Z",
+      "lastCheckedAt": "2026-09-05T06:38:18.332Z",
       "events": [
         {
           "headline": "The Ibrutinib saga: Delhi High Court restrains generics ... - Lexology",
@@ -2110,10 +2120,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 402 for \"Ibrutinib\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the "
     },
     "Palbociclib": {
-      "lastCheckedAt": "2026-09-03T06:48:36.204Z",
+      "lastCheckedAt": "2026-09-05T06:38:20.111Z",
       "events": [
         {
           "headline": "Buy Generic Ibrance (palbociclib) – FDA cGMP Manufacturer | FixRx...",
@@ -2387,10 +2398,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 402 for \"Palbociclib\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing th"
     },
     "Pomalidomide": {
-      "lastCheckedAt": "2026-09-03T06:48:38.282Z",
+      "lastCheckedAt": "2026-09-05T06:38:21.749Z",
       "events": [
         {
           "headline": "[PDF] Press Release - Eugia Pharma announces launch of Pomalidomide ...",
@@ -2752,10 +2764,11 @@
           "kind": "genericLaunch",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 402 for \"Pomalidomide\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing t"
     },
     "Olaparib": {
-      "lastCheckedAt": "2026-09-03T06:48:40.431Z",
+      "lastCheckedAt": "2026-09-05T06:38:23.446Z",
       "events": [
         {
           "headline": "AstraZeneca Receives Approval to Market Lynparza (Olaparib) in India",
@@ -3125,10 +3138,11 @@
           "kind": "expiryUpdate",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 402 for \"Olaparib\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the r"
     },
     "Enzalutamide": {
-      "lastCheckedAt": "2026-09-03T06:48:43.011Z",
+      "lastCheckedAt": "2026-09-05T06:38:25.135Z",
       "events": [
         {
           "headline": "Xtandi versus Indian patent laws: A persepective - PMC - NIH",
@@ -3314,10 +3328,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 402 for \"Enzalutamide\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing t"
     },
     "Cabozantinib": {
-      "lastCheckedAt": "2026-09-03T06:48:45.676Z",
+      "lastCheckedAt": "2026-09-05T06:38:26.836Z",
       "events": [
         {
           "headline": "Beta Drugs Ltd. bags yet another DCGI approval for its new drug; KABONIB ...",
@@ -3687,14 +3702,16 @@
           "kind": "litigation",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 402 for \"Cabozantinib\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing t"
     },
     "Vilanterol/Fluticasone": {
-      "lastCheckedAt": "2026-09-03T06:48:48.052Z",
-      "events": []
+      "lastCheckedAt": "2026-09-05T06:38:28.643Z",
+      "events": [],
+      "lastError": "Firecrawl 402 for \"Vilanterol/Fluticasone\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try "
     },
     "Umeclidinium/Vilanterol": {
-      "lastCheckedAt": "2026-09-03T06:48:50.209Z",
+      "lastCheckedAt": "2026-09-05T06:38:30.291Z",
       "events": [
         {
           "headline": "[PDF] Trelegy Ellipta - GSK India",
@@ -3792,10 +3809,11 @@
           "kind": "genericLaunch",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 402 for \"Umeclidinium/Vilanterol\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try"
     },
     "Vortioxetine": {
-      "lastCheckedAt": "2026-09-03T06:48:52.298Z",
+      "lastCheckedAt": "2026-09-05T06:38:31.995Z",
       "events": [
         {
           "headline": "Sun Pharma to introduce its version of Vortioxetine in India",
@@ -4157,10 +4175,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 402 for \"Vortioxetine\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing t"
     },
     "Brivaracetam": {
-      "lastCheckedAt": "2026-09-03T06:48:54.371Z",
+      "lastCheckedAt": "2026-09-05T06:38:33.710Z",
       "events": [
         {
           "headline": "ALKEM launches Brivaracetam in India under the brand name ...",
@@ -4306,10 +4325,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 402 for \"Brivaracetam\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing t"
     },
     "Fingolimod": {
-      "lastCheckedAt": "2026-09-03T06:48:56.550Z",
+      "lastCheckedAt": "2026-09-05T06:38:35.403Z",
       "events": [
         {
           "headline": "Alembic Secures USFDA Approval for Fingolimod capsules for MS",
@@ -4855,10 +4875,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 402 for \"Fingolimod\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the"
     },
     "Bedaquiline": {
-      "lastCheckedAt": "2026-09-03T06:48:58.589Z",
+      "lastCheckedAt": "2026-09-05T06:38:37.217Z",
       "events": [
         {
           "headline": "India Declines Patent Extension Application of Bedaquiline - PMC",
@@ -4980,10 +5001,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 402 for \"Bedaquiline\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing th"
     },
     "Delamanid": {
-      "lastCheckedAt": "2026-09-03T06:49:00.681Z",
+      "lastCheckedAt": "2026-09-05T06:38:38.918Z",
       "events": [
         {
           "headline": "India Restricts Off-Patent TB Drugs to Government Supply 'Only'",
@@ -5121,10 +5143,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 402 for \"Delamanid\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the "
     },
     "Tofacitinib": {
-      "lastCheckedAt": "2026-09-03T06:49:02.700Z",
+      "lastCheckedAt": "2026-09-05T06:38:40.542Z",
       "events": [
         {
           "headline": "India denies patent on Pfizer's Xeljanz - PMLiVE",
@@ -5430,10 +5453,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 402 for \"Tofacitinib\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing th"
     },
     "Baricitinib": {
-      "lastCheckedAt": "2026-09-03T06:49:04.833Z",
+      "lastCheckedAt": "2026-09-05T06:38:42.256Z",
       "events": [
         {
           "headline": "Lilly accelerating baricitinib's availability in India following receipt of ...",
@@ -5819,10 +5843,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 402 for \"Baricitinib\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing th"
     },
     "Apremilast": {
-      "lastCheckedAt": "2026-09-03T06:49:06.889Z",
+      "lastCheckedAt": "2026-09-05T06:38:43.872Z",
       "events": [
         {
           "headline": "otezla 30mg tablet 60 (generic apremilast from india)",
@@ -6008,10 +6033,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 402 for \"Apremilast\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the"
     },
     "Vonoprazan": {
-      "lastCheckedAt": "2026-09-03T06:49:08.917Z",
+      "lastCheckedAt": "2026-09-05T06:38:45.603Z",
       "events": [
         {
           "headline": "[PDF] Torrent Pharmaceuticals Enters into Non-Exclusive Patent Licensing ...",
@@ -6221,10 +6247,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 402 for \"Vonoprazan\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the"
     },
     "Vedolizumab": {
-      "lastCheckedAt": "2026-09-03T06:49:11.645Z",
+      "lastCheckedAt": "2026-09-05T06:38:47.309Z",
       "events": [
         {
           "headline": "Takeda & Halozyme Partner on Drug-Delivery Technology for ...",
@@ -6418,10 +6445,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 402 for \"Vedolizumab\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing th"
     },
     "Denosumab": {
-      "lastCheckedAt": "2026-09-03T06:49:13.922Z",
+      "lastCheckedAt": "2026-09-05T06:38:48.933Z",
       "events": [
         {
           "headline": "Zydus Launches Biosimilar Denosumab in India - Pearce IP",
@@ -6543,10 +6571,11 @@
           "kind": "biosimilarLaunch",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 402 for \"Denosumab\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the "
     },
     "Tolvaptan": {
-      "lastCheckedAt": "2026-09-03T06:49:16.250Z",
+      "lastCheckedAt": "2026-09-05T06:38:54.635Z",
       "events": [
         {
           "headline": "FDA Approves Lupin's Generic Tolvaptan Tablets | Docwire News",
@@ -7052,10 +7081,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 402 for \"Tolvaptan\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the "
     },
     "Eltrombopag": {
-      "lastCheckedAt": "2026-09-03T06:49:18.561Z",
+      "lastCheckedAt": "2026-09-05T06:38:56.315Z",
       "events": [
         {
           "headline": "Eltrombopag Synthetic Routes - MedKoo Biosciences",
@@ -7209,10 +7239,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 402 for \"Eltrombopag\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing th"
     },
     "Brimonidine/Brinzolamide": {
-      "lastCheckedAt": "2026-09-03T06:49:20.668Z",
+      "lastCheckedAt": "2026-09-05T06:38:57.978Z",
       "events": [
         {
           "headline": "We are excited to announce the launching of preservative ...",
@@ -7222,10 +7253,11 @@
           "kind": "genericLaunch",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 402 for \"Brimonidine/Brinzolamide\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or tr"
     },
     "Tafluprost": {
-      "lastCheckedAt": "2026-09-03T06:49:22.674Z",
+      "lastCheckedAt": "2026-09-05T06:38:59.563Z",
       "events": [
         {
           "headline": "Efficacy of preserved Tafluprost 0.0015% in lowering intraocular ...",
@@ -7395,10 +7427,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 402 for \"Tafluprost\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the"
     },
     "Tapentadol": {
-      "lastCheckedAt": "2026-09-03T06:49:25.697Z",
+      "lastCheckedAt": "2026-09-05T06:39:01.255Z",
       "events": [
         {
           "headline": "Indian pharma fuels Africa's 'zombie drug' and opioid crisis - France 24",
@@ -7848,10 +7881,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 402 for \"Tapentadol\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the"
     },
     "Elagolix": {
-      "lastCheckedAt": "2026-09-03T06:49:28.116Z",
+      "lastCheckedAt": "2026-09-05T06:39:02.944Z",
       "events": [
         {
           "headline": "Single‐Dose Bioequivalence Study of Elagolix Tablets 200 mg (Test ...",
@@ -8141,7 +8175,8 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 402 for \"Elagolix\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the r"
     }
   },
   "pendingDiscovery": [
