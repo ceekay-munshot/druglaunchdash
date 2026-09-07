@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-05T06:39:04.670Z",
+  "generatedAt": "2026-09-07T06:58:12.813Z",
   "moleculeCount": 35,
   "molecules": {
     "Empagliflozin": {
-      "lastCheckedAt": "2026-09-05T06:38:00.918Z",
+      "lastCheckedAt": "2026-09-07T06:56:57.027Z",
       "events": [
         {
           "headline": "Mankind Pharma launches generic empagliflozin in India",
@@ -277,15 +277,14 @@
           "kind": "expiryUpdate",
           "date": null
         }
-      ],
-      "lastError": "Firecrawl 402 for \"Empagliflozin\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing "
+      ]
     },
     "Dapagliflozin": {
-      "lastCheckedAt": "2026-09-05T06:38:02.856Z",
+      "lastCheckedAt": "2026-09-07T06:56:59.356Z",
       "events": [
         {
           "headline": "The DAPA Saga in the Indian Courts",
-          "summary": "# Innovate Articles\n### In This Section\n#### The DAPA Saga in the Indian Courts   By Dr Mohaan Dewan\nIN235625 (IN ‘625) specifically related to Dapagliflozin (‘DAPA’).\n\nIN ‘147 claimed a number of structures of C-aryl glucosides (the patent was therefore referred universally as a genus patent) whereas IN ‘625 claimed a specific C-aryl glucoside structure which is popularly known as Dapagliflozin (DAPA) (the patent was therefore referred universally as a species patent).\n\nThe genus patent IN ‘147 covered the general structure of Dapagliflozin (DAPA) but its precise structure was not disclosed.",
+          "summary": "In the second set of litigation, AstraZeneca relied on the Indian patent no. IN235625 (IN '625) specifically related to Dapagliflozin ('DAPA'). IN '625 patent ...",
           "sourceUrl": "https://www.aipla.org/list/innovate-articles/the-dapa-saga-in-the-indian-courts",
           "publication": "Aipla",
           "kind": "other",
@@ -404,7 +403,7 @@
           "date": null
         },
         {
-          "headline": "A Randomized, Phase 3 Study in Comparison with Dual ...",
+          "headline": "Efficacy and Safety of Triple Fixed Dose Combination of Dapagliflozin ...",
           "summary": "India Clinical Research, Sun Pharma Laboratories Limited, Sun House ... dapagliflozin, sitagliptin, and immediate-release metformin ...",
           "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/40828352/",
           "publication": "Pubmed",
@@ -429,7 +428,7 @@
         },
         {
           "headline": "Dapagliflozin: View Uses, Side Effects and Medicines | 1mg",
-          "summary": "Medicine brands for Dapagliflozin ; Forxiga. AstraZeneca. ₹536 to ₹566 ; Oxra. Sun Pharmaceutical Industries Ltd. ₹162 to ₹223 ; Glifmed.",
+          "summary": "Medicine brands for Dapagliflozin ; Forxiga. AstraZeneca. ₹536 to ₹566 · Forxiga ; Oxra. Sun Pharmaceutical Industries Ltd. ₹162 to ₹223 · Oxra.",
           "sourceUrl": "https://www.1mg.com/generics/dapagliflozin-212959",
           "publication": "1mg",
           "kind": "other",
@@ -491,11 +490,10 @@
           "kind": "other",
           "date": null
         }
-      ],
-      "lastError": "Firecrawl 402 for \"Dapagliflozin\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing "
+      ]
     },
     "Linagliptin": {
-      "lastCheckedAt": "2026-09-05T06:38:04.549Z",
+      "lastCheckedAt": "2026-09-07T06:57:01.425Z",
       "events": [
         {
           "headline": "Understanding the Legal Battle Over LINAGLIPTIN: A Case Study on ...",
@@ -683,7 +681,7 @@
         },
         {
           "headline": "[PDF] Nighute et al., IJPSR, 2026; Vol. 17(2): 550-571.",
-          "summary": "# INHIBITOR ANTI-DIABETIC DRUG PRODUCTS IN INDIA VIS-À-VIS USA\n## having initial U.S. Approval: 2013. The active (4-\\\n- \n  - *  \n  \nThe Tablet-7 further provides the legal status and  \noutcome of the respective Patent or Patent  \napplication after examination from respective  \n  \n21  \npatent offices, such as USPTO and India Patent  \n22  \noffice.  \n  \n®  \n**TABLE 7: PATENT(S) ASSOCIATED WITH THE DRUG PRODUCT** TRADJENTA (LINAGLIPTIN)  \nPatent title Patent claim scope Patent or Patent application number and  \n  \n| Patent title | Patent claim scope | Patent or Patent application number and status after examination |  |  \n| --- | --- | --- | --- |  \n| Patent title | Patent claim scope | USA | India |  \n| 8-[3-amino-piperidin-1-yl]-xanthines,the preparation thereof and their use as pharmaceutical compositionsUses of DPP-IV inhibitors | Linagliptin compound | US7,407,955Patent Granted | IN243301Patent Granted |  \n| 8-[3-amino-piperidin-1-yl]-xanthines,the preparation thereof and their use as pharmaceutical compositionsUses of DPP-IV inhibitors | A method of treating type 2 diabetes mellitus using Linagliptin+ metformin | US8,673,927Patent Granted | IN9501/DELNP/2008Patent applicationRefusedIN201718031279Patent applicationRefused |  \n| 8-[3-amino-piperidin-1-yl]-xanthines,the preparation thereof and their use as pharmaceutical compositionsUses of DPP-IV inhibitors | Linagliptin Formulation | US11,033,552Patent Granted | IN291136Patent Granted |  \n| Treatment for diabetes in patients inappropriate for metformin therapy | A method for treating type 2 diabetes mellitus using Linagliptin wherein metformin therapy for said patient is ineligible due to contraindication against metformin. | US9,486,526Patent Granted | IN858/DELNP/2011Patent applicationwithdrawn |  \n| Treatment for diabetes in patients with inadequate glycemic control despite metformin therapy comprising a DPP-IV inhibitorPharmaceutical composition comprising a glucopyranosyl-substituted benzene derivativePharmaceutical composition,pharmaceutical dosage form,process for their preparation,methods for treating and uses thereof | A method for treating type 2 diabetes mellitus in a patient with inadequate glycemic control despite therapy with metformincomposition comprising Linagliptin+ Empagliflozincomposition comprising Linagliptin+ SGLT2 inhibitor | US8,846,695Patent GrantedUS8,551,957Patent GrantedUS2022331326APatent applicationunder examination | IN5224/DELNP/2011Patent applicationAbandonedIN1006/DELNP/2010Patent ApplicationRefused |  \n  \n® ®  \n**Januvia (Sitagliptin):** The product Januvia  \n(Sitagliptin) tablets, for oral use having initial U.S.  \n31  \nApproval in 2006. The active ingredient  \n„Sitagliptin‟ is in the form of „Sitagliptin  \nphosphate‟ salt. The Sitagliptin phosphate is an  \norally-active inhibitor of the dipeptidyl peptidase-4  \n  \n(DPP-4) enzyme, and is chemically known as 7-  \n[(3R)-3-amino-1-oxo-4-(2,4,5-trifluorophenyl)  \nbutyl]-5,6,7,8-tetrahydro-3-(trifluoromethyl)-1,2,4-  \ntriazolo[4,3-a] pyrazine phosphate (1:1)  \nmonohydrate. The structural formula of Sitagliptin  \n31  \nphosphate is as depicted below :  \n  \n[Image: Image60] [Image: Image61]  \n®  \n**FIG. 8: JANUVIA (SITAGLIPTIN)**  \n\\",
+          "summary": "patent offices, such as USPTO. 21 and India Patent office. 22 . TABLE 7: PATENT(S) ASSOCIATED WITH THE DRUG PRODUCT TRADJENTA® (LINAGLIPTIN).",
           "sourceUrl": "https://ijpsr.com/?action=download_pdf&postid=114265",
           "publication": "Ijpsr",
           "kind": "other",
@@ -729,11 +727,10 @@
           "kind": "other",
           "date": null
         }
-      ],
-      "lastError": "Firecrawl 402 for \"Linagliptin\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing th"
+      ]
     },
     "Saxagliptin": {
-      "lastCheckedAt": "2026-09-05T06:38:06.222Z",
+      "lastCheckedAt": "2026-09-07T06:57:03.597Z",
       "events": [
         {
           "headline": "Indian Patent Office rejects compulsory license application for ...",
@@ -910,12 +907,27 @@
           "publication": "Ipaatentiti",
           "kind": "compulsoryLicence",
           "date": null
+        },
+        {
+          "headline": "Saxagliptin Compulsory Licence Rejected: Section 84(1) Explained",
+          "summary": "Lee Pharma sought a compulsory licence over AstraZeneca's diabetes drug Saxagliptin, arguing a 99% supply shortfall, unaffordable pricing ...",
+          "sourceUrl": "https://selvams.com/insights/indian-patent-office-rejects-compulsory-license-application-for-astrazenecas-saxagliptin/",
+          "publication": "Selvams",
+          "kind": "compulsoryLicence",
+          "date": null
+        },
+        {
+          "headline": "[PDF] National Pharmaceutical Pricing Authority",
+          "summary": "The Committee noted that the patent of formulation 'Saxagliptin' has expired on. 05.03.2021. Accordingly, the retail price of the Fixed Dose Combinations (FDCs) ...",
+          "sourceUrl": "https://www.nppa.gov.in/storage/uploads/pdf/40th-MDC-Minutespdf-af4f04175774930019cda4f2416f79d4.pdf",
+          "publication": "Nppa",
+          "kind": "other",
+          "date": null
         }
-      ],
-      "lastError": "Firecrawl 402 for \"Saxagliptin\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing th"
+      ]
     },
     "Liraglutide": {
-      "lastCheckedAt": "2026-09-05T06:38:07.923Z",
+      "lastCheckedAt": "2026-09-07T06:57:05.655Z",
       "events": [
         {
           "headline": "CDSCO approval granted for Liraglutide drug",
@@ -1079,7 +1091,7 @@
         },
         {
           "headline": "Biocon Limited gets approval for diabetes drug Liraglutide in India",
-          "summary": "# Biocon Limited gets approval for diabetes drug Liraglutide in India\nThe approval is for the generic version of Victoza®, indicated for the treatment of insufficiently controlled Type 2 Diabetes Mellitus in adults, adolescents and children aged 10 years and above, as an adjunct to diet and exercise.\n\n_We are now gearing up to launch the product expeditiously through our commercialization partners in India’’_",
+          "summary": "Biocon Limited gets approval for diabetes drug Liraglutide in India ... The approval is for the generic version of Victoza®, indicated for the ...",
           "sourceUrl": "https://www.biocon.com/biocon-limited-gets-approval-for-diabetes-drug-liraglutide-in-india/",
           "publication": "Biocon",
           "kind": "other",
@@ -1189,16 +1201,14 @@
           "kind": "other",
           "date": null
         }
-      ],
-      "lastError": "Firecrawl 402 for \"Liraglutide\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing th"
+      ]
     },
     "Semaglutide (oral)": {
-      "lastCheckedAt": "2026-09-05T06:38:09.726Z",
-      "events": [],
-      "lastError": "Firecrawl 402 for \"Semaglutide (oral)\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try chan"
+      "lastCheckedAt": "2026-09-07T06:57:07.943Z",
+      "events": []
     },
     "Apixaban": {
-      "lastCheckedAt": "2026-09-05T06:38:11.349Z",
+      "lastCheckedAt": "2026-09-07T06:57:10.069Z",
       "events": [
         {
           "headline": "India denies Bristol Myers' request for injunction regarding apixaban patent",
@@ -1400,11 +1410,10 @@
           "kind": "expiryUpdate",
           "date": null
         }
-      ],
-      "lastError": "Firecrawl 402 for \"Apixaban\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the r"
+      ]
     },
     "Ticagrelor": {
-      "lastCheckedAt": "2026-09-05T06:38:13.063Z",
+      "lastCheckedAt": "2026-09-07T06:57:12.221Z",
       "events": [
         {
           "headline": "[PDF] press-release-ticagrelor-tablets.pdf - Alembic Pharmaceutical",
@@ -1488,10 +1497,10 @@
         },
         {
           "headline": "Ticagrelor Companies | Market Research Future",
-          "summary": "AstraZeneca Partnered with Sun Pharmaceutical Industries Ltd. to distribute Axcer, AstraZeneca's new brand of Ticagrelor, in India. This ...",
+          "summary": "Generic players Several companies like Sun Pharma, Zydus Cadila, Glenmark Pharmaceuticals, and Cipla have launched their generic versions of Ticagrelor in ...",
           "sourceUrl": "https://www.marketresearchfuture.com/reports/ticagrelor-market/companies",
           "publication": "Marketresearchfuture",
-          "kind": "other",
+          "kind": "genericLaunch",
           "date": null
         },
         {
@@ -1654,11 +1663,10 @@
           "kind": "genericLaunch",
           "date": null
         }
-      ],
-      "lastError": "Firecrawl 402 for \"Ticagrelor\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the"
+      ]
     },
     "Sacubitril/Valsartan": {
-      "lastCheckedAt": "2026-09-05T06:38:14.799Z",
+      "lastCheckedAt": "2026-09-07T06:57:14.323Z",
       "events": [
         {
           "headline": "Novartis v. Torrent: Consent Judgment in Heart Drug Patent Case",
@@ -1836,11 +1844,10 @@
           "kind": "other",
           "date": null
         }
-      ],
-      "lastError": "Firecrawl 402 for \"Sacubitril/Valsartan\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try ch"
+      ]
     },
     "Edoxaban": {
-      "lastCheckedAt": "2026-09-05T06:38:16.581Z",
+      "lastCheckedAt": "2026-09-07T06:57:16.371Z",
       "events": [
         {
           "headline": "[PDF] List of New Drugs approved in the year 2025 till date - CDSCO",
@@ -1860,10 +1867,10 @@
         },
         {
           "headline": "India's CDSCO Grants Conditional Approval to Zuventus' Anticoagulant ...",
-          "summary": "# India’s CDSCO Grants Conditional Approval to Zuventus’ Anticoagulant Drug Edoxaban\n#### [India’s NPPA Sets Retail Prices of 23 New Drugs, Including Sitagliptin](https://www.navlindaily.com/article/31459/india-s-nppa-sets-retail-prices-of-23-new-drugs-including-sitagliptin)\n- [Drug Launch](https://www.navlindaily.com/category/topic/Drug%20Launch)\n\n#### [India’s Parliamentary Panel Urges Price Regulation for Trade Generic Medicines](https://www.navlindaily.com/article/31447/india-s-parliamentary-panel-urges-price-regulation-for-trade-generic-medicines)\n[![](https://images.unsplash.com/photo-1745939921744-ba8ef27940bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyNzUwNjN8MHwxfHNlYXJjaHwxfHxzZW1hZ2x1dGlkZXxlbnwwfHx8fDE3ODU0MDI4OTh8MA&ixlib=rb-4.1.0&q=80&w=1080)](https://www.navlindaily.com/article/31421/sun-pharma-to-launch-semaglutide-injection-in-brazil)",
+          "summary": "India's CDSCO Grants Conditional Approval to Zuventus' Anticoagulant Drug Edoxaban. 14 Jun 2024 Listen to Article. Share it. Share it. NAVLIN ...",
           "sourceUrl": "https://www.navlindaily.com/article/22029/india-s-cdsco-grants-conditional-approval-to-zuventus-anticoagulant-drug-edoxaban",
           "publication": "Navlindaily",
-          "kind": "priceCut",
+          "kind": "other",
           "date": null
         },
         {
@@ -1962,11 +1969,10 @@
           "kind": "other",
           "date": null
         }
-      ],
-      "lastError": "Firecrawl 402 for \"Edoxaban\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the r"
+      ]
     },
     "Ibrutinib": {
-      "lastCheckedAt": "2026-09-05T06:38:18.332Z",
+      "lastCheckedAt": "2026-09-07T06:57:18.436Z",
       "events": [
         {
           "headline": "The Ibrutinib saga: Delhi High Court restrains generics ... - Lexology",
@@ -2120,11 +2126,10 @@
           "kind": "other",
           "date": null
         }
-      ],
-      "lastError": "Firecrawl 402 for \"Ibrutinib\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the "
+      ]
     },
     "Palbociclib": {
-      "lastCheckedAt": "2026-09-05T06:38:20.111Z",
+      "lastCheckedAt": "2026-09-07T06:57:20.718Z",
       "events": [
         {
           "headline": "Buy Generic Ibrance (palbociclib) – FDA cGMP Manufacturer | FixRx...",
@@ -2397,12 +2402,19 @@
           "publication": "Mrmed",
           "kind": "other",
           "date": null
+        },
+        {
+          "headline": "Palbociclib Breast Cancer Medicine Now Went Off-Patent on January",
+          "summary": "Many Indian Pharmaceutical companies, including Sun Pharma, Glenmark, Zydus, Cipla, and Alkem, are also preparing palbociclib generic versions ...",
+          "sourceUrl": "https://www.mrmed.in/health-library/cancer-care/palbociclib-off-patent-news?srsltid=AfmBOorLvUTExBaxSblL-jSTfjWmK5edvjCTKaJacfMQ16TP1dL9Bvp3",
+          "publication": "Mrmed",
+          "kind": "other",
+          "date": null
         }
-      ],
-      "lastError": "Firecrawl 402 for \"Palbociclib\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing th"
+      ]
     },
     "Pomalidomide": {
-      "lastCheckedAt": "2026-09-05T06:38:21.749Z",
+      "lastCheckedAt": "2026-09-07T06:57:22.807Z",
       "events": [
         {
           "headline": "[PDF] Press Release - Eugia Pharma announces launch of Pomalidomide ...",
@@ -2566,7 +2578,7 @@
         },
         {
           "headline": "Pomalidomide 2 mg/4 mg Capsules - Oddway International",
-          "summary": "Pomalidomide Brand Name : Pomalid (Natco Pharma Ltd); Pomide (Hetero Drugs Ltd); Pomalong (Cipla Ltd). Ask Price / Request a Quote.",
+          "summary": "Pomalidomide Brand Name : Pomalid (Natco Pharma Ltd); Pomide (Hetero Drugs Ltd); Pomalong (Cipla Ltd). Ask Price / Request ...",
           "sourceUrl": "https://www.oddwayinternational.com/pomalidomide-2-mg/",
           "publication": "Oddwayinternational",
           "kind": "other",
@@ -2758,17 +2770,16 @@
         },
         {
           "headline": "Cipla USA Announces Launch of Pomalidomide Capsules (generic of ...",
-          "summary": "18 hours ago · Pharmaceutical major Cipla Limited has announced receiving regulatory approval by the drug controller general of India (DCGI) for launching ...",
+          "summary": "5 days ago · Pharmaceutical major Cipla Limited has announced receiving regulatory approval by the drug controller general of India (DCGI) for launching ...",
           "sourceUrl": "https://www.facebook.com/Cipla/posts/cipla-usa-announces-launch-of-pomalidomide-capsules-generic-of-pomalyst-across-a/1499915492160083/",
           "publication": "Facebook",
           "kind": "genericLaunch",
           "date": null
         }
-      ],
-      "lastError": "Firecrawl 402 for \"Pomalidomide\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing t"
+      ]
     },
     "Olaparib": {
-      "lastCheckedAt": "2026-09-05T06:38:23.446Z",
+      "lastCheckedAt": "2026-09-07T06:57:24.915Z",
       "events": [
         {
           "headline": "AstraZeneca Receives Approval to Market Lynparza (Olaparib) in India",
@@ -2867,7 +2878,7 @@
           "date": "2085-99-49"
         },
         {
-          "headline": "Buy Generic Lynparza (olaparib) – FDA cGMP Manufacturer",
+          "headline": "Buy Generic Lynparza (olaparib) – FDA cGMP Manufacturer | FixRx...",
           "summary": "It's produced by a US FDA cGMP certified manufacturer, and approved for marketing in India. Bottle Size : 30 Tablets. Active Ingredient : Olaparib. Produced by ...",
           "sourceUrl": "https://fixrx.com/shop/cancer/buy-olaparib-generic-lynparza/",
           "publication": "Fixrx",
@@ -3138,11 +3149,10 @@
           "kind": "expiryUpdate",
           "date": null
         }
-      ],
-      "lastError": "Firecrawl 402 for \"Olaparib\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the r"
+      ]
     },
     "Enzalutamide": {
-      "lastCheckedAt": "2026-09-05T06:38:25.135Z",
+      "lastCheckedAt": "2026-09-07T06:57:27.342Z",
       "events": [
         {
           "headline": "Xtandi versus Indian patent laws: A persepective - PMC - NIH",
@@ -3226,7 +3236,7 @@
         },
         {
           "headline": "WO2021064123A1 - Pharmaceutical composition comprising enzalutamide",
-          "summary": "# Pharmaceutical composition comprising enzalutamide\n### Classifications     machine-classified       cpc-machine-classified       fterm-machine-classified           fterm-family-classified\n[A61K31/4164](https://patents.google.com/patent/WO2021064123A1/en#)1,3-Diazoles\n\n### Landscapes\n[Priority to ES20780734T](https://patents.google.com/patent/WO2021064123A1/en#)\n\n[Priority to EP20780734.8A](https://patents.google.com/patent/WO2021064123A1/en#)",
+          "summary": "It also provides a process to prepare the tablet composition comprising the following steps: a) Dissolving enzalutamide, the cellulosic concentration enhancing ...",
           "sourceUrl": "https://patents.google.com/patent/WO2021064123A1/en",
           "publication": "Patents",
           "kind": "other",
@@ -3327,12 +3337,19 @@
           "publication": "Lexology",
           "kind": "other",
           "date": null
+        },
+        {
+          "headline": "Generic Xtandi Prices (Enzalutamide) - U.S. & International",
+          "summary": "The lowest available price for generic Xtandi (enzalutamide) 40 mg is $3.79 per capsule for 84 capsules at PharmacyChecker-accredited online pharmacies.",
+          "sourceUrl": "https://www.pharmacychecker.com/enzalutamide/40+mg/",
+          "publication": "Pharmacychecker",
+          "kind": "other",
+          "date": null
         }
-      ],
-      "lastError": "Firecrawl 402 for \"Enzalutamide\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing t"
+      ]
     },
     "Cabozantinib": {
-      "lastCheckedAt": "2026-09-05T06:38:26.836Z",
+      "lastCheckedAt": "2026-09-07T06:57:29.545Z",
       "events": [
         {
           "headline": "Beta Drugs Ltd. bags yet another DCGI approval for its new drug; KABONIB ...",
@@ -3471,8 +3488,8 @@
           "date": null
         },
         {
-          "headline": "Unveiling the therapeutic potential of cabozantinib-loaded ...",
-          "summary": "by S Bhattacharya · 2023 · Cited by 20 — Cabozantinib was a gift sample obtained from Neon Laboratories Ltd, Mumbai, India. ... Sun W, Zheng Y, et al. Expression of IL-13Rα2 in liver cancer cells ...",
+          "headline": "Unveiling the therapeutic potential of cabozantinib-loaded poly D,L-lactic ...",
+          "summary": "Cabozantinib was a gift sample obtained from Neon Laboratories Ltd, Mumbai, India. ... Sun W, Zheng Y, et al. Expression of IL-13Rα2 in liver cancer cells ...",
           "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9975495/",
           "publication": "Pmc",
           "kind": "other",
@@ -3702,16 +3719,14 @@
           "kind": "litigation",
           "date": null
         }
-      ],
-      "lastError": "Firecrawl 402 for \"Cabozantinib\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing t"
+      ]
     },
     "Vilanterol/Fluticasone": {
-      "lastCheckedAt": "2026-09-05T06:38:28.643Z",
-      "events": [],
-      "lastError": "Firecrawl 402 for \"Vilanterol/Fluticasone\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try "
+      "lastCheckedAt": "2026-09-07T06:57:31.857Z",
+      "events": []
     },
     "Umeclidinium/Vilanterol": {
-      "lastCheckedAt": "2026-09-05T06:38:30.291Z",
+      "lastCheckedAt": "2026-09-07T06:57:33.923Z",
       "events": [
         {
           "headline": "[PDF] Trelegy Ellipta - GSK India",
@@ -3808,12 +3823,19 @@
           "publication": "Facebook",
           "kind": "genericLaunch",
           "date": null
+        },
+        {
+          "headline": "Spotlight on fluticasone furoate/umeclidinium/vilanterol in ...",
+          "summary": "Spotlight on fluticasone furoate/umeclidinium/vilanterol in COPD: design, development, and potential place in therapy · Abstract · Introduction · Pharmacologic ...",
+          "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5221559/",
+          "publication": "Pmc",
+          "kind": "other",
+          "date": null
         }
-      ],
-      "lastError": "Firecrawl 402 for \"Umeclidinium/Vilanterol\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try"
+      ]
     },
     "Vortioxetine": {
-      "lastCheckedAt": "2026-09-05T06:38:31.995Z",
+      "lastCheckedAt": "2026-09-07T06:57:36.048Z",
       "events": [
         {
           "headline": "Sun Pharma to introduce its version of Vortioxetine in India",
@@ -4175,11 +4197,10 @@
           "kind": "other",
           "date": null
         }
-      ],
-      "lastError": "Firecrawl 402 for \"Vortioxetine\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing t"
+      ]
     },
     "Brivaracetam": {
-      "lastCheckedAt": "2026-09-05T06:38:33.710Z",
+      "lastCheckedAt": "2026-09-07T06:57:38.222Z",
       "events": [
         {
           "headline": "ALKEM launches Brivaracetam in India under the brand name ...",
@@ -4325,11 +4346,10 @@
           "kind": "other",
           "date": null
         }
-      ],
-      "lastError": "Firecrawl 402 for \"Brivaracetam\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing t"
+      ]
     },
     "Fingolimod": {
-      "lastCheckedAt": "2026-09-05T06:38:35.403Z",
+      "lastCheckedAt": "2026-09-07T06:57:40.371Z",
       "events": [
         {
           "headline": "Alembic Secures USFDA Approval for Fingolimod capsules for MS",
@@ -4875,11 +4895,10 @@
           "kind": "other",
           "date": null
         }
-      ],
-      "lastError": "Firecrawl 402 for \"Fingolimod\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the"
+      ]
     },
     "Bedaquiline": {
-      "lastCheckedAt": "2026-09-05T06:38:37.217Z",
+      "lastCheckedAt": "2026-09-07T06:57:42.409Z",
       "events": [
         {
           "headline": "India Declines Patent Extension Application of Bedaquiline - PMC",
@@ -4954,8 +4973,8 @@
           "date": null
         },
         {
-          "headline": "Two TB survivors challenge Janssen's new bedaquiline ...",
-          "summary": "by BMJI Correspondent · 2019 — India's current MDR-TB treatment guidelines recommend bedaquiline for patients with fluoroquinolone resistant, pre-extreme drug resistant and ...",
+          "headline": "Two TB survivors challenge Janssen's new bedaquiline patent in India",
+          "summary": "India's current MDR-TB treatment guidelines recommend bedaquiline for patients with fluoroquinolone resistant, pre-extreme drug resistant and ...",
           "sourceUrl": "https://www.bmj.com/content/364/bmj.l663",
           "publication": "Bmj",
           "kind": "other",
@@ -5000,12 +5019,19 @@
           "publication": "Bmj",
           "kind": "other",
           "date": null
+        },
+        {
+          "headline": "India rejects Johnson & Johnson's attempt to extend monopoly on ...",
+          "summary": "Five patents are involved in bedaquiline. Patent 1 is for making the base bedaquiline compund. Patent 2 is for using bdq for drug-resistant TB.",
+          "sourceUrl": "https://www.thehindu.com/sci-tech/health/india-rejects-johnson-johnsons-attempt-to-extend-monopoly-on-lifesaving-tb-drug/article66654219.ece",
+          "publication": "Thehindu",
+          "kind": "other",
+          "date": null
         }
-      ],
-      "lastError": "Firecrawl 402 for \"Bedaquiline\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing th"
+      ]
     },
     "Delamanid": {
-      "lastCheckedAt": "2026-09-05T06:38:38.918Z",
+      "lastCheckedAt": "2026-09-07T06:57:44.427Z",
       "events": [
         {
           "headline": "India Restricts Off-Patent TB Drugs to Government Supply 'Only'",
@@ -5016,11 +5042,11 @@
           "date": null
         },
         {
-          "headline": "Indian MP urges Prime Minister to act on compulsory ...",
+          "headline": "Indian MP urges Prime Minister to act on compulsory licence for TB ...",
           "summary": "That bedaquiline and delamanid are important drugs for the treatment of MDRIXDR and there should not be any unmet demand on these medicines.",
           "sourceUrl": "https://twn.my/title2/intellectual_property/info.service/2020/ip200204.htm",
           "publication": "Twn",
-          "kind": "other",
+          "kind": "compulsoryLicence",
           "date": null
         },
         {
@@ -5143,11 +5169,10 @@
           "kind": "other",
           "date": null
         }
-      ],
-      "lastError": "Firecrawl 402 for \"Delamanid\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the "
+      ]
     },
     "Tofacitinib": {
-      "lastCheckedAt": "2026-09-05T06:38:40.542Z",
+      "lastCheckedAt": "2026-09-07T06:57:46.655Z",
       "events": [
         {
           "headline": "India denies patent on Pfizer's Xeljanz - PMLiVE",
@@ -5453,11 +5478,10 @@
           "kind": "other",
           "date": null
         }
-      ],
-      "lastError": "Firecrawl 402 for \"Tofacitinib\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing th"
+      ]
     },
     "Baricitinib": {
-      "lastCheckedAt": "2026-09-05T06:38:42.256Z",
+      "lastCheckedAt": "2026-09-07T06:57:48.844Z",
       "events": [
         {
           "headline": "Lilly accelerating baricitinib's availability in India following receipt of ...",
@@ -5757,7 +5781,7 @@
         },
         {
           "headline": "Baricitinib Olumiant Tablet - IndiaMART",
-          "summary": "Barijak 4 Mg Tablets · Manufacture: CIpla · Strength: 4 mg · Brand: Barijak 4 Mg Tablets · Composition: Baricitinib 4 mg ...",
+          "summary": "Olumiant Baricitinib 4mg · Treatment: severe rheumatoid arthritis, an inflammatory disease of the joints, if previous therapy did not work · Company: Lilly ...",
           "sourceUrl": "https://m.indiamart.com/impcat/baricitinib-tablets.html",
           "publication": "M",
           "kind": "other",
@@ -5843,11 +5867,10 @@
           "kind": "other",
           "date": null
         }
-      ],
-      "lastError": "Firecrawl 402 for \"Baricitinib\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing th"
+      ]
     },
     "Apremilast": {
-      "lastCheckedAt": "2026-09-05T06:38:43.872Z",
+      "lastCheckedAt": "2026-09-07T06:57:50.934Z",
       "events": [
         {
           "headline": "otezla 30mg tablet 60 (generic apremilast from india)",
@@ -6033,11 +6056,10 @@
           "kind": "other",
           "date": null
         }
-      ],
-      "lastError": "Firecrawl 402 for \"Apremilast\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the"
+      ]
     },
     "Vonoprazan": {
-      "lastCheckedAt": "2026-09-05T06:38:45.603Z",
+      "lastCheckedAt": "2026-09-07T06:57:52.954Z",
       "events": [
         {
           "headline": "[PDF] Torrent Pharmaceuticals Enters into Non-Exclusive Patent Licensing ...",
@@ -6161,7 +6183,7 @@
         },
         {
           "headline": "Dr. Reddy's Signs Non-Exclusive Patent Licensing Agreement With ...",
-          "summary": "Lupin Enters Into A Non-Exclusive Patent Licensing Agreement With Takeda To Commercialize Vonoprazan, A Novel Gastrointestinal Drug In India.",
+          "summary": "Lupin Enters Into A Non-Exclusive Patent Licensing Agreement With Takeda To Commercialize Vonoprazan, A Novel Gastrointestinal Drug In India. Global pharma ...",
           "sourceUrl": "https://www.outsourcedpharma.com/doc/dr-reddy-s-signs-non-exclusive-takeda-vonoprazan-a-novel-gastrointestinal-drug-india-0001",
           "publication": "Outsourcedpharma",
           "kind": "other",
@@ -6247,11 +6269,10 @@
           "kind": "other",
           "date": null
         }
-      ],
-      "lastError": "Firecrawl 402 for \"Vonoprazan\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the"
+      ]
     },
     "Vedolizumab": {
-      "lastCheckedAt": "2026-09-05T06:38:47.309Z",
+      "lastCheckedAt": "2026-09-07T06:57:55.312Z",
       "events": [
         {
           "headline": "Takeda & Halozyme Partner on Drug-Delivery Technology for ...",
@@ -6445,11 +6466,10 @@
           "kind": "other",
           "date": null
         }
-      ],
-      "lastError": "Firecrawl 402 for \"Vedolizumab\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing th"
+      ]
     },
     "Denosumab": {
-      "lastCheckedAt": "2026-09-05T06:38:48.933Z",
+      "lastCheckedAt": "2026-09-07T06:57:57.613Z",
       "events": [
         {
           "headline": "Zydus Launches Biosimilar Denosumab in India - Pearce IP",
@@ -6508,7 +6528,7 @@
           "date": null
         },
         {
-          "headline": "Biocon Biologics Secures Market Entry Date for ...",
+          "headline": "Biocon Biologics Secures Market Entry Date for Denosumab ...",
           "summary": "Biocon Biologics Secures Market Entry Date for Denosumab Biosimilars in Europe and Rest of the World · BENGALURU, India: December 2, 2025 · The ...",
           "sourceUrl": "https://www.bioconbiologics.com/biocon-biologics-secures-market-entry-date-for-denosumab-biosimilars-in-europe-and-rest-of-the-world/",
           "publication": "Bioconbiologics",
@@ -6541,7 +6561,7 @@
         },
         {
           "headline": "Denosumab: View Uses, Side Effects and Medicines - 1mg",
-          "summary": "# Denosumab\n## Medicine brands for Denosumab\n[Densucor\\\n\\\n₹10000 to ₹10000\\\n\\\nTorrent Pharmaceuticals Ltd\\\n\\\n1 variant(s)](https://www.1mg.com/brands/densucor-ZGVuc3Vjb3I=)",
+          "summary": "Mankind Pharma Ltd. ₹16401 to ₹16401. 1 variant(s). Supdeno. Expert advice for Denosumab. Denosumab is a medication used to treat thinning of ...",
           "sourceUrl": "https://www.1mg.com/generics/denosumab-404833",
           "publication": "1mg",
           "kind": "other",
@@ -6571,11 +6591,10 @@
           "kind": "biosimilarLaunch",
           "date": null
         }
-      ],
-      "lastError": "Firecrawl 402 for \"Denosumab\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the "
+      ]
     },
     "Tolvaptan": {
-      "lastCheckedAt": "2026-09-05T06:38:54.635Z",
+      "lastCheckedAt": "2026-09-07T06:57:59.959Z",
       "events": [
         {
           "headline": "FDA Approves Lupin's Generic Tolvaptan Tablets | Docwire News",
@@ -7075,17 +7094,24 @@
         },
         {
           "headline": "Tolvaptan Tablets IP - IndiaMART",
-          "summary": "Tolvaptan Tablets 30 Mg (Generic name of Natrise) · Self Life: 3 years · Strength: 30 mg · Packaging Size: 1*4 Tablets · Brand: Tolvalan 30 ...",
+          "summary": "Tolvaptan Strength: 15 mg · Indication: Hyponatremia, ADPKD, Heart Failure · Dose Form: Scored Tablet · Therapy Area: Nephrology, Cardiology, Endocrinology ...",
           "sourceUrl": "https://m.indiamart.com/impcat/tolvaptan-tablet.html",
           "publication": "M",
           "kind": "other",
           "date": null
+        },
+        {
+          "headline": "Generic TOLVAPTAN INN equivalents, pharmaceutical patent and ...",
+          "summary": "Tolvaptan is the generic ingredient in three branded drugs marketed by Otsuka, Alkem Labs Ltd, Apotex, Hetero Labs Ltd V, Lupin, MSN, and Ph Health, and is ...",
+          "sourceUrl": "https://www.drugpatentwatch.com/p/generic/tolvaptan",
+          "publication": "Drugpatentwatch",
+          "kind": "other",
+          "date": null
         }
-      ],
-      "lastError": "Firecrawl 402 for \"Tolvaptan\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the "
+      ]
     },
     "Eltrombopag": {
-      "lastCheckedAt": "2026-09-05T06:38:56.315Z",
+      "lastCheckedAt": "2026-09-07T06:58:02.264Z",
       "events": [
         {
           "headline": "Eltrombopag Synthetic Routes - MedKoo Biosciences",
@@ -7152,7 +7178,7 @@
           "date": null
         },
         {
-          "headline": "Novartis and NATCO clash over Eltrombopag | Intellepedia",
+          "headline": "Cancerous Battle: Novartis and NATCO clash over Eltrombopag",
           "summary": "The Delhi High Court Division Bench reversed an injunction against Natco in the Novartis Eltrombopag patent case, clarifying standards for ...",
           "sourceUrl": "https://www.bananaip.com/intellepedia/novartis-natco-eltrombopag-patent-infringement-delhi-high-court/",
           "publication": "Bananaip",
@@ -7161,7 +7187,7 @@
         },
         {
           "headline": "Novartis Ag & Anr. vs Medipol Pharmaceuticals India Pvt Ltd ...",
-          "summary": "Thus, the term of the patent is set to expire on 21st May, 2023. Revolade, containing 'Eltrombopag Olamine', is stated to be approved in more than 90 countries ...",
+          "summary": "8) That the Defendant admits and accepts the rights of the Plaintiff's in Patent being IN213176 (the \"Patent\") for Eltrombopag Olamine and acknowledges the ...",
           "sourceUrl": "https://indiankanoon.org/doc/149014826/",
           "publication": "Indiankanoon",
           "kind": "other",
@@ -7169,7 +7195,7 @@
         },
         {
           "headline": "Eltrombopag Tablet - Trombopag Latest Price, Manufacturers ...",
-          "summary": "Eltrombopag Olamine Tablets, 25 mg · Strength: 25 mg · Brand Name: NATCO · Manufacturer: MADE IN INDIA · Packaging Type: STRIP ...",
+          "summary": "Eltrombopag Tablets 25 Mg Natco Trombopag 25mg · Form: Tablet · Manufacturer: NATCO PHARMA · Prescription/Non prescription: Prescription · Shelf life: 2 YEARS ...",
           "sourceUrl": "https://m.indiamart.com/impcat/eltrombopag-tablet.html",
           "publication": "M",
           "kind": "other",
@@ -7238,12 +7264,19 @@
           "publication": "Drugpatentwatch",
           "kind": "other",
           "date": null
+        },
+        {
+          "headline": "Zydus Group receives USFDA approval for Eltrombopag tablets ...",
+          "summary": "Zydus Group receives USFDA approval for Eltrombopag ... Eltrombopag tablets — a critical therapy for ... Sun Pharma receives DCGI approval to manufacture and market ...",
+          "sourceUrl": "https://www.linkedin.com/posts/onealphamed_pharma-usfda-generics-activity-7418281165700169728-qmrV",
+          "publication": "Linkedin",
+          "kind": "other",
+          "date": null
         }
-      ],
-      "lastError": "Firecrawl 402 for \"Eltrombopag\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing th"
+      ]
     },
     "Brimonidine/Brinzolamide": {
-      "lastCheckedAt": "2026-09-05T06:38:57.978Z",
+      "lastCheckedAt": "2026-09-07T06:58:04.582Z",
       "events": [
         {
           "headline": "We are excited to announce the launching of preservative ...",
@@ -7253,11 +7286,10 @@
           "kind": "genericLaunch",
           "date": null
         }
-      ],
-      "lastError": "Firecrawl 402 for \"Brimonidine/Brinzolamide\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or tr"
+      ]
     },
     "Tafluprost": {
-      "lastCheckedAt": "2026-09-05T06:38:59.563Z",
+      "lastCheckedAt": "2026-09-07T06:58:06.679Z",
       "events": [
         {
           "headline": "Efficacy of preserved Tafluprost 0.0015% in lowering intraocular ...",
@@ -7427,11 +7459,10 @@
           "kind": "other",
           "date": null
         }
-      ],
-      "lastError": "Firecrawl 402 for \"Tafluprost\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the"
+      ]
     },
     "Tapentadol": {
-      "lastCheckedAt": "2026-09-05T06:39:01.255Z",
+      "lastCheckedAt": "2026-09-07T06:58:08.672Z",
       "events": [
         {
           "headline": "Indian pharma fuels Africa's 'zombie drug' and opioid crisis - France 24",
@@ -7880,12 +7911,27 @@
           "publication": "Tradeindia",
           "kind": "other",
           "date": null
+        },
+        {
+          "headline": "Is tapentadol a potential Trojan horse in the postdextropropoxyphene era ...",
+          "summary": "In India with the ban on the commonly used opioids such as dextropropoxyphene, there may be an increasing abuse of newer opioids such as tapentadol. Here, we ...",
+          "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5954633/",
+          "publication": "Pmc",
+          "kind": "other",
+          "date": null
+        },
+        {
+          "headline": "“Tapentadol Nasal Spray 225mg/ml” in which each spray (0.1ml ...",
+          "summary": "Indian Patent. 6. M/s Torrent Pharmaceutical Ltd shall inform NPPA, the date of commercial marketing of the formulation “Tapentadol Nasal Spray 225mg/ml” in ...",
+          "sourceUrl": "https://www.nppa.gov.in/storage/uploads/tender/8e31e9be5c01864cd6f41e6e870c42dc.pdf",
+          "publication": "Nppa",
+          "kind": "priceCut",
+          "date": null
         }
-      ],
-      "lastError": "Firecrawl 402 for \"Tapentadol\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the"
+      ]
     },
     "Elagolix": {
-      "lastCheckedAt": "2026-09-05T06:39:02.944Z",
+      "lastCheckedAt": "2026-09-07T06:58:10.731Z",
       "events": [
         {
           "headline": "Single‐Dose Bioequivalence Study of Elagolix Tablets 200 mg (Test ...",
@@ -7896,7 +7942,7 @@
           "date": null
         },
         {
-          "headline": "Sun Elagolix CT-06.pdf",
+          "headline": "[PDF] Sun Elagolix CT-06.pdf - CDSCO",
           "summary": "M/s Sun Pharmaceutical Industries Limited,. Tandalja, Vadodara,. Gujarat (India) - 390012. Subject: Permission to Manufacture and Marketing of \"Elagolix Tablets ...",
           "sourceUrl": "https://www.cdsco.gov.in/opencms/resources/UploadCDSCOWeb/2018/UploadCTApprovals/Sun%20Elagolix%20CT-06.pdf",
           "publication": "Cdsco",
@@ -8024,7 +8070,7 @@
           "date": null
         },
         {
-          "headline": "Elagolix Sodium API Market Research Report 2033",
+          "headline": "Elagolix Sodium API Market Research Report 2033 - Dataintelo",
           "summary": "Sun Pharmaceutical Industries Ltd., Aurobindo Pharma Ltd., and Cipla Inc. are positioning manufacturing capacity for elagolix generic production through ...",
           "sourceUrl": "https://dataintelo.com/report/elagolix-sodium-api-market",
           "publication": "Dataintelo",
@@ -8113,7 +8159,7 @@
         },
         {
           "headline": "Generic Elagolix Tablets 150 mg/200 mg - Oddway International",
-          "summary": "Elagolix Brand Name : Elgoliz (MSN Laboratories); Elgix (Zydus Healthcare Limited); Unigolix (Alembic Pharmaceuticals Ltd); Egolix (Sun Pharmaceutical ...",
+          "summary": "Generic Elagolix Tablets 150 mg/200 mg ; Elgix (Zydus Healthcare Limited) ; Unigolix (Alembic Pharmaceuticals Ltd) ; Egolix (Sun Pharmaceutical Industries Ltd).",
           "sourceUrl": "https://www.oddwayinternational.com/elagolix-150-mg/",
           "publication": "Oddwayinternational",
           "kind": "other",
@@ -8175,21 +8221,20 @@
           "kind": "other",
           "date": null
         }
-      ],
-      "lastError": "Firecrawl 402 for \"Elagolix\": {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the r"
+      ]
     }
   },
   "pendingDiscovery": [
     {
       "name": "April",
       "firstSeenAt": "2026-05-09T05:20:57.701Z",
-      "mentionCount": 48,
+      "mentionCount": 49,
       "sampleHeadlines": [
         "FDA Approves Lupin's Generic Tolvaptan Tablets | Docwire News",
         "Lupin Receives Approval from U.S. FDA for Tolvaptan Tablets",
         "Getting Tolvaptan from India : r/ADPKD - Reddit"
       ],
-      "lastSeenAt": "2026-09-03T06:48:45.676Z"
+      "lastSeenAt": "2026-09-07T06:57:29.545Z"
     },
     {
       "name": "Ustekinumab",
