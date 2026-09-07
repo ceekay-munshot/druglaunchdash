@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-06T05:00:01.466Z",
-  "rowCount": 942,
+  "generatedAt": "2026-09-07T05:11:51.675Z",
+  "rowCount": 952,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -678,7 +678,7 @@
       "price": "₹1347 / bottle of 40 capsules",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/12/Press-Release-Sun-Pharma-receives-DCGI-approval-for-Molxvir-Molnupiravir-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-29T03:56:31.957Z"
+      "lastEnrichmentAttempt": "2026-09-07T05:10:26.255Z"
     },
     {
       "brand": "WINLEVI",
@@ -710,7 +710,7 @@
       "price": "₹3978 / box of 3 vials",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/09/Press-Release-Sun-Pharma-and-Pharmazz-Inc.-licensing-agreement-for-Sovateltide-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-29T03:56:52.808Z"
+      "lastEnrichmentAttempt": "2026-09-07T05:10:30.589Z"
     },
     {
       "brand": "BromSite™",
@@ -1878,7 +1878,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-signs-definitive-agreement-to-acquire-organon/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-29T03:56:56.806Z"
+      "lastEnrichmentAttempt": "2026-09-07T05:10:34.486Z"
     },
     {
       "brand": "UNLOXCYT",
@@ -1894,7 +1894,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-announces-the-availability-of-unloxcyt-cosibelimab-ipdl-for-advanced-cutaneous-squamous-cell-carcinoma-acscc/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-29T03:57:05.642Z"
+      "lastEnrichmentAttempt": "2026-09-07T05:10:42.180Z"
     },
     {
       "brand": "ILUMYA",
@@ -5126,7 +5126,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/01/UNLOXCYT-Commercial-Launch-Press-Release.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-29T03:57:15.049Z"
+      "lastEnrichmentAttempt": "2026-09-07T05:10:50.691Z"
     },
     {
       "brand": "UNLOXCYT",
@@ -7766,7 +7766,7 @@
       "price": "Rs 500 / strip",
       "sourceUrl": "https://www.wockhardt.com/press-releases/new-drug-launch",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-29T03:56:17.599Z"
+      "lastEnrichmentAttempt": "2026-09-07T05:10:13.379Z"
     },
     {
       "brand": "Company XYZ Acquisition",
@@ -7782,7 +7782,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/press-releases/company-acquisition",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-29T03:56:25.237Z"
+      "lastEnrichmentAttempt": "2026-09-07T05:10:19.999Z"
     },
     {
       "brand": "Drug ABC",
@@ -11318,7 +11318,7 @@
       "price": "₹170 / bottle of 60 tablets",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-29T03:53:26.823Z"
+      "lastEnrichmentAttempt": "2026-09-07T05:09:48.469Z"
     },
     {
       "brand": "Maternal Health & Urology products",
@@ -11334,7 +11334,7 @@
       "price": "₹290 / strip of 10 tablets",
       "sourceUrl": "https://www.business-standard.com/content/press-releases-ani/corona-remedies-joins-hands-with-ferring-pharmaceuticals-to-commercialize-maternal-health-urology-products-in-india-123050900586_1.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-29T03:53:26.823Z"
+      "lastEnrichmentAttempt": "2026-09-07T05:09:59.347Z"
     },
     {
       "brand": "Wockhardt's New Bio-similar",
@@ -11366,7 +11366,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/news/acquisition-xyz-pharmaceuticals",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-29T03:56:16.094Z"
+      "lastEnrichmentAttempt": "2026-09-07T05:10:07.054Z"
     },
     {
       "brand": "Partnership for New Generic Drug",
@@ -15063,6 +15063,166 @@
       "sourceUrl": "https://www.aurobindo.com/press-release-acquisition",
       "buyer": "Aurobindo",
       "lastEnrichmentAttempt": "2026-09-03T04:56:42.964Z"
+    },
+    {
+      "brand": "Line Extension Drug D",
+      "launchType": "Own Launched",
+      "date": "2023-08-20",
+      "seller": "—",
+      "dealType": "Line Extension",
+      "molecule": "Molecule D",
+      "therapy": "Neurology",
+      "indication": "Migraine",
+      "existingBrand": "Competitor Drug D",
+      "chronicAcute": "Acute",
+      "price": "Rs 600 / tablet",
+      "sourceUrl": "https://www.mankindpharma.com/line-extension-drug-d/",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-09-07T05:06:24.816Z"
+    },
+    {
+      "brand": "WINLEVI® (clascoterone cream 1%)",
+      "launchType": "Own Launched",
+      "date": "2021-08-31",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "clascoterone",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/08/Sun-Pharma-and-Cassiopea-announce-the-expiry-of-the-HSR-Act-process-and-the-successful-consummation-of-their-Winlevi%C2%AE.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-09-07T05:07:01.430Z"
+    },
+    {
+      "brand": "Bridging the Gap in Diabetes Care",
+      "launchType": "Own Launched",
+      "date": "2026-06-01",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Empagliflozin",
+      "therapy": "anti-diabetic",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://businessnewsthisweek.com/business/bridging-the-gap-in-diabetes-care-corona-remedies-introduces-affordable-solution-of-empagliflozin/",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-09-07T05:07:54.431Z"
+    },
+    {
+      "brand": "Modafinil Tablets, USP",
+      "launchType": "Own Launched",
+      "date": "2026-09-04",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Modafinil",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹19.17 / strip of 10 tablets",
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-u-s-fda-approval-for-modafinil-tablets-usp",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-09-07T05:08:43.795Z"
+    },
+    {
+      "brand": "Sodium Zirconium Cyclosilicate for Oral Suspension",
+      "launchType": "Own Launched",
+      "date": "2026-08-10",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Sodium Zirconium Cyclosilicate",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-announces-the-approval-of-sodium-zirconium-cyclosilicate-for-oral-suspension-in-the-united-states",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-09-07T05:08:43.795Z"
+    },
+    {
+      "brand": "Sitagliptin",
+      "launchType": "In-licensed",
+      "date": "2025-06-18",
+      "seller": "MSD Pharma",
+      "dealType": "Co-marketing",
+      "molecule": "Sitagliptin",
+      "therapy": "Anti-Diabetic",
+      "indication": "—",
+      "existingBrand": "Januvia",
+      "chronicAcute": "—",
+      "price": "₹101 / strip of 10 tablets",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-and-msd-announce-strategic-partnership-to-distribute-innovative-oral-anti-diabetic-medicines-in-india.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-09-07T05:09:11.567Z"
+    },
+    {
+      "brand": "Lannett Company LLC's generic Advair Diskus",
+      "launchType": "Acquired",
+      "date": "2026-08-30",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "fluticasone propionate plus salmeterol",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Advair Diskus",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrtoSEsLannetPR31082026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-09-07T05:09:30.884Z"
+    },
+    {
+      "brand": "MSD",
+      "launchType": "In-licensed",
+      "date": "2026-07-23",
+      "seller": "MSD (Merck & Co., Inc.)",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹190 / strip of 10 tablet er",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseBrazilMSD24072026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-09-07T05:09:30.884Z"
+    },
+    {
+      "brand": "Wockhardt Acquires XYZ Pharma",
+      "launchType": "Acquired",
+      "date": "2023-08-10",
+      "seller": "XYZ Pharma",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/press-release/wockhardt-acquires-xyz-pharma",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-09-07T05:09:46.963Z"
+    },
+    {
+      "brand": "UNLOXCYT™ (cosibelimab-ipdl)",
+      "launchType": "Own Launched",
+      "date": "2026-01-15",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "cosibelimab-ipdl",
+      "therapy": "Oncology",
+      "indication": "Advanced Cutaneous Squamous Cell Carcinoma (aCSCC)",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.sunpharma.com/news/2026/01/sun-pharma-announces-availability-unloxcyt-advanced-cutaneous-squamous-cell-carcinoma",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-09-07T05:10:50.691Z"
     }
   ]
 }
