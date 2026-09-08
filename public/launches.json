@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-07T05:11:51.675Z",
-  "rowCount": 952,
+  "generatedAt": "2026-09-08T05:10:14.011Z",
+  "rowCount": 958,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -1910,7 +1910,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-introduces-its-global-innovative-drug-ilumya-in-india-for-treatment-of-moderate-to-severe-plaque-psoriasis/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-29T03:57:22.138Z"
+      "lastEnrichmentAttempt": "2026-09-08T05:06:31.927Z"
     },
     {
       "brand": "ILUMYA",
@@ -1926,7 +1926,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-announces-us-fda-acceptance-of-supplemental-biologics-license-sbla-application-for-ilumya-tildrakizumab-asmn-for-the-treatment-o/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-30T03:44:02.440Z"
+      "lastEnrichmentAttempt": "2026-09-08T05:09:28.880Z"
     },
     {
       "brand": "Cipla's New Drug",
@@ -3334,7 +3334,7 @@
       "price": null,
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/01/UNLOXCYT-Commercial-Launch-Press-Release.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-29T03:57:18.689Z"
+      "lastEnrichmentAttempt": "2026-09-08T05:06:27.615Z"
     },
     {
       "brand": "ILUMYA®",
@@ -4510,8 +4510,8 @@
       "date": "2023-10-23",
       "seller": "—",
       "dealType": "Biosimilar Launch",
-      "molecule": "—",
-      "therapy": "—",
+      "molecule": "Cetuximab",
+      "therapy": "Oncology",
       "indication": "—",
       "existingBrand": "—",
       "chronicAcute": "—",
@@ -7814,7 +7814,7 @@
       "price": "₹190 / strip of 10 capsules",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-30T03:44:17.520Z"
+      "lastEnrichmentAttempt": "2026-09-08T05:09:37.359Z"
     },
     {
       "brand": "Empagliflozin",
@@ -7846,7 +7846,7 @@
       "price": null,
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-picks-up-stake-in-api-maker-la-chandra-pharmalab/article32543933.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-30T03:44:26.128Z"
+      "lastEnrichmentAttempt": "2026-09-08T05:09:45.726Z"
     },
     {
       "brand": "Pomalidomide Capsules",
@@ -8798,11 +8798,11 @@
       "date": "2026-06-01",
       "seller": "Abbott India",
       "dealType": "Brand Acquisition",
-      "molecule": "—",
-      "therapy": "—",
+      "molecule": "Metformin",
+      "therapy": "Anti-Diabetic",
       "indication": "—",
       "existingBrand": "—",
-      "chronicAcute": "—",
+      "chronicAcute": "Chronic",
       "price": "₹19.5 / strip of 10 tablets",
       "sourceUrl": "https://www.expresspharma.in/corona-acquires-obimet-thyrocab-brands-from-abbott-india",
       "buyer": "Corona Remedies",
@@ -8814,11 +8814,11 @@
       "date": "2026-06-01",
       "seller": "Abbott India",
       "dealType": "Brand Acquisition",
-      "molecule": "—",
-      "therapy": "—",
+      "molecule": "Carbimazole",
+      "therapy": "Endocrinology",
       "indication": "—",
       "existingBrand": "—",
-      "chronicAcute": "—",
+      "chronicAcute": "Chronic",
       "price": "₹213 / bottle of 100 tablets",
       "sourceUrl": "https://www.expresspharma.in/corona-acquires-obimet-thyrocab-brands-from-abbott-india",
       "buyer": "Corona Remedies",
@@ -11398,7 +11398,7 @@
       "price": null,
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsLnnettPR22062026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-30T03:43:50.271Z"
+      "lastEnrichmentAttempt": "2026-09-08T05:06:40.733Z"
     },
     {
       "brand": "Dextromethorphan Polistirex Extended-Release Oral Suspension",
@@ -11414,7 +11414,7 @@
       "price": null,
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/2LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-30T03:43:50.272Z"
+      "lastEnrichmentAttempt": "2026-09-08T05:07:42.198Z"
     },
     {
       "brand": "Glycerol Phenylbutyrate Oral Liquid",
@@ -11430,7 +11430,7 @@
       "price": null,
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-30T03:43:50.272Z"
+      "lastEnrichmentAttempt": "2026-09-08T05:08:04.321Z"
     },
     {
       "brand": "Dapagliflozin and Metformin Hydrochloride Extended-Release Tablets",
@@ -11446,7 +11446,7 @@
       "price": "₹110 / strip of 15 tablet er",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoUSFDAmetformin07042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-30T03:43:50.272Z"
+      "lastEnrichmentAttempt": "2026-09-08T05:08:42.648Z"
     },
     {
       "brand": "Medifine",
@@ -11510,7 +11510,7 @@
       "price": "—",
       "sourceUrl": "https://www.wockhardt.com/press-release-2",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-30T03:44:00.935Z"
+      "lastEnrichmentAttempt": "2026-09-08T05:09:05.313Z"
     },
     {
       "brand": "New Product Launch in Cardiology",
@@ -15223,6 +15223,102 @@
       "sourceUrl": "https://www.sunpharma.com/news/2026/01/sun-pharma-announces-availability-unloxcyt-advanced-cutaneous-squamous-cell-carcinoma",
       "buyer": "Sun Pharma",
       "lastEnrichmentAttempt": "2026-09-07T05:10:50.691Z"
+    },
+    {
+      "brand": "Tildrakizumab",
+      "launchType": "In-licensed",
+      "date": "2014-09-17",
+      "seller": "Merck & Co.",
+      "dealType": "Licensing Agreement",
+      "molecule": "tildrakizumab",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2020/12/Press-Release-Licensing-Agreement-for-Tildrakizumab.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-09-08T05:05:15.212Z"
+    },
+    {
+      "brand": "Extensior®",
+      "launchType": "In-licensed",
+      "date": "2026-02-27",
+      "seller": "Novo Nordisk",
+      "dealType": "In-license (India)",
+      "molecule": "Semaglutide",
+      "therapy": "anti-diabetic",
+      "indication": "type 2 diabetes",
+      "existingBrand": "Ozempic®",
+      "chronicAcute": "Chronic",
+      "price": "₹3519 / box of 1 injection",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-partners-with-novo-nordisk-india-to-launch-extensior-broadening-access-to-semaglutide-ozempic-for-advanced-diabetes-management.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-09-08T05:06:05.908Z"
+    },
+    {
+      "brand": "Wockhardt’s New Biosimilar",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 8,500 / vial",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/new-biosimilar-launch-2023",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-09-08T05:06:26.110Z"
+    },
+    {
+      "brand": "Acquisition of Generic Portfolio",
+      "launchType": "Acquired",
+      "date": "2023-08-10",
+      "seller": "Acme Pharmaceuticals",
+      "dealType": "Brand Portfolio Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Cipla",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/acquisition-generic-portfolio-2023",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-09-08T05:06:26.110Z"
+    },
+    {
+      "brand": "New Line Extension for Pain Management",
+      "launchType": "Own Launched",
+      "date": "2023-07-05",
+      "seller": "—",
+      "dealType": "Line Extension",
+      "molecule": "Paracetamol",
+      "therapy": "Pain Management",
+      "indication": "Pain Relief",
+      "existingBrand": "Dolo 650",
+      "chronicAcute": "Chronic",
+      "price": "Rs 75 / strip",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/new-line-extension-pain-management-2023",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-09-08T05:06:26.110Z"
+    },
+    {
+      "brand": "ILUMYA (tildrakizumab-asmn)",
+      "launchType": "Acquired",
+      "date": "2026-03-16",
+      "seller": "—",
+      "dealType": "—",
+      "molecule": "tildrakizumab-asmn",
+      "therapy": "—",
+      "indication": "Active Psoriatic Arthritis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/Sun-Pharma-Announces-US-FDA-Acceptance-of-sBLA-Application-for-ILUMYA.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-09-08T05:09:28.880Z"
     }
   ]
 }
