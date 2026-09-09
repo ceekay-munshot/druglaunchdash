@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-08T05:10:14.011Z",
-  "rowCount": 958,
+  "generatedAt": "2026-09-09T05:08:01.591Z",
+  "rowCount": 964,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -1958,7 +1958,7 @@
       "price": "null",
       "sourceUrl": "https://www.cipla.com/press-release/brand-acquisition",
       "buyer": "Cipla",
-      "lastEnrichmentAttempt": "2026-07-30T03:46:30.939Z"
+      "lastEnrichmentAttempt": "2026-09-09T05:06:38.561Z"
     },
     {
       "brand": "Cipla In-Licenses Molecule Z",
@@ -3350,7 +3350,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/Sun-Pharma-Announces-US-FDA-Acceptance-of-sBLA-Application-for-ILUMYA.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-30T03:46:21.290Z"
+      "lastEnrichmentAttempt": "2026-09-09T05:06:34.887Z"
     },
     {
       "brand": "Tyvalzi",
@@ -5142,7 +5142,7 @@
       "price": "—",
       "sourceUrl": "http://www.sunpharma.com/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-30T03:45:19.862Z"
+      "lastEnrichmentAttempt": "2026-09-09T05:06:30.409Z"
     },
     {
       "brand": "Cipla's New Drug",
@@ -5174,7 +5174,7 @@
       "price": "₹8.5 / packet of 1 sachet",
       "sourceUrl": "https://www.cipla.com/press-releases-statements/cipla-acquisition",
       "buyer": "Cipla",
-      "lastEnrichmentAttempt": "2026-07-30T03:46:39.324Z"
+      "lastEnrichmentAttempt": "2026-09-09T05:06:53.734Z"
     },
     {
       "brand": "Ranluspec",
@@ -5190,7 +5190,7 @@
       "price": null,
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-approval-from-u-s-fda-for-ranluspec-tm-ranibizumab-injection",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-07-30T03:46:47.620Z"
+      "lastEnrichmentAttempt": "2026-09-09T05:07:03.908Z"
     },
     {
       "brand": "Sodium Sulfate, Magnesium Sulfate, and Potassium Chloride",
@@ -5206,7 +5206,7 @@
       "price": "₹36.9 / bottle of 200 ml",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-approval-from-u-s-fda-for-sodium-sulfate-magnesium-sulfate-and-potassium-chloride-tablets",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-07-30T03:46:57.633Z"
+      "lastEnrichmentAttempt": "2026-09-09T05:07:12.743Z"
     },
     {
       "brand": "Biosimilar to Xolair® (omalizumab)",
@@ -6432,7 +6432,7 @@
       "dealType": "NCE Launch",
       "molecule": "Dextromethorphan",
       "therapy": "CNS",
-      "indication": "—",
+      "indication": "OTC",
       "existingBrand": "Delsym",
       "chronicAcute": "—",
       "price": null,
@@ -7862,7 +7862,7 @@
       "price": "₹3488 / bottle of 21 capsules",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseEugia04032026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-30T03:44:34.962Z"
+      "lastEnrichmentAttempt": "2026-09-09T05:06:15.782Z"
     },
     {
       "brand": "Efinaconazole",
@@ -11542,7 +11542,7 @@
       "price": null,
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-picks-up-stake-in-api-maker-la-chandra-pharmalab/article32543933.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-30T03:44:26.128Z"
+      "lastEnrichmentAttempt": "2026-09-09T05:06:12.674Z"
     },
     {
       "brand": "Pomalidomide Capsules",
@@ -11554,8 +11554,8 @@
       "therapy": "—",
       "indication": "relapsed or refractory multiple myeloma and AIDS-related Kaposi sarcoma",
       "existingBrand": "Pomalyst®",
-      "chronicAcute": "—",
-      "price": null,
+      "chronicAcute": "Chronic",
+      "price": "₹3563 / bottle of 21 capsules",
       "sourceUrl": "—",
       "buyer": "Aurobindo",
       "lastEnrichmentAttempt": "2026-07-30T03:44:34.962Z"
@@ -11622,7 +11622,7 @@
       "price": "₹12.4 / strip of 10 tablets",
       "sourceUrl": "https://www.mankindpharma.com/press-releases/pfizer-acquisition/",
       "buyer": "Mankind Pharma",
-      "lastEnrichmentAttempt": "2026-07-31T04:02:22.006Z"
+      "lastEnrichmentAttempt": "2026-09-09T05:07:22.223Z"
     },
     {
       "brand": "Desidustat",
@@ -15319,6 +15319,102 @@
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/Sun-Pharma-Announces-US-FDA-Acceptance-of-sBLA-Application-for-ILUMYA.pdf",
       "buyer": "Sun Pharma",
       "lastEnrichmentAttempt": "2026-09-08T05:09:28.880Z"
+    },
+    {
+      "brand": "Mankind Pharma's New Drug",
+      "launchType": "Own Launched",
+      "date": "2023-09-22",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "NewActiveIngredient",
+      "therapy": "Oncology",
+      "indication": "Cancer",
+      "existingBrand": "CompetitorBrand",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.mankindpharma.com/uysJFJN-LaJzkS7own6GiMrJrtQ4eEDSp0Fv6KdEIC0=.html",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-09-09T05:03:20.094Z"
+    },
+    {
+      "brand": "COVID Fighter",
+      "launchType": "Own Launched",
+      "date": "2026-06-01",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹116 / bottle of 25 gm tablet",
+      "sourceUrl": "—",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-09-09T05:04:27.750Z"
+    },
+    {
+      "brand": "ADQUEY™ (difamilast 1%)",
+      "launchType": "Own Launched",
+      "date": "2023-02-16",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Difamilast",
+      "therapy": "—",
+      "indication": "Mild-to-Moderate Atopic Dermatitis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/Adquey-(Difamilast)_NDA%20Approval_PressRelease_13-Feb-26.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-09-09T05:05:56.455Z"
+    },
+    {
+      "brand": "Noveltreat",
+      "launchType": "Own Launched",
+      "date": "2025-05-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "semaglutide",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/blog/sun-pharma-launches-its-semaglutide-injection-under-the-brand-names-noveltreat-and-sematrinity-in-india/",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-09-09T05:06:30.409Z"
+    },
+    {
+      "brand": "Sematrinity",
+      "launchType": "Own Launched",
+      "date": "2025-05-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "semaglutide",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/blog/sun-pharma-launches-its-semaglutide-injection-under-the-brand-names-noveltreat-and-sematrinity-in-india/",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-09-09T05:06:30.409Z"
+    },
+    {
+      "brand": "Organon",
+      "launchType": "Acquired",
+      "date": "2026-04-01",
+      "seller": "Organon",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/blog/sun-pharma-signs-definitive-agreement-to-acquire-organon/",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-09-09T05:06:30.409Z"
     }
   ]
 }
