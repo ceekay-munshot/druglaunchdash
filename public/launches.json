@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-09T05:08:01.591Z",
-  "rowCount": 964,
+  "generatedAt": "2026-09-10T05:11:45.769Z",
+  "rowCount": 968,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -319,7 +319,7 @@
       "seller": "Zydus Lifesciences Limited",
       "dealType": "Co-marketing",
       "molecule": "Desidustat",
-      "therapy": "—",
+      "therapy": "——",
       "indication": "anemia associated with Chronic Kidney Disease",
       "existingBrand": "Oxemia",
       "chronicAcute": "Chronic",
@@ -4591,7 +4591,7 @@
       "seller": "—",
       "dealType": "Device Launch",
       "molecule": "Carbetocin",
-      "therapy": "—",
+      "therapy": "Women's Health",
       "indication": "postpartum hemorrhage",
       "existingBrand": "—",
       "chronicAcute": "—",
@@ -5222,7 +5222,7 @@
       "price": "₹45 / strip of 10 tablets",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-31T04:06:08.004Z"
+      "lastEnrichmentAttempt": "2026-09-10T05:11:24.025Z"
     },
     {
       "brand": "Wockhardt's Biosimilar",
@@ -11638,7 +11638,7 @@
       "price": "null",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/10/Press-Release-Sun-Pharma-and-Zydus-sign-licensing-agreement-for-co-marketing-of-Desidustat-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-31T04:02:44.066Z"
+      "lastEnrichmentAttempt": "2026-09-10T05:10:16.985Z"
     },
     {
       "brand": "STARIZO (Tedizolid Phosphate)",
@@ -11670,7 +11670,7 @@
       "price": "₹1325 / bottle of 40 capsules",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/12/Press-Release-Sun-Pharma-receives-DCGI-approval-for-Molxvir-Molnupiravir-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-31T04:02:44.066Z"
+      "lastEnrichmentAttempt": "2026-09-10T05:10:20.439Z"
     },
     {
       "brand": "Cipla",
@@ -11718,7 +11718,7 @@
       "price": "₹47.4 / strip of 10 tablets",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-strengthens-structural-heart-portfolio-with-new-clip-delivery-system.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-07-31T04:05:26.682Z"
+      "lastEnrichmentAttempt": "2026-09-10T05:10:24.012Z"
     },
     {
       "brand": "Room-Temperature-Stable Carbetocin",
@@ -11734,7 +11734,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-introduces-room-temperature-stable.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-07-31T04:05:26.682Z"
+      "lastEnrichmentAttempt": "2026-09-10T05:10:32.070Z"
     },
     {
       "brand": "Dextromethorphan",
@@ -11750,7 +11750,7 @@
       "price": "₹85.6 / bottle of 100 ml syrup",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/2LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-31T04:05:49.162Z"
+      "lastEnrichmentAttempt": "2026-09-10T05:10:44.162Z"
     },
     {
       "brand": "Dapagliflozin",
@@ -11766,7 +11766,7 @@
       "price": "₹74.9 / strip of 15 tablets",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoUSFDA07042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-31T04:05:49.162Z"
+      "lastEnrichmentAttempt": "2026-09-10T05:10:50.931Z"
     },
     {
       "brand": "Pomalidomide",
@@ -11782,7 +11782,7 @@
       "price": "₹3955 / bottle of 21 capsules (1 mg)",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/PressReleaseEugia04032026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-31T04:05:49.162Z"
+      "lastEnrichmentAttempt": "2026-09-10T05:10:56.941Z"
     },
     {
       "brand": "Everolimus",
@@ -11798,7 +11798,7 @@
       "price": "₹627 / strip of 10 (250 mg)",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtsToSEsPREugiaUSFDA26022026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-07-31T04:05:49.162Z"
+      "lastEnrichmentAttempt": "2026-09-10T05:11:05.882Z"
     },
     {
       "brand": "Wockhardt Acquires XYZ Pharma",
@@ -11814,7 +11814,7 @@
       "price": "₹60.4 / strip of 10 tablets",
       "sourceUrl": "https://www.wockhardt.com/pressrelease/2023-08-01-acquisition",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-31T04:06:06.498Z"
+      "lastEnrichmentAttempt": "2026-09-10T05:11:17.416Z"
     },
     {
       "brand": "Wockhardt In-licenses ABC Drug",
@@ -15415,6 +15415,70 @@
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-signs-definitive-agreement-to-acquire-organon/",
       "buyer": "Sun Pharma",
       "lastEnrichmentAttempt": "2026-09-09T05:06:30.409Z"
+    },
+    {
+      "brand": "Telma",
+      "launchType": "Own Launched",
+      "date": "2023-09-22",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "telmisartan",
+      "therapy": "Cardiology",
+      "indication": "Hypertension",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 84,375 / injection",
+      "sourceUrl": "https://www.mankindpharma.com/18vEQw-Qt6zKqTqhtrPfBAPQrm9bRyC2Z1-yKm3cY9w=.html",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-09-10T05:06:28.428Z"
+    },
+    {
+      "brand": "WINLEVI®",
+      "launchType": "In-licensed",
+      "date": "2022-07-26",
+      "seller": "Cosmo",
+      "dealType": "Brand Acquisition",
+      "molecule": "clascoterone",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2022/07/Press-Release-licensing-and-supply-agreement-between-Sun-Pharma-and-Cosmo-for-WINLEVI%C2%AE.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-09-10T05:07:14.748Z"
+    },
+    {
+      "brand": "Obimet and Thyrocab",
+      "launchType": "Acquired",
+      "date": "2026-06-01",
+      "seller": "Abbott India",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": null,
+      "price": "₹658 / strip of 60 tablets",
+      "sourceUrl": "https://www.expresspharma.in/corona-acquires-obimet-thyrocab-brands-from-abbott-india",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-09-10T05:07:55.053Z"
+    },
+    {
+      "brand": "Wockhardt's New Biosimilar",
+      "launchType": "Own Launched",
+      "date": "2023-07-15",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "—",
+      "therapy": "Immunology",
+      "indication": "Rheumatoid Arthritis",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 5,000 / injection",
+      "sourceUrl": "https://www.wockhardt.com/press-release-new-biosimilar",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-09-10T05:10:15.479Z"
     }
   ]
 }
