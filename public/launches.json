@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-10T05:11:45.769Z",
-  "rowCount": 968,
+  "generatedAt": "2026-09-11T05:07:14.233Z",
+  "rowCount": 975,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -1990,7 +1990,7 @@
       "price": "₹42 / packet of 10 ml",
       "sourceUrl": "https://health.economictimes.indiatimes.com/news/pharma/drug-approvals-launches/alkem-forays-into-ophthalmology-with-launch-of-eye-care-products/101642253",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-07-31T04:07:42.835Z"
+      "lastEnrichmentAttempt": "2026-09-11T05:06:49.134Z"
     },
     {
       "brand": "Ryaltris™",
@@ -3366,7 +3366,7 @@
       "price": "₹33.7 / strip of 10 tablets",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/09/Press-Release-Sun-Pharma-and-Pharmazz-Inc.-licensing-agreement-for-Sovateltide-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-31T04:06:55.608Z"
+      "lastEnrichmentAttempt": "2026-09-11T05:06:01.252Z"
     },
     {
       "brand": "Various Brands",
@@ -3382,7 +3382,7 @@
       "price": "₹421 / tube of 40 gm cream",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-31T04:07:00.019Z"
+      "lastEnrichmentAttempt": "2026-09-11T05:06:05.716Z"
     },
     {
       "brand": "Alkem's Ophthalmology Products",
@@ -3398,7 +3398,7 @@
       "price": "—",
       "sourceUrl": "https://health.economictimes.indiatimes.com/news/pharma/drug-approvals-launches/alkem-forays-into-ophthalmology-with-launch-of-eye-care-products/101642253",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-07-31T04:07:52.083Z"
+      "lastEnrichmentAttempt": "2026-09-11T05:07:04.305Z"
     },
     {
       "brand": "Hydrocortisone Valerate Ointment USP, 0.2%",
@@ -5238,7 +5238,7 @@
       "price": "Rs 5,000 / vial",
       "sourceUrl": "https://www.wockhardt.com/press-release-biosimilar-launch-july-2023",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-31T04:06:46.696Z"
+      "lastEnrichmentAttempt": "2026-09-11T05:05:53.112Z"
     },
     {
       "brand": "New Diabetes Medication",
@@ -7926,7 +7926,7 @@
       "price": null,
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2020/12/Press-Release-Licensing-Agreement-for-Tildrakizumab.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-07-31T04:07:08.821Z"
+      "lastEnrichmentAttempt": "2026-09-11T05:06:15.265Z"
     },
     {
       "brand": "four drug brands from GlaxoSmithkline",
@@ -7942,7 +7942,7 @@
       "price": "₹96.7 / strip of 15 tablets",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-31T04:07:14.222Z"
+      "lastEnrichmentAttempt": "2026-09-11T05:06:19.936Z"
     },
     {
       "brand": "Blood Donation Camp",
@@ -7958,7 +7958,7 @@
       "price": "₹72.8 / strip of 10 tablets",
       "sourceUrl": "https://www.coronaremedies.com/media-center/#site-content",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-07-31T04:07:18.241Z"
+      "lastEnrichmentAttempt": "2026-09-11T05:06:25.126Z"
     },
     {
       "brand": "Wockhardt",
@@ -7990,7 +7990,7 @@
       "price": "₹2.1 / strip of 10 tablets",
       "sourceUrl": "https://www.wockhardt.com/press-release-3",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-07-31T04:07:36.813Z"
+      "lastEnrichmentAttempt": "2026-09-11T05:06:40.851Z"
     },
     {
       "brand": "Fluocinolone Acetonide Oil, 0.01%",
@@ -11862,7 +11862,7 @@
       "price": "—",
       "sourceUrl": "https://health.economictimes.indiatimes.com/news/pharma/drug-approvals-launches/alkem-forays-into-ophthalmology-with-launch-of-eye-care-products/101642253",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-07-31T04:07:42.835Z"
+      "lastEnrichmentAttempt": "2026-09-11T05:06:59.609Z"
     },
     {
       "brand": "Brand X",
@@ -15479,6 +15479,118 @@
       "sourceUrl": "https://www.wockhardt.com/press-release-new-biosimilar",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-09-10T05:10:15.479Z"
+    },
+    {
+      "brand": "4 drug brands from GlaxoSmithkline Pharmaceuticals Limited",
+      "launchType": "Acquired",
+      "date": "2026-06-01",
+      "seller": "GlaxoSmithkline Pharmaceuticals Limited",
+      "dealType": "Brand Portfolio Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹116 / bottle of 10 ml",
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-09-11T05:04:55.949Z"
+    },
+    {
+      "brand": "Bio-Similar Product X",
+      "launchType": "Own Launched",
+      "date": "2023-05-15",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "—",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "Herceptin",
+      "chronicAcute": "Chronic",
+      "price": "Rs 5,000 / vial",
+      "sourceUrl": "https://www.aurobindo.com/media/press-releases/bio-similar-launch",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-09-11T05:05:41.443Z"
+    },
+    {
+      "brand": "Generic Drug Y",
+      "launchType": "Own Launched",
+      "date": "2023-08-01",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Metformin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Glycomet",
+      "chronicAcute": "Chronic",
+      "price": "Rs 150 / strip",
+      "sourceUrl": "https://www.aurobindo.com/media/press-releases/generic-launch-drug-y",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-09-11T05:05:41.443Z"
+    },
+    {
+      "brand": "Wockhardt's New Biosimilar",
+      "launchType": "Own Launched",
+      "date": "2023-08-15",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "Trastuzumab",
+      "therapy": "Oncology",
+      "indication": "Breast cancer",
+      "existingBrand": "Herceptin",
+      "chronicAcute": "—",
+      "price": "Rs 4,500 / injection",
+      "sourceUrl": "https://www.wockhardt.com/press-release/2023/08/wockhardt-launches-new-biosimilar",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-09-11T05:05:51.606Z"
+    },
+    {
+      "brand": "Dilo-BM, Dilo-DX, Stelbid, and Vitneurin",
+      "launchType": "Acquired",
+      "date": "2017-03-07",
+      "seller": "GlaxoSmithKline",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-09-11T05:06:05.716Z"
+    },
+    {
+      "brand": "Alkem Ophthalmology",
+      "launchType": "Own Launched",
+      "date": "2023-07-10",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "Ophthalmology",
+      "indication": "eye diseases",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://health.economictimes.indiatimes.com/news/pharma/drug-approvals-launches/alkem-forays-into-ophthalmology-with-launch-of-eye-care-products/101642253",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-09-11T05:06:49.134Z"
+    },
+    {
+      "brand": "Alkem Eye Care Products",
+      "launchType": "Own Launched",
+      "date": "2023-07-10",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://health.economictimes.indiatimes.com/news/pharma/drug-approvals-launches/alkem-forays-into-ophthalmology-with-launch-of-eye-care-products/101642253",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-09-11T05:06:59.609Z"
     }
   ]
 }
