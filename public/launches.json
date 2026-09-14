@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-13T05:21:12.118Z",
-  "rowCount": 982,
+  "generatedAt": "2026-09-14T05:26:32.908Z",
+  "rowCount": 993,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -726,7 +726,7 @@
       "price": "—",
       "sourceUrl": "http://www.sunpharma.com/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-08-02T04:09:07.402Z"
+      "lastEnrichmentAttempt": "2026-09-14T05:24:26.473Z"
     },
     {
       "brand": "Chericof",
@@ -1792,7 +1792,7 @@
       "dealType": "NCE Launch",
       "molecule": "Dextromethorphan",
       "therapy": "—",
-      "indication": "—",
+      "indication": "OTC",
       "existingBrand": "Delsym",
       "chronicAcute": "—",
       "price": "₹190 / strip of 10 (625 mg)",
@@ -2134,7 +2134,7 @@
       "price": "₹3800 / bottle of 21 capsules",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/PressReleaseEugia04032026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-02T04:08:54.484Z"
+      "lastEnrichmentAttempt": "2026-09-14T05:24:17.032Z"
     },
     {
       "brand": "ADQUEY™ (difamilast) Ointment",
@@ -2166,7 +2166,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-signs-definitive-agreement-to-acquire-organon/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-08-02T04:10:24.582Z"
+      "lastEnrichmentAttempt": "2026-09-14T05:24:43.962Z"
     },
     {
       "brand": "semaglutide",
@@ -2198,7 +2198,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-introduces-its-global-innovative-drug-ilumya-in-india-for-treatment-of-moderate-to-severe-plaque-psoriasis/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-08-03T04:11:10.907Z"
+      "lastEnrichmentAttempt": "2026-09-14T05:24:57.606Z"
     },
     {
       "brand": "UNLOXCYT",
@@ -3462,7 +3462,7 @@
       "price": null,
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-launches-its-semaglutide-injection-under-the-brand-names-noveltreat-and-sematrinity-in-india/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-08-02T04:10:19.781Z"
+      "lastEnrichmentAttempt": "2026-09-14T05:24:40.948Z"
     },
     {
       "brand": "Brand B Acquisition",
@@ -5382,7 +5382,7 @@
       "price": "Rs 1,200 / kit",
       "sourceUrl": "https://www.wockhardt.com/release/wardex-launch",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-02T04:08:41.021Z"
+      "lastEnrichmentAttempt": "2026-09-14T05:24:01.067Z"
     },
     {
       "brand": "Wockhardt Acquisition of X Company",
@@ -5398,7 +5398,7 @@
       "price": "₹177 / strip of 10 tablets",
       "sourceUrl": "https://www.wockhardt.com/release/acquisition-of-x-company",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-02T04:08:47.057Z"
+      "lastEnrichmentAttempt": "2026-09-14T05:24:07.873Z"
     },
     {
       "brand": "Wockhardt Metformin Plus",
@@ -5446,7 +5446,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-launches-its-semaglutide-injection-under-the-brand-names-noveltreat-and-sematrinity-in-india/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-08-02T04:10:08.889Z"
+      "lastEnrichmentAttempt": "2026-09-14T05:24:32.105Z"
     },
     {
       "brand": "semaglutide",
@@ -12134,7 +12134,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/release/acquisition-of-x-company#content",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-02T04:08:47.057Z"
+      "lastEnrichmentAttempt": "2026-09-14T05:24:14.628Z"
     },
     {
       "brand": "Sitagliptin in collaboration with MSD",
@@ -12150,7 +12150,7 @@
       "price": "₹106 / strip of 10 tablet er",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-and-msd-announce-strategic-partnership-to-distribute-innovative-oral-anti-diabetic-medicines-in-india.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-03T04:10:30.811Z"
+      "lastEnrichmentAttempt": "2026-09-14T05:24:50.993Z"
     },
     {
       "brand": "Aurobindo’s New Injection",
@@ -15703,6 +15703,182 @@
       "sourceUrl": "https://www.business-standard.com/content/press-releases-ani/corona-remedies-joins-hands-with-ferring-pharmaceuticals-to-commercialize-maternal-health-urology-products-in-india-12305090101_1.html",
       "buyer": "Corona Remedies",
       "lastEnrichmentAttempt": "2026-09-13T05:20:44.118Z"
+    },
+    {
+      "brand": "tamsulosin",
+      "launchType": "Own Launched",
+      "date": "2023-09-22",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "tamsulosin",
+      "therapy": "Urology",
+      "indication": "Benign Prostatic Hyperplasia",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 75 / strip of 10 tablets",
+      "sourceUrl": "https://www.mankindpharma.com/mCQxGDfurmT_QDOMCGNpzDbobHqPjpXc8KO1H2ERDgc=.html",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-09-14T05:20:41.122Z"
+    },
+    {
+      "brand": "Molxvir®",
+      "launchType": "Own Launched",
+      "date": "2021-11-11",
+      "seller": "MSD, Ridgeback",
+      "dealType": "Brand Launch",
+      "molecule": "molnupiravir",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹1240 / bottle of 40 capsules",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/11/Press-Release-Sun-Pharma-gearing-up-to-introduce-molnupiravir-under-the-brand-name-Molxvir%C2%AE-in-India.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-09-14T05:21:12.137Z"
+    },
+    {
+      "brand": "Wokadine",
+      "launchType": "Acquired",
+      "date": "2026-06-15",
+      "seller": "DRL",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹37.6 / bottle of 50 ml solution",
+      "sourceUrl": "https://www.business-standard.com/industry/news/corona-remedies-acquires-wokadine-drl-povidone-iodine-market-126033001282_1.html",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-09-14T05:21:47.328Z"
+    },
+    {
+      "brand": "7 brands in cardiology & women’s healthcare",
+      "launchType": "Acquired",
+      "date": "2026-06-12",
+      "seller": "Bayer",
+      "dealType": "Brand Portfolio Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹159 / bottle of 30 ml tonic",
+      "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-09-14T05:21:47.328Z"
+    },
+    {
+      "brand": "Myoril",
+      "launchType": "Acquired",
+      "date": "2026-06-10",
+      "seller": "Sanofi India",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹288 / strip of 10 capsules",
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/corona-remedies-buys-sanofi-indias-ortho-brand-myoril/articleshow/101344189.cms?from=mdr",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-09-14T05:21:47.328Z"
+    },
+    {
+      "brand": "Maternal Health & Urology products",
+      "launchType": "In-licensed",
+      "date": "2026-06-08",
+      "seller": "Ferring Pharmaceuticals",
+      "dealType": "Co-marketing",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹299 / jar of 200 gm",
+      "sourceUrl": "https://www.business-standard.com/content/press-releases-ani/corona-remedies-joins-hands-with-ferring-pharmaceuticals-to-commercialize-maternal-health-urology-products-in-india-123050900586_1.html",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-09-14T05:21:47.328Z"
+    },
+    {
+      "brand": "Obimet, Thyrocab",
+      "launchType": "Acquired",
+      "date": "2026-06-05",
+      "seller": "Abbott India",
+      "dealType": "Brand Portfolio Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹218 / bottle of 100 tablets",
+      "sourceUrl": "https://www.expresspharma.in/corona-acquires-obimet-thyrocab-brands-from-abbott-india",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-09-14T05:21:47.328Z"
+    },
+    {
+      "brand": "four drug brands",
+      "launchType": "Acquired",
+      "date": "2026-06-03",
+      "seller": "GlaxoSmithkline Pharmaceuticals Limited",
+      "dealType": "Brand Portfolio Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹70 / bottle of 100 gm powder",
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-09-14T05:21:47.328Z"
+    },
+    {
+      "brand": "Next-Generation XIENCE Sierra™ Stent",
+      "launchType": "Own Launched",
+      "date": "2024-05-02",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "Everolimus",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-next-generation-xience-sierra-stent-in-india-offering-cardiologists-a-new-level-of-care-and-precision.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-09-14T05:23:20.967Z"
+    },
+    {
+      "brand": "Lannett Pharmacy",
+      "launchType": "Acquired",
+      "date": "2026-06-21",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsLnnettPR22062026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-09-14T05:23:40.868Z"
+    },
+    {
+      "brand": "Omalizumab Biosimilar",
+      "launchType": "Own Launched",
+      "date": "2026-04-05",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "Omalizumab",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Xolair",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-09-14T05:23:40.868Z"
     }
   ]
 }
