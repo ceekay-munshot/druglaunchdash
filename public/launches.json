@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-14T05:26:32.908Z",
-  "rowCount": 993,
+  "generatedAt": "2026-09-15T05:15:09.402Z",
+  "rowCount": 1003,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -1073,7 +1073,7 @@
       "molecule": "Tiotropium Bromide",
       "therapy": "—",
       "indication": "—",
-      "existingBrand": "—",
+      "existingBrand": "Spiriva",
       "chronicAcute": "—",
       "price": "₹304 / packet of 120 mdi inhaler",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-enters-into-an-exclusive-licensing.pdf",
@@ -3446,7 +3446,7 @@
       "price": "₹289 / tube of 15 gm (15%)",
       "sourceUrl": "https://www.glenmarkpharma.com/press-release/glenmark-pharmaceuticals-receives-anda-approval-for-azelaic-acid-gel-15",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-08-03T04:12:44.415Z"
+      "lastEnrichmentAttempt": "2026-09-15T05:14:09.732Z"
     },
     {
       "brand": "Noveltreat and Sematrinity",
@@ -3510,7 +3510,7 @@
       "price": "₹264.28 / strip of 10 tablets",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-s-ankleshwar-facility-receives-eir-from-u-s-fda",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-08-03T04:11:50.237Z"
+      "lastEnrichmentAttempt": "2026-09-15T05:13:17.414Z"
     },
     {
       "brand": "LNP8701",
@@ -3590,7 +3590,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/2LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-03T04:11:59.149Z"
+      "lastEnrichmentAttempt": "2026-09-15T05:13:31.928Z"
     },
     {
       "brand": "Glycerol Phenylbutyrate Oral Liquid, 1.1 grams per mL",
@@ -5526,7 +5526,7 @@
       "price": "₹98.5 / strip of 10 tablets",
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-company-b",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-03T04:12:36.757Z"
+      "lastEnrichmentAttempt": "2026-09-15T05:14:03.278Z"
     },
     {
       "brand": "Wockhardt In-licenses Drug C",
@@ -6766,7 +6766,7 @@
       "date": "2023-09-15",
       "seller": "—",
       "dealType": "NCE Launch",
-      "molecule": "—",
+      "molecule": "WCK 5222",
       "therapy": "Respiratory",
       "indication": "Asthma",
       "existingBrand": "Alimta",
@@ -8102,7 +8102,7 @@
       "price": "₹211 / bottle of 9.5 gm nasal spray",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-Announces-Exclusive-Licensing-Agreement-with-Se.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-08-03T04:11:18.592Z"
+      "lastEnrichmentAttempt": "2026-09-15T05:12:56.905Z"
     },
     {
       "brand": "NaMuscla®",
@@ -8118,7 +8118,7 @@
       "price": "₹29.8 / strip of 10 tablets",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-announces-ema-approval-for-na-muscla-expansion-for-pediatric-indication-with-new-strengths",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-08-03T04:11:32.262Z"
+      "lastEnrichmentAttempt": "2026-09-15T05:13:00.455Z"
     },
     {
       "brand": "Medispray",
@@ -8134,7 +8134,7 @@
       "price": "Rs 1,200 / spray",
       "sourceUrl": "https://www.pharmaexample.com/pressrelease1",
       "buyer": "Zydus Lifesciences",
-      "lastEnrichmentAttempt": "2026-08-03T04:11:42.163Z"
+      "lastEnrichmentAttempt": "2026-09-15T05:13:09.652Z"
     },
     {
       "brand": "Cardiologix",
@@ -8198,7 +8198,7 @@
       "price": "null",
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-xyz-pharma",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-03T04:11:43.587Z"
+      "lastEnrichmentAttempt": "2026-09-15T05:13:11.123Z"
     },
     {
       "brand": "ABC Drug In-License",
@@ -12198,7 +12198,7 @@
       "price": "₹36.5 / strip of 10 tablets",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-introduces-tactiflex-sensor-enabled-ablation-catheter-in-india-for-treatment-of-abnormal-heart-rhythms.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-04T03:51:06.256Z"
+      "lastEnrichmentAttempt": "2026-09-15T05:14:17.902Z"
     },
     {
       "brand": "Growth Right 2.0",
@@ -12214,7 +12214,7 @@
       "price": null,
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/Abbott-Helps-People-with-Vertigo-Take-Control-of-Their-Health-with-the-Launch-of-an-Easy-to-Use-Vertigo-Coach-App-in-India.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-04T03:51:06.256Z"
+      "lastEnrichmentAttempt": "2026-09-15T05:14:26.480Z"
     },
     {
       "brand": "Wockhardt",
@@ -15879,6 +15879,166 @@
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
       "buyer": "Aurobindo",
       "lastEnrichmentAttempt": "2026-09-14T05:23:40.868Z"
+    },
+    {
+      "brand": "Alkem’s antibiotic combination",
+      "launchType": "Own Launched",
+      "date": "2023-10-02",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "Drug-resistant infections",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/amp_articleshow/100775508.cms",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-09-15T05:11:41.278Z"
+    },
+    {
+      "brand": "Wokadine",
+      "launchType": "Acquired",
+      "date": "2026-06-01",
+      "seller": "Bayer",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "Cardiology / Women’s Health",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹37.6 / bottle of 50 ml solution",
+      "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-09-15T05:11:49.662Z"
+    },
+    {
+      "brand": "Breztri",
+      "launchType": "Own Launched",
+      "date": "2023-03-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "budesonide plus formoterol",
+      "therapy": "Respiratory",
+      "indication": "Asthma",
+      "existingBrand": "Symbicort",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,200 / inhaler",
+      "sourceUrl": "https://www.pharmaexample.com/breztri-launch",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-09-15T05:12:24.734Z"
+    },
+    {
+      "brand": "Zarcev",
+      "launchType": "Own Launched",
+      "date": "2023-04-15",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "rosuvastatin",
+      "therapy": "Cardiology",
+      "indication": "Hyperlipidemia",
+      "existingBrand": "Crestor",
+      "chronicAcute": "Chronic",
+      "price": "Rs 350 / strip",
+      "sourceUrl": "https://www.pharmaexample.com/zarcev-launch",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-09-15T05:12:24.734Z"
+    },
+    {
+      "brand": "Fresto",
+      "launchType": "Acquired",
+      "date": "2023-05-10",
+      "seller": "Another Pharma Co.",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Frestor",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.pharmaexample.com/fresto-acquisition",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-09-15T05:12:24.734Z"
+    },
+    {
+      "brand": "OncoBiosim",
+      "launchType": "In-licensed",
+      "date": "2023-06-20",
+      "seller": "Biosimilar Inc.",
+      "dealType": "In-license (India)",
+      "molecule": "trastuzumab",
+      "therapy": "Oncology",
+      "indication": "Breast cancer",
+      "existingBrand": "Herceptin",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.pharmaexample.com/onco-biosim-license",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-09-15T05:12:24.734Z"
+    },
+    {
+      "brand": "PCV-14 Pneumococcal Conjugate Vaccine",
+      "launchType": "Own Launched",
+      "date": "2024-11-27",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "pneumococcal bacterial infections",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-14-valent-pneumococcal-conjugate-vaccine-pcv-14-that-offers-broadest-protection-for-children-against-pneumococcal-bacterial-infections.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-09-15T05:12:40.384Z"
+    },
+    {
+      "brand": "Insertable Cardiac Monitor",
+      "launchType": "Own Launched",
+      "date": "2017-12-19",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "arrhythmias",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-first-smartone-compatible-insertable-cardiac-monitor-to-detect-arrhythmias.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-09-15T05:12:40.384Z"
+    },
+    {
+      "brand": "ADQUEY™ (difamilast 1%) ointment",
+      "launchType": "Acquired",
+      "date": "2026-02-16",
+      "seller": "Otsuka Pharmaceutical Co., Ltd.",
+      "dealType": "Brand Acquisition",
+      "molecule": "Difamilast",
+      "therapy": "—",
+      "indication": "Mild-to-Moderate Atopic Dermatitis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/Adquey-(Difamilast)_NDA%20Approval_PressRelease_13-Feb-26.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-09-15T05:12:48.613Z"
+    },
+    {
+      "brand": "Wockhardt",
+      "launchType": "Acquired",
+      "date": "2023-08-28",
+      "seller": "Zydus Cadila",
+      "dealType": "Brand Acquisition",
+      "molecule": "Telmisartan",
+      "therapy": "Cardiology",
+      "indication": "Hypertension",
+      "existingBrand": "Telma",
+      "chronicAcute": "Chronic",
+      "price": "Rs 249 / strip of 10 tablets",
+      "sourceUrl": "https://www.wockhardt.com/press-release-2023-08-28",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-09-15T05:12:55.397Z"
     }
   ]
 }
