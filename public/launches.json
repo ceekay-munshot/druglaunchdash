@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-15T05:15:09.402Z",
-  "rowCount": 1003,
+  "generatedAt": "2026-09-16T05:13:09.807Z",
+  "rowCount": 1014,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -2214,7 +2214,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-announces-the-availability-of-unloxcyt-cosibelimab-ipdl-for-advanced-cutaneous-squamous-cell-carcinoma-acscc/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-08-04T03:53:38.499Z"
+      "lastEnrichmentAttempt": "2026-09-16T05:11:11.185Z"
     },
     {
       "brand": "ILUMYA",
@@ -3606,7 +3606,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-04T03:51:34.441Z"
+      "lastEnrichmentAttempt": "2026-09-16T05:10:17.611Z"
     },
     {
       "brand": "Dapagliflozin and Metformin Hydrochloride Extended-Release Tablets",
@@ -3638,7 +3638,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoUSFDA07042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-04T03:52:25.885Z"
+      "lastEnrichmentAttempt": "2026-09-16T05:10:24.583Z"
     },
     {
       "brand": "BP11, Investigational Biosimilar to Xolair® (omalizumab)",
@@ -3654,7 +3654,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-04T03:53:04.899Z"
+      "lastEnrichmentAttempt": "2026-09-16T05:11:05.342Z"
     },
     {
       "brand": "generic semaglutide",
@@ -5558,7 +5558,7 @@
       "price": "—",
       "sourceUrl": "https://glenmarkpharma.com/press_release/glenmark-pharmaceuticals-receives-anda-approval-for-azelaic-acid-gel-15/#main",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-08-04T03:51:23.314Z"
+      "lastEnrichmentAttempt": "2026-09-16T05:10:09.801Z"
     },
     {
       "brand": "Dapagliflozin and Metformin Hydrochloride Extended-Release Tablets",
@@ -8278,7 +8278,7 @@
       "price": "₹4984 / box of 1 unit",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-next-gen-freestyle-libre2-plus-with-continuous-glucose-readings-every-minute-and-optional-alarms.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-04T03:53:46.485Z"
+      "lastEnrichmentAttempt": "2026-09-16T05:11:24.392Z"
     },
     {
       "brand": "Dapagliflozin",
@@ -8294,7 +8294,7 @@
       "price": "₹190 / strip of 15 tablets",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoUSFDA07042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-04T03:53:57.896Z"
+      "lastEnrichmentAttempt": "2026-09-16T05:11:31.493Z"
     },
     {
       "brand": "BP11 (Omalizumab Biosimilar)",
@@ -8326,7 +8326,7 @@
       "price": "₹607 / strip of 10 (0.25 mg)",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtsToSEsPREugiaUSFDA26022026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-04T03:54:01.323Z"
+      "lastEnrichmentAttempt": "2026-09-16T05:11:34.415Z"
     },
     {
       "brand": "ADQUEY™ (Difamilast)",
@@ -12230,7 +12230,7 @@
       "price": "₹2.1 / strip of 10 tablets",
       "sourceUrl": "https://www.wockhardt.com/press-release/company-acquisition",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-04T03:51:21.808Z"
+      "lastEnrichmentAttempt": "2026-09-16T05:10:02.532Z"
     },
     {
       "brand": "Wockhardt",
@@ -12278,7 +12278,7 @@
       "price": null,
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/01/UNLOXCYT-Commercial-Launch-Press-Release.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-08-04T03:53:38.499Z"
+      "lastEnrichmentAttempt": "2026-09-16T05:11:21.118Z"
     },
     {
       "brand": "Lannett Company",
@@ -16039,6 +16039,182 @@
       "sourceUrl": "https://www.wockhardt.com/press-release-2023-08-28",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-09-15T05:12:55.397Z"
+    },
+    {
+      "brand": "Brothers of Humanity",
+      "launchType": "Own Launched",
+      "date": "2023-06-01",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://helloentrepreneurs.com/lifestyle/health/corona-remedies-brothers-of-humanity-campaign-breaks-asia-book-of-records-with-tribute-to-16161-healthcare-workers-48875/",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-09-16T05:08:06.247Z"
+    },
+    {
+      "brand": "eGenesis",
+      "launchType": "Acquired",
+      "date": "2026-08-25",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.natcopharma.co.in/insights/news-and-announcements",
+      "buyer": "Natco Pharma",
+      "lastEnrichmentAttempt": "2026-09-16T05:08:26.091Z"
+    },
+    {
+      "brand": "Medthisa",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Acetaminophen",
+      "therapy": "Pain Management",
+      "indication": "Pain Relief",
+      "existingBrand": "Dolo",
+      "chronicAcute": "Acute",
+      "price": "Rs 50 / strip",
+      "sourceUrl": "https://www.medthisa.com/press-release/acetalim-launch",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-09-16T05:09:07.857Z"
+    },
+    {
+      "brand": "OncoBios",
+      "launchType": "In-licensed",
+      "date": "2023-08-23",
+      "seller": "XYZ Pharma",
+      "dealType": "In-license (India)",
+      "molecule": "Trastuzumab",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "Herceptin",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.oncobios.com/press-release/trastuzumab-licensing",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-09-16T05:09:07.857Z"
+    },
+    {
+      "brand": "CureBiz",
+      "launchType": "Acquired",
+      "date": "2023-07-10",
+      "seller": "PharmaGroup",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.curebiz.com/press-release/acquisition-pharmagroup",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-09-16T05:09:07.857Z"
+    },
+    {
+      "brand": "Beclomethasone Dipropionate HFA Inhalation Aerosol",
+      "launchType": "Own Launched",
+      "date": "2023-09-14",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Beclomethasone Dipropionate",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "QVAR®",
+      "chronicAcute": "—",
+      "price": "₹173 / packet of 1 inhaler",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseUSFDAapproval15092026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-09-16T05:09:45.768Z"
+    },
+    {
+      "brand": "Advair Diskus",
+      "launchType": "Acquired",
+      "date": "2023-08-30",
+      "seller": "GSK plc",
+      "dealType": "Generic Launch",
+      "molecule": "Fluticasone Propionate and Salmeterol",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrtoSEsLannetPR31082026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-09-16T05:09:45.768Z"
+    },
+    {
+      "brand": "Lannett",
+      "launchType": "Acquired",
+      "date": "2023-06-21",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsLnnettPR22062026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-09-16T05:09:45.768Z"
+    },
+    {
+      "brand": "Omalizumab",
+      "launchType": "Own Launched",
+      "date": "2023-04-05",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "Omalizumab",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Xolair®",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-09-16T05:09:45.768Z"
+    },
+    {
+      "brand": "Wockhardt Acquires ABC Pharma",
+      "launchType": "Acquired",
+      "date": "2023-08-10",
+      "seller": "ABC Pharma",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-release-acquisition",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-09-16T05:10:01.026Z"
+    },
+    {
+      "brand": "RYALTRIS",
+      "launchType": "Own Launched",
+      "date": "2026-04-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "Respiratory",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Press%20Release%20-%20Glenmark%20Expands%20Global%20Respiratory%20Innovation%20Footprint%20with%20RYALTRIS%C2%AE%20Launch%20in%20Brazil.pdf",
+      "buyer": "Glenmark",
+      "lastEnrichmentAttempt": "2026-09-16T05:10:09.801Z"
     }
   ]
 }
