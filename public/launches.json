@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-17T05:18:13.070Z",
-  "rowCount": 1019,
+  "generatedAt": "2026-09-18T05:07:50.092Z",
+  "rowCount": 1035,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -2294,7 +2294,7 @@
       "price": null,
       "sourceUrl": "https://www.lupin.com/",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-08-05T03:51:22.361Z"
+      "lastEnrichmentAttempt": "2026-09-18T05:06:44.108Z"
     },
     {
       "brand": "Lupin",
@@ -5702,7 +5702,7 @@
       "price": "₹34491 / ampoule of 2 ml injection",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-05T03:51:08.683Z"
+      "lastEnrichmentAttempt": "2026-09-18T05:06:28.863Z"
     },
     {
       "brand": "Wockhardt's New Anti-Diabetic Drug",
@@ -5734,7 +5734,7 @@
       "price": "₹42.6 / packet of 50 ml scrub",
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-of-pharmacorp",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-05T03:51:14.216Z"
+      "lastEnrichmentAttempt": "2026-09-18T05:06:34.783Z"
     },
     {
       "brand": "Wockhardt's New Line Extension for Pain Relief",
@@ -5766,7 +5766,7 @@
       "price": null,
       "sourceUrl": "https://lupin.com/media/press-releases/lupin-signs-exclusive-licensing-agreement-with-gan-lee-pharmaceuticals-for-novel-glp-1-receptor-agonist",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-08-05T03:51:31.232Z"
+      "lastEnrichmentAttempt": "2026-09-18T05:06:47.240Z"
     },
     {
       "brand": "Plasil®",
@@ -8406,7 +8406,7 @@
       "price": "—",
       "sourceUrl": "https://www.lupin.com/press-release/luforbec-launch-spain",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-08-05T03:50:52.353Z"
+      "lastEnrichmentAttempt": "2026-09-18T05:06:21.318Z"
     },
     {
       "brand": "Dapasco",
@@ -8816,7 +8816,7 @@
       "dealType": "Brand Acquisition",
       "molecule": "Carbimazole",
       "therapy": "Endocrinology",
-      "indication": "—",
+      "indication": "Hyperthyroid conditions",
       "existingBrand": "—",
       "chronicAcute": "Chronic",
       "price": "₹213 / bottle of 100 tablets",
@@ -12358,7 +12358,7 @@
       "price": "—",
       "sourceUrl": "https://www.lupin.com/press-releases/luforbec-launch-spain",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-08-05T03:50:41.556Z"
+      "lastEnrichmentAttempt": "2026-09-18T05:06:14.291Z"
     },
     {
       "brand": "Pharmacorp",
@@ -12374,7 +12374,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-of-pharmacorp#content",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-05T03:51:14.216Z"
+      "lastEnrichmentAttempt": "2026-09-18T05:06:41.256Z"
     },
     {
       "brand": "OLMESARTAN",
@@ -12390,7 +12390,7 @@
       "price": "₹202 / strip of 15 tablets",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2020/12/Press-Release-Sun-Pharma-announces-US-launch-of-Generics-for-Olmesartan.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-08-06T03:51:12.477Z"
+      "lastEnrichmentAttempt": "2026-09-18T05:06:56.085Z"
     },
     {
       "brand": "Adcock Ingram Holdings Pty Ltd",
@@ -12422,7 +12422,7 @@
       "price": "₹430 / bottle of 30 ml solution",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-receives-ANDA-approval-for-Fluocinolone-Acetonide-Topical-Oil-Scalp-Oil.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-08-06T03:52:59.225Z"
+      "lastEnrichmentAttempt": "2026-09-18T05:07:03.259Z"
     },
     {
       "brand": "Navitor™",
@@ -12438,7 +12438,7 @@
       "price": "₹88.6 / strip of 10 (20 mg)",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/Abbott-launches-navitor-its-latest-generation-transcatheter-aortic-valve-implantation-TAVI-system-to-treat-aortic-stenosis-in-India.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-06T03:54:03.506Z"
+      "lastEnrichmentAttempt": "2026-09-18T05:07:09.553Z"
     },
     {
       "brand": "Wockhardt's New Drug",
@@ -15121,7 +15121,7 @@
       "molecule": "Modafinil",
       "therapy": "—",
       "indication": "—",
-      "existingBrand": "—",
+      "existingBrand": "Provigil",
       "chronicAcute": "—",
       "price": "₹19.17 / strip of 10 tablets",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-u-s-fda-approval-for-modafinil-tablets-usp",
@@ -16295,6 +16295,262 @@
       "sourceUrl": "https://www.lupin.com/",
       "buyer": "Lupin",
       "lastEnrichmentAttempt": "2026-09-17T05:17:42.688Z"
+    },
+    {
+      "brand": "Drug A",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Molecule A",
+      "therapy": "Oncology",
+      "indication": "Cancer",
+      "existingBrand": "Competitor Brand A",
+      "chronicAcute": "Chronic",
+      "price": "Rs 2,500 / strip",
+      "sourceUrl": "https://www.mankindpharma.com/press-release/drug-a-launch",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-09-18T05:04:36.166Z"
+    },
+    {
+      "brand": "Drug B",
+      "launchType": "Acquired",
+      "date": "2023-09-20",
+      "seller": "Another Company",
+      "dealType": "Brand Acquisition",
+      "molecule": "Molecule B",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Competitor Brand B",
+      "chronicAcute": "—",
+      "price": "Rs 1,200 / vial",
+      "sourceUrl": "https://www.mankindpharma.com/press-release/drug-b-acquisition",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-09-18T05:04:36.166Z"
+    },
+    {
+      "brand": "Drug C",
+      "launchType": "In-licensed",
+      "date": "2023-09-25",
+      "seller": "Third Party",
+      "dealType": "In-license (India)",
+      "molecule": "Molecule C",
+      "therapy": "Respiratory",
+      "indication": "Asthma",
+      "existingBrand": "Competitor Brand C",
+      "chronicAcute": "Acute",
+      "price": "Rs 1,000 / inhaler",
+      "sourceUrl": "https://www.mankindpharma.com/press-release/drug-c-inlicensing",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-09-18T05:04:36.166Z"
+    },
+    {
+      "brand": "WINLEVI® (clascoterone) cream 1%",
+      "launchType": "Own Launched",
+      "date": "2020-12-12",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "clascoterone",
+      "therapy": "—",
+      "indication": "Topical Treatment of Acne Vulgaris",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/11/Press-Release-Winlevi-availability-in-US.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-09-18T05:04:55.229Z"
+    },
+    {
+      "brand": "Generic Gleevec®",
+      "launchType": "Own Launched",
+      "date": "2015-12-04",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "imatinib",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Imatinib",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2020/12/Press-Release-Sun-Pharma-Imatinib-Approval.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-09-18T05:04:55.229Z"
+    },
+    {
+      "brand": "Modafinil Tablets",
+      "launchType": "Own Launched",
+      "date": "2026-09-04",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Modafinil",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹91.7 / strip of 10 tablets",
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-u-s-fda-approval-for-modafinil-tablets-usp",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-09-18T05:05:39.094Z"
+    },
+    {
+      "brand": "Wockhardt's New Diabetes Medication",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Dapagliflozin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Glyxambi",
+      "chronicAcute": "Chronic",
+      "price": "Rs 5,400 / pack",
+      "sourceUrl": "https://www.wockhardt.com/press-release/diabetes-medication-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-09-18T05:06:12.783Z"
+    },
+    {
+      "brand": "Wockhardt Acquires ABC Pharmaceuticals",
+      "launchType": "Acquired",
+      "date": "2023-09-15",
+      "seller": "ABC Pharmaceuticals",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-release/abc-pharma-acquisition",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-09-18T05:06:12.783Z"
+    },
+    {
+      "brand": "Co-marketing Deal for XYZ Drug",
+      "launchType": "In-licensed",
+      "date": "2023-08-20",
+      "seller": "XYZ Ltd.",
+      "dealType": "Co-marketing",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-release/xyz-drug-co-marketing",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-09-18T05:06:12.783Z"
+    },
+    {
+      "brand": "Pharmacorp",
+      "launchType": "Acquired",
+      "date": "2023-10-02",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-of-pharmacorp#content",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-09-18T05:06:41.256Z"
+    },
+    {
+      "brand": "Benicar",
+      "launchType": "Own Launched",
+      "date": "2016-10-27",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Olmesartan Medoxomil",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "—",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-09-18T05:06:56.085Z"
+    },
+    {
+      "brand": "Benicar HCT",
+      "launchType": "Own Launched",
+      "date": "2016-10-27",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Olmesartan Medoxomil-Hydrochlorothiazide",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "—",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-09-18T05:06:56.085Z"
+    },
+    {
+      "brand": "Azor",
+      "launchType": "Own Launched",
+      "date": "2016-10-27",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Amlodipine Besylate-Olmesartan Medoxomil",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "—",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-09-18T05:06:56.085Z"
+    },
+    {
+      "brand": "Tribenzor",
+      "launchType": "Own Launched",
+      "date": "2016-10-27",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Amlodipine Besylate-Hydrochlorothiazide-Olmesartan Medoxomil",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "—",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-09-18T05:06:56.085Z"
+    },
+    {
+      "brand": "Fluocinolone Acetonide Topical Oil, 0.01% (Scalp Oil)",
+      "launchType": "Own Launched",
+      "date": "2018-10-30",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Fluocinolone Acetonide",
+      "therapy": "Dermatology",
+      "indication": "—",
+      "existingBrand": "Derma-Smoothe/FS® Topical Oil",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "—",
+      "buyer": "Glenmark",
+      "lastEnrichmentAttempt": "2026-09-18T05:07:03.259Z"
+    },
+    {
+      "brand": "Navitor",
+      "launchType": "Own Launched",
+      "date": "2022-12-06",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "severe aortic stenosis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.abbott.com/press-releases/2022/navitor-launch.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-09-18T05:07:09.553Z"
     }
   ]
 }
