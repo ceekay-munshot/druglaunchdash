@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-17T06:31:45.736Z",
-  "rowCount": 227,
+  "generatedAt": "2026-09-18T06:25:31.866Z",
+  "rowCount": 230,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -4044,6 +4044,63 @@
       "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 8 Sep - Alkem launches Renocia Exo, India’s first patented Ginsenoside exosome-based hair growth serum.",
       "_provider": "gemini",
       "_harvestedAt": "2026-09-17T06:31:29.055Z"
+    },
+    {
+      "brand": "Qdenga®",
+      "launchType": "In-licensed",
+      "date": "2026-09-18",
+      "seller": "Takeda Biopharmaceuticals India Private Limited",
+      "dealType": "Exclusive distribution and marketing agreement",
+      "molecule": "TAK-003",
+      "therapy": "Vaccine",
+      "indication": "Dengue prevention",
+      "price": "—",
+      "dealValue": null,
+      "existingBrand": "—",
+      "chronicAcute": "Acute",
+      "buyer": "Dr. Reddy's",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=d5d98f9e-24ff-4d45-9b84-d491934b4003.pdf",
+      "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 18 Sep - Disclosure under Regulation 30 of SEBI (LODR) Regulations, 2015",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-09-18T06:24:17.735Z"
+    },
+    {
+      "brand": "lenacapavir",
+      "launchType": "In-licensed",
+      "date": "2026-09-17",
+      "seller": "Gilead Sciences",
+      "dealType": "Voluntary Licensing Agreement",
+      "molecule": "lenacapavir",
+      "therapy": "Antivirals",
+      "indication": "HIV prevention",
+      "price": "—",
+      "dealValue": null,
+      "existingBrand": "Truvada",
+      "chronicAcute": "Chronic",
+      "buyer": "Dr. Reddy's",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=b7b70d39-8e04-4cc9-b38b-626b6377ba41.pdf",
+      "_title": "Clarification-Disclosure Under Regulation 30 Of SEBI (LODR) Regulations, 2015 18 Sep - Dr. Reddy’s confirms voluntary license for Gilead’s once-yearly HIV prevention drug lenacapavir.",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-09-18T06:24:27.995Z"
+    },
+    {
+      "brand": "Generic Gleevec®",
+      "launchType": "Own Launched",
+      "date": "2015-12-04",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "Imatinib Mesylate",
+      "therapy": "Oncology",
+      "indication": "chronic myeloid leukemia",
+      "existingBrand": "Gleevec®",
+      "chronicAcute": "Chronic",
+      "buyer": "Sun Pharma",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2020/12/Press-Release-Sun-Pharma-Imatinib-Approval.pdf",
+      "_title": "backfill:Generic Gleevec®",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-09-18T06:25:03.328Z"
     }
   ],
   "processedUrls": [
@@ -4433,6 +4490,12 @@
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=89d55c57-8c47-4d30-8c1a-95c8a3d47ee8.pdf",
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=68197ec5-666d-46b9-907e-923741043d3e.pdf",
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=9895ba81-e37f-4f95-ae10-75b51a01f19c.pdf",
-    "https://www.mankindpharma.com/mX-4Lk5_eXw-tApA5yODvNvJvqNqAF-lpvPD9JiJnRc=.html"
+    "https://www.mankindpharma.com/mX-4Lk5_eXw-tApA5yODvNvJvqNqAF-lpvPD9JiJnRc=.html",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=d5d98f9e-24ff-4d45-9b84-d491934b4003.pdf",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=b7b70d39-8e04-4cc9-b38b-626b6377ba41.pdf",
+    "https://sunpharma.com/wp-content/uploads/2020/12/Press-Release-Sun-Pharma-Imatinib-Approval.pdf",
+    "https://www.wockhardt.com/press-release/abc-pharma-acquisition",
+    "https://www.wockhardt.com/press-release/xyz-drug-co-marketing",
+    "https://www.abbott.com/press-releases/2022/navitor-launch.html"
   ]
 }
