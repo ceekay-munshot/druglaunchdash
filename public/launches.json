@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T05:20:42.742Z",
+  "generatedAt": "2026-09-21T05:20:13.539Z",
   "rowCount": 1052,
   "rows": [
     {
@@ -87,7 +87,7 @@
       "chronicAcute": "Chronic",
       "sourceUrl": "https://www.coronaremedies.com/wp-content/uploads/2024/11/myoril-news-2024.png",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-07T03:34:56.343Z"
+      "lastEnrichmentAttempt": "2026-09-21T05:20:05.220Z"
     },
     {
       "brand": "Sematreat",
@@ -342,7 +342,7 @@
       "price": "—",
       "sourceUrl": "https://www.pharmazz.com/launch-tyvalzi-sovateltide-india",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-08-07T03:34:49.805Z"
+      "lastEnrichmentAttempt": "2026-09-21T05:20:03.889Z"
     },
     {
       "brand": "Palbo",
@@ -374,7 +374,7 @@
       "price": "₹21.7 / strip of 10 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-07T03:35:24.318Z"
+      "lastEnrichmentAttempt": "2026-09-21T05:20:06.612Z"
     },
     {
       "brand": "Dilo-BM",
@@ -3798,7 +3798,7 @@
       "price": "₹1361 / bottle of 40 capsules",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/11/Press-Release-Sun-Pharma-gearing-up-to-introduce-molnupiravir-under-the-brand-name-Molxvir%C2%AE-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-08-08T02:32:11.842Z"
+      "lastEnrichmentAttempt": "2026-09-21T05:20:10.668Z"
     },
     {
       "brand": "Obimet & Thyrocab",
@@ -3814,7 +3814,7 @@
       "price": "₹31.6 / strip of 15 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-08T02:32:15.871Z"
+      "lastEnrichmentAttempt": "2026-09-21T05:20:12.061Z"
     },
     {
       "brand": "Pomalidomide",
@@ -5846,7 +5846,7 @@
       "price": "₹95.4 / strip of 10 tablet er",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoUSFDAmetformin07042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-07T03:34:32.670Z"
+      "lastEnrichmentAttempt": "2026-09-21T05:20:01.122Z"
     },
     {
       "brand": "Wockhardt's New Drug",
@@ -5878,7 +5878,7 @@
       "price": "₹254.85 / tin of 200 gm powder",
       "sourceUrl": "https://www.wockhardt.com/press-releases/acquisition-pharmax",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-07T03:34:43.097Z"
+      "lastEnrichmentAttempt": "2026-09-21T05:20:02.483Z"
     },
     {
       "brand": "Ultreon™ 1.0 Software",
@@ -12566,7 +12566,7 @@
       "price": "—",
       "sourceUrl": "https://www.cipla.com/press-releases-statements/abc-pharma-acquisition",
       "buyer": "Cipla",
-      "lastEnrichmentAttempt": "2026-08-07T03:34:23.189Z"
+      "lastEnrichmentAttempt": "2026-09-21T05:19:59.790Z"
     },
     {
       "brand": "Avagraf",
@@ -12614,7 +12614,7 @@
       "price": "₹6.5 / strip of 10 effervescent tablet",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-08T02:30:07.288Z"
+      "lastEnrichmentAttempt": "2026-09-21T05:20:08.056Z"
     },
     {
       "brand": "CardioFit",
@@ -12694,7 +12694,7 @@
       "price": "null",
       "sourceUrl": "https://www.wockhardt.com/press-release-2",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-08T02:32:10.337Z"
+      "lastEnrichmentAttempt": "2026-09-21T05:20:09.291Z"
     },
     {
       "brand": "XIENCE Sierra™ Everolimus Eluting Coronary Stent System",
