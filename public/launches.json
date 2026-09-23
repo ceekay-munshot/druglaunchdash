@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T05:17:51.592Z",
+  "generatedAt": "2026-09-23T05:03:22.265Z",
   "rowCount": 1052,
   "rows": [
     {
@@ -982,7 +982,7 @@
       "price": "₹232 / bottle of 100 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-09T02:39:44.644Z"
+      "lastEnrichmentAttempt": "2026-09-23T05:03:20.866Z"
     },
     {
       "brand": "Dilo-BM, Dilo-DX, Stelbid, Vitneurin",
@@ -5974,7 +5974,7 @@
       "price": null,
       "sourceUrl": "https://www.alkemlabs.com/press-release/alkem-acquisition-company-b",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-08-09T02:39:14.011Z"
+      "lastEnrichmentAttempt": "2026-09-23T05:03:15.297Z"
     },
     {
       "brand": "GSK Brand Acquisition",
@@ -5990,7 +5990,7 @@
       "price": "₹3922 / bottle of 20 (unknown strength)",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-09T02:39:24.707Z"
+      "lastEnrichmentAttempt": "2026-09-23T05:03:16.711Z"
     },
     {
       "brand": "Helsinn",
@@ -6006,7 +6006,7 @@
       "price": "₹146 / strip of 10 tablets",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-expands-its-oncology-franchise-in-India-with-the-launch-of-Helsinn.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-08-09T02:39:32.797Z"
+      "lastEnrichmentAttempt": "2026-09-23T05:03:18.033Z"
     },
     {
       "brand": "Wockhardt's Antibiotic",
@@ -6054,7 +6054,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-xyz",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-09T02:39:36.386Z"
+      "lastEnrichmentAttempt": "2026-09-23T05:03:19.453Z"
     },
     {
       "brand": "ADQUEY",
@@ -12742,7 +12742,7 @@
       "price": "\u001a3523 / strip of 10 tablets",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/07/PR_Sun-Pharma-launches-generic-semaglutide-in-South-Africa.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-08-09T02:36:12.543Z"
+      "lastEnrichmentAttempt": "2026-09-23T05:03:08.215Z"
     },
     {
       "brand": "Cipla's New Drug",
@@ -12774,7 +12774,7 @@
       "price": "₹36.3 / strip of 10 tablets",
       "sourceUrl": "https://www.cipla.com/press-release/acquisition-abc-pharma",
       "buyer": "Cipla",
-      "lastEnrichmentAttempt": "2026-08-09T02:36:27.616Z"
+      "lastEnrichmentAttempt": "2026-09-23T05:03:09.640Z"
     },
     {
       "brand": "XYZ Biosimilar",
@@ -12806,7 +12806,7 @@
       "price": "Rs 2,500 / vial",
       "sourceUrl": "https://www.alkemlabs.com/press-release/new-drug-launch",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-08-09T02:36:37.068Z"
+      "lastEnrichmentAttempt": "2026-09-23T05:03:11.022Z"
     },
     {
       "brand": "MSD (Merck & Co.)",
@@ -12822,7 +12822,7 @@
       "price": "₹97.9 / strip of 10 tablets",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseBrazilMSD24072026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-09T02:38:55.933Z"
+      "lastEnrichmentAttempt": "2026-09-23T05:03:12.417Z"
     },
     {
       "brand": "Wockhardt's New Antidiabetic Drug",
@@ -12854,7 +12854,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-biotech-company",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-09T02:39:12.507Z"
+      "lastEnrichmentAttempt": "2026-09-23T05:03:13.865Z"
     },
     {
       "brand": "New Gastroenterology Product",
