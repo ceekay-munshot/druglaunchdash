@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T05:03:22.265Z",
+  "generatedAt": "2026-09-24T05:14:44.626Z",
   "rowCount": 1052,
   "rows": [
     {
@@ -103,7 +103,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/PR-for-Semaglutide.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-08-09T02:41:18.713Z"
+      "lastEnrichmentAttempt": "2026-09-24T05:14:36.351Z"
     },
     {
       "brand": "Semaglutide Injection",
@@ -135,7 +135,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/09/Press-Release-Sun-Pharma-and-Pharmazz-Inc.-licensing-agreement-for-Sovateltide-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-08-10T02:44:36.040Z"
+      "lastEnrichmentAttempt": "2026-09-24T05:14:39.066Z"
     },
     {
       "brand": "Thyrocab",
@@ -2502,7 +2502,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/Adquey-(Difamilast)_NDA%20Approval_PressRelease_13-Feb-26.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-10T02:44:50.363Z"
+      "lastEnrichmentAttempt": "2026-09-24T05:14:43.224Z"
     },
     {
       "brand": "Dilo-BM, Dilo-DX, Stelbid, Vitneurin",
@@ -3894,7 +3894,7 @@
       "price": "₹196 / bottle of 30 ml drop",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/Abbott-Helps-People-with-Vertigo-Take-Control-of-Their-Health-with-the-Launch-of-an-Easy-to-Use-Vertigo-Coach-App-in-India.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-09T02:39:52.633Z"
+      "lastEnrichmentAttempt": "2026-09-24T05:14:30.599Z"
     },
     {
       "brand": "Dextromethorphan Polistirex Extended-Release Oral Suspension, 30 mg/5 mL (OTC)",
@@ -3910,7 +3910,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/2LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-09T02:40:01.697Z"
+      "lastEnrichmentAttempt": "2026-09-24T05:14:32.004Z"
     },
     {
       "brand": "ADQUEY™ (difamilast)",
@@ -3926,7 +3926,7 @@
       "price": "null",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/Adquey-(Difamilast)_NDA%20Approval_PressRelease_13-Feb-26.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-09T02:40:42.586Z"
+      "lastEnrichmentAttempt": "2026-09-24T05:14:33.456Z"
     },
     {
       "brand": "Ryaltris",
@@ -3942,7 +3942,7 @@
       "price": null,
       "sourceUrl": "http://www.glenmarkpharma.com/press-release/glenmark-pharmaceuticals-announces-exclusive-licensing-agreement-with-seqirus-for-its-investigational-seasonal-allergic-rhinitis-nasal-spray-ryaltris-for-australia-and-new-zealand-markets",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-08-10T02:44:40.456Z"
+      "lastEnrichmentAttempt": "2026-09-24T05:14:40.477Z"
     },
     {
       "brand": "ADQUEY",
@@ -8726,7 +8726,7 @@
       "price": "₹6.1 / strip of 10 effervescent tablet",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-09T02:41:09.420Z"
+      "lastEnrichmentAttempt": "2026-09-24T05:14:34.896Z"
     },
     {
       "brand": "DrugX",
@@ -12934,7 +12934,7 @@
       "price": "₹254.85 / tin of 200 gm powder",
       "sourceUrl": "https://www.wockhardt.com/press-release/brand-acquisition",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-10T02:44:34.535Z"
+      "lastEnrichmentAttempt": "2026-09-24T05:14:37.766Z"
     },
     {
       "brand": "Drug Co-Marketing Agreement",
@@ -12966,7 +12966,7 @@
       "price": "—",
       "sourceUrl": "https://glenmarkpharma.com/press-release/glenmark-pharmaceuticals-announces-exclusive-licensing-agreement-with-seqirus-for-its-investigational-seasonal-allergic-rhinitis-nasal-spray-ryaltris-for-australia-and-new-zealand-markets#main",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-08-10T02:44:40.456Z"
+      "lastEnrichmentAttempt": "2026-09-24T05:14:41.801Z"
     },
     {
       "brand": "Obimet",
