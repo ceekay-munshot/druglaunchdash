@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T05:21:45.445Z",
+  "generatedAt": "2026-09-27T05:37:48.581Z",
   "rowCount": 1052,
   "rows": [
     {
@@ -438,7 +438,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-12T03:09:47.444Z"
+      "lastEnrichmentAttempt": "2026-09-27T05:37:41.580Z"
     },
     {
       "brand": "Noveltreat and Sematrinity",
@@ -1078,7 +1078,7 @@
       "price": "₹304 / packet of 120 mdi inhaler",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-enters-into-an-exclusive-licensing.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-08-12T03:09:37.834Z"
+      "lastEnrichmentAttempt": "2026-09-27T05:37:40.179Z"
     },
     {
       "brand": "Glycerol Phenylbutyrate Oral Liquid",
@@ -2550,7 +2550,7 @@
       "price": "₹31.2 / strip of 10 tablets",
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/amp_articleshow/100775508.cms",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-08-12T03:09:51.234Z"
+      "lastEnrichmentAttempt": "2026-09-27T05:37:42.994Z"
     },
     {
       "brand": "Cetu",
@@ -6134,7 +6134,7 @@
       "price": "—",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-collaborates-with-ern-for-luforbec-beclometasone-formoterol-p-mdi-launch-in-spain",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-08-12T03:08:49.895Z"
+      "lastEnrichmentAttempt": "2026-09-27T05:37:34.657Z"
     },
     {
       "brand": "Ranluspec (ranibizumab) Injection",
@@ -6150,7 +6150,7 @@
       "price": "—",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-approval-from-u-s-fda-for-ranluspec-tm-ranibizumab-injection",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-08-12T03:09:03.231Z"
+      "lastEnrichmentAttempt": "2026-09-27T05:37:36.023Z"
     },
     {
       "brand": "Eribulin Mesylate Injection",
@@ -6246,7 +6246,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-of-xyz-pharmaceuticals",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-12T03:09:22.314Z"
+      "lastEnrichmentAttempt": "2026-09-27T05:37:37.459Z"
     },
     {
       "brand": "Collaboration with ABC Corp",
@@ -8982,7 +8982,7 @@
       "price": "₹197 / box of 1 device",
       "sourceUrl": "https://www.mankindpharma.com/press-release/device-e-launch/",
       "buyer": "Mankind Pharma",
-      "lastEnrichmentAttempt": "2026-08-12T03:09:28.793Z"
+      "lastEnrichmentAttempt": "2026-09-27T05:37:38.789Z"
     },
     {
       "brand": "Darunavir",
@@ -9062,7 +9062,7 @@
       "price": "—",
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/articleshow/100775508.cms",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-08-12T03:10:03.198Z"
+      "lastEnrichmentAttempt": "2026-09-27T05:37:44.373Z"
     },
     {
       "brand": "Xyzomab",
@@ -13158,7 +13158,7 @@
       "price": "₹3458 / prefilled syringe of 1 injection",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-14-valent-pneumococcal-conjugate-vaccine-pcv-14-that-offers-broadest-protection-for-children-against-pneumococcal-bacterial-infections.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-13T03:13:11.636Z"
+      "lastEnrichmentAttempt": "2026-09-27T05:37:45.809Z"
     },
     {
       "brand": "GLP systems Track",
@@ -13174,7 +13174,7 @@
       "price": "₹20.3 / vial of 2 ml",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/accelerating-automation-abbott-introduces-glp-systems-track-for-laboratories-in-india.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-13T03:13:11.637Z"
+      "lastEnrichmentAttempt": "2026-09-27T05:37:47.212Z"
     },
     {
       "brand": "ADQUEYTM (difamilast) Ointment",
