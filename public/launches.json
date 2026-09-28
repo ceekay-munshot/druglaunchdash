@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T05:37:48.581Z",
+  "generatedAt": "2026-09-28T05:45:30.945Z",
   "rowCount": 1052,
   "rows": [
     {
@@ -2566,7 +2566,7 @@
       "price": "₹24.8 / bottle of 60 ml (5 mg/5 ml)",
       "sourceUrl": "https://www.cnbctv18.com/healthcare/alkem-oncology-novel-breast-cancer-treatment-drug-launch-palbociclib-palbo-15703241.htm",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-08-13T03:14:01.028Z"
+      "lastEnrichmentAttempt": "2026-09-28T05:45:19.782Z"
     },
     {
       "brand": "AKYNZEO®",
@@ -2598,7 +2598,7 @@
       "price": "—",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Pharmaceuticals-and-Harbour-BioMed-Sign-Agreement-for-Greater-China-toDevelop-GBR-1302.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-08-13T03:14:10.389Z"
+      "lastEnrichmentAttempt": "2026-09-28T05:45:21.199Z"
     },
     {
       "brand": "Nourkrin®",
@@ -2614,7 +2614,7 @@
       "price": "₹3285 / strip of 60 tablets",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-launches-globally-renowned-hair-growth-formula-Nourkrin-in-Russia.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-08-13T03:14:16.493Z"
+      "lastEnrichmentAttempt": "2026-09-28T05:45:22.625Z"
     },
     {
       "brand": "AVEIR™ VR Leadless Pacemaker",
@@ -2630,7 +2630,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-aveir-vr-leadless-pacemaker-system-in-india-to-treat-patients-with-slow-heart-rhythms.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-13T03:14:25.814Z"
+      "lastEnrichmentAttempt": "2026-09-28T05:45:25.512Z"
     },
     {
       "brand": "Dextromethorphan Polistirex Extended-Release Oral Suspension, 30 mg/5 mL",
@@ -2646,7 +2646,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/2LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-13T03:14:34.813Z"
+      "lastEnrichmentAttempt": "2026-09-28T05:45:26.877Z"
     },
     {
       "brand": "Glycerol Phenylbutyrate Oral Liquid, 1.1 grams per mL",
@@ -6278,7 +6278,7 @@
       "price": "—",
       "sourceUrl": "—",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-08-13T03:14:24.535Z"
+      "lastEnrichmentAttempt": "2026-09-28T05:45:24.061Z"
     },
     {
       "brand": "Unspecified Brands",
@@ -9142,7 +9142,7 @@
       "price": "₹191 / bottle of 30 ml drop",
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-13T03:15:05.789Z"
+      "lastEnrichmentAttempt": "2026-09-28T05:45:28.236Z"
     },
     {
       "brand": "Acquisition of Generic Portfolio",
@@ -13190,7 +13190,7 @@
       "price": null,
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/Adquey-(Difamilast)_NDA%20Approval_PressRelease_13-Feb-26.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-13T03:13:36.025Z"
+      "lastEnrichmentAttempt": "2026-09-28T05:45:16.892Z"
     },
     {
       "brand": "Acquisition of Pharma Company X",
@@ -13206,7 +13206,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/press-releases/acquisition-of-pharma-company-x",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-13T03:13:59.522Z"
+      "lastEnrichmentAttempt": "2026-09-28T05:45:18.342Z"
     },
     {
       "brand": "In-licensing Agreement for Drug Y",
@@ -13238,7 +13238,7 @@
       "price": null,
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-13T03:15:05.789Z"
+      "lastEnrichmentAttempt": "2026-09-28T05:45:29.594Z"
     },
     {
       "brand": "FOSTINE",
