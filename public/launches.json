@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-28T05:45:30.945Z",
-  "rowCount": 1052,
+  "generatedAt": "2026-09-29T06:08:41.527Z",
+  "rowCount": 1062,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -4054,7 +4054,7 @@
       "price": "₹3360 / strip of 60 tablets",
       "sourceUrl": "https://www.glenmarkpharma.com/press-release/nourkrin-launch",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-08-14T03:09:32.655Z"
+      "lastEnrichmentAttempt": "2026-09-29T06:07:53.233Z"
     },
     {
       "brand": "Ciplar",
@@ -6294,7 +6294,7 @@
       "price": "₹63.7 / bottle of 225 ml liquid",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-13T03:15:36.942Z"
+      "lastEnrichmentAttempt": "2026-09-29T06:07:45.276Z"
     },
     {
       "brand": "Wockhardt's New Diabetes Drug",
@@ -6326,7 +6326,7 @@
       "price": "₹40.7 / strip of 10 capsules",
       "sourceUrl": "https://www.wockhardt.com/press-releases/acquisition-abc-pharma",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-14T03:09:41.848Z"
+      "lastEnrichmentAttempt": "2026-09-29T06:07:59.965Z"
     },
     {
       "brand": "Collaboration on XYZ Product",
@@ -9158,7 +9158,7 @@
       "price": "—",
       "sourceUrl": "https://www.wockhardt.com/press-release2",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-13T03:15:27.933Z"
+      "lastEnrichmentAttempt": "2026-09-29T06:07:39.331Z"
     },
     {
       "brand": "New Drug Launch in Diabetes Care",
@@ -13254,7 +13254,7 @@
       "price": null,
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-13T03:15:05.789Z"
+      "lastEnrichmentAttempt": "2026-09-29T06:06:36.993Z"
     },
     {
       "brand": "LUPROFACT",
@@ -13270,7 +13270,7 @@
       "price": null,
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-13T03:15:05.789Z"
+      "lastEnrichmentAttempt": "2026-09-29T06:06:50.407Z"
     },
     {
       "brand": "MENODAC",
@@ -13286,7 +13286,7 @@
       "price": null,
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-13T03:15:05.789Z"
+      "lastEnrichmentAttempt": "2026-09-29T06:06:59.175Z"
     },
     {
       "brand": "OVIDAC",
@@ -13302,7 +13302,7 @@
       "price": null,
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-13T03:15:05.789Z"
+      "lastEnrichmentAttempt": "2026-09-29T06:07:09.640Z"
     },
     {
       "brand": "SPYE",
@@ -13318,7 +13318,7 @@
       "price": null,
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-13T03:15:05.789Z"
+      "lastEnrichmentAttempt": "2026-09-29T06:07:19.192Z"
     },
     {
       "brand": "VAGESTON",
@@ -13334,7 +13334,7 @@
       "price": null,
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-13T03:15:05.789Z"
+      "lastEnrichmentAttempt": "2026-09-29T06:07:31.606Z"
     },
     {
       "brand": "Wockhardt’s Biologics",
@@ -16623,7 +16623,7 @@
       "seller": "—",
       "dealType": "Generic Launch",
       "molecule": "Beclomethasone Dipropionate",
-      "therapy": "—",
+      "therapy": "Respiratory",
       "indication": "—",
       "existingBrand": "QVAR",
       "chronicAcute": "—",
@@ -16823,6 +16823,166 @@
       "sourceUrl": "https://www.wockhardt.com/press-release/in-licensing-abc-drug",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-09-20T05:19:38.652Z"
+    },
+    {
+      "brand": "CTaro-Methylphenidate ER",
+      "launchType": "Own Launched",
+      "date": "2026-09-23",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Methylphenidate",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Concerta",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/09/PRESS-RELEASE_Sun-Pharma-Launches-CTaro-Methylphenidate-ER-the-First-and-Only-Bioequivalent-to-Concerta%C2%AE-with-an-Osmotic-Delivery-System-PDF.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-09-29T06:03:44.805Z"
+    },
+    {
+      "brand": "Nexavar",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "sorafenib",
+      "therapy": "Oncology",
+      "indication": "Hepatocellular carcinoma",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 16,920 / month",
+      "sourceUrl": "https://press-release-link1.com",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-09-29T06:03:55.897Z"
+    },
+    {
+      "brand": "Vigora",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "sildenafil",
+      "therapy": "Urology",
+      "indication": "Erectile Dysfunction",
+      "existingBrand": "Cialis",
+      "chronicAcute": "—",
+      "price": "Rs 140 / strip",
+      "sourceUrl": "https://press-release-link2.com",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-09-29T06:03:55.897Z"
+    },
+    {
+      "brand": "Ciplactin",
+      "launchType": "Acquired",
+      "date": "2023-08-20",
+      "seller": "XYZ Pharma",
+      "dealType": "Brand Acquisition",
+      "molecule": "cyproheptadine",
+      "therapy": "Neurology",
+      "indication": "Allergic Conditions",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 40 / strip",
+      "sourceUrl": "https://press-release-link3.com",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-09-29T06:03:55.897Z"
+    },
+    {
+      "brand": "Ezricare",
+      "launchType": "In-licensed",
+      "date": "2023-07-10",
+      "seller": "ABC Corp",
+      "dealType": "In-license (India)",
+      "molecule": "carboxymethylcellulose",
+      "therapy": "Ophthalmology",
+      "indication": "Dry Eye Syndrome",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 350 / bottle",
+      "sourceUrl": "https://press-release-link4.com",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-09-29T06:03:55.897Z"
+    },
+    {
+      "brand": "LactiCare",
+      "launchType": "Own Launched",
+      "date": "2023-05-01",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "Nutraceuticals",
+      "indication": "Nutritional Supplementation",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 1,850 / pack",
+      "sourceUrl": "https://www.alkemlabs.com/news/lacticare-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-09-29T06:04:13.035Z"
+    },
+    {
+      "brand": "Advair Diskus",
+      "launchType": "Acquired",
+      "date": "2026-08-30",
+      "seller": "GSK",
+      "dealType": "Brand Acquisition",
+      "molecule": "Fluticasone propionate plus Salmeterol",
+      "therapy": "Respiratory",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrtoSEsLannetPR31082026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-09-29T06:06:16.135Z"
+    },
+    {
+      "brand": "Wockhardt's New Biologics",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-release/new-biologics-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-09-29T06:06:35.486Z"
+    },
+    {
+      "brand": "Wockhardt's Acquisition of Generic Portfolio",
+      "launchType": "Acquired",
+      "date": "2023-08-25",
+      "seller": "XYZ Pharmaceuticals",
+      "dealType": "Brand Portfolio Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Wockhardt Generic Brand",
+      "chronicAcute": "—",
+      "price": "₹155.7 / strip of 10 capsules",
+      "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-generic-portfolio",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-09-29T06:06:35.486Z"
+    },
+    {
+      "brand": "Co-marketing Agreement for Diabetes Drug",
+      "launchType": "In-licensed",
+      "date": "2023-07-10",
+      "seller": "ABC Pharma",
+      "dealType": "Co-marketing",
+      "molecule": "Insulin Glargine",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 1 Diabetes",
+      "existingBrand": "Lantus",
+      "chronicAcute": "Chronic",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-release/co-marketing-diabetes-drug",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-09-29T06:06:35.486Z"
     }
   ]
 }
