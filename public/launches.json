@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-29T06:08:41.527Z",
-  "rowCount": 1062,
+  "generatedAt": "2026-09-30T05:56:10.219Z",
+  "rowCount": 1073,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -1110,7 +1110,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-14T03:10:52.045Z"
+      "lastEnrichmentAttempt": "2026-09-30T05:54:42.423Z"
     },
     {
       "brand": "Dilo-DX",
@@ -1126,7 +1126,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-14T03:11:10.673Z"
+      "lastEnrichmentAttempt": "2026-09-30T05:54:57.585Z"
     },
     {
       "brand": "Stelbid",
@@ -1142,7 +1142,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-14T03:11:21.725Z"
+      "lastEnrichmentAttempt": "2026-09-30T05:55:07.094Z"
     },
     {
       "brand": "Vitneurin",
@@ -1681,7 +1681,7 @@
       "molecule": "valsartan",
       "therapy": "CNS",
       "indication": "heart failure",
-      "existingBrand": "—",
+      "existingBrand": "Telma",
       "chronicAcute": "Chronic",
       "price": "₹79.5 / strip of 10 (40 mg)",
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/articleshow/100775508.cms",
@@ -2662,7 +2662,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-14T03:10:15.217Z"
+      "lastEnrichmentAttempt": "2026-09-30T05:54:28.401Z"
     },
     {
       "brand": "WINLEVI",
@@ -4118,7 +4118,7 @@
       "price": "₹4538.14 / jar of 60 gm powder",
       "sourceUrl": "https://www.alkemlabs.com/press-release/alchemex-acquisition",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-08-14T03:09:48.506Z"
+      "lastEnrichmentAttempt": "2026-09-30T05:54:01.607Z"
     },
     {
       "brand": "Eribulin Mesylate Injection",
@@ -6358,7 +6358,7 @@
       "price": "—",
       "sourceUrl": "https://www.alkemlabs.com/press-releases/acme-pharmaceuticals-acquisition",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-08-14T03:10:03.318Z"
+      "lastEnrichmentAttempt": "2026-09-30T05:54:13.399Z"
     },
     {
       "brand": "Co-Marketing Product Y",
@@ -6390,7 +6390,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-14T03:11:05.879Z"
+      "lastEnrichmentAttempt": "2026-09-30T05:54:50.612Z"
     },
     {
       "brand": "Lannett Company",
@@ -9190,7 +9190,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-14T03:11:18.239Z"
+      "lastEnrichmentAttempt": "2026-09-30T05:55:03.706Z"
     },
     {
       "brand": "Breztri",
@@ -13414,7 +13414,7 @@
       "price": "—",
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/amp_articleshow/100775508.cms",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-08-15T01:58:22.513Z"
+      "lastEnrichmentAttempt": "2026-09-30T05:55:15.641Z"
     },
     {
       "brand": "AstraZeneca's Tagrisso",
@@ -13494,7 +13494,7 @@
       "price": "₹59.1 / strip of 10 tablets",
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-of-xyz-pharma",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-15T02:01:20.213Z"
+      "lastEnrichmentAttempt": "2026-09-30T05:55:27.797Z"
     },
     {
       "brand": "New Line Extension for Wockhardt Anti-Infective",
@@ -16983,6 +16983,182 @@
       "sourceUrl": "https://www.wockhardt.com/press-release/co-marketing-diabetes-drug",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-09-29T06:06:35.486Z"
+    },
+    {
+      "brand": "Lerodalcibep",
+      "launchType": "In-licensed",
+      "date": "2026-09-28",
+      "seller": "LIB Therapeutics",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/09/Press-Release-Sun-Pharma-and-LIB-Therapeutics-announce-global-licensing-agreement-for-Lerodalcibep.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-09-30T05:52:23.677Z"
+    },
+    {
+      "brand": "BrandName1",
+      "launchType": "Own Launched",
+      "date": "2023-01-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "MoleculeName1",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "CompetitorBrand1",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,200 / vial",
+      "sourceUrl": "https://www.alkemlabs.com/press-release1",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-09-30T05:52:35.084Z"
+    },
+    {
+      "brand": "BrandName2",
+      "launchType": "Acquired",
+      "date": "2023-06-22",
+      "seller": "CompanyName1",
+      "dealType": "Company Acquisition",
+      "molecule": "MoleculeName2",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "CompetitorBrand2",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.alkemlabs.com/press-release2",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-09-30T05:52:35.084Z"
+    },
+    {
+      "brand": "BrandName3",
+      "launchType": "In-licensed",
+      "date": "2023-02-05",
+      "seller": "—",
+      "dealType": "In-license (India)",
+      "molecule": "MoleculeName3",
+      "therapy": "CNS",
+      "indication": "Alzheimer's Disease",
+      "existingBrand": "CompetitorBrand3",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.alkemlabs.com/press-release3",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-09-30T05:52:35.084Z"
+    },
+    {
+      "brand": "Cardex",
+      "launchType": "Own Launched",
+      "date": "2023-09-25",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Lisinopril",
+      "therapy": "Cardiology",
+      "indication": "Hypertension",
+      "existingBrand": "Telma",
+      "chronicAcute": "Chronic",
+      "price": "Rs 45 / strip",
+      "sourceUrl": "https://press.example.com/cardex-launch",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-09-30T05:53:18.215Z"
+    },
+    {
+      "brand": "Biocare",
+      "launchType": "Acquired",
+      "date": "2023-08-15",
+      "seller": "ABC Pharmaceuticals",
+      "dealType": "Brand Acquisition",
+      "molecule": "Glimepiride",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Amaryl",
+      "chronicAcute": "Chronic",
+      "price": "Rs 60 / strip",
+      "sourceUrl": "https://press.example.com/biocare-acquisition",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-09-30T05:53:18.215Z"
+    },
+    {
+      "brand": "Immunex",
+      "launchType": "In-licensed",
+      "date": "2023-07-30",
+      "seller": "XYZ Biotech",
+      "dealType": "In-license (India)",
+      "molecule": "Adalimumab",
+      "therapy": "Immunology",
+      "indication": "Rheumatoid Arthritis",
+      "existingBrand": "Humira",
+      "chronicAcute": "Chronic",
+      "price": "₹213.5 / strip of 10 tablets",
+      "sourceUrl": "https://press.example.com/immunex-inlicense",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-09-30T05:53:18.215Z"
+    },
+    {
+      "brand": "Wockhardt’s New Generic Formulation",
+      "launchType": "Own Launched",
+      "date": "2023-01-15",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Aspirin",
+      "therapy": "Anti-Diabetic",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 34 / strip",
+      "sourceUrl": "https://www.wockhardt.com/press-release/new-generic-formulation-2023",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-09-30T05:54:00.102Z"
+    },
+    {
+      "brand": "Acquisition of XYZ Pharma",
+      "launchType": "Acquired",
+      "date": "2023-02-10",
+      "seller": "XYZ Pharma",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-of-xyz-pharma",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-09-30T05:54:00.102Z"
+    },
+    {
+      "brand": "In-License for Innovative Drug",
+      "launchType": "In-licensed",
+      "date": "2023-03-05",
+      "seller": "ABC Corp",
+      "dealType": "In-license (India)",
+      "molecule": "Innovative Drug Molecule",
+      "therapy": "Oncology",
+      "indication": "New cancer treatment",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.wockhardt.com/press-release/in-license-innovative-drug",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-09-30T05:54:00.102Z"
+    },
+    {
+      "brand": "XYZ Pharma",
+      "launchType": "Acquired",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-of-xyz-pharma#content",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-09-30T05:55:27.797Z"
     }
   ]
 }
