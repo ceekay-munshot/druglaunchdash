@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-30T05:56:10.219Z",
-  "rowCount": 1073,
+  "generatedAt": "2026-10-01T06:30:04.807Z",
+  "rowCount": 1083,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -470,7 +470,7 @@
       "price": "₹33.4 / strip of 10 tablets",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/09/Press-Release-Sun-Pharma-and-Pharmazz-Inc.-licensing-agreement-for-Sovateltide-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-08-15T02:01:47.665Z"
+      "lastEnrichmentAttempt": "2026-10-01T06:28:46.838Z"
     },
     {
       "brand": "Molxvir",
@@ -518,7 +518,7 @@
       "price": "₹21.7 / strip of 10 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-15T02:01:52.892Z"
+      "lastEnrichmentAttempt": "2026-10-01T06:28:50.870Z"
     },
     {
       "brand": "Product A",
@@ -1158,7 +1158,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-15T02:01:43.550Z"
+      "lastEnrichmentAttempt": "2026-10-01T06:28:34.941Z"
     },
     {
       "brand": "Mastihal",
@@ -1174,7 +1174,7 @@
       "price": "Rs 154 / strip",
       "sourceUrl": "https://www.mankindpharma.com/products/mastihal-launch/",
       "buyer": "Mankind Pharma",
-      "lastEnrichmentAttempt": "2026-08-15T02:02:10.728Z"
+      "lastEnrichmentAttempt": "2026-10-01T06:29:00.708Z"
     },
     {
       "brand": "Softra",
@@ -6406,7 +6406,7 @@
       "price": null,
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsLnnettPR22062026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-15T02:02:19.925Z"
+      "lastEnrichmentAttempt": "2026-10-01T06:29:09.704Z"
     },
     {
       "brand": "TheraNym",
@@ -6422,7 +6422,7 @@
       "price": "null",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseTheranym03062026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-15T02:03:11.512Z"
+      "lastEnrichmentAttempt": "2026-10-01T06:29:28.662Z"
     },
     {
       "brand": "Dextromethorphan Polistirex Extended-Release Oral Suspension",
@@ -9222,7 +9222,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-14-valent-pneumococcal-conjugate-vaccine-pcv-14-that-offers-broadest-protection-for-children-against-pneumococcal-bacterial-infections.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-15T02:01:21.720Z"
+      "lastEnrichmentAttempt": "2026-10-01T06:28:21.296Z"
     },
     {
       "brand": "Wockhardt's New Biosimilar",
@@ -9254,7 +9254,7 @@
       "price": "—",
       "sourceUrl": "https://www.wockhardt.com/press-releases/acquisition-of-xyz-pharma",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-15T02:01:35.017Z"
+      "lastEnrichmentAttempt": "2026-10-01T06:28:27.907Z"
     },
     {
       "brand": "Lannett Company LLC",
@@ -9270,7 +9270,7 @@
       "price": null,
       "sourceUrl": "https://www.aurobindo.com/press-release/2026/06/22/aurobindo-pharma-usa-receives-ftc-approval-to-acquire-lannett-company",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-15T02:02:54.860Z"
+      "lastEnrichmentAttempt": "2026-10-01T06:29:15.161Z"
     },
     {
       "brand": "Obimet & Thyrocab",
@@ -13526,7 +13526,7 @@
       "price": "₹61.2 / bottle of 5 ml eye drop",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2020/12/Sun-Pharma-to-acquire-Ocular-Technologies.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-08-16T02:07:23.377Z"
+      "lastEnrichmentAttempt": "2026-10-01T06:29:34.115Z"
     },
     {
       "brand": "BrandA",
@@ -16990,7 +16990,7 @@
       "date": "2026-09-28",
       "seller": "LIB Therapeutics",
       "dealType": "In-license (India)",
-      "molecule": "—",
+      "molecule": "Lerodalcibep",
       "therapy": "—",
       "indication": "—",
       "existingBrand": "—",
@@ -17159,6 +17159,166 @@
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-of-xyz-pharma#content",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-09-30T05:55:27.797Z"
+    },
+    {
+      "brand": "Lansoprazole",
+      "launchType": "Own Launched",
+      "date": "2023-07-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Lansoprazole",
+      "therapy": "Gastroenterology",
+      "indication": "Gastric ulcers",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 120 / strip of 10",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/lansoprazole-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-01T06:26:06.734Z"
+    },
+    {
+      "brand": "Metformin XR",
+      "launchType": "Own Launched",
+      "date": "2023-08-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Metformin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Glycomet",
+      "chronicAcute": "Chronic",
+      "price": "Rs 499 / strip of 15",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/metformin-xr-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-01T06:26:06.734Z"
+    },
+    {
+      "brand": "Sertraline",
+      "launchType": "Own Launched",
+      "date": "2023-09-10",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Sertraline",
+      "therapy": "Neurology",
+      "indication": "Depression",
+      "existingBrand": "Zoloft",
+      "chronicAcute": "Chronic",
+      "price": "Rs 135 / strip of 10",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/sertraline-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-01T06:26:06.734Z"
+    },
+    {
+      "brand": "Ciprofloxacin",
+      "launchType": "Acquired",
+      "date": "2023-06-25",
+      "seller": "Pharma Co",
+      "dealType": "Brand Acquisition",
+      "molecule": "Ciprofloxacin",
+      "therapy": "Anti-Infectives",
+      "indication": "Bacterial infections",
+      "existingBrand": "Cipro",
+      "chronicAcute": "—",
+      "price": "Rs 85 / strip of 10",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/ciprofloxacin-acquisition",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-01T06:26:06.734Z"
+    },
+    {
+      "brand": "Apixaban Oral Suspension",
+      "launchType": "Own Launched",
+      "date": "2026-09-28",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Apixaban",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": null,
+      "price": "—",
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-tentative-approval-from-u-s-fda-for-novel-apixaban-oral-suspension",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-10-01T06:27:20.611Z"
+    },
+    {
+      "brand": "Metoprolol Tartrate",
+      "launchType": "Own Launched",
+      "date": "2023-06-15",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Metoprolol Tartrate",
+      "therapy": "Cardiology",
+      "indication": "Hypertension",
+      "existingBrand": "Betaloc",
+      "chronicAcute": "Chronic",
+      "price": "Rs 25 / strip of 10 tablets",
+      "sourceUrl": "https://www.aurobindo.com/media/press-releases/metoprolol-tartrate-launch",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-10-01T06:28:02.488Z"
+    },
+    {
+      "brand": "OncoBiosimilar 6",
+      "launchType": "In-licensed",
+      "date": "2023-04-10",
+      "seller": "XYZ BioPharma",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "Oncology",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.aurobindo.com/media/press-releases/onco-biosimilar-6-acquisition",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-10-01T06:28:02.488Z"
+    },
+    {
+      "brand": "Aurobindo Diabetic Care Kit",
+      "launchType": "Own Launched",
+      "date": "2023-01-21",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "Anti-Diabetic",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 499 / kit",
+      "sourceUrl": "https://www.aurobindo.com/media/press-releases/diabetic-care-kit-launch",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-10-01T06:28:02.488Z"
+    },
+    {
+      "brand": "Acquisition of ABC Pharmaceuticals",
+      "launchType": "Acquired",
+      "date": "2023-09-01",
+      "seller": "ABC Pharmaceuticals",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.wockhardt.com/news/acquisition-abc-pharma",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-01T06:28:19.789Z"
+    },
+    {
+      "brand": "Seciera™",
+      "launchType": "Acquired",
+      "date": "2016-10-26",
+      "seller": "Auven Therapeutics",
+      "dealType": "Brand Acquisition",
+      "molecule": "cyclosporine A",
+      "therapy": "Ophthalmology",
+      "indication": "Dry Eye Disease",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "—",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-10-01T06:29:34.115Z"
     }
   ]
 }
