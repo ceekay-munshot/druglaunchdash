@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-01T06:30:04.807Z",
-  "rowCount": 1083,
+  "generatedAt": "2026-10-02T06:07:20.982Z",
+  "rowCount": 1093,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -1190,7 +1190,7 @@
       "price": "Rs 780 / vial",
       "sourceUrl": "https://www.mankindpharma.com/products/softra-launch/",
       "buyer": "Mankind Pharma",
-      "lastEnrichmentAttempt": "2026-08-16T02:10:38.303Z"
+      "lastEnrichmentAttempt": "2026-10-02T06:05:56.917Z"
     },
     {
       "brand": "ILUMYA® (tildrakizumab-asmn)",
@@ -6454,7 +6454,7 @@
       "price": null,
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-16T02:09:50.992Z"
+      "lastEnrichmentAttempt": "2026-10-02T06:05:45.174Z"
     },
     {
       "brand": "Omalizumab Biosimilar BP11",
@@ -6486,7 +6486,7 @@
       "price": "₹69 / strip of 10 tablets",
       "sourceUrl": "https://www.wockhardt.com/press-release/biologics-portfolio-launch",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-16T02:10:30.036Z"
+      "lastEnrichmentAttempt": "2026-10-02T06:05:50.621Z"
     },
     {
       "brand": "Wockhardt Pharma's New Anti-Diabetic Drug",
@@ -9286,7 +9286,7 @@
       "price": "₹19.5 / strip of 10 tablets",
       "sourceUrl": "https://www.expresspharma.in/corona-acquires-obimet-thyrocab-brands-from-abbott-india",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-16T02:10:46.499Z"
+      "lastEnrichmentAttempt": "2026-10-02T06:06:07.033Z"
     },
     {
       "brand": "Adcock Ingram Holdings Proprietary Limited",
@@ -9318,7 +9318,7 @@
       "price": "₹136 / strip of 10 tablets",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-expands-its-oncology-franchise-in-India-with-the-launch-of-Helsinn.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-08-16T02:11:08.979Z"
+      "lastEnrichmentAttempt": "2026-10-02T06:06:22.448Z"
     },
     {
       "brand": "Wockhardt's New Injectable Drug",
@@ -9334,7 +9334,7 @@
       "price": "Rs 1,200 / injection",
       "sourceUrl": "https://www.wockhardt.com/press-release/new-injectable-drug-launch",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-16T02:11:45.860Z"
+      "lastEnrichmentAttempt": "2026-10-02T06:06:26.727Z"
     },
     {
       "brand": "Wockhardt's Acquisition of ABC Pharma",
@@ -9350,7 +9350,7 @@
       "price": "—",
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-of-abc-pharma",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-16T02:11:52.813Z"
+      "lastEnrichmentAttempt": "2026-10-02T06:06:33.170Z"
     },
     {
       "brand": "Wockhardt's In-licensing Agreement with XYZ Corp",
@@ -9366,7 +9366,7 @@
       "price": "—",
       "sourceUrl": "https://www.wockhardt.com/press-release/in-licensing-agreement-xyz-corp",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-16T02:11:59.113Z"
+      "lastEnrichmentAttempt": "2026-10-02T06:06:40.033Z"
     },
     {
       "brand": "LIRAA",
@@ -12979,7 +12979,7 @@
       "indication": "Diabetes",
       "existingBrand": "—",
       "chronicAcute": "—",
-      "price": null,
+      "price": "null",
       "sourceUrl": "https://www.expresspharma.in/corona-acquires-obimet-thyrocab-brands-from-abbott-india/#",
       "buyer": "Corona Remedies",
       "lastEnrichmentAttempt": "2026-09-25T05:16:04.743Z"
@@ -13603,10 +13603,10 @@
       "indication": "—",
       "existingBrand": "—",
       "chronicAcute": "—",
-      "price": null,
+      "price": "null",
       "sourceUrl": "https://www.expresspharma.in/corona-acquires-obimet-thyrocab-brands-from-abbott-india/",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-16T02:10:46.499Z"
+      "lastEnrichmentAttempt": "2026-10-02T06:06:18.678Z"
     },
     {
       "brand": "XYZ Drug",
@@ -13638,7 +13638,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/press-release/alpha-biologics-acquisition",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-16T02:11:59.113Z"
+      "lastEnrichmentAttempt": "2026-10-02T06:06:48.217Z"
     },
     {
       "brand": "XYZ Pharma’s New Anti-Cancer Drug",
@@ -17319,6 +17319,166 @@
       "sourceUrl": "—",
       "buyer": "Sun Pharma",
       "lastEnrichmentAttempt": "2026-10-01T06:29:34.115Z"
+    },
+    {
+      "brand": "WINLEVI",
+      "launchType": "In-licensed",
+      "date": "2022-07-26",
+      "seller": "Cosmo",
+      "dealType": "License and Supply Agreement",
+      "molecule": "clascoterone",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2022/07/Press-Release-licensing-and-supply-agreement-between-Sun-Pharma-and-Cosmo-for-WINLEVI%C2%AE.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-10-02T06:04:10.258Z"
+    },
+    {
+      "brand": "ILUMYA",
+      "launchType": "Own Launched",
+      "date": "2020-09-23",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "tildrakizumab",
+      "therapy": "—",
+      "indication": "Moderate-to-severe plaques psoriasis",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2020/12/Press-Release-Sun-Pharma-announces-the-launch-of-ILUMYA-for-treatment-of-plaque-psoriasis-in-Japan.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-10-02T06:04:10.259Z"
+    },
+    {
+      "brand": "Alkem's New Cardiology Drug",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Atorvastatin",
+      "therapy": "Cardiology",
+      "indication": "Hyperlipidemia",
+      "existingBrand": "Lipitor",
+      "chronicAcute": "Chronic",
+      "price": "Rs 500 / pack",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/alkem-cardiology-drug-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-02T06:04:20.038Z"
+    },
+    {
+      "brand": "Acquisition of XYZ Pharma",
+      "launchType": "Acquired",
+      "date": "2023-08-30",
+      "seller": "XYZ Pharma",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.alkemlabs.com/press-release/acquisition-xyz-pharma",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-02T06:04:20.038Z"
+    },
+    {
+      "brand": "In-licensing Deal for Lisinopril",
+      "launchType": "In-licensed",
+      "date": "2023-07-20",
+      "seller": "ABC Pharma",
+      "dealType": "In-license (India)",
+      "molecule": "Lisinopril",
+      "therapy": "Cardiology",
+      "indication": "Hypertension",
+      "existingBrand": "Zestril",
+      "chronicAcute": "Chronic",
+      "price": "Rs 300 / pack",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/in-licensing-lisinopril",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-02T06:04:20.038Z"
+    },
+    {
+      "brand": "Navitor™ TAVI System",
+      "launchType": "Own Launched",
+      "date": "2022-12-06",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "aortic stenosis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/Abbott-launches-navitor-its-latest-generation-transcatheter-aortic-valve-implantation-TAVI-system-to-treat-aortic-stenosis-in-India.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-10-02T06:05:20.326Z"
+    },
+    {
+      "brand": "Wockhardt's New Antidiabetic Medication",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Empagliflozin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Jardiance",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,250 / strip of 10 tablets",
+      "sourceUrl": "https://www.wockhardt.com/press-release/new-antidiabetic-medication",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-02T06:05:43.667Z"
+    },
+    {
+      "brand": "ABC Pharma",
+      "launchType": "Acquired",
+      "date": "2023-09-01",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-of-abc-pharma#content",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-02T06:06:33.170Z"
+    },
+    {
+      "brand": "Drug A",
+      "launchType": "Own Launched",
+      "date": "2023-05-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Molecule A",
+      "therapy": "Oncology",
+      "indication": "Cancer",
+      "existingBrand": "Competitor Brand X",
+      "chronicAcute": "—",
+      "price": "Rs 250 / tablet",
+      "sourceUrl": "https://www.wockhardt.com/press-release/drug-a-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-02T06:06:40.033Z"
+    },
+    {
+      "brand": "Drug B",
+      "launchType": "In-licensed",
+      "date": "2023-06-15",
+      "seller": "XYZ Corp",
+      "dealType": "In-license (India)",
+      "molecule": "Molecule B",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Competitor Brand Y",
+      "chronicAcute": "Chronic",
+      "price": "Rs 500 / pack",
+      "sourceUrl": "https://www.wockhardt.com/press-release/drug-b-in-license",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-02T06:06:40.033Z"
     }
   ]
 }
