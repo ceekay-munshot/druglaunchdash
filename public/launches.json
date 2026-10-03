@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-02T06:07:20.982Z",
-  "rowCount": 1093,
+  "generatedAt": "2026-10-03T05:44:05.306Z",
+  "rowCount": 1103,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -2678,7 +2678,7 @@
       "price": "₹21.3 / bottle of 30 ml syrup",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/08/Sun-Pharma-and-Cassiopea-announce-the-expiry-of-the-HSR-Act-process-and-the-successful-consummation-of-their-Winlevi%C2%AE.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-08-16T02:12:07.699Z"
+      "lastEnrichmentAttempt": "2026-10-03T05:41:11.356Z"
     },
     {
       "brand": "Myoril",
@@ -4166,7 +4166,7 @@
       "price": "—",
       "sourceUrl": "https://www.sunpharma.com/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-08-16T02:12:13.525Z"
+      "lastEnrichmentAttempt": "2026-10-03T05:41:14.934Z"
     },
     {
       "brand": "Alkem's New NCE",
@@ -4182,7 +4182,7 @@
       "price": "Rs 2,500 / strip",
       "sourceUrl": "https://www.alkemlabs.com/press-release/2023-08-15/alkem-launch-new-nce",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-08-17T02:07:27.323Z"
+      "lastEnrichmentAttempt": "2026-10-03T05:43:17.108Z"
     },
     {
       "brand": "Acquisition of Generic Brands",
@@ -6518,7 +6518,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-launches-its-semaglutide-injection-under-the-brand-names-noveltreat-and-sematrinity-in-india/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-08-17T02:07:11.993Z"
+      "lastEnrichmentAttempt": "2026-10-03T05:43:01.580Z"
     },
     {
       "brand": "UNLOXCYT™ (Cosibelimab)",
@@ -6534,7 +6534,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-announces-the-availability-of-unloxcyt-cosibelimab-ipdl-for-advanced-cutaneous-squamous-cell-carcinoma-acscc/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-08-17T02:07:19.941Z"
+      "lastEnrichmentAttempt": "2026-10-03T05:43:10.044Z"
     },
     {
       "brand": "New Antibiotic Combination",
@@ -13670,7 +13670,7 @@
       "price": null,
       "sourceUrl": "https://www.abcbio.com/press-release/acquisition-def-pharma",
       "buyer": "Torrent Pharma",
-      "lastEnrichmentAttempt": "2026-08-17T02:06:08.777Z"
+      "lastEnrichmentAttempt": "2026-10-03T05:41:28.964Z"
     },
     {
       "brand": "Adcock Ingram Holdings Limited",
@@ -13718,7 +13718,7 @@
       "price": "₹57.8 / strip of 10 tablets",
       "sourceUrl": "https://pharma.com/press-release/acme-acquisition",
       "buyer": "Zydus Lifesciences",
-      "lastEnrichmentAttempt": "2026-08-17T02:06:35.930Z"
+      "lastEnrichmentAttempt": "2026-10-03T05:41:33.741Z"
     },
     {
       "brand": "GenericDrugY",
@@ -13734,7 +13734,7 @@
       "price": "Rs 200 / strip",
       "sourceUrl": "https://pharma.com/press-release/genericdrugY-launch",
       "buyer": "Zydus Lifesciences",
-      "lastEnrichmentAttempt": "2026-08-17T02:06:35.930Z"
+      "lastEnrichmentAttempt": "2026-10-03T05:42:12.930Z"
     },
     {
       "brand": "Coronary Imaging Software powered by AI",
@@ -13750,7 +13750,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/Abbotts-New-Coronary-Imaging-Software-Powered-by-Artificial-Intelligence-Launched-in-India.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-17T02:06:49.984Z"
+      "lastEnrichmentAttempt": "2026-10-03T05:42:46.477Z"
     },
     {
       "brand": "Acquisition of XYZ Pharma",
@@ -13766,7 +13766,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-of-xyz-pharma",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-17T02:07:10.486Z"
+      "lastEnrichmentAttempt": "2026-10-03T05:42:54.088Z"
     },
     {
       "brand": "Corona Remedies Ltd.",
@@ -17479,6 +17479,166 @@
       "sourceUrl": "https://www.wockhardt.com/press-release/drug-b-in-license",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-10-02T06:06:40.033Z"
+    },
+    {
+      "brand": "LEQSELVI",
+      "launchType": "Own Launched",
+      "date": "2026-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/10/Global-Template_EADV-2026-PRESS-RELEASEPDF-Final.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-10-03T05:38:24.274Z"
+    },
+    {
+      "brand": "Alkem's New Drug",
+      "launchType": "Own Launched",
+      "date": "2023-05-14",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "Oncology",
+      "indication": "Lung Cancer",
+      "existingBrand": "Xylorin",
+      "chronicAcute": "Chronic",
+      "price": "Rs 2,450 / pack",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/new-drug-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-03T05:38:43.441Z"
+    },
+    {
+      "brand": "XYZ Biopharma’s New Drug",
+      "launchType": "Own Launched",
+      "date": "2023-05-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "DrugA",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 1,200 / strip",
+      "sourceUrl": "https://www.xyzbiopharma.com/press-release/new-drug-launch",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-10-03T05:40:05.841Z"
+    },
+    {
+      "brand": "ABC Pharma Acquires XYZ Company",
+      "launchType": "Acquired",
+      "date": "2023-06-15",
+      "seller": "XYZ Company",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.abcpharma.com/press-release/acquisition-xyz",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-10-03T05:40:05.841Z"
+    },
+    {
+      "brand": "LMN Pharma In-licenses DrugB",
+      "launchType": "In-licensed",
+      "date": "2023-07-20",
+      "seller": "LMN Company",
+      "dealType": "In-license (India)",
+      "molecule": "DrugB",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Competitor DrugC",
+      "chronicAcute": "Chronic",
+      "price": "—",
+      "sourceUrl": "https://www.lmnpharma.com/press-release/in-license-drugb",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-10-03T05:40:05.841Z"
+    },
+    {
+      "brand": "ADQUEY™ (difamilast 1%) Ointment",
+      "launchType": "Own Launched",
+      "date": "2023-02-16",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "difamilast",
+      "therapy": "Dermatology",
+      "indication": "Mild-to-Moderate Atopic Dermatitis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/Adquey-(Difamilast)_NDA%20Approval_PressRelease_13-Feb-26.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-10-03T05:40:52.937Z"
+    },
+    {
+      "brand": "Wockhardt's New Oral Anti-Diabetes Drug",
+      "launchType": "Own Launched",
+      "date": "2023-05-20",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Wockhardt-123",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Glycomet",
+      "chronicAcute": "Chronic",
+      "price": "Rs 400 / strip of 10 tablets",
+      "sourceUrl": "https://www.wockhardt.com/pr/2023/new-oral-anti-diabetes-drug",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-03T05:41:09.849Z"
+    },
+    {
+      "brand": "Acquisition of Acme Pharmaceuticals",
+      "launchType": "Acquired",
+      "date": "2023-06-15",
+      "seller": "Acme Pharmaceuticals",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.wockhardt.com/pr/2023/acquisition-of-acme-pharmaceuticals",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-03T05:41:09.849Z"
+    },
+    {
+      "brand": "In-License of Zoleader for respiratory conditions",
+      "launchType": "In-licensed",
+      "date": "2023-07-10",
+      "seller": "XYZ Pharma",
+      "dealType": "In-license (India)",
+      "molecule": "Zoleader",
+      "therapy": "Respiratory",
+      "indication": "Chronic Obstructive Pulmonary Disease",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/pr/2023/in-license-zoleader",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-03T05:41:09.849Z"
+    },
+    {
+      "brand": "CTaro-Methylphenidate ER",
+      "launchType": "Own Launched",
+      "date": "2026-09-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "methylphenidate",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Concerta",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/blog/sun-pharma-participates-in-white-house-signing-ceremony-highlighting-u-s-medicines-pricing-and-access-commitments/",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-10-03T05:41:14.934Z"
     }
   ]
 }
