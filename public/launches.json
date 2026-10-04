@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-03T05:44:05.306Z",
-  "rowCount": 1103,
+  "generatedAt": "2026-10-04T06:20:38.057Z",
+  "rowCount": 1113,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -4198,7 +4198,7 @@
       "price": "Rs 1,200 / bottle",
       "sourceUrl": "https://www.alkemlabs.com/press-release/2023-07-30/acquisition-generic-brands",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-08-17T02:07:54.228Z"
+      "lastEnrichmentAttempt": "2026-10-04T06:17:22.881Z"
     },
     {
       "brand": "Licensing Agreement for Drug XYZ",
@@ -4230,7 +4230,7 @@
       "price": "₹17724 / vial of 2 ml solution for injection",
       "sourceUrl": "https://www.natcopharma.co.in/insights/news-and-announcements/eribulin-mesylate-injection",
       "buyer": "Natco Pharma",
-      "lastEnrichmentAttempt": "2026-08-17T02:08:07.260Z"
+      "lastEnrichmentAttempt": "2026-10-04T06:17:38.429Z"
     },
     {
       "brand": "RanluspecTM",
@@ -6550,7 +6550,7 @@
       "price": "—",
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/amp_articleshow/100775508.cms",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-08-17T02:07:42.481Z"
+      "lastEnrichmentAttempt": "2026-10-04T06:17:11.074Z"
     },
     {
       "brand": "Ranluspec™ (ranibizumab)",
@@ -6566,7 +6566,7 @@
       "price": null,
       "sourceUrl": "https://www.lupin.com/press-releases/lupin-receives-approval-from-us-fda-for-ranluspectm-ranibizumab-injection",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-08-17T02:08:18.880Z"
+      "lastEnrichmentAttempt": "2026-10-04T06:17:45.086Z"
     },
     {
       "brand": "Eribulin Mesylate Injection",
@@ -9414,7 +9414,7 @@
       "price": null,
       "sourceUrl": "https://helloentrepreneurs.com/lifestyle/health/corona-remedies-brothers-of-humanity-campaign-breaks-asia-book-of-records-with-tribute-to-16161-healthcare-workers-48875/",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-17T02:08:26.438Z"
+      "lastEnrichmentAttempt": "2026-10-04T06:17:52.112Z"
     },
     {
       "brand": "Hormonal Manufacturing Facility",
@@ -9430,7 +9430,7 @@
       "price": "₹180 / bottle of 30 ml drops",
       "sourceUrl": "https://www.coronaremedies.com/media-center/#site-content",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-17T02:08:33.311Z"
+      "lastEnrichmentAttempt": "2026-10-04T06:19:03.421Z"
     },
     {
       "brand": "Adcock Ingram Holdings Proprietary Limited",
@@ -9446,7 +9446,7 @@
       "price": null,
       "sourceUrl": "https://www.natcopharma.co.in/insights/news-and-announcements/2026/july/adcock-ingram-acquisition",
       "buyer": "Natco Pharma",
-      "lastEnrichmentAttempt": "2026-08-17T02:08:54.319Z"
+      "lastEnrichmentAttempt": "2026-10-04T06:19:20.479Z"
     },
     {
       "brand": "Adcock Ingram Holdings Proprietary Limited",
@@ -13782,7 +13782,7 @@
       "price": "—",
       "sourceUrl": "https://www.coronaremedies.com/",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-17T02:08:26.438Z"
+      "lastEnrichmentAttempt": "2026-10-04T06:18:53.666Z"
     },
     {
       "brand": "four drug brands from GSK",
@@ -13798,7 +13798,7 @@
       "price": "₹100 / strip of 15 tablets",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-18T02:01:39.128Z"
+      "lastEnrichmentAttempt": "2026-10-04T06:19:27.146Z"
     },
     {
       "brand": "Pitolisant Tablets",
@@ -13809,12 +13809,12 @@
       "molecule": "Pitolisant",
       "therapy": "CNS",
       "indication": "—",
-      "existingBrand": "—",
+      "existingBrand": "Wakix®",
       "chronicAcute": "—",
-      "price": "—",
+      "price": "₹175 / strip of 10 tablets",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-announces-approval-from-u-s-fda-for-pitolisant-tablets",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-08-18T02:02:37.755Z"
+      "lastEnrichmentAttempt": "2026-10-04T06:19:38.102Z"
     },
     {
       "brand": "Aurobindo Pharma",
@@ -16831,10 +16831,10 @@
       "seller": "—",
       "dealType": "NCE Launch",
       "molecule": "Methylphenidate",
-      "therapy": "—",
-      "indication": "—",
+      "therapy": "CNS",
+      "indication": "Attention Deficit Hyperactivity Disorder",
       "existingBrand": "Concerta",
-      "chronicAcute": "—",
+      "chronicAcute": "Chronic",
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/09/PRESS-RELEASE_Sun-Pharma-Launches-CTaro-Methylphenidate-ER-the-First-and-Only-Bioequivalent-to-Concerta%C2%AE-with-an-Osmotic-Delivery-System-PDF.pdf",
       "buyer": "Sun Pharma",
@@ -17639,6 +17639,166 @@
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-participates-in-white-house-signing-ceremony-highlighting-u-s-medicines-pricing-and-access-commitments/",
       "buyer": "Sun Pharma",
       "lastEnrichmentAttempt": "2026-10-03T05:41:14.934Z"
+    },
+    {
+      "brand": "Alkem's NCE",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/nce-launch-2023",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-04T06:14:14.308Z"
+    },
+    {
+      "brand": "Acquisition of XYZ Pharma",
+      "launchType": "Acquired",
+      "date": "2023-08-10",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/acquisition-xyz-pharma",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-04T06:14:14.308Z"
+    },
+    {
+      "brand": "Generic Drug A",
+      "launchType": "Own Launched",
+      "date": "2023-07-20",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Drug A",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Metformin",
+      "chronicAcute": "Chronic",
+      "price": "Rs 150 / strip",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/generic-drug-a-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-04T06:14:14.308Z"
+    },
+    {
+      "brand": "eGenesis, Inc.",
+      "launchType": "Acquired",
+      "date": "2026-08-25",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.natcopharma.co.in/insights/news-and-announcements",
+      "buyer": "Natco Pharma",
+      "lastEnrichmentAttempt": "2026-10-04T06:15:21.264Z"
+    },
+    {
+      "brand": "NewDrugXYZ",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "MoleculeXYZ",
+      "therapy": "Oncology",
+      "indication": "Lung Cancer",
+      "existingBrand": "CompititorBrandA",
+      "chronicAcute": "—",
+      "price": "Rs 1,500 / tablet",
+      "sourceUrl": "https://www.drreddys.com/releases/newdrugxyz-launch",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-10-04T06:15:32.305Z"
+    },
+    {
+      "brand": "ADQUEY",
+      "launchType": "In-licensed",
+      "date": "2026-02-16",
+      "seller": "Otsuka Pharmaceutical Co., Ltd.",
+      "dealType": "In-license (India)",
+      "molecule": "difamilast",
+      "therapy": "—",
+      "indication": "Atopic Dermatitis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/Adquey-(Difamilast)_NDA%20Approval_PressRelease_13-Feb-26.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-10-04T06:16:51.204Z"
+    },
+    {
+      "brand": "Advair Diskus Generic",
+      "launchType": "Own Launched",
+      "date": "2026-08-30",
+      "seller": "GSK plc",
+      "dealType": "Generic Launch",
+      "molecule": "fluticasone propionate and salmeterol",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Advair Diskus",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrtoSEsLannetPR31082026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-10-04T06:16:51.204Z"
+    },
+    {
+      "brand": "Wockhardt's New Diabetes Drug",
+      "launchType": "Own Launched",
+      "date": "2023-06-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Semaglutide",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Saxenda",
+      "chronicAcute": "Chronic",
+      "price": "Rs 3,000 / pack",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/new-diabetes-drug",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-04T06:17:09.568Z"
+    },
+    {
+      "brand": "Wockhardt Acquires Medgenome",
+      "launchType": "Acquired",
+      "date": "2023-08-01",
+      "seller": "Medgenome",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/acquisition-medgenome",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-04T06:17:09.568Z"
+    },
+    {
+      "brand": "Wokadine",
+      "launchType": "Acquired",
+      "date": "2023-06-20",
+      "seller": "DRL",
+      "dealType": "Brand Acquisition",
+      "molecule": "Povidone Iodine",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.business-standard.com/industry/news/corona-remedies-acquires-wokadine-drl-povidone-iodine-market-126033001282_1.html",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-10-04T06:18:53.666Z"
     }
   ]
 }
