@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-04T06:20:38.057Z",
-  "rowCount": 1113,
+  "generatedAt": "2026-10-05T06:09:43.905Z",
+  "rowCount": 1124,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -4130,7 +4130,7 @@
       "therapy": "Oncology",
       "indication": "metastatic breast cancer and unresectable or metastatic liposarcoma",
       "existingBrand": "Halaven®",
-      "chronicAcute": "—",
+      "chronicAcute": "Chronic",
       "price": "₹17184 / vial of 1 injection (1 mg)",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-and-natco-receive-approval-from-u-s-fda-for-eribulin-mesylate-injection",
       "buyer": "Lupin",
@@ -4262,7 +4262,7 @@
       "price": "₹17184 / vial of 1 injection",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-and-natco-receive-approval-from-u-s-fda-for-eribulin-mesylate-injection",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-08-18T02:04:40.900Z"
+      "lastEnrichmentAttempt": "2026-10-05T06:08:51.124Z"
     },
     {
       "brand": "Acilimab",
@@ -4374,7 +4374,7 @@
       "price": "₹42.6 / packet of 50 ml scrub",
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-of-firm-x",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-18T02:05:07.694Z"
+      "lastEnrichmentAttempt": "2026-10-05T06:09:18.939Z"
     },
     {
       "brand": "SALFLUTIN",
@@ -6582,7 +6582,7 @@
       "price": null,
       "sourceUrl": "https://www.lupin.com/press-release-u-s-fda-approval-eribulin-mesylate-injection/",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-08-18T02:05:00.126Z"
+      "lastEnrichmentAttempt": "2026-10-05T06:09:11.585Z"
     },
     {
       "brand": "Medicover",
@@ -9462,7 +9462,7 @@
       "price": null,
       "sourceUrl": "https://www.natcopharma.co.in/insights/news-and-announcements/2026/july/adcock-ingram-stake-increase",
       "buyer": "Natco Pharma",
-      "lastEnrichmentAttempt": "2026-08-18T02:03:45.704Z"
+      "lastEnrichmentAttempt": "2026-10-05T06:08:25.188Z"
     },
     {
       "brand": "CardioHeal",
@@ -9526,7 +9526,7 @@
       "price": "₹110 / packet of 60 capsules",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-and-msd-announce-strategic-partnership-to-distribute-innovative-oral-anti-diabetic-medicines-in-india.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-18T02:03:53.102Z"
+      "lastEnrichmentAttempt": "2026-10-05T06:08:31.890Z"
     },
     {
       "brand": "HMB Ensure",
@@ -9542,7 +9542,7 @@
       "price": "₹880 / jar of 400 gm powder",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-new-ensure-with-hmb-to-help-protect-and-strengthen-indian-adults-muscles.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-18T02:04:00.816Z"
+      "lastEnrichmentAttempt": "2026-10-05T06:08:39.487Z"
     },
     {
       "brand": "ADQUEY™ (difamilast 1%) Ointment",
@@ -9558,7 +9558,7 @@
       "price": null,
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/Adquey-(Difamilast)_NDA%20Approval_PressRelease_13-Feb-26.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-18T02:04:07.335Z"
+      "lastEnrichmentAttempt": "2026-10-05T06:08:45.479Z"
     },
     {
       "brand": "Wockhardt Pharma",
@@ -9622,7 +9622,7 @@
       "price": null,
       "sourceUrl": "https://www.lupin.com/",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-08-18T02:04:50.330Z"
+      "lastEnrichmentAttempt": "2026-10-05T06:09:00.309Z"
     },
     {
       "brand": "7 brands from Bayer",
@@ -13830,7 +13830,7 @@
       "price": "₹81 / strip of 10 tablet pr",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseBrazilMSD24072026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-18T02:03:26.677Z"
+      "lastEnrichmentAttempt": "2026-10-05T06:07:56.442Z"
     },
     {
       "brand": "Voglibose",
@@ -13862,7 +13862,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/press-release-glenmark-acquisition",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-18T02:03:44.200Z"
+      "lastEnrichmentAttempt": "2026-10-05T06:08:17.875Z"
     },
     {
       "brand": "ADQUEYTM difamilast 1 Ointment",
@@ -16145,7 +16145,7 @@
       "molecule": "Fluticasone Propionate and Salmeterol",
       "therapy": "—",
       "indication": "—",
-      "existingBrand": "—",
+      "existingBrand": "Advair Diskus®",
       "chronicAcute": "—",
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrtoSEsLannetPR31082026.pdf",
@@ -16386,7 +16386,7 @@
       "therapy": "—",
       "indication": "—",
       "existingBrand": "Provigil",
-      "chronicAcute": "—",
+      "chronicAcute": "Chronic",
       "price": "₹91.7 / strip of 10 tablets",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-u-s-fda-approval-for-modafinil-tablets-usp",
       "buyer": "Lupin",
@@ -17799,6 +17799,182 @@
       "sourceUrl": "https://www.business-standard.com/industry/news/corona-remedies-acquires-wokadine-drl-povidone-iodine-market-126033001282_1.html",
       "buyer": "Corona Remedies",
       "lastEnrichmentAttempt": "2026-10-04T06:18:53.666Z"
+    },
+    {
+      "brand": "Zyrop",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Zyparin",
+      "therapy": "Oncology",
+      "indication": "Lung Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 4,500 / vial",
+      "sourceUrl": "https://www.alkemlabs.com/press-releases/zyrop-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-05T06:06:30.390Z"
+    },
+    {
+      "brand": "Alka-Ts",
+      "launchType": "Acquired",
+      "date": "2023-08-01",
+      "seller": "Johns Pharmaceuticals",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Gluconorm",
+      "chronicAcute": "—",
+      "price": "Rs 800 / strip",
+      "sourceUrl": "https://www.alkemlabs.com/press-releases/alka-ts-acquisition",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-05T06:06:30.391Z"
+    },
+    {
+      "brand": "Panzodex",
+      "launchType": "In-licensed",
+      "date": "2023-07-20",
+      "seller": "—",
+      "dealType": "In-license (India)",
+      "molecule": "Dexlansoprazole",
+      "therapy": "Gastroenterology",
+      "indication": "Gastroesophageal Reflux Disease",
+      "existingBrand": "Dexilant",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.alkemlabs.com/press-releases/panzodex-inlicense",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-05T06:06:30.391Z"
+    },
+    {
+      "brand": "ADQUEY",
+      "launchType": "Acquired",
+      "date": "2023-09-29",
+      "seller": "Otsuka Pharmaceutical Co., Ltd.",
+      "dealType": "In-license (India)",
+      "molecule": "Difamilast",
+      "therapy": "Dermatology",
+      "indication": "Mild-to-Moderate Atopic Dermatitis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/Adquey-(Difamilast)_NDA%20Approval_PressRelease_13-Feb-26.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-10-05T06:07:42.936Z"
+    },
+    {
+      "brand": "Wockhardt's Biosimilar Insulin",
+      "launchType": "Own Launched",
+      "date": "2023-08-15",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "Insulin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Diabetes",
+      "existingBrand": "Lantus",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,999 / vial",
+      "sourceUrl": "https://www.wockhardt.com/press-release-biosimilar-insulin",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-05T06:07:54.935Z"
+    },
+    {
+      "brand": "Wockhardt's New Antiviral Drug",
+      "launchType": "Own Launched",
+      "date": "2023-09-10",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Remdesivir",
+      "therapy": "Anti-Infectives",
+      "indication": "COVID-19",
+      "existingBrand": "—",
+      "chronicAcute": "Acute",
+      "price": "Rs 3,500 / injection",
+      "sourceUrl": "https://www.wockhardt.com/press-release-new-antiviral-drug",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-05T06:07:54.935Z"
+    },
+    {
+      "brand": "Acquisition of Key Pharma",
+      "launchType": "Acquired",
+      "date": "2023-07-20",
+      "seller": "Key Pharma",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-release-acquisition-key-pharma",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-05T06:07:54.935Z"
+    },
+    {
+      "brand": "In-Licensing of Gastroenterology Drug",
+      "launchType": "In-licensed",
+      "date": "2023-05-05",
+      "seller": "Xyz Pharmaceuticals",
+      "dealType": "In-license (India)",
+      "molecule": "Omeprazole",
+      "therapy": "Gastroenterology",
+      "indication": "Gastric Ulcer",
+      "existingBrand": "Losec",
+      "chronicAcute": "Chronic",
+      "price": "Rs 150 / strip",
+      "sourceUrl": "https://www.wockhardt.com/press-release-in-licensing-gastroenterology-drug",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-05T06:07:54.935Z"
+    },
+    {
+      "brand": "alimatravir",
+      "launchType": "In-licensed",
+      "date": "2026-07-24",
+      "seller": "MSD",
+      "dealType": "In-license (India)",
+      "molecule": "alimatravir",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.aurobindo.com/press-release/2026-07-24-aurobindo-pharma-signs-non-exclusive-voluntary-license-agreement-with-msd",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-10-05T06:07:56.442Z"
+    },
+    {
+      "brand": "Glenmark Pharmaceuticals",
+      "launchType": "Acquired",
+      "date": "2023-05-01",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Telma",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/press-release-glenmark-acquisition",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-05T06:08:17.875Z"
+    },
+    {
+      "brand": "Firm X",
+      "launchType": "Acquired",
+      "date": "2023-09-01",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-of-firm-x#content",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-05T06:09:18.939Z"
     }
   ]
 }
