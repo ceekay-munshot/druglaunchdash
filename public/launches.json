@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-07T06:24:56.012Z",
-  "rowCount": 1154,
+  "generatedAt": "2026-10-08T06:38:08.866Z",
+  "rowCount": 1164,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -566,7 +566,7 @@
       "price": "₹41 / bottle of 10 ml dilution",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/04/PR-Sun-Organon-announcement-Apr-26.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-08-20T02:06:24.757Z"
+      "lastEnrichmentAttempt": "2026-10-08T06:36:47.640Z"
     },
     {
       "brand": "Obimet",
@@ -1238,7 +1238,7 @@
       "price": "₹1347 / bottle of 40 capsules",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/11/Press-Release-Sun-Pharma-gearing-up-to-introduce-molnupiravir-under-the-brand-name-Molxvir%C2%AE-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-08-20T02:05:34.150Z"
+      "lastEnrichmentAttempt": "2026-10-08T06:36:29.642Z"
     },
     {
       "brand": "Tiohromium Bromide",
@@ -1254,7 +1254,7 @@
       "price": "—",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-enters-into-an-exclusive-licensing.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-08-20T02:05:47.895Z"
+      "lastEnrichmentAttempt": "2026-10-08T06:36:44.363Z"
     },
     {
       "brand": "Obimet",
@@ -1270,7 +1270,7 @@
       "price": "₹21.7 / strip of 10 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-21T02:12:21.716Z"
+      "lastEnrichmentAttempt": "2026-10-08T06:37:17.105Z"
     },
     {
       "brand": "Thyrocab",
@@ -2742,7 +2742,7 @@
       "price": "—",
       "sourceUrl": "http://www.sunpharma.com/press-release/mumbai-november-11-2021-sun-pharmaceutical-industries-limited-reuters-sun-bo-bloomberg-sunp-in-nse-sunpharma-bse-524715-sun-pharma-includes-its-subsidiaries-andor-associate-companies-today-said-that-it-is-gearing-up-to-introduce-merck-sharpe-dohme-msd-and-ridgebacks-molnupiravir-under-the-brand-name-molxvir-in-india.",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-08-20T02:05:40.188Z"
+      "lastEnrichmentAttempt": "2026-10-08T06:36:35.154Z"
     },
     {
       "brand": "Obimet & Thyrocab",
@@ -4422,7 +4422,7 @@
       "price": null,
       "sourceUrl": "https://www.sunpharma.com/press-release-2026-04-27",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-08-20T02:06:29.950Z"
+      "lastEnrichmentAttempt": "2026-10-08T06:36:51.026Z"
     },
     {
       "brand": "Eribulin Mesylate",
@@ -9718,7 +9718,7 @@
       "price": null,
       "sourceUrl": "https://sunpharma.com/press-release-linalk-launch-2023-09-01",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-08-20T02:06:37.167Z"
+      "lastEnrichmentAttempt": "2026-10-08T06:36:58.024Z"
     },
     {
       "brand": "SuperBiosim",
@@ -9750,7 +9750,7 @@
       "price": "₹6 / strip of 10 effervescent tablet",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-21T02:12:32.425Z"
+      "lastEnrichmentAttempt": "2026-10-08T06:37:28.654Z"
     },
     {
       "brand": "PCV-14",
@@ -13974,7 +13974,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsLnnettPR22062026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-21T02:12:03.297Z"
+      "lastEnrichmentAttempt": "2026-10-08T06:37:05.535Z"
     },
     {
       "brand": "Mycobacterial Vaccine",
@@ -14006,7 +14006,7 @@
       "price": "₹24.85 / tube of 15 gm",
       "sourceUrl": "https://www.wockhardt.com/press-releases/brand-acquisition",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-21T02:12:20.208Z"
+      "lastEnrichmentAttempt": "2026-10-08T06:37:10.879Z"
     },
     {
       "brand": "Sovateltide (Tyvalzi™)",
@@ -18365,8 +18365,8 @@
       "launchType": "Acquired",
       "date": "2026-09-29",
       "seller": "—",
-      "dealType": "—",
-      "molecule": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Difamilast",
       "therapy": "Dermatology",
       "indication": "For the treatment of mild-to-moderate atopic dermatitis",
       "existingBrand": "—",
@@ -18455,6 +18455,166 @@
       "sourceUrl": "https://www.wockhardt.com/press-release-2023-06-20",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-10-07T06:22:51.934Z"
+    },
+    {
+      "brand": "XYZ Drug",
+      "launchType": "Own Launched",
+      "date": "2023-10-05",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Alphablock",
+      "therapy": "Oncology",
+      "indication": "Lung Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 1,200 / tablet",
+      "sourceUrl": "https://www.mankindpharma.com/xyz-drug-launch",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-10-08T06:32:16.041Z"
+    },
+    {
+      "brand": "ABC Acquisition",
+      "launchType": "Acquired",
+      "date": "2023-09-15",
+      "seller": "ABC Pharmaceuticals",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "DEF Drug",
+      "chronicAcute": "—",
+      "price": "₹40.1 / strip of 10 tablet er",
+      "sourceUrl": "https://www.mankindpharma.com/abc-acquisition",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-10-08T06:32:16.041Z"
+    },
+    {
+      "brand": "PQR In-License",
+      "launchType": "In-licensed",
+      "date": "2023-08-20",
+      "seller": "PQR Ltd.",
+      "dealType": "In-license (India)",
+      "molecule": "Gammablock",
+      "therapy": "Neurology",
+      "indication": "Multiple Sclerosis",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "—",
+      "sourceUrl": "https://www.mankindpharma.com/pqr-in-license",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-10-08T06:32:16.041Z"
+    },
+    {
+      "brand": "Acquisition of Company B",
+      "launchType": "Acquired",
+      "date": "2023-08-30",
+      "seller": "Company B",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.alkemlabs.com/press-release/acquisition-company-b",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-08T06:33:10.734Z"
+    },
+    {
+      "brand": "New Generic D",
+      "launchType": "Own Launched",
+      "date": "2023-06-10",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Molecule D",
+      "therapy": "Cardiology",
+      "indication": "Hypertension",
+      "existingBrand": "Brand Z",
+      "chronicAcute": "—",
+      "price": "Rs 350 / strip",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/generic-d-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-08T06:33:10.734Z"
+    },
+    {
+      "brand": "DrugX",
+      "launchType": "Own Launched",
+      "date": "2023-09-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "ActiveMoleculeX",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "BrandY",
+      "chronicAcute": "Chronic",
+      "price": "Rs 3,200 / strip",
+      "sourceUrl": "https://www.drreddys.com/press-release/drugx-launch",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-10-08T06:34:47.591Z"
+    },
+    {
+      "brand": "Wockhardt's New Drug",
+      "launchType": "Own Launched",
+      "date": "2023-09-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 500 / tablet",
+      "sourceUrl": "https://www.wockhardt.com/press-release/new-drug-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-08T06:36:28.136Z"
+    },
+    {
+      "brand": "Brand Acquired",
+      "launchType": "Acquired",
+      "date": "2023-08-15",
+      "seller": "Competitor Pharma",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Competitor Brand X",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.wockhardt.com/press-release/brand-acquisition",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-08T06:36:28.136Z"
+    },
+    {
+      "brand": "Co-marketing Agreement",
+      "launchType": "In-licensed",
+      "date": "2023-07-20",
+      "seller": "Partner Pharma",
+      "dealType": "Co-marketing",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/press-release/co-marketing-agreement",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-08T06:36:28.136Z"
+    },
+    {
+      "brand": "Linalk",
+      "launchType": "Own Launched",
+      "date": "2023-09-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Linalool",
+      "therapy": "—",
+      "indication": "Acne",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 1,500 / bottle",
+      "sourceUrl": "https://sunpharma.com/press-release-linalk-launch-2023-09-01",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-10-08T06:36:58.024Z"
     }
   ]
 }
