@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-09T06:39:30.135Z",
-  "rowCount": 1177,
+  "generatedAt": "2026-10-10T06:20:01.242Z",
+  "rowCount": 1192,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -2450,7 +2450,7 @@
       "therapy": "Oncology",
       "indication": "chemotherapy-induced nausea and vomiting",
       "existingBrand": "—",
-      "chronicAcute": "—",
+      "chronicAcute": "Chronic",
       "price": "₹5316 / strip of 1 capsule",
       "sourceUrl": "https://www.helsinn.com/news/glenmark-pharmaceuticals-expands-its-oncology-franchise-in-india-with-the-launch-of-helsinns-akynzeo-a-combination-drug-for-the-prevention-of-cinv-chemotherapy-induced-nausea-and-vomiting/",
       "buyer": "Glenmark",
@@ -4454,7 +4454,7 @@
       "price": "₹430 / box of 200 gm",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbotts-new-pediasure-cookies-and-cream-ensures-summer-break-is-a-good-timetogrow-for-children.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-22T02:00:44.285Z"
+      "lastEnrichmentAttempt": "2026-10-10T06:19:03.780Z"
     },
     {
       "brand": "TheraNym",
@@ -4470,7 +4470,7 @@
       "price": "null",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseTheranym03062026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-22T02:01:18.108Z"
+      "lastEnrichmentAttempt": "2026-10-10T06:19:43.491Z"
     },
     {
       "brand": "Wockhardt's New Drug",
@@ -6886,7 +6886,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.com/",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-22T02:01:06.170Z"
+      "lastEnrichmentAttempt": "2026-10-10T06:19:33.588Z"
     },
     {
       "brand": "TheraNym",
@@ -9846,7 +9846,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.com/media",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-22T02:00:52.587Z"
+      "lastEnrichmentAttempt": "2026-10-10T06:19:11.684Z"
     },
     {
       "brand": "ZycoV-D",
@@ -14054,7 +14054,7 @@
       "price": null,
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-and-tenpoint-therapeutics-announce-strategic-partnership-to-commercialize-yuvezzi-in-the-european-union-the-united-kingdom-switzerland-norway-and-iceland",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-08-22T01:59:48.968Z"
+      "lastEnrichmentAttempt": "2026-10-10T06:18:38.832Z"
     },
     {
       "brand": "Lannett Company",
@@ -14070,7 +14070,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsLnnettPR22062026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-22T02:00:27.899Z"
+      "lastEnrichmentAttempt": "2026-10-10T06:18:47.803Z"
     },
     {
       "brand": "Wockhardt's New Drug Launch",
@@ -14086,7 +14086,7 @@
       "price": "Rs 1,250 / strip",
       "sourceUrl": "https://www.wockhardt.com/press-releases/new-drug-launch",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-22T02:00:42.779Z"
+      "lastEnrichmentAttempt": "2026-10-10T06:18:50.526Z"
     },
     {
       "brand": "In-License Agreement with ABC",
@@ -14102,7 +14102,7 @@
       "price": "null",
       "sourceUrl": "https://www.wockhardt.com/press-releases/in-license-abc",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-22T02:00:42.779Z"
+      "lastEnrichmentAttempt": "2026-10-10T06:18:57.560Z"
     },
     {
       "brand": "CoaguChek",
@@ -14118,7 +14118,7 @@
       "price": "Rs 2,575 / strip",
       "sourceUrl": "https://www.abbott.com/press-releases/2023/coaguchek-launch-india.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-22T02:00:52.587Z"
+      "lastEnrichmentAttempt": "2026-10-10T06:19:22.702Z"
     },
     {
       "brand": "Zebex",
@@ -14150,7 +14150,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.com/content/2023-09-01/heartmate-launch.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-22T02:01:06.170Z"
+      "lastEnrichmentAttempt": "2026-10-10T06:19:39.846Z"
     },
     {
       "brand": "Kleanex",
@@ -18823,6 +18823,246 @@
       "sourceUrl": "https://www.wockhardt.com/press-release-url-2",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-10-09T06:37:35.365Z"
+    },
+    {
+      "brand": "Nidlegy",
+      "launchType": "Own Launched",
+      "date": "2023-10-16",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Nidlegy",
+      "therapy": "Oncology",
+      "indication": "Locally advanced melanoma",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹109 / strip of 10 tablets",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/10/Press-Release-Nidlegy-Phase-III-PIVOTAL-trial-meets-primary-endpoint-of-Recurrence-Free-Survival-in-locally-advanced-fully-resectable-melanoma.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-10-10T06:17:14.894Z"
+    },
+    {
+      "brand": "Alkeda",
+      "launchType": "Own Launched",
+      "date": "2023-01-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "Respiratory",
+      "indication": "Asthma",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,450 / inhaler",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/alkeda-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-10T06:17:25.137Z"
+    },
+    {
+      "brand": "Cetrizine 10mg",
+      "launchType": "Own Launched",
+      "date": "2023-02-10",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Cetrizine",
+      "therapy": "Anti-Allergics",
+      "indication": "Allergic Rhinitis",
+      "existingBrand": "Zyrtec",
+      "chronicAcute": "—",
+      "price": "Rs 30 / strip",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/cetrizine-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-10T06:17:25.137Z"
+    },
+    {
+      "brand": "Sofosbuvir",
+      "launchType": "In-licensed",
+      "date": "2023-03-05",
+      "seller": "Gilead Sciences",
+      "dealType": "In-license (India)",
+      "molecule": "Sofosbuvir",
+      "therapy": "Anti-Infectives",
+      "indication": "Hepatitis C",
+      "existingBrand": "Harvoni",
+      "chronicAcute": "—",
+      "price": "Rs 75,000 / tablet",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/sofosbuvir-in-licensing",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-10T06:17:25.137Z"
+    },
+    {
+      "brand": "Temozolomide",
+      "launchType": "Acquired",
+      "date": "2023-04-22",
+      "seller": "Natco Pharma",
+      "dealType": "Brand Acquisition",
+      "molecule": "Temozolomide",
+      "therapy": "Oncology",
+      "indication": "Brain Cancer",
+      "existingBrand": "Temodar",
+      "chronicAcute": "—",
+      "price": "Rs 21,500 / strip",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/temozolomide-acquisition",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-10T06:17:25.137Z"
+    },
+    {
+      "brand": "Rabeprazole",
+      "launchType": "Own Launched",
+      "date": "2023-05-18",
+      "seller": "—",
+      "dealType": "Line Extension",
+      "molecule": "Rabeprazole",
+      "therapy": "Gastroenterology",
+      "indication": "Acid Reflux",
+      "existingBrand": "Razo",
+      "chronicAcute": "—",
+      "price": "Rs 250 / strip",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/rabeprazole-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-10T06:17:25.137Z"
+    },
+    {
+      "brand": "Evorolimus",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Evorolimus",
+      "therapy": "Oncology",
+      "indication": "Hormone Receptor Positive, HER2 Negative Breast Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 2,100 / strip",
+      "sourceUrl": "https://www.pharmaexample.com/evorolimus-launch",
+      "buyer": "Torrent Pharma",
+      "lastEnrichmentAttempt": "2026-10-10T06:17:40.833Z"
+    },
+    {
+      "brand": "Vaxezir",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Zirconium-89",
+      "therapy": "Immunology",
+      "indication": "Prostate Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 15,000 / vial",
+      "sourceUrl": "https://www.pharmaexample.com/vaxezir-launch",
+      "buyer": "Torrent Pharma",
+      "lastEnrichmentAttempt": "2026-10-10T06:17:40.833Z"
+    },
+    {
+      "brand": "Infinex",
+      "launchType": "Acquired",
+      "date": "2023-08-20",
+      "seller": "XYZ Pharma",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Procrit",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.pharmaexample.com/infinex-acquisition",
+      "buyer": "Torrent Pharma",
+      "lastEnrichmentAttempt": "2026-10-10T06:17:40.833Z"
+    },
+    {
+      "brand": "Wockhardt’s New Biosimilar",
+      "launchType": "Own Launched",
+      "date": "2023-05-15",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/biosimilar-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-10T06:18:37.326Z"
+    },
+    {
+      "brand": "Acquisition of XYZ Pharma",
+      "launchType": "Acquired",
+      "date": "2023-06-10",
+      "seller": "XYZ Pharma",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "ABC Brand",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/acquisition-xyz-pharma",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-10T06:18:37.326Z"
+    },
+    {
+      "brand": "Co-marketing agreement with ABC Corp",
+      "launchType": "In-licensed",
+      "date": "2023-07-01",
+      "seller": "ABC Corp",
+      "dealType": "Co-marketing",
+      "molecule": "—",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/co-marketing-abc-corp",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-10T06:18:37.326Z"
+    },
+    {
+      "brand": "YUVEZZI™",
+      "launchType": "In-licensed",
+      "date": "2026-08-20",
+      "seller": "Visus Therapeutics Inc.",
+      "dealType": "In-license (India)",
+      "molecule": "carbachol plus brimonidine tartrate",
+      "therapy": "—",
+      "indication": "presbyopia",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.lupin.com/press-release/lupin-and-tenpoint-therapeutics-announce-strategic-partnership-to-commercialize-yuvezzi-in-the-eu-uk-switzerland-norway-and-iceland",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-10-10T06:18:38.832Z"
+    },
+    {
+      "brand": "MyGluco",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "glimepiride",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Glycomet",
+      "chronicAcute": "Chronic",
+      "price": "Rs 45 / strip",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/mygluco-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-10T06:18:50.526Z"
+    },
+    {
+      "brand": "Lingo Glucose System",
+      "launchType": "Own Launched",
+      "date": "2023-09-01",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.abbott.com/content/dam/corp/abbottglobal/en-us/hub-new/ADC_DUO_FSL3_Product_FDA-Approval.jpg",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-10-10T06:19:33.588Z"
     }
   ]
 }
