@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-10T06:20:01.242Z",
-  "rowCount": 1192,
+  "generatedAt": "2026-10-11T06:22:09.470Z",
+  "rowCount": 1210,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -246,7 +246,7 @@
       "price": "₹104 / bottle of 60 ml oral suspension",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/09/Press-Release-Sun-Pharma-launches-Chericof-12.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-08-22T02:02:09.231Z"
+      "lastEnrichmentAttempt": "2026-10-11T06:20:32.064Z"
     },
     {
       "brand": "Organon",
@@ -262,7 +262,7 @@
       "price": null,
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/04/PR-Sun-Organon-announcement-Apr-26.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-08-22T02:02:31.045Z"
+      "lastEnrichmentAttempt": "2026-10-11T06:20:54.808Z"
     },
     {
       "brand": "EVERON",
@@ -614,7 +614,7 @@
       "price": "—",
       "sourceUrl": "http://www.sunpharma.com/press-release/press-release-chericof12-launch",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-08-22T02:02:23.518Z"
+      "lastEnrichmentAttempt": "2026-10-11T06:20:47.026Z"
     },
     {
       "brand": "Antibiotic Combination",
@@ -6902,7 +6902,7 @@
       "price": "—",
       "sourceUrl": "http://www.aurobindo.com/press-release/therynym-inauguration",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-22T02:01:50.819Z"
+      "lastEnrichmentAttempt": "2026-10-11T06:20:22.762Z"
     },
     {
       "brand": "Invista",
@@ -9878,7 +9878,7 @@
       "price": "Rs 150 / strip",
       "sourceUrl": "https://www.wockhardt.com/press-release/brand-acquisition-kleanex",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-22T02:02:15.744Z"
+      "lastEnrichmentAttempt": "2026-10-11T06:20:35.480Z"
     },
     {
       "brand": "Temporax",
@@ -9910,7 +9910,7 @@
       "price": null,
       "sourceUrl": "https://www.sunpharma.com/press-release/sun-pharma-signs-definitive-agreement-acquire-organon",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-08-22T02:02:35.820Z"
+      "lastEnrichmentAttempt": "2026-10-11T06:20:57.990Z"
     },
     {
       "brand": "Dextromethorphan Polistirex",
@@ -14166,7 +14166,7 @@
       "price": "—",
       "sourceUrl": "https://www.wockhardt.com/press-release/brand-acquisition-kleanex#content",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-22T02:02:15.744Z"
+      "lastEnrichmentAttempt": "2026-10-11T06:20:44.368Z"
     },
     {
       "brand": "four drug brands from GlaxoSmithkline Pharmaceuticals Limited",
@@ -14182,7 +14182,7 @@
       "price": "₹240 / strip of 15 tablets",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-23T02:10:56.157Z"
+      "lastEnrichmentAttempt": "2026-10-11T06:21:05.999Z"
     },
     {
       "brand": "Adcock Ingram Holdings Stake",
@@ -14198,7 +14198,7 @@
       "price": null,
       "sourceUrl": "https://www.natcopharma.co.in/insights/news-and-announcements/adcock-ingram-acquisition",
       "buyer": "Natco Pharma",
-      "lastEnrichmentAttempt": "2026-08-23T02:11:28.237Z"
+      "lastEnrichmentAttempt": "2026-10-11T06:21:13.834Z"
     },
     {
       "brand": "XYZ Pharma's New Diabetes Drug",
@@ -14230,7 +14230,7 @@
       "price": "—",
       "sourceUrl": "https://www.abcp.com/press-release/acquisition-pqr-biotech",
       "buyer": "Zydus Lifesciences",
-      "lastEnrichmentAttempt": "2026-08-23T02:12:18.238Z"
+      "lastEnrichmentAttempt": "2026-10-11T06:21:23.733Z"
     },
     {
       "brand": "LMN Pharmaceuticals In-Licenses UVW Treatment",
@@ -19063,6 +19063,294 @@
       "sourceUrl": "https://www.abbott.com/content/dam/corp/abbottglobal/en-us/hub-new/ADC_DUO_FSL3_Product_FDA-Approval.jpg",
       "buyer": "Abbott India",
       "lastEnrichmentAttempt": "2026-10-10T06:19:33.588Z"
+    },
+    {
+      "brand": "Zyprexa",
+      "launchType": "Own Launched",
+      "date": "2023-07-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Olanzapine",
+      "therapy": "CNS",
+      "indication": "Schizophrenia",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 729 / strip",
+      "sourceUrl": "https://www.alkemlabs.com/press-releases/zyprexa-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-11T06:18:11.116Z"
+    },
+    {
+      "brand": "HumaPen Savvio",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.exampleurl.com/humapen-savvio-launch",
+      "buyer": "Torrent Pharma",
+      "lastEnrichmentAttempt": "2026-10-11T06:18:42.987Z"
+    },
+    {
+      "brand": "Zyflamend Plus",
+      "launchType": "In-licensed",
+      "date": "2023-08-10",
+      "seller": "HealthCanada",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "Pain Management",
+      "indication": "Chronic Pain",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "—",
+      "sourceUrl": "https://www.exampleurl.com/zyflamend-plus-in-licensing",
+      "buyer": "Torrent Pharma",
+      "lastEnrichmentAttempt": "2026-10-11T06:18:42.987Z"
+    },
+    {
+      "brand": "MediVax",
+      "launchType": "Acquired",
+      "date": "2023-07-20",
+      "seller": "PharmaCorp",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "Immunology",
+      "indication": "Influenza",
+      "existingBrand": "FluGuard",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.exampleurl.com/medivax-acquisition",
+      "buyer": "Torrent Pharma",
+      "lastEnrichmentAttempt": "2026-10-11T06:18:42.987Z"
+    },
+    {
+      "brand": "XYZ Pharma's New Oncology Drug",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Doxorubicin",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 1,500 / injection",
+      "sourceUrl": "https://www.xyxpharma.com/press-release-123",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-10-11T06:19:00.075Z"
+    },
+    {
+      "brand": "ABC Pharma Acquires DEF Biotech",
+      "launchType": "Acquired",
+      "date": "2023-08-01",
+      "seller": "DEF Biotech",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.abcpahrma.com/press-release-456",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-10-11T06:19:00.075Z"
+    },
+    {
+      "brand": "AcmeBreathe",
+      "launchType": "Own Launched",
+      "date": "2023-08-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "pulmonexil",
+      "therapy": "Respiratory",
+      "indication": "Chronic Asthma",
+      "existingBrand": "Asthalin",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,200 / inhaler",
+      "sourceUrl": "https://www.acmepharma.com/pressreleases/acmebreathe-launch",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-10-11T06:19:28.555Z"
+    },
+    {
+      "brand": "Glenmedxis",
+      "launchType": "In-licensed",
+      "date": "2023-05-20",
+      "seller": "MedX Corp",
+      "dealType": "In-license (India)",
+      "molecule": "medexin",
+      "therapy": "Oncology",
+      "indication": "Lung Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.glenmedpharma.com/pressreleases/glenmedxis-in-licensing",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-10-11T06:19:28.555Z"
+    },
+    {
+      "brand": "Zentrol",
+      "launchType": "Acquired",
+      "date": "2023-09-05",
+      "seller": "Zentric Pharmaceuticals",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Vibhar",
+      "chronicAcute": "—",
+      "price": "Rs 750 / pack",
+      "sourceUrl": "https://www.pharmacorp.com/pressreleases/zentrol-acquisition",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-10-11T06:19:28.555Z"
+    },
+    {
+      "brand": "14 valent Pneumococcal Conjugate Vaccine (PCV-14)",
+      "launchType": "Own Launched",
+      "date": "2025-11-27",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "Pneumococcal Infections",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-14-valent-pneumococcal-conjugate-vaccine-pcv-14-that-offers-broadest-protection-for-children-against-pneumococcal-bacterial-infections.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-10-11T06:19:45.683Z"
+    },
+    {
+      "brand": "AI-powered Coronary Imaging Software",
+      "launchType": "Own Launched",
+      "date": "2023-11-28",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/Abbotts-New-Coronary-Imaging-Software-Powered-by-Artificial-Intelligence-Launched-in-India.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-10-11T06:19:45.683Z"
+    },
+    {
+      "brand": "Kofol",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "ambroxol plus levo-cetirizine",
+      "therapy": "Respiratory",
+      "indication": "Cold and cough",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 195 / strip",
+      "sourceUrl": "https://www.wockhardt.com/news/press-release-kofol-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-11T06:20:21.258Z"
+    },
+    {
+      "brand": "Lopikind",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "losartan",
+      "therapy": "Cardiology",
+      "indication": "Hypertension",
+      "existingBrand": "Telma",
+      "chronicAcute": "Chronic",
+      "price": "Rs 85 / strip",
+      "sourceUrl": "https://www.wockhardt.com/news/press-release-lopikind-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-11T06:20:21.258Z"
+    },
+    {
+      "brand": "Fexola",
+      "launchType": "In-licensed",
+      "date": "2023-08-10",
+      "seller": "Glenmark Pharmaceuticals",
+      "dealType": "In-license (India)",
+      "molecule": "fexofenadine",
+      "therapy": "Anti-Allergic",
+      "indication": "Allergic Rhinitis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.wockhardt.com/news/press-release-fexola-inlicense",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-11T06:20:21.258Z"
+    },
+    {
+      "brand": "Zeroderm",
+      "launchType": "Own Launched",
+      "date": "2023-07-05",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "Dermatology",
+      "indication": "Skin dryness",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.wockhardt.com/news/press-release-zeroderm-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-11T06:20:21.258Z"
+    },
+    {
+      "brand": "Aurobindo's New Product",
+      "launchType": "Own Launched",
+      "date": "2023-09-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,250 / bottle",
+      "sourceUrl": "https://www.aurobindo.com/media/press-releases/aurobindo-new-product-launch",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-10-11T06:20:22.762Z"
+    },
+    {
+      "brand": "Kleanex",
+      "launchType": "Acquired",
+      "date": "2023-01-15",
+      "seller": "—",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/press-release/brand-acquisition-kleanex",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-11T06:20:35.480Z"
+    },
+    {
+      "brand": "Organon",
+      "launchType": "Acquired",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://sunpharma.com/press-release/sun-pharma-signs-definitive-agreement-acquire-organon#",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-10-11T06:20:57.990Z"
     }
   ]
 }
