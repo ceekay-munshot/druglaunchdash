@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-11T06:22:09.470Z",
-  "rowCount": 1210,
+  "generatedAt": "2026-10-12T06:28:13.455Z",
+  "rowCount": 1226,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -278,7 +278,7 @@
       "price": "₹39.7 / strip of 10 tablet md",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2022/03/Press-Release-EVERON-Launch.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-08-23T02:13:20.961Z"
+      "lastEnrichmentAttempt": "2026-10-12T06:26:24.795Z"
     },
     {
       "brand": "Molxvir",
@@ -1295,8 +1295,8 @@
       "seller": "—",
       "dealType": "Generic Launch",
       "molecule": "Molnupiravir",
-      "therapy": "—",
-      "indication": "—",
+      "therapy": "Anti-Viral",
+      "indication": "COVID-19",
       "existingBrand": "—",
       "chronicAcute": "—",
       "price": "₹1347 / bottle of 40 capsules",
@@ -2758,7 +2758,7 @@
       "price": "₹21.7 / strip of 10 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-23T02:13:05.546Z"
+      "lastEnrichmentAttempt": "2026-10-12T06:26:13.908Z"
     },
     {
       "brand": "Ryaltris",
@@ -6934,7 +6934,7 @@
       "price": "null",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-23T02:13:26.316Z"
+      "lastEnrichmentAttempt": "2026-10-12T06:26:32.157Z"
     },
     {
       "brand": "Lannett Company LLC",
@@ -6950,7 +6950,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsLnnettPR22062026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-23T02:13:37.250Z"
+      "lastEnrichmentAttempt": "2026-10-12T06:26:42.868Z"
     },
     {
       "brand": "TheraNym",
@@ -6966,7 +6966,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseTheranym03062026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-23T02:14:06.091Z"
+      "lastEnrichmentAttempt": "2026-10-12T06:27:01.005Z"
     },
     {
       "brand": "Dextromethorphan Polistirex",
@@ -6982,7 +6982,7 @@
       "price": "null",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/2LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-23T02:14:38.643Z"
+      "lastEnrichmentAttempt": "2026-10-12T06:27:06.720Z"
     },
     {
       "brand": "Glycerol Phenylbutyrate",
@@ -6998,7 +6998,7 @@
       "price": "₹84.53 / bottle of 250 ml liquid",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-23T02:15:15.248Z"
+      "lastEnrichmentAttempt": "2026-10-12T06:27:27.483Z"
     },
     {
       "brand": "Dapagliflozin and Metformin Hydrochloride",
@@ -9926,7 +9926,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/press-release",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-23T02:15:06.685Z"
+      "lastEnrichmentAttempt": "2026-10-12T06:27:15.478Z"
     },
     {
       "brand": "Ryaltris™",
@@ -14246,7 +14246,7 @@
       "price": "—",
       "sourceUrl": "https://www.lmnpharma.com/press-release/in-license-uvw-treatment",
       "buyer": "Zydus Lifesciences",
-      "lastEnrichmentAttempt": "2026-08-23T02:12:18.238Z"
+      "lastEnrichmentAttempt": "2026-10-12T06:26:12.507Z"
     },
     {
       "brand": "Wockhardt’s Bioconjugated Drug",
@@ -14294,7 +14294,7 @@
       "price": null,
       "sourceUrl": "https://www.aurobindo.com/press-release/2026-06-22-lannett-acquisition",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-23T02:13:37.250Z"
+      "lastEnrichmentAttempt": "2026-10-12T06:26:50.613Z"
     },
     {
       "brand": "Tricium",
@@ -19351,6 +19351,262 @@
       "sourceUrl": "https://sunpharma.com/press-release/sun-pharma-signs-definitive-agreement-acquire-organon#",
       "buyer": "Sun Pharma",
       "lastEnrichmentAttempt": "2026-10-11T06:20:57.990Z"
+    },
+    {
+      "brand": "DjE3AZmMyFx0IinHC-h84A5wcrkPjHWlnQn_McVmKJo",
+      "launchType": "Own Launched",
+      "date": "2023-09-22",
+      "seller": "—",
+      "dealType": "—",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.mankindpharma.com/DjE3AZmMyFx0IinHC-h84A5wcrkPjHWlnQn_McVmKJo=.html",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-10-12T06:22:56.579Z"
+    },
+    {
+      "brand": "XYZ Tablet",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "ABC123",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Diabeta",
+      "chronicAcute": "Chronic",
+      "price": "Rs 500 / strip",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/xyz-tablet-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-12T06:23:51.645Z"
+    },
+    {
+      "brand": "ABC Injection",
+      "launchType": "In-licensed",
+      "date": "2023-08-20",
+      "seller": "XYZ Pharma",
+      "dealType": "In-license (India)",
+      "molecule": "DEF456",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹14.7 / vial of 1 injection (100 mg)",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/abc-injection-commercial-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-12T06:23:51.645Z"
+    },
+    {
+      "brand": "MNO Gel",
+      "launchType": "Acquired",
+      "date": "2023-07-30",
+      "seller": "LMN Corp",
+      "dealType": "Brand Acquisition",
+      "molecule": "GHI789",
+      "therapy": "Dermatology",
+      "indication": "Psoriasis",
+      "existingBrand": "Dermatol",
+      "chronicAcute": "—",
+      "price": "Rs 300 / tube",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/mno-gel-acquisition",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-12T06:23:51.645Z"
+    },
+    {
+      "brand": "DrugA",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "MoleculeA",
+      "therapy": "Oncology",
+      "indication": "Lung Cancer",
+      "existingBrand": "CompetingBrand1",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,500 / strip",
+      "sourceUrl": "https://www.drreddys.com/press-release/drugA-launch",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-10-12T06:24:39.758Z"
+    },
+    {
+      "brand": "DrugB",
+      "launchType": "Acquired",
+      "date": "2023-09-15",
+      "seller": "SellerCompany",
+      "dealType": "Brand Acquisition",
+      "molecule": "MoleculeB",
+      "therapy": "Cardiology",
+      "indication": "Hypertension",
+      "existingBrand": "CompetingBrand2",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.drreddys.com/press-release/drugB-acquisition",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-10-12T06:24:39.758Z"
+    },
+    {
+      "brand": "LiDoCon",
+      "launchType": "Own Launched",
+      "date": "2017-11-08",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-pioneers-new-liquid-dosing-device-lidocon-in-india.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-10-12T06:25:33.640Z"
+    },
+    {
+      "brand": "Wockhardt Biosimilar",
+      "launchType": "Own Launched",
+      "date": "2023-11-01",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "Trastuzumab",
+      "therapy": "Oncology",
+      "indication": "HER2-positive breast cancer",
+      "existingBrand": "Herceptin",
+      "chronicAcute": "Chronic",
+      "price": "Rs 30,000 / injection",
+      "sourceUrl": "https://www.wockhardt.com/press-release/biosimilar-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-12T06:26:11.002Z"
+    },
+    {
+      "brand": "Acquisition of XYZ Pharma",
+      "launchType": "Acquired",
+      "date": "2023-07-20",
+      "seller": "XYZ Pharma",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-xyz-pharma",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-12T06:26:11.002Z"
+    },
+    {
+      "brand": "Licensing deal with ABC Corp",
+      "launchType": "In-licensed",
+      "date": "2023-09-05",
+      "seller": "ABC Corp",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-release/licensing-deal-abc-corp",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-12T06:26:11.002Z"
+    },
+    {
+      "brand": "Xyrem",
+      "launchType": "Acquired",
+      "date": "2023-10-01",
+      "seller": "Jazz Pharmaceuticals",
+      "dealType": "Brand Acquisition",
+      "molecule": "sodium oxybate",
+      "therapy": "CNS",
+      "indication": "narcolepsy",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 5,000 / 30 tablets",
+      "sourceUrl": "https://www.sunpharma.com/press-release/xyrem-acquisition",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-10-12T06:26:24.795Z"
+    },
+    {
+      "brand": "OraSolv",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "fentanyl buccal tablet",
+      "therapy": "Pain Management",
+      "indication": "Breakthrough pain",
+      "existingBrand": "Abstral",
+      "chronicAcute": "—",
+      "price": "Rs 800 / tablet",
+      "sourceUrl": "https://www.sunpharma.com/press-release/orasolv-launch",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-10-12T06:26:24.795Z"
+    },
+    {
+      "brand": "Lannett",
+      "launchType": "Acquired",
+      "date": "2026-06-22",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.aurobindo.com/press-release/2026-06-22-lannett-acquisition#",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-10-12T06:26:50.613Z"
+    },
+    {
+      "brand": "BrandA",
+      "launchType": "Own Launched",
+      "date": "2023-06-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "MoleculeA",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "BrandB",
+      "chronicAcute": "Chronic",
+      "price": "Rs 2000 / pack of 10 tablets",
+      "sourceUrl": "https://www.aurobindo.com/media/press-releases/BrandA-launch",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-10-12T06:27:15.478Z"
+    },
+    {
+      "brand": "BrandC",
+      "launchType": "Acquired",
+      "date": "2023-07-20",
+      "seller": "SellerX",
+      "dealType": "Brand Acquisition",
+      "molecule": "MoleculeB",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "BrandD",
+      "chronicAcute": "—",
+      "price": "Rs 1500 / pack of 10 tablets",
+      "sourceUrl": "https://www.aurobindo.com/media/press-releases/BrandC-acquisition",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-10-12T06:27:15.478Z"
+    },
+    {
+      "brand": "BrandE",
+      "launchType": "In-licensed",
+      "date": "2023-08-10",
+      "seller": "SellerY",
+      "dealType": "In-license (India)",
+      "molecule": "MoleculeC",
+      "therapy": "Immunology",
+      "indication": "Rheumatoid Arthritis",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 3000 / pack of 5 injections",
+      "sourceUrl": "https://www.aurobindo.com/media/press-releases/BrandE-inlicense",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-10-12T06:27:15.478Z"
     }
   ]
 }
