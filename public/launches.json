@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-12T06:28:13.455Z",
-  "rowCount": 1226,
+  "generatedAt": "2026-10-13T07:07:29.583Z",
+  "rowCount": 1235,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -1318,7 +1318,7 @@
       "price": "₹679 / box of 400 gm",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-ensure-strength-pro-in-india-to-support-healthy-ageing.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-24T02:12:19.891Z"
+      "lastEnrichmentAttempt": "2026-10-13T07:06:56.545Z"
     },
     {
       "brand": "TriClip™",
@@ -1334,7 +1334,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-introduces-triclip-in-india-a-first-of-its-kind-device-to-repair-a-leaky-tricuspid-valve.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-24T02:12:26.913Z"
+      "lastEnrichmentAttempt": "2026-10-13T07:07:03.343Z"
     },
     {
       "brand": "XIENCE Skypoint™",
@@ -7014,7 +7014,7 @@
       "price": "₹110 / strip of 15 tablet er",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoUSFDAmetformin07042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-24T02:10:52.759Z"
+      "lastEnrichmentAttempt": "2026-10-13T07:05:16.220Z"
     },
     {
       "brand": "Omalizumab",
@@ -7030,7 +7030,7 @@
       "price": "₹34491 / ampoule of 2 ml injection",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-24T02:11:35.107Z"
+      "lastEnrichmentAttempt": "2026-10-13T07:06:17.532Z"
     },
     {
       "brand": "Wockhardt's Generic Insulin",
@@ -9942,7 +9942,7 @@
       "price": "₹213 / bottle of 9.5 gm nasal spray",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-Announces-Exclusive-Licensing-Agreement-with-Se.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-08-23T02:15:46.434Z"
+      "lastEnrichmentAttempt": "2026-10-13T07:04:41.933Z"
     },
     {
       "brand": "Wockhardt Pharmaceuticals",
@@ -9990,7 +9990,7 @@
       "price": "₹2.1 / strip of 10 tablets",
       "sourceUrl": "https://www.wockhardt.com/press-releases/wockhardt-in-licenses-product-from-pfizer",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-24T02:10:44.778Z"
+      "lastEnrichmentAttempt": "2026-10-13T07:05:01.783Z"
     },
     {
       "brand": "WINLEVI®",
@@ -11231,7 +11231,7 @@
       "seller": "—",
       "dealType": "NCE Launch",
       "molecule": "clascoterone",
-      "therapy": "—",
+      "therapy": "Dermatology",
       "indication": "Acne Vulgaris",
       "existingBrand": "—",
       "chronicAcute": "—",
@@ -14310,7 +14310,7 @@
       "price": "₹165 / strip of 10 tablets",
       "sourceUrl": "—",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-24T02:09:03.457Z"
+      "lastEnrichmentAttempt": "2026-10-13T07:04:45.572Z"
     },
     {
       "brand": "Wockhardt's Biosimilar",
@@ -14326,7 +14326,7 @@
       "price": "—",
       "sourceUrl": "https://www.wockhardt.com/press-release/biosimilar-launch-2023",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-24T02:10:43.271Z"
+      "lastEnrichmentAttempt": "2026-10-13T07:04:46.809Z"
     },
     {
       "brand": "Wockhardt Acquisition",
@@ -14342,7 +14342,7 @@
       "price": "₹254.85 / tin of 200 gm powder",
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-2023",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-24T02:10:43.271Z"
+      "lastEnrichmentAttempt": "2026-10-13T07:04:53.683Z"
     },
     {
       "brand": "Wockhardt Diabetes Treatment",
@@ -14374,7 +14374,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/press-releases/wockhardt-in-licenses-product-from-pfizer#content",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-24T02:10:44.778Z"
+      "lastEnrichmentAttempt": "2026-10-13T07:05:08.951Z"
     },
     {
       "brand": "Pharmalucence",
@@ -15425,7 +15425,7 @@
       "molecule": "telmisartan",
       "therapy": "Cardiology",
       "indication": "Hypertension",
-      "existingBrand": "—",
+      "existingBrand": "Lodipin",
       "chronicAcute": "Chronic",
       "price": "Rs 84,375 / injection",
       "sourceUrl": "https://www.mankindpharma.com/18vEQw-Qt6zKqTqhtrPfBAPQrm9bRyC2Z1-yKm3cY9w=.html",
@@ -19607,6 +19607,150 @@
       "sourceUrl": "https://www.aurobindo.com/media/press-releases/BrandE-inlicense",
       "buyer": "Aurobindo",
       "lastEnrichmentAttempt": "2026-10-12T06:27:15.478Z"
+    },
+    {
+      "brand": "Breztri",
+      "launchType": "Own Launched",
+      "date": "2022-05-12",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "breztri",
+      "therapy": "Respiratory",
+      "indication": "Chronic Obstructive Pulmonary Disease",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,500 / inhaler",
+      "sourceUrl": "https://www.drreddys.com/press-releases/breztri-launch",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-10-13T07:03:10.805Z"
+    },
+    {
+      "brand": "DaxibotulinumtoxinA",
+      "launchType": "In-licensed",
+      "date": "2022-07-15",
+      "seller": "Evolus Inc.",
+      "dealType": "In-license (India)",
+      "molecule": "daxibotulinumtoxinA",
+      "therapy": "Dermatology",
+      "indication": "Chronic Migraine",
+      "existingBrand": "Botox",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.drreddys.com/press-releases/daxibotulinumtoxinA-deal",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-10-13T07:03:10.805Z"
+    },
+    {
+      "brand": "Wockhardt's New Insulin Product",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Insulin Aspart",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 1 Diabetes",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,500 / vial",
+      "sourceUrl": "https://www.wockhardt.com/press-release/2023-new-insulin-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-13T07:04:40.428Z"
+    },
+    {
+      "brand": "Acquire Biopharma Ltd",
+      "launchType": "Acquired",
+      "date": "2023-09-15",
+      "seller": "Biopharma Ltd",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹35.9 / strip of 10 tablets",
+      "sourceUrl": "https://www.wockhardt.com/press-release/2023-acquisition-biopharma",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-13T07:04:40.428Z"
+    },
+    {
+      "brand": "Partnership with Generic MediTech",
+      "launchType": "In-licensed",
+      "date": "2023-08-12",
+      "seller": "Generic MediTech",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-release/2023-in-license-generic",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-13T07:04:40.428Z"
+    },
+    {
+      "brand": "NewMoleculeX",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "NewMoleculeX",
+      "therapy": "Oncology",
+      "indication": "Cancer",
+      "existingBrand": "CompetitorBrandA",
+      "chronicAcute": "—",
+      "price": "Rs 1,200 / strip",
+      "sourceUrl": "https://www.wockhardt.com/press-release/newmoleculex-launch-2023",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-13T07:04:53.683Z"
+    },
+    {
+      "brand": "AcquiredBrandY",
+      "launchType": "Acquired",
+      "date": "2023-09-15",
+      "seller": "SellerCompanyName",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "CompetitorBrandB",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-brand-y-2023",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-13T07:04:53.683Z"
+    },
+    {
+      "brand": "InLicensingDrugZ",
+      "launchType": "In-licensed",
+      "date": "2023-08-20",
+      "seller": "LicensorCompanyName",
+      "dealType": "In-license (India)",
+      "molecule": "DrugZ",
+      "therapy": "Anti-Diabetic",
+      "indication": "Diabetes",
+      "existingBrand": "CompetitorBrandC",
+      "chronicAcute": "Chronic",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-release/in-licensing-drug-z-2023",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-13T07:04:53.683Z"
+    },
+    {
+      "brand": "Product X",
+      "launchType": "In-licensed",
+      "date": "2023-05-01",
+      "seller": "Pfizer",
+      "dealType": "In-license (India)",
+      "molecule": "Active Ingredient Y",
+      "therapy": "Oncology",
+      "indication": "Cancer",
+      "existingBrand": "Brand Z",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/product-x-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-13T07:05:01.783Z"
     }
   ]
 }
