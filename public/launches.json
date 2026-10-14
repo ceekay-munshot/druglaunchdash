@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-13T07:07:29.583Z",
-  "rowCount": 1235,
+  "generatedAt": "2026-10-14T05:20:30.887Z",
+  "rowCount": 1243,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -4518,7 +4518,7 @@
       "price": "₹27.7 / vial of 1 injection",
       "sourceUrl": "https://www.cnbctv18.com/healthcare/alkem-oncology-novel-breast-cancer-treatment-drug-launch-palbociclib-palbo-15703241.htm",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-08-24T02:12:33.518Z"
+      "lastEnrichmentAttempt": "2026-10-14T05:18:07.181Z"
     },
     {
       "brand": "Navitor™",
@@ -4534,7 +4534,7 @@
       "price": "₹84.6 / tube of 10 gm",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-introduces-navitor-vision-in-india-the-next-generation-of-heart-valve-technology-designed-to-treat-aortic-stenosis.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-24T02:12:42.231Z"
+      "lastEnrichmentAttempt": "2026-10-14T05:18:14.784Z"
     },
     {
       "brand": "Navitor™",
@@ -4550,7 +4550,7 @@
       "price": "₹84.6 / tube of 10 gm cream",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-navitor-its-latest-generation-transcatheter-aortic-valve-implantation-tavi-system-to-treat-aortic-stenosis-in-india.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-24T02:12:49.799Z"
+      "lastEnrichmentAttempt": "2026-10-14T05:18:21.065Z"
     },
     {
       "brand": "Brufen® Power Spray",
@@ -4566,7 +4566,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbotts-new-brufen-power-spray-film-highlights-the-power-of-targeted-pain-relief.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-24T02:12:57.977Z"
+      "lastEnrichmentAttempt": "2026-10-14T05:18:29.074Z"
     },
     {
       "brand": "Panbio™ COVID-19 Antigen Self-Test",
@@ -4608,13 +4608,13 @@
       "dealType": "Device Launch",
       "molecule": "—",
       "therapy": "—",
-      "indication": "—",
+      "indication": "Diabetes",
       "existingBrand": "—",
       "chronicAcute": "—",
       "price": "₹4984 / box of 1 unit",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/first-flash-glucose-monitoring-system.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-25T02:06:58.279Z"
+      "lastEnrichmentAttempt": "2026-10-14T05:19:58.414Z"
     },
     {
       "brand": "Vazquez",
@@ -7078,7 +7078,7 @@
       "price": null,
       "sourceUrl": "https://www.youtube.com/watch?v=1Ov1zzgOpNU",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-25T02:06:30.786Z"
+      "lastEnrichmentAttempt": "2026-10-14T05:19:48.583Z"
     },
     {
       "brand": "Ranluspec™",
@@ -10054,7 +10054,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases-old/abbott-sugar-survey.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-25T02:07:07.146Z"
+      "lastEnrichmentAttempt": "2026-10-14T05:20:05.177Z"
     },
     {
       "brand": "Generic Drug Portfolio",
@@ -14390,7 +14390,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2020/12/Press-Release-Sun-Pharma-acquires-Pharmalucence-1.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-08-25T02:04:17.773Z"
+      "lastEnrichmentAttempt": "2026-10-14T05:18:35.863Z"
     },
     {
       "brand": "Lannett",
@@ -14406,7 +14406,7 @@
       "price": "null",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsLnnettPR22062026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-25T02:06:12.364Z"
+      "lastEnrichmentAttempt": "2026-10-14T05:18:40.055Z"
     },
     {
       "brand": "Wockhardt’s New Diabetes Drug",
@@ -14438,7 +14438,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-xyz-pharmaceuticals",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-25T02:06:29.279Z"
+      "lastEnrichmentAttempt": "2026-10-14T05:19:41.527Z"
     },
     {
       "brand": "In-licensing Agreement for New Oncology Drug",
@@ -19751,6 +19751,134 @@
       "sourceUrl": "https://www.wockhardt.com/press-releases/product-x-launch",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-10-13T07:05:01.783Z"
+    },
+    {
+      "brand": "Alkem's New Drug",
+      "launchType": "Own Launched",
+      "date": "2023-09-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "molecule_name",
+      "therapy": "therapy_type",
+      "indication": "specific_indication",
+      "existingBrand": "Competitor Brand",
+      "chronicAcute": "Chronic",
+      "price": "Rs 500 / tablet",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/new-drug-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-14T05:16:29.338Z"
+    },
+    {
+      "brand": "Acquisition of XYZ Pharma",
+      "launchType": "Acquired",
+      "date": "2023-08-15",
+      "seller": "XYZ Pharma",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.alkemlabs.com/press-release/acquisition-of-xyz-pharma",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-14T05:16:29.338Z"
+    },
+    {
+      "brand": "Dazopirl",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Dazopirl",
+      "therapy": "Cardiology",
+      "indication": "Heart Failure",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,500 / strip of 10 tablets",
+      "sourceUrl": "https://www.drreddys.com/press-releases/2023/09/15/dazopirl-launch",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-10-14T05:16:59.628Z"
+    },
+    {
+      "brand": "Difamilast Ointment",
+      "launchType": "Own Launched",
+      "date": "2026-02-16",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Difamilast",
+      "therapy": "Dermatology",
+      "indication": "Mild-to-Moderate Atopic Dermatitis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/Adquey-(Difamilast)_NDA%20Approval_PressRelease_13-Feb-26.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-10-14T05:17:57.606Z"
+    },
+    {
+      "brand": "In-licensing Agreement for Drug ABC",
+      "launchType": "In-licensed",
+      "date": "2023-07-10",
+      "seller": "ABC Pharmaceuticals",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Sugar-X",
+      "chronicAcute": "Chronic",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/pressrelease/in-licensing-agreement-drug-abc",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-14T05:18:05.674Z"
+    },
+    {
+      "brand": "Palbo",
+      "launchType": "Own Launched",
+      "date": "2023-01-19",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Palbociclib",
+      "therapy": "—",
+      "indication": "breast cancer",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 6,125 / 21 capsules",
+      "sourceUrl": "https://www.cnbctv18.com/healthcare/alkem-oncology-novel-breast-cancer-treatment-drug-launch-palbociclib-palbo-15703241.htm",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-14T05:18:07.181Z"
+    },
+    {
+      "brand": "Brufen Power",
+      "launchType": "Own Launched",
+      "date": "2021-03-23",
+      "seller": "—",
+      "dealType": "Line Extension",
+      "molecule": "diclofenac",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.youtube.com/watch?v=1Ov1zzgOpNU",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-10-14T05:18:29.074Z"
+    },
+    {
+      "brand": "XYZ Pharmaceuticals",
+      "launchType": "Acquired",
+      "date": "2023-10-02",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-xyz-pharmaceuticals",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-14T05:19:41.527Z"
     }
   ]
 }
