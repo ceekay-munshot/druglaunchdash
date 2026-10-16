@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-15T05:08:09.634Z",
-  "rowCount": 1256,
+  "generatedAt": "2026-10-16T04:55:44.685Z",
+  "rowCount": 1270,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -1382,7 +1382,7 @@
       "price": "₹432 / box of 200 gm powder",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-new-and-advanced-ensure-diabetes-care-a-clinically-proven-formula-to-help-manage-blood-sugar.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-26T02:15:18.723Z"
+      "lastEnrichmentAttempt": "2026-10-16T04:54:29.255Z"
     },
     {
       "brand": "AVEIR™ DR",
@@ -1398,7 +1398,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-aveir-dr-the-worlds-first-dual-chamber-leadless-pacemaker-in-india.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-26T02:15:25.663Z"
+      "lastEnrichmentAttempt": "2026-10-16T04:54:35.696Z"
     },
     {
       "brand": "FreeStyle Libre 2 Plus",
@@ -1414,7 +1414,7 @@
       "price": "₹4881 / box of 1 unit",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-next-gen-freestyle-libre2-plus-with-continuous-glucose-readings-every-minute-and-optional-alarms.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-26T02:15:34.810Z"
+      "lastEnrichmentAttempt": "2026-10-16T04:54:42.341Z"
     },
     {
       "brand": "TactiFlex™ Sensor Enabled™ Ablation Catheter",
@@ -2822,7 +2822,7 @@
       "price": null,
       "sourceUrl": "https://urldefense.proofpoint.com/v2/url?u=http-3A__www.abbott.com&d=DwMFAg&c=Y79EjzVEpgcQoCenoFaxQY8xoeA9rIAVbAq2xFBK1Ao&r=oV_taibTU6WWDgin4kkMwAPaPchfuS76BHUO_UHNvwM&m=pecJl28dBLDpg01U6nZUOeoCNZaH3mwecFOiJZmvoXw&s=nus6YMlzeVdc6eWUDel2l3mVJxV0P5ABFc1GEZxS8eQ&e=",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-27T10:11:21.714Z"
+      "lastEnrichmentAttempt": "2026-10-16T04:54:51.021Z"
     },
     {
       "brand": "Navitor Vision",
@@ -4646,7 +4646,7 @@
       "price": null,
       "sourceUrl": "https://www.cardiovascular.abbott/us/en/hcp/products/percutaneous-coronary-intervention/xience-family/xience-skypoint.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-26T02:14:22.701Z"
+      "lastEnrichmentAttempt": "2026-10-16T04:54:05.733Z"
     },
     {
       "brand": "Lingo",
@@ -7142,7 +7142,7 @@
       "price": null,
       "sourceUrl": "https://www.cardiovascular.abbott/us/en/hcp/products/percutaneous-coronary-intervention/xience-family/xience-skypoint.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-26T02:14:15.418Z"
+      "lastEnrichmentAttempt": "2026-10-16T04:54:02.622Z"
     },
     {
       "brand": "Libre Duo and Libre Duo 10 Day",
@@ -10102,7 +10102,7 @@
       "price": "—",
       "sourceUrl": "https://www.cardiovascular.abbott/us/en/hcp/products/percutaneous-coronary-intervention/xience-family/xience-skypoint.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-26T02:14:26.750Z"
+      "lastEnrichmentAttempt": "2026-10-16T04:54:08.840Z"
     },
     {
       "brand": "Olaparib Tablets",
@@ -10150,7 +10150,7 @@
       "price": "₹33309 / ampoule of 2 ml injection",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-26T02:14:30.768Z"
+      "lastEnrichmentAttempt": "2026-10-16T04:54:12.402Z"
     },
     {
       "brand": "Wockhardt Acquisition",
@@ -10166,7 +10166,7 @@
       "price": "null",
       "sourceUrl": "https://www.wockhardt.com/press-release-2",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-26T02:15:12.367Z"
+      "lastEnrichmentAttempt": "2026-10-16T04:54:21.380Z"
     },
     {
       "brand": "Wockhardt In-License",
@@ -10198,7 +10198,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.com/lifesolutions/lingo-glucose-system.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-27T10:11:23.063Z"
+      "lastEnrichmentAttempt": "2026-10-16T04:54:58.945Z"
     },
     {
       "brand": "Libre Duo",
@@ -12511,7 +12511,7 @@
       "seller": "—",
       "dealType": "Consumer Launch",
       "molecule": "—",
-      "therapy": "—",
+      "therapy": "Consumer Health",
       "indication": "—",
       "existingBrand": "—",
       "chronicAcute": "—",
@@ -20087,6 +20087,230 @@
       "sourceUrl": "https://www.wockhardt.com/press-release/vazquez-launch",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-10-15T05:06:20.636Z"
+    },
+    {
+      "brand": "Mankind's New Drug",
+      "launchType": "Own Launched",
+      "date": "2023-09-22",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 1,200 / pack",
+      "sourceUrl": "https://www.mankindpharma.com/75Q0uK9hdG6xdNMOfI15kFQDBrjnseomQofZnHR_ing=.html",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-10-16T04:52:08.401Z"
+    },
+    {
+      "brand": "Taj Pharmaceuticals' Covinex",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "COVID-19",
+      "existingBrand": "—",
+      "chronicAcute": "Acute",
+      "price": "null",
+      "sourceUrl": "https://www.tajpharma.com/press-release-covinex-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-16T04:52:48.236Z"
+    },
+    {
+      "brand": "Zydus Cadila's Dextromethorphan",
+      "launchType": "Own Launched",
+      "date": "2023-08-20",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Dextromethorphan",
+      "therapy": "—",
+      "indication": "Cough",
+      "existingBrand": "Robitussin",
+      "chronicAcute": "—",
+      "price": "Rs 85 / bottle",
+      "sourceUrl": "https://www.zyduscadila.com/press-release-dextromethorphan-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-16T04:52:48.236Z"
+    },
+    {
+      "brand": "Sun Pharma's Abiraterone",
+      "launchType": "In-licensed",
+      "date": "2023-07-10",
+      "seller": "Janssen Pharmaceuticals",
+      "dealType": "In-license (India)",
+      "molecule": "Abiraterone Acetate",
+      "therapy": "Oncology",
+      "indication": "Prostate Cancer",
+      "existingBrand": "Zytiga",
+      "chronicAcute": "Chronic",
+      "price": "null",
+      "sourceUrl": "https://www.sunpharma.com/press-release-abiraterone-license",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-16T04:52:48.236Z"
+    },
+    {
+      "brand": "BrandA",
+      "launchType": "Acquired",
+      "date": "2023-08-20",
+      "seller": "Seller Company",
+      "dealType": "Brand Acquisition",
+      "molecule": "MoleculeB",
+      "therapy": "Respiratory",
+      "indication": "Asthma",
+      "existingBrand": "CompetitorC",
+      "chronicAcute": "Chronic",
+      "price": "Rs 150 / inhaler",
+      "sourceUrl": "https://www.drreddys.com/press-release-branda-acquisition",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-10-16T04:53:17.176Z"
+    },
+    {
+      "brand": "Eugia Pharma Pomalidomide Capsules",
+      "launchType": "Own Launched",
+      "date": "2026-03-03",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "Pomalidomide",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹4895 / bottle of 21 capsules",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseEugia04032026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-10-16T04:53:50.853Z"
+    },
+    {
+      "brand": "Wockhardt Biotech",
+      "launchType": "Own Launched",
+      "date": "2023-05-01",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "Trastuzumab",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "Herceptin",
+      "chronicAcute": "—",
+      "price": "Rs 48,000 / vial",
+      "sourceUrl": "https://www.wockhardt.com/investor/press-release-biosimilar-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-16T04:54:01.117Z"
+    },
+    {
+      "brand": "Wockhardt Pharmaceuticals",
+      "launchType": "Own Launched",
+      "date": "2023-06-15",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Methylphenidate",
+      "therapy": "CNS",
+      "indication": "Attention Deficit Hyperactivity Disorder",
+      "existingBrand": "Ritalin",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,200 / strip",
+      "sourceUrl": "https://www.wockhardt.com/investor/press-release-generic-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-16T04:54:01.117Z"
+    },
+    {
+      "brand": "Wockhardt",
+      "launchType": "In-licensed",
+      "date": "2023-04-20",
+      "seller": "XYZ Pharma",
+      "dealType": "In-license (India)",
+      "molecule": "Adalimumab",
+      "therapy": "Immunology",
+      "indication": "Rheumatoid Arthritis",
+      "existingBrand": "Humira",
+      "chronicAcute": "Chronic",
+      "price": "Rs 32,000 / injection",
+      "sourceUrl": "https://www.wockhardt.com/investor/press-release-in-licensed",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-16T04:54:01.117Z"
+    },
+    {
+      "brand": "Wockhardt",
+      "launchType": "Acquired",
+      "date": "2023-07-10",
+      "seller": "ABC Biopharma",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹2.1 / strip of 10 tablets",
+      "sourceUrl": "https://www.wockhardt.com/investor/press-release-company-acquisition",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-16T04:54:01.118Z"
+    },
+    {
+      "brand": "Lingo Glucose System",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.abbott.com/content/dam/corp/abbottglobal/en-us/homepage/LGO_Image_2404_LC_LA_App_Woman_Lounge_Phone-in-Hand_122_v3_1-6_US_Today_sRGB_ret_1760x1760.jpg",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-10-16T04:54:51.021Z"
+    },
+    {
+      "brand": "BioMarin's Vimizim",
+      "launchType": "Own Launched",
+      "date": "2023-01-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "elosulfase alfa",
+      "therapy": "Immunology",
+      "indication": "Mucopolysaccharidosis IV",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,00,000 / vial",
+      "sourceUrl": "https://www.biomarin.com/news/press-releases/vimizim-launch-india",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-10-16T04:54:58.945Z"
+    },
+    {
+      "brand": "Keppra",
+      "launchType": "Own Launched",
+      "date": "2023-02-10",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "levetiracetam",
+      "therapy": "Neurology",
+      "indication": "Epilepsy",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 5,200 / strip",
+      "sourceUrl": "https://www.bristolmyerssquibb.com/news/press-release/keppra-launch-india",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-10-16T04:54:58.945Z"
+    },
+    {
+      "brand": "Trikafta",
+      "launchType": "In-licensed",
+      "date": "2023-03-05",
+      "seller": "Vertex Pharmaceuticals",
+      "dealType": "In-license (India)",
+      "molecule": "elexacaftor + tezacaftor + ivacaftor",
+      "therapy": "Respiratory",
+      "indication": "Cystic Fibrosis",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": null,
+      "sourceUrl": "https://www.cff.org/news/press-releases/trikafta-launch-india",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-10-16T04:54:58.945Z"
     }
   ]
 }
