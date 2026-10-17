@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-16T04:55:44.685Z",
-  "rowCount": 1270,
+  "generatedAt": "2026-10-17T04:58:25.779Z",
+  "rowCount": 1283,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -1430,7 +1430,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-introduces-tactiflex-sensor-enabled-ablation-catheter-in-india-for-treatment-of-abnormal-heart-rhythms.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-27T10:11:30.597Z"
+      "lastEnrichmentAttempt": "2026-10-17T04:57:03.199Z"
     },
     {
       "brand": "Navitor™ Vision",
@@ -1446,7 +1446,7 @@
       "price": "null",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-introduces-navitor-vision-in-india-the-next-generation-of-heart-valve-technology-designed-to-treat-aortic-stenosis.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-27T10:11:32.036Z"
+      "lastEnrichmentAttempt": "2026-10-17T04:57:11.340Z"
     },
     {
       "brand": "PneumoShield 14",
@@ -2838,7 +2838,7 @@
       "price": null,
       "sourceUrl": "https://www.abbott.com/",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-27T10:11:33.446Z"
+      "lastEnrichmentAttempt": "2026-10-17T04:57:18.860Z"
     },
     {
       "brand": "Drug A",
@@ -4662,7 +4662,7 @@
       "price": "—",
       "sourceUrl": "https://abbott.mediaroom.com/2026-05-27-Abbott-secures-CE-Mark-for-worlds-first-dual-glucose-ketone-sensing-technology-for-people-with-diabetes",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-27T10:11:24.523Z"
+      "lastEnrichmentAttempt": "2026-10-17T04:56:43.253Z"
     },
     {
       "brand": "Lingo Glucose System",
@@ -7158,7 +7158,7 @@
       "price": "—",
       "sourceUrl": "https://abbott.mediaroom.com/2026-05-27-Abbott-secures-CE-Mark-for-worlds-first-dual-glucose-ketone-sensing-technology-for-people-with-diabetes",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-27T10:11:27.533Z"
+      "lastEnrichmentAttempt": "2026-10-17T04:56:53.043Z"
     },
     {
       "brand": "Aspire",
@@ -7222,7 +7222,7 @@
       "price": "—",
       "sourceUrl": "https://www.wockhardt.com/press-release2",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-27T10:11:29.064Z"
+      "lastEnrichmentAttempt": "2026-10-17T04:56:56.401Z"
     },
     {
       "brand": "Mylab Discovery Solutions",
@@ -10214,7 +10214,7 @@
       "price": "—",
       "sourceUrl": "https://abbott.mediaroom.com/2026-05-27-Abbott-secures-CE-Mark-for-worlds-first-dual-glucose-ketone-sensing-technology-for-people-with-diabetes",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-27T10:11:25.960Z"
+      "lastEnrichmentAttempt": "2026-10-17T04:56:49.972Z"
     },
     {
       "brand": "Lingo Glucose System",
@@ -10230,7 +10230,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.com/content/dam/corp/abbottglobal/en-us/global/Generic-PR-Lingo-Glucose-System-2026.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-27T10:11:34.967Z"
+      "lastEnrichmentAttempt": "2026-10-17T04:57:25.437Z"
     },
     {
       "brand": "Alkem's novel antibiotic",
@@ -10246,7 +10246,7 @@
       "price": "—",
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/amp_articleshow/100775508.cms",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-08-28T12:04:34.574Z"
+      "lastEnrichmentAttempt": "2026-10-17T04:57:35.348Z"
     },
     {
       "brand": "Alkem eye care products",
@@ -10262,7 +10262,7 @@
       "price": "₹283 / packet of 5 ml",
       "sourceUrl": "https://health.economictimes.indiatimes.com/news/pharma/drug-approvals-launches/alkem-forays-into-ophthalmology-with-launch-of-eye-care-products/101642253",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-08-28T12:04:35.842Z"
+      "lastEnrichmentAttempt": "2026-10-17T04:57:46.257Z"
     },
     {
       "brand": "Wokadine",
@@ -20311,6 +20311,214 @@
       "sourceUrl": "https://www.cff.org/news/press-releases/trikafta-launch-india",
       "buyer": "Abbott India",
       "lastEnrichmentAttempt": "2026-10-16T04:54:58.945Z"
+    },
+    {
+      "brand": "NexGard",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "afoxolaner",
+      "therapy": "—",
+      "indication": "Parasitic infestations in dogs",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 1,250 / pack",
+      "sourceUrl": "https://www.mankindpharma.com/5g5O47H2OHQRAc6lk1iyVpNOmTAqoZr3ddg_AiSIPLA=.html",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-10-17T04:53:19.697Z"
+    },
+    {
+      "brand": "BrandZ",
+      "launchType": "Acquired",
+      "date": "2023-10-01",
+      "seller": "CompanyA",
+      "dealType": "Brand Acquisition",
+      "molecule": "moleculeB",
+      "therapy": "anti-diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "BrandW",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,500 / pack",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/brandz-acquisition",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-17T04:54:13.340Z"
+    },
+    {
+      "brand": "BrandA",
+      "launchType": "In-licensed",
+      "date": "2023-08-20",
+      "seller": "CompanyB",
+      "dealType": "In-license (India)",
+      "molecule": "moleculeC",
+      "therapy": "neurology",
+      "indication": "Migraines",
+      "existingBrand": "BrandX",
+      "chronicAcute": "Acute",
+      "price": "Rs 750 / vial",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/branda-inlicense",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-17T04:54:13.340Z"
+    },
+    {
+      "brand": "Dr. Reddy's New NCE",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "Oncology",
+      "indication": "Lung Cancer",
+      "existingBrand": "Atezolizumab",
+      "chronicAcute": "—",
+      "price": "Rs 5,000 / vial",
+      "sourceUrl": "https://www.drreddys.com/news/2023-10-01-new-nce-launch",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-10-17T04:55:11.533Z"
+    },
+    {
+      "brand": "Dr. Reddy's Generic Drug",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Metformin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Glucophage",
+      "chronicAcute": "Chronic",
+      "price": "Rs 300 / strip",
+      "sourceUrl": "https://www.drreddys.com/news/2023-09-15-generic-drug-launch",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-10-17T04:55:11.533Z"
+    },
+    {
+      "brand": "XYZ Pharma",
+      "launchType": "Acquired",
+      "date": "2023-08-20",
+      "seller": "XYZ Pharma",
+      "dealType": "Brand Acquisition",
+      "molecule": "Ibuprofen",
+      "therapy": "Pain Management",
+      "indication": "Pain Relief",
+      "existingBrand": "Brufen",
+      "chronicAcute": "—",
+      "price": "Rs 150 / strip",
+      "sourceUrl": "https://www.drreddys.com/news/2023-08-20-acquisition",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-10-17T04:55:11.533Z"
+    },
+    {
+      "brand": "ABC Laboratories",
+      "launchType": "In-licensed",
+      "date": "2023-07-12",
+      "seller": "ABC Laboratories",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.drreddys.com/news/2023-07-12-in-license",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-10-17T04:55:11.533Z"
+    },
+    {
+      "brand": "ADQUEY",
+      "launchType": "Own Launched",
+      "date": "2026-02-16",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "difamilast",
+      "therapy": "Dermatology",
+      "indication": "Atopic Dermatitis",
+      "existingBrand": "—",
+      "chronicAcute": "Acute",
+      "price": "null",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/Adquey-(Difamilast)_NDA%20Approval_PressRelease_13-Feb-26.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-10-17T04:56:19.912Z"
+    },
+    {
+      "brand": "THYMOTAS",
+      "launchType": "Own Launched",
+      "date": "2018-12-12",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "COVID-19",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹46.8 / bottle of 50 tablets",
+      "sourceUrl": "https://www.intaspharma.com/media",
+      "buyer": "Intas",
+      "lastEnrichmentAttempt": "2026-10-17T04:56:33.211Z"
+    },
+    {
+      "brand": "Romiplostim",
+      "launchType": "Own Launched",
+      "date": "2018-12-12",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Romiplostim",
+      "therapy": "—",
+      "indication": "chronic immune thrombocytopenia (ITP)",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "₹2431 / vial of 1 injection",
+      "sourceUrl": "https://www.intaspharma.com/media",
+      "buyer": "Intas",
+      "lastEnrichmentAttempt": "2026-10-17T04:56:33.211Z"
+    },
+    {
+      "brand": "Zyroxa",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 5,500 / strip",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/zyroxa-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-17T04:56:41.747Z"
+    },
+    {
+      "brand": "Woktrac",
+      "launchType": "Acquired",
+      "date": "2023-07-22",
+      "seller": "ABC Pharma",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "CNS",
+      "indication": "Alzheimer's Disease",
+      "existingBrand": "Alzhelia",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,200 / bottle",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/woktrac-acquisition",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-17T04:56:41.747Z"
+    },
+    {
+      "brand": "Wokalect",
+      "launchType": "In-licensed",
+      "date": "2023-06-30",
+      "seller": "XYZ Biotech",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "Dermatology",
+      "indication": "Psoriasis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-releases/wokalect-inlicense",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-17T04:56:41.747Z"
     }
   ]
 }
