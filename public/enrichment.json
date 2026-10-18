@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-17T06:00:44.438Z",
-  "rowCount": 235,
+  "generatedAt": "2026-10-18T06:26:55.742Z",
+  "rowCount": 238,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -4196,6 +4196,63 @@
       "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 15 Oct - Board approved up to EUR 45Mn additional investment and 70% acquisition of ACTx for EUR 48Mn on Oct. 15, 2026.",
       "_provider": "gemini",
       "_harvestedAt": "2026-10-17T05:59:54.401Z"
+    },
+    {
+      "brand": "THYMOTAS",
+      "launchType": "Own Launched",
+      "date": "2018-12-12",
+      "seller": "—",
+      "dealType": "Launch",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "Tofacitinib Topical",
+      "therapy": "Auto-Immune Condition",
+      "indication": "Atopic Dermatitis (AD)",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "buyer": "Intas",
+      "sourceUrl": "https://www.intaspharma.com/media",
+      "_title": "backfill:THYMOTAS",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-10-18T06:25:41.578Z"
+    },
+    {
+      "brand": "Amplatzer Piccolo™ Occluder",
+      "launchType": "Own Launched",
+      "date": "2021-06-15",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "—",
+      "therapy": "Cardiovascular",
+      "indication": "Patent Ductus Arteriosus (PDA) in premature babies and newborns",
+      "existingBrand": "—",
+      "chronicAcute": "Acute",
+      "buyer": "Abbott India",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-new-device-in-india-for-treatment-of-premature-babies-and-newborns-with-a-life-threatening-opening-in-their-hearts.html",
+      "_title": "backfill:Amplatzer Piccolo™ Occluder",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-10-18T06:26:03.515Z"
+    },
+    {
+      "brand": "COVID-19 Hyperimmune Globulin",
+      "launchType": "Own Launched",
+      "date": "2018-12-12",
+      "seller": "—",
+      "dealType": "Launch",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "Tofacitinib Topical",
+      "therapy": "Auto-Immune",
+      "indication": "Atopic Dermatitis (AD)",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "buyer": "Intas",
+      "sourceUrl": "https://www.intaspharma.com/media",
+      "_title": "backfill:COVID-19 Hyperimmune Globulin",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-10-18T06:26:31.361Z"
     }
   ],
   "processedUrls": [
@@ -4673,6 +4730,17 @@
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=4dfa185f-13b8-4260-a9e9-7312254f0792.pdf",
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=c29e824c-afe5-4cdf-8338-67a73efd2dde.pdf",
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=8af9eb50-a69f-4a2a-a28d-8cb6d33cd3c1.pdf",
-    "https://www.drreddys.com/news/2023-07-12-in-license"
+    "https://www.drreddys.com/news/2023-07-12-in-license",
+    "https://www.mankindpharma.com/5g5O47H2OHQRAc6lk1iyVpNOmTAqoZr3ddg_AiSIPLA=.html",
+    "https://www.intaspharma.com/media",
+    "https://www.wockhardt.com/press-releases/zyroxa-launch",
+    "https://www.wockhardt.com/press-releases/wokalect-inlicense",
+    "https://www.alkemlabs.com/press-release/xyz-pharma-acquisition",
+    "https://www.abbott.in/media-center/press-releases/abbott-launches-new-device-in-india-for-treatment-of-premature-babies-and-newborns-with-a-life-threatening-opening-in-their-hearts.html",
+    "https://www.abbott.in/media-center/press-releases/new-study-results-may-lead-to-a-new-standard-of-care-for-in-vitro-fertilization-treatment.html",
+    "https://www.wockhardt.com/news/wockhardt-oncology-drug-launch",
+    "https://www.wockhardt.com/press-release-1/biosimilar-launch-2023",
+    "https://www.wockhardt.com/press-release-1/acquisition-pharma-xyz",
+    "https://www.wockhardt.com/press-release/acquisition-xyz-pharmaceuticals-2023#content"
   ]
 }
