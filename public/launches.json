@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-18T05:06:24.396Z",
-  "rowCount": 1303,
+  "generatedAt": "2026-10-19T05:13:53.943Z",
+  "rowCount": 1322,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -2950,7 +2950,7 @@
       "price": "null",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-29T07:21:09.344Z"
+      "lastEnrichmentAttempt": "2026-10-19T05:12:10.945Z"
     },
     {
       "brand": "Ryaltris",
@@ -2982,7 +2982,7 @@
       "price": null,
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-Announces-Decision-to-Launch-Phase-1.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-08-29T07:21:17.541Z"
+      "lastEnrichmentAttempt": "2026-10-19T05:12:20.824Z"
     },
     {
       "brand": "ADQUEY™ difamilast 1%",
@@ -5184,8 +5184,8 @@
       "dealType": "NCE Launch",
       "molecule": "ranibizumab",
       "therapy": "—",
-      "indication": "—",
-      "existingBrand": "—",
+      "indication": "neovascular (wet) age-related macular degeneration, macular edema following retinal vein occlusion, diabetic macular edema, diabetic retinopathy, and myopic choroidal neovascularization",
+      "existingBrand": "Lucentis",
       "chronicAcute": "—",
       "price": null,
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-approval-from-u-s-fda-for-ranluspec-tm-ranibizumab-injection",
@@ -7238,7 +7238,7 @@
       "price": "₹51.56 / packet of 1 self test kit",
       "sourceUrl": "https://www.mankindpharma.com/products/mylab-discovery",
       "buyer": "Mankind Pharma",
-      "lastEnrichmentAttempt": "2026-08-29T07:21:22.422Z"
+      "lastEnrichmentAttempt": "2026-10-19T05:12:24.477Z"
     },
     {
       "brand": "world’s 1st biosimilar for Cetuximab",
@@ -7254,7 +7254,7 @@
       "price": "₹60.5 / vial of 1 ml injection",
       "sourceUrl": "https://www.cnbctv18.com/healthcare/alkem-oncology-novel-breast-cancer-treatment-drug-launch-palbociclib-palbo-15703241.htm",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-08-29T07:21:30.171Z"
+      "lastEnrichmentAttempt": "2026-10-19T05:12:34.205Z"
     },
     {
       "brand": "Enzalutamide Tablets",
@@ -7286,7 +7286,7 @@
       "price": "—",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-approval-from-u-s-fda-for-ranluspec-tm-ranibizumab-injection",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-08-29T07:21:39.565Z"
+      "lastEnrichmentAttempt": "2026-10-19T05:12:43.545Z"
     },
     {
       "brand": "PediaSure® with Nutri-Pull System",
@@ -10342,7 +10342,7 @@
       "price": "₹41 / bottle of 10 ml dilution",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/07/PRforOrganonShareholderapproval.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-08-29T07:21:49.245Z"
+      "lastEnrichmentAttempt": "2026-10-19T05:12:52.804Z"
     },
     {
       "brand": "FluGuard®",
@@ -10358,7 +10358,7 @@
       "price": "Rs 35 / tablet",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2020/12/Press-Release-Sun-Pharma-launches-FluGuard-Favipiravir-at-Rs.-35-per-tablet.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-08-29T07:21:53.781Z"
+      "lastEnrichmentAttempt": "2026-10-19T05:12:58.951Z"
     },
     {
       "brand": "Nuvigil",
@@ -10390,7 +10390,7 @@
       "price": "Rs 2,200 / device",
       "sourceUrl": "https://www.companyxyz.com/press-release-hyperdilute",
       "buyer": "Zydus Lifesciences",
-      "lastEnrichmentAttempt": "2026-08-29T07:22:02.341Z"
+      "lastEnrichmentAttempt": "2026-10-19T05:13:02.833Z"
     },
     {
       "brand": "AstraZeneca Acquisition",
@@ -10406,7 +10406,7 @@
       "price": "—",
       "sourceUrl": "https://www.companyxyz.com/press-release-astrazeneca",
       "buyer": "Zydus Lifesciences",
-      "lastEnrichmentAttempt": "2026-08-29T07:22:08.821Z"
+      "lastEnrichmentAttempt": "2026-10-19T05:13:09.283Z"
     },
     {
       "brand": "Wockhardt",
@@ -14582,7 +14582,7 @@
       "price": "₹157 / strip of 10 tablets",
       "sourceUrl": "https://www.wockhardt.com/press-releases/xyz-pharma-acquisition",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-29T07:21:07.837Z"
+      "lastEnrichmentAttempt": "2026-10-19T05:12:02.112Z"
     },
     {
       "brand": "FluGuard",
@@ -20839,6 +20839,310 @@
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-xyz-pharmaceuticals-2023#content",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-10-18T05:04:55.320Z"
+    },
+    {
+      "brand": "Phenobarbital Sodium Powder",
+      "launchType": "In-licensed",
+      "date": "2022-11-09",
+      "seller": "SPARC",
+      "dealType": "In-license (India)",
+      "molecule": "Phenobarbital",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2022/11/Sun-Pharma-and-SPARC-enter-into-a-license-agreement-for-commercialization-of-phenobarbital-in-the-US.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-10-19T05:09:15.603Z"
+    },
+    {
+      "brand": "NewDrugXYZ",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "MoleculeA",
+      "therapy": "Oncology",
+      "indication": "Lung Cancer",
+      "existingBrand": "ExistingBrandA",
+      "chronicAcute": "Acute",
+      "price": "Rs 2,500 / strip",
+      "sourceUrl": "https://www.companyabc.com/press-release/newdrugxyz-launch",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-10-19T05:09:25.477Z"
+    },
+    {
+      "brand": "BrandAcquisitionABC",
+      "launchType": "Acquired",
+      "date": "2023-08-20",
+      "seller": "CompanyXYZ",
+      "dealType": "Brand Acquisition",
+      "molecule": "MoleculeB",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "ExistingBrandB",
+      "chronicAcute": "—",
+      "price": "Rs 1,200 / pack",
+      "sourceUrl": "https://www.companyabc.com/press-release/brandacquisitionabc",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-10-19T05:09:25.477Z"
+    },
+    {
+      "brand": "InLicenseDrugDEF",
+      "launchType": "In-licensed",
+      "date": "2023-07-10",
+      "seller": "CompanyLMN",
+      "dealType": "In-license (India)",
+      "molecule": "MoleculeC",
+      "therapy": "Respiratory",
+      "indication": "Asthma",
+      "existingBrand": "ExistingBrandC",
+      "chronicAcute": "Chronic",
+      "price": "Rs 800 / inhaler",
+      "sourceUrl": "https://www.companyabc.com/press-release/inlicensedrugdef",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-10-19T05:09:25.477Z"
+    },
+    {
+      "brand": "Alkem Labs Product",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Molecule Name",
+      "therapy": "Oncology",
+      "indication": "Cancer Type",
+      "existingBrand": "Competitor Brand",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,500 / strip",
+      "sourceUrl": "https://www.alkemlabs.com/press-releases/alkem_labs_product_launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-19T05:09:36.502Z"
+    },
+    {
+      "brand": "Alkem Acquisition",
+      "launchType": "Acquired",
+      "date": "2023-09-15",
+      "seller": "Previous Company Owner",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Competitor Brand",
+      "chronicAcute": "—",
+      "price": "₹6.1 / vial of 1 injection",
+      "sourceUrl": "https://www.alkemlabs.com/press-releases/alkem_acquisition",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-19T05:09:36.502Z"
+    },
+    {
+      "brand": "Alkem In-License Product",
+      "launchType": "In-licensed",
+      "date": "2023-08-20",
+      "seller": "Partner Company",
+      "dealType": "In-license (India)",
+      "molecule": "Active Ingredient",
+      "therapy": "Gastroenterology",
+      "indication": "Digestive Disorder",
+      "existingBrand": "Competitor Brand",
+      "chronicAcute": "—",
+      "price": "₹6.1 / vial of 1 injection",
+      "sourceUrl": "https://www.alkemlabs.com/press-releases/alkem_in_license_product",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-19T05:09:36.502Z"
+    },
+    {
+      "brand": "Lantus",
+      "launchType": "Acquired",
+      "date": "2023-08-01",
+      "seller": "Sanofi",
+      "dealType": "Brand Acquisition",
+      "molecule": "insulin glargine",
+      "therapy": "Endocrinology",
+      "indication": "Diabetes",
+      "existingBrand": "NovoRapid",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,950 / vial",
+      "sourceUrl": "https://www.sanofi.com/en/press-releases/lantus-launch",
+      "buyer": "Torrent Pharma",
+      "lastEnrichmentAttempt": "2026-10-19T05:10:06.727Z"
+    },
+    {
+      "brand": "Onbrez Breezhaler",
+      "launchType": "In-licensed",
+      "date": "2023-06-15",
+      "seller": "Novartis",
+      "dealType": "In-license (India)",
+      "molecule": "indacaterol",
+      "therapy": "Respiratory",
+      "indication": "Chronic Obstructive Pulmonary Disease",
+      "existingBrand": "Breztri",
+      "chronicAcute": "Chronic",
+      "price": "Rs 2,800 / inhaler",
+      "sourceUrl": "https://www.novartis.com/news/onbrez-breezhaler-launch",
+      "buyer": "Torrent Pharma",
+      "lastEnrichmentAttempt": "2026-10-19T05:10:06.727Z"
+    },
+    {
+      "brand": "Faslodex",
+      "launchType": "Acquired",
+      "date": "2023-03-10",
+      "seller": "AstraZeneca",
+      "dealType": "Brand Acquisition",
+      "molecule": "fulvestrant",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 9,500 / injection",
+      "sourceUrl": "https://www.astrazeneca.com/press-releases/faslodex-launch",
+      "buyer": "Torrent Pharma",
+      "lastEnrichmentAttempt": "2026-10-19T05:10:06.727Z"
+    },
+    {
+      "brand": "ADQUEY™ difamilast 1% Ointment",
+      "launchType": "Own Launched",
+      "date": "2026-02-16",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "difamilast",
+      "therapy": "Dermatology",
+      "indication": "Mild-to-Moderate Atopic Dermatitis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/Adquey-(Difamilast)_NDA%20Approval_PressRelease_13-Feb-26.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-10-19T05:11:40.577Z"
+    },
+    {
+      "brand": "Wockhardt's New Vaccine",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "Immunology",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 2,500 / vial",
+      "sourceUrl": "https://www.wockhardt.com/press-release/2023-new-vaccine-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-19T05:12:00.606Z"
+    },
+    {
+      "brand": "Wockhardt Acquires Generic Line",
+      "launchType": "Acquired",
+      "date": "2023-08-30",
+      "seller": "Generic Pharma Ltd",
+      "dealType": "Brand Acquisition",
+      "molecule": "Metformin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Glycophage",
+      "chronicAcute": "Chronic",
+      "price": "Rs 150 / strip",
+      "sourceUrl": "https://www.wockhardt.com/press-release/2023-acquisition-generic-line",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-19T05:12:00.606Z"
+    },
+    {
+      "brand": "Wockhardt Biotech",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "WCK 431",
+      "therapy": "Oncology",
+      "indication": "Lung Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 2,500 / vial",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/wockhardt-biotech-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-19T05:12:02.112Z"
+    },
+    {
+      "brand": "Exemptia",
+      "launchType": "Own Launched",
+      "date": "2023-08-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Etanercept",
+      "therapy": "Immunology",
+      "indication": "Rheumatoid Arthritis",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 8,250 / injection",
+      "sourceUrl": "https://www.mankindpharma.com/press-releases/exemptia-launch",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-10-19T05:12:24.477Z"
+    },
+    {
+      "brand": "MediHeal",
+      "launchType": "Own Launched",
+      "date": "2023-09-10",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 1,000 / kit",
+      "sourceUrl": "https://www.mankindpharma.com/press-releases/mediheal-launch",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-10-19T05:12:24.477Z"
+    },
+    {
+      "brand": "Cretomax",
+      "launchType": "Acquired",
+      "date": "2023-07-20",
+      "seller": "XYZ Pharmaceuticals",
+      "dealType": "Brand Acquisition",
+      "molecule": "Metformin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Glycomet",
+      "chronicAcute": "Chronic",
+      "price": "Rs 540 / strip",
+      "sourceUrl": "https://www.mankindpharma.com/press-releases/cretomax-acquisition",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-10-19T05:12:24.477Z"
+    },
+    {
+      "brand": "BrandB",
+      "launchType": "Acquired",
+      "date": "2023-09-15",
+      "seller": "CompanyZ",
+      "dealType": "Brand Acquisition",
+      "molecule": "MoleculeY",
+      "therapy": "Cardiology",
+      "indication": "Hypertension",
+      "existingBrand": "BrandC",
+      "chronicAcute": "Chronic",
+      "price": null,
+      "sourceUrl": "https://www.companyxyz.com/news/brandB-acquisition",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-10-19T05:13:09.283Z"
+    },
+    {
+      "brand": "BrandC",
+      "launchType": "In-licensed",
+      "date": "2023-08-20",
+      "seller": "CompanyD",
+      "dealType": "In-license (India)",
+      "molecule": "MoleculeZ",
+      "therapy": "Immunology",
+      "indication": "Rheumatoid Arthritis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 5,000 / strip",
+      "sourceUrl": "https://www.companyxyz.com/news/brandC-inlicense",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-10-19T05:13:09.283Z"
     }
   ]
 }
