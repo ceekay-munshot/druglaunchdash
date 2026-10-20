@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-19T06:37:44.531Z",
-  "rowCount": 238,
+  "generatedAt": "2026-10-20T06:23:43.955Z",
+  "rowCount": 239,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -4253,6 +4253,25 @@
       "_title": "backfill:COVID-19 Hyperimmune Globulin",
       "_provider": "gemini",
       "_harvestedAt": "2026-10-18T06:26:31.361Z"
+    },
+    {
+      "brand": "Carboplatin Injection",
+      "launchType": "Own Launched",
+      "date": "2026-10-19",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Carboplatin",
+      "therapy": "Oncology",
+      "indication": "advanced ovarian carcinoma, including first-line combination therapy and palliative treatment of recurrent disease after prior chemotherapy",
+      "price": "—",
+      "dealValue": null,
+      "existingBrand": "Paraplatin®",
+      "chronicAcute": "Chronic",
+      "buyer": "Natco Pharma",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=a96803e5-42bb-4d9d-acaa-d6270f17bbfb.pdf",
+      "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 19 Oct - Natco launched Carboplatin Injection generic in the U.S. on October 19, 2026.",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-10-20T06:23:11.650Z"
     }
   ],
   "processedUrls": [
@@ -4745,6 +4764,9 @@
     "https://sunpharma.com/wp-content/uploads/2022/11/Sun-Pharma-and-SPARC-enter-into-a-license-agreement-for-commercialization-of-phenobarbital-in-the-US.pdf",
     "https://www.alkemlabs.com/press-releases/alkem_acquisition",
     "https://www.wockhardt.com/press-release/2023-new-vaccine-launch",
-    "https://www.mankindpharma.com/press-releases/mediheal-launch"
+    "https://www.mankindpharma.com/press-releases/mediheal-launch",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=a96803e5-42bb-4d9d-acaa-d6270f17bbfb.pdf",
+    "https://www.alkemlabs.com/press-release/maxburol-launch",
+    "https://www.wockhardt.com/press-release/wockhardt-launches-new-nce#content"
   ]
 }
