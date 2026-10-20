@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-19T05:13:53.943Z",
-  "rowCount": 1322,
+  "generatedAt": "2026-10-20T05:14:22.155Z",
+  "rowCount": 1333,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -1478,7 +1478,7 @@
       "price": "₹284 / strip of 10 tablets",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-aveir-vr-leadless-pacemaker-system-in-india-to-treat-patients-with-slow-heart-rhythms.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-30T05:44:34.203Z"
+      "lastEnrichmentAttempt": "2026-10-20T05:13:33.843Z"
     },
     {
       "brand": "Sitagliptin",
@@ -1638,7 +1638,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-next-generation-xience-sierra-stent-in-india-offering-cardiologists-a-new-level-of-care-and-precision.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-30T05:44:42.488Z"
+      "lastEnrichmentAttempt": "2026-10-20T05:13:40.213Z"
     },
     {
       "brand": "Dapagliflozin Tablets",
@@ -7302,7 +7302,7 @@
       "price": "₹347 / box of 200 gm",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-new-pediaSure-with-nutri-pull-system-to-help-support-catch-up-growth-and-overall-health-in-children.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-30T05:43:29.381Z"
+      "lastEnrichmentAttempt": "2026-10-20T05:13:14.891Z"
     },
     {
       "brand": "Lannett Company",
@@ -7318,7 +7318,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsLnnettPR22062026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-30T05:43:36.477Z"
+      "lastEnrichmentAttempt": "2026-10-20T05:13:21.360Z"
     },
     {
       "brand": "Wockhardt's New Drug",
@@ -7350,7 +7350,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/news/acquisition",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-30T05:44:27.292Z"
+      "lastEnrichmentAttempt": "2026-10-20T05:13:26.787Z"
     },
     {
       "brand": "In-license for Molecule B",
@@ -7398,7 +7398,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.com/press-releases/xiience-sierra-launch-india.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-30T05:44:49.979Z"
+      "lastEnrichmentAttempt": "2026-10-20T05:13:46.664Z"
     },
     {
       "brand": "Omalizumab Biosimilar BP11",
@@ -10422,7 +10422,7 @@
       "price": "₹51.1 / strip of 10 tablets",
       "sourceUrl": "https://www.wockhardt.com/press-release/wockhardt-launches-new-nce",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-29T07:22:15.805Z"
+      "lastEnrichmentAttempt": "2026-10-20T05:12:39.368Z"
     },
     {
       "brand": "four drug brands from GlaxoSmithkline Pharmaceuticals",
@@ -11075,7 +11075,7 @@
       "indication": "—",
       "existingBrand": "—",
       "chronicAcute": "—",
-      "price": "—",
+      "price": "null",
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
       "lastEnrichmentAttempt": "2026-09-05T04:52:14.089Z"
@@ -11091,7 +11091,7 @@
       "indication": "—",
       "existingBrand": "—",
       "chronicAcute": "—",
-      "price": "—",
+      "price": "null",
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
       "lastEnrichmentAttempt": "2026-09-05T04:52:15.459Z"
@@ -11107,7 +11107,7 @@
       "indication": "—",
       "existingBrand": "—",
       "chronicAcute": "—",
-      "price": "—",
+      "price": "null",
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
       "lastEnrichmentAttempt": "2026-09-05T04:52:16.849Z"
@@ -11123,7 +11123,7 @@
       "indication": "—",
       "existingBrand": "—",
       "chronicAcute": "—",
-      "price": "—",
+      "price": "null",
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
       "lastEnrichmentAttempt": "2026-09-05T04:52:18.317Z"
@@ -11139,7 +11139,7 @@
       "indication": "—",
       "existingBrand": "—",
       "chronicAcute": "—",
-      "price": "—",
+      "price": "null",
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
       "lastEnrichmentAttempt": "2026-09-05T04:52:19.712Z"
@@ -11155,7 +11155,7 @@
       "indication": "—",
       "existingBrand": "—",
       "chronicAcute": "—",
-      "price": "—",
+      "price": "null",
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
       "lastEnrichmentAttempt": "2026-09-05T04:52:21.025Z"
@@ -11171,7 +11171,7 @@
       "indication": "—",
       "existingBrand": "—",
       "chronicAcute": "—",
-      "price": "—",
+      "price": "null",
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
       "lastEnrichmentAttempt": "2026-09-05T04:52:22.295Z"
@@ -14511,7 +14511,7 @@
       "seller": "—",
       "dealType": "NCE Launch",
       "molecule": "difamilast",
-      "therapy": "—",
+      "therapy": "Dermatology",
       "indication": "Atopic Dermatitis",
       "existingBrand": "—",
       "chronicAcute": "—",
@@ -14614,7 +14614,7 @@
       "price": "—",
       "sourceUrl": "https://www.mankindpharma.com/JC5uRjkQPLpYgcSRVxlpDYLge1_NGUlJYfa08twU1cc=.html",
       "buyer": "Mankind Pharma",
-      "lastEnrichmentAttempt": "2026-08-30T05:42:15.140Z"
+      "lastEnrichmentAttempt": "2026-10-20T05:12:46.849Z"
     },
     {
       "brand": "7 brands",
@@ -14630,7 +14630,7 @@
       "price": "₹162 / packet of 1 kg powder",
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-30T05:42:39.991Z"
+      "lastEnrichmentAttempt": "2026-10-20T05:12:55.923Z"
     },
     {
       "brand": "TactiFlex™ Sensor Enabled™ Ablation Catheter",
@@ -14646,7 +14646,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-introduces-tactiflex-sensor-enabled-ablation-catheter-in-india-for-treatment-of-abnormal-heart-rhythms.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-30T05:43:13.560Z"
+      "lastEnrichmentAttempt": "2026-10-20T05:13:08.360Z"
     },
     {
       "brand": "Simlac",
@@ -21143,6 +21143,182 @@
       "sourceUrl": "https://www.companyxyz.com/news/brandC-inlicense",
       "buyer": "Zydus Lifesciences",
       "lastEnrichmentAttempt": "2026-10-19T05:13:09.283Z"
+    },
+    {
+      "brand": "Maxburol",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "Severe Pain",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 500 / strip",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/maxburol-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-20T05:10:23.456Z"
+    },
+    {
+      "brand": "Carboplatin Injection",
+      "launchType": "Own Launched",
+      "date": "2026-10-19",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Carboplatin",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Paraplatin®",
+      "chronicAcute": "—",
+      "price": "₹885 / vial of 15 ml (150 mg)",
+      "sourceUrl": "https://www.natcopharma.co.in/insights/news-and-announcements",
+      "buyer": "Natco Pharma",
+      "lastEnrichmentAttempt": "2026-10-20T05:10:57.731Z"
+    },
+    {
+      "brand": "Dexamethasone Tablets",
+      "launchType": "Acquired",
+      "date": "2026-04-06",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Dexamethasone",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹86.4 / strip of 500 tablets",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoUSFDA07042026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-10-20T05:12:17.827Z"
+    },
+    {
+      "brand": "ROMY",
+      "launchType": "Own Launched",
+      "date": "2018-12-12",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Romiplostim",
+      "therapy": "—",
+      "indication": "chronic immune thrombocytopenia (ITP)",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "₹57.2 / strip of 10 tablets",
+      "sourceUrl": "https://www.intaspharma.com/media",
+      "buyer": "Intas",
+      "lastEnrichmentAttempt": "2026-10-20T05:12:29.060Z"
+    },
+    {
+      "brand": "Wockhardt's New Drug",
+      "launchType": "Own Launched",
+      "date": "2023-10-10",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "Oncology",
+      "indication": "Lung Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 2,500 / injection",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/new-drug-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-20T05:12:37.862Z"
+    },
+    {
+      "brand": "Wockhardt Biosimilar",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "Trastuzumab",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "Herceptin",
+      "chronicAcute": "—",
+      "price": "Rs 30,000 / vial",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/biosimilar-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-20T05:12:37.862Z"
+    },
+    {
+      "brand": "Wockhardt NCE",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Wockhardt NCE",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/press-release/wockhardt-launches-new-nce#content",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-20T05:12:39.368Z"
+    },
+    {
+      "brand": "Wockhardt's Generic Drug",
+      "launchType": "Own Launched",
+      "date": "2023-09-20",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Generic Drug Name",
+      "therapy": "—",
+      "indication": "Certain Condition",
+      "existingBrand": "Competitor Brand",
+      "chronicAcute": "Chronic",
+      "price": "Rs 250 / strip of 10 tablets",
+      "sourceUrl": "https://www.wockhardt.com/press-release/wockhardt-launches-generic-drug#content",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-20T05:12:39.368Z"
+    },
+    {
+      "brand": "Xylofast",
+      "launchType": "Own Launched",
+      "date": "2023-09-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Xylometazoline",
+      "therapy": "Ent",
+      "indication": "Nasal congestion",
+      "existingBrand": "Otrivin",
+      "chronicAcute": "—",
+      "price": "Rs 150 / nasal spray",
+      "sourceUrl": "https://www.mankindpharma.com/press-release/xylofast-launch/",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-10-20T05:12:46.849Z"
+    },
+    {
+      "brand": "PainAway",
+      "launchType": "Own Launched",
+      "date": "2023-08-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Ibuprofen",
+      "therapy": "Pain Management",
+      "indication": "Mild to moderate pain",
+      "existingBrand": "Brufen",
+      "chronicAcute": "—",
+      "price": "Rs 200 / strip of 10 tablets",
+      "sourceUrl": "https://www.mankindpharma.com/press-release/painaway-launch/",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-10-20T05:12:46.849Z"
+    },
+    {
+      "brand": "Cefixime",
+      "launchType": "Own Launched",
+      "date": "2023-08-15",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Cefixime",
+      "therapy": "Anti-Infectives",
+      "indication": "Bacterial infections",
+      "existingBrand": "Zifi",
+      "chronicAcute": "—",
+      "price": "Rs 250 / strip",
+      "sourceUrl": "https://www.wockhardt.com/news/cefixime-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-20T05:13:26.787Z"
     }
   ]
 }
