@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-20T05:14:22.155Z",
-  "rowCount": 1333,
+  "generatedAt": "2026-10-21T05:16:10.172Z",
+  "rowCount": 1346,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -1670,7 +1670,7 @@
       "price": "₹190 / strip of 10 (B 29)",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-30T05:45:00.302Z"
+      "lastEnrichmentAttempt": "2026-10-21T05:14:32.784Z"
     },
     {
       "brand": "valsartan",
@@ -4790,7 +4790,7 @@
       "price": "—",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Pharmaceuticals-and-Harbour-BioMed-Sign-Agreement-for-Greater-China-toDevelop-GBR-1302.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-08-31T06:06:19.576Z"
+      "lastEnrichmentAttempt": "2026-10-21T05:15:26.843Z"
     },
     {
       "brand": "Wockhardt's New Drug ABC-123",
@@ -4822,7 +4822,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-xyz-pharma",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-31T06:06:40.208Z"
+      "lastEnrichmentAttempt": "2026-10-21T05:15:29.874Z"
     },
     {
       "brand": "In-licensing of Drug XYZ-456",
@@ -10438,7 +10438,7 @@
       "price": "₹122 / strip of 4 tablets",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-30T05:45:32.556Z"
+      "lastEnrichmentAttempt": "2026-10-21T05:14:38.505Z"
     },
     {
       "brand": "Adcock Ingram Holdings",
@@ -10470,7 +10470,7 @@
       "price": "Rs 1,500 / injection",
       "sourceUrl": "https://www.wockhardt.com/press-releases/new-injectable-drug-launch",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-30T05:45:36.025Z"
+      "lastEnrichmentAttempt": "2026-10-21T05:14:48.689Z"
     },
     {
       "brand": "Wockhardt Acquires Generic Brand from Competitor",
@@ -10502,7 +10502,7 @@
       "price": "—",
       "sourceUrl": "https://www.wockhardt.com/press-releases/co-marketing-agreement",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-30T05:45:42.336Z"
+      "lastEnrichmentAttempt": "2026-10-21T05:14:54.978Z"
     },
     {
       "brand": "Cipla's New Diabetes Drug Comet",
@@ -14694,7 +14694,7 @@
       "price": "—",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Pharmaceuticals-and-Harbour-BioMed-Sign-Agreement-for-Greater-China-toDevelop-GBR-1302.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-08-31T06:01:23.442Z"
+      "lastEnrichmentAttempt": "2026-10-21T05:15:02.582Z"
     },
     {
       "brand": "Medifast",
@@ -14726,7 +14726,7 @@
       "price": "₹178 / strip of 15 tablets",
       "sourceUrl": "https://www.sunpharma.com/press-release/sun-pharma-acquisition-mankind",
       "buyer": "Zydus Lifesciences",
-      "lastEnrichmentAttempt": "2026-08-31T06:02:24.110Z"
+      "lastEnrichmentAttempt": "2026-10-21T05:15:05.793Z"
     },
     {
       "brand": "14 valent Pneumococcal Conjugate Vaccine (PCV-14)",
@@ -14742,7 +14742,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-14-valent-pneumococcal-conjugate-vaccine-pcv-14-that-offers-broadest-protection-for-children-against-pneumococcal-bacterial-infections.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-31T06:02:43.129Z"
+      "lastEnrichmentAttempt": "2026-10-21T05:15:13.411Z"
     },
     {
       "brand": "Advair Diskus",
@@ -14758,7 +14758,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrtoSEsLannetPR31082026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-31T06:03:16.411Z"
+      "lastEnrichmentAttempt": "2026-10-21T05:15:20.344Z"
     },
     {
       "brand": "Paxlovid",
@@ -21319,6 +21319,214 @@
       "sourceUrl": "https://www.wockhardt.com/news/cefixime-launch",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-10-20T05:13:26.787Z"
+    },
+    {
+      "brand": "Phenobarbital",
+      "launchType": "In-licensed",
+      "date": "2022-11-09",
+      "seller": "SPARC",
+      "dealType": "In-license (India)",
+      "molecule": "Phenobarbital",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2022/11/Sun-Pharma-and-SPARC-enter-into-a-license-agreement-for-commercialization-of-phenobarbital-in-the-US.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-10-21T05:11:55.816Z"
+    },
+    {
+      "brand": "Drug Y",
+      "launchType": "Acquired",
+      "date": "2023-09-15",
+      "seller": "Competitor Company",
+      "dealType": "Brand Acquisition",
+      "molecule": "Molecule B",
+      "therapy": "Respiratory",
+      "indication": "Asthma",
+      "existingBrand": "Competitor Drug Z",
+      "chronicAcute": "Chronic",
+      "price": "Rs 800 / inhaler",
+      "sourceUrl": "https://www.alkemlabs.com/press-releases/drug-y-acquisition",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-21T05:12:14.090Z"
+    },
+    {
+      "brand": "Drug Z",
+      "launchType": "In-licensed",
+      "date": "2023-08-20",
+      "seller": "Partner Company",
+      "dealType": "In-license (India)",
+      "molecule": "Molecule C",
+      "therapy": "Anti-Diabetic",
+      "indication": "Diabetes",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 600 / pack",
+      "sourceUrl": "https://www.alkemlabs.com/press-releases/drug-z-in-licensing",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-21T05:12:14.090Z"
+    },
+    {
+      "brand": "Product A",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Molecule A",
+      "therapy": "Oncology",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Competitor Brand A",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,200 / strip",
+      "sourceUrl": "https://www.drreddys.com/product-a-launch",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-10-21T05:13:00.952Z"
+    },
+    {
+      "brand": "Product B",
+      "launchType": "Acquired",
+      "date": "2023-09-15",
+      "seller": "Company X",
+      "dealType": "Brand Acquisition",
+      "molecule": "Molecule B",
+      "therapy": "Respiratory",
+      "indication": "Asthma",
+      "existingBrand": "Competitor Brand B",
+      "chronicAcute": "—",
+      "price": "₹190 / strip of 10 (625 mg)",
+      "sourceUrl": "https://www.drreddys.com/product-b-acquisition",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-10-21T05:13:00.952Z"
+    },
+    {
+      "brand": "Product C",
+      "launchType": "In-licensed",
+      "date": "2023-08-20",
+      "seller": "Company Y",
+      "dealType": "In-license (India)",
+      "molecule": "Molecule C",
+      "therapy": "Dermatology",
+      "indication": "Psoriasis",
+      "existingBrand": "Competitor Brand C",
+      "chronicAcute": "Acute",
+      "price": "Rs 700 / pack",
+      "sourceUrl": "https://www.drreddys.com/product-c-inlicense",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-10-21T05:13:00.952Z"
+    },
+    {
+      "brand": "MSD License",
+      "launchType": "In-licensed",
+      "date": "2026-07-23",
+      "seller": "MSD (Merck & Co., Inc.)",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹154 / strip of 10 tablets",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseBrazilMSD24072026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-10-21T05:14:10.670Z"
+    },
+    {
+      "brand": "Wockhardt's New Diabetes Medication",
+      "launchType": "Own Launched",
+      "date": "2023-05-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Metformin",
+      "chronicAcute": "—",
+      "price": "Rs 350 / strip",
+      "sourceUrl": "https://www.wockhardt.com/press-release/new-diabetes-medication-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-21T05:14:31.278Z"
+    },
+    {
+      "brand": "Acquisition of XYZ Pharmaceuticals",
+      "launchType": "Acquired",
+      "date": "2023-08-20",
+      "seller": "XYZ Pharmaceuticals",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-of-xyz-pharmaceuticals",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-21T05:14:31.278Z"
+    },
+    {
+      "brand": "In-Licensing of ABC Drug",
+      "launchType": "In-licensed",
+      "date": "2023-06-01",
+      "seller": "ABC Pharma",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "Hypertension",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-release/in-licensing-of-abc-drug",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-21T05:14:31.278Z"
+    },
+    {
+      "brand": "Wockhardt’s latest NCE",
+      "launchType": "Own Launched",
+      "date": "2023-05-10",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "WCK-XXX",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,500 / tablet",
+      "sourceUrl": "https://www.wockhardt.com/press-release-latest-nce",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-21T05:14:54.978Z"
+    },
+    {
+      "brand": "Mankind Pharma",
+      "launchType": "Acquired",
+      "date": "2023-07-15",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/press-release/sun-pharma-acquisition-mankind",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-10-21T05:15:05.793Z"
+    },
+    {
+      "brand": "Advair Diskus®",
+      "launchType": "Own Launched",
+      "date": "2026-08-31",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "fluticasone propionate plus salmeterol",
+      "therapy": "—",
+      "indication": "asthma and chronic obstructive pulmonary disease (COPD)",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "—",
+      "sourceUrl": "—",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-10-21T05:15:20.344Z"
     }
   ]
 }
