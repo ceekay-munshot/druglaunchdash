@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-20T06:23:43.955Z",
-  "rowCount": 239,
+  "generatedAt": "2026-10-21T06:24:32.479Z",
+  "rowCount": 241,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -4272,6 +4272,44 @@
       "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 19 Oct - Natco launched Carboplatin Injection generic in the U.S. on October 19, 2026.",
       "_provider": "gemini",
       "_harvestedAt": "2026-10-20T06:23:11.650Z"
+    },
+    {
+      "brand": "Zytorvi",
+      "launchType": "In-licensed",
+      "date": "2026-10-21",
+      "seller": "Shanghai Junshi Biosciences Co., Ltd.",
+      "dealType": "In-licensing",
+      "molecule": "toripalimab",
+      "therapy": "Oncology",
+      "indication": "Advanced Esophageal Squamous Cell Carcinoma (ESCC)",
+      "price": "—",
+      "dealValue": null,
+      "existingBrand": "Keytruda (pembrolizumab)",
+      "chronicAcute": "Chronic",
+      "buyer": "Dr. Reddy's",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=564aafc0-21db-47e9-9e5c-4957a7e01bcb.pdf",
+      "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 21 Oct - DCGI approves Zytorvi for first-line advanced esophageal squamous cell carcinoma in India.",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-10-21T06:23:24.924Z"
+    },
+    {
+      "brand": "Mankind Pharma",
+      "launchType": "In-licensed",
+      "date": "2023-07-15",
+      "seller": "LIB Therapeutics",
+      "dealType": "global licensing agreement",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "Lerodalcibep",
+      "therapy": "Cardiovascular / Dyslipidemia",
+      "indication": "Hypercholesterolemia",
+      "existingBrand": "Repatha",
+      "chronicAcute": "Chronic",
+      "buyer": "Zydus Lifesciences",
+      "sourceUrl": "https://sunpharma.com/press-release/sun-pharma-acquisition-mankind",
+      "_title": "backfill:Mankind Pharma",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-10-21T06:24:31.778Z"
     }
   ],
   "processedUrls": [
@@ -4767,6 +4805,11 @@
     "https://www.mankindpharma.com/press-releases/mediheal-launch",
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=a96803e5-42bb-4d9d-acaa-d6270f17bbfb.pdf",
     "https://www.alkemlabs.com/press-release/maxburol-launch",
-    "https://www.wockhardt.com/press-release/wockhardt-launches-new-nce#content"
+    "https://www.wockhardt.com/press-release/wockhardt-launches-new-nce#content",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=9a434af1-62a4-4822-a754-fa547098def0.pdf",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=564aafc0-21db-47e9-9e5c-4957a7e01bcb.pdf",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=feff2a97-f944-4854-b109-aba3cf00a42f.pdf",
+    "https://www.wockhardt.com/press-release/in-licensing-of-abc-drug",
+    "https://sunpharma.com/press-release/sun-pharma-acquisition-mankind"
   ]
 }
