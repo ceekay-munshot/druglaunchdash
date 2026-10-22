@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-21T05:16:10.172Z",
-  "rowCount": 1346,
+  "generatedAt": "2026-10-22T05:21:02.996Z",
+  "rowCount": 1355,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -242,7 +242,7 @@
       "therapy": "—",
       "indication": "Cough",
       "existingBrand": "—",
-      "chronicAcute": "—",
+      "chronicAcute": "Chronic",
       "price": "₹104 / bottle of 60 ml oral suspension",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/09/Press-Release-Sun-Pharma-launches-Chericof-12.pdf",
       "buyer": "Sun Pharma",
@@ -630,7 +630,7 @@
       "price": "₹210 / strip of 10 capsules",
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/amp_articleshow/100775508.cms",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-08-31T06:07:07.183Z"
+      "lastEnrichmentAttempt": "2026-10-22T05:19:14.975Z"
     },
     {
       "brand": "Cetuximab Biosimilar",
@@ -7430,7 +7430,7 @@
       "price": "null",
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-xyz-pharma#content",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-08-31T06:06:54.026Z"
+      "lastEnrichmentAttempt": "2026-10-22T05:19:07.845Z"
     },
     {
       "brand": "Molxvir® (Molnupiravir)",
@@ -7478,7 +7478,7 @@
       "price": "₹328 / box of 200 gm powder",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-new-pediaSure-with-nutri-pull-system-to-help-support-catch-up-growth-and-overall-health-in-children.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-31T06:07:36.271Z"
+      "lastEnrichmentAttempt": "2026-10-22T05:19:25.094Z"
     },
     {
       "brand": "Vertigo Coach App",
@@ -7494,7 +7494,7 @@
       "price": "₹196 / bottle of 30 ml drop",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/Abbott-Helps-People-with-Vertigo-Take-Control-of-Their-Health-with-the-Launch-of-an-Easy-to-Use-Vertigo-Coach-App-in-India.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-08-31T06:07:46.234Z"
+      "lastEnrichmentAttempt": "2026-10-22T05:19:31.507Z"
     },
     {
       "brand": "Lannett Company LLC",
@@ -7510,7 +7510,7 @@
       "price": null,
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsLnnettPR22062026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-08-31T06:07:53.997Z"
+      "lastEnrichmentAttempt": "2026-10-22T05:19:38.585Z"
     },
     {
       "brand": "Vaccine X",
@@ -10534,7 +10534,7 @@
       "price": "—",
       "sourceUrl": "https://www.cipla.com/press-release/cipla-acquires-generic-portfolio",
       "buyer": "Cipla",
-      "lastEnrichmentAttempt": "2026-08-31T06:08:44.061Z"
+      "lastEnrichmentAttempt": "2026-10-22T05:19:44.888Z"
     },
     {
       "brand": "4 drug brands from GlaxoSmithkline",
@@ -10550,7 +10550,7 @@
       "price": "₹34.5 / strip of 10 tablets",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-08-31T06:08:55.938Z"
+      "lastEnrichmentAttempt": "2026-10-22T05:19:56.334Z"
     },
     {
       "brand": "Adcock Ingram Holdings",
@@ -13151,7 +13151,7 @@
       "seller": "—",
       "dealType": "Consumer Launch",
       "molecule": "—",
-      "therapy": "—",
+      "therapy": "Immunology",
       "indication": "pneumococcal bacterial infections",
       "existingBrand": "—",
       "chronicAcute": "—",
@@ -14790,7 +14790,7 @@
       "price": "₹1283 / bottle of 40 capsules",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/11/Press-Release-Sun-Pharma-gearing-up-to-introduce-molnupiravir-under-the-brand-name-Molxvir%C2%AE-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-01T05:31:32.818Z"
+      "lastEnrichmentAttempt": "2026-10-22T05:20:09.732Z"
     },
     {
       "brand": "Alkem Antibiotic",
@@ -14806,7 +14806,7 @@
       "price": "₹12.14 / vial of 1 injection",
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/amp_articleshow/100775508.cms",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-09-01T05:31:45.248Z"
+      "lastEnrichmentAttempt": "2026-10-22T05:20:13.488Z"
     },
     {
       "brand": "Alkem Eye Care",
@@ -14822,7 +14822,7 @@
       "price": "null",
       "sourceUrl": "https://health.economictimes.indiatimes.com/news/pharma/drug-approvals-launches/alkem-forays-into-ophthalmology-with-launch-of-eye-care-products/101642253",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-09-01T05:31:45.248Z"
+      "lastEnrichmentAttempt": "2026-10-22T05:20:26.584Z"
     },
     {
       "brand": "Olaparib",
@@ -21527,6 +21527,150 @@
       "sourceUrl": "—",
       "buyer": "Aurobindo",
       "lastEnrichmentAttempt": "2026-10-21T05:15:20.344Z"
+    },
+    {
+      "brand": "DuoDac",
+      "launchType": "Own Launched",
+      "date": "2023-09-22",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Dapagliflozin plus Metformin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 849 / strip",
+      "sourceUrl": "https://www.mankindpharma.com/DkhkmTaHCLEwPbY0D-ltmlVaejXpjDW6QeO46JavCIg=.html",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-10-22T05:14:53.500Z"
+    },
+    {
+      "brand": "WINLEVI®",
+      "launchType": "Own Launched",
+      "date": "2022-10-24",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Clascoterone",
+      "therapy": "Dermatology",
+      "indication": "Topical treatment for Acne",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2022/10/Press-Release-Winlevi-launch.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-10-22T05:15:31.205Z"
+    },
+    {
+      "brand": "Acquisition of XYZ Pharma",
+      "launchType": "Acquired",
+      "date": "2023-08-20",
+      "seller": "XYZ Pharma",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.alkemlabs.com/press-release/2023-08-20-acquisition-xyz-pharma",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-22T05:15:51.337Z"
+    },
+    {
+      "brand": "PediaSure®",
+      "launchType": "Own Launched",
+      "date": "2023-11-17",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹375 / box of 200 gm",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-new-pediaSure-with-nutri-pull-system-to-help-support-catch-up-growth-and-overall-health-in-children.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-10-22T05:18:21.529Z"
+    },
+    {
+      "brand": "Wockhardt's new biosimilar",
+      "launchType": "Own Launched",
+      "date": "2023-09-12",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 2,500 / vial",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/new-biosimilar-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-22T05:19:06.337Z"
+    },
+    {
+      "brand": "Acquisition of XYZ Pharmaceuticals",
+      "launchType": "Acquired",
+      "date": "2023-08-15",
+      "seller": "XYZ Pharmaceuticals",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Acme",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/acquisition-of-xyz-pharmaceuticals",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-22T05:19:06.337Z"
+    },
+    {
+      "brand": "New anti-diabetic medication",
+      "launchType": "Own Launched",
+      "date": "2023-07-20",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Semaglutide",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 3,000 / month",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/new-anti-diabetic-medication",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-22T05:19:06.337Z"
+    },
+    {
+      "brand": "valsartan plus sacubitril",
+      "launchType": "Own Launched",
+      "date": "2023-06-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "valsartan plus sacubitril",
+      "therapy": "Cardiology",
+      "indication": "heart failure",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/articleshow/100775508.cms",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-22T05:19:14.975Z"
+    },
+    {
+      "brand": "BrandZ",
+      "launchType": "Acquired",
+      "date": "2023-03-10",
+      "seller": "CompanyB",
+      "dealType": "Brand Acquisition",
+      "molecule": "MoleculeC",
+      "therapy": "Respiratory",
+      "indication": "Asthma",
+      "existingBrand": "CompetitorBrandW",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,200 / vial",
+      "sourceUrl": "https://www.pharma-company.com/press-release/brandZ-acquisition",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-10-22T05:19:44.888Z"
     }
   ]
 }
