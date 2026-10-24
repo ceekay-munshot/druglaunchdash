@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-23T05:17:50.992Z",
-  "rowCount": 1371,
+  "generatedAt": "2026-10-24T05:00:13.098Z",
+  "rowCount": 1378,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -646,7 +646,7 @@
       "price": "₹9281 / vial of 20 ml infusion",
       "sourceUrl": "https://www.cnbctv18.com/healthcare/alkem-oncology-novel-breast-cancer-treatment-drug-launch-palbociclib-palbo-15703241.htm",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-09-01T05:34:19.235Z"
+      "lastEnrichmentAttempt": "2026-10-24T04:58:57.325Z"
     },
     {
       "brand": "Obimet",
@@ -662,7 +662,7 @@
       "price": "₹30.6 / strip of 15 tablet sr",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-01T05:34:29.060Z"
+      "lastEnrichmentAttempt": "2026-10-24T04:59:04.991Z"
     },
     {
       "brand": "Molxvir (Molnupiravir)",
@@ -1750,7 +1750,7 @@
       "price": "₹69.3 / strip of 10 capsules",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-enters-into-an-exclusive-licensing.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-09-02T05:00:27.637Z"
+      "lastEnrichmentAttempt": "2026-10-24T05:00:03.444Z"
     },
     {
       "brand": "Revefenacin",
@@ -4902,7 +4902,7 @@
       "price": "null",
       "sourceUrl": "https://www.cipla.com/press-releases/2023/acquisition-of-company-b",
       "buyer": "Cipla",
-      "lastEnrichmentAttempt": "2026-09-01T05:34:39.026Z"
+      "lastEnrichmentAttempt": "2026-10-24T04:59:12.998Z"
     },
     {
       "brand": "Drug C",
@@ -4982,7 +4982,7 @@
       "price": "null",
       "sourceUrl": "https://www.wockhardt.com/press-release/xyz-pharma-acquisition",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-02T05:00:10.960Z"
+      "lastEnrichmentAttempt": "2026-10-24T04:59:50.889Z"
     },
     {
       "brand": "Doxobact",
@@ -10678,7 +10678,7 @@
       "price": null,
       "sourceUrl": "https://www.betacorp.com/press-release/beta-acquisition#content",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-02T05:00:19.385Z"
+      "lastEnrichmentAttempt": "2026-10-24T04:59:59.462Z"
     },
     {
       "brand": "Zeta Biosimilars",
@@ -10694,7 +10694,7 @@
       "price": "—",
       "sourceUrl": "https://www.zetabiosimilars.com/press-release/zeta-inlicense#content",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-02T05:00:26.071Z"
+      "lastEnrichmentAttempt": "2026-10-24T05:00:02.109Z"
     },
     {
       "brand": "Revital NXT",
@@ -14918,7 +14918,7 @@
       "price": "₹240 / jar of 50 gm cream",
       "sourceUrl": "https://www.mankindpharma.com/NluDl_mQfpMo6RA5A2f8S0byKo38g9uvUOo9e4YGbtA=.html",
       "buyer": "Mankind Pharma",
-      "lastEnrichmentAttempt": "2026-09-02T04:57:12.272Z"
+      "lastEnrichmentAttempt": "2026-10-24T04:59:20.584Z"
     },
     {
       "brand": "Poli Pharma",
@@ -14934,7 +14934,7 @@
       "price": "₹190 / strip of 10 tablets",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2020/12/Press-Release-Sun-Pharma-to-acquire-Pola-Pharma-Inc-in-Japan.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-02T04:57:44.373Z"
+      "lastEnrichmentAttempt": "2026-10-24T04:59:27.833Z"
     },
     {
       "brand": "7 brands in cardiology & women's healthcare",
@@ -14950,7 +14950,7 @@
       "price": "₹200 / strip of 10 tablets",
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-02T04:58:21.790Z"
+      "lastEnrichmentAttempt": "2026-10-24T04:59:31.839Z"
     },
     {
       "brand": "Wockhardt",
@@ -19839,7 +19839,7 @@
       "seller": "—",
       "dealType": "NCE Launch",
       "molecule": "Palbociclib",
-      "therapy": "—",
+      "therapy": "Oncology",
       "indication": "breast cancer",
       "existingBrand": "—",
       "chronicAcute": "—",
@@ -21927,6 +21927,118 @@
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseUSFDAapproval15092026.pdf",
       "buyer": "Aurobindo",
       "lastEnrichmentAttempt": "2026-10-23T05:17:01.762Z"
+    },
+    {
+      "brand": "Alkem-Prime",
+      "launchType": "Own Launched",
+      "date": "2023-05-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "Chronic Kidney Disease",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,500 / strip of 10 tablets",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/alkem-prime-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-24T04:56:46.501Z"
+    },
+    {
+      "brand": "AlkemCare",
+      "launchType": "Own Launched",
+      "date": "2023-06-20",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "—",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Glenmark",
+      "chronicAcute": "Chronic",
+      "price": "₹190 / bottle of 200 ml syrup",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/alkemcare-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-24T04:56:46.501Z"
+    },
+    {
+      "brand": "Xyrem",
+      "launchType": "Own Launched",
+      "date": "2023-04-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "sodium oxybate",
+      "therapy": "CNS",
+      "indication": "Narcolepsy",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 3,500 / bottle",
+      "sourceUrl": "https://www.drreddys.com/press-release-xyrem-launch",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-10-24T04:57:27.654Z"
+    },
+    {
+      "brand": "Zynteglo",
+      "launchType": "Acquired",
+      "date": "2023-05-01",
+      "seller": "Bluebird Bio",
+      "dealType": "Brand Acquisition",
+      "molecule": "betibeglogene autotemcel",
+      "therapy": "Immunology",
+      "indication": "Beta-thalassemia",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 28,000 / vial",
+      "sourceUrl": "https://www.drreddys.com/press-release-zynteglo-acquisition",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-10-24T04:57:27.654Z"
+    },
+    {
+      "brand": "Breztri",
+      "launchType": "Own Launched",
+      "date": "2023-06-20",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "budesonide plus formoterol",
+      "therapy": "Respiratory",
+      "indication": "Asthma",
+      "existingBrand": "Asthalin",
+      "chronicAcute": "Chronic",
+      "price": "Rs 450 / inhaler",
+      "sourceUrl": "https://www.drreddys.com/press-release-breztri-launch",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-10-24T04:57:27.654Z"
+    },
+    {
+      "brand": "Sustain",
+      "launchType": "In-licensed",
+      "date": "2023-07-15",
+      "seller": "Incyte Corporation",
+      "dealType": "In-license (India)",
+      "molecule": "abemaciclib",
+      "therapy": "Oncology",
+      "indication": "Breast cancer",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 1,200 / strip",
+      "sourceUrl": "https://www.drreddys.com/press-release-sustain-in-license",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-10-24T04:57:27.654Z"
+    },
+    {
+      "brand": "Pola Pharma",
+      "launchType": "Acquired",
+      "date": "2018-11-26",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "Dermatology",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.sunpharma.com/press-releases/sun-pharma-acquire-pola-pharma-japan",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-10-24T04:59:27.833Z"
     }
   ]
 }
