@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-23T06:22:28.837Z",
-  "rowCount": 241,
+  "generatedAt": "2026-10-24T06:17:28.798Z",
+  "rowCount": 243,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -4310,6 +4310,44 @@
       "_title": "backfill:Mankind Pharma",
       "_provider": "gemini",
       "_harvestedAt": "2026-10-21T06:24:31.778Z"
+    },
+    {
+      "brand": "Pola Pharma",
+      "launchType": "In-licensed",
+      "date": "2018-11-26",
+      "seller": "LIB Therapeutics",
+      "dealType": "Licensing Agreement",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "Lerodalcibep",
+      "therapy": "Cardiovascular / Anti-hyperlipidemic",
+      "indication": "Hypercholesterolemia",
+      "existingBrand": "Repatha (Amgen)",
+      "chronicAcute": "Chronic",
+      "buyer": "Sun Pharma",
+      "sourceUrl": "https://www.sunpharma.com/press-releases/sun-pharma-acquire-pola-pharma-japan",
+      "_title": "backfill:Pola Pharma",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-10-24T06:17:28.097Z"
+    },
+    {
+      "brand": "CTaro-Methylphenidate ER",
+      "launchType": "Own Launched",
+      "date": "—",
+      "seller": "—",
+      "dealType": "—",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "Methylphenidate ER",
+      "therapy": "Central Nervous System (CNS)",
+      "indication": "Attention-Deficit/Hyperactivity Disorder (ADHD)",
+      "existingBrand": "Concerta (Janssen)",
+      "chronicAcute": "Chronic",
+      "buyer": "Sun Pharma",
+      "sourceUrl": "https://www.sunpharma.com/press-releases/sun-pharma-acquire-pola-pharma-japan",
+      "_title": "backfill:Pola Pharma",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-10-24T06:17:28.097Z"
     }
   ],
   "processedUrls": [
@@ -4817,6 +4855,9 @@
     "https://www.wockhardt.com/press-releases/acquisition-of-xyz-pharmaceuticals",
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=0e576a91-4bdc-4c68-b915-b363923bb983.pdf",
     "https://www.wockhardt.com/press-release/2023-acquisition-abc-pharma",
-    "https://www.wockhardt.com/releases/covid-vaccine-acquisition#content"
+    "https://www.wockhardt.com/releases/covid-vaccine-acquisition#content",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=46b44110-a538-4759-8351-04d4731da2ae.pdf",
+    "https://www.alkemlabs.com/press-release/alkem-prime-launch",
+    "https://www.sunpharma.com/press-releases/sun-pharma-acquire-pola-pharma-japan"
   ]
 }
