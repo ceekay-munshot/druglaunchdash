@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-24T05:00:13.098Z",
-  "rowCount": 1378,
+  "generatedAt": "2026-10-25T05:13:35.521Z",
+  "rowCount": 1386,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -7574,7 +7574,7 @@
       "price": null,
       "sourceUrl": "https://www.cipla.com/press-releases-statements/cipla-acquires-xyz-pharma",
       "buyer": "Cipla",
-      "lastEnrichmentAttempt": "2026-09-02T05:00:54.563Z"
+      "lastEnrichmentAttempt": "2026-10-25T05:12:36.398Z"
     },
     {
       "brand": "Cipla In-Licenses Anti-Diabetic Drug",
@@ -10351,8 +10351,8 @@
       "seller": "—",
       "dealType": "Generic Launch",
       "molecule": "Favipiravir",
-      "therapy": "—",
-      "indication": "—",
+      "therapy": "Anti-viral",
+      "indication": "mild to moderate Covid-19",
       "existingBrand": "—",
       "chronicAcute": "—",
       "price": "Rs 35 / tablet",
@@ -10710,7 +10710,7 @@
       "price": "₹35 / packet of 1 bar (35 gm)",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/09/Press-Release-Sun-Pharma-forays-into-Nutrition-Bar-segment-with-the-launch-of-Revital-NXT.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-02T05:00:32.080Z"
+      "lastEnrichmentAttempt": "2026-10-25T05:12:15.400Z"
     },
     {
       "brand": "WINLEVI®",
@@ -10790,7 +10790,7 @@
       "price": "null",
       "sourceUrl": "https://pharmaexample.com/abc-pharma-acquisition",
       "buyer": "Torrent Pharma",
-      "lastEnrichmentAttempt": "2026-09-02T05:00:37.324Z"
+      "lastEnrichmentAttempt": "2026-10-25T05:12:19.011Z"
     },
     {
       "brand": "DrugDefender",
@@ -10822,7 +10822,7 @@
       "price": null,
       "sourceUrl": "https://www.novocure.com/releases/2023-10-01-press-release",
       "buyer": "Zydus Lifesciences",
-      "lastEnrichmentAttempt": "2026-09-02T05:00:38.957Z"
+      "lastEnrichmentAttempt": "2026-10-25T05:12:20.362Z"
     },
     {
       "brand": "Zydus Cadila",
@@ -10886,7 +10886,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/news/acquisition-company-b",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-02T05:00:47.733Z"
+      "lastEnrichmentAttempt": "2026-10-25T05:12:27.372Z"
     },
     {
       "brand": "Wockhardt In-licenses Drug C",
@@ -10918,7 +10918,7 @@
       "price": null,
       "sourceUrl": "https://www.cipla.com/press-releases-statements/cipla-acquires-xyz-pharma",
       "buyer": "Cipla",
-      "lastEnrichmentAttempt": "2026-09-02T05:01:05.903Z"
+      "lastEnrichmentAttempt": "2026-10-25T05:12:48.887Z"
     },
     {
       "brand": "Bolus device",
@@ -14982,7 +14982,7 @@
       "price": "Rs. 35 / tablet",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2020/12/Press-Release-Sun-Pharma-launches-FluGuard-Favipiravir-at-Rs.-35-per-tablet.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-03T04:55:07.085Z"
+      "lastEnrichmentAttempt": "2026-10-25T05:12:52.647Z"
     },
     {
       "brand": "Zydus tie-up",
@@ -14998,7 +14998,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2024/08/Press-Release-Sun-Pharma-and-Zydus-sign-licensing-agreement-for-co-marketing-of-Desidustat-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-03T04:55:07.085Z"
+      "lastEnrichmentAttempt": "2026-10-25T05:12:57.018Z"
     },
     {
       "brand": "Ryaltris™",
@@ -15014,7 +15014,7 @@
       "price": "₹211 / bottle of 9.5 gm nasal spray",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-Announces-FDA-Acceptance-of-the-Companys-First.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-09-03T04:55:36.703Z"
+      "lastEnrichmentAttempt": "2026-10-25T05:13:03.368Z"
     },
     {
       "brand": "Wockhardt's New Oral Antidiabetic",
@@ -15046,7 +15046,7 @@
       "price": "₹57.8 / strip of 10 tablets",
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-xyz-pharma-2023",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-03T04:56:09.929Z"
+      "lastEnrichmentAttempt": "2026-10-25T05:13:06.181Z"
     },
     {
       "brand": "Aurobindo Pharma",
@@ -22039,6 +22039,134 @@
       "sourceUrl": "https://www.sunpharma.com/press-releases/sun-pharma-acquire-pola-pharma-japan",
       "buyer": "Sun Pharma",
       "lastEnrichmentAttempt": "2026-10-24T04:59:27.833Z"
+    },
+    {
+      "brand": "Alkemra",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "albuterol",
+      "therapy": "Respiratory",
+      "indication": "Asthma",
+      "existingBrand": "Levosalbutamol",
+      "chronicAcute": "Chronic",
+      "price": "Rs 300 / inhaler",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/alkemra-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-25T05:09:44.076Z"
+    },
+    {
+      "brand": "Suncos",
+      "launchType": "Acquired",
+      "date": "2023-08-01",
+      "seller": "Global Pharma",
+      "dealType": "Brand Acquisition",
+      "molecule": "Vitamin C",
+      "therapy": "Nutraceuticals",
+      "indication": "Nutritional deficiency",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 150 / strip",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/suncos-acquisition",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-25T05:09:44.076Z"
+    },
+    {
+      "brand": "Neudip",
+      "launchType": "In-licensed",
+      "date": "2023-10-05",
+      "seller": "BioPharma Corp.",
+      "dealType": "In-license (India)",
+      "molecule": "dexamethasone",
+      "therapy": "Immunology",
+      "indication": "Autoimmune disorders",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/neudip-in-licensing",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-25T05:09:44.076Z"
+    },
+    {
+      "brand": "BrandZ",
+      "launchType": "In-licensed",
+      "date": "2023-07-20",
+      "seller": "CompanyW",
+      "dealType": "In-license (India)",
+      "molecule": "MoleculeC",
+      "therapy": "Respiratory",
+      "indication": "Asthma",
+      "existingBrand": "CompetitorBrand3",
+      "chronicAcute": "—",
+      "price": "Rs 300 / inhaler",
+      "sourceUrl": "https://www.drreddys.com/press-release/brandz-in-license",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-10-25T05:10:36.133Z"
+    },
+    {
+      "brand": "Lannett Company",
+      "launchType": "Acquired",
+      "date": "2026-06-21",
+      "seller": "Lannett Company LLC",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsLnnettPR22062026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-10-25T05:11:52.652Z"
+    },
+    {
+      "brand": "Dexamethasone",
+      "launchType": "Own Launched",
+      "date": "2026-04-06",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Dexamethasone",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹86.4 / strip of 500 tablets",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsDexamethasonePR06042026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-10-25T05:11:52.652Z"
+    },
+    {
+      "brand": "BrandXYZ",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "MoleculeA",
+      "therapy": "Oncology",
+      "indication": "Lung Cancer",
+      "existingBrand": "CompetitorBrand1",
+      "chronicAcute": "Chronic",
+      "price": "Rs 2,000 / tablet",
+      "sourceUrl": "https://www.sunpharma.com/press-release/brandxyz-launch",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-10-25T05:12:57.018Z"
+    },
+    {
+      "brand": "BrandABC",
+      "launchType": "Acquired",
+      "date": "2023-08-05",
+      "seller": "SellerCompany",
+      "dealType": "Brand Acquisition",
+      "molecule": "MoleculeB",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "CompetitorBrand2",
+      "chronicAcute": "—",
+      "price": "Rs 1,500 / pack",
+      "sourceUrl": "https://www.sunpharma.com/press-release/brandabc-acquisition",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-10-25T05:12:57.018Z"
     }
   ]
 }
