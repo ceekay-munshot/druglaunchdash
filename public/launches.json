@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-25T05:13:35.521Z",
-  "rowCount": 1386,
+  "generatedAt": "2026-10-26T05:15:59.658Z",
+  "rowCount": 1396,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -1782,7 +1782,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/Abbotts-New-Coronary-Imaging-Software-Powered-by-Artificial-Intelligence-Launched-in-India.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-09-03T04:56:24.490Z"
+      "lastEnrichmentAttempt": "2026-10-26T05:14:27.258Z"
     },
     {
       "brand": "Dextromethorphan Polistirex",
@@ -1814,7 +1814,7 @@
       "price": "₹84.53 / bottle of 250 ml",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-09-03T04:56:55.480Z"
+      "lastEnrichmentAttempt": "2026-10-26T05:14:55.001Z"
     },
     {
       "brand": "Everolimus Tablets",
@@ -1830,7 +1830,7 @@
       "price": "₹666.78 / strip of 10 tablets",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtsToSEsPREugiaUSFDA26022026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-09-03T04:57:01.861Z"
+      "lastEnrichmentAttempt": "2026-10-26T05:15:00.561Z"
     },
     {
       "brand": "Noveltreat",
@@ -2577,7 +2577,7 @@
       "molecule": "Combination Drug (not specified)",
       "therapy": "Oncology",
       "indication": "CINV (chemotherapy-induced nausea and vomiting)",
-      "existingBrand": "—",
+      "existingBrand": "Emend",
       "chronicAcute": "—",
       "price": "₹5316 / strip of 1 capsule",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-expands-its-oncology-franchise-in-India-with-the-launch-of-Helsinn.pdf",
@@ -3238,7 +3238,7 @@
       "price": "—",
       "sourceUrl": "https://abbott.mediaroom.com/2023-10-16-Abbott-launches-Ultreon-1-0-Software-in-India",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-09-03T04:56:35.290Z"
+      "lastEnrichmentAttempt": "2026-10-26T05:14:34.259Z"
     },
     {
       "brand": "Everolimus Tablets",
@@ -3286,7 +3286,7 @@
       "price": "₹21.7 / strip of 10 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-03T04:57:07.696Z"
+      "lastEnrichmentAttempt": "2026-10-26T05:15:12.491Z"
     },
     {
       "brand": "Thyrocab",
@@ -3302,7 +3302,7 @@
       "price": "₹232 / bottle of 100 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-03T04:57:15.680Z"
+      "lastEnrichmentAttempt": "2026-10-26T05:15:21.341Z"
     },
     {
       "brand": "Lupin’s Oseltamivir Phosphate Oral Suspension",
@@ -7606,7 +7606,7 @@
       "price": "Rs 1,199 / vial",
       "sourceUrl": "https://www.wockhardt.com/press-release/wockvaccine-launch",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-03T04:56:11.435Z"
+      "lastEnrichmentAttempt": "2026-10-26T05:14:13.929Z"
     },
     {
       "brand": "Wockhardt's Antifungal Drug",
@@ -7638,7 +7638,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/press-release/biosimilar-launch",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-03T04:56:17.852Z"
+      "lastEnrichmentAttempt": "2026-10-26T05:14:20.993Z"
     },
     {
       "brand": "Acquisition B",
@@ -10934,7 +10934,7 @@
       "price": "₹1176 / box of 1 unit",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/07/Sun-Pharma-Bolus-Device.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-03T04:57:20.006Z"
+      "lastEnrichmentAttempt": "2026-10-26T05:15:25.218Z"
     },
     {
       "brand": "WINLEVI®",
@@ -15062,7 +15062,7 @@
       "price": null,
       "sourceUrl": "https://www.aurobindo.com/press-release-acquisition",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-09-03T04:56:42.964Z"
+      "lastEnrichmentAttempt": "2026-10-26T05:14:42.024Z"
     },
     {
       "brand": "Line Extension Drug D",
@@ -20463,7 +20463,7 @@
       "seller": "—",
       "dealType": "NCE Launch",
       "molecule": "Romiplostim",
-      "therapy": "—",
+      "therapy": "Hematology",
       "indication": "chronic immune thrombocytopenia (ITP)",
       "existingBrand": "—",
       "chronicAcute": "Chronic",
@@ -22167,6 +22167,166 @@
       "sourceUrl": "https://www.sunpharma.com/press-release/brandabc-acquisition",
       "buyer": "Sun Pharma",
       "lastEnrichmentAttempt": "2026-10-25T05:12:57.018Z"
+    },
+    {
+      "brand": "WINLEVI®",
+      "launchType": "Own Launched",
+      "date": "2021-11-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Clascoterone",
+      "therapy": "Dermatology",
+      "indication": "Acne Vulgaris",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/11/Press-Release-Winlevi-availability-in-US.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-10-26T05:11:30.021Z"
+    },
+    {
+      "brand": "Alkem's New Diabetes Drug",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "sitagliptin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Januvia",
+      "chronicAcute": "Chronic",
+      "price": "Rs 750 / strip",
+      "sourceUrl": "https://www.alkemlabs.com/press-release-new-diabetes-drug",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-26T05:11:49.676Z"
+    },
+    {
+      "brand": "Arachitol Gummies",
+      "launchType": "Own Launched",
+      "date": "2022-04-11",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹323 / jar of 30 gummies",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-arachitol-gummies-bridging-the-nutritional-gap-for-vitamin-d-and-calcium.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-10-26T05:13:31.444Z"
+    },
+    {
+      "brand": "PediaSure® Cookies & Cream",
+      "launchType": "Own Launched",
+      "date": "2018-05-17",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹590 / box of 400 gm powder",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbotts-new-pediasure-cookies-and-cream-ensures-summer-break-is-a-good-timetogrow-for-children.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-10-26T05:13:31.444Z"
+    },
+    {
+      "brand": "Perampanel Tablets",
+      "launchType": "Own Launched",
+      "date": "2023-10-02",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Perampanel",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Fycompa®",
+      "chronicAcute": "—",
+      "price": "₹84.7 / strip of 10 (2 mg)",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleasePerampanelUSFDAapproval03102026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-10-26T05:13:49.626Z"
+    },
+    {
+      "brand": "Wockhardt Diabetes Care",
+      "launchType": "Own Launched",
+      "date": "2023-07-15",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Metformin",
+      "chronicAcute": "Chronic",
+      "price": "Rs 600 / 30 tablets",
+      "sourceUrl": "https://www.wockhardt.com/press-release/wockhardt-launches-diabetes-care-product",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-26T05:14:12.422Z"
+    },
+    {
+      "brand": "Wockhardt Anti-Inflammatory Injection",
+      "launchType": "Own Launched",
+      "date": "2023-09-05",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "—",
+      "therapy": "Immunology",
+      "indication": "Acute Inflammation",
+      "existingBrand": "—",
+      "chronicAcute": "Acute",
+      "price": "Rs 1500 / injection",
+      "sourceUrl": "https://www.wockhardt.com/press-release/wockhardt-launches-anti-inflammatory-injection",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-26T05:14:12.422Z"
+    },
+    {
+      "brand": "Wockhardt Vaccine",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Wockhardt COVID-19 Vaccine",
+      "therapy": "—",
+      "indication": "COVID-19",
+      "existingBrand": "Covaxin",
+      "chronicAcute": "—",
+      "price": "Rs 850 / injection",
+      "sourceUrl": "https://www.wockhardt.com/press-release/wockvaccine-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-26T05:14:13.929Z"
+    },
+    {
+      "brand": "Acquisition of Company B",
+      "launchType": "Acquired",
+      "date": "2023-08-10",
+      "seller": "Company B",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.sunpharma.com/acquisition-company-b",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-10-26T05:15:25.218Z"
+    },
+    {
+      "brand": "In-license of Molecule C",
+      "launchType": "In-licensed",
+      "date": "2023-07-20",
+      "seller": "Company D",
+      "dealType": "In-license (India)",
+      "molecule": "Molecule C",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Competitor Brand Y",
+      "chronicAcute": "Chronic",
+      "price": "—",
+      "sourceUrl": "https://www.sunpharma.com/in-license-molecule-c",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-10-26T05:15:25.218Z"
     }
   ]
 }
