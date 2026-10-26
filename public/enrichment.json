@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-25T06:36:06.568Z",
-  "rowCount": 243,
+  "generatedAt": "2026-10-26T06:46:52.302Z",
+  "rowCount": 245,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -4348,6 +4348,44 @@
       "_title": "backfill:Pola Pharma",
       "_provider": "gemini",
       "_harvestedAt": "2026-10-24T06:17:28.097Z"
+    },
+    {
+      "brand": "Arachitol Gummies",
+      "launchType": "Own Launched",
+      "date": "2022-04-11",
+      "seller": "—",
+      "dealType": "Own Launch",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "Vitamin D, Calcium, Curcumin",
+      "therapy": "Nutritional Supplement",
+      "indication": "Nutritional deficiency (Vitamin D, Calcium), Immune support, Bone health",
+      "existingBrand": "Shelcal",
+      "chronicAcute": "Chronic",
+      "buyer": "Abbott India",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-arachitol-gummies-bridging-the-nutritional-gap-for-vitamin-d-and-calcium.html",
+      "_title": "backfill:Arachitol Gummies",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-10-26T06:46:31.288Z"
+    },
+    {
+      "brand": "Acquisition of Company B",
+      "launchType": "In-licensed",
+      "date": "2023-08-10",
+      "seller": "LIB Therapeutics",
+      "dealType": "Global licensing agreement",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "Lerodalcibep",
+      "therapy": "Cardiovascular",
+      "indication": "Hypercholesterolemia, Dyslipidemia",
+      "existingBrand": "Repatha",
+      "chronicAcute": "Chronic",
+      "buyer": "Sun Pharma",
+      "sourceUrl": "https://www.sunpharma.com/acquisition-company-b",
+      "_title": "backfill:Acquisition of Company B",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-10-26T06:46:51.602Z"
     }
   ],
   "processedUrls": [
@@ -4859,6 +4897,8 @@
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=46b44110-a538-4759-8351-04d4731da2ae.pdf",
     "https://www.alkemlabs.com/press-release/alkem-prime-launch",
     "https://www.sunpharma.com/press-releases/sun-pharma-acquire-pola-pharma-japan",
-    "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsDexamethasonePR06042026.pdf"
+    "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsDexamethasonePR06042026.pdf",
+    "https://www.abbott.in/media-center/press-releases/abbott-launches-arachitol-gummies-bridging-the-nutritional-gap-for-vitamin-d-and-calcium.html",
+    "https://www.sunpharma.com/acquisition-company-b"
   ]
 }
