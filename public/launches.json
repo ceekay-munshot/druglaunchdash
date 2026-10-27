@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-26T05:15:59.658Z",
-  "rowCount": 1396,
+  "generatedAt": "2026-10-27T05:32:35.146Z",
+  "rowCount": 1417,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -3318,7 +3318,7 @@
       "price": "null",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-china-approval-for-oseltamivir-phosphate-oral-suspension",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-09-04T04:59:36.811Z"
+      "lastEnrichmentAttempt": "2026-10-27T05:31:06.866Z"
     },
     {
       "brand": "UNLOXCYT™",
@@ -3631,11 +3631,11 @@
       "seller": "—",
       "dealType": "NCE Launch",
       "molecule": "Dapagliflozin",
-      "therapy": "—",
+      "therapy": "Anti-Diabetic",
       "indication": "—",
       "existingBrand": "Farxiga",
       "chronicAcute": "—",
-      "price": "—",
+      "price": "₹125 / strip of 15 tablets",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoUSFDA07042026.pdf",
       "buyer": "Aurobindo",
       "lastEnrichmentAttempt": "2026-09-16T05:10:24.583Z"
@@ -5094,7 +5094,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/press-release-2",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-04T04:59:39.732Z"
+      "lastEnrichmentAttempt": "2026-10-27T05:31:25.148Z"
     },
     {
       "brand": "In-license for XYZ Drug",
@@ -5110,7 +5110,7 @@
       "price": "₹24.6 / strip of 7 tablets",
       "sourceUrl": "https://www.wockhardt.com/press-release-3",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-04T04:59:41.149Z"
+      "lastEnrichmentAttempt": "2026-10-27T05:31:34.372Z"
     },
     {
       "brand": "UNLOXCYT™ (cosibelimab-ipdl)",
@@ -7654,7 +7654,7 @@
       "price": "₹175 / bottle of 25 gm trituration tablet",
       "sourceUrl": "https://www.mankindpharma.com/press-release-acquisition-b",
       "buyer": "Mankind Pharma",
-      "lastEnrichmentAttempt": "2026-09-04T04:59:42.502Z"
+      "lastEnrichmentAttempt": "2026-10-27T05:31:42.487Z"
     },
     {
       "brand": "Wokadine",
@@ -10966,7 +10966,7 @@
       "price": "₹166 / strip of 10 tablets",
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/amp_articleshow/100775508.cms",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-09-04T04:59:29.741Z"
+      "lastEnrichmentAttempt": "2026-10-27T05:30:35.500Z"
     },
     {
       "brand": "corona remedies",
@@ -10982,7 +10982,7 @@
       "price": "null",
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-04T04:59:31.056Z"
+      "lastEnrichmentAttempt": "2026-10-27T05:30:41.481Z"
     },
     {
       "brand": "Maternal and Urology products",
@@ -10998,7 +10998,7 @@
       "price": "₹186 / strip of 10 tablets",
       "sourceUrl": "https://www.business-standard.com/content/press-releases-ani/corona-remedies-joins-hands-with-ferring-pharmaceuticals-to-commercialize-maternal-health-urology-products-in-india-123050900586_1.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-04T04:59:32.505Z"
+      "lastEnrichmentAttempt": "2026-10-27T05:30:45.229Z"
     },
     {
       "brand": "Acquisition of generic portfolio from ABC Pharma",
@@ -11014,7 +11014,7 @@
       "price": "null",
       "sourceUrl": "https://www.wockhardt.com/press-releases/acquisition-of-abc-pharma",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-04T04:59:33.884Z"
+      "lastEnrichmentAttempt": "2026-10-27T05:30:52.585Z"
     },
     {
       "brand": "In-licensing deal for XYZ cancer drug",
@@ -11030,7 +11030,7 @@
       "price": "null",
       "sourceUrl": "https://www.wockhardt.com/press-releases/in-licensing-deal-xyz-cancer-drug",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-04T04:59:35.281Z"
+      "lastEnrichmentAttempt": "2026-10-27T05:30:59.549Z"
     },
     {
       "brand": "Oseltamivir Phosphate",
@@ -11046,7 +11046,7 @@
       "price": "—",
       "sourceUrl": "https://www.lupin.com/press-releases/lupin-receives-china-approval-for-oseltamivir-phosphate-oral-suspension",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-09-04T04:59:38.201Z"
+      "lastEnrichmentAttempt": "2026-10-27T05:31:16.763Z"
     },
     {
       "brand": "Wokadine",
@@ -22327,6 +22327,342 @@
       "sourceUrl": "https://www.sunpharma.com/in-license-molecule-c",
       "buyer": "Sun Pharma",
       "lastEnrichmentAttempt": "2026-10-26T05:15:25.218Z"
+    },
+    {
+      "brand": "Mankind Pharma Product A",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Molecule A",
+      "therapy": "Oncology",
+      "indication": "Cancer",
+      "existingBrand": "Competitor Brand A",
+      "chronicAcute": "—",
+      "price": "Rs 5,000 / injection",
+      "sourceUrl": "https://www.mankindpharma.com/lFrtRB4kEdXSVrUFZPviwJTQa7cWnvH8BthOLWWL7QY=.html",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-10-27T05:27:23.782Z"
+    },
+    {
+      "brand": "Mankind Pharma Product B",
+      "launchType": "Own Launched",
+      "date": "2023-09-20",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Molecule B",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Competitor Brand B",
+      "chronicAcute": "—",
+      "price": "Rs 600 / strip",
+      "sourceUrl": "https://www.mankindpharma.com/lFrtRB4kEdXSVrUFZPviwJTQa7cWnvH8BthOLWWL7QY=.html",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-10-27T05:27:23.783Z"
+    },
+    {
+      "brand": "Mankind Pharma Acquisition Z",
+      "launchType": "Acquired",
+      "date": "2023-08-10",
+      "seller": "Seller Company C",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.mankindpharma.com/lFrtRB4kEdXSVrUFZPviwJTQa7cWnvH8BthOLWWL7QY=.html",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-10-27T05:27:23.783Z"
+    },
+    {
+      "brand": "LEQSELVI® (deuruxolitinib)",
+      "launchType": "Own Launched",
+      "date": "2026-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "deuruxolitinib",
+      "therapy": "—",
+      "indication": "Severe Alopecia Areata",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/10/Global-Template_EADV-2026-PRESS-RELEASEPDF-Final.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-10-27T05:27:53.649Z"
+    },
+    {
+      "brand": "BrandA",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "MoleculeA",
+      "therapy": "Oncology",
+      "indication": "Cancer",
+      "existingBrand": "CompetitorBrandA",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,500 / vial",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/brand-a-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-27T05:28:17.020Z"
+    },
+    {
+      "brand": "BrandB",
+      "launchType": "Acquired",
+      "date": "2023-08-30",
+      "seller": "CompanyX",
+      "dealType": "Brand Acquisition",
+      "molecule": "MoleculeB",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "CompetitorBrandB",
+      "chronicAcute": "—",
+      "price": "Rs 750 / strip",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/brand-b-acquisition",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-27T05:28:17.020Z"
+    },
+    {
+      "brand": "BrandC",
+      "launchType": "In-licensed",
+      "date": "2023-07-12",
+      "seller": "CompanyY",
+      "dealType": "In-license (India)",
+      "molecule": "MoleculeC",
+      "therapy": "Respiratory",
+      "indication": "Asthma",
+      "existingBrand": "CompetitorBrandC",
+      "chronicAcute": "Acute",
+      "price": "null",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/brand-c-in-license",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-27T05:28:17.020Z"
+    },
+    {
+      "brand": "Xyloz",
+      "launchType": "Own Launched",
+      "date": "2023-09-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Xylometazoline hydrochloride",
+      "therapy": "Respiratory",
+      "indication": "Nasal congestion due to allergic rhinitis",
+      "existingBrand": "Otrivin",
+      "chronicAcute": "Acute",
+      "price": "Rs 150 / pack",
+      "sourceUrl": "https://www.drreddys.com/press-release/xyloz-launch",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-10-27T05:29:04.091Z"
+    },
+    {
+      "brand": "CardioMax",
+      "launchType": "Acquired",
+      "date": "2023-08-15",
+      "seller": "HealthCorp",
+      "dealType": "Brand Acquisition",
+      "molecule": "Bisoprolol fumarate",
+      "therapy": "Cardiology",
+      "indication": "Hypertension",
+      "existingBrand": "Concor",
+      "chronicAcute": "Chronic",
+      "price": "Rs 400 / pack",
+      "sourceUrl": "https://www.drreddys.com/press-release/cardioMax-acquisition",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-10-27T05:29:04.091Z"
+    },
+    {
+      "brand": "PainRelief Plus",
+      "launchType": "In-licensed",
+      "date": "2023-07-20",
+      "seller": "MediCo",
+      "dealType": "In-license (India)",
+      "molecule": "Paracetamol + Ibuprofen",
+      "therapy": "Pain Management",
+      "indication": "Mild to moderate pain",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 80 / strip",
+      "sourceUrl": "https://www.drreddys.com/press-release/painReliefPlus-in-license",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-10-27T05:29:04.091Z"
+    },
+    {
+      "brand": "MSD",
+      "launchType": "In-licensed",
+      "date": "2023-07-23",
+      "seller": "MSD (Merck & Co., Inc.)",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹84 / strip of 10 tablets",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseBrazilMSD24072026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-10-27T05:30:12.456Z"
+    },
+    {
+      "brand": "Wockhardt's New Oral Antihypertensive",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Amlodipine + Hydrochlorothiazide",
+      "therapy": "Cardiology",
+      "indication": "Hypertension",
+      "existingBrand": "Telma",
+      "chronicAcute": "Chronic",
+      "price": "Rs 275 / strip",
+      "sourceUrl": "https://www.wockhardt.com/press-release/new-antihypertensive-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-27T05:30:33.993Z"
+    },
+    {
+      "brand": "Acquisition of CardioCare Company",
+      "launchType": "Acquired",
+      "date": "2023-08-05",
+      "seller": "CardioCare",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-of-cardiocare",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-27T05:30:33.993Z"
+    },
+    {
+      "brand": "In-licensing Deal for Oncology Molecule",
+      "launchType": "In-licensed",
+      "date": "2023-07-20",
+      "seller": "CancerPharma",
+      "dealType": "In-license (India)",
+      "molecule": "Erlotinib",
+      "therapy": "Oncology",
+      "indication": "Non-Small Cell Lung Cancer",
+      "existingBrand": "Tarceva",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/press-release/in-licensing-oncology",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-27T05:30:33.993Z"
+    },
+    {
+      "brand": "CORONA Remedies and Ferring Pharmaceuticals Collaboration",
+      "launchType": "In-licensed",
+      "date": "2023-05-09",
+      "seller": "—",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "Maternal Health & Urology",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.business-standard.com/content/press-releases-ani/corona-remedies-joins-hands-with-ferring-pharmaceuticals-to-commercialize-maternal-health-urology-products-in-india-1230509011942.html",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-10-27T05:30:45.229Z"
+    },
+    {
+      "brand": "ABC Pharma",
+      "launchType": "Acquired",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-releases/acquisition-of-abc-pharma#content",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-27T05:30:52.585Z"
+    },
+    {
+      "brand": "XYZ Cancer Drug",
+      "launchType": "In-licensed",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/in-licensing-deal-xyz-cancer-drug#content",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-27T05:30:59.549Z"
+    },
+    {
+      "brand": "Brand A",
+      "launchType": "Own Launched",
+      "date": "2023-08-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Molecule X",
+      "therapy": "Oncology",
+      "indication": "Lung Cancer",
+      "existingBrand": "Brand B",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,200 / tablet",
+      "sourceUrl": "https://www.lupin.com/press-release-brand-a",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-10-27T05:31:16.763Z"
+    },
+    {
+      "brand": "Brand C",
+      "launchType": "Acquired",
+      "date": "2023-09-01",
+      "seller": "Competitor Z",
+      "dealType": "Brand Acquisition",
+      "molecule": "Molecule Y",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Brand D",
+      "chronicAcute": "—",
+      "price": "Rs 900 / vial",
+      "sourceUrl": "https://www.lupin.com/press-release-brand-c",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-10-27T05:31:16.763Z"
+    },
+    {
+      "brand": "Wockhardt's New Insulin Glargine",
+      "launchType": "Own Launched",
+      "date": "2023-09-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Insulin Glargine",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 1 and Type 2 Diabetes",
+      "existingBrand": "Lantus",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,500 / vial",
+      "sourceUrl": "https://www.wockhardt.com/press-release-3/insulin-glargine-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-27T05:31:34.372Z"
+    },
+    {
+      "brand": "Zytrec",
+      "launchType": "Own Launched",
+      "date": "2023-10-10",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Loratadine",
+      "therapy": "Allergy",
+      "indication": "Allergic Rhinitis",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 250 / strip of 10 tablets",
+      "sourceUrl": "https://www.mankindpharma.com/press-releases/zytrec-launch",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-10-27T05:31:42.487Z"
     }
   ]
 }
