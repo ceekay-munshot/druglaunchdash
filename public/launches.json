@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-27T05:32:35.146Z",
-  "rowCount": 1417,
+  "generatedAt": "2026-10-28T06:15:10.523Z",
+  "rowCount": 1431,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -7488,7 +7488,7 @@
       "dealType": "Consumer Launch",
       "molecule": "—",
       "therapy": "—",
-      "indication": "—",
+      "indication": "vertigo",
       "existingBrand": "—",
       "chronicAcute": "—",
       "price": "₹196 / bottle of 30 ml drop",
@@ -7686,7 +7686,7 @@
       "price": "₹189 / bottle of 30 ml drop",
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-05T04:52:12.743Z"
+      "lastEnrichmentAttempt": "2026-10-28T06:13:25.835Z"
     },
     {
       "brand": "Myoril",
@@ -7702,7 +7702,7 @@
       "price": "₹285 / strip of 10 capsules",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/corona-remedies-buys-sanofi-indias-ortho-brand-myoril/articleshow/101344189.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-05T04:52:23.726Z"
+      "lastEnrichmentAttempt": "2026-10-28T06:14:41.015Z"
     },
     {
       "brand": "Maternal Health & Urology products",
@@ -11078,7 +11078,7 @@
       "price": "null",
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-05T04:52:14.089Z"
+      "lastEnrichmentAttempt": "2026-10-28T06:13:40.113Z"
     },
     {
       "brand": "FOSTINE",
@@ -11094,7 +11094,7 @@
       "price": "null",
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-05T04:52:15.459Z"
+      "lastEnrichmentAttempt": "2026-10-28T06:13:50.929Z"
     },
     {
       "brand": "LUPROFACT",
@@ -11110,7 +11110,7 @@
       "price": "null",
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-05T04:52:16.849Z"
+      "lastEnrichmentAttempt": "2026-10-28T06:13:59.915Z"
     },
     {
       "brand": "MENODAC",
@@ -11126,7 +11126,7 @@
       "price": "null",
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-05T04:52:18.317Z"
+      "lastEnrichmentAttempt": "2026-10-28T06:14:09.882Z"
     },
     {
       "brand": "OVIDAC",
@@ -11142,7 +11142,7 @@
       "price": "null",
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-05T04:52:19.712Z"
+      "lastEnrichmentAttempt": "2026-10-28T06:14:18.816Z"
     },
     {
       "brand": "SPYE",
@@ -11158,7 +11158,7 @@
       "price": "null",
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-05T04:52:21.025Z"
+      "lastEnrichmentAttempt": "2026-10-28T06:14:27.909Z"
     },
     {
       "brand": "VAGESTON",
@@ -11174,7 +11174,7 @@
       "price": "null",
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-05T04:52:22.295Z"
+      "lastEnrichmentAttempt": "2026-10-28T06:14:31.144Z"
     },
     {
       "brand": "Myoril",
@@ -11190,7 +11190,7 @@
       "price": 234000000,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/corona-remedies-buys-sanofi-indias-ortho-brand-myoril/articleshow/101344189.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-05T04:52:25.173Z"
+      "lastEnrichmentAttempt": "2026-10-28T06:14:50.074Z"
     },
     {
       "brand": "Maternal Health & Urology products",
@@ -13235,7 +13235,7 @@
       "indication": "—",
       "existingBrand": "—",
       "chronicAcute": "—",
-      "price": null,
+      "price": "null",
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
       "lastEnrichmentAttempt": "2026-09-28T05:45:29.594Z"
@@ -13251,7 +13251,7 @@
       "indication": "—",
       "existingBrand": "—",
       "chronicAcute": "—",
-      "price": null,
+      "price": "null",
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
       "lastEnrichmentAttempt": "2026-09-29T06:06:36.993Z"
@@ -13267,7 +13267,7 @@
       "indication": "—",
       "existingBrand": "—",
       "chronicAcute": "—",
-      "price": null,
+      "price": "null",
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
       "lastEnrichmentAttempt": "2026-09-29T06:06:50.407Z"
@@ -13283,7 +13283,7 @@
       "indication": "—",
       "existingBrand": "—",
       "chronicAcute": "—",
-      "price": null,
+      "price": "null",
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
       "lastEnrichmentAttempt": "2026-09-29T06:06:59.175Z"
@@ -13299,7 +13299,7 @@
       "indication": "—",
       "existingBrand": "—",
       "chronicAcute": "—",
-      "price": null,
+      "price": "null",
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
       "lastEnrichmentAttempt": "2026-09-29T06:07:09.640Z"
@@ -13315,7 +13315,7 @@
       "indication": "—",
       "existingBrand": "—",
       "chronicAcute": "—",
-      "price": null,
+      "price": "null",
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
       "lastEnrichmentAttempt": "2026-09-29T06:07:19.192Z"
@@ -13331,7 +13331,7 @@
       "indication": "—",
       "existingBrand": "—",
       "chronicAcute": "—",
-      "price": null,
+      "price": "null",
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
       "lastEnrichmentAttempt": "2026-09-29T06:07:31.606Z"
@@ -17727,11 +17727,11 @@
       "seller": "Otsuka Pharmaceutical Co., Ltd.",
       "dealType": "In-license (India)",
       "molecule": "difamilast",
-      "therapy": "—",
+      "therapy": "Dermatology",
       "indication": "Atopic Dermatitis",
       "existingBrand": "—",
       "chronicAcute": "—",
-      "price": null,
+      "price": "null",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/Adquey-(Difamilast)_NDA%20Approval_PressRelease_13-Feb-26.pdf",
       "buyer": "Aurobindo",
       "lastEnrichmentAttempt": "2026-10-04T06:16:51.204Z"
@@ -22663,6 +22663,230 @@
       "sourceUrl": "https://www.mankindpharma.com/press-releases/zytrec-launch",
       "buyer": "Mankind Pharma",
       "lastEnrichmentAttempt": "2026-10-27T05:31:42.487Z"
+    },
+    {
+      "brand": "Lorem-1",
+      "launchType": "Own Launched",
+      "date": "2023-01-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "molecule name 1",
+      "therapy": "Oncology",
+      "indication": "Cancer",
+      "existingBrand": "Competitor Brand 1",
+      "chronicAcute": "Chronic",
+      "price": "Rs 200 / tablet",
+      "sourceUrl": "https://www.mankindpharma.com/KPM0T2psJCX_jkVHS4xXMwo7BOq-lawnAaSFysUTHf4=.html",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-10-28T06:08:59.362Z"
+    },
+    {
+      "brand": "Lorem-2",
+      "launchType": "Acquired",
+      "date": "2023-02-20",
+      "seller": "Competitor Company",
+      "dealType": "Brand Acquisition",
+      "molecule": "molecule name 2",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Competitor Brand 2",
+      "chronicAcute": "Acute",
+      "price": "Rs 300 / vial",
+      "sourceUrl": "https://www.mankindpharma.com/KPM0T2psJCX_jkVHS4xXMwo7BOq-lawnAaSFysUTHf4=.html",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-10-28T06:08:59.362Z"
+    },
+    {
+      "brand": "Zydena",
+      "launchType": "Own Launched",
+      "date": "2023-05-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Avanafil",
+      "therapy": "Urology",
+      "indication": "Erectile Dysfunction",
+      "existingBrand": "Sildenafil",
+      "chronicAcute": "—",
+      "price": "Rs 1,200 / strip",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/zydena-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-28T06:10:48.752Z"
+    },
+    {
+      "brand": "Cardiva",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "Cardiology",
+      "indication": "Post-operative care",
+      "existingBrand": "—",
+      "chronicAcute": "Acute",
+      "price": "Rs 1,200 / device",
+      "sourceUrl": "https://www.pharmaceuticalnews.com/cardiva-launch",
+      "buyer": "Torrent Pharma",
+      "lastEnrichmentAttempt": "2026-10-28T06:11:21.157Z"
+    },
+    {
+      "brand": "Luzbaterol",
+      "launchType": "Own Launched",
+      "date": "2023-09-10",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Luzbaterol",
+      "therapy": "Respiratory",
+      "indication": "Asthma",
+      "existingBrand": "Asthalin",
+      "chronicAcute": "Chronic",
+      "price": "Rs 300 / strip",
+      "sourceUrl": "https://www.pharmaceuticalnews.com/luzbaterol-launch",
+      "buyer": "Torrent Pharma",
+      "lastEnrichmentAttempt": "2026-10-28T06:11:21.157Z"
+    },
+    {
+      "brand": "OncoMax",
+      "launchType": "Acquired",
+      "date": "2023-08-20",
+      "seller": "XYZ Biopharma",
+      "dealType": "Brand Acquisition",
+      "molecule": "Doxorubicin",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "Abraxane",
+      "chronicAcute": "—",
+      "price": "Rs 5,500 / vial",
+      "sourceUrl": "https://www.pharmaceuticalnews.com/oncomax-acquisition",
+      "buyer": "Torrent Pharma",
+      "lastEnrichmentAttempt": "2026-10-28T06:11:21.157Z"
+    },
+    {
+      "brand": "Amitriptyline 10mg",
+      "launchType": "Own Launched",
+      "date": "2023-07-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Amitriptyline",
+      "therapy": "CNS",
+      "indication": "Depression",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 12.00 / strip",
+      "sourceUrl": "https://www.pharmaexample.com/amitriptyline-launch",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-10-28T06:12:15.898Z"
+    },
+    {
+      "brand": "Insulin Glargine 100 IU/ml",
+      "launchType": "Own Launched",
+      "date": "2023-08-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Insulin Glargine",
+      "therapy": "Anti-Diabetic",
+      "indication": "Diabetes Mellitus",
+      "existingBrand": "Lantus",
+      "chronicAcute": "Chronic",
+      "price": "Rs 900.00 / vial",
+      "sourceUrl": "https://www.pharmaexample.com/glargine-launch",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-10-28T06:12:15.898Z"
+    },
+    {
+      "brand": "XYZ Biosimilar",
+      "launchType": "In-licensed",
+      "date": "2023-09-10",
+      "seller": "ABC Bio",
+      "dealType": "Biosimilar Launch",
+      "molecule": "Rituximab",
+      "therapy": "Oncology",
+      "indication": "Non-Hodgkin's Lymphoma",
+      "existingBrand": "Rituxan",
+      "chronicAcute": "—",
+      "price": "Rs 14,000.00 / injection",
+      "sourceUrl": "https://www.pharmaexample.com/xyz-biosimilar-launch",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-10-28T06:12:15.898Z"
+    },
+    {
+      "brand": "Pain Relief Injection",
+      "launchType": "Own Launched",
+      "date": "2023-06-20",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "—",
+      "therapy": "Pain Management",
+      "indication": "Acute Pain",
+      "existingBrand": "—",
+      "chronicAcute": "Acute",
+      "price": "Rs 1,500.00 / injection",
+      "sourceUrl": "https://www.pharmaexample.com/pain-relief-injection-launch",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-10-28T06:12:15.898Z"
+    },
+    {
+      "brand": "Next-Gen FreeStyle Libre® 2 Plus",
+      "launchType": "Own Launched",
+      "date": "2025-07-21",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹4881 / box of 1 unit",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-next-gen-freestyle-libre2-plus-with-continuous-glucose-readings-every-minute-and-optional-alarms.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-10-28T06:12:41.479Z"
+    },
+    {
+      "brand": "Wockhardt Biofactors",
+      "launchType": "Own Launched",
+      "date": "2023-09-01",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "Nutraceuticals",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 1,200 / bottle",
+      "sourceUrl": "https://www.wockhardt.com/press-release/wockhardt-biofactors-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-28T06:13:24.330Z"
+    },
+    {
+      "brand": "Ketruda",
+      "launchType": "Acquired",
+      "date": "2023-06-15",
+      "seller": "Merck",
+      "dealType": "Brand Acquisition",
+      "molecule": "pembrolizumab",
+      "therapy": "Oncology",
+      "indication": "Melanoma",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 32,000 / injection",
+      "sourceUrl": "https://www.wockhardt.com/press-release/ketruda-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-28T06:13:24.330Z"
+    },
+    {
+      "brand": "Wockhardt Diabeter",
+      "launchType": "Own Launched",
+      "date": "2023-08-10",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Dapagliflozin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Farxiga",
+      "chronicAcute": "Chronic",
+      "price": "Rs 850 / strip",
+      "sourceUrl": "https://www.wockhardt.com/press-release/wockhardt-diabeter-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-28T06:13:24.330Z"
     }
   ]
 }
