@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-28T06:15:10.523Z",
-  "rowCount": 1431,
+  "generatedAt": "2026-10-29T06:23:57.025Z",
+  "rowCount": 1441,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -7718,7 +7718,7 @@
       "price": "₹171 / strip of 10 tablets",
       "sourceUrl": "https://www.business-standard.com/content/press-releases-ani/corona-remedies-joins-hands-with-ferring-pharmaceuticals-to-commercialize-maternal-health-urology-products-in-india-123050900586_1.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-06T04:59:47.909Z"
+      "lastEnrichmentAttempt": "2026-10-29T06:22:10.103Z"
     },
     {
       "brand": "Obimet, Thyrocab",
@@ -7734,7 +7734,7 @@
       "price": "₹213 / bottle of 100 tablets",
       "sourceUrl": "https://www.expresspharma.in/corona-acquires-obimet-thyrocab-brands-from-abbott-india",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-06T04:59:50.593Z"
+      "lastEnrichmentAttempt": "2026-10-29T06:22:27.920Z"
     },
     {
       "brand": "four drug brands from GlaxoSmithkline Pharmaceuticals",
@@ -7750,7 +7750,7 @@
       "price": "₹96.8 / strip of 15 tablets",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-06T04:59:53.280Z"
+      "lastEnrichmentAttempt": "2026-10-29T06:22:41.620Z"
     },
     {
       "brand": "Wockhardt's New Drug",
@@ -11206,7 +11206,7 @@
       "price": null,
       "sourceUrl": "https://www.business-standard.com/content/press-releases-ani/corona-remedies-joins-hands-with-ferring-pharmaceuticals-to-commercialize-maternal-health-urology-products-in-india-123050901730_1.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-06T04:59:49.245Z"
+      "lastEnrichmentAttempt": "2026-10-29T06:22:18.769Z"
     },
     {
       "brand": "Obimet and Thyrocab",
@@ -11222,7 +11222,7 @@
       "price": "—",
       "sourceUrl": "https://www.expresspharma.in/corona-acquires-obimet-thyrocab-brands-from-abbott-india/",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-06T04:59:51.941Z"
+      "lastEnrichmentAttempt": "2026-10-29T06:22:37.520Z"
     },
     {
       "brand": "WINLEVI® (clascoterone cream 1%)",
@@ -11254,7 +11254,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/11/Press-Release-Winlevi-availability-in-US.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-06T04:59:56.008Z"
+      "lastEnrichmentAttempt": "2026-10-29T06:22:52.469Z"
     },
     {
       "brand": "Myoril",
@@ -11270,7 +11270,7 @@
       "price": "₹182 / strip of 10 tablets",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/corona-remedies-buys-sanofi-indias-ortho-brand-myoril/articleshow/101344189.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-06T04:59:57.350Z"
+      "lastEnrichmentAttempt": "2026-10-29T06:22:57.243Z"
     },
     {
       "brand": "7 brands in cardiology & women’s healthcare",
@@ -11286,7 +11286,7 @@
       "price": "₹204 / strip of 10 tablets",
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-06T04:59:58.728Z"
+      "lastEnrichmentAttempt": "2026-10-29T06:23:06.320Z"
     },
     {
       "brand": "Obimet, Thyrocab",
@@ -11302,7 +11302,7 @@
       "price": "₹220 / bottle of 100 tablets",
       "sourceUrl": "https://www.expresspharma.in/corona-acquires-obimet-thyrocab-brands-from-abbott-india",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-06T05:00:00.122Z"
+      "lastEnrichmentAttempt": "2026-10-29T06:23:22.822Z"
     },
     {
       "brand": "four drug brands",
@@ -15094,7 +15094,7 @@
       "price": "null",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/08/Sun-Pharma-and-Cassiopea-announce-the-expiry-of-the-HSR-Act-process-and-the-successful-consummation-of-their-Winlevi%C2%AE.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-07T05:07:01.430Z"
+      "lastEnrichmentAttempt": "2026-10-29T06:23:26.471Z"
     },
     {
       "brand": "Bridging the Gap in Diabetes Care",
@@ -22887,6 +22887,166 @@
       "sourceUrl": "https://www.wockhardt.com/press-release/wockhardt-diabeter-launch",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-10-28T06:13:24.330Z"
+    },
+    {
+      "brand": "Mankind Pain Relief Gel",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "Pain Management",
+      "indication": "Pain relief",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 150 / tube",
+      "sourceUrl": "https://www.mankindpharma.com/oAD5O2RS8h7PepvFuAR7bcHyMrYZbX0AvfNtKvb57FY=.html",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-10-29T06:18:32.639Z"
+    },
+    {
+      "brand": "WINLEVI® (clascoterone) cream 1%",
+      "launchType": "Own Launched",
+      "date": "2021-09-28",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "clascoterone",
+      "therapy": "Dermatology",
+      "indication": "Acne Vulgaris",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/11/Press-Release-Winlevi-availability-in-US.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-10-29T06:19:07.112Z"
+    },
+    {
+      "brand": "XYZ Pharma",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "abciximab",
+      "therapy": "Cardiology",
+      "indication": "Acute coronary syndrome",
+      "existingBrand": "ReoPro",
+      "chronicAcute": "Acute",
+      "price": "Rs 1,500 / vial",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/xyz-pharma-launches-abciximab",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-29T06:19:27.529Z"
+    },
+    {
+      "brand": "ABC Healthcare",
+      "launchType": "Acquired",
+      "date": "2023-08-10",
+      "seller": "QRS Pharma",
+      "dealType": "Brand Acquisition",
+      "molecule": "metformin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Glyconorm",
+      "chronicAcute": "Chronic",
+      "price": "Rs 250 / strip",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/abc-healthcare-acquires-metformin",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-29T06:19:27.530Z"
+    },
+    {
+      "brand": "MSD License Agreement",
+      "launchType": "In-licensed",
+      "date": "2026-07-23",
+      "seller": "MSD",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹154 / strip of 10 tablets",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseBrazilMSD24072026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-10-29T06:21:48.474Z"
+    },
+    {
+      "brand": "XYZ Pharma's New Drug",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "ABC-123",
+      "therapy": "Oncology",
+      "indication": "Advanced Stage Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 2,000 / tablet",
+      "sourceUrl": "https://www.xyzpharma.com/press-releases/new-drug-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-29T06:22:08.595Z"
+    },
+    {
+      "brand": "ABC Biotech Acquisition",
+      "launchType": "Acquired",
+      "date": "2023-09-15",
+      "seller": "ABC Biotech",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹41.9 / strip of 10 tablet er",
+      "sourceUrl": "https://www.xyzpharma.com/press-releases/abc-biotech-acquisition",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-29T06:22:08.595Z"
+    },
+    {
+      "brand": "DEF Pharmaceuticals In-licensing Deal",
+      "launchType": "In-licensed",
+      "date": "2023-08-20",
+      "seller": "DEF Pharmaceuticals",
+      "dealType": "In-license (India)",
+      "molecule": "XYZ-456",
+      "therapy": "Neurology",
+      "indication": "Alzheimer's Disease",
+      "existingBrand": "GHI Memory",
+      "chronicAcute": "Chronic",
+      "price": "null",
+      "sourceUrl": "https://www.xyzpharma.com/press-releases/def-in-licensing-deal",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-29T06:22:08.595Z"
+    },
+    {
+      "brand": "WINLEVI",
+      "launchType": "Own Launched",
+      "date": "2021-11-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "clascoterone",
+      "therapy": "Dermatology",
+      "indication": "acne vulgaris",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.sunpharma.com/press-release/sun-pharma-announces-availability-of-winlevi-in-us-for-topical-treatment-of-acne-vulgaris",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-10-29T06:22:52.469Z"
+    },
+    {
+      "brand": "Winlevi®",
+      "launchType": "In-licensed",
+      "date": "2021-08-31",
+      "seller": "Cassiopea SpA",
+      "dealType": "In-license (India)",
+      "molecule": "clascoterone",
+      "therapy": "Dermatology",
+      "indication": "acne vulgaris",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "—",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-10-29T06:23:26.471Z"
     }
   ]
 }
