@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-29T06:23:57.025Z",
-  "rowCount": 1441,
+  "generatedAt": "2026-10-30T06:21:24.068Z",
+  "rowCount": 1449,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -2240,10 +2240,10 @@
       "dealType": "NCE Launch",
       "molecule": "Dextromethorphan Hydrobromide plus Chlorpheniramine Maleate",
       "therapy": "—",
-      "indication": "—",
+      "indication": "Cough relief",
       "existingBrand": "—",
       "chronicAcute": "—",
-      "price": "—",
+      "price": "₹104 / bottle of 60 ml oral suspension",
       "sourceUrl": "http://www.sunpharma.com",
       "buyer": "Sun Pharma",
       "lastEnrichmentAttempt": "2026-09-17T05:17:26.992Z"
@@ -7766,7 +7766,7 @@
       "price": "Rs 500 / strip",
       "sourceUrl": "https://www.wockhardt.com/press-releases/new-drug-launch",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-07T05:10:13.379Z"
+      "lastEnrichmentAttempt": "2026-10-30T06:20:53.648Z"
     },
     {
       "brand": "Company XYZ Acquisition",
@@ -7782,7 +7782,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/press-releases/company-acquisition",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-07T05:10:19.999Z"
+      "lastEnrichmentAttempt": "2026-10-30T06:20:59.752Z"
     },
     {
       "brand": "Drug ABC",
@@ -11318,7 +11318,7 @@
       "price": "₹170 / bottle of 60 tablets",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-07T05:09:48.469Z"
+      "lastEnrichmentAttempt": "2026-10-30T06:20:40.010Z"
     },
     {
       "brand": "Maternal Health & Urology products",
@@ -11334,7 +11334,7 @@
       "price": "₹290 / strip of 10 tablets",
       "sourceUrl": "https://www.business-standard.com/content/press-releases-ani/corona-remedies-joins-hands-with-ferring-pharmaceuticals-to-commercialize-maternal-health-urology-products-in-india-123050900586_1.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-07T05:09:59.347Z"
+      "lastEnrichmentAttempt": "2026-10-30T06:20:43.569Z"
     },
     {
       "brand": "Wockhardt's New Bio-similar",
@@ -11366,7 +11366,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/news/acquisition-xyz-pharmaceuticals",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-07T05:10:07.054Z"
+      "lastEnrichmentAttempt": "2026-10-30T06:20:47.268Z"
     },
     {
       "brand": "Partnership for New Generic Drug",
@@ -15110,7 +15110,7 @@
       "price": "null",
       "sourceUrl": "https://businessnewsthisweek.com/business/bridging-the-gap-in-diabetes-care-corona-remedies-introduces-affordable-solution-of-empagliflozin/",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-07T05:07:54.431Z"
+      "lastEnrichmentAttempt": "2026-10-30T06:20:00.358Z"
     },
     {
       "brand": "Modafinil Tablets, USP",
@@ -15142,7 +15142,7 @@
       "price": null,
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-announces-the-approval-of-sodium-zirconium-cyclosilicate-for-oral-suspension-in-the-united-states",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-09-07T05:08:43.795Z"
+      "lastEnrichmentAttempt": "2026-10-30T06:20:08.244Z"
     },
     {
       "brand": "Sitagliptin",
@@ -15174,7 +15174,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrtoSEsLannetPR31082026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-09-07T05:09:30.884Z"
+      "lastEnrichmentAttempt": "2026-10-30T06:20:16.506Z"
     },
     {
       "brand": "MSD",
@@ -15190,7 +15190,7 @@
       "price": "₹190 / strip of 10 tablet er",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseBrazilMSD24072026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-09-07T05:09:30.884Z"
+      "lastEnrichmentAttempt": "2026-10-30T06:20:27.303Z"
     },
     {
       "brand": "Wockhardt Acquires XYZ Pharma",
@@ -15206,7 +15206,7 @@
       "price": "—",
       "sourceUrl": "https://www.wockhardt.com/press-release/wockhardt-acquires-xyz-pharma",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-07T05:09:46.963Z"
+      "lastEnrichmentAttempt": "2026-10-30T06:20:33.094Z"
     },
     {
       "brand": "UNLOXCYT™ (cosibelimab-ipdl)",
@@ -21524,7 +21524,7 @@
       "existingBrand": "—",
       "chronicAcute": "Chronic",
       "price": "—",
-      "sourceUrl": "—",
+      "sourceUrl": "https://www.aurobindo.com",
       "buyer": "Aurobindo",
       "lastEnrichmentAttempt": "2026-10-21T05:15:20.344Z"
     },
@@ -23047,6 +23047,134 @@
       "sourceUrl": "—",
       "buyer": "Sun Pharma",
       "lastEnrichmentAttempt": "2026-10-29T06:23:26.471Z"
+    },
+    {
+      "brand": "Amlodipine",
+      "launchType": "Own Launched",
+      "date": "2023-08-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Amlodipine",
+      "therapy": "CNS",
+      "indication": "Hypertension",
+      "existingBrand": "Telma",
+      "chronicAcute": "Chronic",
+      "price": "Rs 150 / strip of 10 tablets",
+      "sourceUrl": "https://www.mankindpharma.com/oAD5O2RS8h7PepvFuAR7bcHyMrYZbX0AvfNtKvb57FY=.html",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-10-30T06:18:04.643Z"
+    },
+    {
+      "brand": "Biosimilax",
+      "launchType": "Own Launched",
+      "date": "2023-09-01",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "Trastuzumab",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "Herceptin",
+      "chronicAcute": "Chronic",
+      "price": "Rs 38,000 / vial",
+      "sourceUrl": "https://www.mankindpharma.com/oAD5O2RS8h7PepvFuAR7bcHyMrYZbX0AvfNtKvb57FY=.html",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-10-30T06:18:04.643Z"
+    },
+    {
+      "brand": "Zyflo",
+      "launchType": "In-licensed",
+      "date": "2023-05-20",
+      "seller": "XYZ Pharma",
+      "dealType": "In-license (India)",
+      "molecule": "Zileuton",
+      "therapy": "Respiratory",
+      "indication": "Asthma",
+      "existingBrand": "Zyflo",
+      "chronicAcute": "—",
+      "price": "Rs 3,500 / strip of 14 tablets",
+      "sourceUrl": "https://www.mankindpharma.com/oAD5O2RS8h7PepvFuAR7bcHyMrYZbX0AvfNtKvb57FY=.html",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-10-30T06:18:04.643Z"
+    },
+    {
+      "brand": "Alkem's New Diabetes Management Device",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "—",
+      "therapy": "Anti-Diabetic",
+      "indication": "Diabetes Type 2",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 2,500 / device",
+      "sourceUrl": "https://www.alkemlabs.com/press-release-diabetes-device",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-30T06:18:50.864Z"
+    },
+    {
+      "brand": "Acquisition of XYZ Pharma",
+      "launchType": "Acquired",
+      "date": "2023-08-05",
+      "seller": "XYZ Pharma",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.alkemlabs.com/press-release-acquisition-xyz",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-30T06:18:50.864Z"
+    },
+    {
+      "brand": "In-License Agreement for ABC Medication",
+      "launchType": "In-licensed",
+      "date": "2023-07-20",
+      "seller": "ABC Pharmaceuticals",
+      "dealType": "In-license (India)",
+      "molecule": "Fluoxetine",
+      "therapy": "Neurology",
+      "indication": "Depression",
+      "existingBrand": "Prozac",
+      "chronicAcute": "Chronic",
+      "price": "Rs 800 / strip",
+      "sourceUrl": "https://www.alkemlabs.com/press-release-inlicense-abc",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-30T06:18:50.864Z"
+    },
+    {
+      "brand": "Empabite & it extensions",
+      "launchType": "Own Launched",
+      "date": "2025-03-14",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Empagliflozin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 diabetes",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://businessnewsthisweek.com/business/bridging-the-gap-in-diabetes-care-corona-remedies-introduces-affordable-solution-of-empagliflozin/",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-10-30T06:20:00.358Z"
+    },
+    {
+      "brand": "Wockhardt",
+      "launchType": "Acquired",
+      "date": "2023-09-01",
+      "seller": "XYZ Pharma",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/press-release/wockhardt-acquires-xyz-pharma",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-30T06:20:33.094Z"
     }
   ]
 }
