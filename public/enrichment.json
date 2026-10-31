@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-30T07:37:50.654Z",
-  "rowCount": 246,
+  "generatedAt": "2026-10-31T07:24:52.314Z",
+  "rowCount": 247,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -4405,6 +4405,25 @@
       "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 30 Oct - FDA approved ILUMYA for adult active psoriatic arthritis in the U.S. on 30 October 2026.",
       "_provider": "gemini",
       "_harvestedAt": "2026-10-30T07:36:26.585Z"
+    },
+    {
+      "brand": "ILUMYA® (tildrakizumab-asmn)",
+      "launchType": "Own Launched",
+      "date": "2026-10-30",
+      "seller": "—",
+      "dealType": "—",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "tildrakizumab-asmn",
+      "therapy": "Immunosuppressant / Anti-inflammatory",
+      "indication": "Active Psoriatic Arthritis",
+      "existingBrand": "Skyrizi (risankizumab)",
+      "chronicAcute": "Chronic",
+      "buyer": "Sun Pharma",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/10/ILUMYA-PsA-Approval-Press-Release-FINAL.pdf",
+      "_title": "backfill:ILUMYA® (tildrakizumab-asmn)",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-10-31T07:24:45.481Z"
     }
   ],
   "processedUrls": [
@@ -4931,6 +4950,9 @@
     "https://www.mankindpharma.com/oAD5O2RS8h7PepvFuAR7bcHyMrYZbX0AvfNtKvb57FY=.html",
     "https://www.xyzpharma.com/press-releases/abc-biotech-acquisition",
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=9b8f28d0-1101-4b12-82d0-e2ef23c8ef6c.pdf",
-    "https://www.alkemlabs.com/press-release-acquisition-xyz"
+    "https://www.alkemlabs.com/press-release-acquisition-xyz",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ac8ccb5e-aac5-4ca7-81f1-545d7f12fafe.pdf",
+    "https://sunpharma.com/wp-content/uploads/2026/10/ILUMYA-PsA-Approval-Press-Release-FINAL.pdf",
+    "https://www.wockhardt.com/press-release/in-license-agreement"
   ]
 }
