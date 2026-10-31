@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-30T06:21:24.068Z",
-  "rowCount": 1449,
+  "generatedAt": "2026-10-31T06:15:12.718Z",
+  "rowCount": 1461,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -239,7 +239,7 @@
       "seller": "—",
       "dealType": "Consumer Launch",
       "molecule": "Dextromethorphan Hydrobromide plus Chlorpheniramine Maleate",
-      "therapy": "—",
+      "therapy": "Pain Management",
       "indication": "Cough",
       "existingBrand": "—",
       "chronicAcute": "Chronic",
@@ -335,11 +335,11 @@
       "seller": "Pharmazz Inc.",
       "dealType": "In-license (India)",
       "molecule": "Sovateltide",
-      "therapy": "—",
+      "therapy": "CNS",
       "indication": "cerebral ischemic stroke",
       "existingBrand": "—",
       "chronicAcute": "Acute",
-      "price": "—",
+      "price": "₹32.1 / strip of 10 tablets",
       "sourceUrl": "https://www.pharmazz.com/launch-tyvalzi-sovateltide-india",
       "buyer": "Sun Pharma",
       "lastEnrichmentAttempt": "2026-09-21T05:20:03.889Z"
@@ -678,7 +678,7 @@
       "price": "₹1347 / bottle of 40 capsules",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/12/Press-Release-Sun-Pharma-receives-DCGI-approval-for-Molxvir-Molnupiravir-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-07T05:10:26.255Z"
+      "lastEnrichmentAttempt": "2026-10-31T06:13:23.720Z"
     },
     {
       "brand": "WINLEVI",
@@ -710,7 +710,7 @@
       "price": "₹3978 / box of 3 vials",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/09/Press-Release-Sun-Pharma-and-Pharmazz-Inc.-licensing-agreement-for-Sovateltide-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-07T05:10:30.589Z"
+      "lastEnrichmentAttempt": "2026-10-31T06:13:26.907Z"
     },
     {
       "brand": "BromSite™",
@@ -1298,7 +1298,7 @@
       "therapy": "Anti-Viral",
       "indication": "COVID-19",
       "existingBrand": "—",
-      "chronicAcute": "—",
+      "chronicAcute": "Acute",
       "price": "₹1347 / bottle of 40 capsules",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/12/Press-Release-Sun-Pharma-receives-DCGI-approval-for-Molxvir-Molnupiravir-in-India.pdf",
       "buyer": "Sun Pharma",
@@ -1878,7 +1878,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-signs-definitive-agreement-to-acquire-organon/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-07T05:10:34.486Z"
+      "lastEnrichmentAttempt": "2026-10-31T06:13:30.405Z"
     },
     {
       "brand": "UNLOXCYT",
@@ -1894,7 +1894,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-announces-the-availability-of-unloxcyt-cosibelimab-ipdl-for-advanced-cutaneous-squamous-cell-carcinoma-acscc/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-07T05:10:42.180Z"
+      "lastEnrichmentAttempt": "2026-10-31T06:13:39.995Z"
     },
     {
       "brand": "ILUMYA",
@@ -3334,7 +3334,7 @@
       "price": null,
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/01/UNLOXCYT-Commercial-Launch-Press-Release.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-08T05:06:27.615Z"
+      "lastEnrichmentAttempt": "2026-10-31T06:14:17.529Z"
     },
     {
       "brand": "ILUMYA®",
@@ -5126,7 +5126,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/01/UNLOXCYT-Commercial-Launch-Press-Release.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-07T05:10:50.691Z"
+      "lastEnrichmentAttempt": "2026-10-31T06:13:47.150Z"
     },
     {
       "brand": "UNLOXCYT",
@@ -10703,7 +10703,7 @@
       "seller": "—",
       "dealType": "Consumer Launch",
       "molecule": "—",
-      "therapy": "—",
+      "therapy": "Nutrition",
       "indication": "—",
       "existingBrand": "—",
       "chronicAcute": "—",
@@ -11663,10 +11663,10 @@
       "seller": "—",
       "dealType": "NCE Launch",
       "molecule": "Molnupiravir",
-      "therapy": "—",
+      "therapy": "Anti-Infectives",
       "indication": "COVID-19",
       "existingBrand": "—",
-      "chronicAcute": "—",
+      "chronicAcute": "Acute",
       "price": "₹1325 / bottle of 40 capsules",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/12/Press-Release-Sun-Pharma-receives-DCGI-approval-for-Molxvir-Molnupiravir-in-India.pdf",
       "buyer": "Sun Pharma",
@@ -15222,7 +15222,7 @@
       "price": "—",
       "sourceUrl": "https://www.sunpharma.com/news/2026/01/sun-pharma-announces-availability-unloxcyt-advanced-cutaneous-squamous-cell-carcinoma",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-07T05:10:50.691Z"
+      "lastEnrichmentAttempt": "2026-10-31T06:13:51.369Z"
     },
     {
       "brand": "Tildrakizumab",
@@ -15238,7 +15238,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2020/12/Press-Release-Licensing-Agreement-for-Tildrakizumab.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-08T05:05:15.212Z"
+      "lastEnrichmentAttempt": "2026-10-31T06:13:59.215Z"
     },
     {
       "brand": "Extensior®",
@@ -15270,7 +15270,7 @@
       "price": "Rs 8,500 / vial",
       "sourceUrl": "https://www.wockhardt.com/press-releases/new-biosimilar-launch-2023",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-08T05:06:26.110Z"
+      "lastEnrichmentAttempt": "2026-10-31T06:14:03.221Z"
     },
     {
       "brand": "Acquisition of Generic Portfolio",
@@ -15286,7 +15286,7 @@
       "price": "—",
       "sourceUrl": "https://www.wockhardt.com/press-releases/acquisition-generic-portfolio-2023",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-08T05:06:26.110Z"
+      "lastEnrichmentAttempt": "2026-10-31T06:14:10.295Z"
     },
     {
       "brand": "New Line Extension for Pain Management",
@@ -18370,7 +18370,7 @@
       "therapy": "Dermatology",
       "indication": "For the treatment of mild-to-moderate atopic dermatitis",
       "existingBrand": "—",
-      "chronicAcute": "—",
+      "chronicAcute": "Acute",
       "price": "null",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseAcrotech30092026.pdf",
       "buyer": "Aurobindo",
@@ -23175,6 +23175,198 @@
       "sourceUrl": "https://www.wockhardt.com/press-release/wockhardt-acquires-xyz-pharma",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-10-30T06:20:33.094Z"
+    },
+    {
+      "brand": "ILUMYA® (tildrakizumab-asmn)",
+      "launchType": "Own Launched",
+      "date": "2026-10-30",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "tildrakizumab-asmn",
+      "therapy": "—",
+      "indication": "Adults with Active Psoriatic Arthritis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/10/ILUMYA-PsA-Approval-Press-Release-FINAL.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-10-31T06:10:27.595Z"
+    },
+    {
+      "brand": "UNLOXCYT® (cosibelimab-ipdl)",
+      "launchType": "Own Launched",
+      "date": "2026-10-20",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "cosibelimab-ipdl",
+      "therapy": "Oncology",
+      "indication": "Locally Advanced Cutaneous Squamous Cell Carcinoma (laCSCC) Patients Who Are Not Candidates for Curative Surgery or Curative Radiation",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/10/Sun-Pharma-Announces-UNLOXCYT%C2%AE-cosibelimab-ipdl-Has-Received-a-Category-2A-Preferred-Designation-in-the-Updated-NCCN-Guidelines-for-Locally.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-10-31T06:10:27.595Z"
+    },
+    {
+      "brand": "WINLEVI® (clascoterone)",
+      "launchType": "Own Launched",
+      "date": "2021-09-28",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "clascoterone",
+      "therapy": "Dermatology",
+      "indication": "Topical Treatment of Acne Vulgaris",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/09/Press-Release-Sun-Pharma-launches-WINLEVI-in-India.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-10-31T06:10:27.596Z"
+    },
+    {
+      "brand": "Brand X",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Molecule A",
+      "therapy": "Oncology",
+      "indication": "Cancer",
+      "existingBrand": "Competitor Y",
+      "chronicAcute": "—",
+      "price": "Rs 1,000 / strip",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/brand-x-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-31T06:10:56.332Z"
+    },
+    {
+      "brand": "Brand Y",
+      "launchType": "Acquired",
+      "date": "2023-08-10",
+      "seller": "Company Z",
+      "dealType": "Brand Acquisition",
+      "molecule": "Molecule B",
+      "therapy": "Respiratory",
+      "indication": "Asthma",
+      "existingBrand": "Competitor A",
+      "chronicAcute": "Chronic",
+      "price": "null",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/brand-y-acquisition",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-31T06:10:56.333Z"
+    },
+    {
+      "brand": "Brand Z",
+      "launchType": "In-licensed",
+      "date": "2023-07-20",
+      "seller": "Company W",
+      "dealType": "In-license (India)",
+      "molecule": "Molecule C",
+      "therapy": "Cardiology",
+      "indication": "Hypertension",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹335 / combo pack of 2 units (75 gm Volini Pain Relief Gel & 30 Zandu Triphala Tablet)",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/brand-z-licensing",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-10-31T06:10:56.333Z"
+    },
+    {
+      "brand": "Four drug brands",
+      "launchType": "Acquired",
+      "date": "2026-06-01",
+      "seller": "GlaxoSmithkline",
+      "dealType": "Brand Portfolio Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹60 / bottle of 100 gm powder",
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-10-31T06:11:24.242Z"
+    },
+    {
+      "brand": "Pomalidomide Capsules",
+      "launchType": "Own Launched",
+      "date": "2026-02-03",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Pomalidomide",
+      "therapy": "Oncology",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹3955 / bottle of 21 capsules (1 mg)",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/PressReleaseEugia04032026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-10-31T06:13:02.240Z"
+    },
+    {
+      "brand": "Wockhardt Generic",
+      "launchType": "Own Launched",
+      "date": "2023-07-05",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Paracetamol",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Crocin",
+      "chronicAcute": "Chronic",
+      "price": "Rs 150 / strip",
+      "sourceUrl": "https://www.wockhardt.com/press-release/generic-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-31T06:13:22.214Z"
+    },
+    {
+      "brand": "Acquisition of XYZ Pharma",
+      "launchType": "Acquired",
+      "date": "2023-09-10",
+      "seller": "XYZ Pharma",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-xyz-pharma",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-31T06:13:22.214Z"
+    },
+    {
+      "brand": "Wockhardt's In-License Agreement",
+      "launchType": "In-licensed",
+      "date": "2023-05-20",
+      "seller": "ABC Pharma",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "Cardiology",
+      "indication": "Heart Disease",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/press-release/in-license-agreement",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-31T06:13:22.214Z"
+    },
+    {
+      "brand": "Wockhardt's New Biosimilar",
+      "launchType": "Own Launched",
+      "date": "2023-01-15",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 30,000 / injection",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/new-biosimilar-launch-2023",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-10-31T06:14:03.221Z"
     }
   ]
 }
