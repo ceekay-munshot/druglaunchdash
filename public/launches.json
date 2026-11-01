@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-31T06:15:12.718Z",
-  "rowCount": 1461,
+  "generatedAt": "2026-11-01T06:44:59.831Z",
+  "rowCount": 1464,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -1200,9 +1200,9 @@
       "dealType": "NCE Launch",
       "molecule": "tildrakizumab-asmn",
       "therapy": "Oncology",
-      "indication": "—",
+      "indication": "Psoriatic Arthritis",
       "existingBrand": "—",
-      "chronicAcute": "—",
+      "chronicAcute": "Chronic",
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/Sun-Pharma-Announces-US-FDA-Acceptance-of-sBLA-Application-for-ILUMYA.pdf",
       "buyer": "Sun Pharma",
@@ -1926,7 +1926,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-announces-us-fda-acceptance-of-supplemental-biologics-license-sbla-application-for-ilumya-tildrakizumab-asmn-for-the-treatment-o/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-08T05:09:28.880Z"
+      "lastEnrichmentAttempt": "2026-11-01T06:44:06.390Z"
     },
     {
       "brand": "Cipla's New Drug",
@@ -7814,7 +7814,7 @@
       "price": "₹190 / strip of 10 capsules",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-08T05:09:37.359Z"
+      "lastEnrichmentAttempt": "2026-11-01T06:44:16.776Z"
     },
     {
       "brand": "Empagliflozin",
@@ -7846,7 +7846,7 @@
       "price": null,
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-picks-up-stake-in-api-maker-la-chandra-pharmalab/article32543933.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-08T05:09:45.726Z"
+      "lastEnrichmentAttempt": "2026-11-01T06:44:27.821Z"
     },
     {
       "brand": "Pomalidomide Capsules",
@@ -11398,7 +11398,7 @@
       "price": null,
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsLnnettPR22062026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-09-08T05:06:40.733Z"
+      "lastEnrichmentAttempt": "2026-11-01T06:43:38.046Z"
     },
     {
       "brand": "Dextromethorphan Polistirex Extended-Release Oral Suspension",
@@ -11414,7 +11414,7 @@
       "price": null,
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/2LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-09-08T05:07:42.198Z"
+      "lastEnrichmentAttempt": "2026-11-01T06:43:43.448Z"
     },
     {
       "brand": "Glycerol Phenylbutyrate Oral Liquid",
@@ -11430,7 +11430,7 @@
       "price": null,
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-09-08T05:08:04.321Z"
+      "lastEnrichmentAttempt": "2026-11-01T06:43:48.683Z"
     },
     {
       "brand": "Dapagliflozin and Metformin Hydrochloride Extended-Release Tablets",
@@ -11446,7 +11446,7 @@
       "price": "₹110 / strip of 15 tablet er",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoUSFDAmetformin07042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-09-08T05:08:42.648Z"
+      "lastEnrichmentAttempt": "2026-11-01T06:43:54.257Z"
     },
     {
       "brand": "Medifine",
@@ -11510,7 +11510,7 @@
       "price": "—",
       "sourceUrl": "https://www.wockhardt.com/press-release-2",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-08T05:09:05.313Z"
+      "lastEnrichmentAttempt": "2026-11-01T06:44:00.326Z"
     },
     {
       "brand": "New Product Launch in Cardiology",
@@ -15318,7 +15318,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/Sun-Pharma-Announces-US-FDA-Acceptance-of-sBLA-Application-for-ILUMYA.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-08T05:09:28.880Z"
+      "lastEnrichmentAttempt": "2026-11-01T06:44:13.362Z"
     },
     {
       "brand": "Mankind Pharma's New Drug",
@@ -15350,7 +15350,7 @@
       "price": "₹116 / bottle of 25 gm tablet",
       "sourceUrl": "—",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-09T05:04:27.750Z"
+      "lastEnrichmentAttempt": "2026-11-01T06:44:35.754Z"
     },
     {
       "brand": "ADQUEY™ (difamilast 1%)",
@@ -23367,6 +23367,54 @@
       "sourceUrl": "https://www.wockhardt.com/press-releases/new-biosimilar-launch-2023",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-10-31T06:14:03.221Z"
+    },
+    {
+      "brand": "Next-Generation XIENCE Sierra™",
+      "launchType": "Own Launched",
+      "date": "2024-05-02",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Everolimus",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-next-generation-xience-sierra-stent-in-india-offering-cardiologists-a-new-level-of-care-and-precision.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-11-01T06:43:01.570Z"
+    },
+    {
+      "brand": "Wockhardt Biosimilar",
+      "launchType": "Own Launched",
+      "date": "2023-07-20",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "Molecule B",
+      "therapy": "Anti-Diabetic",
+      "indication": "Diabetes",
+      "existingBrand": "Competitor Y",
+      "chronicAcute": "Chronic",
+      "price": "Rs 3,200 / injection",
+      "sourceUrl": "https://www.wockhardt.com/press-release/biosimilar-launch-2023",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-11-01T06:43:36.538Z"
+    },
+    {
+      "brand": "License for Molecule C",
+      "launchType": "In-licensed",
+      "date": "2023-05-10",
+      "seller": "ABC Pharma",
+      "dealType": "In-license (India)",
+      "molecule": "Molecule C",
+      "therapy": "Respiratory",
+      "indication": "Asthma",
+      "existingBrand": "Competitor Z",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/press-release/license-molecule-c",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-11-01T06:43:36.538Z"
     }
   ]
 }
