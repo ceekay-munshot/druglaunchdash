@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-01T07:56:17.751Z",
-  "rowCount": 247,
+  "generatedAt": "2026-11-02T08:03:55.103Z",
+  "rowCount": 250,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -4424,6 +4424,63 @@
       "_title": "backfill:ILUMYA® (tildrakizumab-asmn)",
       "_provider": "gemini",
       "_harvestedAt": "2026-10-31T07:24:45.481Z"
+    },
+    {
+      "brand": "API Business of Sterling Biotech Limited",
+      "launchType": "Acquired",
+      "date": "2026-11-02",
+      "seller": "Sterling Biotech Limited",
+      "dealType": "Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "price": "—",
+      "dealValue": null,
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "buyer": "Zydus Lifesciences",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=efa46e72-a417-46fa-93c7-740b0cf08b4e.pdf",
+      "_title": "Announcement under Regulation 30 (LODR)-Updates on Acquisition 2 Nov",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-11-02T08:01:01.658Z"
+    },
+    {
+      "brand": "Semaglutide",
+      "launchType": "Own Launched",
+      "date": "2026-07-01",
+      "seller": "—",
+      "dealType": "—",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "semaglutide",
+      "therapy": "Anti-Diabetic, Weight Management",
+      "indication": "Type 2 Diabetes Mellitus, Obesity",
+      "existingBrand": "Ozempic (Novo Nordisk), Rybelsus (Novo Nordisk)",
+      "chronicAcute": "Chronic",
+      "buyer": "Sun Pharma",
+      "sourceUrl": "https://sunpharma.com/blog/sun-pharma-launches-generic-semaglutide-in-south-africa/",
+      "_title": "backfill:Semaglutide",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-11-02T08:03:29.694Z"
+    },
+    {
+      "brand": "Lerodalcibep",
+      "launchType": "In-licensed",
+      "date": "2026-09-01",
+      "seller": "LIB Therapeutics",
+      "dealType": "Global Licensing Agreement",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "Lerodalcibep",
+      "therapy": "Cardiovascular",
+      "indication": "Hypercholesterolemia",
+      "existingBrand": "Repatha",
+      "chronicAcute": "Chronic",
+      "buyer": "Sun Pharma",
+      "sourceUrl": "https://sunpharma.com/blog/sun-pharma-and-lib-therapeutics-announce-global-licensing-agreement-for-lerodalcibep/",
+      "_title": "backfill:Lerodalcibep",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-11-02T08:03:39.334Z"
     }
   ],
   "processedUrls": [
@@ -4953,6 +5010,11 @@
     "https://www.alkemlabs.com/press-release-acquisition-xyz",
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ac8ccb5e-aac5-4ca7-81f1-545d7f12fafe.pdf",
     "https://sunpharma.com/wp-content/uploads/2026/10/ILUMYA-PsA-Approval-Press-Release-FINAL.pdf",
-    "https://www.wockhardt.com/press-release/in-license-agreement"
+    "https://www.wockhardt.com/press-release/in-license-agreement",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=efa46e72-a417-46fa-93c7-740b0cf08b4e.pdf",
+    "https://www.drreddys.com/press-release/new-medical-device-launch",
+    "https://sunpharma.com/blog/sun-pharma-launches-generic-semaglutide-in-south-africa/",
+    "https://sunpharma.com/blog/sun-pharma-and-lib-therapeutics-announce-global-licensing-agreement-for-lerodalcibep/",
+    "https://www.sunpharma.com/news/sun-pharma-acquires-novartis-brand"
   ]
 }
