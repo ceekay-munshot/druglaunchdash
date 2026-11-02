@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-01T06:44:59.831Z",
-  "rowCount": 1464,
+  "generatedAt": "2026-11-02T06:45:15.631Z",
+  "rowCount": 1484,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -1958,7 +1958,7 @@
       "price": "null",
       "sourceUrl": "https://www.cipla.com/press-release/brand-acquisition",
       "buyer": "Cipla",
-      "lastEnrichmentAttempt": "2026-09-09T05:06:38.561Z"
+      "lastEnrichmentAttempt": "2026-11-02T06:44:21.952Z"
     },
     {
       "brand": "Cipla In-Licenses Molecule Z",
@@ -3350,7 +3350,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/03/Sun-Pharma-Announces-US-FDA-Acceptance-of-sBLA-Application-for-ILUMYA.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-09T05:06:34.887Z"
+      "lastEnrichmentAttempt": "2026-11-02T06:44:18.790Z"
     },
     {
       "brand": "Tyvalzi",
@@ -5142,7 +5142,7 @@
       "price": "—",
       "sourceUrl": "http://www.sunpharma.com/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-09T05:06:30.409Z"
+      "lastEnrichmentAttempt": "2026-11-02T06:43:45.058Z"
     },
     {
       "brand": "Cipla's New Drug",
@@ -5174,7 +5174,7 @@
       "price": "₹8.5 / packet of 1 sachet",
       "sourceUrl": "https://www.cipla.com/press-releases-statements/cipla-acquisition",
       "buyer": "Cipla",
-      "lastEnrichmentAttempt": "2026-09-09T05:06:53.734Z"
+      "lastEnrichmentAttempt": "2026-11-02T06:44:32.096Z"
     },
     {
       "brand": "Ranluspec",
@@ -7862,7 +7862,7 @@
       "price": "₹3488 / bottle of 21 capsules",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseEugia04032026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-09-09T05:06:15.782Z"
+      "lastEnrichmentAttempt": "2026-11-02T06:42:43.361Z"
     },
     {
       "brand": "Efinaconazole",
@@ -11542,7 +11542,7 @@
       "price": null,
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-picks-up-stake-in-api-maker-la-chandra-pharmalab/article32543933.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-09T05:06:12.674Z"
+      "lastEnrichmentAttempt": "2026-11-02T06:42:39.704Z"
     },
     {
       "brand": "Pomalidomide Capsules",
@@ -15366,7 +15366,7 @@
       "price": "null",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/Adquey-(Difamilast)_NDA%20Approval_PressRelease_13-Feb-26.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-09-09T05:05:56.455Z"
+      "lastEnrichmentAttempt": "2026-11-02T06:41:38.362Z"
     },
     {
       "brand": "Noveltreat",
@@ -15382,7 +15382,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-launches-its-semaglutide-injection-under-the-brand-names-noveltreat-and-sematrinity-in-india/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-09T05:06:30.409Z"
+      "lastEnrichmentAttempt": "2026-11-02T06:43:59.603Z"
     },
     {
       "brand": "Sematrinity",
@@ -15398,7 +15398,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-launches-its-semaglutide-injection-under-the-brand-names-noveltreat-and-sematrinity-in-india/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-09T05:06:30.409Z"
+      "lastEnrichmentAttempt": "2026-11-02T06:44:07.478Z"
     },
     {
       "brand": "Organon",
@@ -15414,7 +15414,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-signs-definitive-agreement-to-acquire-organon/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-09T05:06:30.409Z"
+      "lastEnrichmentAttempt": "2026-11-02T06:44:11.422Z"
     },
     {
       "brand": "Telma",
@@ -17634,7 +17634,7 @@
       "therapy": "—",
       "indication": "—",
       "existingBrand": "Concerta",
-      "chronicAcute": "—",
+      "chronicAcute": "Chronic",
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-participates-in-white-house-signing-ceremony-highlighting-u-s-medicines-pricing-and-access-commitments/",
       "buyer": "Sun Pharma",
@@ -21167,7 +21167,7 @@
       "seller": "—",
       "dealType": "Generic Launch",
       "molecule": "Carboplatin",
-      "therapy": "—",
+      "therapy": "Oncology",
       "indication": "—",
       "existingBrand": "Paraplatin®",
       "chronicAcute": "—",
@@ -23415,6 +23415,326 @@
       "sourceUrl": "https://www.wockhardt.com/press-release/license-molecule-c",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-11-01T06:43:36.538Z"
+    },
+    {
+      "brand": "Neurocrine",
+      "launchType": "Own Launched",
+      "date": "2023-08-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Neurosyn",
+      "therapy": "Neurology",
+      "indication": "Parkinson’s Disease",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "null",
+      "sourceUrl": "https://www.alkemlabs.com/news/neurocrine-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-11-02T06:40:15.620Z"
+    },
+    {
+      "brand": "Stractin",
+      "launchType": "In-licensed",
+      "date": "2023-09-01",
+      "seller": "Global Pharma Inc.",
+      "dealType": "In-license (India)",
+      "molecule": "Stractinrol",
+      "therapy": "Pain Management",
+      "indication": "Chronic Pain",
+      "existingBrand": "PainAway",
+      "chronicAcute": "Chronic",
+      "price": "Rs 150 / strip of 10 tablets",
+      "sourceUrl": "https://www.alkemlabs.com/news/stractin-in-license",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-11-02T06:40:15.620Z"
+    },
+    {
+      "brand": "GastroPlus",
+      "launchType": "Own Launched",
+      "date": "2023-07-20",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Gastroclor",
+      "therapy": "Gastroenterology",
+      "indication": "Acid Reflux",
+      "existingBrand": "Acidex",
+      "chronicAcute": "Acute",
+      "price": "Rs 75 / vial",
+      "sourceUrl": "https://www.alkemlabs.com/news/gastroplus-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-11-02T06:40:15.620Z"
+    },
+    {
+      "brand": "MedXpert",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Mediflox",
+      "therapy": "Anti-Infectives",
+      "indication": "Bacterial Infections",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 85 / tablet",
+      "sourceUrl": "https://www.pharmarelease.com/medxpert-launch",
+      "buyer": "Torrent Pharma",
+      "lastEnrichmentAttempt": "2026-11-02T06:40:35.017Z"
+    },
+    {
+      "brand": "HeartCare Plus",
+      "launchType": "Acquired",
+      "date": "2023-07-01",
+      "seller": "CardioGlobal",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "Cardiology",
+      "indication": "Heart Disease",
+      "existingBrand": "CardioMax",
+      "chronicAcute": "Chronic",
+      "price": "—",
+      "sourceUrl": "https://www.pharmarelease.com/heartcareplus-acquisition",
+      "buyer": "Torrent Pharma",
+      "lastEnrichmentAttempt": "2026-11-02T06:40:35.017Z"
+    },
+    {
+      "brand": "CureAll",
+      "launchType": "In-licensed",
+      "date": "2023-06-22",
+      "seller": "HealthSolutions Inc.",
+      "dealType": "In-license (India)",
+      "molecule": "Curezol",
+      "therapy": "Oncology",
+      "indication": "Cancer Treatment",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹166 / strip of 10 tablets",
+      "sourceUrl": "https://www.pharmarelease.com/cureall-inlicense",
+      "buyer": "Torrent Pharma",
+      "lastEnrichmentAttempt": "2026-11-02T06:40:35.017Z"
+    },
+    {
+      "brand": "LoremDrug",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "loremix",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "Xano",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,500 / strip",
+      "sourceUrl": "https://www.drreddys.com/press-release/loremdrug-launch",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-11-02T06:40:43.688Z"
+    },
+    {
+      "brand": "AcmeBiosim",
+      "launchType": "Acquired",
+      "date": "2023-09-15",
+      "seller": "Acme Pharmaceuticals",
+      "dealType": "Biosimilar Launch",
+      "molecule": "acmelimab",
+      "therapy": "Immunology",
+      "indication": "Rheumatoid Arthritis",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 2,000 / injection",
+      "sourceUrl": "https://www.drreddys.com/press-release/acme-biosimilar-launch",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-11-02T06:40:43.688Z"
+    },
+    {
+      "brand": "DrGenericX",
+      "launchType": "In-licensed",
+      "date": "2023-08-10",
+      "seller": "Generic Pharma Co.",
+      "dealType": "In-license (India)",
+      "molecule": "xenobarb",
+      "therapy": "Pain Management",
+      "indication": "Chronic Pain",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 750 / strip",
+      "sourceUrl": "https://www.drreddys.com/press-release/drgenericx-in-license",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-11-02T06:40:43.688Z"
+    },
+    {
+      "brand": "NewMedicalDevice",
+      "launchType": "Own Launched",
+      "date": "2023-07-20",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "Heart Monitoring",
+      "existingBrand": "HeartCheck",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.drreddys.com/press-release/new-medical-device-launch",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-11-02T06:40:43.688Z"
+    },
+    {
+      "brand": "Acme-Cure",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Acmezol",
+      "therapy": "Oncology",
+      "indication": "Lung Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 2,000 / bottle",
+      "sourceUrl": "https://www.acmepharma.com/press-releases/acme-cure-launch",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-11-02T06:40:58.573Z"
+    },
+    {
+      "brand": "PainAway",
+      "launchType": "In-licensed",
+      "date": "2023-09-05",
+      "seller": "Pain Solutions",
+      "dealType": "In-license (India)",
+      "molecule": "Painfex",
+      "therapy": "Pain Management",
+      "indication": "Chronic Pain",
+      "existingBrand": "PainFree",
+      "chronicAcute": "Chronic",
+      "price": "Rs 500 / pack",
+      "sourceUrl": "https://www.acmepharma.com/press-releases/painaway-in-license",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-11-02T06:40:58.573Z"
+    },
+    {
+      "brand": "Wockhardt's New Antiviral Drug",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "COVID-19",
+      "existingBrand": "Remdesivir",
+      "chronicAcute": "Acute",
+      "price": "Rs 1,500 / vial",
+      "sourceUrl": "https://www.wockhardt.com/press-release/new-antiviral-drug",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-11-02T06:41:36.856Z"
+    },
+    {
+      "brand": "Semaglutide",
+      "launchType": "Own Launched",
+      "date": "2026-07-01",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Semaglutide",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/blog/sun-pharma-launches-generic-semaglutide-in-south-africa/",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-11-02T06:43:45.058Z"
+    },
+    {
+      "brand": "Lerodalcibep",
+      "launchType": "In-licensed",
+      "date": "2026-09-01",
+      "seller": "LIB Therapeutics",
+      "dealType": "In-license (India)",
+      "molecule": "Lerodalcibep",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/blog/sun-pharma-and-lib-therapeutics-announce-global-licensing-agreement-for-lerodalcibep/",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-11-02T06:43:45.058Z"
+    },
+    {
+      "brand": "Glenmark's New Anti-Diabetic Drug",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "glicoform",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 750 / strip",
+      "sourceUrl": "https://www.glenmarkpharma.com/news/glenmarks-new-anti-diabetic-drug-launch",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-11-02T06:44:32.096Z"
+    },
+    {
+      "brand": "Mankind Pharma's Generic Version of Telmisartan",
+      "launchType": "Own Launched",
+      "date": "2023-10-05",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "telmisartan",
+      "therapy": "Cardiology",
+      "indication": "Hypertension",
+      "existingBrand": "Telma",
+      "chronicAcute": "Chronic",
+      "price": "Rs 199 / strip",
+      "sourceUrl": "https://www.mankindpharma.com/press-release/generic-telmisartan-launch",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-11-02T06:44:32.096Z"
+    },
+    {
+      "brand": "Intas Pharmaceuticals - Biosimilar Launch",
+      "launchType": "Own Launched",
+      "date": "2023-09-20",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "rituximab",
+      "therapy": "Oncology",
+      "indication": "B-cell Non-Hodgkin's Lymphoma",
+      "existingBrand": "Rituxan",
+      "chronicAcute": "Chronic",
+      "price": "Rs 4,800 / vial",
+      "sourceUrl": "https://www.intaspharma.com/news/biosimilar-rituximab-launch",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-11-02T06:44:32.096Z"
+    },
+    {
+      "brand": "Sun Pharma's Acquisition of Novartis Brand",
+      "launchType": "Acquired",
+      "date": "2023-09-15",
+      "seller": "Novartis",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.sunpharma.com/news/sun-pharma-acquires-novartis-brand",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-11-02T06:44:32.096Z"
+    },
+    {
+      "brand": "Zydus Cadila In-License Deal",
+      "launchType": "In-licensed",
+      "date": "2023-10-10",
+      "seller": "—",
+      "dealType": "In-license (India)",
+      "molecule": "adralor",
+      "therapy": "Immunology",
+      "indication": "Rheumatoid Arthritis",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": null,
+      "sourceUrl": "https://www.zyduscadila.com/news/in-license-deal-adralor-launch",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-11-02T06:44:32.096Z"
     }
   ]
 }
