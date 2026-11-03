@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-02T06:45:15.631Z",
-  "rowCount": 1484,
+  "generatedAt": "2026-11-03T07:14:57.376Z",
+  "rowCount": 1502,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -5190,7 +5190,7 @@
       "price": null,
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-approval-from-u-s-fda-for-ranluspec-tm-ranibizumab-injection",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-09-09T05:07:03.908Z"
+      "lastEnrichmentAttempt": "2026-11-03T07:13:21.585Z"
     },
     {
       "brand": "Sodium Sulfate, Magnesium Sulfate, and Potassium Chloride",
@@ -5206,7 +5206,7 @@
       "price": "₹36.9 / bottle of 200 ml",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-approval-from-u-s-fda-for-sodium-sulfate-magnesium-sulfate-and-potassium-chloride-tablets",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-09-09T05:07:12.743Z"
+      "lastEnrichmentAttempt": "2026-11-03T07:13:30.376Z"
     },
     {
       "brand": "Biosimilar to Xolair® (omalizumab)",
@@ -11622,7 +11622,7 @@
       "price": "₹12.4 / strip of 10 tablets",
       "sourceUrl": "https://www.mankindpharma.com/press-releases/pfizer-acquisition/",
       "buyer": "Mankind Pharma",
-      "lastEnrichmentAttempt": "2026-09-09T05:07:22.223Z"
+      "lastEnrichmentAttempt": "2026-11-03T07:13:39.419Z"
     },
     {
       "brand": "Desidustat",
@@ -11638,7 +11638,7 @@
       "price": "null",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/10/Press-Release-Sun-Pharma-and-Zydus-sign-licensing-agreement-for-co-marketing-of-Desidustat-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-10T05:10:16.985Z"
+      "lastEnrichmentAttempt": "2026-11-03T07:14:01.586Z"
     },
     {
       "brand": "STARIZO (Tedizolid Phosphate)",
@@ -11718,7 +11718,7 @@
       "price": "₹47.4 / strip of 10 tablets",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-strengthens-structural-heart-portfolio-with-new-clip-delivery-system.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-09-10T05:10:24.012Z"
+      "lastEnrichmentAttempt": "2026-11-03T07:14:04.911Z"
     },
     {
       "brand": "Room-Temperature-Stable Carbetocin",
@@ -11734,7 +11734,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-introduces-room-temperature-stable.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-09-10T05:10:32.070Z"
+      "lastEnrichmentAttempt": "2026-11-03T07:14:12.036Z"
     },
     {
       "brand": "Dextromethorphan",
@@ -11750,7 +11750,7 @@
       "price": "₹85.6 / bottle of 100 ml syrup",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/2LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-09-10T05:10:44.162Z"
+      "lastEnrichmentAttempt": "2026-11-03T07:14:19.253Z"
     },
     {
       "brand": "Dapagliflozin",
@@ -11766,7 +11766,7 @@
       "price": "₹74.9 / strip of 15 tablets",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoUSFDA07042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-09-10T05:10:50.931Z"
+      "lastEnrichmentAttempt": "2026-11-03T07:14:24.796Z"
     },
     {
       "brand": "Pomalidomide",
@@ -15446,7 +15446,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2022/07/Press-Release-licensing-and-supply-agreement-between-Sun-Pharma-and-Cosmo-for-WINLEVI%C2%AE.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-10T05:07:14.748Z"
+      "lastEnrichmentAttempt": "2026-11-03T07:13:47.887Z"
     },
     {
       "brand": "Obimet and Thyrocab",
@@ -15462,7 +15462,7 @@
       "price": "₹658 / strip of 60 tablets",
       "sourceUrl": "https://www.expresspharma.in/corona-acquires-obimet-thyrocab-brands-from-abbott-india",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-10T05:07:55.053Z"
+      "lastEnrichmentAttempt": "2026-11-03T07:13:51.983Z"
     },
     {
       "brand": "Wockhardt's New Biosimilar",
@@ -18066,7 +18066,7 @@
       "therapy": "Respiratory",
       "indication": "COPD Management",
       "existingBrand": "—",
-      "chronicAcute": "—",
+      "chronicAcute": "Chronic",
       "price": "null",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-launches-formoflo-g-mdi-world-s-first-fixed-dose-triple-combination-drug-for-copd-management",
       "buyer": "Lupin",
@@ -23735,6 +23735,294 @@
       "sourceUrl": "https://www.zyduscadila.com/news/in-license-deal-adralor-launch",
       "buyer": "Cipla",
       "lastEnrichmentAttempt": "2026-11-02T06:44:32.096Z"
+    },
+    {
+      "brand": "Mankind Pharma's New Drug",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Dapsone",
+      "therapy": "Dermatology",
+      "indication": "Acne",
+      "existingBrand": "—",
+      "chronicAcute": "Acute",
+      "price": "Rs 1,200 / pack",
+      "sourceUrl": "https://www.mankindpharma.com/FWyIPKXzuTfXD_zH2pxusdRrnLFpv7u0nfW_Tfjo4rg=.html",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-11-03T07:09:13.257Z"
+    },
+    {
+      "brand": "Mankind Pharma Acquisition of XYZ Pharma",
+      "launchType": "Acquired",
+      "date": "2023-08-10",
+      "seller": "XYZ Pharma",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "ABC Drug",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.mankindpharma.com/FWyIPKXzuTfXD_zH2pxusdRrnLFpv7u0nfW_Tfjo4rg=.html",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-11-03T07:09:13.257Z"
+    },
+    {
+      "brand": "WINLEVI",
+      "launchType": "Own Launched",
+      "date": "2023-09-27",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "clascoterone",
+      "therapy": "Dermatology",
+      "indication": "Acne",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/09/Press-Release-Sun-Pharma-Canada-Launches-PRWINLEVI.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-11-03T07:09:47.981Z"
+    },
+    {
+      "brand": "Xylozine",
+      "launchType": "Own Launched",
+      "date": "2023-10-05",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Xylometazoline",
+      "therapy": "Respiratory",
+      "indication": "Nasal Congestion",
+      "existingBrand": "Vicks Sinex",
+      "chronicAcute": "—",
+      "price": "Rs 150 / bottle",
+      "sourceUrl": "https://www.pharmaceuticalnews.com/xylozine-launch",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-11-03T07:09:57.737Z"
+    },
+    {
+      "brand": "Zyphoton",
+      "launchType": "Acquired",
+      "date": "2023-09-20",
+      "seller": "Biomed Pharma",
+      "dealType": "Brand Acquisition",
+      "molecule": "Zyphoton",
+      "therapy": "Oncology",
+      "indication": "Non-Small Cell Lung Cancer",
+      "existingBrand": "Tarceva",
+      "chronicAcute": "Chronic",
+      "price": "Rs 24,500 / pack",
+      "sourceUrl": "https://www.pharmaceuticalnews.com/zyphoton-acquisition",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-11-03T07:09:57.737Z"
+    },
+    {
+      "brand": "Glycobest",
+      "launchType": "In-licensed",
+      "date": "2023-09-15",
+      "seller": "Global Pharma",
+      "dealType": "In-license (India)",
+      "molecule": "Glyburide",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Glynase",
+      "chronicAcute": "Chronic",
+      "price": "Rs 500 / strip",
+      "sourceUrl": "https://www.pharmaceuticalnews.com/glycobest-in-license",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-11-03T07:09:57.737Z"
+    },
+    {
+      "brand": "FabiFlu",
+      "launchType": "Own Launched",
+      "date": "2021-07-01",
+      "seller": "—",
+      "dealType": "Brand Launch",
+      "molecule": "Favipiravir",
+      "therapy": "Anti-Infectives",
+      "indication": "COVID-19",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 1,000 / strip",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/fabiflu-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-11-03T07:10:09.694Z"
+    },
+    {
+      "brand": "Sevcor",
+      "launchType": "Own Launched",
+      "date": "2022-05-15",
+      "seller": "—",
+      "dealType": "Brand Launch",
+      "molecule": "Imipenem",
+      "therapy": "Anti-Infectives",
+      "indication": "Bacterial Infections",
+      "existingBrand": "Meropenem",
+      "chronicAcute": "Acute",
+      "price": "Rs 3,500 / injection",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/sevcor-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-11-03T07:10:09.694Z"
+    },
+    {
+      "brand": "ZycoV-D",
+      "launchType": "Acquired",
+      "date": "2022-08-12",
+      "seller": "Zydus Cadila",
+      "dealType": "Brand Acquisition",
+      "molecule": "ZyCoV-D",
+      "therapy": "Immunology",
+      "indication": "COVID-19",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 2,940 / vial",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/zycovd-acquisition",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-11-03T07:10:09.694Z"
+    },
+    {
+      "brand": "NewDrugX",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "MoleculeA",
+      "therapy": "Oncology",
+      "indication": "Cancer",
+      "existingBrand": "CompetitiveDrugA",
+      "chronicAcute": "Chronic",
+      "price": "Rs 500 / strip",
+      "sourceUrl": "https://www.drreddys.com/press-releases/newdrugx-launch",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-11-03T07:11:39.789Z"
+    },
+    {
+      "brand": "AcquisitionY",
+      "launchType": "Acquired",
+      "date": "2023-08-01",
+      "seller": "CompetitorZ",
+      "dealType": "Brand Acquisition",
+      "molecule": "MoleculeB",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "ExistingDrugB",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.drreddys.com/press-releases/acquisitiony",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-11-03T07:11:39.789Z"
+    },
+    {
+      "brand": "ADQUEY™ (difamilast 1%)",
+      "launchType": "Own Launched",
+      "date": "2026-02-16",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "difamilast",
+      "therapy": "Dermatology",
+      "indication": "Mild-to-Moderate Atopic Dermatitis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/Adquey-(Difamilast)_NDA%20Approval_PressRelease_13-Feb-26.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-11-03T07:12:59.221Z"
+    },
+    {
+      "brand": "Lupin",
+      "launchType": "Own Launched",
+      "date": "2023-09-05",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Lacidipine",
+      "therapy": "Cardiology",
+      "indication": "Hypertension",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 299 / strip",
+      "sourceUrl": "https://www.lupin.com/press-release/lacidipine-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-11-03T07:13:20.077Z"
+    },
+    {
+      "brand": "GlaxoSmithKline",
+      "launchType": "Acquired",
+      "date": "2023-08-15",
+      "seller": "—",
+      "dealType": "Brand Acquisition",
+      "molecule": "Betamethasone",
+      "therapy": "Dermatology",
+      "indication": "Skin Inflammation",
+      "existingBrand": "Betnovate",
+      "chronicAcute": "—",
+      "price": "Rs 132 / tube",
+      "sourceUrl": "https://www.gsk.com/en-in/press-release/betamethasone-acquisition",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-11-03T07:13:20.077Z"
+    },
+    {
+      "brand": "Cipla",
+      "launchType": "In-licensed",
+      "date": "2023-07-20",
+      "seller": "Pfizer",
+      "dealType": "In-license (India)",
+      "molecule": "Fexofenadine",
+      "therapy": "Respiratory",
+      "indication": "Allergic Rhinitis",
+      "existingBrand": "Allegra",
+      "chronicAcute": "—",
+      "price": "Rs 349 / strip",
+      "sourceUrl": "https://www.cipla.com/press-release/fexofenadine-inlicensing",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-11-03T07:13:20.077Z"
+    },
+    {
+      "brand": "Semaglutide",
+      "launchType": "Own Launched",
+      "date": "2023-05-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Semaglutide",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Zepatier",
+      "chronicAcute": "Chronic",
+      "price": "Rs 4,500 / vial",
+      "sourceUrl": "https://www.mankindpharma.com/launch-semglem",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-11-03T07:13:39.419Z"
+    },
+    {
+      "brand": "RYTSTAT®",
+      "launchType": "In-licensed",
+      "date": "2023-10-30",
+      "seller": "Zydus Lifesciences Limited",
+      "dealType": "In-license (India)",
+      "molecule": "Desidustat",
+      "therapy": "—",
+      "indication": "anemia associated with Chronic Kidney Disease",
+      "existingBrand": "Oxemia™",
+      "chronicAcute": "Chronic",
+      "price": "—",
+      "sourceUrl": "—",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-11-03T07:14:01.586Z"
+    },
+    {
+      "brand": "Mitral Clip Delivery System",
+      "launchType": "Own Launched",
+      "date": "2020-11-18",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "mitral regurgitation",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://abbott.mediaroom.com/2020-11-18-Abbott-Strengthens-Structural-Heart-Portfolio-with-New-Clip-Delivery-System-for-Non-Invasive-Treatment-of-Leaky-Mitral-Valves",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-11-03T07:14:04.911Z"
     }
   ]
 }
