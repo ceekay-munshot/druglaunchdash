@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-02T08:03:55.103Z",
-  "rowCount": 250,
+  "generatedAt": "2026-11-03T08:26:37.195Z",
+  "rowCount": 251,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -4481,6 +4481,25 @@
       "_title": "backfill:Lerodalcibep",
       "_provider": "gemini",
       "_harvestedAt": "2026-11-02T08:03:39.334Z"
+    },
+    {
+      "brand": "MIQNAF®",
+      "launchType": "Own Launched",
+      "date": "2026-11-02",
+      "seller": "—",
+      "dealType": "—",
+      "molecule": "NAFITHROMYCIN",
+      "therapy": "Antibiotic",
+      "indication": "—",
+      "price": "—",
+      "dealValue": null,
+      "existingBrand": "—",
+      "chronicAcute": "Acute",
+      "buyer": "Wockhardt",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f3409a16-19d1-4c5a-97df-35b6f8c3a319.pdf",
+      "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 2 Nov - Wockhardt reported Q2 FY27 PAT of Rs 73 crore; revenue rose 24% to Rs 969 crore.",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-11-03T08:24:27.324Z"
     }
   ],
   "processedUrls": [
@@ -5015,6 +5034,11 @@
     "https://www.drreddys.com/press-release/new-medical-device-launch",
     "https://sunpharma.com/blog/sun-pharma-launches-generic-semaglutide-in-south-africa/",
     "https://sunpharma.com/blog/sun-pharma-and-lib-therapeutics-announce-global-licensing-agreement-for-lerodalcibep/",
-    "https://www.sunpharma.com/news/sun-pharma-acquires-novartis-brand"
+    "https://www.sunpharma.com/news/sun-pharma-acquires-novartis-brand",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=a55f13ad-6af3-4ef7-ac65-2fb2bedbefeb.pdf",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f3409a16-19d1-4c5a-97df-35b6f8c3a319.pdf",
+    "https://www.mankindpharma.com/FWyIPKXzuTfXD_zH2pxusdRrnLFpv7u0nfW_Tfjo4rg=.html",
+    "https://www.drreddys.com/press-releases/acquisitiony",
+    "https://abbott.mediaroom.com/2020-11-18-Abbott-Strengthens-Structural-Heart-Portfolio-with-New-Clip-Delivery-System-for-Non-Invasive-Treatment-of-Leaky-Mitral-Valves"
   ]
 }
