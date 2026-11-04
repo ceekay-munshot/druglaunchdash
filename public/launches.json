@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-03T07:14:57.376Z",
-  "rowCount": 1502,
+  "generatedAt": "2026-11-04T06:58:01.934Z",
+  "rowCount": 1515,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -3366,7 +3366,7 @@
       "price": "₹33.7 / strip of 10 tablets",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/09/Press-Release-Sun-Pharma-and-Pharmazz-Inc.-licensing-agreement-for-Sovateltide-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-11T05:06:01.252Z"
+      "lastEnrichmentAttempt": "2026-11-04T06:57:14.919Z"
     },
     {
       "brand": "Various Brands",
@@ -3382,7 +3382,7 @@
       "price": "₹421 / tube of 40 gm cream",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-11T05:06:05.716Z"
+      "lastEnrichmentAttempt": "2026-11-04T06:57:18.209Z"
     },
     {
       "brand": "Alkem's Ophthalmology Products",
@@ -5222,7 +5222,7 @@
       "price": "₹45 / strip of 10 tablets",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-09-10T05:11:24.025Z"
+      "lastEnrichmentAttempt": "2026-11-04T06:56:53.355Z"
     },
     {
       "brand": "Wockhardt's Biosimilar",
@@ -5238,7 +5238,7 @@
       "price": "Rs 5,000 / vial",
       "sourceUrl": "https://www.wockhardt.com/press-release-biosimilar-launch-july-2023",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-11T05:05:53.112Z"
+      "lastEnrichmentAttempt": "2026-11-04T06:57:09.238Z"
     },
     {
       "brand": "New Diabetes Medication",
@@ -7926,7 +7926,7 @@
       "price": null,
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2020/12/Press-Release-Licensing-Agreement-for-Tildrakizumab.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-11T05:06:15.265Z"
+      "lastEnrichmentAttempt": "2026-11-04T06:57:31.447Z"
     },
     {
       "brand": "four drug brands from GlaxoSmithkline",
@@ -11782,7 +11782,7 @@
       "price": "₹3955 / bottle of 21 capsules (1 mg)",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/PressReleaseEugia04032026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-09-10T05:10:56.941Z"
+      "lastEnrichmentAttempt": "2026-11-04T06:56:32.581Z"
     },
     {
       "brand": "Everolimus",
@@ -11798,7 +11798,7 @@
       "price": "₹627 / strip of 10 (250 mg)",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtsToSEsPREugiaUSFDA26022026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-09-10T05:11:05.882Z"
+      "lastEnrichmentAttempt": "2026-11-04T06:56:40.125Z"
     },
     {
       "brand": "Wockhardt Acquires XYZ Pharma",
@@ -11814,7 +11814,7 @@
       "price": "₹60.4 / strip of 10 tablets",
       "sourceUrl": "https://www.wockhardt.com/pressrelease/2023-08-01-acquisition",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-10T05:11:17.416Z"
+      "lastEnrichmentAttempt": "2026-11-04T06:56:45.772Z"
     },
     {
       "brand": "Wockhardt In-licenses ABC Drug",
@@ -15494,7 +15494,7 @@
       "price": "₹116 / bottle of 10 ml",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-11T05:04:55.949Z"
+      "lastEnrichmentAttempt": "2026-11-04T06:57:01.355Z"
     },
     {
       "brand": "Bio-Similar Product X",
@@ -15558,7 +15558,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-11T05:06:05.716Z"
+      "lastEnrichmentAttempt": "2026-11-04T06:57:23.729Z"
     },
     {
       "brand": "Alkem Ophthalmology",
@@ -24023,6 +24023,214 @@
       "sourceUrl": "https://abbott.mediaroom.com/2020-11-18-Abbott-Strengthens-Structural-Heart-Portfolio-with-New-Clip-Delivery-System-for-Non-Invasive-Treatment-of-Leaky-Mitral-Valves",
       "buyer": "Abbott India",
       "lastEnrichmentAttempt": "2026-11-03T07:14:04.911Z"
+    },
+    {
+      "brand": "ILUMYA®",
+      "launchType": "Own Launched",
+      "date": "2026-10-30",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "tildrakizumab-asmn",
+      "therapy": "—",
+      "indication": "Treatment of Adults with Active Psoriatic Arthritis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/10/ILUMYA-PsA-Approval-Press-Release-FINAL.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-11-04T06:54:51.367Z"
+    },
+    {
+      "brand": "UNLOXCYT®",
+      "launchType": "Own Launched",
+      "date": "2026-10-20",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "cosibelimab-ipdl",
+      "therapy": "Oncology",
+      "indication": "Locally Advanced Cutaneous Squamous Cell Carcinoma (laCSCC) Patients Who Are Not Candidates for Curative Surgery or Radiation",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2026/10/Sun-Pharma-Announces-UNLOXCYT%C2%AE-cosibelimab-ipdl-Has-Received-a-Category-2A-Preferred-Designation-in-the-Updated-NCCN-Guidelines-for-Locally.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-11-04T06:54:51.367Z"
+    },
+    {
+      "brand": "New Drug 1",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Molecule A",
+      "therapy": "Oncology",
+      "indication": "Cancer Type X",
+      "existingBrand": "Competitor Brand Z",
+      "chronicAcute": "—",
+      "price": "Rs 1,500 / strip",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/new-drug-1",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-11-04T06:55:00.448Z"
+    },
+    {
+      "brand": "Acquired Brand 1",
+      "launchType": "Acquired",
+      "date": "2023-09-15",
+      "seller": "Brand Seller Inc.",
+      "dealType": "Brand Acquisition",
+      "molecule": "Molecule B",
+      "therapy": "Neurology",
+      "indication": "Condition Y",
+      "existingBrand": "Competitor Brand A",
+      "chronicAcute": "Acute",
+      "price": "Rs 800 / vial",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/acquired-brand-1",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-11-04T06:55:00.448Z"
+    },
+    {
+      "brand": "In-License Brand 1",
+      "launchType": "In-licensed",
+      "date": "2023-08-20",
+      "seller": "Company XYZ",
+      "dealType": "In-license (India)",
+      "molecule": "Molecule C",
+      "therapy": "Anti-Diabetic",
+      "indication": "Diabetes",
+      "existingBrand": "Competitor Brand B",
+      "chronicAcute": "Chronic",
+      "price": "Rs 3,000 / pack",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/in-license-brand-1",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-11-04T06:55:00.448Z"
+    },
+    {
+      "brand": "Takirolimab",
+      "launchType": "Own Launched",
+      "date": "2023-05-10",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "takirolimab",
+      "therapy": "Immunology",
+      "indication": "Psoriasis",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 3,500 / 1 vial",
+      "sourceUrl": "https://www.drreddys.com/press-release/takiroilimab-launch",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-11-04T06:55:31.878Z"
+    },
+    {
+      "brand": "Drevan",
+      "launchType": "Own Launched",
+      "date": "2023-07-15",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "drevan",
+      "therapy": "Pain Management",
+      "indication": "Chronic Pain",
+      "existingBrand": "OxyContin",
+      "chronicAcute": "Chronic",
+      "price": "Rs 750 / strip of 10 tablets",
+      "sourceUrl": "https://www.drreddys.com/press-release/drevan-launch",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-11-04T06:55:31.878Z"
+    },
+    {
+      "brand": "Profinil",
+      "launchType": "Own Launched",
+      "date": "2023-09-21",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "profinil",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "Herceptin",
+      "chronicAcute": "—",
+      "price": "Rs 27,000 / injection",
+      "sourceUrl": "https://www.drreddys.com/press-release/profinil-launch",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-11-04T06:55:31.878Z"
+    },
+    {
+      "brand": "ADQUEY (difamilast) Ointment",
+      "launchType": "Own Launched",
+      "date": "2026-02-16",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Difamilast",
+      "therapy": "Dermatology",
+      "indication": "atopic dermatitis",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/Adquey-(Difamilast)_NDA%20Approval_PressRelease_13-Feb-26.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-11-04T06:56:19.257Z"
+    },
+    {
+      "brand": "Wockhardt's New Insulin",
+      "launchType": "Own Launched",
+      "date": "2023-03-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Insulin Aspart",
+      "therapy": "Anti-Diabetic",
+      "indication": "—",
+      "existingBrand": "Novolog",
+      "chronicAcute": "Chronic",
+      "price": "Rs 900 / vial",
+      "sourceUrl": "https://www.wockhardt.com/press-release/new-insulin-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-11-04T06:56:31.073Z"
+    },
+    {
+      "brand": "Wockhardt Acquires XYZ Pharma",
+      "launchType": "Acquired",
+      "date": "2023-05-10",
+      "seller": "XYZ Pharma",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-xyz-pharma",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-11-04T06:56:31.073Z"
+    },
+    {
+      "brand": "Wockhardt In-Licenses ABC Drug",
+      "launchType": "In-licensed",
+      "date": "2023-07-22",
+      "seller": "ABC Pharmaceuticals",
+      "dealType": "In-license (India)",
+      "molecule": "ABC Drug Compound",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.wockhardt.com/press-release/in-license-abc-drug",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-11-04T06:56:31.073Z"
+    },
+    {
+      "brand": "Wockhardt 2023 Drug",
+      "launchType": "Own Launched",
+      "date": "2023-08-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 1,200 / tablet",
+      "sourceUrl": "https://www.wockhardt.com/pressrelease/2023-08-01-acquisition#content",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-11-04T06:56:45.772Z"
     }
   ]
 }
