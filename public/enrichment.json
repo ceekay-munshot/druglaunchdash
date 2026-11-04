@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-03T08:26:37.195Z",
-  "rowCount": 251,
+  "generatedAt": "2026-11-04T07:53:45.034Z",
+  "rowCount": 252,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -4500,6 +4500,25 @@
       "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 2 Nov - Wockhardt reported Q2 FY27 PAT of Rs 73 crore; revenue rose 24% to Rs 969 crore.",
       "_provider": "gemini",
       "_harvestedAt": "2026-11-03T08:24:27.324Z"
+    },
+    {
+      "brand": "Riociguat",
+      "launchType": "Own Launched",
+      "date": "2026-10-01",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Riociguat",
+      "therapy": "Cardiovascular",
+      "indication": "Pulmonary Arterial Hypertension (PAH), Chronic Thromboembolic Pulmonary Hypertension (CTEPH)",
+      "price": "—",
+      "dealValue": null,
+      "existingBrand": "Adempas",
+      "chronicAcute": "Chronic",
+      "buyer": "Zydus Lifesciences",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=e5b0dcbf-daf6-45a0-9d2d-46ecd65ef243.pdf",
+      "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 4 Nov",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-11-04T07:53:02.351Z"
     }
   ],
   "processedUrls": [
@@ -5039,6 +5058,10 @@
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f3409a16-19d1-4c5a-97df-35b6f8c3a319.pdf",
     "https://www.mankindpharma.com/FWyIPKXzuTfXD_zH2pxusdRrnLFpv7u0nfW_Tfjo4rg=.html",
     "https://www.drreddys.com/press-releases/acquisitiony",
-    "https://abbott.mediaroom.com/2020-11-18-Abbott-Strengthens-Structural-Heart-Portfolio-with-New-Clip-Delivery-System-for-Non-Invasive-Treatment-of-Leaky-Mitral-Valves"
+    "https://abbott.mediaroom.com/2020-11-18-Abbott-Strengthens-Structural-Heart-Portfolio-with-New-Clip-Delivery-System-for-Non-Invasive-Treatment-of-Leaky-Mitral-Valves",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=bff6e6cf-6451-42ad-9ea0-8fe720b7c1f1.pdf",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=34b007bf-3ee1-40d3-b75a-a6c24095279f.pdf",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=e5b0dcbf-daf6-45a0-9d2d-46ecd65ef243.pdf",
+    "https://www.wockhardt.com/pressrelease/2023-08-01-acquisition#content"
   ]
 }
