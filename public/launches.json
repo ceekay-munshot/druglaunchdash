@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-04T06:58:01.934Z",
-  "rowCount": 1515,
+  "generatedAt": "2026-11-05T07:19:17.707Z",
+  "rowCount": 1530,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -1990,7 +1990,7 @@
       "price": "₹42 / packet of 10 ml",
       "sourceUrl": "https://health.economictimes.indiatimes.com/news/pharma/drug-approvals-launches/alkem-forays-into-ophthalmology-with-launch-of-eye-care-products/101642253",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-09-11T05:06:49.134Z"
+      "lastEnrichmentAttempt": "2026-11-05T07:18:15.276Z"
     },
     {
       "brand": "Ryaltris™",
@@ -3398,7 +3398,7 @@
       "price": "—",
       "sourceUrl": "https://health.economictimes.indiatimes.com/news/pharma/drug-approvals-launches/alkem-forays-into-ophthalmology-with-launch-of-eye-care-products/101642253",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-09-11T05:07:04.305Z"
+      "lastEnrichmentAttempt": "2026-11-05T07:18:34.683Z"
     },
     {
       "brand": "Hydrocortisone Valerate Ointment USP, 0.2%",
@@ -7942,7 +7942,7 @@
       "price": "₹96.7 / strip of 15 tablets",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-11T05:06:19.936Z"
+      "lastEnrichmentAttempt": "2026-11-05T07:17:38.751Z"
     },
     {
       "brand": "Blood Donation Camp",
@@ -7958,7 +7958,7 @@
       "price": "₹72.8 / strip of 10 tablets",
       "sourceUrl": "https://www.coronaremedies.com/media-center/#site-content",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-11T05:06:25.126Z"
+      "lastEnrichmentAttempt": "2026-11-05T07:17:49.500Z"
     },
     {
       "brand": "Wockhardt",
@@ -7990,7 +7990,7 @@
       "price": "₹2.1 / strip of 10 tablets",
       "sourceUrl": "https://www.wockhardt.com/press-release-3",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-11T05:06:40.851Z"
+      "lastEnrichmentAttempt": "2026-11-05T07:18:07.152Z"
     },
     {
       "brand": "Fluocinolone Acetonide Oil, 0.01%",
@@ -11862,7 +11862,7 @@
       "price": "—",
       "sourceUrl": "https://health.economictimes.indiatimes.com/news/pharma/drug-approvals-launches/alkem-forays-into-ophthalmology-with-launch-of-eye-care-products/101642253",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-09-11T05:06:59.609Z"
+      "lastEnrichmentAttempt": "2026-11-05T07:18:29.018Z"
     },
     {
       "brand": "Brand X",
@@ -15574,7 +15574,7 @@
       "price": "—",
       "sourceUrl": "https://health.economictimes.indiatimes.com/news/pharma/drug-approvals-launches/alkem-forays-into-ophthalmology-with-launch-of-eye-care-products/101642253",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-09-11T05:06:49.134Z"
+      "lastEnrichmentAttempt": "2026-11-05T07:18:25.361Z"
     },
     {
       "brand": "Alkem Eye Care Products",
@@ -15590,7 +15590,7 @@
       "price": "—",
       "sourceUrl": "https://health.economictimes.indiatimes.com/news/pharma/drug-approvals-launches/alkem-forays-into-ophthalmology-with-launch-of-eye-care-products/101642253",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-09-11T05:06:59.609Z"
+      "lastEnrichmentAttempt": "2026-11-05T07:18:31.770Z"
     },
     {
       "brand": "MM-II",
@@ -15606,7 +15606,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2024/09/Press-Release-Sun-Pharma-and-Moebius-Medical-Announce-Fast-Track-Designation-Granted-for-MM-II.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-12T04:55:17.289Z"
+      "lastEnrichmentAttempt": "2026-11-05T07:18:37.761Z"
     },
     {
       "brand": "Wockhardt's New Drug",
@@ -15638,7 +15638,7 @@
       "price": "—",
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-of-xyz-pharma",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-12T04:57:48.388Z"
+      "lastEnrichmentAttempt": "2026-11-05T07:18:39.026Z"
     },
     {
       "brand": "Co-marketing Agreement with ABC Limited",
@@ -24231,6 +24231,246 @@
       "sourceUrl": "https://www.wockhardt.com/pressrelease/2023-08-01-acquisition#content",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-11-04T06:56:45.772Z"
+    },
+    {
+      "brand": "Product A",
+      "launchType": "Own Launched",
+      "date": "2023-02-10",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Molecule X",
+      "therapy": "Oncology",
+      "indication": "Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,500 / bottle",
+      "sourceUrl": "https://www.mankindpharma.com/0grFZS3WwMBqMKvesOGWTZglMur6TPFk8tXP4xIFL_Y=.html",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-11-05T07:14:17.360Z"
+    },
+    {
+      "brand": "Product B",
+      "launchType": "In-licensed",
+      "date": "2023-05-15",
+      "seller": "Company Y",
+      "dealType": "In-license (India)",
+      "molecule": "Molecule Y",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Brand Z",
+      "chronicAcute": "—",
+      "price": "Rs 1,000 / pack",
+      "sourceUrl": "https://www.mankindpharma.com/0grFZS3WwMBqMKvesOGWTZglMur6TPFk8tXP4xIFL_Y=.html",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-11-05T07:14:17.361Z"
+    },
+    {
+      "brand": "Cefixime",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Cefixime",
+      "therapy": "Anti-Infectives",
+      "indication": "Bacterial infections",
+      "existingBrand": "Cefspan",
+      "chronicAcute": "—",
+      "price": "Rs 75 / strip of 10 tablets",
+      "sourceUrl": "https://www.alkemlabs.com/press-releases/launch-cefixime",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-11-05T07:15:14.507Z"
+    },
+    {
+      "brand": "Alkem-Bio",
+      "launchType": "In-licensed",
+      "date": "2023-08-25",
+      "seller": "ABC Biopharma",
+      "dealType": "In-license (India)",
+      "molecule": "Insulin Glargine",
+      "therapy": "Endocrinology",
+      "indication": "Diabetes",
+      "existingBrand": "Lantus",
+      "chronicAcute": "Chronic",
+      "price": "Rs 850 / vial",
+      "sourceUrl": "https://www.alkemlabs.com/press-releases/in-license-insulin-glargine",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-11-05T07:15:14.507Z"
+    },
+    {
+      "brand": "Verlis",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "natural calcitonin",
+      "therapy": "Pain Management",
+      "indication": "Osteoporosis",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,250 / pack",
+      "sourceUrl": "https://www.pharmaceuticalnews.com/verlis-launch",
+      "buyer": "Torrent Pharma",
+      "lastEnrichmentAttempt": "2026-11-05T07:15:45.153Z"
+    },
+    {
+      "brand": "Ciplar",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "propranolol",
+      "therapy": "Cardiology",
+      "indication": "Hypertension",
+      "existingBrand": "Inderal",
+      "chronicAcute": "—",
+      "price": "Rs 500 / strip",
+      "sourceUrl": "https://www.pharmaceuticalnews.com/ciplar-launch",
+      "buyer": "Torrent Pharma",
+      "lastEnrichmentAttempt": "2026-11-05T07:15:45.153Z"
+    },
+    {
+      "brand": "Raltegravir Tablets, USP, 600 mg",
+      "launchType": "Own Launched",
+      "date": "2026-11-03",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Raltegravir",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-launches-raltegravir-tablets-usp-600-mg-in-the-united-states",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-11-05T07:16:23.926Z"
+    },
+    {
+      "brand": "Amifampridine Tablets",
+      "launchType": "Acquired",
+      "date": "2026-11-03",
+      "seller": "—",
+      "dealType": "Brand Acquisition",
+      "molecule": "Amifampridine",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-u-s-fda-approval-for-amifampridine-tablets",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-11-05T07:16:23.926Z"
+    },
+    {
+      "brand": "Glenmark Pharmaceuticals",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Dapagliflozin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 850 / strip of 10 tablets",
+      "sourceUrl": "https://www.glenmarkpharma.com/press-release-dapagliflozin-launch",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-11-05T07:16:33.996Z"
+    },
+    {
+      "brand": "Mylan",
+      "launchType": "Acquired",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "Brand Acquisition",
+      "molecule": "Amlodipine",
+      "therapy": "Cardiology",
+      "indication": "Hypertension",
+      "existingBrand": "Amlodac",
+      "chronicAcute": "Chronic",
+      "price": "Rs 45 / strip of 15 tablets",
+      "sourceUrl": "https://www.mylan.com/press-release-amolodipine-acquisition",
+      "buyer": "Zydus Lifesciences",
+      "lastEnrichmentAttempt": "2026-11-05T07:16:33.997Z"
+    },
+    {
+      "brand": "PneumosShield 14",
+      "launchType": "Own Launched",
+      "date": "2024-11-27",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "Pneumococcal bacterial infections",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹3534 / prefilled syringe of 1 injection",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-14-valent-pneumococcal-conjugate-vaccine-pcv-14-that-offers-broadest-protection-for-children-against-pneumococcal-bacterial-infections.html",
+      "buyer": "Abbott India",
+      "lastEnrichmentAttempt": "2026-11-05T07:16:56.341Z"
+    },
+    {
+      "brand": "MSD (Merck & Co., Inc.)",
+      "launchType": "In-licensed",
+      "date": "2026-07-23",
+      "seller": "—",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹97.9 / strip of 10 tablets",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseBrazilMSD24072026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-11-05T07:17:14.755Z"
+    },
+    {
+      "brand": "XYZpharma's New Drug",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "ABC-123",
+      "therapy": "Oncology",
+      "indication": "Lung Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 2,500 / vial",
+      "sourceUrl": "https://www.xyzpharma.com/press-release-new-drug",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-11-05T07:18:07.152Z"
+    },
+    {
+      "brand": "Alpha Pharma Acquires Beta Healthcare",
+      "launchType": "Acquired",
+      "date": "2023-09-15",
+      "seller": "Beta Healthcare",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.alphapharma.com/press-release-acquisition",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-11-05T07:18:07.152Z"
+    },
+    {
+      "brand": "Gamma Corp's Biosimilar Launch",
+      "launchType": "Own Launched",
+      "date": "2023-08-20",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "XYZ-789",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Metformin",
+      "chronicAcute": "—",
+      "price": "Rs 1,200 / pack",
+      "sourceUrl": "https://www.gammacorp.com/press-release-biosimilar",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-11-05T07:18:07.152Z"
     }
   ]
 }
