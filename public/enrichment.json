@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-04T07:53:45.034Z",
-  "rowCount": 252,
+  "generatedAt": "2026-11-05T08:19:40.289Z",
+  "rowCount": 254,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -4519,6 +4519,44 @@
       "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 4 Nov",
       "_provider": "gemini",
       "_harvestedAt": "2026-11-04T07:53:02.351Z"
+    },
+    {
+      "brand": "Semaglutide (generic)",
+      "launchType": "Own Launched",
+      "date": "2026-11-05",
+      "seller": "—",
+      "dealType": "—",
+      "molecule": "Semaglutide",
+      "therapy": "Anti-Diabetic",
+      "indication": "treatment of adults with insufficiently controlled type 2 diabetes mellitus, as an adjunct to diet and exercise, either as monotherapy when metformin is considered inappropriate due to intolerance or contraindications, or in addition to other medicinal products for the treatment of diabetes",
+      "price": "—",
+      "dealValue": null,
+      "existingBrand": "Ozempic",
+      "chronicAcute": "Chronic",
+      "buyer": "Dr. Reddy's",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=e05bf4ad-da28-4f27-a07f-95a2fc59b879.pdf",
+      "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 5 Nov - Disclosure under Regulation 30 of SEBI (LODR) Regulations, 2015",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-11-05T08:17:52.086Z"
+    },
+    {
+      "brand": "Raltegravir Tablets, USP, 600 mg",
+      "launchType": "Own Launched",
+      "date": "2026-11-03",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "Raltegravir",
+      "therapy": "Antiretroviral",
+      "indication": "Human Immunodeficiency Virus (HIV-1) infection in adult patients and in pediatric patients weighing at least 40 kg",
+      "existingBrand": "Isentress® HD",
+      "chronicAcute": "Chronic",
+      "buyer": "Lupin",
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-launches-raltegravir-tablets-usp-600-mg-in-the-united-states",
+      "_title": "backfill:Raltegravir Tablets, USP, 600 mg",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-11-05T08:19:17.169Z"
     }
   ],
   "processedUrls": [
@@ -5062,6 +5100,13 @@
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=bff6e6cf-6451-42ad-9ea0-8fe720b7c1f1.pdf",
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=34b007bf-3ee1-40d3-b75a-a6c24095279f.pdf",
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=e5b0dcbf-daf6-45a0-9d2d-46ecd65ef243.pdf",
-    "https://www.wockhardt.com/pressrelease/2023-08-01-acquisition#content"
+    "https://www.wockhardt.com/pressrelease/2023-08-01-acquisition#content",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=e05bf4ad-da28-4f27-a07f-95a2fc59b879.pdf",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=eb6e5d2f-9f89-4399-90c9-a03b356eb58e.pdf",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=42118ae4-0ad5-4b5d-b988-ee98359dde83.pdf",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=b7371536-5824-4fa0-9163-af25802773fd.pdf",
+    "https://www.lupin.com/media/press-releases/lupin-launches-raltegravir-tablets-usp-600-mg-in-the-united-states",
+    "https://www.lupin.com/media/press-releases/lupin-receives-u-s-fda-approval-for-amifampridine-tablets",
+    "https://www.alphapharma.com/press-release-acquisition"
   ]
 }
