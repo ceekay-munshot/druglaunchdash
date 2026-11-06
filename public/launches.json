@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-05T07:19:17.707Z",
-  "rowCount": 1530,
+  "generatedAt": "2026-11-06T07:18:17.010Z",
+  "rowCount": 1540,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -2006,7 +2006,7 @@
       "price": "₹232 / bottle of 17 gm (nasal spray)",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-expands-its-oncology-franchise-in-India-with-the-launch-of-Helsinn.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-09-12T04:58:00.450Z"
+      "lastEnrichmentAttempt": "2026-11-06T07:16:53.853Z"
     },
     {
       "brand": "Fluocinolone Acetonide Oil",
@@ -2022,7 +2022,7 @@
       "price": "₹430 / bottle of 30 ml",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-receives-ANDA-approval-for-Fluocinolone-Acetonide-Oil-0.01%25-Ear-Drops.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-09-12T04:58:04.861Z"
+      "lastEnrichmentAttempt": "2026-11-06T07:16:57.776Z"
     },
     {
       "brand": "Fluocinolone Acetonide Ointment",
@@ -2038,7 +2038,7 @@
       "price": "null",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-receives-ANDA-approval-for-Hydrocortisone-Valerate-Ointment-USP-%200.2%25.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-09-12T04:58:17.637Z"
+      "lastEnrichmentAttempt": "2026-11-06T07:17:14.332Z"
     },
     {
       "brand": "Clobetasol Propionate Foam",
@@ -2054,7 +2054,7 @@
       "price": "₹464 / bottle of 50 gm foam",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-receives-tentative-ANDA-approval-for-Clobetasol-Propionate-Foam-0.05%25-%28Emulsion-Formulation%29.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-09-12T04:58:26.825Z"
+      "lastEnrichmentAttempt": "2026-11-06T07:17:24.261Z"
     },
     {
       "brand": "Azelaic Acid Gel",
@@ -3414,7 +3414,7 @@
       "price": "null",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-receives-ANDA-approval-for-Hydrocortisone-Valerate-Ointment-USP-%200.2%25.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-09-12T04:58:23.815Z"
+      "lastEnrichmentAttempt": "2026-11-06T07:17:20.605Z"
     },
     {
       "brand": "Clobetasol Propionate Foam, 0.05%",
@@ -5270,7 +5270,7 @@
       "price": "—",
       "sourceUrl": "https://health.economictimes.indiatimes.com/news/pharma/drug-approvals-launches/alkem-forays-into-ophthalmology-with-launch-of-eye-care-products/101642253",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-09-12T04:57:56.700Z"
+      "lastEnrichmentAttempt": "2026-11-06T07:16:50.523Z"
     },
     {
       "brand": "Eribulin Mesylate Injection",
@@ -8006,7 +8006,7 @@
       "price": "—",
       "sourceUrl": "—",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-09-12T04:58:16.191Z"
+      "lastEnrichmentAttempt": "2026-11-06T07:17:13.030Z"
     },
     {
       "brand": "Seven Brands",
@@ -11926,7 +11926,7 @@
       "price": "Rs 1,500 / device",
       "sourceUrl": "https://www.wockhardt.com/press-release/biovac-d-launch",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-12T04:57:49.895Z"
+      "lastEnrichmentAttempt": "2026-11-06T07:16:43.455Z"
     },
     {
       "brand": "Wockhardt's Gleevec",
@@ -11974,7 +11974,7 @@
       "price": null,
       "sourceUrl": "https://www.glenmarkpharma.com/press-releases/fluocinolone-acetonide-oil-0-01-ear-drops-launch",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-09-12T04:58:08.664Z"
+      "lastEnrichmentAttempt": "2026-11-06T07:17:01.473Z"
     },
     {
       "brand": "Hydrocortisone Valerate Ointment",
@@ -11990,7 +11990,7 @@
       "price": null,
       "sourceUrl": "—",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-09-12T04:58:22.426Z"
+      "lastEnrichmentAttempt": "2026-11-06T07:17:19.281Z"
     },
     {
       "brand": "Nexavar",
@@ -20446,7 +20446,7 @@
       "date": "2018-12-12",
       "seller": "—",
       "dealType": "NCE Launch",
-      "molecule": "—",
+      "molecule": "Thymosin alpha 1",
       "therapy": "—",
       "indication": "COVID-19",
       "existingBrand": "—",
@@ -24471,6 +24471,166 @@
       "sourceUrl": "https://www.gammacorp.com/press-release-biosimilar",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-11-05T07:18:07.152Z"
+    },
+    {
+      "brand": "New Drug XYZ",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "XYZ-123",
+      "therapy": "Oncology",
+      "indication": "Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 1,500 / tablet",
+      "sourceUrl": "https://www.mankindpharma.com/0grFZS3WwMBqMKvesOGWTZglMur6TPFk8tXP4xIFL_Y=.html",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-11-06T07:13:47.944Z"
+    },
+    {
+      "brand": "Starizo",
+      "launchType": "Own Launched",
+      "date": "2024-08-23",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Tedizolid Phosphate",
+      "therapy": "—",
+      "indication": "skin and skin structure infections",
+      "existingBrand": "—",
+      "chronicAcute": "Acute",
+      "price": "₹854 / strip of 6 tablets",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2024/08/Press-Release-Sun-Pharma-introduces-a-novel-treatment-STARIZO-Tedizolid-Phosphate-in-India.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-11-06T07:14:42.565Z"
+    },
+    {
+      "brand": "Super-Relief",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Ibuprofen + Paracetamol",
+      "therapy": "Pain Management",
+      "indication": "Pain relief",
+      "existingBrand": "—",
+      "chronicAcute": "Acute",
+      "price": "Rs 150 / strip",
+      "sourceUrl": "https://www.alkemlabs.com/press-releases/super-relief-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-11-06T07:14:51.475Z"
+    },
+    {
+      "brand": "CardioPlus",
+      "launchType": "In-licensed",
+      "date": "2023-08-20",
+      "seller": "XYZ Pharma",
+      "dealType": "In-license (India)",
+      "molecule": "Rosuvastatin",
+      "therapy": "Cardiology",
+      "indication": "Hyperlipidemia",
+      "existingBrand": "Crestor",
+      "chronicAcute": "—",
+      "price": "₹153.5 / strip of 10 capsules",
+      "sourceUrl": "https://www.alkemlabs.com/press-releases/cardioplus-inlicensing",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-11-06T07:14:51.475Z"
+    },
+    {
+      "brand": "4 drug brands from GlaxoSmithKline",
+      "launchType": "Acquired",
+      "date": "2026-06-01",
+      "seller": "GlaxoSmithline Pharmaceuticals Limited",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹34.5 / strip of 10 tablets",
+      "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-11-06T07:15:04.992Z"
+    },
+    {
+      "brand": "Generic Drug C",
+      "launchType": "Own Launched",
+      "date": "2023-07-20",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Molecule C",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Competitor Brand Y",
+      "chronicAcute": "Chronic",
+      "price": "Rs 750 / strip",
+      "sourceUrl": "https://www.drreddys.com/press-release/generic-drug-c-launch",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-11-06T07:15:24.148Z"
+    },
+    {
+      "brand": "Raltegravir",
+      "launchType": "Own Launched",
+      "date": "2026-11-03",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Raltegravir",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹7992 / strip of 60 tablets",
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-launches-raltegravir-tablets-usp-600-mg-in-the-united-states",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-11-06T07:15:40.550Z"
+    },
+    {
+      "brand": "Biovac-D",
+      "launchType": "Own Launched",
+      "date": "2023-01-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Dengue Vaccine",
+      "therapy": "—",
+      "indication": "Dengue Fever",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 2,500 / vial",
+      "sourceUrl": "https://www.wockhardt.com/press-release/biovac-d-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-11-06T07:16:43.455Z"
+    },
+    {
+      "brand": "Fluocinolone Acetonide Oil 0.01% Ear Drops",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Fluocinolone Acetonide",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 450 / bottle",
+      "sourceUrl": "https://glenmarkpharma.com/press-releases/fluocinolone-acetonide-oil-0-01-ear-drops-launch#main",
+      "buyer": "Glenmark",
+      "lastEnrichmentAttempt": "2026-11-06T07:17:01.473Z"
+    },
+    {
+      "brand": "Hydrocortisone Valerate Ointment USP",
+      "launchType": "Own Launched",
+      "date": "2018-12-17",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Hydrocortisone Valerate",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Westcort®",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "—",
+      "buyer": "Glenmark",
+      "lastEnrichmentAttempt": "2026-11-06T07:17:20.605Z"
     }
   ]
 }
