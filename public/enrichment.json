@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-06T08:22:45.456Z",
-  "rowCount": 263,
+  "generatedAt": "2026-11-07T07:41:47.450Z",
+  "rowCount": 264,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -4728,6 +4728,25 @@
       "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 5 Nov - Glenmark reported Q2 FY27 revenue of Rs. 42,473 million, EBITDA Rs. 8,638 million, and settled Humana litigation for $15.28 million.",
       "_provider": "gemini",
       "_harvestedAt": "2026-11-06T08:21:48.836Z"
+    },
+    {
+      "brand": "Phytonadione Injectable Emulsion",
+      "launchType": "Own Launched",
+      "date": "2026-10-09",
+      "seller": "—",
+      "dealType": "—",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "Phytonadione",
+      "therapy": "Hemostatic",
+      "indication": "Treatment and prophylaxis of hypoprothrombinemia and vitamin K-deficiency",
+      "existingBrand": "Phytonadione Injectable Emulsion (International Medication Systems, Limited)",
+      "chronicAcute": "Acute",
+      "buyer": "Lupin",
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-u-s-fda-approval-for-phytonadione-injectable-emulsion-usp",
+      "_title": "backfill:Phytonadione Injectable Emulsion",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-11-07T07:41:18.490Z"
     }
   ],
   "processedUrls": [
@@ -5280,6 +5299,12 @@
     "https://www.lupin.com/media/press-releases/lupin-receives-u-s-fda-approval-for-amifampridine-tablets",
     "https://www.alphapharma.com/press-release-acquisition",
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=5fe2fa6a-c7e6-4afa-9693-99c024fab1f6.pdf",
-    "https://glenmarkpharma.com/press-releases/fluocinolone-acetonide-oil-0-01-ear-drops-launch#main"
+    "https://glenmarkpharma.com/press-releases/fluocinolone-acetonide-oil-0-01-ear-drops-launch#main",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=cf91ac09-61d8-4fc8-bdc3-7ada709bf993.pdf",
+    "https://www.drreddys.com/press-releases/acquisition-of-acme-pharma",
+    "https://www.lupin.com/media/press-releases/lupin-receives-u-s-fda-approval-for-phytonadione-injectable-emulsion-usp",
+    "https://www.wockhardt.com/press-releases/novelmab-launch",
+    "https://www.wockhardt.com/press-release/glycyrrhizic-acid-launch#content",
+    "https://www.business-standard.com/content/press-releases-ani/corona-remedies-joins-hands-with-ferring-pharmaceuticals-to-commercialize-maternal-health-urology-products-in-india-123050901108_1.html"
   ]
 }
