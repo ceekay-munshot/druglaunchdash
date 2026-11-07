@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-06T07:18:17.010Z",
-  "rowCount": 1540,
+  "generatedAt": "2026-11-07T06:35:04.422Z",
+  "rowCount": 1558,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -3430,7 +3430,7 @@
       "price": null,
       "sourceUrl": "https://www.glenmarkpharma.com/press-release/clobetasol-propionate-foam-0-05-approval",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-09-13T05:19:33.946Z"
+      "lastEnrichmentAttempt": "2026-11-07T06:32:38.279Z"
     },
     {
       "brand": "Azelaic Acid Gel, 15%",
@@ -5286,7 +5286,7 @@
       "price": "₹17184 / vial of 1 injection",
       "sourceUrl": "https://www.natcopharma.co.in/insights/news-and-announcements#eribulin-mesylate-approval",
       "buyer": "Natco Pharma",
-      "lastEnrichmentAttempt": "2026-09-13T05:19:41.576Z"
+      "lastEnrichmentAttempt": "2026-11-07T06:32:50.976Z"
     },
     {
       "brand": "CardioX",
@@ -8022,7 +8022,7 @@
       "price": "₹396 / bottle of 30 (1,000 mg)",
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-13T05:19:45.544Z"
+      "lastEnrichmentAttempt": "2026-11-07T06:32:53.958Z"
     },
     {
       "brand": "Maternal Health & Urology",
@@ -8038,7 +8038,7 @@
       "price": "₹299 / jar of 200 gm",
       "sourceUrl": "https://www.business-standard.com/content/press-releases-ani/corona-remedies-joins-hands-with-ferring-pharmaceuticals-to-commercialize-maternal-health-urology-products-in-india-123050900586_1.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-13T05:20:44.118Z"
+      "lastEnrichmentAttempt": "2026-11-07T06:34:00.991Z"
     },
     {
       "brand": "NaMuscla",
@@ -12054,7 +12054,7 @@
       "price": "₹33.7 / strip of 10 tablets",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-13T05:19:57.646Z"
+      "lastEnrichmentAttempt": "2026-11-07T06:33:16.249Z"
     },
     {
       "brand": "Helsinn’s AKYNZEO®",
@@ -12070,7 +12070,7 @@
       "price": "₹4961 / strip of 1 capsule",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-expands-its-oncology-franchise-in-India-with-the-launch-of-Helsinn.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-09-13T05:20:05.451Z"
+      "lastEnrichmentAttempt": "2026-11-07T06:33:33.641Z"
     },
     {
       "brand": "Diazepam Injection, USP",
@@ -12086,7 +12086,7 @@
       "price": "₹7.8 / vial of 2 ml injection",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-announces-the-approval-of-diazepam-injection-usp-in-the-united-states",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-09-13T05:20:08.607Z"
+      "lastEnrichmentAttempt": "2026-11-07T06:33:37.093Z"
     },
     {
       "brand": "Sugammadex Injection",
@@ -12118,7 +12118,7 @@
       "price": "Rs 5,000 / vial",
       "sourceUrl": "https://www.wockhardt.com/press-release/glycyrrhizic-acid-launch",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-13T05:20:38.059Z"
+      "lastEnrichmentAttempt": "2026-11-07T06:33:53.648Z"
     },
     {
       "brand": "X Company",
@@ -15670,7 +15670,7 @@
       "price": null,
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrtoSEsLannetPR31082026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-09-13T05:19:16.863Z"
+      "lastEnrichmentAttempt": "2026-11-07T06:32:31.732Z"
     },
     {
       "brand": "Diazepam Injection USP",
@@ -15686,7 +15686,7 @@
       "price": null,
       "sourceUrl": "https://www.lupin.com/news/lupin-announces-the-approval-of-diazepam-injection-usp-in-the-united-states/",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-09-13T05:20:08.607Z"
+      "lastEnrichmentAttempt": "2026-11-07T06:33:46.542Z"
     },
     {
       "brand": "Ferring Pharmaceuticals products",
@@ -24631,6 +24631,294 @@
       "sourceUrl": "—",
       "buyer": "Glenmark",
       "lastEnrichmentAttempt": "2026-11-06T07:17:20.605Z"
+    },
+    {
+      "brand": "Zyropan",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Zyraxetine",
+      "therapy": "Neurology",
+      "indication": "Chronic migraine",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,500 / strip of 10 tablets",
+      "sourceUrl": "https://pharma-example.com/zyropan-launch",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-11-07T06:28:27.599Z"
+    },
+    {
+      "brand": "CardioMax",
+      "launchType": "Acquired",
+      "date": "2023-08-30",
+      "seller": "Global Pharma Corp",
+      "dealType": "Brand Acquisition",
+      "molecule": "Cardiolol",
+      "therapy": "Cardiology",
+      "indication": "Hypertension",
+      "existingBrand": "Cardizem",
+      "chronicAcute": "Chronic",
+      "price": "Rs 750 / strip of 15 tablets",
+      "sourceUrl": "https://pharma-example.com/cardio-max-acquisition",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-11-07T06:28:27.599Z"
+    },
+    {
+      "brand": "InsulGain",
+      "launchType": "In-licensed",
+      "date": "2023-07-10",
+      "seller": "MediCo",
+      "dealType": "In-license (India)",
+      "molecule": "Insulapro",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "null",
+      "sourceUrl": "https://pharma-example.com/insulgain-in-license",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-11-07T06:28:27.599Z"
+    },
+    {
+      "brand": "Brand A",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Molecule A",
+      "therapy": "Oncology",
+      "indication": "Cancer",
+      "existingBrand": "Competitor Brand A",
+      "chronicAcute": "Acute",
+      "price": "Rs 1,500 / strip",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/brand-a-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-11-07T06:28:41.928Z"
+    },
+    {
+      "brand": "Brand B",
+      "launchType": "Acquired",
+      "date": "2023-08-20",
+      "seller": "Company X",
+      "dealType": "Brand Acquisition",
+      "molecule": "Molecule B",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Competitor Brand B",
+      "chronicAcute": "Chronic",
+      "price": "Rs 750 / strip",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/brand-b-acquisition",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-11-07T06:28:41.928Z"
+    },
+    {
+      "brand": "Brand C",
+      "launchType": "In-licensed",
+      "date": "2023-07-10",
+      "seller": "Company Y",
+      "dealType": "In-license (India)",
+      "molecule": "Molecule C",
+      "therapy": "Immunology",
+      "indication": "Autoimmune Disease",
+      "existingBrand": "Competitor Brand C",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/brand-c-inlicensing",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-11-07T06:28:41.928Z"
+    },
+    {
+      "brand": "Brand X",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Molecule A",
+      "therapy": "Oncology",
+      "indication": "Lung Cancer",
+      "existingBrand": "Brand Y",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,200 / strip",
+      "sourceUrl": "https://www.drreddys.com/press-releases/brand-x-launch",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-11-07T06:29:51.237Z"
+    },
+    {
+      "brand": "Acme Pharma Acquisition",
+      "launchType": "Acquired",
+      "date": "2023-08-05",
+      "seller": "Acme Pharma Limited",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.drreddys.com/press-releases/acquisition-of-acme-pharma",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-11-07T06:29:51.237Z"
+    },
+    {
+      "brand": "Brand Z",
+      "launchType": "In-licensed",
+      "date": "2023-07-20",
+      "seller": "XYZ Corp",
+      "dealType": "In-license (India)",
+      "molecule": "Molecule B",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Brand W",
+      "chronicAcute": "—",
+      "price": "₹327 / combo pack of 2 (75 gm & 30 tablets)",
+      "sourceUrl": "https://www.drreddys.com/press-releases/in-licensing-of-brand-z",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-11-07T06:29:51.237Z"
+    },
+    {
+      "brand": "Amifampridine",
+      "launchType": "Own Launched",
+      "date": "2026-11-03",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Amifampridine",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-u-s-fda-approval-for-amifampridine-tablets",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-11-07T06:30:26.348Z"
+    },
+    {
+      "brand": "Phytonadione Injectable Emulsion",
+      "launchType": "Own Launched",
+      "date": "2026-10-09",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Phytonadione",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-receives-u-s-fda-approval-for-phytonadione-injectable-emulsion-usp",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-11-07T06:30:26.348Z"
+    },
+    {
+      "brand": "NovelMab",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Novelmab",
+      "therapy": "Oncology",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 5,000 / vial",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/novelmab-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-11-07T06:32:30.224Z"
+    },
+    {
+      "brand": "Cardiotabs",
+      "launchType": "Acquired",
+      "date": "2023-09-15",
+      "seller": "XYZ Pharma",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "Cardiology",
+      "indication": "Coronary Artery Disease",
+      "existingBrand": "Superstatin",
+      "chronicAcute": "Chronic",
+      "price": "Rs 750 / strip",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/cardio-tabs-acquisition",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-11-07T06:32:30.224Z"
+    },
+    {
+      "brand": "GlucoseCare",
+      "launchType": "In-licensed",
+      "date": "2023-08-22",
+      "seller": "ABC Biotech",
+      "dealType": "In-license (India)",
+      "molecule": "Glimepiride",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Amaryl",
+      "chronicAcute": "—",
+      "price": "₹225 / bottle of 100 gm tablet",
+      "sourceUrl": "https://www.wockhardt.com/press-releases/glucosecare-in-licensing",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-11-07T06:32:30.224Z"
+    },
+    {
+      "brand": "Clobetasol Propionate Foam",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Clobetasol Propionate",
+      "therapy": "Dermatology",
+      "indication": "Psoriasis",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,500 / foam",
+      "sourceUrl": "https://glenmarkpharma.com/press-release/clobetasol-propionate-foam-0-05-approval",
+      "buyer": "Glenmark",
+      "lastEnrichmentAttempt": "2026-11-07T06:32:38.279Z"
+    },
+    {
+      "brand": "Diazepam Injection USP, 10 mg/2 mL",
+      "launchType": "Own Launched",
+      "date": "2026-07-31",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Diazepam",
+      "therapy": "—",
+      "indication": "management of anxiety disorders or for the short-term relief of the symptoms of anxiety",
+      "existingBrand": "Valium®",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.lupin.com/press-releases/lupin-announces-the-approval-of-diazepam-injection-usp-in-the-united-states/",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-11-07T06:33:37.093Z"
+    },
+    {
+      "brand": "Glycyrrhizic Acid",
+      "launchType": "Own Launched",
+      "date": "2022-08-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Glycyrrhizic Acid",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.wockhardt.com/press-release/glycyrrhizic-acid-launch#content",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-11-07T06:33:53.648Z"
+    },
+    {
+      "brand": "Ferring Pharmaceuticals",
+      "launchType": "In-licensed",
+      "date": "2023-05-09",
+      "seller": "—",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "Maternal Health & Urology",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.business-standard.com/content/press-releases-ani/corona-remedies-joins-hands-with-ferring-pharmaceuticals-to-commercialize-maternal-health-urology-products-in-india-123050901108_1.html",
+      "buyer": "Corona Remedies",
+      "lastEnrichmentAttempt": "2026-11-07T06:34:00.991Z"
     }
   ]
 }
