@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-07T07:41:47.450Z",
-  "rowCount": 264,
+  "generatedAt": "2026-11-08T07:48:30.804Z",
+  "rowCount": 265,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -4747,6 +4747,25 @@
       "_title": "backfill:Phytonadione Injectable Emulsion",
       "_provider": "gemini",
       "_harvestedAt": "2026-11-07T07:41:18.490Z"
+    },
+    {
+      "brand": "semaglutide injection",
+      "launchType": "In-licensed",
+      "date": "2026-03-30",
+      "seller": "Zydus Lifesciences",
+      "dealType": "Co-marketing agreement",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "Semaglutide injection",
+      "therapy": "Anti-Diabetic, Anti-Obesity",
+      "indication": "Type 2 Diabetes Mellitus, Obesity",
+      "existingBrand": "Ozempic, Wegovy (Novo Nordisk)",
+      "chronicAcute": "Chronic",
+      "buyer": "Corona Remedies",
+      "sourceUrl": "https://www.business-standard.com/companies/news/lupin-zydus-partner-co-market-semaglutide-injection-india-126031700925_1.html",
+      "_title": "backfill:semaglutide injection",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-11-08T07:48:30.103Z"
     }
   ],
   "processedUrls": [
@@ -5305,6 +5324,8 @@
     "https://www.lupin.com/media/press-releases/lupin-receives-u-s-fda-approval-for-phytonadione-injectable-emulsion-usp",
     "https://www.wockhardt.com/press-releases/novelmab-launch",
     "https://www.wockhardt.com/press-release/glycyrrhizic-acid-launch#content",
-    "https://www.business-standard.com/content/press-releases-ani/corona-remedies-joins-hands-with-ferring-pharmaceuticals-to-commercialize-maternal-health-urology-products-in-india-123050901108_1.html"
+    "https://www.business-standard.com/content/press-releases-ani/corona-remedies-joins-hands-with-ferring-pharmaceuticals-to-commercialize-maternal-health-urology-products-in-india-123050901108_1.html",
+    "https://www.business-standard.com/industry/news/corona-remedies-acquires-wokadine-from-drl-enters-iodine-market-126034200633_1.html",
+    "https://www.business-standard.com/companies/news/lupin-zydus-partner-co-market-semaglutide-injection-india-126031700925_1.html"
   ]
 }
