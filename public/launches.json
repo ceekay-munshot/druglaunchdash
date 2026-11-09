@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-08T06:39:48.729Z",
-  "rowCount": 1566,
+  "generatedAt": "2026-11-09T07:09:21.851Z",
+  "rowCount": 1572,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -726,7 +726,7 @@
       "price": "—",
       "sourceUrl": "http://www.sunpharma.com/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-14T05:24:26.473Z"
+      "lastEnrichmentAttempt": "2026-11-09T07:08:26.410Z"
     },
     {
       "brand": "Chericof",
@@ -2134,7 +2134,7 @@
       "price": "₹3800 / bottle of 21 capsules",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/PressReleaseEugia04032026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-09-14T05:24:17.032Z"
+      "lastEnrichmentAttempt": "2026-11-09T07:08:19.143Z"
     },
     {
       "brand": "ADQUEY™ (difamilast) Ointment",
@@ -2166,7 +2166,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-signs-definitive-agreement-to-acquire-organon/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-14T05:24:43.962Z"
+      "lastEnrichmentAttempt": "2026-11-09T07:08:55.624Z"
     },
     {
       "brand": "semaglutide",
@@ -3462,7 +3462,7 @@
       "price": null,
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-launches-its-semaglutide-injection-under-the-brand-names-noveltreat-and-sematrinity-in-india/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-14T05:24:40.948Z"
+      "lastEnrichmentAttempt": "2026-11-09T07:08:52.161Z"
     },
     {
       "brand": "Brand B Acquisition",
@@ -5382,7 +5382,7 @@
       "price": "Rs 1,200 / kit",
       "sourceUrl": "https://www.wockhardt.com/release/wardex-launch",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-14T05:24:01.067Z"
+      "lastEnrichmentAttempt": "2026-11-09T07:07:59.868Z"
     },
     {
       "brand": "Wockhardt Acquisition of X Company",
@@ -5398,7 +5398,7 @@
       "price": "₹177 / strip of 10 tablets",
       "sourceUrl": "https://www.wockhardt.com/release/acquisition-of-x-company",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-14T05:24:07.873Z"
+      "lastEnrichmentAttempt": "2026-11-09T07:08:06.695Z"
     },
     {
       "brand": "Wockhardt Metformin Plus",
@@ -5446,7 +5446,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-launches-its-semaglutide-injection-under-the-brand-names-noveltreat-and-sematrinity-in-india/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-14T05:24:32.105Z"
+      "lastEnrichmentAttempt": "2026-11-09T07:08:33.439Z"
     },
     {
       "brand": "semaglutide",
@@ -12134,7 +12134,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/release/acquisition-of-x-company#content",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-14T05:24:14.628Z"
+      "lastEnrichmentAttempt": "2026-11-09T07:08:13.637Z"
     },
     {
       "brand": "Sitagliptin in collaboration with MSD",
@@ -15862,7 +15862,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsLnnettPR22062026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-09-14T05:23:40.868Z"
+      "lastEnrichmentAttempt": "2026-11-09T07:07:48.322Z"
     },
     {
       "brand": "Omalizumab Biosimilar",
@@ -15878,7 +15878,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-09-14T05:23:40.868Z"
+      "lastEnrichmentAttempt": "2026-11-09T07:07:53.907Z"
     },
     {
       "brand": "Alkem’s antibiotic combination",
@@ -17631,11 +17631,11 @@
       "seller": "—",
       "dealType": "NCE Launch",
       "molecule": "methylphenidate",
-      "therapy": "—",
-      "indication": "—",
+      "therapy": "CNS",
+      "indication": "Attention Deficit Hyperactivity Disorder",
       "existingBrand": "Concerta",
       "chronicAcute": "Chronic",
-      "price": "—",
+      "price": "null",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-participates-in-white-house-signing-ceremony-highlighting-u-s-medicines-pricing-and-access-commitments/",
       "buyer": "Sun Pharma",
       "lastEnrichmentAttempt": "2026-10-03T05:41:14.934Z"
@@ -18079,7 +18079,7 @@
       "seller": "—",
       "dealType": "NCE Launch",
       "molecule": "Perampanel",
-      "therapy": "—",
+      "therapy": "Neurology",
       "indication": "—",
       "existingBrand": "Fycompa®",
       "chronicAcute": "—",
@@ -25047,6 +25047,102 @@
       "sourceUrl": "https://www.business-standard.com/companies/news/lupin-zydus-partner-co-market-semaglutide-injection-india-126031700925_1.html",
       "buyer": "Corona Remedies",
       "lastEnrichmentAttempt": "2026-11-08T06:38:03.477Z"
+    },
+    {
+      "brand": "Mankind's New Diabetes Drug",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Dapagliflozin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Metformin",
+      "chronicAcute": "Chronic",
+      "price": "Rs 2,150 / strip",
+      "sourceUrl": "https://www.mankindpharma.com/4cuq7X_pAuniJU-wkaUJJfwL6sN7ByqdKUa7_YGjKP0=.html",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-11-09T07:03:15.770Z"
+    },
+    {
+      "brand": "Piranex",
+      "launchType": "Own Launched",
+      "date": "2023-06-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Piranterol",
+      "therapy": "Respiratory",
+      "indication": "Bronchial Asthma",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 450 / strip",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/piranex-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-11-09T07:04:57.101Z"
+    },
+    {
+      "brand": "Raltegravir Tablets",
+      "launchType": "Own Launched",
+      "date": "2026-11-03",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Raltegravir",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹7992 / strip of 60 tablets",
+      "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-launches-raltegravir-tablets-usp-600-mg-in-the-united-states",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-11-09T07:06:28.122Z"
+    },
+    {
+      "brand": "Wockhardt's Hypertension Drug",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Telmisartan",
+      "therapy": "Cardiology",
+      "indication": "Hypertension",
+      "existingBrand": "Telma",
+      "chronicAcute": "Chronic",
+      "price": "Rs 150 / strip",
+      "sourceUrl": "https://www.wockhardt.com/press-release/wockhardt-launches-new-hypertension-drug",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-11-09T07:07:46.815Z"
+    },
+    {
+      "brand": "Wardex",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 840 / strip",
+      "sourceUrl": "https://www.wockhardt.com/release/wardex-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-11-09T07:07:59.868Z"
+    },
+    {
+      "brand": "Acquisition of X Company",
+      "launchType": "Acquired",
+      "date": "2023-07-20",
+      "seller": "X Company",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/release/acquisition-of-x-company",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-11-09T07:08:13.637Z"
     }
   ]
 }
