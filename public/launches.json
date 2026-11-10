@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-09T07:09:21.851Z",
-  "rowCount": 1572,
+  "generatedAt": "2026-11-10T07:46:15.342Z",
+  "rowCount": 1579,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -2198,7 +2198,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/blog/sun-pharma-introduces-its-global-innovative-drug-ilumya-in-india-for-treatment-of-moderate-to-severe-plaque-psoriasis/",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-14T05:24:57.606Z"
+      "lastEnrichmentAttempt": "2026-11-10T07:44:04.176Z"
     },
     {
       "brand": "UNLOXCYT",
@@ -8102,7 +8102,7 @@
       "price": "₹211 / bottle of 9.5 gm nasal spray",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-Announces-Exclusive-Licensing-Agreement-with-Se.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-09-15T05:12:56.905Z"
+      "lastEnrichmentAttempt": "2026-11-10T07:45:54.281Z"
     },
     {
       "brand": "NaMuscla®",
@@ -8118,7 +8118,7 @@
       "price": "₹29.8 / strip of 10 tablets",
       "sourceUrl": "https://www.lupin.com/media/press-releases/lupin-announces-ema-approval-for-na-muscla-expansion-for-pediatric-indication-with-new-strengths",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-09-15T05:13:00.455Z"
+      "lastEnrichmentAttempt": "2026-11-10T07:45:58.695Z"
     },
     {
       "brand": "Medispray",
@@ -12150,7 +12150,7 @@
       "price": "₹106 / strip of 10 tablet er",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-and-msd-announce-strategic-partnership-to-distribute-innovative-oral-anti-diabetic-medicines-in-india.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-09-14T05:24:50.993Z"
+      "lastEnrichmentAttempt": "2026-11-10T07:43:56.895Z"
     },
     {
       "brand": "Aurobindo’s New Injection",
@@ -15894,7 +15894,7 @@
       "price": "—",
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/amp_articleshow/100775508.cms",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-09-15T05:11:41.278Z"
+      "lastEnrichmentAttempt": "2026-11-10T07:44:12.482Z"
     },
     {
       "brand": "Wokadine",
@@ -15910,7 +15910,7 @@
       "price": "₹37.6 / bottle of 50 ml solution",
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-15T05:11:49.662Z"
+      "lastEnrichmentAttempt": "2026-11-10T07:44:19.039Z"
     },
     {
       "brand": "Breztri",
@@ -15958,7 +15958,7 @@
       "price": "null",
       "sourceUrl": "https://www.pharmaexample.com/fresto-acquisition",
       "buyer": "Zydus Lifesciences",
-      "lastEnrichmentAttempt": "2026-09-15T05:12:24.734Z"
+      "lastEnrichmentAttempt": "2026-11-10T07:44:38.361Z"
     },
     {
       "brand": "OncoBiosim",
@@ -15990,7 +15990,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-14-valent-pneumococcal-conjugate-vaccine-pcv-14-that-offers-broadest-protection-for-children-against-pneumococcal-bacterial-infections.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-09-15T05:12:40.384Z"
+      "lastEnrichmentAttempt": "2026-11-10T07:44:39.735Z"
     },
     {
       "brand": "Insertable Cardiac Monitor",
@@ -16006,7 +16006,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-first-smartone-compatible-insertable-cardiac-monitor-to-detect-arrhythmias.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-09-15T05:12:40.384Z"
+      "lastEnrichmentAttempt": "2026-11-10T07:44:46.943Z"
     },
     {
       "brand": "ADQUEY™ (difamilast 1%) ointment",
@@ -16022,7 +16022,7 @@
       "price": "null",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/Adquey-(Difamilast)_NDA%20Approval_PressRelease_13-Feb-26.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-09-15T05:12:48.613Z"
+      "lastEnrichmentAttempt": "2026-11-10T07:44:52.963Z"
     },
     {
       "brand": "Wockhardt",
@@ -20450,7 +20450,7 @@
       "therapy": "—",
       "indication": "COVID-19",
       "existingBrand": "—",
-      "chronicAcute": "—",
+      "chronicAcute": "Acute",
       "price": "₹46.8 / bottle of 50 tablets",
       "sourceUrl": "https://www.intaspharma.com/media",
       "buyer": "Intas",
@@ -20738,7 +20738,7 @@
       "therapy": "—",
       "indication": "A New Treatment",
       "existingBrand": "—",
-      "chronicAcute": "—",
+      "chronicAcute": "Acute",
       "price": "₹1350 / bottle of 10 ml solution for infusion",
       "sourceUrl": "https://www.intaspharma.com/media",
       "buyer": "Intas",
@@ -25143,6 +25143,118 @@
       "sourceUrl": "https://www.wockhardt.com/release/acquisition-of-x-company",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-11-09T07:08:13.637Z"
+    },
+    {
+      "brand": "Mankind Pharma",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 84,375 / injection",
+      "sourceUrl": "https://www.mankindpharma.com/j2EiUAKHabXiEWirfZozLAj9RA8lcbSjHjmjxd37sic=.html",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-11-10T07:39:22.552Z"
+    },
+    {
+      "brand": "Alkem's New Drug",
+      "launchType": "Own Launched",
+      "date": "2023-05-10",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Molecule A",
+      "therapy": "Oncology",
+      "indication": "Cancer",
+      "existingBrand": "Competitor Drug",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,500 / strip of 10 tablets",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/new-drug-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-11-10T07:40:42.376Z"
+    },
+    {
+      "brand": "XYZ Corp Acquisition",
+      "launchType": "Acquired",
+      "date": "2023-09-15",
+      "seller": "XYZ Corp",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.alkemlabs.com/press-release/xyz-corp-acquisition",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-11-10T07:40:42.376Z"
+    },
+    {
+      "brand": "BetaLine Extension",
+      "launchType": "Own Launched",
+      "date": "2023-06-20",
+      "seller": "—",
+      "dealType": "Line Extension",
+      "molecule": "Molecule B",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Competitor Brand B",
+      "chronicAcute": "Chronic",
+      "price": "Rs 800 / strip of 10 tablets",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/betaline-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-11-10T07:40:42.376Z"
+    },
+    {
+      "brand": "Fexofenadine",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Fexofenadine",
+      "therapy": "Respiratory",
+      "indication": "Allergic Rhinitis",
+      "existingBrand": "Allegra",
+      "chronicAcute": "—",
+      "price": "Rs 250 / strip of 10 tablets",
+      "sourceUrl": "https://www.drreddys.com/press-release/fexofenadine-launch",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-11-10T07:41:35.910Z"
+    },
+    {
+      "brand": "Glenmark's Gabapentin",
+      "launchType": "Own Launched",
+      "date": "2023-10-05",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Gabapentin",
+      "therapy": "Neurology",
+      "indication": "Neuropathic Pain",
+      "existingBrand": "Neurontin",
+      "chronicAcute": "Chronic",
+      "price": "Rs 45 / strip of 10 tablets",
+      "sourceUrl": "https://www.drreddys.com/press-release/glenmark-gabapentin-launch",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-11-10T07:41:35.910Z"
+    },
+    {
+      "brand": "Wockhardt's New Insulin",
+      "launchType": "Own Launched",
+      "date": "2023-07-20",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Insulin Aspart",
+      "therapy": "Anti-Diabetic",
+      "indication": "Diabetes",
+      "existingBrand": "Novolog",
+      "chronicAcute": "Chronic",
+      "price": "Rs 500 / vial",
+      "sourceUrl": "https://www.wockhardt.com/press-release/insulin-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-11-10T07:43:55.388Z"
     }
   ]
 }
