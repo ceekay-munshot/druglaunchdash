@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-14T07:01:44.025Z",
-  "rowCount": 1637,
+  "generatedAt": "2026-11-15T07:06:59.355Z",
+  "rowCount": 1653,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -5702,7 +5702,7 @@
       "price": "₹34491 / ampoule of 2 ml injection",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-09-18T05:06:28.863Z"
+      "lastEnrichmentAttempt": "2026-11-15T07:06:06.012Z"
     },
     {
       "brand": "Wockhardt's New Anti-Diabetic Drug",
@@ -5734,7 +5734,7 @@
       "price": "₹42.6 / packet of 50 ml scrub",
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-of-pharmacorp",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-18T05:06:34.783Z"
+      "lastEnrichmentAttempt": "2026-11-15T07:06:12.459Z"
     },
     {
       "brand": "Wockhardt's New Line Extension for Pain Relief",
@@ -8406,7 +8406,7 @@
       "price": "—",
       "sourceUrl": "https://www.lupin.com/press-release/luforbec-launch-spain",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-09-18T05:06:21.318Z"
+      "lastEnrichmentAttempt": "2026-11-15T07:05:55.994Z"
     },
     {
       "brand": "Dapasco",
@@ -12358,7 +12358,7 @@
       "price": "—",
       "sourceUrl": "https://www.lupin.com/press-releases/luforbec-launch-spain",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-09-18T05:06:14.291Z"
+      "lastEnrichmentAttempt": "2026-11-15T07:05:47.227Z"
     },
     {
       "brand": "Pharmacorp",
@@ -12374,7 +12374,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-of-pharmacorp#content",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-18T05:06:41.256Z"
+      "lastEnrichmentAttempt": "2026-11-15T07:06:19.938Z"
     },
     {
       "brand": "OLMESARTAN",
@@ -16294,7 +16294,7 @@
       "price": "—",
       "sourceUrl": "https://www.lupin.com/",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-09-17T05:17:42.688Z"
+      "lastEnrichmentAttempt": "2026-11-15T07:05:14.725Z"
     },
     {
       "brand": "Drug A",
@@ -16374,7 +16374,7 @@
       "price": "—",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2020/12/Press-Release-Sun-Pharma-Imatinib-Approval.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-18T05:04:55.229Z"
+      "lastEnrichmentAttempt": "2026-11-15T07:05:23.602Z"
     },
     {
       "brand": "Modafinil Tablets",
@@ -16422,7 +16422,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/press-release/abc-pharma-acquisition",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-18T05:06:12.783Z"
+      "lastEnrichmentAttempt": "2026-11-15T07:05:27.519Z"
     },
     {
       "brand": "Co-marketing Deal for XYZ Drug",
@@ -16438,7 +16438,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/press-release/xyz-drug-co-marketing",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-18T05:06:12.783Z"
+      "lastEnrichmentAttempt": "2026-11-15T07:05:39.993Z"
     },
     {
       "brand": "Pharmacorp",
@@ -16454,7 +16454,7 @@
       "price": "—",
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-of-pharmacorp#content",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-18T05:06:41.256Z"
+      "lastEnrichmentAttempt": "2026-11-15T07:06:23.594Z"
     },
     {
       "brand": "Benicar",
@@ -26183,6 +26183,262 @@
       "sourceUrl": "http://www.aurobindo.com/",
       "buyer": "Aurobindo",
       "lastEnrichmentAttempt": "2026-11-14T06:59:24.931Z"
+    },
+    {
+      "brand": "Mankind's New Drug",
+      "launchType": "Own Launched",
+      "date": "2023-10-01",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Molecule XYZ",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Competitor Brand A",
+      "chronicAcute": "Chronic",
+      "price": "Rs 500 / 10 tablets",
+      "sourceUrl": "https://www.mankindpharma.com/sample-press-release-1.html",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-11-15T07:01:33.267Z"
+    },
+    {
+      "brand": "Mankind Pharma Acquisition",
+      "launchType": "Acquired",
+      "date": "2023-09-15",
+      "seller": "Beta Pharma Ltd",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Competitor Brand B",
+      "chronicAcute": "—",
+      "price": "null",
+      "sourceUrl": "https://www.mankindpharma.com/sample-press-release-2.html",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-11-15T07:01:33.267Z"
+    },
+    {
+      "brand": "Mankind co-marketing deal",
+      "launchType": "In-licensed",
+      "date": "2023-08-22",
+      "seller": "Gamma Corp",
+      "dealType": "Co-marketing",
+      "molecule": "Molecule ABC",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "Competitor Brand C",
+      "chronicAcute": "—",
+      "price": "Rs 1500 / injection",
+      "sourceUrl": "https://www.mankindpharma.com/sample-press-release-3.html",
+      "buyer": "Mankind Pharma",
+      "lastEnrichmentAttempt": "2026-11-15T07:01:33.267Z"
+    },
+    {
+      "brand": "Alkem's New Anti-Diabetic Tablet",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Metformin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 150 / strip of 10 tablets",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/new-diabetic-tablet-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-11-15T07:02:36.796Z"
+    },
+    {
+      "brand": "Acquisition of Generic Medicines Portfolio",
+      "launchType": "Acquired",
+      "date": "2023-08-10",
+      "seller": "XYZ Pharma",
+      "dealType": "Brand Portfolio Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Glucophage",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.alkemlabs.com/press-release/acquisition-generic-portfolio",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-11-15T07:02:36.796Z"
+    },
+    {
+      "brand": "Similac",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "Consumer Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Nestlé Nan",
+      "chronicAcute": "—",
+      "price": "Rs 2,000 / pack",
+      "sourceUrl": "https://www.drreddys.com/similac-launch",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-11-15T07:03:33.177Z"
+    },
+    {
+      "brand": "Wockhardt's New Antibody Drug",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Ciprofloxacin",
+      "therapy": "Anti-Infectives",
+      "indication": "Bacterial Infections",
+      "existingBrand": "—",
+      "chronicAcute": "Acute",
+      "price": "Rs 1,500 / injection",
+      "sourceUrl": "https://www.wockhardt.com/news/new-antibody-drug-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-11-15T07:05:13.215Z"
+    },
+    {
+      "brand": "Co-marketing Deal with ABC Biotech",
+      "launchType": "In-licensed",
+      "date": "2023-07-10",
+      "seller": "ABC Biotech",
+      "dealType": "Co-marketing",
+      "molecule": "Dexamethasone",
+      "therapy": "CNS",
+      "indication": "Inflammatory Conditions",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹7.6 / strip of 10 chewable tablets",
+      "sourceUrl": "https://www.wockhardt.com/news/co-marketing-deal-with-abc-biotech",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-11-15T07:05:13.215Z"
+    },
+    {
+      "brand": "ABC Pharma",
+      "launchType": "Acquired",
+      "date": "2023-10-01",
+      "seller": "XYZ Limited",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/press-release/abc-pharma-acquisition",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-11-15T07:05:27.519Z"
+    },
+    {
+      "brand": "Acquisition of XYZ Pharma",
+      "launchType": "Acquired",
+      "date": "2023-09-01",
+      "seller": "XYZ Pharma",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.lupin.com/pressrelease/acquisition-xyz",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-11-15T07:05:47.227Z"
+    },
+    {
+      "brand": "Lupin’s NCE",
+      "launchType": "Own Launched",
+      "date": "2023-05-10",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 450 / pack",
+      "sourceUrl": "https://www.lupin.com/news/lupin-launches-new-nce-breast-cancer",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-11-15T07:05:55.994Z"
+    },
+    {
+      "brand": "Lupin’s Acquisition of XYZ Pharma",
+      "launchType": "Acquired",
+      "date": "2023-06-15",
+      "seller": "XYZ Pharma",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.lupin.com/news/lupin-acquires-xyz-pharma",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-11-15T07:05:55.994Z"
+    },
+    {
+      "brand": "Lupin’s Biosimilar",
+      "launchType": "Own Launched",
+      "date": "2023-07-20",
+      "seller": "—",
+      "dealType": "Biosimilar Launch",
+      "molecule": "—",
+      "therapy": "Immunology",
+      "indication": "Rheumatoid Arthritis",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 350 / vial",
+      "sourceUrl": "https://www.lupin.com/news/lupin-launches-biosimilar-for-rheumatoid-arthritis",
+      "buyer": "Lupin",
+      "lastEnrichmentAttempt": "2026-11-15T07:05:55.994Z"
+    },
+    {
+      "brand": "Pharmacorp",
+      "launchType": "Acquired",
+      "date": "2022-06-15",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-of-pharmacorp#content",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-11-15T07:06:12.459Z"
+    },
+    {
+      "brand": "Pharmacorp",
+      "launchType": "Acquired",
+      "date": "2023-01-15",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-of-pharmacorp#content",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-11-15T07:06:19.938Z"
+    },
+    {
+      "brand": "PharmaCorp",
+      "launchType": "Acquired",
+      "date": "2023-05-15",
+      "seller": "—",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-of-pharmacorp#content",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-11-15T07:06:23.594Z"
     }
   ]
 }
