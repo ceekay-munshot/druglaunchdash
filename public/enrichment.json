@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-15T08:15:00.821Z",
-  "rowCount": 269,
+  "generatedAt": "2026-11-16T08:24:22.002Z",
+  "rowCount": 270,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -4842,6 +4842,25 @@
       "_title": "backfill:Adapalene Gel USP 0.1%",
       "_provider": "gemini",
       "_harvestedAt": "2026-11-12T08:45:30.735Z"
+    },
+    {
+      "brand": "AstraZeneca partnership",
+      "launchType": "In-licensed",
+      "date": "2025-11-17",
+      "seller": "AstraZeneca Pharma India Limited",
+      "dealType": "Co-marketing/Distribution agreement",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "Sodium Zirconium Cyclosilicate (SZC)",
+      "therapy": "Cardiovascular, Renal & Metabolism",
+      "indication": "Hyperkalaemia, especially in patients with chronic kidney disease (CKD) and heart failure (HF)",
+      "existingBrand": "Lokelma®",
+      "chronicAcute": "Chronic",
+      "buyer": "Sun Pharma",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2025/11/Press-Release-AstraZeneca-and-Sun-Pharma-partner-to-help-patients-living-with-Hyperkalemia-in-India.pdf",
+      "_title": "backfill:AstraZeneca partnership",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-11-16T08:24:10.220Z"
     }
   ],
   "processedUrls": [
@@ -5430,6 +5449,10 @@
     "https://www.alkemlabs.com/press-release/acquisition-generic-portfolio",
     "https://www.drreddys.com/similac-launch",
     "https://www.lupin.com/pressrelease/acquisition-xyz",
-    "https://www.lupin.com/news/lupin-acquires-xyz-pharma"
+    "https://www.lupin.com/news/lupin-acquires-xyz-pharma",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=63b9623e-b411-4355-8f2a-cf9971181284.pdf",
+    "https://sunpharma.com/wp-content/uploads/2025/11/Press-Release-AstraZeneca-and-Sun-Pharma-partner-to-help-patients-living-with-Hyperkalemia-in-India.pdf",
+    "https://www.alkemlabs.com/press-release/company-acquisition-c",
+    "https://www.wockhardt.com/press-release/pain-relief-gel-line-extension"
   ]
 }
