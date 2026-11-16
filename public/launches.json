@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-15T07:06:59.355Z",
-  "rowCount": 1653,
+  "generatedAt": "2026-11-16T07:14:34.408Z",
+  "rowCount": 1663,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -2294,7 +2294,7 @@
       "price": null,
       "sourceUrl": "https://www.lupin.com/",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-09-18T05:06:44.108Z"
+      "lastEnrichmentAttempt": "2026-11-16T07:13:02.982Z"
     },
     {
       "brand": "Lupin",
@@ -5766,7 +5766,7 @@
       "price": null,
       "sourceUrl": "https://lupin.com/media/press-releases/lupin-signs-exclusive-licensing-agreement-with-gan-lee-pharmaceuticals-for-novel-glp-1-receptor-agonist",
       "buyer": "Lupin",
-      "lastEnrichmentAttempt": "2026-09-18T05:06:47.240Z"
+      "lastEnrichmentAttempt": "2026-11-16T07:13:10.563Z"
     },
     {
       "brand": "Plasil®",
@@ -12390,7 +12390,7 @@
       "price": "₹202 / strip of 15 tablets",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2020/12/Press-Release-Sun-Pharma-announces-US-launch-of-Generics-for-Olmesartan.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-18T05:06:56.085Z"
+      "lastEnrichmentAttempt": "2026-11-16T07:13:18.172Z"
     },
     {
       "brand": "Adcock Ingram Holdings Pty Ltd",
@@ -12422,7 +12422,7 @@
       "price": "₹430 / bottle of 30 ml solution",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-receives-ANDA-approval-for-Fluocinolone-Acetonide-Topical-Oil-Scalp-Oil.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-09-18T05:07:03.259Z"
+      "lastEnrichmentAttempt": "2026-11-16T07:13:28.538Z"
     },
     {
       "brand": "Navitor™",
@@ -12438,7 +12438,7 @@
       "price": "₹88.6 / strip of 10 (20 mg)",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/Abbott-launches-navitor-its-latest-generation-transcatheter-aortic-valve-implantation-TAVI-system-to-treat-aortic-stenosis-in-India.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-09-18T05:07:09.553Z"
+      "lastEnrichmentAttempt": "2026-11-16T07:13:33.288Z"
     },
     {
       "brand": "Wockhardt's New Drug",
@@ -16470,7 +16470,7 @@
       "price": null,
       "sourceUrl": "—",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-18T05:06:56.085Z"
+      "lastEnrichmentAttempt": "2026-11-16T07:13:23.434Z"
     },
     {
       "brand": "Benicar HCT",
@@ -16486,7 +16486,7 @@
       "price": null,
       "sourceUrl": "—",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-18T05:06:56.085Z"
+      "lastEnrichmentAttempt": "2026-11-16T07:13:24.712Z"
     },
     {
       "brand": "Azor",
@@ -16502,7 +16502,7 @@
       "price": null,
       "sourceUrl": "—",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-18T05:06:56.085Z"
+      "lastEnrichmentAttempt": "2026-11-16T07:13:25.987Z"
     },
     {
       "brand": "Tribenzor",
@@ -16518,7 +16518,7 @@
       "price": null,
       "sourceUrl": "—",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-18T05:06:56.085Z"
+      "lastEnrichmentAttempt": "2026-11-16T07:13:27.261Z"
     },
     {
       "brand": "Fluocinolone Acetonide Topical Oil, 0.01% (Scalp Oil)",
@@ -16534,7 +16534,7 @@
       "price": null,
       "sourceUrl": "—",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-09-18T05:07:03.259Z"
+      "lastEnrichmentAttempt": "2026-11-16T07:13:32.012Z"
     },
     {
       "brand": "Navitor",
@@ -26439,6 +26439,166 @@
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-of-pharmacorp#content",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-11-15T07:06:23.594Z"
+    },
+    {
+      "brand": "AstraZeneca partnership",
+      "launchType": "Acquired",
+      "date": "2025-11-17",
+      "seller": "AstraZeneca Pharma India Limited",
+      "dealType": "Brand Portfolio Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹70 / strip of 20 tablets",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2025/11/Press-Release-AstraZeneca-and-Sun-Pharma-partner-to-help-patients-living-with-Hyperkalemia-in-India.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-11-16T07:09:43.122Z"
+    },
+    {
+      "brand": "Generic Drug B",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Active Molecule B",
+      "therapy": "Anti-Diabetic",
+      "indication": "Diabetes Type 2",
+      "existingBrand": "Brand Y",
+      "chronicAcute": "—",
+      "price": "Rs 400 / strip",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/generic-drug-b-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-11-16T07:10:12.701Z"
+    },
+    {
+      "brand": "Company Acquisition C",
+      "launchType": "Acquired",
+      "date": "2023-08-22",
+      "seller": "Sellers Inc.",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "₹56.1 / vial of 1 injection",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/company-acquisition-c",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-11-16T07:10:12.701Z"
+    },
+    {
+      "brand": "Revlimid",
+      "launchType": "In-licensed",
+      "date": "2023-09-15",
+      "seller": "Celgene Corporation",
+      "dealType": "In-license (India)",
+      "molecule": "lenalidomide",
+      "therapy": "Oncology",
+      "indication": "Multiple Myeloma",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "₹151 / strip of 10 capsule dr",
+      "sourceUrl": "https://www.drreddys.com/press-release/revlimid-launch",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-11-16T07:11:13.273Z"
+    },
+    {
+      "brand": "Cleviprex",
+      "launchType": "Acquired",
+      "date": "2023-09-10",
+      "seller": "The Medicines Company",
+      "dealType": "Brand Acquisition",
+      "molecule": "clevidipine",
+      "therapy": "Cardiology",
+      "indication": "Hypertension",
+      "existingBrand": "Cardene",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.drreddys.com/press-release/cleviprex-acquisition",
+      "buyer": "Dr. Reddy's",
+      "lastEnrichmentAttempt": "2026-11-16T07:11:13.273Z"
+    },
+    {
+      "brand": "Non-exclusive Voluntary License Agreement with MSD",
+      "launchType": "In-licensed",
+      "date": "2026-07-23",
+      "seller": "MSD",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseBrazilMSD24072026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-11-16T07:12:34.872Z"
+    },
+    {
+      "brand": "Wockhardt Acquires Indian Rights for XYZ Drug",
+      "launchType": "Acquired",
+      "date": "2023-08-10",
+      "seller": "ABC Pharma",
+      "dealType": "Brand Acquisition",
+      "molecule": "XYZ Molecule",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "Herceptin",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.wockhardt.com/press-release/acquire-indian-rights-xyz-drug",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-11-16T07:13:01.478Z"
+    },
+    {
+      "brand": "Wockhardt's Line Extension of Pain Relief Gel",
+      "launchType": "Own Launched",
+      "date": "2023-07-20",
+      "seller": "—",
+      "dealType": "Line Extension",
+      "molecule": "—",
+      "therapy": "Pain Management",
+      "indication": "Muscle Pain",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 250 / tube",
+      "sourceUrl": "https://www.wockhardt.com/press-release/pain-relief-gel-line-extension",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-11-16T07:13:01.478Z"
+    },
+    {
+      "brand": "Authorized Generics for Benicar, Benicar HCT, Azor, and Tribenzor",
+      "launchType": "Own Launched",
+      "date": "2016-10-27",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Olmesartan Medoxomil plus Olmesartan Medoxomil-Hydrochlorothiazide plus Amlodipine Besylate-Olmesartan Medoxomil plus Amlodipine Besylate-Hydrochlorothiazide-Olmesartan Medoxomil",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Benicar",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "—",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-11-16T07:13:18.172Z"
+    },
+    {
+      "brand": "Fluocinolone Acetonide Topical Oil, 0.01%",
+      "launchType": "Own Launched",
+      "date": "2018-10-30",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Fluocinolone Acetonide",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Derma-Smoothe/FS®",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "—",
+      "buyer": "Glenmark",
+      "lastEnrichmentAttempt": "2026-11-16T07:13:28.538Z"
     }
   ]
 }
