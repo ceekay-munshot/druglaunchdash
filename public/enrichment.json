@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-19T09:15:25.759Z",
-  "rowCount": 270,
+  "generatedAt": "2026-11-20T08:58:05.827Z",
+  "rowCount": 271,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -4861,6 +4861,25 @@
       "_title": "backfill:AstraZeneca partnership",
       "_provider": "gemini",
       "_harvestedAt": "2026-11-16T08:24:10.220Z"
+    },
+    {
+      "brand": "New Ensure With HMB",
+      "launchType": "Own Launched",
+      "date": "2022-09-12",
+      "seller": "—",
+      "dealType": "New Formulation Launch",
+      "price": "—",
+      "dealValue": null,
+      "molecule": "β-hydroxy-β-methyl butyrate (HMB)",
+      "therapy": "Nutritional Supplement",
+      "indication": "Age-related muscle loss and weakness; muscle and bone strength support",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "buyer": "Abbott India",
+      "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-new-ensure-with-HMB-to-help-protect-and-strengthen-indian-adults-muscles.html",
+      "_title": "backfill:New Ensure With HMB",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-11-20T08:57:45.318Z"
     }
   ],
   "processedUrls": [
@@ -5462,6 +5481,10 @@
     "https://www.lupin.com/yuvezzi-launch",
     "https://www.asco.org/abstracts-presentations/ABSTRACT486328",
     "https://www.xyzpharma.com/press-release/abc-corp-acquisition",
-    "https://www.wockhardt.com/press-release-comarketing"
+    "https://www.wockhardt.com/press-release-comarketing",
+    "https://www.abbott.in/media-center/press-releases/abbott-launches-new-ensure-with-HMB-to-help-protect-and-strengthen-indian-adults-muscles.html",
+    "https://www.alkemlabs.com/press-release/pharmaco-acquisition",
+    "https://www.wockhardt.com/press-release/vibra-t-launch",
+    "https://www.sunpharma.com/press-release/brand-acquisition"
   ]
 }
