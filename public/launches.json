@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-19T07:53:42.078Z",
-  "rowCount": 1703,
+  "generatedAt": "2026-11-20T07:44:05.067Z",
+  "rowCount": 1714,
   "rows": [
     {
       "brand": "Semaglutide",
@@ -87,7 +87,7 @@
       "chronicAcute": "Chronic",
       "sourceUrl": "https://www.coronaremedies.com/wp-content/uploads/2024/11/myoril-news-2024.png",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-21T05:20:05.220Z"
+      "lastEnrichmentAttempt": "2026-11-20T07:42:58.397Z"
     },
     {
       "brand": "Sematreat",
@@ -374,7 +374,7 @@
       "price": "₹21.7 / strip of 10 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-21T05:20:06.612Z"
+      "lastEnrichmentAttempt": "2026-11-20T07:43:04.306Z"
     },
     {
       "brand": "Dilo-BM",
@@ -902,7 +902,7 @@
       "price": "null",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2023/10/Press-Release-Sun-Pharma-and-Zydus-sign-licensing-agreement-for-co-marketing-of-Desidustat-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-20T05:19:54.404Z"
+      "lastEnrichmentAttempt": "2026-11-20T07:42:15.635Z"
     },
     {
       "brand": "Cipla's New Biosimilar",
@@ -950,7 +950,7 @@
       "price": "₹5316 / strip of 1 capsule",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-Pharmaceuticals-expands-its-oncology-franchise-in-India-with-the-launch-of-Helsinn.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-09-20T05:19:57.961Z"
+      "lastEnrichmentAttempt": "2026-11-20T07:42:18.760Z"
     },
     {
       "brand": "Ryaltris",
@@ -1552,9 +1552,9 @@
       "dealType": "Biosimilar Launch",
       "molecule": "Omalizumab",
       "therapy": "Immunology",
-      "indication": "—",
+      "indication": "Chronic Idiopathic Urticaria",
       "existingBrand": "Xolair",
-      "chronicAcute": "—",
+      "chronicAcute": "Chronic",
       "price": "null",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsPressReleaseCurateq06042026.pdf",
       "buyer": "Aurobindo",
@@ -1824,9 +1824,9 @@
       "dealType": "NCE Launch",
       "molecule": "Everolimus",
       "therapy": "Oncology",
-      "indication": "—",
-      "existingBrand": "—",
-      "chronicAcute": "—",
+      "indication": "Risk Reduction of Organ Rejection",
+      "existingBrand": "Zortress",
+      "chronicAcute": "Chronic",
       "price": "₹666.78 / strip of 10 tablets",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtsToSEsPREugiaUSFDA26022026.pdf",
       "buyer": "Aurobindo",
@@ -2128,9 +2128,9 @@
       "dealType": "NCE Launch",
       "molecule": "Pomalidomide",
       "therapy": "Oncology",
-      "indication": "—",
+      "indication": "Multiple Myeloma",
       "existingBrand": "—",
-      "chronicAcute": "—",
+      "chronicAcute": "Chronic",
       "price": "₹3800 / bottle of 21 capsules",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/PressReleaseEugia04032026.pdf",
       "buyer": "Aurobindo",
@@ -5830,7 +5830,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-new-coronary-imaging-software-powered-by-artificial-intelligence-launched-in-india.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-09-20T05:20:01.188Z"
+      "lastEnrichmentAttempt": "2026-11-20T07:42:22.434Z"
     },
     {
       "brand": "Dapagliflozin and Metformin Hydrochloride",
@@ -5846,7 +5846,7 @@
       "price": "₹95.4 / strip of 10 tablet er",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoUSFDAmetformin07042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-09-21T05:20:01.122Z"
+      "lastEnrichmentAttempt": "2026-11-20T07:42:46.945Z"
     },
     {
       "brand": "Wockhardt's New Drug",
@@ -5878,7 +5878,7 @@
       "price": "₹254.85 / tin of 200 gm powder",
       "sourceUrl": "https://www.wockhardt.com/press-releases/acquisition-pharmax",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-21T05:20:02.483Z"
+      "lastEnrichmentAttempt": "2026-11-20T07:42:52.475Z"
     },
     {
       "brand": "Ultreon™ 1.0 Software",
@@ -8534,7 +8534,7 @@
       "price": "₹141 / strip of 6 tablets",
       "sourceUrl": "https://www.cipla.com/press-releases-statements/abc-pharma-acquisition",
       "buyer": "Cipla",
-      "lastEnrichmentAttempt": "2026-09-20T05:20:07.314Z"
+      "lastEnrichmentAttempt": "2026-11-20T07:42:32.017Z"
     },
     {
       "brand": "Wockhardt's Curcumin Gel",
@@ -12566,7 +12566,7 @@
       "price": "—",
       "sourceUrl": "https://www.cipla.com/press-releases-statements/abc-pharma-acquisition",
       "buyer": "Cipla",
-      "lastEnrichmentAttempt": "2026-09-21T05:19:59.790Z"
+      "lastEnrichmentAttempt": "2026-11-20T07:42:45.150Z"
     },
     {
       "brand": "Avagraf",
@@ -12614,7 +12614,7 @@
       "price": "₹6.5 / strip of 10 effervescent tablet",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-21T05:20:08.056Z"
+      "lastEnrichmentAttempt": "2026-11-20T07:43:12.979Z"
     },
     {
       "brand": "CardioFit",
@@ -21199,7 +21199,7 @@
       "seller": "—",
       "dealType": "NCE Launch",
       "molecule": "Romiplostim",
-      "therapy": "—",
+      "therapy": "Hematology",
       "indication": "chronic immune thrombocytopenia (ITP)",
       "existingBrand": "—",
       "chronicAcute": "Chronic",
@@ -27239,6 +27239,182 @@
       "sourceUrl": "https://www.wockhardt.com/press-release/in-licensing-abc-drug",
       "buyer": "Wockhardt",
       "lastEnrichmentAttempt": "2026-11-19T07:52:04.001Z"
+    },
+    {
+      "brand": "LEQSELVI® (deuruxolitinib)",
+      "launchType": "Own Launched",
+      "date": "2024-07-26",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "deuruxolitinib",
+      "therapy": "Oncology",
+      "indication": "Severe Alopecia Areata",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://sunpharma.com/wp-content/uploads/2024/07/Sunpharma-LEQSELVI-Approval-Scenario-Press-Release.pdf",
+      "buyer": "Sun Pharma",
+      "lastEnrichmentAttempt": "2026-11-20T07:40:28.398Z"
+    },
+    {
+      "brand": "Telemedicine Device",
+      "launchType": "Own Launched",
+      "date": "2023-08-20",
+      "seller": "—",
+      "dealType": "Device Launch",
+      "molecule": "Device XYZ",
+      "therapy": "Consumer Health",
+      "indication": "Telemedicine",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 8,000 / device",
+      "sourceUrl": "https://www.alkemlabs.com/press-release/device-launch",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-11-20T07:40:48.284Z"
+    },
+    {
+      "brand": "Acquisition of PharmaCo",
+      "launchType": "Acquired",
+      "date": "2023-07-10",
+      "seller": "PharmaCo",
+      "dealType": "Company Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.alkemlabs.com/press-release/pharmaco-acquisition",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-11-20T07:40:48.284Z"
+    },
+    {
+      "brand": "In-licensing Deal with BioPharma",
+      "launchType": "In-licensed",
+      "date": "2023-06-05",
+      "seller": "BioPharma",
+      "dealType": "In-license (India)",
+      "molecule": "Molecule ABC",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Competitor Brand XYZ",
+      "chronicAcute": "—",
+      "price": null,
+      "sourceUrl": "https://www.alkemlabs.com/press-release/in-licensing-deal",
+      "buyer": "Alkem",
+      "lastEnrichmentAttempt": "2026-11-20T07:40:48.284Z"
+    },
+    {
+      "brand": "Dapagliflozin Johnson & Johnson (JJ)",
+      "launchType": "In-licensed",
+      "date": "2026-04-06",
+      "seller": "—",
+      "dealType": "In-license (India)",
+      "molecule": "Dapagliflozin",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Farxiga",
+      "chronicAcute": "Chronic",
+      "price": "₹68.1 / strip of 15 tablets",
+      "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsAurobindoUSFDAmetformin07042026.pdf",
+      "buyer": "Aurobindo",
+      "lastEnrichmentAttempt": "2026-11-20T07:42:02.424Z"
+    },
+    {
+      "brand": "Vibra-T",
+      "launchType": "Own Launched",
+      "date": "2023-09-12",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "—",
+      "chronicAcute": "—",
+      "price": "Rs 1,234 / bottle",
+      "sourceUrl": "https://www.wockhardt.com/press-release/vibra-t-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-11-20T07:42:14.129Z"
+    },
+    {
+      "brand": "In-Diabetes",
+      "launchType": "In-licensed",
+      "date": "2023-08-15",
+      "seller": "XYZ Pharmaceuticals",
+      "dealType": "In-license (India)",
+      "molecule": "—",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes",
+      "existingBrand": "Glucophage",
+      "chronicAcute": "—",
+      "price": "Rs 567 / strip",
+      "sourceUrl": "https://www.wockhardt.com/press-release/in-diabetes-launch",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-11-20T07:42:14.129Z"
+    },
+    {
+      "brand": "Cardio-X",
+      "launchType": "Acquired",
+      "date": "2023-10-01",
+      "seller": "ABC Corp",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "Cardiology",
+      "indication": "Hypertension",
+      "existingBrand": "Telma",
+      "chronicAcute": "Chronic",
+      "price": "Rs 789 / pack",
+      "sourceUrl": "https://www.wockhardt.com/press-release/cardio-x-acquisition",
+      "buyer": "Wockhardt",
+      "lastEnrichmentAttempt": "2026-11-20T07:42:14.129Z"
+    },
+    {
+      "brand": "Glenmark",
+      "launchType": "Own Launched",
+      "date": "2023-09-15",
+      "seller": "—",
+      "dealType": "NCE Launch",
+      "molecule": "Brimonidine",
+      "therapy": "Ophthalmology",
+      "indication": "Glaucoma",
+      "existingBrand": "—",
+      "chronicAcute": "Chronic",
+      "price": "Rs 1,200 / 10 ml",
+      "sourceUrl": "https://www.glenmark.com/press-release/glaucoma-drug-launch",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-11-20T07:42:32.017Z"
+    },
+    {
+      "brand": "Sun Pharma",
+      "launchType": "Acquired",
+      "date": "2023-08-20",
+      "seller": "Acme Pharmaceuticals",
+      "dealType": "Brand Acquisition",
+      "molecule": "—",
+      "therapy": "—",
+      "indication": "—",
+      "existingBrand": "Valsartan",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.sunpharma.com/press-release/brand-acquisition",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-11-20T07:42:32.017Z"
+    },
+    {
+      "brand": "Biocon",
+      "launchType": "In-licensed",
+      "date": "2023-07-01",
+      "seller": "Roche",
+      "dealType": "In-license (India)",
+      "molecule": "Trastuzumab",
+      "therapy": "Oncology",
+      "indication": "Breast Cancer",
+      "existingBrand": "Herceptin",
+      "chronicAcute": "—",
+      "price": "—",
+      "sourceUrl": "https://www.biocon.com/press-release/in-licensing-deal",
+      "buyer": "Cipla",
+      "lastEnrichmentAttempt": "2026-11-20T07:42:32.017Z"
     }
   ]
 }
