@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-19T09:53:22.738Z",
+  "generatedAt": "2026-11-21T09:09:08.880Z",
   "moleculeCount": 35,
   "molecules": {
     "Empagliflozin": {
-      "lastCheckedAt": "2026-11-19T09:49:00.002Z",
+      "lastCheckedAt": "2026-11-21T09:08:15.044Z",
       "events": [
         {
           "headline": "Mankind Pharma launches generic empagliflozin in India",
@@ -333,10 +333,11 @@
           "kind": "expiryUpdate",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 401 for \"Empagliflozin\": {\"success\":false,\"error\":\"Unauthorized: Invalid token\"}"
     },
     "Dapagliflozin": {
-      "lastCheckedAt": "2026-11-19T09:49:08.299Z",
+      "lastCheckedAt": "2026-11-21T09:08:16.713Z",
       "events": [
         {
           "headline": "The DAPA Saga in the Indian Courts",
@@ -650,10 +651,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 401 for \"Dapagliflozin\": {\"success\":false,\"error\":\"Unauthorized: Invalid token\"}"
     },
     "Linagliptin": {
-      "lastCheckedAt": "2026-11-19T09:49:15.900Z",
+      "lastCheckedAt": "2026-11-21T09:08:18.249Z",
       "events": [
         {
           "headline": "Understanding the Legal Battle Over LINAGLIPTIN: A Case ...",
@@ -1015,10 +1017,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 401 for \"Linagliptin\": {\"success\":false,\"error\":\"Unauthorized: Invalid token\"}"
     },
     "Saxagliptin": {
-      "lastCheckedAt": "2026-11-19T09:49:25.842Z",
+      "lastCheckedAt": "2026-11-21T09:08:19.785Z",
       "events": [
         {
           "headline": "Indian Patent Office rejects compulsory license application for ...",
@@ -1260,10 +1263,11 @@
           "kind": "compulsoryLicence",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 401 for \"Saxagliptin\": {\"success\":false,\"error\":\"Unauthorized: Invalid token\"}"
     },
     "Liraglutide": {
-      "lastCheckedAt": "2026-11-19T09:49:31.112Z",
+      "lastCheckedAt": "2026-11-21T09:08:21.318Z",
       "events": [
         {
           "headline": "CDSCO approval granted for Liraglutide drug",
@@ -1561,10 +1565,11 @@
           "kind": "biosimilarLaunch",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 401 for \"Liraglutide\": {\"success\":false,\"error\":\"Unauthorized: Invalid token\"}"
     },
     "Semaglutide (oral)": {
-      "lastCheckedAt": "2026-11-19T09:49:39.954Z",
+      "lastCheckedAt": "2026-11-21T09:08:22.852Z",
       "events": [
         {
           "headline": "Semaglutide Injection vs Tablet India 2026 | Efficacy & Price",
@@ -1574,10 +1579,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 401 for \"Semaglutide (oral)\": {\"success\":false,\"error\":\"Unauthorized: Invalid token\"}"
     },
     "Apixaban": {
-      "lastCheckedAt": "2026-11-19T09:49:45.664Z",
+      "lastCheckedAt": "2026-11-21T09:08:24.387Z",
       "events": [
         {
           "headline": "India denies Bristol Myers' request for injunction regarding apixaban patent",
@@ -1883,10 +1889,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 401 for \"Apixaban\": {\"success\":false,\"error\":\"Unauthorized: Invalid token\"}"
     },
     "Ticagrelor": {
-      "lastCheckedAt": "2026-11-19T09:49:52.218Z",
+      "lastCheckedAt": "2026-11-21T09:08:25.921Z",
       "events": [
         {
           "headline": "[PDF] press-release-ticagrelor-tablets.pdf - Alembic Pharmaceutical",
@@ -2160,10 +2167,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 401 for \"Ticagrelor\": {\"success\":false,\"error\":\"Unauthorized: Invalid token\"}"
     },
     "Sacubitril/Valsartan": {
-      "lastCheckedAt": "2026-11-19T09:50:02.375Z",
+      "lastCheckedAt": "2026-11-21T09:08:27.456Z",
       "events": [
         {
           "headline": "Novartis v. Torrent: Consent Judgment in Heart Drug Patent Case",
@@ -2365,10 +2373,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 401 for \"Sacubitril/Valsartan\": {\"success\":false,\"error\":\"Unauthorized: Invalid token\"}"
     },
     "Edoxaban": {
-      "lastCheckedAt": "2026-11-19T09:50:10.561Z",
+      "lastCheckedAt": "2026-11-21T09:08:28.990Z",
       "events": [
         {
           "headline": "[PDF] List of New Drugs approved in the year 2025 till date - CDSCO",
@@ -2546,10 +2555,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 401 for \"Edoxaban\": {\"success\":false,\"error\":\"Unauthorized: Invalid token\"}"
     },
     "Ibrutinib": {
-      "lastCheckedAt": "2026-11-19T09:50:18.053Z",
+      "lastCheckedAt": "2026-11-21T09:08:30.526Z",
       "events": [
         {
           "headline": "The Ibrutinib saga: Delhi High Court restrains generics from ... - Lexology",
@@ -2775,10 +2785,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 401 for \"Ibrutinib\": {\"success\":false,\"error\":\"Unauthorized: Invalid token\"}"
     },
     "Palbociclib": {
-      "lastCheckedAt": "2026-11-19T09:50:25.300Z",
+      "lastCheckedAt": "2026-11-21T09:08:32.059Z",
       "events": [
         {
           "headline": "Buy Generic Ibrance (palbociclib) – FDA cGMP Manufacturer",
@@ -3300,10 +3311,11 @@
           "kind": "genericLaunch",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 401 for \"Palbociclib\": {\"success\":false,\"error\":\"Unauthorized: Invalid token\"}"
     },
     "Pomalidomide": {
-      "lastCheckedAt": "2026-11-19T09:50:33.290Z",
+      "lastCheckedAt": "2026-11-21T09:08:33.593Z",
       "events": [
         {
           "headline": "[PDF] Press Release - Eugia Pharma announces launch of Pomalidomide ...",
@@ -3753,10 +3765,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 401 for \"Pomalidomide\": {\"success\":false,\"error\":\"Unauthorized: Invalid token\"}"
     },
     "Olaparib": {
-      "lastCheckedAt": "2026-11-19T09:50:37.255Z",
+      "lastCheckedAt": "2026-11-21T09:08:35.129Z",
       "events": [
         {
           "headline": "[PDF] State-UTs Drugs Controller Olaparib Withdrawal.pdf - CDSCO",
@@ -4214,10 +4227,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 401 for \"Olaparib\": {\"success\":false,\"error\":\"Unauthorized: Invalid token\"}"
     },
     "Enzalutamide": {
-      "lastCheckedAt": "2026-11-19T09:50:46.895Z",
+      "lastCheckedAt": "2026-11-21T09:08:36.663Z",
       "events": [
         {
           "headline": "Xtandi versus Indian patent laws: A persepective - PMC - NIH",
@@ -4507,10 +4521,11 @@
           "kind": "genericLaunch",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 401 for \"Enzalutamide\": {\"success\":false,\"error\":\"Unauthorized: Invalid token\"}"
     },
     "Cabozantinib": {
-      "lastCheckedAt": "2026-11-19T09:50:56.122Z",
+      "lastCheckedAt": "2026-11-21T09:08:38.195Z",
       "events": [
         {
           "headline": "Beta Drugs Ltd. bags yet another DCGI approval for its new drug; KABONIB ...",
@@ -4944,10 +4959,11 @@
           "kind": "other",
           "date": "2026-01-66"
         }
-      ]
+      ],
+      "lastError": "Firecrawl 401 for \"Cabozantinib\": {\"success\":false,\"error\":\"Unauthorized: Invalid token\"}"
     },
     "Vilanterol/Fluticasone": {
-      "lastCheckedAt": "2026-11-19T09:51:03.711Z",
+      "lastCheckedAt": "2026-11-21T09:08:39.729Z",
       "events": [
         {
           "headline": "Vilfuro-G (vilanterol/fluticasone furoate/glycopyrronium ...",
@@ -4957,10 +4973,11 @@
           "kind": "genericLaunch",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 401 for \"Vilanterol/Fluticasone\": {\"success\":false,\"error\":\"Unauthorized: Invalid token\"}"
     },
     "Umeclidinium/Vilanterol": {
-      "lastCheckedAt": "2026-11-19T09:51:12.245Z",
+      "lastCheckedAt": "2026-11-21T09:08:41.264Z",
       "events": [
         {
           "headline": "[PDF] Trelegy Ellipta - GSK India",
@@ -5082,10 +5099,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 401 for \"Umeclidinium/Vilanterol\": {\"success\":false,\"error\":\"Unauthorized: Invalid token\"}"
     },
     "Vortioxetine": {
-      "lastCheckedAt": "2026-11-19T09:51:21.771Z",
+      "lastCheckedAt": "2026-11-21T09:08:42.799Z",
       "events": [
         {
           "headline": "Sun Pharma to introduce its version of Vortioxetine in India",
@@ -5511,10 +5529,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 401 for \"Vortioxetine\": {\"success\":false,\"error\":\"Unauthorized: Invalid token\"}"
     },
     "Brivaracetam": {
-      "lastCheckedAt": "2026-11-19T09:51:28.534Z",
+      "lastCheckedAt": "2026-11-21T09:08:44.354Z",
       "events": [
         {
           "headline": "ALKEM launches Brivaracetam in India under the brand name ...",
@@ -5700,10 +5719,11 @@
           "kind": "expiryUpdate",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 401 for \"Brivaracetam\": {\"success\":false,\"error\":\"Unauthorized: Invalid token\"}"
     },
     "Fingolimod": {
-      "lastCheckedAt": "2026-11-19T09:51:36.494Z",
+      "lastCheckedAt": "2026-11-21T09:08:45.887Z",
       "events": [
         {
           "headline": "Alembic Secures USFDA Approval for Fingolimod capsules for MS",
@@ -6481,10 +6501,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 401 for \"Fingolimod\": {\"success\":false,\"error\":\"Unauthorized: Invalid token\"}"
     },
     "Bedaquiline": {
-      "lastCheckedAt": "2026-11-19T09:51:41.126Z",
+      "lastCheckedAt": "2026-11-21T09:08:47.420Z",
       "events": [
         {
           "headline": "India Declines Patent Extension Application of Bedaquiline - PMC",
@@ -6638,10 +6659,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 401 for \"Bedaquiline\": {\"success\":false,\"error\":\"Unauthorized: Invalid token\"}"
     },
     "Delamanid": {
-      "lastCheckedAt": "2026-11-19T09:51:45.817Z",
+      "lastCheckedAt": "2026-11-21T09:08:48.954Z",
       "events": [
         {
           "headline": "India Restricts Off-Patent TB Drugs to Government Supply 'Only'",
@@ -6835,10 +6857,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 401 for \"Delamanid\": {\"success\":false,\"error\":\"Unauthorized: Invalid token\"}"
     },
     "Tofacitinib": {
-      "lastCheckedAt": "2026-11-19T09:51:52.543Z",
+      "lastCheckedAt": "2026-11-21T09:08:50.486Z",
       "events": [
         {
           "headline": "India denies patent on Pfizer's Xeljanz",
@@ -7288,10 +7311,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 401 for \"Tofacitinib\": {\"success\":false,\"error\":\"Unauthorized: Invalid token\"}"
     },
     "Baricitinib": {
-      "lastCheckedAt": "2026-11-19T09:52:02.288Z",
+      "lastCheckedAt": "2026-11-21T09:08:52.018Z",
       "events": [
         {
           "headline": "Lilly accelerating baricitinib's availability in India following receipt of ...",
@@ -7725,10 +7749,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 401 for \"Baricitinib\": {\"success\":false,\"error\":\"Unauthorized: Invalid token\"}"
     },
     "Apremilast": {
-      "lastCheckedAt": "2026-11-19T09:52:09.497Z",
+      "lastCheckedAt": "2026-11-21T09:08:53.550Z",
       "events": [
         {
           "headline": "otezla 30mg tablet 60 (generic apremilast from india)",
@@ -7954,10 +7979,11 @@
           "kind": "other",
           "date": "2024-02-52"
         }
-      ]
+      ],
+      "lastError": "Firecrawl 401 for \"Apremilast\": {\"success\":false,\"error\":\"Unauthorized: Invalid token\"}"
     },
     "Vonoprazan": {
-      "lastCheckedAt": "2026-11-19T09:52:15.385Z",
+      "lastCheckedAt": "2026-11-21T09:08:55.084Z",
       "events": [
         {
           "headline": "Torrent Pharmaceuticals Enters into Non-Exclusive Patent ...",
@@ -8247,10 +8273,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 401 for \"Vonoprazan\": {\"success\":false,\"error\":\"Unauthorized: Invalid token\"}"
     },
     "Vedolizumab": {
-      "lastCheckedAt": "2026-11-19T09:52:24.855Z",
+      "lastCheckedAt": "2026-11-21T09:08:56.616Z",
       "events": [
         {
           "headline": "Takeda & Halozyme Partner on Drug-Delivery Technology for ...",
@@ -8468,10 +8495,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 401 for \"Vedolizumab\": {\"success\":false,\"error\":\"Unauthorized: Invalid token\"}"
     },
     "Denosumab": {
-      "lastCheckedAt": "2026-11-19T09:52:32.510Z",
+      "lastCheckedAt": "2026-11-21T09:08:58.149Z",
       "events": [
         {
           "headline": "Zydus Launches Biosimilar Denosumab in India - Pearce IP",
@@ -8657,10 +8685,11 @@
           "kind": "biosimilarLaunch",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 401 for \"Denosumab\": {\"success\":false,\"error\":\"Unauthorized: Invalid token\"}"
     },
     "Tolvaptan": {
-      "lastCheckedAt": "2026-11-19T09:52:39.957Z",
+      "lastCheckedAt": "2026-11-21T09:08:59.680Z",
       "events": [
         {
           "headline": "FDA Approves Lupin's Generic Tolvaptan Tablets",
@@ -9214,10 +9243,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 401 for \"Tolvaptan\": {\"success\":false,\"error\":\"Unauthorized: Invalid token\"}"
     },
     "Eltrombopag": {
-      "lastCheckedAt": "2026-11-19T09:52:45.766Z",
+      "lastCheckedAt": "2026-11-21T09:09:01.213Z",
       "events": [
         {
           "headline": "Eltrombopag Synthetic Routes - MedKoo Biosciences",
@@ -9419,10 +9449,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 401 for \"Eltrombopag\": {\"success\":false,\"error\":\"Unauthorized: Invalid token\"}"
     },
     "Brimonidine/Brinzolamide": {
-      "lastCheckedAt": "2026-11-19T09:52:53.695Z",
+      "lastCheckedAt": "2026-11-21T09:09:02.747Z",
       "events": [
         {
           "headline": "We are excited to announce the launching of preservative ...",
@@ -9440,10 +9471,11 @@
           "kind": "genericLaunch",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 401 for \"Brimonidine/Brinzolamide\": {\"success\":false,\"error\":\"Unauthorized: Invalid token\"}"
     },
     "Tafluprost": {
-      "lastCheckedAt": "2026-11-19T09:52:58.701Z",
+      "lastCheckedAt": "2026-11-21T09:09:04.282Z",
       "events": [
         {
           "headline": "Efficacy of preserved Tafluprost 0.0015% in lowering ... - PMC",
@@ -9677,10 +9709,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 401 for \"Tafluprost\": {\"success\":false,\"error\":\"Unauthorized: Invalid token\"}"
     },
     "Tapentadol": {
-      "lastCheckedAt": "2026-11-19T09:53:05.483Z",
+      "lastCheckedAt": "2026-11-21T09:09:05.816Z",
       "events": [
         {
           "headline": "Indian pharma fuels Africa's 'zombie drug' and opioid crisis",
@@ -10298,10 +10331,11 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 401 for \"Tapentadol\": {\"success\":false,\"error\":\"Unauthorized: Invalid token\"}"
     },
     "Elagolix": {
-      "lastCheckedAt": "2026-11-19T09:53:15.420Z",
+      "lastCheckedAt": "2026-11-21T09:09:07.348Z",
       "events": [
         {
           "headline": "Single‐Dose Bioequivalence Study of Elagolix Tablets 200 ...",
@@ -10695,7 +10729,8 @@
           "kind": "other",
           "date": null
         }
-      ]
+      ],
+      "lastError": "Firecrawl 401 for \"Elagolix\": {\"success\":false,\"error\":\"Unauthorized: Invalid token\"}"
     }
   },
   "pendingDiscovery": [
