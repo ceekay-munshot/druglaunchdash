@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T07:44:05.067Z",
+  "generatedAt": "2026-11-21T07:37:49.768Z",
   "rowCount": 1714,
   "rows": [
     {
@@ -3798,7 +3798,7 @@
       "price": "₹1361 / bottle of 40 capsules",
       "sourceUrl": "https://sunpharma.com/wp-content/uploads/2021/11/Press-Release-Sun-Pharma-gearing-up-to-introduce-molnupiravir-under-the-brand-name-Molxvir%C2%AE-in-India.pdf",
       "buyer": "Sun Pharma",
-      "lastEnrichmentAttempt": "2026-09-21T05:20:10.668Z"
+      "lastEnrichmentAttempt": "2026-11-21T07:37:38.372Z"
     },
     {
       "brand": "Obimet & Thyrocab",
@@ -3814,7 +3814,7 @@
       "price": "₹31.6 / strip of 15 tablets",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-21T05:20:12.061Z"
+      "lastEnrichmentAttempt": "2026-11-21T07:37:39.635Z"
     },
     {
       "brand": "Pomalidomide",
@@ -3830,7 +3830,7 @@
       "price": "₹3840 / bottle of 21 capsules",
       "sourceUrl": "—",
       "buyer": "Natco Pharma",
-      "lastEnrichmentAttempt": "2026-09-22T05:17:37.680Z"
+      "lastEnrichmentAttempt": "2026-11-21T07:37:40.898Z"
     },
     {
       "brand": "Sodium Sulfate, Magnesium Sulfate, and Potassium Chloride Tablets",
@@ -3862,7 +3862,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/Abbotts-New-Coronary-Imaging-Software-Powered-by-Artificial-Intelligence-Launched-in-India.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-09-22T05:17:39.082Z"
+      "lastEnrichmentAttempt": "2026-11-21T07:37:42.163Z"
     },
     {
       "brand": "PediaSure",
@@ -5894,7 +5894,7 @@
       "price": null,
       "sourceUrl": "https://abbott.mediaroom.com/2023-10-16-Abbott-New-Coronary-Imaging-Software-Powered-by-Artificial-Intelligence",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-09-22T05:17:40.471Z"
+      "lastEnrichmentAttempt": "2026-11-21T07:37:43.427Z"
     },
     {
       "brand": "Breztri",
@@ -8662,7 +8662,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-next-generation-xience-sierra-stent-in-india-offering-cardiologists-a-new-level-of-care-and-precision.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-09-22T05:17:41.892Z"
+      "lastEnrichmentAttempt": "2026-11-21T07:37:44.690Z"
     },
     {
       "brand": "Amigliflozin",
@@ -8694,7 +8694,7 @@
       "price": "₹130 / strip of 10 capsules",
       "sourceUrl": "https://www.wockhardt.com/press-release-a433-in-licensing",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-22T05:17:44.596Z"
+      "lastEnrichmentAttempt": "2026-11-21T07:37:47.225Z"
     },
     {
       "brand": "Mabthera",
@@ -8710,7 +8710,7 @@
       "price": "—",
       "sourceUrl": "https://www.wockhardt.com/press-release-mabthera-acquisition",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-22T05:17:45.918Z"
+      "lastEnrichmentAttempt": "2026-11-21T07:37:48.505Z"
     },
     {
       "brand": "4 drug brands from GlaxoSmithkline Pharmaceuticals",
@@ -12694,7 +12694,7 @@
       "price": "null",
       "sourceUrl": "https://www.wockhardt.com/press-release-2",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-21T05:20:09.291Z"
+      "lastEnrichmentAttempt": "2026-11-21T07:37:37.107Z"
     },
     {
       "brand": "XIENCE Sierra™ Everolimus Eluting Coronary Stent System",
@@ -12710,7 +12710,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.com/press-releases/2024/may/xiens-sierra-launch.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-09-22T05:17:43.215Z"
+      "lastEnrichmentAttempt": "2026-11-21T07:37:45.954Z"
     },
     {
       "brand": "MabThera",
