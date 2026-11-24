@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-23T09:34:36.112Z",
-  "rowCount": 271,
+  "generatedAt": "2026-11-24T11:28:44.938Z",
+  "rowCount": 272,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -4880,6 +4880,25 @@
       "_title": "backfill:New Ensure With HMB",
       "_provider": "gemini",
       "_harvestedAt": "2026-11-20T08:57:45.318Z"
+    },
+    {
+      "brand": "Ferric Citrate Tablets",
+      "launchType": "Own Launched",
+      "date": "2026-11-23",
+      "seller": "—",
+      "dealType": "Generic Launch",
+      "molecule": "Ferric Citrate",
+      "therapy": "Nephrology, Hematology",
+      "indication": "Hyperphosphatemia in adults with chronic kidney disease (CKD) on dialysis; Iron deficiency anemia in adults with CKD not on dialysis",
+      "price": "—",
+      "dealValue": null,
+      "existingBrand": "Auryxia",
+      "chronicAcute": "Chronic",
+      "buyer": "Lupin",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=3bfcb3dc-6695-4c49-989f-a7aff4ccbab9.pdf",
+      "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 23 Nov - Lupin gets U.S. FDA approval for Ferric Citrate Tablets 210 mg, RLD Auryxia, US annual sales $58.1M.",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-11-24T11:28:05.747Z"
     }
   ],
   "processedUrls": [
@@ -5486,6 +5505,7 @@
     "https://www.alkemlabs.com/press-release/pharmaco-acquisition",
     "https://www.wockhardt.com/press-release/vibra-t-launch",
     "https://www.sunpharma.com/press-release/brand-acquisition",
-    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=d87d4a45-8946-4bf8-8a3a-e66b4397e09c.pdf"
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=d87d4a45-8946-4bf8-8a3a-e66b4397e09c.pdf",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=3bfcb3dc-6695-4c49-989f-a7aff4ccbab9.pdf"
   ]
 }
