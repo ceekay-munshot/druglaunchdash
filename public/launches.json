@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T08:03:32.140Z",
+  "generatedAt": "2026-11-24T10:19:38.292Z",
   "rowCount": 1714,
   "rows": [
     {
@@ -151,7 +151,7 @@
       "price": "—",
       "sourceUrl": "https://www.thehindubusinessline.com/companies/corona-remedies-acquires-2-brands-from-abbott-india/article62303595.ece",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-25T05:15:56.607Z"
+      "lastEnrichmentAttempt": "2026-11-24T10:19:29.381Z"
     },
     {
       "brand": "Semaglutide",
@@ -390,7 +390,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-25T05:15:57.907Z"
+      "lastEnrichmentAttempt": "2026-11-24T10:19:30.655Z"
     },
     {
       "brand": "Dilo-DX",
@@ -406,7 +406,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-25T05:16:02.001Z"
+      "lastEnrichmentAttempt": "2026-11-24T10:19:34.471Z"
     },
     {
       "brand": "Stelbid",
@@ -998,7 +998,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-25T05:15:59.291Z"
+      "lastEnrichmentAttempt": "2026-11-24T10:19:31.928Z"
     },
     {
       "brand": "Dilo-BM, Dilo-DX, Stelbid and Vitneurin",
@@ -2502,7 +2502,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/Adquey-(Difamilast)_NDA%20Approval_PressRelease_13-Feb-26.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-09-24T05:14:43.224Z"
+      "lastEnrichmentAttempt": "2026-11-24T10:19:28.108Z"
     },
     {
       "brand": "Dilo-BM, Dilo-DX, Stelbid, Vitneurin",
@@ -2518,7 +2518,7 @@
       "price": null,
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/cci-approves-corona-remedies-glaxosmithkline-deal/articleshow/57523962.cms",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-25T05:16:00.601Z"
+      "lastEnrichmentAttempt": "2026-11-24T10:19:33.199Z"
     },
     {
       "brand": "Tiotropium Bromide DPI",
@@ -3942,7 +3942,7 @@
       "price": null,
       "sourceUrl": "http://www.glenmarkpharma.com/press-release/glenmark-pharmaceuticals-announces-exclusive-licensing-agreement-with-seqirus-for-its-investigational-seasonal-allergic-rhinitis-nasal-spray-ryaltris-for-australia-and-new-zealand-markets",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-09-24T05:14:40.477Z"
+      "lastEnrichmentAttempt": "2026-11-24T10:19:25.563Z"
     },
     {
       "brand": "ADQUEY",
@@ -8790,7 +8790,7 @@
       "price": "₹282 / strip of 10 capsules",
       "sourceUrl": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/corona-remedies-buys-sanofi-indias-ortho-brand-myoril/articleshow/101344189.cms?from=mdr",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-25T05:16:03.317Z"
+      "lastEnrichmentAttempt": "2026-11-24T10:19:35.745Z"
     },
     {
       "brand": "Obimet",
@@ -12966,7 +12966,7 @@
       "price": "—",
       "sourceUrl": "https://glenmarkpharma.com/press-release/glenmark-pharmaceuticals-announces-exclusive-licensing-agreement-with-seqirus-for-its-investigational-seasonal-allergic-rhinitis-nasal-spray-ryaltris-for-australia-and-new-zealand-markets#main",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-09-24T05:14:41.801Z"
+      "lastEnrichmentAttempt": "2026-11-24T10:19:26.836Z"
     },
     {
       "brand": "Obimet",
@@ -12982,7 +12982,7 @@
       "price": "null",
       "sourceUrl": "https://www.expresspharma.in/corona-acquires-obimet-thyrocab-brands-from-abbott-india/#",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-25T05:16:04.743Z"
+      "lastEnrichmentAttempt": "2026-11-24T10:19:37.018Z"
     },
     {
       "brand": "Cipla",
