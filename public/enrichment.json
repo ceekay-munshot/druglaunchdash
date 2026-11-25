@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-24T11:28:44.938Z",
-  "rowCount": 272,
+  "generatedAt": "2026-11-25T10:15:26.238Z",
+  "rowCount": 273,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -4899,6 +4899,25 @@
       "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 23 Nov - Lupin gets U.S. FDA approval for Ferric Citrate Tablets 210 mg, RLD Auryxia, US annual sales $58.1M.",
       "_provider": "gemini",
       "_harvestedAt": "2026-11-24T11:28:05.747Z"
+    },
+    {
+      "brand": "Fluticasone HFA MDI",
+      "launchType": "Own Launched",
+      "date": "2026-11-25",
+      "seller": "—",
+      "dealType": "Co-development and Supply Agreement",
+      "molecule": "Fluticasone HFA",
+      "therapy": "Respiratory",
+      "indication": "Long-term maintenance and prophylactic treatment of asthma in patients aged 4 years and older, as well as for patients requiring oral corticosteroid therapy for asthma",
+      "price": "—",
+      "dealValue": null,
+      "existingBrand": "Flovent® HFA",
+      "chronicAcute": "Chronic",
+      "buyer": "Cipla",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=26f4ad21-55a8-47dd-b434-8d619e108465.pdf",
+      "_title": "Press Release - U.S. FDA Approves First ANDA Generic Flovent® HFA In 110 Mcg And 220 Mcg Strengths For The Treatment Of Asthma 25 Nov - US FDA approves first generic Flovent HFA 110/220 mcg; Cipla to manufacture, Teva to commercialize.",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-11-25T10:14:17.337Z"
     }
   ],
   "processedUrls": [
@@ -5506,6 +5525,8 @@
     "https://www.wockhardt.com/press-release/vibra-t-launch",
     "https://www.sunpharma.com/press-release/brand-acquisition",
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=d87d4a45-8946-4bf8-8a3a-e66b4397e09c.pdf",
-    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=3bfcb3dc-6695-4c49-989f-a7aff4ccbab9.pdf"
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=3bfcb3dc-6695-4c49-989f-a7aff4ccbab9.pdf",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=26f4ad21-55a8-47dd-b434-8d619e108465.pdf",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=4d5dcf4f-5b3a-4797-95d1-edbd297bd6f6.pdf"
   ]
 }
