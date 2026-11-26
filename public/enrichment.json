@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-25T10:15:26.238Z",
-  "rowCount": 273,
+  "generatedAt": "2026-11-26T09:55:54.224Z",
+  "rowCount": 275,
   "rows": [
     {
       "brand": "Innovcare Lifesciences Private Limited",
@@ -4918,6 +4918,44 @@
       "_title": "Press Release - U.S. FDA Approves First ANDA Generic Flovent® HFA In 110 Mcg And 220 Mcg Strengths For The Treatment Of Asthma 25 Nov - US FDA approves first generic Flovent HFA 110/220 mcg; Cipla to manufacture, Teva to commercialize.",
       "_provider": "gemini",
       "_harvestedAt": "2026-11-25T10:14:17.337Z"
+    },
+    {
+      "brand": "Dalbavancin Injection",
+      "launchType": "Own Launched",
+      "date": "2026-11-25",
+      "seller": "—",
+      "dealType": "—",
+      "molecule": "Dalbavancin",
+      "therapy": "Anti-infective",
+      "indication": "acute bacterial skin and skin structure infections (ABSSSI)",
+      "price": "—",
+      "dealValue": null,
+      "existingBrand": "Dalvance",
+      "chronicAcute": "Acute",
+      "buyer": "Lupin",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f71266d7-b2a7-41d5-89dc-99822c23e050.pdf",
+      "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 25 Nov - Lupin receives U.S. FDA approval for Dalbavancin Injection 500mg/5mL single-dose regimen.",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-11-26T09:54:50.662Z"
+    },
+    {
+      "brand": "Sitagliptin and Metformin Hydrochloride Tablets",
+      "launchType": "Own Launched",
+      "date": "2026-11-25",
+      "seller": "—",
+      "dealType": "—",
+      "molecule": "Sitagliptin and Metformin Hydrochloride",
+      "therapy": "Anti-Diabetic",
+      "indication": "Type 2 Diabetes Mellitus",
+      "price": "—",
+      "dealValue": null,
+      "existingBrand": "Janumet®",
+      "chronicAcute": "Chronic",
+      "buyer": "Lupin",
+      "sourceUrl": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=48a3e3ca-5491-4a5b-bf54-5dc0d6c8686a.pdf",
+      "_title": "Announcement under Regulation 30 (LODR)-Press Release / Media Release 25 Nov - Lupin gets U.S. FDA approval for Sitagliptin and Metformin Hydrochloride Tablets; US annual sales USD 439.2 million.",
+      "_provider": "gemini",
+      "_harvestedAt": "2026-11-26T09:55:06.528Z"
     }
   ],
   "processedUrls": [
@@ -5527,6 +5565,8 @@
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=d87d4a45-8946-4bf8-8a3a-e66b4397e09c.pdf",
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=3bfcb3dc-6695-4c49-989f-a7aff4ccbab9.pdf",
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=26f4ad21-55a8-47dd-b434-8d619e108465.pdf",
-    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=4d5dcf4f-5b3a-4797-95d1-edbd297bd6f6.pdf"
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=4d5dcf4f-5b3a-4797-95d1-edbd297bd6f6.pdf",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f71266d7-b2a7-41d5-89dc-99822c23e050.pdf",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=48a3e3ca-5491-4a5b-bf54-5dc0d6c8686a.pdf"
   ]
 }
