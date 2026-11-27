@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T08:48:13.840Z",
+  "generatedAt": "2026-11-27T08:58:40.519Z",
   "rowCount": 1714,
   "rows": [
     {
@@ -2566,7 +2566,7 @@
       "price": "₹24.8 / bottle of 60 ml (5 mg/5 ml)",
       "sourceUrl": "https://www.cnbctv18.com/healthcare/alkem-oncology-novel-breast-cancer-treatment-drug-launch-palbociclib-palbo-15703241.htm",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-09-28T05:45:19.782Z"
+      "lastEnrichmentAttempt": "2026-11-27T08:58:34.126Z"
     },
     {
       "brand": "AKYNZEO®",
@@ -2598,7 +2598,7 @@
       "price": "—",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Pharmaceuticals-and-Harbour-BioMed-Sign-Agreement-for-Greater-China-toDevelop-GBR-1302.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-09-28T05:45:21.199Z"
+      "lastEnrichmentAttempt": "2026-11-27T08:58:35.408Z"
     },
     {
       "brand": "Nourkrin®",
@@ -2614,7 +2614,7 @@
       "price": "₹3285 / strip of 60 tablets",
       "sourceUrl": "https://glenmark.b-cdn.net/gpl_pdfs/media/Glenmark-launches-globally-renowned-hair-growth-formula-Nourkrin-in-Russia.pdf",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-09-28T05:45:22.625Z"
+      "lastEnrichmentAttempt": "2026-11-27T08:58:36.685Z"
     },
     {
       "brand": "AVEIR™ VR Leadless Pacemaker",
@@ -2630,7 +2630,7 @@
       "price": "—",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-aveir-vr-leadless-pacemaker-system-in-india-to-treat-patients-with-slow-heart-rhythms.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-09-28T05:45:25.512Z"
+      "lastEnrichmentAttempt": "2026-11-27T08:58:39.238Z"
     },
     {
       "brand": "Dextromethorphan Polistirex Extended-Release Oral Suspension, 30 mg/5 mL",
@@ -6278,7 +6278,7 @@
       "price": "—",
       "sourceUrl": "—",
       "buyer": "Glenmark",
-      "lastEnrichmentAttempt": "2026-09-28T05:45:24.061Z"
+      "lastEnrichmentAttempt": "2026-11-27T08:58:37.961Z"
     },
     {
       "brand": "Unspecified Brands",
@@ -9062,7 +9062,7 @@
       "price": "—",
       "sourceUrl": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/alkem-labs-to-grow-chronic-therapies-to-drive-future-growth-md/articleshow/100775508.cms",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-09-27T05:37:44.373Z"
+      "lastEnrichmentAttempt": "2026-11-27T08:58:27.747Z"
     },
     {
       "brand": "Xyzomab",
@@ -13158,7 +13158,7 @@
       "price": "₹3458 / prefilled syringe of 1 injection",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/abbott-launches-14-valent-pneumococcal-conjugate-vaccine-pcv-14-that-offers-broadest-protection-for-children-against-pneumococcal-bacterial-infections.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-09-27T05:37:45.809Z"
+      "lastEnrichmentAttempt": "2026-11-27T08:58:29.020Z"
     },
     {
       "brand": "GLP systems Track",
@@ -13174,7 +13174,7 @@
       "price": "₹20.3 / vial of 2 ml",
       "sourceUrl": "https://www.abbott.in/media-center/press-releases/accelerating-automation-abbott-introduces-glp-systems-track-for-laboratories-in-india.html",
       "buyer": "Abbott India",
-      "lastEnrichmentAttempt": "2026-09-27T05:37:47.212Z"
+      "lastEnrichmentAttempt": "2026-11-27T08:58:30.295Z"
     },
     {
       "brand": "ADQUEYTM (difamilast) Ointment",
@@ -13190,7 +13190,7 @@
       "price": null,
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/Adquey-(Difamilast)_NDA%20Approval_PressRelease_13-Feb-26.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-09-28T05:45:16.892Z"
+      "lastEnrichmentAttempt": "2026-11-27T08:58:31.572Z"
     },
     {
       "brand": "Acquisition of Pharma Company X",
@@ -13206,7 +13206,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/press-releases/acquisition-of-pharma-company-x",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-28T05:45:18.342Z"
+      "lastEnrichmentAttempt": "2026-11-27T08:58:32.849Z"
     },
     {
       "brand": "In-licensing Agreement for Drug Y",
