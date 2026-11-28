@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T08:58:40.519Z",
+  "generatedAt": "2026-11-28T08:19:32.156Z",
   "rowCount": 1714,
   "rows": [
     {
@@ -2646,7 +2646,7 @@
       "price": "—",
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/2LtrToSEsAurobindoPRUSFDA17042026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-09-28T05:45:26.877Z"
+      "lastEnrichmentAttempt": "2026-11-28T08:19:20.038Z"
     },
     {
       "brand": "Glycerol Phenylbutyrate Oral Liquid, 1.1 grams per mL",
@@ -9142,7 +9142,7 @@
       "price": "₹191 / bottle of 30 ml drop",
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-28T05:45:28.236Z"
+      "lastEnrichmentAttempt": "2026-11-28T08:19:21.250Z"
     },
     {
       "brand": "Acquisition of Generic Portfolio",
@@ -13238,7 +13238,7 @@
       "price": "null",
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-28T05:45:29.594Z"
+      "lastEnrichmentAttempt": "2026-11-28T08:19:22.462Z"
     },
     {
       "brand": "FOSTINE",
@@ -13254,7 +13254,7 @@
       "price": "null",
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-29T06:06:36.993Z"
+      "lastEnrichmentAttempt": "2026-11-28T08:19:28.525Z"
     },
     {
       "brand": "LUPROFACT",
@@ -13270,7 +13270,7 @@
       "price": "null",
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-29T06:06:50.407Z"
+      "lastEnrichmentAttempt": "2026-11-28T08:19:29.734Z"
     },
     {
       "brand": "MENODAC",
@@ -13286,7 +13286,7 @@
       "price": "null",
       "sourceUrl": "https://www.biospectrumindia.com/news/16/26400/corona-remedies-acquires-7-brands-in-cardiology-womens-healthcare-from-bayer.html",
       "buyer": "Corona Remedies",
-      "lastEnrichmentAttempt": "2026-09-29T06:06:59.175Z"
+      "lastEnrichmentAttempt": "2026-11-28T08:19:30.944Z"
     },
     {
       "brand": "OVIDAC",
@@ -16918,7 +16918,7 @@
       "price": "Rs 1,850 / pack",
       "sourceUrl": "https://www.alkemlabs.com/news/lacticare-launch",
       "buyer": "Alkem",
-      "lastEnrichmentAttempt": "2026-09-29T06:04:13.035Z"
+      "lastEnrichmentAttempt": "2026-11-28T08:19:23.675Z"
     },
     {
       "brand": "Advair Diskus",
@@ -16934,7 +16934,7 @@
       "price": null,
       "sourceUrl": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrtoSEsLannetPR31082026.pdf",
       "buyer": "Aurobindo",
-      "lastEnrichmentAttempt": "2026-09-29T06:06:16.135Z"
+      "lastEnrichmentAttempt": "2026-11-28T08:19:24.890Z"
     },
     {
       "brand": "Wockhardt's New Biologics",
@@ -16950,7 +16950,7 @@
       "price": null,
       "sourceUrl": "https://www.wockhardt.com/press-release/new-biologics-launch",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-29T06:06:35.486Z"
+      "lastEnrichmentAttempt": "2026-11-28T08:19:26.101Z"
     },
     {
       "brand": "Wockhardt's Acquisition of Generic Portfolio",
@@ -16966,7 +16966,7 @@
       "price": "₹155.7 / strip of 10 capsules",
       "sourceUrl": "https://www.wockhardt.com/press-release/acquisition-generic-portfolio",
       "buyer": "Wockhardt",
-      "lastEnrichmentAttempt": "2026-09-29T06:06:35.486Z"
+      "lastEnrichmentAttempt": "2026-11-28T08:19:27.314Z"
     },
     {
       "brand": "Co-marketing Agreement for Diabetes Drug",
